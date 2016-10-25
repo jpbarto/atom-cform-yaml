@@ -1,0 +1,7 @@
+'.source.yaml':
+  'block-device':
+    'prefix': 'ec2-mountpoint'
+    'body': """
+	- DeviceName: ${1:/dev/sdm}
+	  VolumeId: ${2:-}
+"""

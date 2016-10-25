@@ -1,0 +1,23 @@
+'.source.yaml':
+  'ec2-instance':
+    'prefix': 'ec2-instance'
+    'body': """
+	${1:instance}:
+		Type: AWS::EC2::Instance
+		Properties:
+			AvailabilityZone: ${2: az}
+			DisableApiTermination: ${3:'false'}
+			EbsOptimized: ${4: 'false'}
+			ImageId: ${5:-}
+			InstanceType: ${6:-}
+			KeyName: ${7:-}
+			Monitoring: ${8:'false'}
+			SecurityGroupIds:
+				- ${9:-}
+			SubnetId: ${10:-}
+			Tags:
+
+			UserData: ${11:-}
+			Volumes:
+
+    """

@@ -1,0 +1,4 @@
+'.source.yaml':
+  'get-attr':
+    'prefix': 'get-attr'
+    'body': '!GetAtt ${1:logicalNameOfResource}.${2:attributeName}'

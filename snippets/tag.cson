@@ -1,0 +1,7 @@
+'.source.yaml':
+  'tag':
+    'prefix': 'tag'
+    'body': """
+			- Key: ${1:key_name}
+			  Value: ${2:key_value}
+    """

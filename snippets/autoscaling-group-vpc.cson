@@ -1,0 +1,16 @@
+'.source.yaml':
+  'autoscaling-group-vpc':
+    'prefix': 'autoscaling-group-vpc'
+    'body': """
+	${1:asg_name}:
+		Type: "AWS::AutoScaling::AutoScalingGroup"
+		Properties:
+			AvailabilityZones:
+			LaunchConfigurationName: ${3:launch_config}
+			MaxSize: ${4:3}
+			MinSize: ${5:1}
+			DesiredCapacity: ${6:2}
+			VPCZoneIdentifier:
+			Tags:
+
+    """

@@ -1,0 +1,9 @@
+'.source.yaml':
+  'security-group-rule':
+    'prefix': 'security-group-rule'
+    'body': """
+IpProtocol: ${1:tcp|udp}
+FromPort: ${2:22}
+ToPort: ${3:22}
+CidrIp: ${4:0.0.0.0/0}
+    """

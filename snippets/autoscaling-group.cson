@@ -1,0 +1,16 @@
+'.source.yaml':
+  'autoscaling-group':
+    'prefix': 'autoscaling-group'
+    'body': """
+	${1:asg_name}:
+		Type: "AWS::AutoScaling::AutoScalingGroup"
+		Properties:
+			AvailabilityZones:
+				${2:availability_zone}
+			LaunchConfigurationName: ${3:-}
+			MaxSize: ${4:3}
+			MinSize: ${5:1}
+			DesiredCapacity: ${6:2}
+			Tags:
+
+    """

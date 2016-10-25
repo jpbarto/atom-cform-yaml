@@ -1,0 +1,4 @@
+'.source.yaml':
+  'select-list':
+    'prefix': 'select-list'
+    'body': '!Select [ ${1:0|1|etc}, ${2:object_list} ]'

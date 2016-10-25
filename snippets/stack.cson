@@ -1,0 +1,11 @@
+'.source.yaml':
+  'cloudformation stack':
+    'prefix': 'stack'
+    'body': """
+	${1:stack_name}:
+		Type: "AWS::CloudFormation::Stack"
+		Properties:
+			TemplateURL: ${2:template_url}
+			Tags:
+
+    """

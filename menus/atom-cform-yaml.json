@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle atom-cform-yaml",
+        "command": "atom-cform-yaml:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "atom-cform-yaml",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "atom-cform-yaml:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
