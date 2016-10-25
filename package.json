@@ -1,14 +1,17 @@
 {
   "name": "atom-cform-yaml",
   "main": "./lib/atom-cform-yaml",
-  "version": "0.0.1",
-  "description": "Collection of snippets for easily authoring AWS CloudFormation templates using Yaml",
+  "version": "0.0.2",
+  "description": "Collection of snippets for easily authoring AWS CloudFormation templates using YAML",
   "keywords": [
+	  "yaml",
+	"aws",
+	"cloudformation"
   ],
   "activationCommands": {
     "atom-workspace": "atom-cform-yaml:toggle"
   },
-  "repository": "https://github.com/atom/atom-cform-yaml",
+  "repository": "https://github.com/jpbarto/atom-cform-yaml",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
