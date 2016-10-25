@@ -1,4 +1,17 @@
-'.source.json':
-  'elb-listener':
+'.string .yaml':
+  'elastic-load-balancer-listener':
     'prefix': 'elb-listener'
-    'body': '{\n   "InstancePort" : "${1:-}",\n   "InstanceProtocol" : "${2:HTTP|HTTPS|TCP|SSL}",\n   "LoadBalancerPort" : "${3:-}",\n   "Protocol" : "${4:HTTP|HTTPS|TCP|SSL}"\n}'
+    'body': """
+LoadBalancerPort: ${1:80}
+	InstancePort: ${2:80}
+	Protocol: ${3:HTTP}
+    """
+
+'.source.yaml':
+  'elastic-load-balancer-listener':
+    'prefix': 'elb-listener-w-dash'
+    'body': """
+- LoadBalancerPort: ${1:80}
+	InstancePort: ${2:80}
+	Protocol: ${3:HTTP}
+    """
