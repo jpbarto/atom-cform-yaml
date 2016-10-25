@@ -10,4 +10,5 @@ A package based on [atom-cform](https://github.com/dgomesbr/atom-cform) to help 
 3. Tab through the different fields and fill in your values.
 4. Save the template and run it through the AWS CloudFormation console or deploy the template using the AWS CLI.
 5. Have fun and get building!
+
 =======
