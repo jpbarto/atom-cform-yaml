@@ -3,7 +3,7 @@
 A package based on [atom-cform](https://github.com/dgomesbr/atom-cform) to help Atom users create YAML AWS CloudFormation templates 
 
 # Demo
-![30 seconds or less...](http://imgur.com/xQkpXQ4)
+![30 seconds or less...](http://i.imgur.com/xQkpXQ4.gif)
 
 # Usage
 1. Create an empty ```*.yaml``` file and type ```start``` - a skeleton YAML CloudFormation template will appear.
