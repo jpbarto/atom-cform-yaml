@@ -5,19 +5,19 @@
 	${1:instance}:
 		Type: AWS::EC2::Instance
 		Properties:
-			AvailabilityZone: ${2: az}
+			AvailabilityZone: ${2: availabilityZoneRef}
 			DisableApiTermination: ${3:'false'}
 			EbsOptimized: ${4: 'false'}
-			ImageId: ${5:-}
-			InstanceType: ${6:-}
-			KeyName: ${7:-}
+			ImageId: ${5:ami-123456}
+			InstanceType: ${6:t2.micro}
+			KeyName: ${7:keyRef}
 			Monitoring: ${8:'false'}
 			SecurityGroupIds:
-				- ${9:-}
-			SubnetId: ${10:-}
+				- ${9:securityGroupRef}
+			SubnetId: ${10:subnetRef}
 			Tags:
-
-			UserData: ${11:-}
+				- ${11:tag}
+			UserData: ${12:-}
 			Volumes:
-
+				- ${13:mountpoint}
     """

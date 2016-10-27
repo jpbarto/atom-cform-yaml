@@ -1,7 +1,15 @@
-'.source.yaml':
+'.string .yaml':
   'tag':
     'prefix': 'tag'
     'body': """
-			- Key: ${1:key_name}
-			  Value: ${2:key_value}
+Key: ${1:keyName}
+	Value: ${2:keyValue}
+    """
+
+'.source.yaml':
+  'tag':
+    'prefix': 'tag-w-dash'
+    'body': """
+- Key: ${1:key_name}
+	Value: ${2:key_value}
     """

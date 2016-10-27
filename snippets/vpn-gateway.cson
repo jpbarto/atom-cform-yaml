@@ -1,4 +1,17 @@
-'.source.json':
+'.source.yaml':
   'vpn-gateway':
     'prefix': 'vpn-gateway'
-    'body': '"${1:vgwName}": {\n  "Type": "AWS::EC2::VPNGateway",\n  "Properties": {\n    "Type": "ipsec.1",\n    "Tags": [${2:"--"}]\n  }\n},\n"AttachVpnGateway": {\n  "Type": "AWS::EC2::VPCGatewayAttachment",\n  "Properties": {\n    "VpcId": ${3:"--"},\n    "VpnGatewayId": { "Ref": "${4:vgwName}" }\n  }\n}'
+    'body': """
+	${1:vgwName}:
+		Type: AWS::EC2::VPNGateway
+		Properties:
+			Type: ${2:ipsec.1}
+			Tags:
+				- ${3:-}
+	AttachVpnGateway:
+		Type: AWS::EC2::VPCGatewayAttachment
+		Properties:
+			VpcId: ${4:vpc}
+			VpnGatewayId: 
+				Ref: ${5:vgwName}
+    """

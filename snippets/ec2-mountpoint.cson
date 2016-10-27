@@ -1,7 +1,15 @@
-'.source.yaml':
+'.string .yaml':
   'block-device':
     'prefix': 'ec2-mountpoint'
     'body': """
-	- DeviceName: ${1:/dev/sdm}
+DeviceName: ${1:/dev/sdm}
+	  VolumeId: ${2:-}
+"""
+
+'.source.yaml':
+  'block-device':
+    'prefix': 'ec2-mountpoint-w-dash'
+    'body': """
+- DeviceName: ${1:/dev/sdm}
 	  VolumeId: ${2:-}
 """

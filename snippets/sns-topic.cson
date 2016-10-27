@@ -1,4 +1,12 @@
-'.source.json':
+'.source.yaml':
   'sns-topic':
     'prefix': 'sns-topic'
-    'body': '"${1:snsTopic}": {\n  "Type": "AWS::SNS::Topic",\n  "Properties": {\n    "DisplayName": "${2}",\n    "Subscription": [ ${3} ],\n    "TopicName": "${4}"\n  }\n}'
+    'body': """
+	${1:snsTopic}:
+		Type: AWS::SNS::Topic
+		Properties:
+			DisplayName: ${2:displayName}
+			TopicName: ${3:topicName}
+			Subscription:
+				- ${4:subscriptionRef}
+    """

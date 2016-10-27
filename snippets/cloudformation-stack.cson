@@ -1,4 +1,11 @@
-'.source.json':
-  'cloudformation-stack':
+'.source.yaml':
+  'cloudformation stack':
     'prefix': 'cloudformation-stack'
-    'body': '"${1:cloudFormationStack}": {\n "Type": "AWS::CloudFormation::Stack",\n "Properties": {\n    "NotificationARNs": [ "${2}" ],\n    "Parameters": { ${3} },\n    "TemplateURL": "${4}",\n    "TimeoutInMinutes": "${5}"\n }\n}'
+    'body': """
+	${1:stack_name}:
+		Type: "AWS::CloudFormation::Stack"
+		Properties:
+			TemplateURL: ${2:template_url}
+			Tags:
+				- ${3:tag}
+    """
