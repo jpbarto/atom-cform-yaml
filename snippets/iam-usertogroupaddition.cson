@@ -1,4 +1,11 @@
-'.source.json':
+'.source.yaml':
   'iam-usertogroupaddition':
     'prefix': 'iam-usertogroupaddition'
-    'body': '"${1:iamUserToGroupAddition}": {\n   "Type": "AWS::IAM::UserToGroupAddition",\n   "Properties": {\n      "GroupName": "${2}",\n      "Users": [ "${3}" ]\n   }\n}'
+    'body': """
+${1:userToGroup}:
+	Type: AWS::IAMUserToGroupAddition
+	Properties:
+		GroupName: ${2:groupName}
+		Users:
+			- ${3:userRef}
+    """

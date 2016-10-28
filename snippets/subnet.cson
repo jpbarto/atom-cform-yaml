@@ -7,7 +7,7 @@
 		Properties:
 			AvailabilityZone: ${2:az}
 			CidrBlock: ${3:0.0.0.0/0}
-			MapPublicOnLaunch: '${4:false}'
+			MapPublicOnLaunch: ${4:false}
 			VpcId: ${5:vpc}
 			Tags:
 

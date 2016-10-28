@@ -1,4 +1,15 @@
-'.source.json':
+'.source.yaml':
   'rds-eventsubscription':
     'prefix': 'rds-eventsubscription'
-    'body': '"${1:rdsEventSubscription}": {\n  "Type": "AWS::RDS::EventSubscription",\n  "Properties": {\n    "Enabled": "${2:true | false}",\n    "EventCategories": [ "${3}" ],\n    "SnsTopicArn": "${4}",\n    "SourceIds": [ "${5}" ],\n    "SourceType ": "${6}"\n  }\n}'
+    'body': """
+${1:subscription}:
+	Type: AWS::RDS::EventSubscription
+	Properties:
+		Enabled: ${2:true}
+		EventCategories:
+			- ${3:category}
+		SnstopicArn: ${4:topicRef}
+		SourceIds:
+			- ${5:sourceId}
+		SourceType: ${6}
+    """

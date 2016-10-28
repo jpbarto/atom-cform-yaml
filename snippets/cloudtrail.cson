@@ -1,4 +1,13 @@
-'.source.json':
+'.source.yaml':
   'cloudtrail':
     'prefix': 'cloudtrail'
-    'body': '"${1:cloudTrail}": {\n  "Type": "AWS::CloudTrail::Trail",\n  "Properties": {\n    "S3BucketName": "${2}",\n    "IncludeGlobalServiceEvents": "${3:true | false}",\n    "IsLogging": "${4:true | false}",\n    "S3KeyPrefix": "${5}",\n    "SnsTopicName": "${6}"\n  }\n}'
+    'body': """
+${1:trail}:
+	Type: AWS::CloudTrail::Trail
+	Properties:
+		S3BucketName: ${2:bucketName}
+		IncludeGlobalServiceEvents: ${3:true}
+		IsLogging: ${4:true}
+		S3KeyPrefix: ${5:prefix}
+		SnsTopicName: ${6:topicName}
+    """

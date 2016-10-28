@@ -1,4 +1,12 @@
-'.source.json':
+'.source.yaml':
   'iam-role':
     'prefix': 'iam-role'
-    'body': '"${1:iamRole}": {\n   "Type": "AWS::IAM::Role",\n   "Properties": {\n      "AssumeRolePolicyDocument": { ${2} },\n      "Path": "${3}",\n      "Policies": [ ${4} ]\n   }\n}'
+    'body': """
+${1:role}:
+	Type: AWS::IAM::Role
+	Properties:
+		AssumeRolePolicyDocument: ${2:policy}
+		Path: ${3:/}
+		Policies:
+			- ${4:policyRef}
+    """

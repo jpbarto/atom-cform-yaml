@@ -1,4 +1,13 @@
-'.source.json':
+'.source.yaml':
   'rds-dbsubnetgroup':
     'prefix': 'rds-dbsubnetgroup'
-    'body': '"${1:rdsDBSubnetGroup}": {\n   "Type": "AWS::RDS::DBSubnetGroup",\n   "Properties": {\n      "DBSubnetGroupDescription": "${2}",\n      "SubnetIds": [ "${3}" ],\n      "Tags": [ ${4} ]\n   }\n}'
+    'body': """
+${1:subnetGroup}:
+	Type: AWS::RDS::DBSubnetGroup
+	Properties:
+		DBSubnetGroupDescription: ${2:description}
+		SubnetIds:
+			- ${3:subnetRef}
+		Tags:
+			- ${4:tag}
+    """

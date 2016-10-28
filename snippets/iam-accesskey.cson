@@ -1,4 +1,11 @@
-'.source.json':
+'.source.yaml':
   'iam-accesskey':
     'prefix': 'iam-accesskey'
-    'body': '"${1:iamAccessKey}": {\n   "Type": "AWS::IAM::AccessKey",\n   "Properties": {\n      "Status": "${2}",\n      "UserName": "${3}",\n      "Serial": "${4}"\n   }\n}'
+    'body': """
+${1:accessKey}:
+	Type: AWS::IAMAccessKey
+	Properties:
+		Status: ${2:status}
+		UserName: ${3:username}
+		Serial: ${4:serial}
+    """

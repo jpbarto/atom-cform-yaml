@@ -6,8 +6,8 @@
 		Type: "AWS::EC2::VPC"
 		Properties:
 			CidrBlock: ${2:0.0.0.0/0}
-			EnableDnsSupport: '${3:false}'
-			EnableDnsHostnames: '${4:false}'
+			EnableDnsSupport: ${3:false}
+			EnableDnsHostnames: ${4:false}
 			InstanceTenancy: ${5:dedicated}
 			Tags:
 

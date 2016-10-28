@@ -6,12 +6,12 @@
 		Type: AWS::EC2::Instance
 		Properties:
 			AvailabilityZone: ${2: availabilityZoneRef}
-			DisableApiTermination: ${3:'false'}
-			EbsOptimized: ${4: 'false'}
+			DisableApiTermination: ${3:false}
+			EbsOptimized: ${4: false}
 			ImageId: ${5:ami-123456}
 			InstanceType: ${6:t2.micro}
 			KeyName: ${7:keyRef}
-			Monitoring: ${8:'false'}
+			Monitoring: ${8:false}
 			SecurityGroupIds:
 				- ${9:securityGroupRef}
 			SubnetId: ${10:subnetRef}

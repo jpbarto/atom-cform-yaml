@@ -1,4 +1,11 @@
-'.source.json':
+'.source.yaml':
   'route-table':
     'prefix': 'route-table'
-    'body': '"${1:routeTableName}": {\n  "Type": "AWS::EC2::RouteTable",\n  "Properties": {\n    "VpcId": ${2:"--"},\n    "Tags": [${3:"--"}]\n  }\n}'
+    'body': """
+${1:table}:
+	Type: AWS::EC2::RouteTable
+	Properties:
+		VpcId: ${2:vpcRef}
+		Tags:
+			- ${3:tag}
+    """

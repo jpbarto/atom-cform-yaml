@@ -1,4 +1,13 @@
-'.source.json':
+'.source.yaml':
   'rds-dbparametergroup':
     'prefix': 'rds-dbparametergroup'
-    'body': '"${1:rdsDBParameterGroup}": {\n   "Type": "AWS::RDS::DBParameterGroup",\n   "Properties": {\n      "Description": "${2}",\n      "Family": "${3}",\n      "Parameters": {${4}},\n      "Tags": [ ${5} ]\n   }\n}'
+    'body': """
+${1:paramGroup}:
+	Type: AWS::RDS::DBParameterGroup
+	Properties:
+		Description: ${2:description}
+		Family: ${3:family}
+		Parameters: ${4:parameters}
+		Tags:
+			- ${5:tag}
+    """

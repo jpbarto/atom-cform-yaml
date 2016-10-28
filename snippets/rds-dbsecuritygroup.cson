@@ -1,4 +1,14 @@
-'.source.json':
+'.source.yaml':
   'rds-dbsecuritygroup':
     'prefix': 'rds-dbsecuritygroup'
-    'body': '"${1:rdsDBSecurityGroup}": {\n   "Type": "AWS::RDS::DBSecurityGroup",\n   "Properties": {\n      "EC2VpcId": { ${2} },\n      "DBSecurityGroupIngress": [ ${3} ],\n      "GroupDescription": "${4}",\n      "Tags": [ ${5} ]\n   }\n}'
+    'body': """
+${1:securityGroup}:
+	Type: AWS::RDS::DBSecurityGroup
+	Properties:
+		EC2VpcId: ${2:vpcRef}
+		DBSecurityGroupIngress:
+			- ${3:rds-dbsecuritygroupingress}
+		GroupDescription: ${4:description}
+		Tags:
+			- ${5:tag}
+    """
