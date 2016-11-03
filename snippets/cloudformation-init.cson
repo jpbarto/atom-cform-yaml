@@ -1,4 +1,24 @@
-'.source.json':
+'.source.yaml':
   'cloudformation-init':
     'prefix': 'cloudformation-init'
-    'body': '"AWS::CloudFormation::Init": {\n  "config": {\n    "packages": {\n    },\n    "groups": {\n    },\n    "users": {\n    },\n    "sources": {\n    },\n    "files": {\n    },\n    "commands": {\n    },\n    "services": {\n    }\n  }\n}'
+    'body': """
+AWS::CloudFormation::Init:
+	configSets:
+		${1:set}:
+			- ${2:config}
+	${3:config}:
+		packages:
+			${4:package}
+		groups:
+			${5:group}
+		users:
+			${6:user}
+		sources:
+			${7:source}
+		files:
+			${8:file}
+		commands:
+			${9:command}
+		services:
+			${10:service}
+    """

@@ -1,4 +1,13 @@
-'.source.json':
+'.source.yaml':
   'route53-hostedzone':
     'prefix': 'route53-hostedzone'
-    'body': '"${1}": {\n\t"Type": "AWS::Route53::HostedZone",\n\t"Properties": {\n\t\t"Name": "{$2}",\n\t\t"VPCs": "{$3}",\n\t\t"HostedZoneConfig": {{$4}},\n\t\t"HostedZoneTags": [{$5}]\n\t}\n}'
+    'body': """
+${1:zone}:
+	Type: AWS::Route53::HostedZone
+	Properties:
+		Name: ${2:name}
+		VPCs: ${3:vpcs}
+		HostedZoneConfig: ${4:zoneConfig}
+		HostedZoneTags:
+			- ${5:tag}
+    """

@@ -1,4 +1,17 @@
-'.source.json':
+'.source.yaml':
   'cloudformation-authentication':
     'prefix': 'cloudformation-authentication'
-    'body': '"AWS::CloudFormation::Authentication": {\n  "${1:AccessCreds}": {\n    "type": "${2}",\n    "buckets": [ "${3}" ],\n    "roleName": "${4}",\n    "accessKeyId": "${5}",\n    "secretKey": "${6}",\n    "uris": [ "${7}" ],\n    "username": "${8}",\n    "password": "${9}"\n  }\n}'
+    'body': """
+AWS::CloudFormation::Authentication:
+	${1:name}:
+		accessKeyId: ${2:refAccessKey}
+		buckets:
+			- ${3:bucket}
+		password: ${4:password}
+		secretKey: ${5:key}
+		type: ${6:type}
+		uris:
+			- ${7:uri}
+		username: ${8:user}
+		roleName: ${9:role}
+    """

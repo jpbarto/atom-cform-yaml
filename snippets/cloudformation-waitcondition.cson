@@ -1,4 +1,11 @@
-'.source.json':
+'.source.yaml':
   'cloudformation-waitcondition':
     'prefix': 'cloudformation-waitcondition'
-    'body': '"${1:waitCondition}": {\n   "Type": "AWS::CloudFormation::WaitCondition",\n   "Properties": {\n      "Count": "${2}",\n      "Handle": "${3}",\n      "Timeout": "${4}"\n   }\n}'
+    'body': """
+${1:condition}:
+	Type: AWS::CloudFormation::WaitCondition
+	Properties:
+		Count: ${2:countRef}
+		Handle: ${3:handleRef}
+		Timeout: ${4:30} # seconds
+    """

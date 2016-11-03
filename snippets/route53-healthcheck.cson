@@ -1,4 +1,18 @@
-'.source.json':
+'.source.yaml':
   'route53-healthcheck':
     'prefix': 'route53-healthcheck'
-    'body': '"${1:route53HealthCheck}": {\n  "Type": "AWS::Route53::HealthCheck",\n  "Properties": {\n    "HealthCheckConfig": { ${2} },\n    "HealthCheckTags": [ ${3} ]\n  }\n}'
+    'body': """
+${1:healthCheck}:
+	Type: AWS::Route53::HealthCheck
+	Properties:
+		HealthCheckConfig:
+			IPAddress: ${2:0.0.0.0}
+			Port: ${3:80}
+			Type: ${4:HTTP}
+			ResourcePath: ${5:/index.html}
+			FullyQualifiedDomainName: ${6:example.com}
+			RequestInterval: ${7:30}
+			FailureThreshold: ${8:3}
+		HealthCheckTags:
+			- ${9:tag}
+    """

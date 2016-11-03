@@ -1,4 +1,22 @@
-'.source.json':
+'.source.yaml':
   'launch-config':
     'prefix': 'launch-config'
-    'body': '"${1:launchConfigName}": {\n    "Type" : "AWS::AutoScaling::LaunchConfiguration",\n    "Properties" : {\n        "IamInstanceProfile" : ${2:"--"},\n        "ImageId" : ${3:"--"},\n        "InstanceMonitoring" : ${4:"--"},\n        "InstanceType" : "${5:--}",\n        "KeyName" : ${6:"--"},\n        "SecurityGroups" : [ ${7:"--"} ],\n        "UserData" : {\n            "Fn::Base64": \n                {   "Fn::Join": [\n                        "",\n                        [\n                            "#!/bin/bash -ex",\n                            "${8:-}"\n                        ]\n                    \n                    ]                 \n                }\n        }\n    }\n}'
+    'body': """
+${1:config}:
+	Type: AWS::AutoScaling::LaunchConfiguration
+	Properties:
+		AssociatePublicIpAddress: ${2:false}
+		BlockDeviceMappings:
+			- ${3:mapping}
+		EbsOptimized: ${4:false}
+		IamInstanceProfile: ${5:profile}
+		ImageId: ${6:ami}
+		InstanceMonitoring: ${4:true}
+		InstanceType: ${5:type}
+		KeyName: ${6:key}
+		SecurityGroups:
+			- ${7:groupRef}
+		UserData:
+			Fn::Base64: |
+				#!/bin/sh
+    """
