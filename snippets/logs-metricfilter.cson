@@ -1,4 +1,14 @@
-'.source.json':
+'.source.yaml':
   'logs-metricfilter':
     'prefix': 'logs-metricfilter'
-    'body': '"${1:logsMetricFilter}": {\n  "Type": "AWS::Logs::MetricFilter",    \n  "Properties": {\n    "FilterPattern": [ "${2}" ],\n    "LogGroupName": "${3}",\n    "MetricTransformations": [ ${4} ]\n  }\n}'
+    'body': """
+${1:filter}:
+	Type: AWS::Logs::MetricFilter
+	Properties:
+		FilterPattern: ${2:pattern}
+		LogGroupName: ${3:name}
+		MetricTransformations:
+			- MetricValue: ${4:value}
+			  MetricNamespace: ${5:namespace}
+			  MetricName: ${6:name}
+    """

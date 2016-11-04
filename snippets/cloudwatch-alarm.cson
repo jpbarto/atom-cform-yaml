@@ -1,4 +1,27 @@
-'.source.json':
+'.source.yaml':
   'cloudwatch-alarm':
     'prefix': 'cloudwatch-alarm'
-    'body': '"${1:cloudWatchAlarm}": {\n   "Type": "AWS::CloudWatch::Alarm",\n   "Properties": {\n      "MetricName": "${2}",\n      "Namespace": "${3}",\n      "ComparisonOperator": "${4}",\n      "EvaluationPeriods": "${5}",\n      "Period": "${6}",\n      "Statistic": "${7}",\n      "Threshold": "${8}",\n      "ActionsEnabled": "${9:true | false}",\n      "AlarmActions": [ "${10}" ],\n      "AlarmDescription": "${11}",\n      "AlarmName": "${12}",\n      "Dimensions": [ "${13}" ],\n      "InsufficientDataActions": [ "${14}" ],\n      "OKActions": [ "${15}" ],\n      "Unit": "${16}"\n   }\n}'
+    'body': """
+${1:alarm}:
+	Type: AWS::CloudWatch::Alarm
+	Properties:
+		MetricName: ${2:name}
+		Namespace: ${3:namespace}
+		ComparisonOperator: ${4:operator}
+		EvaluationPeriods: ${5:periods}
+		Period: ${6:period}
+		Statistic: ${7:statistic}
+		Threshold: ${8:threshold}
+		ActionsEnabled: ${9:true}
+		AlarmActions:
+			- ${10:action}
+		AlarmDescription: ${11:description}
+		AlarmName: ${12:name}
+		Dimensions:
+			- ${13:dimension}
+		InsufficientDataActions:
+			- ${14:action}
+		OKActions:
+			- ${15:action}
+		Unit: ${16:unit}
+    """

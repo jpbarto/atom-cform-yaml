@@ -1,4 +1,12 @@
-'.source.json':
+'.source.yaml':
   'kinesis-stream':
     'prefix': 'kinesis-stream'
-    'body': '"${1:kinesisStream}": {\n   "Type": "AWS::Kinesis::Stream",\n   "Properties": {\n      "ShardCount": "${2}"\n   }\n}'
+    'body': """
+${1:stream}:
+	Type: AWS::Kinesis::Stream
+	Properties:
+		Name: ${2:name}
+		ShardCount: ${3:5}
+		Tags:
+			- ${4:tag}
+    """

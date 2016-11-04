@@ -1,4 +1,30 @@
-'.source.json':
+'.source.yaml':
   'cloudfront-distribution':
     'prefix': 'cloudfront-distribution'
-    'body': '"${1:cloudfrontDistribution}": {\n   "Type": "AWS::CloudFront::Distribution",\n   "Properties": {\n      "DistributionConfig": ${2}\n   }\n}'
+    'body': """
+${1:distribution}:
+	Type: AWS::CloudFront::Distribution
+	Properties:
+		Aliases:
+			- ${2:alias}
+		CacheBehaviors:
+			CacheBehavior
+		Comment: ${3:comment}
+		CustomErrorResponses:
+			${4:errorResponse}
+		DefaultCacheBehavior:
+			${5:cacheBehavior}
+		DefaultRootObject: ${6:/}
+		Enabled: ${7:true}
+		HttpVersion: ${8:http1.1}
+		Logging:
+			${9:logging}
+		Origins:
+			- ${10:origin}
+		PriceClass: ${7:class}
+		Restrictions:
+			${11:restriction}
+		ViewerCertificate:
+			${12:certs}
+		WebACLId: ${13:aclId}
+    """

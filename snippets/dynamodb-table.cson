@@ -1,4 +1,39 @@
-'.source.json':
+'.source.yaml':
   'dynamodb-table':
     'prefix': 'dynamodb-table'
-    'body': '"${1:dynamodbTable}": {\n   "Type": "AWS::DynamoDB::Table",\n   "Properties": {\n      "AttributeDefinitions": [ ${2} ],\n      "GlobalSecondaryIndexes": [ ${3} ],\n      "KeySchema": [ ${4} ],\n      "LocalSecondaryIndexes": [ ${5} ],\n      "ProvisionedThroughput": { ${6} },\n      "TableName": "${7}"\n   }\n}'
+    'body': """
+${1:table}:
+	Type: AWS::DynamoDB::Table
+	Properties:
+		AttributeDefinitions:
+			- AttributeName: ${2:attribute}
+			  AttributeType: ${3:S} 		# S | N | B
+		KeySchema:
+			- AttributeName: ${4:attribute}
+			  KeyType: ${5:HASH} # HASH | RANGE
+		ProvisionedThroughput:
+			ReadCapacityUnits: ${6:5} 		# per second
+			WriteCapacityUnits: ${7:5}		# per second
+		TableName: ${8:name}
+		GlobalSecondaryIndexes:
+			- ${9:index}:
+			  KeySchema:
+				- AttributeName: ${10:attribute}
+				  KeyType: ${11:HASH} 		# HASH | RANGE
+			  Projection:
+				NonKeyAttributes:
+					- ${12:attribute}
+				ProjectionType: ${13:INCLUDE}
+			  ProvisionedThroughput:
+				ReadCapacityUnits: ${14:5} 	# per second
+				WriteCapacityUnits: ${15:5}	# per second
+		LocalSecondaryIndexes:
+			- ${16:index}:
+			  KeySchema:
+				- AttributeName: ${17:attribute}
+				  KeyType: ${18:HASH} 		# HASH | RANGE
+			  Projection:
+				NonKeyAttributes:
+					- ${19:attribute}
+				ProjectionType: ${20:INCLUDE}
+    """

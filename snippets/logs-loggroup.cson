@@ -1,4 +1,10 @@
-'.source.json':
+'.source.yaml':
   'logs-loggroup':
     'prefix': 'logs-loggroup'
-    'body': '"${1:logLogGroup}": {\n  "Type": "AWS::Logs::LogGroup",\n  "Properties": {\n    "RetentionInDays": "${2}"\n  }\n}'
+    'body': """
+${1:group}:
+	Type: AWS::Logs::LogGroup
+	Properties:
+		LogGroupName: ${2:name}
+		RetentionInDays: ${3:10}
+    """
