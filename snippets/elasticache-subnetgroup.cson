@@ -1,4 +1,12 @@
-'.source.json':
+'.source.yaml':
   'elasticache-subnetgroup':
     'prefix': 'elasticache-subnetgroup'
-    'body': '"${1:elasticacheSubnetGroup}": {\n    "Type": "AWS::ElastiCache::SubnetGroup",\n    "Properties": {\n        "Description": "${2}",\n        "SubnetIds": [ "${3}" ]\n    }\n}'
+    'body': """
+${1:subnetGroup}:
+	Type: AWS::ElastiCache::SubnetGroup
+	Properties:
+		CacheSubnetGroupName: ${2:name}
+		Description: ${3:description}
+		SubnetIds:
+			- ${4:subnetRef}
+    """

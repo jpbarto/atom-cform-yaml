@@ -1,4 +1,9 @@
-'.source.json':
+'.source.yaml':
   'elasticache-securitygroup':
     'prefix': 'elasticache-securitygroup'
-    'body': '"${1:elasticacheSecurityGroup}": {\n  "Type": "AWS::ElastiCache::SecurityGroup",\n  "Properties":\n  {\n    "Description": "${2}"\n  }\n}'
+    'body': """
+${1:securityGroup}:
+	Type: AWS::ElastiCache::SecurityGroup
+	Properties:
+		Description: ${2:description}
+    """

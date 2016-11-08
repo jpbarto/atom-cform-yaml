@@ -1,4 +1,13 @@
-'.source.json':
+'.source.yaml':
   'elasticache-parametergroup':
     'prefix': 'elasticache-parametergroup'
-    'body': '"${1:elastiicacheParameterGroup}": {\n   "Type": "AWS::ElastiCache::ParameterGroup",\n   "Properties": {\n      "CacheParameterGroupFamily": "${2}",\n      "Description": "${3}",\n      "Properties": { "${4}": "${5}" }\n   }\n}'
+    'body': """
+${1:paramGroup}:
+	Type: AWS::ElastiCache::ParameterGroup
+	Properties:
+		CacheParameterGroupFamily: ${2:family}
+		Description: ${3:description}
+		Properties:
+			cas_disabled: ${4:1}
+			${5:property}: ${6:value}
+    """
