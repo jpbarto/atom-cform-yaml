@@ -1,4 +1,0 @@
-'.source.yaml':
-  'Fn::Sub':
-    'prefix': 'sub'
-    'body': '"Fn::Sub": ${1:-}'

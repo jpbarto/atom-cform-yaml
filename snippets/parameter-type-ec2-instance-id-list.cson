@@ -1,4 +1,0 @@
-'.source.yaml':
-  'parameter-type-ec2-instance-id-list':
-    'prefix': 'parameter-type-ec2-instance-id-list'
-    'body': 'List<AWS::EC2::Instance::Id>'

@@ -1,4 +1,0 @@
-'.source.yaml':
-  'parameter-type-vpc-id-list':
-    'prefix': 'parameter-type-vpc-id-list'
-    'body': 'List<AWS::EC2::VPC::Id>'

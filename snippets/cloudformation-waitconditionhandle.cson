@@ -1,8 +1,0 @@
-'.source.yaml':
-  'cloudformation-waitconditionhandle':
-    'prefix': 'cloudformation-waitconditionhandle'
-    'body': """
-${1:handle}:
-	Type: AWS::CloudFormation::WaitConditionHandle
-	Properties:
-    """

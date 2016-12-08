@@ -1,9 +1,0 @@
-'.source.yaml':
-  'elasticache-securitygroup':
-    'prefix': 'elasticache-securitygroup'
-    'body': """
-${1:securityGroup}:
-	Type: AWS::ElastiCache::SecurityGroup
-	Properties:
-		Description: ${2:description}
-    """

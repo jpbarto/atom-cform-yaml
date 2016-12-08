@@ -1,4 +1,0 @@
-'.source.yaml':
-  'parameter-type-ec2-image-id-list':
-    'prefix': 'parameter-type-ec2-image-id-list'
-    'body': 'List<AWS::EC2::Image::Id>'
