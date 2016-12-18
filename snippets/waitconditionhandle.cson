@@ -2,7 +2,7 @@
   'waitconditionhandle':
       'prefix': 'waitconditionhandle'
       'body':"""
-          ${1:waitconditionhandle_name}:
-              Type: "AWS::CloudFormation::WaitConditionHandle"
-              Properties:
+         ${1:waitconditionhandle_name}:
+         	Type: "AWS::CloudFormation::WaitConditionHandle"
+         	Properties:
 """

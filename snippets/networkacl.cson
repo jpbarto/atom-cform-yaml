@@ -2,10 +2,10 @@
   'networkacl':
       'prefix': 'networkacl'
       'body':"""
-          ${1:networkacl_name}:
-              Type: "AWS::EC2::NetworkAcl"
-              Properties:
-                  Tags:                # optional, list of Tag
-                      - ${2:Tag}
-                  VpcId: ${3:String}     # required
+         ${1:networkacl_name}:
+         	Type: "AWS::EC2::NetworkAcl"
+         	Properties:
+         		Tags:                # optional, list of Tag
+         			- ${2:Tag}
+         		VpcId: ${3:String}     # required
 """

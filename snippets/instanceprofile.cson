@@ -2,10 +2,10 @@
   'instanceprofile':
       'prefix': 'instanceprofile'
       'body':"""
-          ${1:instanceprofile_name}:
-              Type: "AWS::IAM::InstanceProfile"
-              Properties:
-                  Path: ${2:String}     # required
-                  Roles:                # required, list of String
-                      - ${3:String}
+         ${1:instanceprofile_name}:
+         	Type: "AWS::IAM::InstanceProfile"
+         	Properties:
+         		Path: ${2:String}     # required
+         		Roles:                # required, list of String
+         			- ${3:String}
 """

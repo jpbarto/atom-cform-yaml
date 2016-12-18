@@ -2,17 +2,17 @@
   'trail':
       'prefix': 'trail'
       'body':"""
-          ${1:trail_name}:
-              Type: "AWS::CloudTrail::Trail"
-              Properties:
-                  CloudWatchLogsLogGroupArn: ${2:String}     # optional
-                  CloudWatchLogsRoleArn: ${3:String}     # optional
-                  EnableLogFileValidation: ${4:Boolean}     # optional
-                  IncludeGlobalServiceEvents: ${5:Boolean}     # optional
-                  IsLogging: ${6:Boolean}     # required
-                  IsMultiRegionTrail: ${7:Boolean}     # optional
-                  KMSKeyId: ${8:String}     # optional
-                  S3BucketName: ${9:String}     # required
-                  S3KeyPrefix: ${10:String}     # optional
-                  SnsTopicName: ${11:String}     # optional
+         ${1:trail_name}:
+         	Type: "AWS::CloudTrail::Trail"
+         	Properties:
+         		CloudWatchLogsLogGroupArn: ${2:String}     # optional
+         		CloudWatchLogsRoleArn: ${3:String}     # optional
+         		EnableLogFileValidation: ${4:Boolean}     # optional
+         		IncludeGlobalServiceEvents: ${5:Boolean}     # optional
+         		IsLogging: ${6:Boolean}     # required
+         		IsMultiRegionTrail: ${7:Boolean}     # optional
+         		KMSKeyId: ${8:String}     # optional
+         		S3BucketName: ${9:String}     # required
+         		S3KeyPrefix: ${10:String}     # optional
+         		SnsTopicName: ${11:String}     # optional
 """

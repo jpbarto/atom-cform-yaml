@@ -2,11 +2,11 @@
   'subnetgroup':
       'prefix': 'subnetgroup'
       'body':"""
-          ${1:subnetgroup_name}:
-              Type: "AWS::ElastiCache::SubnetGroup"
-              Properties:
-                  CacheSubnetGroupName: ${2:String}     # optional
-                  Description: ${3:String}     # required
-                  SubnetIds:                # required, list of String
-                      - ${4:String}
+         ${1:subnetgroup_name}:
+         	Type: "AWS::ElastiCache::SubnetGroup"
+         	Properties:
+         		CacheSubnetGroupName: ${2:String}     # optional
+         		Description: ${3:String}     # required
+         		SubnetIds:                # required, list of String
+         			- ${4:String}
 """

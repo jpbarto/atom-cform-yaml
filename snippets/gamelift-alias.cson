@@ -2,10 +2,10 @@
   'gamelift-alias':
       'prefix': 'gamelift-alias'
       'body':"""
-          ${1:gamelift-alias_name}:
-              Type: "AWS::GameLift::Alias"
-              Properties:
-                  Description: ${2:String}     # optional
-                  Name: ${3:String}     # required
-                  RoutingStrategy: ${4:RoutingStrategy}     # required
+         ${1:gamelift-alias_name}:
+         	Type: "AWS::GameLift::Alias"
+         	Properties:
+         		Description: ${2:String}     # optional
+         		Name: ${3:String}     # required
+         		RoutingStrategy: ${4:RoutingStrategy}     # required
 """

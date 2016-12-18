@@ -2,8 +2,8 @@
   'elasticache-securitygroup':
       'prefix': 'elasticache-securitygroup'
       'body':"""
-          ${1:elasticache-securitygroup_name}:
-              Type: "AWS::ElastiCache::SecurityGroup"
-              Properties:
-                  Description: ${2:String}     # required
+         ${1:elasticache-securitygroup_name}:
+         	Type: "AWS::ElastiCache::SecurityGroup"
+         	Properties:
+         		Description: ${2:String}     # required
 """

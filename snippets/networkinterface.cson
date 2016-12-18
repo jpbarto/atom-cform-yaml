@@ -2,18 +2,18 @@
   'networkinterface':
       'prefix': 'networkinterface'
       'body':"""
-          ${1:networkinterface_name}:
-              Type: "AWS::EC2::NetworkInterface"
-              Properties:
-                  Description: ${2:String}     # optional
-                  GroupSet:                # optional, list of String
-                      - ${3:String}
-                  PrivateIpAddress: ${4:String}     # optional
-                  PrivateIpAddresses:                # optional, list of PrivateIpAddressSpecification
-                      - ${5:PrivateIpAddressSpecification}
-                  SecondaryPrivateIpAddressCount: ${6:Integer}     # optional
-                  SourceDestCheck: ${7:Boolean}     # optional
-                  SubnetId: ${8:String}     # required
-                  Tags:                # optional, list of Tag
-                      - ${9:Tag}
+         ${1:networkinterface_name}:
+         	Type: "AWS::EC2::NetworkInterface"
+         	Properties:
+         		Description: ${2:String}     # optional
+         		GroupSet:                # optional, list of String
+         			- ${3:String}
+         		PrivateIpAddress: ${4:String}     # optional
+         		PrivateIpAddresses:                # optional, list of PrivateIpAddressSpecification
+         			- ${5:PrivateIpAddressSpecification}
+         		SecondaryPrivateIpAddressCount: ${6:Integer}     # optional
+         		SourceDestCheck: ${7:Boolean}     # optional
+         		SubnetId: ${8:String}     # required
+         		Tags:                # optional, list of Tag
+         			- ${9:Tag}
 """

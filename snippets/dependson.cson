@@ -1,4 +1,0 @@
-'.source.yaml':
-  'dependson':
-    'prefix': 'dependson'
-    'body': 'DependsOn: ${1:-}'

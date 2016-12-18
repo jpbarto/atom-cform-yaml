@@ -2,8 +2,8 @@
   'clustersecuritygroup':
       'prefix': 'clustersecuritygroup'
       'body':"""
-          ${1:clustersecuritygroup_name}:
-              Type: "AWS::Redshift::ClusterSecurityGroup"
-              Properties:
-                  Description: ${2:String}     # required
+         ${1:clustersecuritygroup_name}:
+         	Type: "AWS::Redshift::ClusterSecurityGroup"
+         	Properties:
+         		Description: ${2:String}     # required
 """

@@ -2,12 +2,12 @@
   'webacl':
       'prefix': 'webacl'
       'body':"""
-          ${1:webacl_name}:
-              Type: "AWS::WAF::WebACL"
-              Properties:
-                  DefaultAction: ${2:WafAction}     # required
-                  MetricName: ${3:String}     # required
-                  Name: ${4:String}     # required
-                  Rules:                # optional, list of ActivatedRule
-                      - ${5:ActivatedRule}
+         ${1:webacl_name}:
+         	Type: "AWS::WAF::WebACL"
+         	Properties:
+         		DefaultAction: ${2:WafAction}     # required
+         		MetricName: ${3:String}     # required
+         		Name: ${4:String}     # required
+         		Rules:                # optional, list of ActivatedRule
+         			- ${5:ActivatedRule}
 """

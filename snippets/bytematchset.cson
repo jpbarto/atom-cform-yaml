@@ -2,10 +2,10 @@
   'bytematchset':
       'prefix': 'bytematchset'
       'body':"""
-          ${1:bytematchset_name}:
-              Type: "AWS::WAF::ByteMatchSet"
-              Properties:
-                  ByteMatchTuples:                # optional, list of ByteMatchTuple
-                      - ${2:ByteMatchTuple}
-                  Name: ${3:String}     # required
+         ${1:bytematchset_name}:
+         	Type: "AWS::WAF::ByteMatchSet"
+         	Properties:
+         		ByteMatchTuples:                # optional, list of ByteMatchTuple
+         			- ${2:ByteMatchTuple}
+         		Name: ${3:String}     # required
 """

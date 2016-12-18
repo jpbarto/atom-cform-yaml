@@ -2,30 +2,30 @@
   'autoscalinggroup':
       'prefix': 'autoscalinggroup'
       'body':"""
-          ${1:autoscalinggroup_name}:
-              Type: "AWS::AutoScaling::AutoScalingGroup"
-              Properties:
-                  AsTags:                # optional, list of TagProperty
-                      - ${2:TagProperty}
-                  AvailabilityZones:                # optional, list of String
-                      - ${3:String}
-                  Cooldown: ${4:String}     # optional
-                  DesiredCapacity: ${5:String}     # optional
-                  HealthCheckGracePeriod: ${6:Integer}     # optional
-                  HealthCheckType: ${7:String}     # optional
-                  InstanceId: ${8:String}     # optional
-                  LaunchConfigurationName: ${9:String}     # optional
-                  LoadBalancerNames:                # optional, list of String
-                      - ${10:String}
-                  MaxSize: ${11:String}     # required
-                  MetricsCollection: ${12:MetricsCollection}     # optional
-                  MinSize: ${13:String}     # required
-                  NotificationConfigurations: ${14:NotificationConfigurations}     # optional
-                  PlacementGroup: ${15:String}     # optional
-                  TargetGroupARNs:                # optional, list of String
-                      - ${16:String}
-                  TerminationPolicies:                # optional, list of String
-                      - ${17:String}
-                  VPCZoneIdentifier:                # optional, list of String
-                      - ${18:String}
+         ${1:autoscalinggroup_name}:
+         	Type: "AWS::AutoScaling::AutoScalingGroup"
+         	Properties:
+         		AsTags:                # optional, list of TagProperty
+         			- ${2:TagProperty}
+         		AvailabilityZones:                # optional, list of String
+         			- ${3:String}
+         		Cooldown: ${4:String}     # optional
+         		DesiredCapacity: ${5:String}     # optional
+         		HealthCheckGracePeriod: ${6:Integer}     # optional
+         		HealthCheckType: ${7:String}     # optional
+         		InstanceId: ${8:String}     # optional
+         		LaunchConfigurationName: ${9:String}     # optional
+         		LoadBalancerNames:                # optional, list of String
+         			- ${10:String}
+         		MaxSize: ${11:String}     # required
+         		MetricsCollection: ${12:MetricsCollection}     # optional
+         		MinSize: ${13:String}     # required
+         		NotificationConfigurations: ${14:NotificationConfigurations}     # optional
+         		PlacementGroup: ${15:String}     # optional
+         		TargetGroupARNs:                # optional, list of String
+         			- ${16:String}
+         		TerminationPolicies:                # optional, list of String
+         			- ${17:String}
+         		VPCZoneIdentifier:                # optional, list of String
+         			- ${18:String}
 """

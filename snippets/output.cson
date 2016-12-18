@@ -1,8 +1,0 @@
-'.source.yaml':
-  'output':
-    'prefix': 'output'
-    'body': """
-	${1:name}:
-		Description: ${2:-}
-		Value: ${3:-}
-    """

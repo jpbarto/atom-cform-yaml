@@ -2,14 +2,14 @@
   'certificatemanager-certificate':
       'prefix': 'certificatemanager-certificate'
       'body':"""
-          ${1:certificatemanager-certificate_name}:
-              Type: "AWS::CertificateManager::Certificate"
-              Properties:
-                  DomainName: ${2:String}     # required
-                  DomainValidationOptions:                # optional, list of DomainValidationOption
-                      - ${3:DomainValidationOption}
-                  SubjectAlternativeNames:                # optional, list of String
-                      - ${4:String}
-                  Tags:                # optional, list of Tag
-                      - ${5:Tag}
+         ${1:certificatemanager-certificate_name}:
+         	Type: "AWS::CertificateManager::Certificate"
+         	Properties:
+         		DomainName: ${2:String}     # required
+         		DomainValidationOptions:                # optional, list of DomainValidationOption
+         			- ${3:DomainValidationOption}
+         		SubjectAlternativeNames:                # optional, list of String
+         			- ${4:String}
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
 """

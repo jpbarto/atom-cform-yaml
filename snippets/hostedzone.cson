@@ -2,13 +2,13 @@
   'hostedzone':
       'prefix': 'hostedzone'
       'body':"""
-          ${1:hostedzone_name}:
-              Type: "AWS::Route53::HostedZone"
-              Properties:
-                  HostedZoneConfig: ${2:HostedZoneConfig}     # optional
-                  HostedZoneTags:                # optional, list of HostedZoneTag
-                      - ${3:HostedZoneTag}
-                  Name: ${4:String}     # required
-                  VPCs:                # optional, list of VPC
-                      - ${5:VPC}
+         ${1:hostedzone_name}:
+         	Type: "AWS::Route53::HostedZone"
+         	Properties:
+         		HostedZoneConfig: ${2:HostedZoneConfig}     # optional
+         		HostedZoneTags:                # optional, list of HostedZoneTag
+         			- ${3:HostedZoneTag}
+         		Name: ${4:String}     # required
+         		VPCs:                # optional, list of VPC
+         			- ${5:VPC}
 """

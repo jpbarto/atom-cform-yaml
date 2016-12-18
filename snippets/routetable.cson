@@ -2,10 +2,10 @@
   'routetable':
       'prefix': 'routetable'
       'body':"""
-          ${1:routetable_name}:
-              Type: "AWS::EC2::RouteTable"
-              Properties:
-                  Tags:                # optional, list of Tag
-                      - ${2:Tag}
-                  VpcId: ${3:String}     # required
+         ${1:routetable_name}:
+         	Type: "AWS::EC2::RouteTable"
+         	Properties:
+         		Tags:                # optional, list of Tag
+         			- ${2:Tag}
+         		VpcId: ${3:String}     # required
 """

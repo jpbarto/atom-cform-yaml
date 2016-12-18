@@ -2,10 +2,10 @@
   'topicpolicy':
       'prefix': 'topicpolicy'
       'body':"""
-          ${1:topicpolicy_name}:
-              Type: "AWS::SNS::TopicPolicy"
-              Properties:
-                  PolicyDocument: ${2:Json}     # required
-                  Topics:                # required, list of String
-                      - ${3:String}
+         ${1:topicpolicy_name}:
+         	Type: "AWS::SNS::TopicPolicy"
+         	Properties:
+         		PolicyDocument: ${2:Json}     # required
+         		Topics:                # required, list of String
+         			- ${3:String}
 """

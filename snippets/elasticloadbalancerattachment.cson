@@ -2,9 +2,9 @@
   'elasticloadbalancerattachment':
       'prefix': 'elasticloadbalancerattachment'
       'body':"""
-          ${1:elasticloadbalancerattachment_name}:
-              Type: "AWS::OpsWorks::ElasticLoadBalancerAttachment"
-              Properties:
-                  ElasticLoadBalancerName: ${2:String}     # required
-                  LayerId: ${3:String}     # required
+         ${1:elasticloadbalancerattachment_name}:
+         	Type: "AWS::OpsWorks::ElasticLoadBalancerAttachment"
+         	Properties:
+         		ElasticLoadBalancerName: ${2:String}     # required
+         		LayerId: ${3:String}     # required
 """

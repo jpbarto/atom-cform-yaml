@@ -2,8 +2,8 @@
   'codedeploy-application':
       'prefix': 'codedeploy-application'
       'body':"""
-          ${1:codedeploy-application_name}:
-              Type: "AWS::CodeDeploy::Application"
-              Properties:
-                  ApplicationName: ${2:String}     # optional
+         ${1:codedeploy-application_name}:
+         	Type: "AWS::CodeDeploy::Application"
+         	Properties:
+         		ApplicationName: ${2:String}     # optional
 """

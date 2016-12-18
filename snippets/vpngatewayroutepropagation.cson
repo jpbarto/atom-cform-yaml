@@ -2,10 +2,10 @@
   'vpngatewayroutepropagation':
       'prefix': 'vpngatewayroutepropagation'
       'body':"""
-          ${1:vpngatewayroutepropagation_name}:
-              Type: "AWS::EC2::VPNGatewayRoutePropagation"
-              Properties:
-                  RouteTableIds:                # required, list of String
-                      - ${2:String}
-                  VpnGatewayId: ${3:String}     # required
+         ${1:vpngatewayroutepropagation_name}:
+         	Type: "AWS::EC2::VPNGatewayRoutePropagation"
+         	Properties:
+         		RouteTableIds:                # required, list of String
+         			- ${2:String}
+         		VpnGatewayId: ${3:String}     # required
 """

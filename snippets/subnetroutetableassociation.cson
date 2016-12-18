@@ -2,9 +2,9 @@
   'subnetroutetableassociation':
       'prefix': 'subnetroutetableassociation'
       'body':"""
-          ${1:subnetroutetableassociation_name}:
-              Type: "AWS::EC2::SubnetRouteTableAssociation"
-              Properties:
-                  RouteTableId: ${2:String}     # required
-                  SubnetId: ${3:String}     # optional
+         ${1:subnetroutetableassociation_name}:
+         	Type: "AWS::EC2::SubnetRouteTableAssociation"
+         	Properties:
+         		RouteTableId: ${2:String}     # required
+         		SubnetId: ${3:String}     # optional
 """

@@ -2,10 +2,10 @@
   'resource':
       'prefix': 'resource'
       'body':"""
-          ${1:resource_name}:
-              Type: "AWS::ApiGateway::Resource"
-              Properties:
-                  ParentId: ${2:String}     # required
-                  PathPart: ${3:String}     # required
-                  RestApiId: ${4:String}     # required
+         ${1:resource_name}:
+         	Type: "AWS::ApiGateway::Resource"
+         	Properties:
+         		ParentId: ${2:String}     # required
+         		PathPart: ${3:String}     # required
+         		RestApiId: ${4:String}     # required
 """

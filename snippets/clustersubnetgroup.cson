@@ -2,10 +2,10 @@
   'clustersubnetgroup':
       'prefix': 'clustersubnetgroup'
       'body':"""
-          ${1:clustersubnetgroup_name}:
-              Type: "AWS::Redshift::ClusterSubnetGroup"
-              Properties:
-                  Description: ${2:String}     # required
-                  SubnetIds:                # required, list of String
-                      - ${3:String}
+         ${1:clustersubnetgroup_name}:
+         	Type: "AWS::Redshift::ClusterSubnetGroup"
+         	Properties:
+         		Description: ${2:String}     # required
+         		SubnetIds:                # required, list of String
+         			- ${3:String}
 """

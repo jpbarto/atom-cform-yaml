@@ -2,13 +2,13 @@
   'usageplan':
       'prefix': 'usageplan'
       'body':"""
-          ${1:usageplan_name}:
-              Type: "AWS::ApiGateway::UsagePlan"
-              Properties:
-                  ApiStages:                # optional, list of ApiStage
-                      - ${2:ApiStage}
-                  Description: ${3:String}     # optional
-                  Quota: ${4:QuotaSettings}     # optional
-                  Throttle: ${5:ThrottleSettings}     # optional
-                  UsagePlanName: ${6:String}     # optional
+         ${1:usageplan_name}:
+         	Type: "AWS::ApiGateway::UsagePlan"
+         	Properties:
+         		ApiStages:                # optional, list of ApiStage
+         			- ${2:ApiStage}
+         		Description: ${3:String}     # optional
+         		Quota: ${4:QuotaSettings}     # optional
+         		Throttle: ${5:ThrottleSettings}     # optional
+         		UsagePlanName: ${6:String}     # optional
 """

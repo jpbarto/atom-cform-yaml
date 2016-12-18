@@ -1,4 +1,4 @@
 '.source.yaml':
   'Fn::Join':
     'prefix': 'join'
-    'body': '"Fn::Join": ["", [ ${1:"prefix"}, ${2:"suffix"} ]]'
+    'body': 'Fn::Join: ["", [ ${1:"prefix"}, ${2:"suffix"} ]]'

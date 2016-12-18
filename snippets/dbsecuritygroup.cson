@@ -2,13 +2,13 @@
   'dbsecuritygroup':
       'prefix': 'dbsecuritygroup'
       'body':"""
-          ${1:dbsecuritygroup_name}:
-              Type: "AWS::RDS::DBSecurityGroup"
-              Properties:
-                  DBSecurityGroupIngress:                # required, list of Ingress
-                      - ${2:Ingress}
-                  EC2VpcId: ${3:String}     # optional
-                  GroupDescription: ${4:String}     # required
-                  Tags:                # optional, list of Tag
-                      - ${5:Tag}
+         ${1:dbsecuritygroup_name}:
+         	Type: "AWS::RDS::DBSecurityGroup"
+         	Properties:
+         		DBSecurityGroupIngress:                # required, list of Ingress
+         			- ${2:Ingress}
+         		EC2VpcId: ${3:String}     # optional
+         		GroupDescription: ${4:String}     # required
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
 """

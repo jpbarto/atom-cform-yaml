@@ -2,13 +2,13 @@
   'microsoftad':
       'prefix': 'microsoftad'
       'body':"""
-          ${1:microsoftad_name}:
-              Type: "AWS::DirectoryService::MicrosoftAD"
-              Properties:
-                  CreateAlias: ${2:Boolean}     # optional
-                  EnableSso: ${3:Boolean}     # optional
-                  Name: ${4:String}     # required
-                  Password: ${5:String}     # required
-                  ShortName: ${6:String}     # optional
-                  VpcSettings: ${7:VpcSettings}     # required
+         ${1:microsoftad_name}:
+         	Type: "AWS::DirectoryService::MicrosoftAD"
+         	Properties:
+         		CreateAlias: ${2:Boolean}     # optional
+         		EnableSso: ${3:Boolean}     # optional
+         		Name: ${4:String}     # required
+         		Password: ${5:String}     # required
+         		ShortName: ${6:String}     # optional
+         		VpcSettings: ${7:VpcSettings}     # required
 """

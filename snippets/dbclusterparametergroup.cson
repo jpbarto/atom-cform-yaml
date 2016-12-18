@@ -2,12 +2,12 @@
   'dbclusterparametergroup':
       'prefix': 'dbclusterparametergroup'
       'body':"""
-          ${1:dbclusterparametergroup_name}:
-              Type: "AWS::RDS::DBClusterParameterGroup"
-              Properties:
-                  Description: ${2:String}     # required
-                  Family: ${3:String}     # required
-                  Parameters: ${4:Json}     # required
-                  Tags:                # optional, list of Tag
-                      - ${5:Tag}
+         ${1:dbclusterparametergroup_name}:
+         	Type: "AWS::RDS::DBClusterParameterGroup"
+         	Properties:
+         		Description: ${2:String}     # required
+         		Family: ${3:String}     # required
+         		Parameters: ${4:Json}     # required
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
 """

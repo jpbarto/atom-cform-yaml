@@ -2,14 +2,14 @@
   'configurationtemplate':
       'prefix': 'configurationtemplate'
       'body':"""
-          ${1:configurationtemplate_name}:
-              Type: "AWS::ElasticBeanstalk::ConfigurationTemplate"
-              Properties:
-                  ApplicationName: ${2:String}     # required
-                  Description: ${3:String}     # optional
-                  EnvironmentId: ${4:String}     # optional
-                  OptionSettings:                # optional, list of ConfigurationOptionSetting
-                      - ${5:ConfigurationOptionSetting}
-                  SolutionStackName: ${6:String}     # optional
-                  SourceConfiguration: ${7:SourceConfiguration}     # optional
+         ${1:configurationtemplate_name}:
+         	Type: "AWS::ElasticBeanstalk::ConfigurationTemplate"
+         	Properties:
+         		ApplicationName: ${2:String}     # required
+         		Description: ${3:String}     # optional
+         		EnvironmentId: ${4:String}     # optional
+         		OptionSettings:                # optional, list of ConfigurationOptionSetting
+         			- ${5:ConfigurationOptionSetting}
+         		SolutionStackName: ${6:String}     # optional
+         		SourceConfiguration: ${7:SourceConfiguration}     # optional
 """

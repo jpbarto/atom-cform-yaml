@@ -2,12 +2,12 @@
   'eipassociation':
       'prefix': 'eipassociation'
       'body':"""
-          ${1:eipassociation_name}:
-              Type: "AWS::EC2::EIPAssociation"
-              Properties:
-                  AllocationId: ${2:String}     # optional
-                  Eip: ${3:String}     # optional
-                  InstanceId: ${4:String}     # optional
-                  NetworkInterfaceId: ${5:String}     # optional
-                  PrivateIpAddress: ${6:String}     # optional
+         ${1:eipassociation_name}:
+         	Type: "AWS::EC2::EIPAssociation"
+         	Properties:
+         		AllocationId: ${2:String}     # optional
+         		Eip: ${3:String}     # optional
+         		InstanceId: ${4:String}     # optional
+         		NetworkInterfaceId: ${5:String}     # optional
+         		PrivateIpAddress: ${6:String}     # optional
 """

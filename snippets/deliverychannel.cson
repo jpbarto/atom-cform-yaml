@@ -2,12 +2,12 @@
   'deliverychannel':
       'prefix': 'deliverychannel'
       'body':"""
-          ${1:deliverychannel_name}:
-              Type: "AWS::Config::DeliveryChannel"
-              Properties:
-                  ConfigSnapshotDeliveryProperties: ${2:ConfigSnapshotDeliveryProperties}     # optional
-                  Name: ${3:String}     # optional
-                  S3BucketName: ${4:String}     # required
-                  S3KeyPrefix: ${5:String}     # optional
-                  SnsTopicARN: ${6:String}     # optional
+         ${1:deliverychannel_name}:
+         	Type: "AWS::Config::DeliveryChannel"
+         	Properties:
+         		ConfigSnapshotDeliveryProperties: ${2:ConfigSnapshotDeliveryProperties}     # optional
+         		Name: ${3:String}     # optional
+         		S3BucketName: ${4:String}     # required
+         		S3KeyPrefix: ${5:String}     # optional
+         		SnsTopicARN: ${6:String}     # optional
 """

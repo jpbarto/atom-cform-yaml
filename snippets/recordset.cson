@@ -2,22 +2,22 @@
   'recordset':
       'prefix': 'recordset'
       'body':"""
-          ${1:recordset_name}:
-              Type: "AWS::Route53::RecordSet"
-              Properties:
-                  AliasTarget: ${2:AliasTarget}     # optional
-                  Comment: ${3:String}     # optional
-                  Failover: ${4:String}     # optional
-                  GeoLocation: ${5:GeoLocation}     # optional
-                  HealthCheckId: ${6:String}     # optional
-                  HostedZoneId: ${7:String}     # optional
-                  HostedZoneName: ${8:String}     # optional
-                  Name: ${9:String}     # required
-                  Region: ${10:String}     # optional
-                  ResourceRecords:                # optional, list of String
-                      - ${11:String}
-                  SetIdentifier: ${12:String}     # optional
-                  TTL: ${13:String}     # optional
-                  Type: ${14:String}     # required
-                  Weight: ${15:Integer}     # optional
+         ${1:recordset_name}:
+         	Type: "AWS::Route53::RecordSet"
+         	Properties:
+         		AliasTarget: ${2:AliasTarget}     # optional
+         		Comment: ${3:String}     # optional
+         		Failover: ${4:String}     # optional
+         		GeoLocation: ${5:GeoLocation}     # optional
+         		HealthCheckId: ${6:String}     # optional
+         		HostedZoneId: ${7:String}     # optional
+         		HostedZoneName: ${8:String}     # optional
+         		Name: ${9:String}     # required
+         		Region: ${10:String}     # optional
+         		ResourceRecords:                # optional, list of String
+         			- ${11:String}
+         		SetIdentifier: ${12:String}     # optional
+         		TTL: ${13:String}     # optional
+         		Type: ${14:String}     # required
+         		Weight: ${15:Integer}     # optional
 """

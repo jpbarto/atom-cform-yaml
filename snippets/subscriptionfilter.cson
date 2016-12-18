@@ -2,11 +2,11 @@
   'subscriptionfilter':
       'prefix': 'subscriptionfilter'
       'body':"""
-          ${1:subscriptionfilter_name}:
-              Type: "AWS::Logs::SubscriptionFilter"
-              Properties:
-                  DestinationArn: ${2:String}     # required
-                  FilterPattern: ${3:String}     # required
-                  LogGroupName: ${4:String}     # required
-                  RoleArn: ${5:String}     # optional
+         ${1:subscriptionfilter_name}:
+         	Type: "AWS::Logs::SubscriptionFilter"
+         	Properties:
+         		DestinationArn: ${2:String}     # required
+         		FilterPattern: ${3:String}     # required
+         		LogGroupName: ${4:String}     # required
+         		RoleArn: ${5:String}     # optional
 """

@@ -2,11 +2,11 @@
   'deployment':
       'prefix': 'deployment'
       'body':"""
-          ${1:deployment_name}:
-              Type: "AWS::ApiGateway::Deployment"
-              Properties:
-                  Description: ${2:String}     # optional
-                  RestApiId: ${3:String}     # required
-                  StageDescription: ${4:StageDescription}     # optional
-                  StageName: ${5:String}     # optional
+         ${1:deployment_name}:
+         	Type: "AWS::ApiGateway::Deployment"
+         	Properties:
+         		Description: ${2:String}     # optional
+         		RestApiId: ${3:String}     # required
+         		StageDescription: ${4:StageDescription}     # optional
+         		StageName: ${5:String}     # optional
 """

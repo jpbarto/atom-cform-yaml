@@ -2,16 +2,16 @@
   'ec2-securitygroupingress':
       'prefix': 'ec2-securitygroupingress'
       'body':"""
-          ${1:ec2-securitygroupingress_name}:
-              Type: "AWS::EC2::SecurityGroupIngress"
-              Properties:
-                  CidrIp: ${2:String}     # optional
-                  FromPort: ${3:Integer}     # optional
-                  GroupId: ${4:String}     # optional
-                  GroupName: ${5:String}     # optional
-                  IpProtocol: ${6:String}     # required
-                  SourceSecurityGroupId: ${7:String}     # optional
-                  SourceSecurityGroupName: ${8:String}     # optional
-                  SourceSecurityGroupOwnerId: ${9:String}     # optional
-                  ToPort: ${10:Integer}     # optional
+         ${1:ec2-securitygroupingress_name}:
+         	Type: "AWS::EC2::SecurityGroupIngress"
+         	Properties:
+         		CidrIp: ${2:String}     # optional
+         		FromPort: ${3:Integer}     # optional
+         		GroupId: ${4:String}     # optional
+         		GroupName: ${5:String}     # optional
+         		IpProtocol: ${6:String}     # required
+         		SourceSecurityGroupId: ${7:String}     # optional
+         		SourceSecurityGroupName: ${8:String}     # optional
+         		SourceSecurityGroupOwnerId: ${9:String}     # optional
+         		ToPort: ${10:Integer}     # optional
 """

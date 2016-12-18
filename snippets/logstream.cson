@@ -2,9 +2,9 @@
   'logstream':
       'prefix': 'logstream'
       'body':"""
-          ${1:logstream_name}:
-              Type: "AWS::Logs::LogStream"
-              Properties:
-                  LogGroupName: ${2:String}     # required
-                  LogStreamName: ${3:String}     # optional
+         ${1:logstream_name}:
+         	Type: "AWS::Logs::LogStream"
+         	Properties:
+         		LogGroupName: ${2:String}     # required
+         		LogStreamName: ${3:String}     # optional
 """

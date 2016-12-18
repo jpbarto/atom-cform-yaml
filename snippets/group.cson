@@ -2,13 +2,13 @@
   'group':
       'prefix': 'group'
       'body':"""
-          ${1:group_name}:
-              Type: "AWS::IAM::Group"
-              Properties:
-                  GroupName: ${2:String}     # optional
-                  ManagedPolicyArns:                # optional, list of String
-                      - ${3:String}
-                  Path: ${4:String}     # optional
-                  Policies:                # optional, list of Policy
-                      - ${5:Policy}
+         ${1:group_name}:
+         	Type: "AWS::IAM::Group"
+         	Properties:
+         		GroupName: ${2:String}     # optional
+         		ManagedPolicyArns:                # optional, list of String
+         			- ${3:String}
+         		Path: ${4:String}     # optional
+         		Policies:                # optional, list of Policy
+         			- ${5:Policy}
 """

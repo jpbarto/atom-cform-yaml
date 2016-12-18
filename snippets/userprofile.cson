@@ -2,10 +2,10 @@
   'userprofile':
       'prefix': 'userprofile'
       'body':"""
-          ${1:userprofile_name}:
-              Type: "AWS::OpsWorks::UserProfile"
-              Properties:
-                  AllowSelfManagement: ${2:Boolean}     # optional
-                  IamUserArn: ${3:String}     # required
-                  SshPublicKey: ${4:String}     # optional
+         ${1:userprofile_name}:
+         	Type: "AWS::OpsWorks::UserProfile"
+         	Properties:
+         		AllowSelfManagement: ${2:Boolean}     # optional
+         		IamUserArn: ${3:String}     # required
+         		SshPublicKey: ${4:String}     # optional
 """

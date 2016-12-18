@@ -2,10 +2,10 @@
   'subscription':
       'prefix': 'subscription'
       'body':"""
-          ${1:subscription_name}:
-              Type: "AWS::SNS::Subscription"
-              Properties:
-                  Endpoint: ${2:String}     # optional
-                  Protocol: ${3:String}     # optional
-                  TopicArn: ${4:String}     # optional
+         ${1:subscription_name}:
+         	Type: "AWS::SNS::Subscription"
+         	Properties:
+         		Endpoint: ${2:String}     # optional
+         		Protocol: ${3:String}     # optional
+         		TopicArn: ${4:String}     # optional
 """

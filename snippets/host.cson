@@ -2,10 +2,10 @@
   'host':
       'prefix': 'host'
       'body':"""
-          ${1:host_name}:
-              Type: "AWS::EC2::Host"
-              Properties:
-                  AutoPlacement: ${2:String}     # optional
-                  AvailabilityZone: ${3:String}     # required
-                  InstanceType: ${4:String}     # required
+         ${1:host_name}:
+         	Type: "AWS::EC2::Host"
+         	Properties:
+         		AutoPlacement: ${2:String}     # optional
+         		AvailabilityZone: ${3:String}     # required
+         		InstanceType: ${4:String}     # required
 """

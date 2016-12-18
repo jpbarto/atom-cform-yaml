@@ -2,10 +2,10 @@
   'elasticache-securitygroupingress':
       'prefix': 'elasticache-securitygroupingress'
       'body':"""
-          ${1:elasticache-securitygroupingress_name}:
-              Type: "AWS::ElastiCache::SecurityGroupIngress"
-              Properties:
-                  CacheSecurityGroupName: ${2:String}     # required
-                  EC2SecurityGroupName: ${3:String}     # required
-                  EC2SecurityGroupOwnerId: ${4:String}     # optional
+         ${1:elasticache-securitygroupingress_name}:
+         	Type: "AWS::ElastiCache::SecurityGroupIngress"
+         	Properties:
+         		CacheSecurityGroupName: ${2:String}     # required
+         		EC2SecurityGroupName: ${3:String}     # required
+         		EC2SecurityGroupOwnerId: ${4:String}     # optional
 """

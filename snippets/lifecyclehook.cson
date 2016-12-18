@@ -2,14 +2,14 @@
   'lifecyclehook':
       'prefix': 'lifecyclehook'
       'body':"""
-          ${1:lifecyclehook_name}:
-              Type: "AWS::AutoScaling::LifecycleHook"
-              Properties:
-                  AutoScalingGroupName: ${2:String}     # required
-                  DefaultResult: ${3:String}     # optional
-                  HeartbeatTimeout: ${4:Integer}     # optional
-                  LifecycleTransition: ${5:String}     # required
-                  NotificationMetadata: ${6:String}     # optional
-                  NotificationTargetARN: ${7:String}     # required
-                  RoleARN: ${8:String}     # required
+         ${1:lifecyclehook_name}:
+         	Type: "AWS::AutoScaling::LifecycleHook"
+         	Properties:
+         		AutoScalingGroupName: ${2:String}     # required
+         		DefaultResult: ${3:String}     # optional
+         		HeartbeatTimeout: ${4:Integer}     # optional
+         		LifecycleTransition: ${5:String}     # required
+         		NotificationMetadata: ${6:String}     # optional
+         		NotificationTargetARN: ${7:String}     # required
+         		RoleARN: ${8:String}     # required
 """

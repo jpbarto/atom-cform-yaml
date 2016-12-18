@@ -2,13 +2,13 @@
   'scalabletarget':
       'prefix': 'scalabletarget'
       'body':"""
-          ${1:scalabletarget_name}:
-              Type: "AWS::ApplicationAutoScaling::ScalableTarget"
-              Properties:
-                  MaxCapacity: ${2:Integer}     # required
-                  MinCapacity: ${3:Integer}     # required
-                  ResourceId: ${4:String}     # required
-                  RoleARN: ${5:String}     # required
-                  ScalableDimension: ${6:String}     # required
-                  ServiceNamespace: ${7:String}     # required
+         ${1:scalabletarget_name}:
+         	Type: "AWS::ApplicationAutoScaling::ScalableTarget"
+         	Properties:
+         		MaxCapacity: ${2:Integer}     # required
+         		MinCapacity: ${3:Integer}     # required
+         		ResourceId: ${4:String}     # required
+         		RoleARN: ${5:String}     # required
+         		ScalableDimension: ${6:String}     # required
+         		ServiceNamespace: ${7:String}     # required
 """

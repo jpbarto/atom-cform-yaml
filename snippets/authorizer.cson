@@ -2,17 +2,17 @@
   'authorizer':
       'prefix': 'authorizer'
       'body':"""
-          ${1:authorizer_name}:
-              Type: "AWS::ApiGateway::Authorizer"
-              Properties:
-                  AuthorizerCredentials: ${2:String}     # optional
-                  AuthorizerResultTtlInSeconds: ${3:Integer}     # optional
-                  AuthorizerUri: ${4:String}     # optional
-                  IdentitySource: ${5:String}     # optional
-                  IdentityValidationExpression: ${6:String}     # optional
-                  Name: ${7:String}     # optional
-                  ProviderARNs:                # optional, list of String
-                      - ${8:String}
-                  RestApiId: ${9:String}     # optional
-                  Type: ${10:String}     # optional
+         ${1:authorizer_name}:
+         	Type: "AWS::ApiGateway::Authorizer"
+         	Properties:
+         		AuthorizerCredentials: ${2:String}     # optional
+         		AuthorizerResultTtlInSeconds: ${3:Integer}     # optional
+         		AuthorizerUri: ${4:String}     # optional
+         		IdentitySource: ${5:String}     # optional
+         		IdentityValidationExpression: ${6:String}     # optional
+         		Name: ${7:String}     # optional
+         		ProviderARNs:                # optional, list of String
+         			- ${8:String}
+         		RestApiId: ${9:String}     # optional
+         		Type: ${10:String}     # optional
 """

@@ -2,17 +2,17 @@
   'elasticsearch-domain':
       'prefix': 'elasticsearch-domain'
       'body':"""
-          ${1:elasticsearch-domain_name}:
-              Type: "AWS::Elasticsearch::Domain"
-              Properties:
-                  AccessPolicies: ${2:Json}     # optional
-                  AdvancedOptions:                # optional, map of String
-                      ${3:String_key}: ${4:String_value}
-                  DomainName: ${5:String}     # optional
-                  EBSOptions: ${6:EBSOptions}     # optional
-                  ElasticsearchClusterConfig: ${7:ElasticsearchClusterConfig}     # optional
-                  ElasticsearchVersion: ${8:String}     # optional
-                  SnapshotOptions: ${9:SnapshotOptions}     # optional
-                  Tags:                # optional, list of Tag
-                      - ${10:Tag}
+         ${1:elasticsearch-domain_name}:
+         	Type: "AWS::Elasticsearch::Domain"
+         	Properties:
+         		AccessPolicies: ${2:Json}     # optional
+         		AdvancedOptions:                # optional, map of String
+         			${3:String_key}: ${4:String_value}
+         		DomainName: ${5:String}     # optional
+         		EBSOptions: ${6:EBSOptions}     # optional
+         		ElasticsearchClusterConfig: ${7:ElasticsearchClusterConfig}     # optional
+         		ElasticsearchVersion: ${8:String}     # optional
+         		SnapshotOptions: ${9:SnapshotOptions}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${10:Tag}
 """

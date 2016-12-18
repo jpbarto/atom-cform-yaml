@@ -2,10 +2,10 @@
   'sqlinjectionmatchset':
       'prefix': 'sqlinjectionmatchset'
       'body':"""
-          ${1:sqlinjectionmatchset_name}:
-              Type: "AWS::WAF::SqlInjectionMatchSet"
-              Properties:
-                  Name: ${2:String}     # required
-                  SqlInjectionMatchTuples:                # optional, list of SqlInjectionMatchTuple
-                      - ${3:SqlInjectionMatchTuple}
+         ${1:sqlinjectionmatchset_name}:
+         	Type: "AWS::WAF::SqlInjectionMatchSet"
+         	Properties:
+         		Name: ${2:String}     # required
+         		SqlInjectionMatchTuples:                # optional, list of SqlInjectionMatchTuple
+         			- ${3:SqlInjectionMatchTuple}
 """

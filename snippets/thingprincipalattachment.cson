@@ -2,9 +2,9 @@
   'thingprincipalattachment':
       'prefix': 'thingprincipalattachment'
       'body':"""
-          ${1:thingprincipalattachment_name}:
-              Type: "AWS::IoT::ThingPrincipalAttachment"
-              Properties:
-                  Principal: ${2:String}     # required
-                  ThingName: ${3:String}     # required
+         ${1:thingprincipalattachment_name}:
+         	Type: "AWS::IoT::ThingPrincipalAttachment"
+         	Properties:
+         		Principal: ${2:String}     # required
+         		ThingName: ${3:String}     # required
 """

@@ -2,9 +2,9 @@
   'subnetnetworkaclassociation':
       'prefix': 'subnetnetworkaclassociation'
       'body':"""
-          ${1:subnetnetworkaclassociation_name}:
-              Type: "AWS::EC2::SubnetNetworkAclAssociation"
-              Properties:
-                  NetworkAclId: ${2:String}     # required
-                  SubnetId: ${3:String}     # required
+         ${1:subnetnetworkaclassociation_name}:
+         	Type: "AWS::EC2::SubnetNetworkAclAssociation"
+         	Properties:
+         		NetworkAclId: ${2:String}     # required
+         		SubnetId: ${3:String}     # required
 """

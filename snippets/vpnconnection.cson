@@ -2,13 +2,13 @@
   'vpnconnection':
       'prefix': 'vpnconnection'
       'body':"""
-          ${1:vpnconnection_name}:
-              Type: "AWS::EC2::VPNConnection"
-              Properties:
-                  CustomerGatewayId: ${2:String}     # required
-                  StaticRoutesOnly: ${3:Boolean}     # optional
-                  Tags:                # optional, list of Tag
-                      - ${4:Tag}
-                  Type: ${5:String}     # required
-                  VpnGatewayId: ${6:String}     # required
+         ${1:vpnconnection_name}:
+         	Type: "AWS::EC2::VPNConnection"
+         	Properties:
+         		CustomerGatewayId: ${2:String}     # required
+         		StaticRoutesOnly: ${3:Boolean}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${4:Tag}
+         		Type: ${5:String}     # required
+         		VpnGatewayId: ${6:String}     # required
 """

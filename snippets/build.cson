@@ -2,10 +2,10 @@
   'build':
       'prefix': 'build'
       'body':"""
-          ${1:build_name}:
-              Type: "AWS::GameLift::Build"
-              Properties:
-                  Name: ${2:String}     # optional
-                  StorageLocation: ${3:S3Location}     # optional
-                  Version: ${4:String}     # optional
+         ${1:build_name}:
+         	Type: "AWS::GameLift::Build"
+         	Properties:
+         		Name: ${2:String}     # optional
+         		StorageLocation: ${3:S3Location}     # optional
+         		Version: ${4:String}     # optional
 """

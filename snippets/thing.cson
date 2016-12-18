@@ -2,9 +2,9 @@
   'thing':
       'prefix': 'thing'
       'body':"""
-          ${1:thing_name}:
-              Type: "AWS::IoT::Thing"
-              Properties:
-                  AttributePayload: ${2:AttributePayload}     # optional
-                  ThingName: ${3:String}     # optional
+         ${1:thing_name}:
+         	Type: "AWS::IoT::Thing"
+         	Properties:
+         		AttributePayload: ${2:AttributePayload}     # optional
+         		ThingName: ${3:String}     # optional
 """

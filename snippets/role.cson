@@ -2,14 +2,14 @@
   'role':
       'prefix': 'role'
       'body':"""
-          ${1:role_name}:
-              Type: "AWS::IAM::Role"
-              Properties:
-                  AssumeRolePolicyDocument: ${2:String}     # required
-                  ManagedPolicyArns:                # optional, list of String
-                      - ${3:String}
-                  Path: ${4:String}     # optional
-                  Policies:                # optional, list of Policy
-                      - ${5:Policy}
-                  RoleName: ${6:String}     # optional
+         ${1:role_name}:
+         	Type: "AWS::IAM::Role"
+         	Properties:
+         		AssumeRolePolicyDocument: ${2:String}     # required
+         		ManagedPolicyArns:                # optional, list of String
+         			- ${3:String}
+         		Path: ${4:String}     # optional
+         		Policies:                # optional, list of Policy
+         			- ${5:Policy}
+         		RoleName: ${6:String}     # optional
 """

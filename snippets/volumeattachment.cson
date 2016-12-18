@@ -2,10 +2,10 @@
   'volumeattachment':
       'prefix': 'volumeattachment'
       'body':"""
-          ${1:volumeattachment_name}:
-              Type: "AWS::EC2::VolumeAttachment"
-              Properties:
-                  Device: ${2:String}     # required
-                  InstanceId: ${3:String}     # required
-                  VolumeId: ${4:String}     # required
+         ${1:volumeattachment_name}:
+         	Type: "AWS::EC2::VolumeAttachment"
+         	Properties:
+         		Device: ${2:String}     # required
+         		InstanceId: ${3:String}     # required
+         		VolumeId: ${4:String}     # required
 """

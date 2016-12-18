@@ -2,8 +2,8 @@
   'spotfleet':
       'prefix': 'spotfleet'
       'body':"""
-          ${1:spotfleet_name}:
-              Type: "AWS::EC2::SpotFleet"
-              Properties:
-                  SpotFleetRequestConfigData: ${2:SpotFleetRequestConfigData}     # required
+         ${1:spotfleet_name}:
+         	Type: "AWS::EC2::SpotFleet"
+         	Properties:
+         		SpotFleetRequestConfigData: ${2:SpotFleetRequestConfigData}     # required
 """

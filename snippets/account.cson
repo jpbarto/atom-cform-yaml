@@ -2,8 +2,8 @@
   'account':
       'prefix': 'account'
       'body':"""
-          ${1:account_name}:
-              Type: "AWS::ApiGateway::Account"
-              Properties:
-                  CloudWatchRoleArn: ${2:String}     # optional
+         ${1:account_name}:
+         	Type: "AWS::ApiGateway::Account"
+         	Properties:
+         		CloudWatchRoleArn: ${2:String}     # optional
 """

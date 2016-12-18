@@ -1,10 +1,7 @@
 '.source.yaml':
   'parameter':
-    'prefix': 'parameter'
-    'body': """
-	${1:paramName}:
-		Type: ${2:[String|Number|CommaDelimitedList]}
-		Default: ${3:default_value}
-		Description: ${4:description}
-
-    """
+      'prefix': 'parameter'
+      'body':"""
+         ParameterName: ${2:String}     # required
+         ParameterValue: ${3:String}     # required
+"""

@@ -2,9 +2,9 @@
   'topicrule':
       'prefix': 'topicrule'
       'body':"""
-          ${1:topicrule_name}:
-              Type: "AWS::IoT::TopicRule"
-              Properties:
-                  RuleName: ${2:String}     # optional
-                  TopicRulePayload: ${3:TopicRulePayload}     # required
+         ${1:topicrule_name}:
+         	Type: "AWS::IoT::TopicRule"
+         	Properties:
+         		RuleName: ${2:String}     # optional
+         		TopicRulePayload: ${3:TopicRulePayload}     # required
 """

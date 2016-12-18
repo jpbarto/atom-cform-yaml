@@ -3,7 +3,7 @@
 import os
 import json
 
-dest_prefix = 'snippets-generated'
+dest_prefix = 'snippets.generated'
 if not os.path.exists (dest_prefix):
     os.makedirs (dest_prefix)
 

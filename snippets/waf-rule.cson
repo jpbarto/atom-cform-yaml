@@ -2,11 +2,11 @@
   'waf-rule':
       'prefix': 'waf-rule'
       'body':"""
-          ${1:waf-rule_name}:
-              Type: "AWS::WAF::Rule"
-              Properties:
-                  MetricName: ${2:String}     # required
-                  Name: ${3:String}     # required
-                  Predicates:                # optional, list of Predicate
-                      - ${4:Predicate}
+         ${1:waf-rule_name}:
+         	Type: "AWS::WAF::Rule"
+         	Properties:
+         		MetricName: ${2:String}     # required
+         		Name: ${3:String}     # required
+         		Predicates:                # optional, list of Predicate
+         			- ${4:Predicate}
 """

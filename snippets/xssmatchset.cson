@@ -2,10 +2,10 @@
   'xssmatchset':
       'prefix': 'xssmatchset'
       'body':"""
-          ${1:xssmatchset_name}:
-              Type: "AWS::WAF::XssMatchSet"
-              Properties:
-                  Name: ${2:String}     # required
-                  XssMatchTuples:                # required, list of XssMatchTuple
-                      - ${3:XssMatchTuple}
+         ${1:xssmatchset_name}:
+         	Type: "AWS::WAF::XssMatchSet"
+         	Properties:
+         		Name: ${2:String}     # required
+         		XssMatchTuples:                # required, list of XssMatchTuple
+         			- ${3:XssMatchTuple}
 """

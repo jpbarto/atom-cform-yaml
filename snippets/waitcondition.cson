@@ -2,10 +2,10 @@
   'waitcondition':
       'prefix': 'waitcondition'
       'body':"""
-          ${1:waitcondition_name}:
-              Type: "AWS::CloudFormation::WaitCondition"
-              Properties:
-                  Count: ${2:Integer}     # optional
-                  Handle: ${3:String}     # required
-                  Timeout: ${4:String}     # required
+         ${1:waitcondition_name}:
+         	Type: "AWS::CloudFormation::WaitCondition"
+         	Properties:
+         		Count: ${2:Integer}     # optional
+         		Handle: ${3:String}     # required
+         		Timeout: ${4:String}     # required
 """

@@ -2,17 +2,17 @@
   'environment':
       'prefix': 'environment'
       'body':"""
-          ${1:environment_name}:
-              Type: "AWS::ElasticBeanstalk::Environment"
-              Properties:
-                  ApplicationName: ${2:String}     # required
-                  CNAMEPrefix: ${3:String}     # optional
-                  Description: ${4:String}     # optional
-                  EnvironmentName: ${5:String}     # optional
-                  OptionSettings:                # optional, list of OptionSettings
-                      - ${6:OptionSettings}
-                  SolutionStackName: ${7:String}     # optional
-                  TemplateName: ${8:String}     # optional
-                  Tier: ${9:Tier}     # optional
-                  VersionLabel: ${10:String}     # optional
+         ${1:environment_name}:
+         	Type: "AWS::ElasticBeanstalk::Environment"
+         	Properties:
+         		ApplicationName: ${2:String}     # required
+         		CNAMEPrefix: ${3:String}     # optional
+         		Description: ${4:String}     # optional
+         		EnvironmentName: ${5:String}     # optional
+         		OptionSettings:                # optional, list of OptionSettings
+         			- ${6:OptionSettings}
+         		SolutionStackName: ${7:String}     # optional
+         		TemplateName: ${8:String}     # optional
+         		Tier: ${9:Tier}     # optional
+         		VersionLabel: ${10:String}     # optional
 """

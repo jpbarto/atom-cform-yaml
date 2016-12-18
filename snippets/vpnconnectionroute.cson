@@ -2,9 +2,9 @@
   'vpnconnectionroute':
       'prefix': 'vpnconnectionroute'
       'body':"""
-          ${1:vpnconnectionroute_name}:
-              Type: "AWS::EC2::VPNConnectionRoute"
-              Properties:
-                  DestinationCidrBlock: ${2:String}     # required
-                  VpnConnectionId: ${3:String}     # required
+         ${1:vpnconnectionroute_name}:
+         	Type: "AWS::EC2::VPNConnectionRoute"
+         	Properties:
+         		DestinationCidrBlock: ${2:String}     # required
+         		VpnConnectionId: ${3:String}     # required
 """
