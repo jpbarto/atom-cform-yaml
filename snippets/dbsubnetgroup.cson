@@ -1,0 +1,13 @@
+'.source.yaml':
+  'dbsubnetgroup':
+      'prefix': 'dbsubnetgroup'
+      'body':"""
+          ${1:dbsubnetgroup_name}:
+              Type: "AWS::RDS::DBSubnetGroup"
+              Properties:
+                  DBSubnetGroupDescription: ${2:String}     # required
+                  SubnetIds:                # required, list of String
+                      - ${3:String}
+                  Tags:                # optional, list of Tag
+                      - ${4:Tag}
+"""

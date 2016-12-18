@@ -1,0 +1,11 @@
+'.source.yaml':
+  'healthcheck':
+      'prefix': 'healthcheck'
+      'body':"""
+          ${1:healthcheck_name}:
+              Type: "AWS::Route53::HealthCheck"
+              Properties:
+                  HealthCheckConfig: ${2:HealthCheckConfig}     # required
+                  HealthCheckTags:                # optional, list of HealthCheckTag
+                      - ${3:HealthCheckTag}
+"""

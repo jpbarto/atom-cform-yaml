@@ -1,0 +1,13 @@
+'.source.yaml':
+  'vpcendpoint':
+      'prefix': 'vpcendpoint'
+      'body':"""
+          ${1:vpcendpoint_name}:
+              Type: "AWS::EC2::VPCEndpoint"
+              Properties:
+                  PolicyDocument: ${2:Json}     # optional
+                  RouteTableIds:                # optional, list of String
+                      - ${3:String}
+                  ServiceName: ${4:String}     # required
+                  VpcId: ${5:String}     # required
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'usertogroupaddition':
+      'prefix': 'usertogroupaddition'
+      'body':"""
+          ${1:usertogroupaddition_name}:
+              Type: "AWS::IAM::UserToGroupAddition"
+              Properties:
+                  GroupName: ${2:String}     # required
+                  Users:                # required, list of String
+                      - ${3:String}
+"""

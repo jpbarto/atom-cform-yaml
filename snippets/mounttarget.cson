@@ -1,0 +1,13 @@
+'.source.yaml':
+  'mounttarget':
+      'prefix': 'mounttarget'
+      'body':"""
+          ${1:mounttarget_name}:
+              Type: "AWS::EFS::MountTarget"
+              Properties:
+                  FileSystemId: ${2:String}     # required
+                  IpAddress: ${3:String}     # optional
+                  SecurityGroups:                # required, list of String
+                      - ${4:String}
+                  SubnetId: ${5:String}     # required
+"""

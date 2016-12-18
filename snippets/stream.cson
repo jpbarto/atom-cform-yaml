@@ -1,0 +1,12 @@
+'.source.yaml':
+  'stream':
+      'prefix': 'stream'
+      'body':"""
+          ${1:stream_name}:
+              Type: "AWS::Kinesis::Stream"
+              Properties:
+                  Name: ${2:String}     # optional
+                  ShardCount: ${3:Integer}     # required
+                  Tags:                # optional, list of Tag
+                      - ${4:Tag}
+"""

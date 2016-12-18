@@ -1,0 +1,34 @@
+'.source.yaml':
+  'cachecluster':
+      'prefix': 'cachecluster'
+      'body':"""
+          ${1:cachecluster_name}:
+              Type: "AWS::ElastiCache::CacheCluster"
+              Properties:
+                  AZMode: ${2:String}     # optional
+                  AutoMinorVersionUpgrade: ${3:Boolean}     # optional
+                  CacheNodeType: ${4:String}     # required
+                  CacheParameterGroupName: ${5:String}     # optional
+                  CacheSecurityGroupNames:                # optional, list of String
+                      - ${6:String}
+                  CacheSubnetGroupName: ${7:String}     # optional
+                  ClusterName: ${8:String}     # optional
+                  Engine: ${9:String}     # required
+                  EngineVersion: ${10:String}     # optional
+                  NotificationTopicArn: ${11:String}     # optional
+                  NumCacheNodes: ${12:Integer}     # required
+                  Port: ${13:Integer}     # optional
+                  PreferredAvailabilityZone: ${14:String}     # optional
+                  PreferredAvailabilityZones:                # optional, list of String
+                      - ${15:String}
+                  PreferredMaintenanceWindow: ${16:String}     # optional
+                  SnapshotArns:                # optional, list of String
+                      - ${17:String}
+                  SnapshotName: ${18:String}     # optional
+                  SnapshotRetentionLimit: ${19:Integer}     # optional
+                  SnapshotWindow: ${20:String}     # optional
+                  Tags:                # optional, list of Tag
+                      - ${21:Tag}
+                  VpcSecurityGroupIds:                # optional, list of String
+                      - ${22:String}
+"""

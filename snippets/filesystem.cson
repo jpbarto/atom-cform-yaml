@@ -1,0 +1,11 @@
+'.source.yaml':
+  'filesystem':
+      'prefix': 'filesystem'
+      'body':"""
+          ${1:filesystem_name}:
+              Type: "AWS::EFS::FileSystem"
+              Properties:
+                  FileSystemTags:                # optional, list of ElasticFileSystemTag
+                      - ${2:ElasticFileSystemTag}
+                  PerformanceMode: ${3:String}     # optional
+"""

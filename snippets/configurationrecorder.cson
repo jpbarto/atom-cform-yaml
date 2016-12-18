@@ -1,0 +1,11 @@
+'.source.yaml':
+  'configurationrecorder':
+      'prefix': 'configurationrecorder'
+      'body':"""
+          ${1:configurationrecorder_name}:
+              Type: "AWS::Config::ConfigurationRecorder"
+              Properties:
+                  Name: ${2:String}     # optional
+                  RecordingGroup: ${3:RecordingGroup}     # optional
+                  RoleArn: ${4:String}     # required
+"""

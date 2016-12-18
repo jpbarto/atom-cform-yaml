@@ -1,0 +1,16 @@
+'.source.yaml':
+  'codepipeline-pipeline':
+      'prefix': 'codepipeline-pipeline'
+      'body':"""
+          ${1:codepipeline-pipeline_name}:
+              Type: "AWS::CodePipeline::Pipeline"
+              Properties:
+                  ArtifactStore: ${2:ArtifactStore}     # required
+                  DisableInboundStageTransitions:                # optional, list of StageTransition
+                      - ${3:StageTransition}
+                  Name: ${4:String}     # optional
+                  RestartExecutionOnUpdate: ${5:Boolean}     # optional
+                  RoleArn: ${6:String}     # required
+                  Stages:                # required, list of StageDeclaration
+                      - ${7:StageDeclaration}
+"""

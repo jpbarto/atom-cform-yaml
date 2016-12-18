@@ -1,11 +1,6 @@
 #!/usr/bin/python
 
-import os
 import json
-
-dest_prefix = 'snippets-generated'
-if not os.path.exists (dest_prefix):
-    os.makedirs (dest_prefix)
 
 f = open ('CloudFormationResourceSpecification.json', 'r')
 spec = json.load (f)
@@ -14,32 +9,6 @@ rsrc_types = spec['ResourceTypes']
 prop_types = spec['PropertyTypes']
 
 snippets = {}
-
-for key in prop_types.keys ():
-    try:
-        if "::" in key and "." in key:
-            prop_name = key.split ('::')[2]
-            primary_name = prop_name.split ('.')[1].lower ()
-            qualifier = prop_name.split ('.')[0].lower ()
-        else:
-            primary_name = key.lower ()
-            qualifier = None
-    except:
-        print "Error parsing property name: {0}".format (key)
-        continue
-
-    snippet_name = "{0}".format (primary_name)
-    if snippet_name in snippets:
-        if snippets[snippet_name] is not None:
-            snip_rec = snippets[snippet_name]
-            snippets["{1}-{0}".format (snip_rec['primary'], snip_rec['qualifier'])] = snip_rec
-            snippets[snippet_name] = None
-
-        snippet_name = "{1}-{0}".format (primary_name, qualifier)
-        if snippet_name in snippets:
-            print "Collision on property name {0}".format (snippet_name)
-
-        snippets[snippet_name] = {'primary': primary_name, 'qualifier': qualifier, 'full_name': key, 'spec': prop_types[key]}
 
 # go through and extract unique names for all resource types
 for key in rsrc_types.keys ():
@@ -68,7 +37,7 @@ for key in snippets.keys ():
     snippet = snippets[key]
     ins_ctr = 1
 
-    sfile = open ("{0}/{1}.cson".format (dest_prefix, key), 'w')
+    sfile = open ("{0}.cson".format (key), 'w')
 
     sfile.write ("'.source.yaml':\n")
     sfile.write ("  '{0}':\n".format (key))

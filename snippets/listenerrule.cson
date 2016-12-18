@@ -1,0 +1,14 @@
+'.source.yaml':
+  'listenerrule':
+      'prefix': 'listenerrule'
+      'body':"""
+          ${1:listenerrule_name}:
+              Type: "AWS::ElasticLoadBalancingV2::ListenerRule"
+              Properties:
+                  Actions:                # required, list of Action
+                      - ${2:Action}
+                  Conditions:                # required, list of RuleCondition
+                      - ${3:RuleCondition}
+                  ListenerArn: ${4:String}     # required
+                  Priority: ${5:Integer}     # required
+"""

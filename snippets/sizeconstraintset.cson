@@ -1,0 +1,11 @@
+'.source.yaml':
+  'sizeconstraintset':
+      'prefix': 'sizeconstraintset'
+      'body':"""
+          ${1:sizeconstraintset_name}:
+              Type: "AWS::WAF::SizeConstraintSet"
+              Properties:
+                  Name: ${2:String}     # required
+                  SizeConstraints:                # required, list of SizeConstraint
+                      - ${3:SizeConstraint}
+"""

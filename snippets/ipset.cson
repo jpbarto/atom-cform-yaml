@@ -1,0 +1,11 @@
+'.source.yaml':
+  'ipset':
+      'prefix': 'ipset'
+      'body':"""
+          ${1:ipset_name}:
+              Type: "AWS::WAF::IPSet"
+              Properties:
+                  IPSetDescriptors:                # optional, list of IPSetDescriptor
+                      - ${2:IPSetDescriptor}
+                  Name: ${3:String}     # required
+"""

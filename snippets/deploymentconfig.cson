@@ -1,0 +1,10 @@
+'.source.yaml':
+  'deploymentconfig':
+      'prefix': 'deploymentconfig'
+      'body':"""
+          ${1:deploymentconfig_name}:
+              Type: "AWS::CodeDeploy::DeploymentConfig"
+              Properties:
+                  DeploymentConfigName: ${2:String}     # optional
+                  MinimumHealthyHosts: ${3:String}     # optional
+"""

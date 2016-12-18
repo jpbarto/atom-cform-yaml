@@ -1,0 +1,33 @@
+'.source.yaml':
+  'opsworks-instance':
+      'prefix': 'opsworks-instance'
+      'body':"""
+          ${1:opsworks-instance_name}:
+              Type: "AWS::OpsWorks::Instance"
+              Properties:
+                  AgentVersion: ${2:String}     # optional
+                  AmiId: ${3:String}     # optional
+                  Architecture: ${4:String}     # optional
+                  AutoScalingType: ${5:String}     # optional
+                  AvailabilityZone: ${6:String}     # optional
+                  BlockDeviceMappings:                # optional, list of BlockDeviceMapping
+                      - ${7:BlockDeviceMapping}
+                  EbsOptimized: ${8:Boolean}     # optional
+                  ElasticIps:                # optional, list of String
+                      - ${9:String}
+                  Hostname: ${10:String}     # optional
+                  InstallUpdatesOnBoot: ${11:Boolean}     # optional
+                  InstanceType: ${12:String}     # required
+                  LayerIds:                # required, list of String
+                      - ${13:String}
+                  Os: ${14:String}     # optional
+                  RootDeviceType: ${15:String}     # optional
+                  SshKeyName: ${16:String}     # optional
+                  StackId: ${17:String}     # required
+                  SubnetId: ${18:String}     # optional
+                  Tenancy: ${19:String}     # optional
+                  TimeBasedAutoScaling: ${20:TimeBasedAutoScaling}     # optional
+                  VirtualizationType: ${21:String}     # optional
+                  Volumes:                # optional, list of String
+                      - ${22:String}
+"""

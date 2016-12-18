@@ -1,0 +1,17 @@
+'.source.yaml':
+  'restapi':
+      'prefix': 'restapi'
+      'body':"""
+          ${1:restapi_name}:
+              Type: "AWS::ApiGateway::RestApi"
+              Properties:
+                  Body: ${2:Json}     # optional
+                  BodyS3Location: ${3:S3Location}     # optional
+                  CloneFrom: ${4:String}     # optional
+                  Description: ${5:String}     # optional
+                  FailOnWarnings: ${6:Boolean}     # optional
+                  Mode: ${7:String}     # optional
+                  Name: ${8:String}     # optional
+                  Parameters:                # optional, map of String
+                      ${9:String_key}: ${10:String_value}
+"""

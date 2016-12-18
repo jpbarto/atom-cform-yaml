@@ -1,0 +1,10 @@
+'.source.yaml':
+  'iot-certificate':
+      'prefix': 'iot-certificate'
+      'body':"""
+          ${1:iot-certificate_name}:
+              Type: "AWS::IoT::Certificate"
+              Properties:
+                  CertificateSigningRequest: ${2:String}     # required
+                  Status: ${3:String}     # required
+"""

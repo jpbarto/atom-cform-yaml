@@ -1,0 +1,16 @@
+'.source.yaml':
+  'listener':
+      'prefix': 'listener'
+      'body':"""
+          ${1:listener_name}:
+              Type: "AWS::ElasticLoadBalancingV2::Listener"
+              Properties:
+                  Certificates:                # optional, list of Certificate
+                      - ${2:Certificate}
+                  DefaultActions:                # required, list of Action
+                      - ${3:Action}
+                  LoadBalancerArn: ${4:String}     # required
+                  Port: ${5:Integer}     # required
+                  Protocol: ${6:String}     # required
+                  SslPolicy: ${7:String}     # optional
+"""

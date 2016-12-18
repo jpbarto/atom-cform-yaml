@@ -1,0 +1,10 @@
+'.source.yaml':
+  'policyprincipalattachment':
+      'prefix': 'policyprincipalattachment'
+      'body':"""
+          ${1:policyprincipalattachment_name}:
+              Type: "AWS::IoT::PolicyPrincipalAttachment"
+              Properties:
+                  PolicyName: ${2:String}     # required
+                  Principal: ${3:String}     # required
+"""

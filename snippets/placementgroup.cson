@@ -1,0 +1,9 @@
+'.source.yaml':
+  'placementgroup':
+      'prefix': 'placementgroup'
+      'body':"""
+          ${1:placementgroup_name}:
+              Type: "AWS::EC2::PlacementGroup"
+              Properties:
+                  Strategy: ${2:String}     # optional
+"""

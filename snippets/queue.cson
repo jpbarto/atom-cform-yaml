@@ -1,0 +1,15 @@
+'.source.yaml':
+  'queue':
+      'prefix': 'queue'
+      'body':"""
+          ${1:queue_name}:
+              Type: "AWS::SQS::Queue"
+              Properties:
+                  DelaySeconds: ${2:Integer}     # optional
+                  MaximumMessageSize: ${3:Integer}     # optional
+                  MessageRetentionPeriod: ${4:Integer}     # optional
+                  QueueName: ${5:String}     # optional
+                  ReceiveMessageWaitTimeSeconds: ${6:Integer}     # optional
+                  RedrivePolicy: ${7:Json}     # optional
+                  VisibilityTimeout: ${8:Integer}     # optional
+"""

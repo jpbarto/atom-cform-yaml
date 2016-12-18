@@ -1,0 +1,9 @@
+'.source.yaml':
+  'customresource':
+      'prefix': 'customresource'
+      'body':"""
+          ${1:customresource_name}:
+              Type: "AWS::CloudFormation::CustomResource"
+              Properties:
+                  ServiceToken: ${2:String}     # required
+"""

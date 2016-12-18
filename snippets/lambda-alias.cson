@@ -1,0 +1,12 @@
+'.source.yaml':
+  'lambda-alias':
+      'prefix': 'lambda-alias'
+      'body':"""
+          ${1:lambda-alias_name}:
+              Type: "AWS::Lambda::Alias"
+              Properties:
+                  Description: ${2:String}     # optional
+                  FunctionName: ${3:String}     # required
+                  FunctionVersion: ${4:String}     # required
+                  Name: ${5:String}     # required
+"""

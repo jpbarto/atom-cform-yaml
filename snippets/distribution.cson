@@ -1,0 +1,9 @@
+'.source.yaml':
+  'distribution':
+      'prefix': 'distribution'
+      'body':"""
+          ${1:distribution_name}:
+              Type: "AWS::CloudFront::Distribution"
+              Properties:
+                  DistributionConfig: ${2:DistributionConfig}     # required
+"""

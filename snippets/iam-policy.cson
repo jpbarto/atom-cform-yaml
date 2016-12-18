@@ -1,0 +1,16 @@
+'.source.yaml':
+  'iam-policy':
+      'prefix': 'iam-policy'
+      'body':"""
+          ${1:iam-policy_name}:
+              Type: "AWS::IAM::Policy"
+              Properties:
+                  Groups:                # optional, list of String
+                      - ${2:String}
+                  PolicyDocument: ${3:String}     # required
+                  PolicyName: ${4:String}     # required
+                  Roles:                # optional, list of String
+                      - ${5:String}
+                  Users:                # optional, list of String
+                      - ${6:String}
+"""

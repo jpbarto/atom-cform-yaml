@@ -1,0 +1,13 @@
+'.source.yaml':
+  'customergateway':
+      'prefix': 'customergateway'
+      'body':"""
+          ${1:customergateway_name}:
+              Type: "AWS::EC2::CustomerGateway"
+              Properties:
+                  BgpAsn: ${2:Integer}     # required
+                  IpAddress: ${3:String}     # required
+                  Tags:                # optional, list of Tag
+                      - ${4:Tag}
+                  Type: ${5:String}     # required
+"""

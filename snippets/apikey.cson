@@ -1,0 +1,13 @@
+'.source.yaml':
+  'apikey':
+      'prefix': 'apikey'
+      'body':"""
+          ${1:apikey_name}:
+              Type: "AWS::ApiGateway::ApiKey"
+              Properties:
+                  Description: ${2:String}     # optional
+                  Enabled: ${3:Boolean}     # optional
+                  Name: ${4:String}     # optional
+                  StageKeys:                # optional, list of StageKey
+                      - ${5:StageKey}
+"""

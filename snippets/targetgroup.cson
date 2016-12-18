@@ -1,0 +1,26 @@
+'.source.yaml':
+  'targetgroup':
+      'prefix': 'targetgroup'
+      'body':"""
+          ${1:targetgroup_name}:
+              Type: "AWS::ElasticLoadBalancingV2::TargetGroup"
+              Properties:
+                  HealthCheckIntervalSeconds: ${2:Integer}     # optional
+                  HealthCheckPath: ${3:String}     # optional
+                  HealthCheckPort: ${4:String}     # optional
+                  HealthCheckProtocol: ${5:String}     # optional
+                  HealthCheckTimeoutSeconds: ${6:Integer}     # optional
+                  HealthyThresholdCount: ${7:Integer}     # optional
+                  Matcher: ${8:Matcher}     # optional
+                  Name: ${9:String}     # optional
+                  Port: ${10:Integer}     # required
+                  Protocol: ${11:String}     # required
+                  Tags:                # optional, list of Tag
+                      - ${12:Tag}
+                  TargetGroupAttributes:                # optional, list of TargetGroupAttribute
+                      - ${13:TargetGroupAttribute}
+                  Targets:                # optional, list of TargetDescription
+                      - ${14:TargetDescription}
+                  UnhealthyThresholdCount: ${15:Integer}     # optional
+                  VpcId: ${16:String}     # required
+"""

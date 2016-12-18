@@ -1,0 +1,10 @@
+'.source.yaml':
+  'vpcdhcpoptionsassociation':
+      'prefix': 'vpcdhcpoptionsassociation'
+      'body':"""
+          ${1:vpcdhcpoptionsassociation_name}:
+              Type: "AWS::EC2::VPCDHCPOptionsAssociation"
+              Properties:
+                  DhcpOptionsId: ${2:String}     # required
+                  VpcId: ${3:String}     # required
+"""

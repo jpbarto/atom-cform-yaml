@@ -1,0 +1,12 @@
+'.source.yaml':
+  'metricfilter':
+      'prefix': 'metricfilter'
+      'body':"""
+          ${1:metricfilter_name}:
+              Type: "AWS::Logs::MetricFilter"
+              Properties:
+                  FilterPattern: ${2:String}     # required
+                  LogGroupName: ${3:String}     # required
+                  MetricTransformations:                # required, list of MetricTransformation
+                      - ${4:MetricTransformation}
+"""
