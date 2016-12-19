@@ -1,0 +1,23 @@
+'.source.yaml':
+  'stack-start':
+    'prefix': 'stack-start'
+    'body': """
+---
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: >
+	${1}
+
+Metadata:
+
+Parameters:
+
+Mappings:
+
+Conditions:
+
+Resources:
+
+Outputs:
+
+    """

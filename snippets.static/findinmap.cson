@@ -1,0 +1,6 @@
+'.source.yaml':
+  'findinmap':
+    'prefix': 'findinmap'
+    'body': """
+Fn::FindInMap: [ ${1:mapName}, ${2:topIndex}, ${3:secondIndex} ]
+    """
