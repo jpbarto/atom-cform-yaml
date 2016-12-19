@@ -1,4 +1,0 @@
-'.source.yaml':
-  'Fn::Ref':
-    'prefix': 'ref'
-    'body': 'Ref: ${1:logicalName}'

@@ -1,4 +1,0 @@
-'.source.yaml':
-  'Fn::Base64':
-    'prefix': 'base64'
-    'body': 'Fn::Base64: ${1:-}'

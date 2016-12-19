@@ -1,9 +1,0 @@
-'.source.yaml':
-  'ecs-cluster':
-      'prefix': 'ecs-cluster'
-      'body':"""
-         ${1:ecs-cluster_name}:
-         	Type: "AWS::ECS::Cluster"
-         	Properties:
-         		ClusterName: ${2:String}     # optional
-"""
