@@ -1,6 +1,8 @@
 # atom-cform-yaml package
 
-A package based on [atom-cform](https://github.com/dgomesbr/atom-cform) to help Atom users create YAML AWS CloudFormation templates 
+A package based on [atom-cform](https://github.com/dgomesbr/atom-cform) to help Atom users create YAML AWS CloudFormation templates.
+
+The package snippets are now derived automatically from the published [AWS CloudFormation Resource Specification](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-resource-specification.html).  This enables the snippets to be more complete but perhaps a little less helpful. Any comments on how to improve usability now that the snippets are auto-generated are welcomed.
 
 # Demo
 ![30 seconds or less...](http://i.imgur.com/xQkpXQ4.gif)
