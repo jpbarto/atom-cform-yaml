@@ -2,8 +2,8 @@
   'stack-parameter':
       'prefix': 'stack-parameter'
       'body':"""
-        ${0:parameterName}:
-        	Type: ${1:String|...}			# Required, one of: String, Number, List<Number>, CommaDelimitedList
+        ${1:parameterName}:
+        	Type: ${2:String|...}			# Required, one of: String, Number, List<Number>, CommaDelimitedList
         						# OR
         						# AWS::EC2::AvailabilityZone::Name
         						# AWS::EC2::Image::Id
@@ -16,15 +16,15 @@
         						# AWS::EC2::VPC::Id
         						# AWS::Route53::HostedZone::Id
         						# OR List<AWS-Type>
-        	Description: ${2:description}		# optional, string, description of parameter value
-        	Default: ${3:default-value}		# optional
+        	Description: ${3:description}		# optional, string, description of parameter value
+        	Default: ${4:default-value}		# optional
         	AllowedValues:				# optional
-        		- ${4:valueOption}		#
-        	AllowedPattern: ${5:regex}		# optional, regular expression enforced on string values
-        	ConstraintDescription: ${6:description}	# optional, string, error message returned if regex is violated
-        	MaxLength: ${7:Integer}			# optional, max length for string values
-        	MinLength: ${8:integer}			# optional, smallest number of characters allowed for string parameter types
-        	MaxValue: ${9:integer}			# optional, maximum value for number parameter types
-        	MinValue: ${10:integer}			# optional, smallest value possible for number parameter types
-        	NoEcho: ${11:true|false}		# optional, boolean indicating whether to mask the parameter value when describing the stack
+        		- ${5:valueOption}		#
+        	AllowedPattern: ${6:regex}		# optional, regular expression enforced on string values
+        	ConstraintDescription: ${7:description}	# optional, string, error message returned if regex is violated
+        	MaxLength: ${8:Integer}			# optional, max length for string values
+        	MinLength: ${9:integer}			# optional, smallest number of characters allowed for string parameter types
+        	MaxValue: ${10:integer}			# optional, maximum value for number parameter types
+        	MinValue: ${11:integer}			# optional, smallest value possible for number parameter types
+        	NoEcho: ${12:true|false}		# optional, boolean indicating whether to mask the parameter value when describing the stack
 	"""

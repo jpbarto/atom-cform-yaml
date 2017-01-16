@@ -136,7 +136,7 @@ for key in rsrc_snippets.keys ():
     sfile.write ("      'prefix': '{0}'\n".format (key))
     sfile.write ("      'body':\"\"\"\n")
     sfile.write ("         ${{{0}:{1}_name}}:\n".format (ins_ctr, key))
-    sfile.write ("         \tType: \"{0}\"\n".format (snippet['full_name']))
+    sfile.write ("         \tType: {0}\n".format (snippet['full_name']))
     sfile.write ("         \tProperties:\n")
 
     for pkey in sorted (snippet['spec']['Properties'].iterkeys ()):
