@@ -1,0 +1,10 @@
+'.source.yaml':
+  'elasticbeanstalk-application':
+      'prefix': 'elasticbeanstalk-application'
+      'body':"""
+         ${1:elasticbeanstalk-application_name}:
+         	Type: AWS::ElasticBeanstalk::Application
+         	Properties:
+         		ApplicationName: ${2:String}     # optional
+         		Description: ${3:String}     # optional
+"""

@@ -1,0 +1,12 @@
+'.source.yaml':
+  'vpc':
+      'prefix': 'vpc'
+      'body':"""
+         ${1:vpc_name}:
+         	Type: AWS::EC2::VPC
+         	Properties:
+         		CidrBlock: ${2:String}     # required
+         		EnableDnsHostnames: ${3:Boolean}     # optional
+         		EnableDnsSupport: ${4:Boolean}     # optional
+         		InstanceTenancy: ${5:String}     # optional
+"""

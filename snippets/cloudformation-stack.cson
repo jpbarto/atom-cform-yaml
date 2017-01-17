@@ -1,0 +1,16 @@
+'.source.yaml':
+  'cloudformation-stack':
+      'prefix': 'cloudformation-stack'
+      'body':"""
+         ${1:cloudformation-stack_name}:
+         	Type: AWS::CloudFormation::Stack
+         	Properties:
+         		NotificationARNs:                # optional, list of String
+         			- ${2:String}
+         		Parameters:                # optional, map of String
+         			${3:String_key}: ${4:String_value}
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+         		TemplateURL: ${6:String}     # required
+         		TimeoutInMinutes: ${7:Integer}     # optional
+"""

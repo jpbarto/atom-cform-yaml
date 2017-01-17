@@ -1,0 +1,36 @@
+'.source.yaml':
+  'opsworks-stack':
+      'prefix': 'opsworks-stack'
+      'body':"""
+         ${1:opsworks-stack_name}:
+         	Type: AWS::OpsWorks::Stack
+         	Properties:
+         		AgentVersion: ${2:String}     # optional
+         		Attributes:                # optional, map of String
+         			${3:String_key}: ${4:String_value}
+         		ChefConfiguration: ${5:ChefConfiguration}     # optional
+         		CloneAppIds:                # optional, list of String
+         			- ${6:String}
+         		ClonePermissions: ${7:Boolean}     # optional
+         		ConfigurationManager: ${8:StackConfigurationManager}     # optional
+         		CustomCookbooksSource: ${9:Source}     # optional
+         		CustomJson: ${10:Json}     # optional
+         		DefaultAvailabilityZone: ${11:String}     # optional
+         		DefaultInstanceProfileArn: ${12:String}     # required
+         		DefaultOs: ${13:String}     # optional
+         		DefaultRootDeviceType: ${14:String}     # optional
+         		DefaultSshKeyName: ${15:String}     # optional
+         		DefaultSubnetId: ${16:String}     # optional
+         		EcsClusterArn: ${17:String}     # optional
+         		ElasticIps:                # optional, list of ElasticIp
+         			- ${18:ElasticIp}
+         		HostnameTheme: ${19:String}     # optional
+         		Name: ${20:String}     # required
+         		RdsDbInstances:                # optional, list of RdsDbInstance
+         			- ${21:RdsDbInstance}
+         		ServiceRoleArn: ${22:String}     # required
+         		SourceStackId: ${23:String}     # optional
+         		UseCustomCookbooks: ${24:Boolean}     # optional
+         		UseOpsworksSecurityGroups: ${25:Boolean}     # optional
+         		VpcId: ${26:String}     # optional
+"""
