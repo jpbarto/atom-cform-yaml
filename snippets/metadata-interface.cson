@@ -2,7 +2,7 @@
   'metadata-interface':
     'prefix': 'metadata-interface'
     'body': """
-AWS::CloudFormation::Interface:f
+AWS::CloudFormation::Interface:
 	ParameterGroup:			# list of parameter groups
 		- Label:
 			default: ${0:groupLabel}
