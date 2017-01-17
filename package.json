@@ -1,7 +1,7 @@
 {
   "name": "atom-cform-yaml",
   "main": "./lib/atom-cform-yaml",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Collection of snippets for easily authoring AWS CloudFormation templates using YAML",
   "keywords": [
     "yaml",
