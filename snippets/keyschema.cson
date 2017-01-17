@@ -1,0 +1,7 @@
+'.source.yaml':
+  'keyschema':
+      'prefix': 'keyschema'
+      'body':"""
+         AttributeName: ${2:String}     # required
+         KeyType: ${3:String}     # required
+"""

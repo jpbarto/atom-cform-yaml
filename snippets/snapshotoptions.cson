@@ -1,0 +1,6 @@
+'.source.yaml':
+  'snapshotoptions':
+      'prefix': 'snapshotoptions'
+      'body':"""
+         AutomatedSnapshotStartHour: ${2:Integer}     # optional
+"""

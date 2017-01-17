@@ -1,0 +1,8 @@
+'.source.yaml':
+  'copycommand':
+      'prefix': 'copycommand'
+      'body':"""
+         CopyOptions: ${2:String}     # optional
+         DataTableColumns: ${3:String}     # optional
+         DataTableName: ${4:String}     # required
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'replicationdestination':
+      'prefix': 'replicationdestination'
+      'body':"""
+         Bucket: ${2:String}     # required
+         StorageClass: ${3:String}     # optional
+"""

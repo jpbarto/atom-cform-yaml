@@ -1,0 +1,7 @@
+'.source.yaml':
+  'connectiondrainingpolicy':
+      'prefix': 'connectiondrainingpolicy'
+      'body':"""
+         Enabled: ${2:Boolean}     # required
+         Timeout: ${3:Integer}     # optional
+"""

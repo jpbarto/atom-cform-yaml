@@ -1,0 +1,8 @@
+'.source.yaml':
+  'datasource':
+      'prefix': 'datasource'
+      'body':"""
+         Arn: ${2:String}     # optional
+         DatabaseName: ${3:String}     # optional
+         Type: ${4:String}     # optional
+"""

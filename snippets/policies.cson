@@ -1,0 +1,13 @@
+'.source.yaml':
+  'policies':
+      'prefix': 'policies'
+      'body':"""
+         Attributes:                # required, list of json
+         	- ${2:json}
+         InstancePorts:                # optional, list of String
+         	- ${3:String}
+         LoadBalancerPorts:                # optional, list of String
+         	- ${4:String}
+         PolicyName: ${5:String}     # required
+         PolicyType: ${6:String}     # required
+"""

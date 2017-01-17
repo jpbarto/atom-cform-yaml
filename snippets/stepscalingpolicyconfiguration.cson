@@ -1,0 +1,11 @@
+'.source.yaml':
+  'stepscalingpolicyconfiguration':
+      'prefix': 'stepscalingpolicyconfiguration'
+      'body':"""
+         AdjustmentType: ${2:String}     # optional
+         Cooldown: ${3:Integer}     # optional
+         MetricAggregationType: ${4:String}     # optional
+         MinAdjustmentMagnitude: ${5:Integer}     # optional
+         StepAdjustments:                # optional, list of StepAdjustment
+         	- ${6:StepAdjustment}
+"""

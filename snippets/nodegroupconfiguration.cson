@@ -1,0 +1,10 @@
+'.source.yaml':
+  'nodegroupconfiguration':
+      'prefix': 'nodegroupconfiguration'
+      'body':"""
+         PrimaryAvailabilityZone: ${2:String}     # optional
+         ReplicaAvailabilityZones:                # optional, list of String
+         	- ${3:String}
+         ReplicaCount: ${4:Integer}     # optional
+         Slots: ${5:String}     # optional
+"""

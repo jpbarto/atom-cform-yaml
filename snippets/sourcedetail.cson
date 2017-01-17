@@ -1,0 +1,7 @@
+'.source.yaml':
+  'sourcedetail':
+      'prefix': 'sourcedetail'
+      'body':"""
+         EventSource: ${2:String}     # required
+         MessageType: ${3:String}     # required
+"""

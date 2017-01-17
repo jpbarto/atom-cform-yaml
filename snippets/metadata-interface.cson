@@ -1,0 +1,14 @@
+'.source.yaml':
+  'metadata-interface':
+    'prefix': 'metadata-interface'
+    'body': """
+AWS::CloudFormation::Interface:f
+	ParameterGroup:			# list of parameter groups
+		- Label:
+			default: ${0:groupLabel}
+		  Parameters:
+			- ${1:parameterName}
+	ParameterLabels:		# map of labels
+		${2:parameterName}:
+			default: ${3:label}
+    """

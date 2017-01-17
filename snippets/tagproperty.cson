@@ -1,0 +1,8 @@
+'.source.yaml':
+  'tagproperty':
+      'prefix': 'tagproperty'
+      'body':"""
+         Key: ${2:String}     # required
+         PropagateAtLaunch: ${3:Boolean}     # required
+         Value: ${4:String}     # required
+"""

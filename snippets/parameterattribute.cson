@@ -1,0 +1,7 @@
+'.source.yaml':
+  'parameterattribute':
+      'prefix': 'parameterattribute'
+      'body':"""
+         Key: ${2:String}     # required
+         StringValue: ${3:String}     # required
+"""

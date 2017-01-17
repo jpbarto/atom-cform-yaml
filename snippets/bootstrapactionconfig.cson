@@ -1,0 +1,7 @@
+'.source.yaml':
+  'bootstrapactionconfig':
+      'prefix': 'bootstrapactionconfig'
+      'body':"""
+         Name: ${2:String}     # required
+         ScriptBootstrapAction: ${3:ScriptBootstrapActionConfig}     # required
+"""

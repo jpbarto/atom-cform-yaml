@@ -1,0 +1,11 @@
+'.source.yaml':
+  'accesskey':
+      'prefix': 'accesskey'
+      'body':"""
+         ${1:accesskey_name}:
+         	Type: AWS::IAM::AccessKey
+         	Properties:
+         		Serial: ${2:Integer}     # optional
+         		Status: ${3:String}     # optional
+         		UserName: ${4:String}     # required
+"""

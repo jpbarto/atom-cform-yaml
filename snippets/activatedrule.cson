@@ -1,0 +1,8 @@
+'.source.yaml':
+  'activatedrule':
+      'prefix': 'activatedrule'
+      'body':"""
+         Action: ${2:WafAction}     # required
+         Priority: ${3:Integer}     # required
+         RuleId: ${4:String}     # required
+"""

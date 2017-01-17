@@ -1,0 +1,10 @@
+'.source.yaml':
+  'eip':
+      'prefix': 'eip'
+      'body':"""
+         ${1:eip_name}:
+         	Type: AWS::EC2::EIP
+         	Properties:
+         		Domain: ${2:String}     # optional
+         		InstanceId: ${3:String}     # optional
+"""

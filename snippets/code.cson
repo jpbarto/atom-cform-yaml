@@ -1,0 +1,9 @@
+'.source.yaml':
+  'code':
+      'prefix': 'code'
+      'body':"""
+         S3Bucket: ${2:String}     # optional
+         S3Key: ${3:String}     # optional
+         S3ObjectVersion: ${4:String}     # optional
+         ZipFile: ${5:String}     # optional
+"""

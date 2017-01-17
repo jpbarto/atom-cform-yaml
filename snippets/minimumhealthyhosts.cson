@@ -1,0 +1,7 @@
+'.source.yaml':
+  'minimumhealthyhosts':
+      'prefix': 'minimumhealthyhosts'
+      'body':"""
+         Type: ${2:String}     # optional
+         Value: ${3:Integer}     # optional
+"""

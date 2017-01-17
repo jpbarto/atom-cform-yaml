@@ -1,0 +1,4 @@
+'.source.yaml':
+  'getatt':
+    'prefix': 'getatt'
+    'body': 'Fn::GetAtt: [ ${1:logicalNameOfResource}, ${2:attributeName} ]'

@@ -1,0 +1,12 @@
+'.source.yaml':
+  'networkinterfaceattachment':
+      'prefix': 'networkinterfaceattachment'
+      'body':"""
+         ${1:networkinterfaceattachment_name}:
+         	Type: AWS::EC2::NetworkInterfaceAttachment
+         	Properties:
+         		DeleteOnTermination: ${2:Boolean}     # optional
+         		DeviceIndex: ${3:String}     # required
+         		InstanceId: ${4:String}     # required
+         		NetworkInterfaceId: ${5:String}     # required
+"""

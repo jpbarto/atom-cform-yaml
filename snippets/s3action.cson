@@ -1,0 +1,8 @@
+'.source.yaml':
+  's3action':
+      'prefix': 's3action'
+      'body':"""
+         BucketName: ${2:String}     # required
+         Key: ${3:String}     # required
+         RoleArn: ${4:String}     # required
+"""

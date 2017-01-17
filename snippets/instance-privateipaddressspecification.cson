@@ -1,0 +1,7 @@
+'.source.yaml':
+  'instance-privateipaddressspecification':
+      'prefix': 'instance-privateipaddressspecification'
+      'body':"""
+         Primary: ${2:Boolean}     # required
+         PrivateIpAddress: ${3:String}     # required
+"""

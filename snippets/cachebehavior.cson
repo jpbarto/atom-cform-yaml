@@ -1,0 +1,20 @@
+'.source.yaml':
+  'cachebehavior':
+      'prefix': 'cachebehavior'
+      'body':"""
+         AllowedMethods:                # optional, list of String
+         	- ${2:String}
+         CachedMethods:                # optional, list of String
+         	- ${3:String}
+         Compress: ${4:Boolean}     # optional
+         DefaultTTL: ${5:Long}     # optional
+         ForwardedValues: ${6:ForwardedValues}     # required
+         MaxTTL: ${7:Long}     # optional
+         MinTTL: ${8:Long}     # optional
+         PathPattern: ${9:String}     # required
+         SmoothStreaming: ${10:Boolean}     # optional
+         TargetOriginId: ${11:String}     # required
+         TrustedSigners:                # optional, list of String
+         	- ${12:String}
+         ViewerProtocolPolicy: ${13:String}     # required
+"""

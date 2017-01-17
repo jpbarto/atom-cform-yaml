@@ -1,0 +1,7 @@
+'.source.yaml':
+  'icmp':
+      'prefix': 'icmp'
+      'body':"""
+         Code: ${2:Integer}     # optional
+         Type: ${3:Integer}     # optional
+"""

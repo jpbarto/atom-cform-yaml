@@ -1,0 +1,7 @@
+'.source.yaml':
+  'republishaction':
+      'prefix': 'republishaction'
+      'body':"""
+         RoleArn: ${2:String}     # required
+         Topic: ${3:String}     # required
+"""

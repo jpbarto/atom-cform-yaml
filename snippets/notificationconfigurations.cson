@@ -1,0 +1,8 @@
+'.source.yaml':
+  'notificationconfigurations':
+      'prefix': 'notificationconfigurations'
+      'body':"""
+         NotificationTypes:                # optional, list of String
+         	- ${2:String}
+         TopicARN: ${3:String}     # required
+"""

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'streamspecification':
+      'prefix': 'streamspecification'
+      'body':"""
+         StreamViewType: ${2:String}     # required
+"""

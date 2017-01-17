@@ -1,0 +1,11 @@
+'.source.yaml':
+  'applicationversion':
+      'prefix': 'applicationversion'
+      'body':"""
+         ${1:applicationversion_name}:
+         	Type: AWS::ElasticBeanstalk::ApplicationVersion
+         	Properties:
+         		ApplicationName: ${2:String}     # required
+         		Description: ${3:String}     # optional
+         		SourceBundle: ${4:SourceBundle}     # required
+"""

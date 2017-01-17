@@ -1,0 +1,8 @@
+'.source.yaml':
+  'projection':
+      'prefix': 'projection'
+      'body':"""
+         NonKeyAttributes:                # optional, list of String
+         	- ${2:String}
+         ProjectionType: ${3:String}     # optional
+"""

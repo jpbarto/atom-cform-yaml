@@ -1,0 +1,15 @@
+'.source.yaml':
+  'deployment-methodsetting':
+      'prefix': 'deployment-methodsetting'
+      'body':"""
+         CacheDataEncrypted: ${2:Boolean}     # optional
+         CacheTtlInSeconds: ${3:Integer}     # optional
+         CachingEnabled: ${4:Boolean}     # optional
+         DataTraceEnabled: ${5:Boolean}     # optional
+         HttpMethod: ${6:String}     # optional
+         LoggingLevel: ${7:String}     # optional
+         MetricsEnabled: ${8:Boolean}     # optional
+         ResourcePath: ${9:String}     # optional
+         ThrottlingBurstLimit: ${10:Integer}     # optional
+         ThrottlingRateLimit: ${11:Double}     # optional
+"""

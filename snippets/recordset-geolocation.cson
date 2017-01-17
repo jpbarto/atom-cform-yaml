@@ -1,0 +1,8 @@
+'.source.yaml':
+  'recordset-geolocation':
+      'prefix': 'recordset-geolocation'
+      'body':"""
+         ContinentCode: ${2:String}     # optional
+         CountryCode: ${3:String}     # optional
+         SubdivisionCode: ${4:String}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'hostedzonetag':
+      'prefix': 'hostedzonetag'
+      'body':"""
+         Key: ${2:String}     # required
+         Value: ${3:String}     # required
+"""

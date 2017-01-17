@@ -1,0 +1,7 @@
+'.source.yaml':
+  'elasticsearchbufferinghints':
+      'prefix': 'elasticsearchbufferinghints'
+      'body':"""
+         IntervalInSeconds: ${2:Integer}     # required
+         SizeInMBs: ${3:Integer}     # required
+"""

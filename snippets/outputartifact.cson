@@ -1,0 +1,6 @@
+'.source.yaml':
+  'outputartifact':
+      'prefix': 'outputartifact'
+      'body':"""
+         Name: ${2:String}     # required
+"""

@@ -1,0 +1,10 @@
+'.source.yaml':
+  'bucketpolicy':
+      'prefix': 'bucketpolicy'
+      'body':"""
+         ${1:bucketpolicy_name}:
+         	Type: AWS::S3::BucketPolicy
+         	Properties:
+         		Bucket: ${2:String}     # required
+         		PolicyDocument: ${3:Json}     # required
+"""

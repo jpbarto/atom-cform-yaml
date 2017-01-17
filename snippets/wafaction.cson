@@ -1,0 +1,6 @@
+'.source.yaml':
+  'wafaction':
+      'prefix': 'wafaction'
+      'body':"""
+         Type: ${2:String}     # required
+"""

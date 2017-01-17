@@ -1,0 +1,43 @@
+'.source.yaml':
+  'containerdefinition':
+      'prefix': 'containerdefinition'
+      'body':"""
+         Command:                # optional, list of String
+         	- ${2:String}
+         Cpu: ${3:Integer}     # optional
+         DisableNetworking: ${4:Boolean}     # optional
+         DnsSearchDomains:                # optional, list of String
+         	- ${5:String}
+         DnsServers:                # optional, list of String
+         	- ${6:String}
+         DockerLabels:                # optional, map of String
+         	${7:String_key}: ${8:String_value}
+         DockerSecurityOptions:                # optional, list of String
+         	- ${9:String}
+         EntryPoint:                # optional, list of String
+         	- ${10:String}
+         Environment:                # optional, list of KeyValuePair
+         	- ${11:KeyValuePair}
+         Essential: ${12:Boolean}     # optional
+         ExtraHosts:                # optional, list of HostEntry
+         	- ${13:HostEntry}
+         Hostname: ${14:String}     # optional
+         Image: ${15:String}     # optional
+         Links:                # optional, list of String
+         	- ${16:String}
+         LogConfiguration: ${17:LogConfiguration}     # optional
+         Memory: ${18:Integer}     # optional
+         MountPoints:                # optional, list of MountPoint
+         	- ${19:MountPoint}
+         Name: ${20:String}     # optional
+         PortMappings:                # optional, list of PortMapping
+         	- ${21:PortMapping}
+         Privileged: ${22:Boolean}     # optional
+         ReadonlyRootFilesystem: ${23:Boolean}     # optional
+         Ulimits:                # optional, list of Ulimit
+         	- ${24:Ulimit}
+         User: ${25:String}     # optional
+         VolumesFrom:                # optional, list of VolumeFrom
+         	- ${26:VolumeFrom}
+         WorkingDirectory: ${27:String}     # optional
+"""

@@ -1,0 +1,9 @@
+'.source.yaml':
+  'sdb-domain':
+      'prefix': 'sdb-domain'
+      'body':"""
+         ${1:sdb-domain_name}:
+         	Type: AWS::SDB::Domain
+         	Properties:
+         		Description: ${2:String}     # optional
+"""

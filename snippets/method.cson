@@ -1,0 +1,21 @@
+'.source.yaml':
+  'method':
+      'prefix': 'method'
+      'body':"""
+         ${1:method_name}:
+         	Type: AWS::ApiGateway::Method
+         	Properties:
+         		ApiKeyRequired: ${2:Boolean}     # optional
+         		AuthorizationType: ${3:String}     # optional
+         		AuthorizerId: ${4:String}     # optional
+         		HttpMethod: ${5:String}     # required
+         		Integration: ${6:Integration}     # optional
+         		MethodResponses:                # optional, list of MethodResponse
+         			- ${7:MethodResponse}
+         		RequestModels:                # optional, map of String
+         			${8:String_key}: ${9:String_value}
+         		RequestParameters:                # optional, map of Boolean
+         			${10:Boolean_key}: ${11:Boolean_value}
+         		ResourceId: ${12:String}     # optional
+         		RestApiId: ${13:String}     # optional
+"""

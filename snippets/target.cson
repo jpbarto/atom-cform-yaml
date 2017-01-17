@@ -1,0 +1,9 @@
+'.source.yaml':
+  'target':
+      'prefix': 'target'
+      'body':"""
+         Arn: ${2:String}     # required
+         Id: ${3:String}     # required
+         Input: ${4:String}     # optional
+         InputPath: ${5:String}     # optional
+"""

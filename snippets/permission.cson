@@ -1,0 +1,13 @@
+'.source.yaml':
+  'permission':
+      'prefix': 'permission'
+      'body':"""
+         ${1:permission_name}:
+         	Type: AWS::Lambda::Permission
+         	Properties:
+         		Action: ${2:String}     # required
+         		FunctionName: ${3:String}     # required
+         		Principal: ${4:String}     # required
+         		SourceAccount: ${5:String}     # optional
+         		SourceArn: ${6:String}     # optional
+"""

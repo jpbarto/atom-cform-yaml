@@ -1,0 +1,7 @@
+'.source.yaml':
+  'githublocation':
+      'prefix': 'githublocation'
+      'body':"""
+         CommitId: ${2:String}     # required
+         Repository: ${3:String}     # required
+"""

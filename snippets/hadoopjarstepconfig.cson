@@ -1,0 +1,11 @@
+'.source.yaml':
+  'hadoopjarstepconfig':
+      'prefix': 'hadoopjarstepconfig'
+      'body':"""
+         Args:                # optional, list of String
+         	- ${2:String}
+         Jar: ${3:String}     # required
+         MainClass: ${4:String}     # optional
+         StepProperties:                # optional, list of KeyValue
+         	- ${5:KeyValue}
+"""

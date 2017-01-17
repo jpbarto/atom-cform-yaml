@@ -1,0 +1,8 @@
+'.source.yaml':
+  'parameterobject':
+      'prefix': 'parameterobject'
+      'body':"""
+         Attributes:                # required, list of ParameterAttribute
+         	- ${2:ParameterAttribute}
+         Id: ${3:String}     # required
+"""

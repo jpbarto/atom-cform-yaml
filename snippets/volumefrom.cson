@@ -1,0 +1,7 @@
+'.source.yaml':
+  'volumefrom':
+      'prefix': 'volumefrom'
+      'body':"""
+         ReadOnly: ${2:Boolean}     # optional
+         SourceContainer: ${3:String}     # optional
+"""

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'scriptbootstrapactionconfig':
+      'prefix': 'scriptbootstrapactionconfig'
+      'body':"""
+         Args:                # optional, list of String
+         	- ${2:String}
+         Path: ${3:String}     # required
+"""

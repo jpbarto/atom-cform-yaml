@@ -1,0 +1,12 @@
+'.source.yaml':
+  'configurationproperties':
+      'prefix': 'configurationproperties'
+      'body':"""
+         Description: ${2:String}     # optional
+         Key: ${3:Boolean}     # required
+         Name: ${4:String}     # required
+         Queryable: ${5:Boolean}     # optional
+         Required: ${6:Boolean}     # required
+         Secret: ${7:Boolean}     # required
+         Type: ${8:String}     # optional
+"""

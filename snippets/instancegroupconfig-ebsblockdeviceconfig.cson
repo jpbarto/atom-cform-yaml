@@ -1,0 +1,7 @@
+'.source.yaml':
+  'instancegroupconfig-ebsblockdeviceconfig':
+      'prefix': 'instancegroupconfig-ebsblockdeviceconfig'
+      'body':"""
+         VolumeSpecification: ${2:VolumeSpecification}     # required
+         VolumesPerInstance: ${3:Integer}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'chefconfiguration':
+      'prefix': 'chefconfiguration'
+      'body':"""
+         BerkshelfVersion: ${2:String}     # optional
+         ManageBerkshelf: ${3:Boolean}     # optional
+"""

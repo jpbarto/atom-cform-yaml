@@ -1,0 +1,7 @@
+'.source.yaml':
+  'noncurrentversiontransition':
+      'prefix': 'noncurrentversiontransition'
+      'body':"""
+         StorageClass: ${2:String}     # required
+         TransitionInDays: ${3:Integer}     # required
+"""

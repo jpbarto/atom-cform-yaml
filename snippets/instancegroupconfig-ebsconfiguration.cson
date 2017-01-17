@@ -1,0 +1,8 @@
+'.source.yaml':
+  'instancegroupconfig-ebsconfiguration':
+      'prefix': 'instancegroupconfig-ebsconfiguration'
+      'body':"""
+         EbsBlockDeviceConfigs:                # optional, list of EbsBlockDeviceConfig
+         	- ${2:EbsBlockDeviceConfig}
+         EbsOptimized: ${3:Boolean}     # optional
+"""

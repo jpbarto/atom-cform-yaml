@@ -1,0 +1,9 @@
+'.source.yaml':
+  'restapi-s3location':
+      'prefix': 'restapi-s3location'
+      'body':"""
+         Bucket: ${2:String}     # optional
+         ETag: ${3:String}     # optional
+         Key: ${4:String}     # optional
+         Version: ${5:String}     # optional
+"""

@@ -1,0 +1,28 @@
+'.source.yaml':
+  'launchconfiguration':
+      'prefix': 'launchconfiguration'
+      'body':"""
+         ${1:launchconfiguration_name}:
+         	Type: AWS::AutoScaling::LaunchConfiguration
+         	Properties:
+         		AssociatePublicIpAddress: ${2:Boolean}     # optional
+         		BlockDeviceMappings:                # optional, list of BlockDeviceMapping
+         			- ${3:BlockDeviceMapping}
+         		ClassicLinkVPCId: ${4:String}     # optional
+         		ClassicLinkVPCSecurityGroups:                # optional, list of String
+         			- ${5:String}
+         		EbsOptimized: ${6:Boolean}     # optional
+         		IamInstanceProfile: ${7:String}     # optional
+         		ImageId: ${8:String}     # required
+         		InstanceId: ${9:String}     # optional
+         		InstanceMonitoring: ${10:Boolean}     # optional
+         		InstanceType: ${11:String}     # required
+         		KernelId: ${12:String}     # optional
+         		KeyName: ${13:String}     # optional
+         		PlacementTenancy: ${14:String}     # optional
+         		RamDiskId: ${15:String}     # optional
+         		SecurityGroups:                # optional, list of String
+         			- ${16:String}
+         		SpotPrice: ${17:String}     # optional
+         		UserData: ${18:String}     # optional
+"""

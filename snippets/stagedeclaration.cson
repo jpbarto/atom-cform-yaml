@@ -1,0 +1,10 @@
+'.source.yaml':
+  'stagedeclaration':
+      'prefix': 'stagedeclaration'
+      'body':"""
+         Actions:                # required, list of ActionDeclaration
+         	- ${2:ActionDeclaration}
+         Blockers:                # optional, list of BlockerDeclaration
+         	- ${3:BlockerDeclaration}
+         Name: ${4:String}     # required
+"""

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'restrictions':
+      'prefix': 'restrictions'
+      'body':"""
+         GeoRestriction: ${2:GeoRestriction}     # required
+"""

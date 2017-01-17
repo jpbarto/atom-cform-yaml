@@ -1,0 +1,9 @@
+'.source.yaml':
+  'localsecondaryindex':
+      'prefix': 'localsecondaryindex'
+      'body':"""
+         IndexName: ${2:String}     # required
+         KeySchema:                # required, list of KeySchema
+         	- ${3:KeySchema}
+         Projection: ${4:Projection}     # required
+"""

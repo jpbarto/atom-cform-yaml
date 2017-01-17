@@ -1,0 +1,8 @@
+'.source.yaml':
+  'scalingpolicy-stepadjustment':
+      'prefix': 'scalingpolicy-stepadjustment'
+      'body':"""
+         MetricIntervalLowerBound: ${2:Double}     # optional
+         MetricIntervalUpperBound: ${3:Double}     # optional
+         ScalingAdjustment: ${4:Integer}     # required
+"""

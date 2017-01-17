@@ -1,0 +1,10 @@
+'.source.yaml':
+  'document':
+      'prefix': 'document'
+      'body':"""
+         ${1:document_name}:
+         	Type: AWS::SSM::Document
+         	Properties:
+         		Content: ${2:Json}     # required
+         		DocumentType: ${3:String}     # optional
+"""

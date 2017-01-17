@@ -1,0 +1,8 @@
+'.source.yaml':
+  'transition':
+      'prefix': 'transition'
+      'body':"""
+         StorageClass: ${2:String}     # required
+         TransitionDate: ${3:Timestamp}     # optional
+         TransitionInDays: ${4:Integer}     # optional
+"""

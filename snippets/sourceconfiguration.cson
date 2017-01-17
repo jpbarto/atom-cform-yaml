@@ -1,0 +1,7 @@
+'.source.yaml':
+  'sourceconfiguration':
+      'prefix': 'sourceconfiguration'
+      'body':"""
+         ApplicationName: ${2:String}     # required
+         TemplateName: ${3:String}     # required
+"""

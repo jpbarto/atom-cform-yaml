@@ -1,0 +1,15 @@
+'.source.yaml':
+  'scheduledaction':
+      'prefix': 'scheduledaction'
+      'body':"""
+         ${1:scheduledaction_name}:
+         	Type: AWS::AutoScaling::ScheduledAction
+         	Properties:
+         		AutoScalingGroupName: ${2:String}     # required
+         		DesiredCapacity: ${3:Integer}     # optional
+         		EndTime: ${4:String}     # optional
+         		MaxSize: ${5:Integer}     # optional
+         		MinSize: ${6:Integer}     # optional
+         		Recurrence: ${7:String}     # optional
+         		StartTime: ${8:String}     # optional
+"""

@@ -1,0 +1,10 @@
+'.source.yaml':
+  'kms-alias':
+      'prefix': 'kms-alias'
+      'body':"""
+         ${1:kms-alias_name}:
+         	Type: AWS::KMS::Alias
+         	Properties:
+         		AliasName: ${2:String}     # required
+         		TargetKeyId: ${3:String}     # required
+"""

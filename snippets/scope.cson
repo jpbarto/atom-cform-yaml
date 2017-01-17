@@ -1,0 +1,10 @@
+'.source.yaml':
+  'scope':
+      'prefix': 'scope'
+      'body':"""
+         ComplianceResourceId: ${2:String}     # optional
+         ComplianceResourceTypes:                # optional, list of String
+         	- ${3:String}
+         TagKey: ${4:String}     # optional
+         TagValue: ${5:String}     # optional
+"""

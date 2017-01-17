@@ -1,0 +1,7 @@
+'.source.yaml':
+  'taskdefinition-volume':
+      'prefix': 'taskdefinition-volume'
+      'body':"""
+         Host: ${2:HostVolumeProperties}     # optional
+         Name: ${3:String}     # optional
+"""

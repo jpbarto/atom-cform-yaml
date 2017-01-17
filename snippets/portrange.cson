@@ -1,0 +1,7 @@
+'.source.yaml':
+  'portrange':
+      'prefix': 'portrange'
+      'body':"""
+         From: ${2:Integer}     # optional
+         To: ${3:Integer}     # optional
+"""

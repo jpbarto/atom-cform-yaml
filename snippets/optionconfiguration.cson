@@ -1,0 +1,12 @@
+'.source.yaml':
+  'optionconfiguration':
+      'prefix': 'optionconfiguration'
+      'body':"""
+         DBSecurityGroupMemberships:                # optional, list of String
+         	- ${2:String}
+         OptionName: ${3:String}     # required
+         OptionSettings: ${4:OptionSetting}     # optional
+         Port: ${5:Integer}     # optional
+         VpcSecurityGroupMemberships:                # optional, list of String
+         	- ${6:String}
+"""

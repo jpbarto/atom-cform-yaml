@@ -1,0 +1,10 @@
+'.source.yaml':
+  'viewercertificate':
+      'prefix': 'viewercertificate'
+      'body':"""
+         AcmCertificateArn: ${2:String}     # optional
+         CloudFrontDefaultCertificate: ${3:Boolean}     # optional
+         IamCertificateId: ${4:String}     # optional
+         MinimumProtocolVersion: ${5:String}     # optional
+         SslSupportMethod: ${6:String}     # optional
+"""

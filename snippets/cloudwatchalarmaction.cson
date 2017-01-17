@@ -1,0 +1,9 @@
+'.source.yaml':
+  'cloudwatchalarmaction':
+      'prefix': 'cloudwatchalarmaction'
+      'body':"""
+         AlarmName: ${2:String}     # required
+         RoleArn: ${3:String}     # required
+         StateReason: ${4:String}     # required
+         StateValue: ${5:String}     # required
+"""

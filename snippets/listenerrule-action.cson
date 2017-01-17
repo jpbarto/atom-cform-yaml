@@ -1,0 +1,7 @@
+'.source.yaml':
+  'listenerrule-action':
+      'prefix': 'listenerrule-action'
+      'body':"""
+         TargetGroupArn: ${2:String}     # required
+         Type: ${3:String}     # required
+"""

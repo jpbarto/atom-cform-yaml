@@ -1,0 +1,7 @@
+'.source.yaml':
+  'artifactdetails':
+      'prefix': 'artifactdetails'
+      'body':"""
+         MaximumCount: ${2:Integer}     # required
+         MinimumCount: ${3:Integer}     # required
+"""

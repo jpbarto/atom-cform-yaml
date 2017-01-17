@@ -1,0 +1,6 @@
+'.source.yaml':
+  'hostedzoneconfig':
+      'prefix': 'hostedzoneconfig'
+      'body':"""
+         Comment: ${2:String}     # optional
+"""

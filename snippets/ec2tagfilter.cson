@@ -1,0 +1,8 @@
+'.source.yaml':
+  'ec2tagfilter':
+      'prefix': 'ec2tagfilter'
+      'body':"""
+         Key: ${2:String}     # optional
+         Type: ${3:String}     # required
+         Value: ${4:String}     # optional
+"""

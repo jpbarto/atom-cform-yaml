@@ -1,0 +1,9 @@
+'.source.yaml':
+  'customerrorresponse':
+      'prefix': 'customerrorresponse'
+      'body':"""
+         ErrorCachingMinTTL: ${2:Long}     # optional
+         ErrorCode: ${3:Integer}     # required
+         ResponseCode: ${4:Integer}     # optional
+         ResponsePagePath: ${5:String}     # optional
+"""

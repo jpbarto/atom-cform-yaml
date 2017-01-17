@@ -1,0 +1,7 @@
+'.source.yaml':
+  'bufferinghints':
+      'prefix': 'bufferinghints'
+      'body':"""
+         IntervalInSeconds: ${2:Integer}     # required
+         SizeInMBs: ${3:Integer}     # required
+"""

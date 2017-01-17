@@ -1,0 +1,9 @@
+'.source.yaml':
+  'stack-output':
+      'prefix': 'stack-output'
+      'body':"""
+${0:outputName}:			#
+	Description: ${1:description}	# optional, string describing the output
+	Value: ${2:outputValue}		# required, value of the output
+	Export: ${3:exportName}		# optional, name used for cross-stack reference
+	"""

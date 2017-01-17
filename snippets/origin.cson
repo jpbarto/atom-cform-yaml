@@ -1,0 +1,12 @@
+'.source.yaml':
+  'origin':
+      'prefix': 'origin'
+      'body':"""
+         CustomOriginConfig: ${2:CustomOriginConfig}     # optional
+         DomainName: ${3:String}     # required
+         Id: ${4:String}     # required
+         OriginCustomHeaders:                # optional, list of OriginCustomHeader
+         	- ${5:OriginCustomHeader}
+         OriginPath: ${6:String}     # optional
+         S3OriginConfig: ${7:S3OriginConfig}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'dimension':
+      'prefix': 'dimension'
+      'body':"""
+         Name: ${2:String}     # required
+         Value: ${3:String}     # required
+"""

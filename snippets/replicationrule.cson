@@ -1,0 +1,9 @@
+'.source.yaml':
+  'replicationrule':
+      'prefix': 'replicationrule'
+      'body':"""
+         Destination: ${2:ReplicationDestination}     # required
+         Id: ${3:String}     # optional
+         Prefix: ${4:String}     # required
+         Status: ${5:String}     # required
+"""

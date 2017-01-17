@@ -1,0 +1,8 @@
+'.source.yaml':
+  'topicconfiguration':
+      'prefix': 'topicconfiguration'
+      'body':"""
+         Event: ${2:String}     # required
+         Filter: ${3:NotificationFilter}     # optional
+         Topic: ${4:String}     # required
+"""

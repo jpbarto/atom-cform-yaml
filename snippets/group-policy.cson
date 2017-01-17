@@ -1,0 +1,7 @@
+'.source.yaml':
+  'group-policy':
+      'prefix': 'group-policy'
+      'body':"""
+         PolicyDocument: ${2:Json}     # required
+         PolicyName: ${3:String}     # required
+"""

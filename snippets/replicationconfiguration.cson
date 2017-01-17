@@ -1,0 +1,8 @@
+'.source.yaml':
+  'replicationconfiguration':
+      'prefix': 'replicationconfiguration'
+      'body':"""
+         Role: ${2:String}     # required
+         Rules:                # required, list of ReplicationRule
+         	- ${3:ReplicationRule}
+"""

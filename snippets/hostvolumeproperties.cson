@@ -1,0 +1,6 @@
+'.source.yaml':
+  'hostvolumeproperties':
+      'prefix': 'hostvolumeproperties'
+      'body':"""
+         SourcePath: ${2:String}     # optional
+"""

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'simplead-vpcsettings':
+      'prefix': 'simplead-vpcsettings'
+      'body':"""
+         SubnetIds:                # required, list of String
+         	- ${2:String}
+         VpcId: ${3:String}     # required
+"""

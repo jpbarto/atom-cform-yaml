@@ -1,0 +1,23 @@
+'.source.yaml':
+  'distributionconfig':
+      'prefix': 'distributionconfig'
+      'body':"""
+         Aliases:                # optional, list of String
+         	- ${2:String}
+         CacheBehaviors:                # optional, list of CacheBehavior
+         	- ${3:CacheBehavior}
+         Comment: ${4:String}     # optional
+         CustomErrorResponses:                # optional, list of CustomErrorResponse
+         	- ${5:CustomErrorResponse}
+         DefaultCacheBehavior: ${6:DefaultCacheBehavior}     # required
+         DefaultRootObject: ${7:String}     # optional
+         Enabled: ${8:Boolean}     # required
+         HttpVersion: ${9:String}     # optional
+         Logging: ${10:Logging}     # optional
+         Origins:                # required, list of Origin
+         	- ${11:Origin}
+         PriceClass: ${12:String}     # optional
+         Restrictions: ${13:Restrictions}     # optional
+         ViewerCertificate: ${14:ViewerCertificate}     # optional
+         WebACLId: ${15:String}     # optional
+"""

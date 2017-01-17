@@ -1,0 +1,11 @@
+'.source.yaml':
+  'blockdevice':
+      'prefix': 'blockdevice'
+      'body':"""
+         DeleteOnTermination: ${2:Boolean}     # optional
+         Encrypted: ${3:Boolean}     # optional
+         Iops: ${4:Integer}     # optional
+         SnapshotId: ${5:String}     # optional
+         VolumeSize: ${6:String}     # optional
+         VolumeType: ${7:String}     # optional
+"""

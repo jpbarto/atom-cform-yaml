@@ -1,0 +1,10 @@
+'.source.yaml':
+  'cluster-configuration':
+      'prefix': 'cluster-configuration'
+      'body':"""
+         Classification: ${2:String}     # optional
+         ConfigurationProperties:                # optional, map of String
+         	${3:String_key}: ${4:String_value}
+         Configurations:                # optional, list of Configuration
+         	- ${5:Configuration}
+"""

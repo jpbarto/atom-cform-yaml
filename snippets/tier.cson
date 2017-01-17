@@ -1,0 +1,8 @@
+'.source.yaml':
+  'tier':
+      'prefix': 'tier'
+      'body':"""
+         Name: ${2:String}     # optional
+         Type: ${3:String}     # optional
+         Version: ${4:String}     # optional
+"""

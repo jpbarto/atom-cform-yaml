@@ -1,0 +1,8 @@
+'.source.yaml':
+  'lambdaconfiguration':
+      'prefix': 'lambdaconfiguration'
+      'body':"""
+         Event: ${2:String}     # required
+         Filter: ${3:NotificationFilter}     # optional
+         Function: ${4:String}     # required
+"""

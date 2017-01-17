@@ -1,0 +1,11 @@
+'.source.yaml':
+  'cloudwatchmetricaction':
+      'prefix': 'cloudwatchmetricaction'
+      'body':"""
+         MetricName: ${2:String}     # required
+         MetricNamespace: ${3:String}     # required
+         MetricTimestamp: ${4:String}     # optional
+         MetricUnit: ${5:String}     # required
+         MetricValue: ${6:String}     # required
+         RoleArn: ${7:String}     # required
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'version':
+      'prefix': 'version'
+      'body':"""
+         ${1:version_name}:
+         	Type: AWS::Lambda::Version
+         	Properties:
+         		CodeSha256: ${2:String}     # optional
+         		Description: ${3:String}     # optional
+         		FunctionName: ${4:String}     # required
+"""

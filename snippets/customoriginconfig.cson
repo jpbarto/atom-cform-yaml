@@ -1,0 +1,10 @@
+'.source.yaml':
+  'customoriginconfig':
+      'prefix': 'customoriginconfig'
+      'body':"""
+         HTTPPort: ${2:Integer}     # optional
+         HTTPSPort: ${3:Integer}     # optional
+         OriginProtocolPolicy: ${4:String}     # required
+         OriginSSLProtocols:                # optional, list of String
+         	- ${5:String}
+"""

@@ -1,0 +1,13 @@
+'.source.yaml':
+  'recordsetgroup':
+      'prefix': 'recordsetgroup'
+      'body':"""
+         ${1:recordsetgroup_name}:
+         	Type: AWS::Route53::RecordSetGroup
+         	Properties:
+         		Comment: ${2:String}     # optional
+         		HostedZoneId: ${3:String}     # optional
+         		HostedZoneName: ${4:String}     # optional
+         		RecordSets:                # optional, list of RecordSet
+         			- ${5:RecordSet}
+"""

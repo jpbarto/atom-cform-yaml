@@ -1,0 +1,6 @@
+'.source.yaml':
+  'certificate':
+      'prefix': 'certificate'
+      'body':"""
+         CertificateArn: ${2:String}     # optional
+"""

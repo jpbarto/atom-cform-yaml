@@ -1,0 +1,6 @@
+'.source.yaml':
+  'configsnapshotdeliveryproperties':
+      'prefix': 'configsnapshotdeliveryproperties'
+      'body':"""
+         DeliveryFrequency: ${2:String}     # optional
+"""

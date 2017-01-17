@@ -1,0 +1,14 @@
+'.source.yaml':
+  'actiondeclaration':
+      'prefix': 'actiondeclaration'
+      'body':"""
+         ActionTypeId: ${2:ActionTypeId}     # required
+         Configuration: ${3:Json}     # optional
+         InputArtifacts:                # optional, list of InputArtifact
+         	- ${4:InputArtifact}
+         Name: ${5:String}     # required
+         OutputArtifacts:                # optional, list of OutputArtifact
+         	- ${6:OutputArtifact}
+         RoleArn: ${7:String}     # optional
+         RunOrder: ${8:Integer}     # optional
+"""

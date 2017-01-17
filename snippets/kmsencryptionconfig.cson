@@ -1,0 +1,6 @@
+'.source.yaml':
+  'kmsencryptionconfig':
+      'prefix': 'kmsencryptionconfig'
+      'body':"""
+         AWSKMSKeyARN: ${2:String}     # required
+"""

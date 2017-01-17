@@ -1,0 +1,6 @@
+'.source.yaml':
+  'notificationfilter':
+      'prefix': 'notificationfilter'
+      'body':"""
+         S3Key: ${2:S3KeyFilter}     # required
+"""

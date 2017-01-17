@@ -1,0 +1,11 @@
+'.source.yaml':
+  'elasticsearchclusterconfig':
+      'prefix': 'elasticsearchclusterconfig'
+      'body':"""
+         DedicatedMasterCount: ${2:Integer}     # optional
+         DedicatedMasterEnabled: ${3:Boolean}     # optional
+         DedicatedMasterType: ${4:String}     # optional
+         InstanceCount: ${5:Integer}     # optional
+         InstanceType: ${6:String}     # optional
+         ZoneAwarenessEnabled: ${7:Boolean}     # optional
+"""

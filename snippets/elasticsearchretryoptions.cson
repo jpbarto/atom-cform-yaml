@@ -1,0 +1,6 @@
+'.source.yaml':
+  'elasticsearchretryoptions':
+      'prefix': 'elasticsearchretryoptions'
+      'body':"""
+         DurationInSeconds: ${2:Integer}     # required
+"""

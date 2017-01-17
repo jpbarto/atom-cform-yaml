@@ -1,0 +1,7 @@
+'.source.yaml':
+  'shutdowneventconfiguration':
+      'prefix': 'shutdowneventconfiguration'
+      'body':"""
+         DelayUntilElbConnectionsDrained: ${2:Boolean}     # optional
+         ExecutionTimeout: ${3:Integer}     # optional
+"""

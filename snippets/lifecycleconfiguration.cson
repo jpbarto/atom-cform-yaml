@@ -1,0 +1,7 @@
+'.source.yaml':
+  'lifecycleconfiguration':
+      'prefix': 'lifecycleconfiguration'
+      'body':"""
+         Rules:                # required, list of Rule
+         	- ${2:Rule}
+"""

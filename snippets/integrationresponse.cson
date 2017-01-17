@@ -1,0 +1,11 @@
+'.source.yaml':
+  'integrationresponse':
+      'prefix': 'integrationresponse'
+      'body':"""
+         ResponseParameters:                # optional, map of String
+         	${2:String_key}: ${3:String_value}
+         ResponseTemplates:                # optional, map of String
+         	${4:String_key}: ${5:String_value}
+         SelectionPattern: ${6:String}     # optional
+         StatusCode: ${7:String}     # optional
+"""

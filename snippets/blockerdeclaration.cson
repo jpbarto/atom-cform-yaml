@@ -1,0 +1,7 @@
+'.source.yaml':
+  'blockerdeclaration':
+      'prefix': 'blockerdeclaration'
+      'body':"""
+         Name: ${2:String}     # required
+         Type: ${3:String}     # required
+"""

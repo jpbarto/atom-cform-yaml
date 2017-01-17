@@ -1,0 +1,12 @@
+'.source.yaml':
+  'redshiftdestinationconfiguration':
+      'prefix': 'redshiftdestinationconfiguration'
+      'body':"""
+         CloudWatchLoggingOptions: ${2:CloudWatchLoggingOptions}     # optional
+         ClusterJDBCURL: ${3:String}     # required
+         CopyCommand: ${4:CopyCommand}     # required
+         Password: ${5:String}     # required
+         RoleARN: ${6:String}     # required
+         S3Configuration: ${7:S3DestinationConfiguration}     # required
+         Username: ${8:String}     # required
+"""

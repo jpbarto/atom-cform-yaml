@@ -1,0 +1,7 @@
+'.source.yaml':
+  'domainvalidationoption':
+      'prefix': 'domainvalidationoption'
+      'body':"""
+         DomainName: ${2:String}     # required
+         ValidationDomain: ${3:String}     # required
+"""

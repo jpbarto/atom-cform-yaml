@@ -1,0 +1,8 @@
+'.source.yaml':
+  'mountpoint':
+      'prefix': 'mountpoint'
+      'body':"""
+         ContainerPath: ${2:String}     # optional
+         ReadOnly: ${3:Boolean}     # optional
+         SourceVolume: ${4:String}     # optional
+"""

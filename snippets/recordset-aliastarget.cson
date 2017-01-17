@@ -1,0 +1,8 @@
+'.source.yaml':
+  'recordset-aliastarget':
+      'prefix': 'recordset-aliastarget'
+      'body':"""
+         DNSName: ${2:String}     # required
+         EvaluateTargetHealth: ${3:Boolean}     # optional
+         HostedZoneId: ${4:String}     # required
+"""

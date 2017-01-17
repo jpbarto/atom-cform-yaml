@@ -1,0 +1,8 @@
+'.source.yaml':
+  'build-s3location':
+      'prefix': 'build-s3location'
+      'body':"""
+         Bucket: ${2:String}     # required
+         Key: ${3:String}     # required
+         RoleArn: ${4:String}     # required
+"""

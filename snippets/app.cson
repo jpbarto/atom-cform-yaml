@@ -1,0 +1,24 @@
+'.source.yaml':
+  'app':
+      'prefix': 'app'
+      'body':"""
+         ${1:app_name}:
+         	Type: AWS::OpsWorks::App
+         	Properties:
+         		AppSource: ${2:Source}     # optional
+         		Attributes:                # optional, map of String
+         			${3:String_key}: ${4:String_value}
+         		DataSources:                # optional, list of DataSource
+         			- ${5:DataSource}
+         		Description: ${6:String}     # optional
+         		Domains:                # optional, list of String
+         			- ${7:String}
+         		EnableSsl: ${8:Boolean}     # optional
+         		Environment:                # optional, list of EnvironmentVariable
+         			- ${9:EnvironmentVariable}
+         		Name: ${10:String}     # required
+         		Shortname: ${11:String}     # optional
+         		SslConfiguration: ${12:SslConfiguration}     # optional
+         		StackId: ${13:String}     # required
+         		Type: ${14:String}     # required
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'stagetransition':
+      'prefix': 'stagetransition'
+      'body':"""
+         Reason: ${2:String}     # required
+         StageName: ${3:String}     # required
+"""

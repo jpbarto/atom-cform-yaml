@@ -1,0 +1,8 @@
+'.source.yaml':
+  'metrictransformation':
+      'prefix': 'metrictransformation'
+      'body':"""
+         MetricName: ${2:String}     # required
+         MetricNamespace: ${3:String}     # required
+         MetricValue: ${4:String}     # required
+"""

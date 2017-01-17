@@ -1,0 +1,7 @@
+'.source.yaml':
+  'sourcebundle':
+      'prefix': 'sourcebundle'
+      'body':"""
+         S3Bucket: ${2:String}     # required
+         S3Key: ${3:String}     # required
+"""

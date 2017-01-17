@@ -1,0 +1,33 @@
+'.source.yaml':
+  'elasticloadbalancing-loadbalancer':
+      'prefix': 'elasticloadbalancing-loadbalancer'
+      'body':"""
+         ${1:elasticloadbalancing-loadbalancer_name}:
+         	Type: AWS::ElasticLoadBalancing::LoadBalancer
+         	Properties:
+         		AccessLoggingPolicy: ${2:AccessLoggingPolicy}     # optional
+         		AppCookieStickinessPolicy:                # optional, list of AppCookieStickinessPolicy
+         			- ${3:AppCookieStickinessPolicy}
+         		AvailabilityZones:                # optional, list of String
+         			- ${4:String}
+         		ConnectionDrainingPolicy: ${5:ConnectionDrainingPolicy}     # optional
+         		ConnectionSettings: ${6:ConnectionSettings}     # optional
+         		CrossZone: ${7:Boolean}     # optional
+         		HealthCheck: ${8:HealthCheck}     # optional
+         		Instances:                # optional, list of String
+         			- ${9:String}
+         		LBCookieStickinessPolicy:                # optional, list of LBCookieStickinessPolicy
+         			- ${10:LBCookieStickinessPolicy}
+         		Listeners:                # required, list of Listeners
+         			- ${11:Listeners}
+         		LoadBalancerName: ${12:String}     # optional
+         		Policies:                # optional, list of Policies
+         			- ${13:Policies}
+         		Scheme: ${14:String}     # optional
+         		SecurityGroups:                # optional, list of String
+         			- ${15:String}
+         		Subnets:                # optional, list of String
+         			- ${16:String}
+         		Tags:                # optional, list of Tag
+         			- ${17:Tag}
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'routingrule':
+      'prefix': 'routingrule'
+      'body':"""
+         RedirectRule: ${2:RedirectRule}     # required
+         RoutingRuleCondition: ${3:RoutingRuleCondition}     # optional
+"""

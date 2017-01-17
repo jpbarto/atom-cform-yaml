@@ -1,0 +1,9 @@
+'.source.yaml':
+  'pipelineobject':
+      'prefix': 'pipelineobject'
+      'body':"""
+         Fields:                # required, list of Field
+         	- ${2:Field}
+         Id: ${3:String}     # required
+         Name: ${4:String}     # required
+"""

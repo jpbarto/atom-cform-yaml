@@ -1,0 +1,15 @@
+'.source.yaml':
+  'recipes':
+      'prefix': 'recipes'
+      'body':"""
+         Configure:                # optional, list of String
+         	- ${2:String}
+         Deploy:                # optional, list of String
+         	- ${3:String}
+         Setup:                # optional, list of String
+         	- ${4:String}
+         Shutdown:                # optional, list of String
+         	- ${5:String}
+         Undeploy:                # optional, list of String
+         	- ${6:String}
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'apistage':
+      'prefix': 'apistage'
+      'body':"""
+         ApiId: ${2:String}     # optional
+         Stage: ${3:String}     # optional
+"""

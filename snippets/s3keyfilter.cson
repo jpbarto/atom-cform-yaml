@@ -1,0 +1,7 @@
+'.source.yaml':
+  's3keyfilter':
+      'prefix': 's3keyfilter'
+      'body':"""
+         Rules:                # required, list of FilterRule
+         	- ${2:FilterRule}
+"""

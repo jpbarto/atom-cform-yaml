@@ -1,0 +1,8 @@
+'.source.yaml':
+  'kinesisaction':
+      'prefix': 'kinesisaction'
+      'body':"""
+         PartitionKey: ${2:String}     # optional
+         RoleArn: ${3:String}     # required
+         StreamName: ${4:String}     # required
+"""

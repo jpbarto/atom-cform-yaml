@@ -1,0 +1,12 @@
+'.source.yaml':
+  'destination':
+      'prefix': 'destination'
+      'body':"""
+         ${1:destination_name}:
+         	Type: AWS::Logs::Destination
+         	Properties:
+         		DestinationName: ${2:String}     # required
+         		DestinationPolicy: ${3:String}     # required
+         		RoleArn: ${4:String}     # required
+         		TargetArn: ${5:String}     # required
+"""

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'matcher':
+      'prefix': 'matcher'
+      'body':"""
+         HttpCode: ${2:String}     # required
+"""

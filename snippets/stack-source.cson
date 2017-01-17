@@ -1,0 +1,11 @@
+'.source.yaml':
+  'stack-source':
+      'prefix': 'stack-source'
+      'body':"""
+         Password: ${2:String}     # optional
+         Revision: ${3:String}     # optional
+         SshKey: ${4:String}     # optional
+         Type: ${5:String}     # optional
+         Url: ${6:String}     # optional
+         Username: ${7:String}     # optional
+"""

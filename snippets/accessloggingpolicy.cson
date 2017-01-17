@@ -1,0 +1,9 @@
+'.source.yaml':
+  'accessloggingpolicy':
+      'prefix': 'accessloggingpolicy'
+      'body':"""
+         EmitInterval: ${2:Integer}     # optional
+         Enabled: ${3:Boolean}     # required
+         S3BucketName: ${4:String}     # required
+         S3BucketPrefix: ${5:String}     # optional
+"""

@@ -1,0 +1,15 @@
+'.source.yaml':
+  'spotfleetrequestconfigdata':
+      'prefix': 'spotfleetrequestconfigdata'
+      'body':"""
+         AllocationStrategy: ${2:String}     # optional
+         ExcessCapacityTerminationPolicy: ${3:String}     # optional
+         IamFleetRole: ${4:String}     # required
+         LaunchSpecifications:                # required, list of LaunchSpecifications
+         	- ${5:LaunchSpecifications}
+         SpotPrice: ${6:String}     # required
+         TargetCapacity: ${7:Integer}     # required
+         TerminateInstancesWithExpiration: ${8:Boolean}     # optional
+         ValidFrom: ${9:String}     # optional
+         ValidUntil: ${10:String}     # optional
+"""

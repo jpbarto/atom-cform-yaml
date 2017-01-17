@@ -1,0 +1,12 @@
+'.source.yaml':
+  'listeners':
+      'prefix': 'listeners'
+      'body':"""
+         InstancePort: ${2:String}     # required
+         InstanceProtocol: ${3:String}     # optional
+         LoadBalancerPort: ${4:String}     # required
+         PolicyNames:                # optional, list of String
+         	- ${5:String}
+         Protocol: ${6:String}     # required
+         SSLCertificateId: ${7:String}     # optional
+"""

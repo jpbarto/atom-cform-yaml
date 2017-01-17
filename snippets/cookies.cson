@@ -1,0 +1,8 @@
+'.source.yaml':
+  'cookies':
+      'prefix': 'cookies'
+      'body':"""
+         Forward: ${2:String}     # required
+         WhitelistedNames:                # optional, list of String
+         	- ${3:String}
+"""

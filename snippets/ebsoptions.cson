@@ -1,0 +1,9 @@
+'.source.yaml':
+  'ebsoptions':
+      'prefix': 'ebsoptions'
+      'body':"""
+         EBSEnabled: ${2:Boolean}     # optional
+         Iops: ${3:Integer}     # optional
+         VolumeSize: ${4:Integer}     # optional
+         VolumeType: ${5:String}     # optional
+"""

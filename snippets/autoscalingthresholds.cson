@@ -1,0 +1,11 @@
+'.source.yaml':
+  'autoscalingthresholds':
+      'prefix': 'autoscalingthresholds'
+      'body':"""
+         CpuThreshold: ${2:Double}     # optional
+         IgnoreMetricsTime: ${3:Integer}     # optional
+         InstanceCount: ${4:Integer}     # optional
+         LoadThreshold: ${5:Double}     # optional
+         MemoryThreshold: ${6:Double}     # optional
+         ThresholdsWaitTime: ${7:Integer}     # optional
+"""

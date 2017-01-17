@@ -1,0 +1,11 @@
+'.source.yaml':
+  'forwardedvalues':
+      'prefix': 'forwardedvalues'
+      'body':"""
+         Cookies: ${2:Cookies}     # optional
+         Headers:                # optional, list of String
+         	- ${3:String}
+         QueryString: ${4:Boolean}     # required
+         QueryStringCacheKeys:                # optional, list of String
+         	- ${5:String}
+"""

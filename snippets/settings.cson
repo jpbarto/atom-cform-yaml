@@ -1,0 +1,9 @@
+'.source.yaml':
+  'settings':
+      'prefix': 'settings'
+      'body':"""
+         EntityUrlTemplate: ${2:String}     # optional
+         ExecutionUrlTemplate: ${3:String}     # optional
+         RevisionUrlTemplate: ${4:String}     # optional
+         ThirdPartyConfigurationUrl: ${5:String}     # optional
+"""

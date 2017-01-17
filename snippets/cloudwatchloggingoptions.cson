@@ -1,0 +1,8 @@
+'.source.yaml':
+  'cloudwatchloggingoptions':
+      'prefix': 'cloudwatchloggingoptions'
+      'body':"""
+         Enabled: ${2:Boolean}     # optional
+         LogGroupName: ${3:String}     # optional
+         LogStreamName: ${4:String}     # optional
+"""

@@ -1,0 +1,16 @@
+'.source.yaml':
+  'topicrule-action':
+      'prefix': 'topicrule-action'
+      'body':"""
+         CloudwatchAlarm: ${2:CloudwatchAlarmAction}     # optional
+         CloudwatchMetric: ${3:CloudwatchMetricAction}     # optional
+         DynamoDB: ${4:DynamoDBAction}     # optional
+         Elasticsearch: ${5:ElasticsearchAction}     # optional
+         Firehose: ${6:FirehoseAction}     # optional
+         Kinesis: ${7:KinesisAction}     # optional
+         Lambda: ${8:LambdaAction}     # optional
+         Republish: ${9:RepublishAction}     # optional
+         S3: ${10:S3Action}     # optional
+         Sns: ${11:SnsAction}     # optional
+         Sqs: ${12:SqsAction}     # optional
+"""

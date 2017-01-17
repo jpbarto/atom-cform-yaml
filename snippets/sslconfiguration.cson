@@ -1,0 +1,8 @@
+'.source.yaml':
+  'sslconfiguration':
+      'prefix': 'sslconfiguration'
+      'body':"""
+         Certificate: ${2:String}     # optional
+         Chain: ${3:String}     # optional
+         PrivateKey: ${4:String}     # optional
+"""

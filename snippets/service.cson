@@ -1,0 +1,15 @@
+'.source.yaml':
+  'service':
+      'prefix': 'service'
+      'body':"""
+         ${1:service_name}:
+         	Type: AWS::ECS::Service
+         	Properties:
+         		Cluster: ${2:String}     # optional
+         		DeploymentConfiguration: ${3:DeploymentConfiguration}     # optional
+         		DesiredCount: ${4:Integer}     # required
+         		LoadBalancers:                # optional, list of LoadBalancer
+         			- ${5:LoadBalancer}
+         		Role: ${6:String}     # optional
+         		TaskDefinition: ${7:String}     # required
+"""

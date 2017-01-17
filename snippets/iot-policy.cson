@@ -1,0 +1,10 @@
+'.source.yaml':
+  'iot-policy':
+      'prefix': 'iot-policy'
+      'body':"""
+         ${1:iot-policy_name}:
+         	Type: AWS::IoT::Policy
+         	Properties:
+         		PolicyDocument: ${2:Json}     # required
+         		PolicyName: ${3:String}     # optional
+"""

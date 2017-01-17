@@ -1,0 +1,8 @@
+'.source.yaml':
+  'loadbasedautoscaling':
+      'prefix': 'loadbasedautoscaling'
+      'body':"""
+         DownScaling: ${2:AutoScalingThresholds}     # optional
+         Enable: ${3:Boolean}     # optional
+         UpScaling: ${4:AutoScalingThresholds}     # optional
+"""

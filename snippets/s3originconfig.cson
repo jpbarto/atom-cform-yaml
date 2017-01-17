@@ -1,0 +1,6 @@
+'.source.yaml':
+  's3originconfig':
+      'prefix': 's3originconfig'
+      'body':"""
+         OriginAccessIdentity: ${2:String}     # optional
+"""

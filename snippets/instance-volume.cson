@@ -1,0 +1,7 @@
+'.source.yaml':
+  'instance-volume':
+      'prefix': 'instance-volume'
+      'body':"""
+         Device: ${2:String}     # required
+         VolumeId: ${3:String}     # required
+"""

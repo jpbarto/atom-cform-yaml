@@ -1,0 +1,8 @@
+'.source.yaml':
+  'ulimit':
+      'prefix': 'ulimit'
+      'body':"""
+         HardLimit: ${2:Integer}     # required
+         Name: ${3:String}     # required
+         SoftLimit: ${4:Integer}     # required
+"""

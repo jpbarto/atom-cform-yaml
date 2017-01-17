@@ -1,0 +1,12 @@
+'.source.yaml':
+  'opsworks-volume':
+      'prefix': 'opsworks-volume'
+      'body':"""
+         ${1:opsworks-volume_name}:
+         	Type: AWS::OpsWorks::Volume
+         	Properties:
+         		Ec2VolumeId: ${2:String}     # required
+         		MountPoint: ${3:String}     # optional
+         		Name: ${4:String}     # optional
+         		StackId: ${5:String}     # required
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'stackconfigurationmanager':
+      'prefix': 'stackconfigurationmanager'
+      'body':"""
+         Name: ${2:String}     # optional
+         Version: ${3:String}     # optional
+"""

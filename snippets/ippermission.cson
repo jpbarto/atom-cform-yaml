@@ -1,0 +1,9 @@
+'.source.yaml':
+  'ippermission':
+      'prefix': 'ippermission'
+      'body':"""
+         FromPort: ${2:Integer}     # required
+         IpRange: ${3:String}     # required
+         Protocol: ${4:String}     # required
+         ToPort: ${5:Integer}     # required
+"""

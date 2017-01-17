@@ -1,0 +1,9 @@
+'.source.yaml':
+  'launchconfiguration-blockdevicemapping':
+      'prefix': 'launchconfiguration-blockdevicemapping'
+      'body':"""
+         DeviceName: ${2:String}     # required
+         Ebs: ${3:BlockDevice}     # optional
+         NoDevice: ${4:Boolean}     # optional
+         VirtualName: ${5:String}     # optional
+"""

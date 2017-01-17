@@ -1,0 +1,8 @@
+'.source.yaml':
+  'queueconfiguration':
+      'prefix': 'queueconfiguration'
+      'body':"""
+         Event: ${2:String}     # required
+         Filter: ${3:NotificationFilter}     # optional
+         Queue: ${4:String}     # required
+"""

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'placementtype':
+      'prefix': 'placementtype'
+      'body':"""
+         AvailabilityZone: ${2:String}     # required
+"""

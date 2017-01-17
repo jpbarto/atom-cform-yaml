@@ -1,0 +1,7 @@
+'.source.yaml':
+  'corsconfiguration':
+      'prefix': 'corsconfiguration'
+      'body':"""
+         CorsRules:                # required, list of CorsRule
+         	- ${2:CorsRule}
+"""

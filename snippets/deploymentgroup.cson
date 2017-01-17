@@ -1,0 +1,19 @@
+'.source.yaml':
+  'deploymentgroup':
+      'prefix': 'deploymentgroup'
+      'body':"""
+         ${1:deploymentgroup_name}:
+         	Type: AWS::CodeDeploy::DeploymentGroup
+         	Properties:
+         		ApplicationName: ${2:String}     # required
+         		AutoScalingGroups:                # optional, list of String
+         			- ${3:String}
+         		Deployment: ${4:Deployment}     # optional
+         		DeploymentConfigName: ${5:String}     # optional
+         		DeploymentGroupName: ${6:String}     # optional
+         		Ec2TagFilters:                # optional, list of Ec2TagFilter
+         			- ${7:Ec2TagFilter}
+         		OnPremisesInstanceTagFilters:                # optional, list of OnPremisesInstanceTagFilter
+         			- ${8:OnPremisesInstanceTagFilter}
+         		ServiceRoleArn: ${9:String}     # required
+"""

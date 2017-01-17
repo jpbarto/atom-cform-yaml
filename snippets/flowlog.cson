@@ -1,0 +1,13 @@
+'.source.yaml':
+  'flowlog':
+      'prefix': 'flowlog'
+      'body':"""
+         ${1:flowlog_name}:
+         	Type: AWS::EC2::FlowLog
+         	Properties:
+         		DeliverLogsPermissionArn: ${2:String}     # required
+         		LogGroupName: ${3:String}     # required
+         		ResourceId: ${4:String}     # required
+         		ResourceType: ${5:String}     # required
+         		TrafficType: ${6:String}     # required
+"""

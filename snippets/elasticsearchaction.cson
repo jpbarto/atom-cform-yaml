@@ -1,0 +1,10 @@
+'.source.yaml':
+  'elasticsearchaction':
+      'prefix': 'elasticsearchaction'
+      'body':"""
+         Endpoint: ${2:String}     # required
+         Id: ${3:String}     # required
+         Index: ${4:String}     # required
+         RoleArn: ${5:String}     # required
+         Type: ${6:String}     # required
+"""

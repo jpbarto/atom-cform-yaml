@@ -1,0 +1,7 @@
+'.source.yaml':
+  'appcookiestickinesspolicy':
+      'prefix': 'appcookiestickinesspolicy'
+      'body':"""
+         CookieName: ${2:String}     # required
+         PolicyName: ${3:String}     # required
+"""

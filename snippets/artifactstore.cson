@@ -1,0 +1,8 @@
+'.source.yaml':
+  'artifactstore':
+      'prefix': 'artifactstore'
+      'body':"""
+         EncryptionKey: ${2:EncryptionKey}     # optional
+         Location: ${3:String}     # required
+         Type: ${4:String}     # required
+"""

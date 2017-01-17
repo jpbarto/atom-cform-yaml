@@ -1,0 +1,8 @@
+'.source.yaml':
+  'logging':
+      'prefix': 'logging'
+      'body':"""
+         Bucket: ${2:String}     # required
+         IncludeCookies: ${3:Boolean}     # optional
+         Prefix: ${4:String}     # optional
+"""

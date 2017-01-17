@@ -1,0 +1,30 @@
+'.source.yaml':
+  'stack-parameter':
+      'prefix': 'stack-parameter'
+      'body':"""
+        ${1:parameterName}:
+        	Type: ${2:String|...}			# Required, one of: String, Number, List<Number>, CommaDelimitedList
+        						# OR
+        						# AWS::EC2::AvailabilityZone::Name
+        						# AWS::EC2::Image::Id
+        						# AWS::EC2::Instance::Id
+        						# AWS::EC2::KeyPair::KeyName
+        						# AWS::EC2::SecurityGroup::GroupName
+        						# AWS::EC2::SecurityGroup::Id
+        						# AWS::EC2::Subnet::Id
+        						# AWS::EC2::Volume::Id
+        						# AWS::EC2::VPC::Id
+        						# AWS::Route53::HostedZone::Id
+        						# OR List<AWS-Type>
+        	Description: ${3:description}		# optional, string, description of parameter value
+        	Default: ${4:default-value}		# optional
+        	AllowedValues:				# optional
+        		- ${5:valueOption}		#
+        	AllowedPattern: ${6:regex}		# optional, regular expression enforced on string values
+        	ConstraintDescription: ${7:description}	# optional, string, error message returned if regex is violated
+        	MaxLength: ${8:Integer}			# optional, max length for string values
+        	MinLength: ${9:integer}			# optional, smallest number of characters allowed for string parameter types
+        	MaxValue: ${10:integer}			# optional, maximum value for number parameter types
+        	MinValue: ${11:integer}			# optional, smallest value possible for number parameter types
+        	NoEcho: ${12:true|false}		# optional, boolean indicating whether to mask the parameter value when describing the stack
+	"""

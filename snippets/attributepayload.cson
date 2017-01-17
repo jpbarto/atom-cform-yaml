@@ -1,0 +1,7 @@
+'.source.yaml':
+  'attributepayload':
+      'prefix': 'attributepayload'
+      'body':"""
+         Attributes:                # optional, map of String
+         	${2:String_key}: ${3:String_value}
+"""

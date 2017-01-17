@@ -1,0 +1,7 @@
+'.source.yaml':
+  'firehoseaction':
+      'prefix': 'firehoseaction'
+      'body':"""
+         DeliveryStreamName: ${2:String}     # required
+         RoleArn: ${3:String}     # required
+"""

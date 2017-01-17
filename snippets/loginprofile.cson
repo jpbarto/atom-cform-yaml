@@ -1,0 +1,7 @@
+'.source.yaml':
+  'loginprofile':
+      'prefix': 'loginprofile'
+      'body':"""
+         Password: ${2:String}     # required
+         PasswordResetRequired: ${3:Boolean}     # optional
+"""

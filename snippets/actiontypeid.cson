@@ -1,0 +1,9 @@
+'.source.yaml':
+  'actiontypeid':
+      'prefix': 'actiontypeid'
+      'body':"""
+         Category: ${2:String}     # required
+         Owner: ${3:String}     # required
+         Provider: ${4:String}     # required
+         Version: ${5:String}     # required
+"""

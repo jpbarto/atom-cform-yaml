@@ -1,0 +1,19 @@
+'.source.yaml':
+  'timebasedautoscaling':
+      'prefix': 'timebasedautoscaling'
+      'body':"""
+         Friday:                # optional, map of String
+         	${2:String_key}: ${3:String_value}
+         Monday:                # optional, map of String
+         	${4:String_key}: ${5:String_value}
+         Saturday:                # optional, map of String
+         	${6:String_key}: ${7:String_value}
+         Sunday:                # optional, map of String
+         	${8:String_key}: ${9:String_value}
+         Thursday:                # optional, map of String
+         	${10:String_key}: ${11:String_value}
+         Tuesday:                # optional, map of String
+         	${12:String_key}: ${13:String_value}
+         Wednesday:                # optional, map of String
+         	${14:String_key}: ${15:String_value}
+"""

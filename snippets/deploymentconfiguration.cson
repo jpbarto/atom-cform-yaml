@@ -1,0 +1,7 @@
+'.source.yaml':
+  'deploymentconfiguration':
+      'prefix': 'deploymentconfiguration'
+      'body':"""
+         MaximumPercent: ${2:Integer}     # optional
+         MinimumHealthyPercent: ${3:Integer}     # optional
+"""

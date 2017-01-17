@@ -1,0 +1,7 @@
+'.source.yaml':
+  'redirectallrequeststo':
+      'prefix': 'redirectallrequeststo'
+      'body':"""
+         HostName: ${2:String}     # required
+         Protocol: ${3:String}     # optional
+"""

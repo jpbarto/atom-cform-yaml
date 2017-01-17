@@ -1,0 +1,13 @@
+'.source.yaml':
+  'eventsourcemapping':
+      'prefix': 'eventsourcemapping'
+      'body':"""
+         ${1:eventsourcemapping_name}:
+         	Type: AWS::Lambda::EventSourceMapping
+         	Properties:
+         		BatchSize: ${2:Integer}     # optional
+         		Enabled: ${3:Boolean}     # optional
+         		EventSourceArn: ${4:String}     # required
+         		FunctionName: ${5:String}     # required
+         		StartingPosition: ${6:String}     # required
+"""

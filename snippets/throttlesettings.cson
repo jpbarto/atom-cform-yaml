@@ -1,0 +1,7 @@
+'.source.yaml':
+  'throttlesettings':
+      'prefix': 'throttlesettings'
+      'body':"""
+         BurstLimit: ${2:Integer}     # optional
+         RateLimit: ${3:Double}     # optional
+"""

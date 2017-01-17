@@ -1,0 +1,8 @@
+'.source.yaml':
+  'logconfiguration':
+      'prefix': 'logconfiguration'
+      'body':"""
+         LogDriver: ${2:String}     # required
+         Options:                # optional, map of String
+         	${3:String_key}: ${4:String_value}
+"""

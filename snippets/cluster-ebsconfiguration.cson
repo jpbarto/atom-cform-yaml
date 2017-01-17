@@ -1,0 +1,8 @@
+'.source.yaml':
+  'cluster-ebsconfiguration':
+      'prefix': 'cluster-ebsconfiguration'
+      'body':"""
+         EbsBlockDeviceConfigs:                # optional, list of EbsBlockDeviceConfig
+         	- ${2:EbsBlockDeviceConfig}
+         EbsOptimized: ${3:Boolean}     # optional
+"""

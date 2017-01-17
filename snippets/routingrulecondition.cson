@@ -1,0 +1,7 @@
+'.source.yaml':
+  'routingrulecondition':
+      'prefix': 'routingrulecondition'
+      'body':"""
+         HttpErrorCodeReturnedEquals: ${2:String}     # optional
+         KeyPrefixEquals: ${3:String}     # optional
+"""

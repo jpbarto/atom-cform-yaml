@@ -1,0 +1,8 @@
+'.source.yaml':
+  'field':
+      'prefix': 'field'
+      'body':"""
+         Key: ${2:String}     # required
+         RefValue: ${3:String}     # optional
+         StringValue: ${4:String}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'xssmatchset-fieldtomatch':
+      'prefix': 'xssmatchset-fieldtomatch'
+      'body':"""
+         Data: ${2:String}     # optional
+         Type: ${3:String}     # required
+"""

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'rdsdbinstance':
+      'prefix': 'rdsdbinstance'
+      'body':"""
+         DbPassword: ${2:String}     # required
+         DbUser: ${3:String}     # required
+         RdsDbInstanceArn: ${4:String}     # required
+"""

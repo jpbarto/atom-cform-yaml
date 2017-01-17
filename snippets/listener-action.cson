@@ -1,0 +1,7 @@
+'.source.yaml':
+  'listener-action':
+      'prefix': 'listener-action'
+      'body':"""
+         TargetGroupArn: ${2:String}     # required
+         Type: ${3:String}     # required
+"""

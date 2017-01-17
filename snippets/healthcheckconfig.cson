@@ -1,0 +1,13 @@
+'.source.yaml':
+  'healthcheckconfig':
+      'prefix': 'healthcheckconfig'
+      'body':"""
+         FailureThreshold: ${2:Integer}     # optional
+         FullyQualifiedDomainName: ${3:String}     # optional
+         IPAddress: ${4:String}     # optional
+         Port: ${5:Integer}     # optional
+         RequestInterval: ${6:Integer}     # optional
+         ResourcePath: ${7:String}     # optional
+         SearchString: ${8:String}     # optional
+         Type: ${9:String}     # required
+"""

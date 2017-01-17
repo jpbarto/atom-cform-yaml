@@ -1,0 +1,7 @@
+'.source.yaml':
+  'loadbalancerattribute':
+      'prefix': 'loadbalancerattribute'
+      'body':"""
+         Key: ${2:String}     # optional
+         Value: ${3:String}     # optional
+"""

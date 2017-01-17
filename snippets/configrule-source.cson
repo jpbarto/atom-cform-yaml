@@ -1,0 +1,9 @@
+'.source.yaml':
+  'configrule-source':
+      'prefix': 'configrule-source'
+      'body':"""
+         Owner: ${2:String}     # required
+         SourceDetails:                # optional, list of SourceDetail
+         	- ${3:SourceDetail}
+         SourceIdentifier: ${4:String}     # required
+"""

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'sqsaction':
+      'prefix': 'sqsaction'
+      'body':"""
+         QueueUrl: ${2:String}     # required
+         RoleArn: ${3:String}     # required
+         UseBase64: ${4:Boolean}     # optional
+"""

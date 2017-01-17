@@ -1,0 +1,8 @@
+'.source.yaml':
+  'quotasettings':
+      'prefix': 'quotasettings'
+      'body':"""
+         Limit: ${2:Integer}     # optional
+         Offset: ${3:Integer}     # optional
+         Period: ${4:String}     # optional
+"""

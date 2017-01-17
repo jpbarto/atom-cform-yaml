@@ -1,0 +1,8 @@
+'.source.yaml':
+  'rulecondition':
+      'prefix': 'rulecondition'
+      'body':"""
+         Field: ${2:String}     # optional
+         Values:                # optional, list of String
+         	- ${3:String}
+"""

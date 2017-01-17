@@ -1,0 +1,10 @@
+'.source.yaml':
+  'loggroup':
+      'prefix': 'loggroup'
+      'body':"""
+         ${1:loggroup_name}:
+         	Type: AWS::Logs::LogGroup
+         	Properties:
+         		LogGroupName: ${2:String}     # optional
+         		RetentionInDays: ${3:Integer}     # optional
+"""

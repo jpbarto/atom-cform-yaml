@@ -1,0 +1,7 @@
+'.source.yaml':
+  'encryptionkey':
+      'prefix': 'encryptionkey'
+      'body':"""
+         Id: ${2:String}     # required
+         Type: ${3:String}     # required
+"""

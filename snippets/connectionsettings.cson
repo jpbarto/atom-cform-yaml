@@ -1,0 +1,6 @@
+'.source.yaml':
+  'connectionsettings':
+      'prefix': 'connectionsettings'
+      'body':"""
+         IdleTimeout: ${2:Integer}     # required
+"""

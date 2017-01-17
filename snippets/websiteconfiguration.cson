@@ -1,0 +1,10 @@
+'.source.yaml':
+  'websiteconfiguration':
+      'prefix': 'websiteconfiguration'
+      'body':"""
+         ErrorDocument: ${2:String}     # optional
+         IndexDocument: ${3:String}     # optional
+         RedirectAllRequestsTo: ${4:RedirectAllRequestsTo}     # optional
+         RoutingRules:                # optional, list of RoutingRule
+         	- ${5:RoutingRule}
+"""

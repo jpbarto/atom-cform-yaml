@@ -1,0 +1,7 @@
+'.source.yaml':
+  'networkinterface-privateipaddressspecification':
+      'prefix': 'networkinterface-privateipaddressspecification'
+      'body':"""
+         Primary: ${2:Boolean}     # required
+         PrivateIpAddress: ${3:String}     # required
+"""

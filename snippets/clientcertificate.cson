@@ -1,0 +1,9 @@
+'.source.yaml':
+  'clientcertificate':
+      'prefix': 'clientcertificate'
+      'body':"""
+         ${1:clientcertificate_name}:
+         	Type: AWS::ApiGateway::ClientCertificate
+         	Properties:
+         		Description: ${2:String}     # optional
+"""

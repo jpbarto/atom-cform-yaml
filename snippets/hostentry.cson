@@ -1,0 +1,7 @@
+'.source.yaml':
+  'hostentry':
+      'prefix': 'hostentry'
+      'body':"""
+         Hostname: ${2:String}     # required
+         IpAddress: ${3:String}     # required
+"""

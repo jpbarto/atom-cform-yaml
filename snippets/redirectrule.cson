@@ -1,0 +1,10 @@
+'.source.yaml':
+  'redirectrule':
+      'prefix': 'redirectrule'
+      'body':"""
+         HostName: ${2:String}     # optional
+         HttpRedirectCode: ${3:String}     # optional
+         Protocol: ${4:String}     # optional
+         ReplaceKeyPrefixWith: ${5:String}     # optional
+         ReplaceKeyWith: ${6:String}     # optional
+"""

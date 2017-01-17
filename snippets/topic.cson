@@ -1,0 +1,12 @@
+'.source.yaml':
+  'topic':
+      'prefix': 'topic'
+      'body':"""
+         ${1:topic_name}:
+         	Type: AWS::SNS::Topic
+         	Properties:
+         		DisplayName: ${2:String}     # optional
+         		Subscription:                # optional, list of Subscription
+         			- ${3:Subscription}
+         		TopicName: ${4:String}     # optional
+"""

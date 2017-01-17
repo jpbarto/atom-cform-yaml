@@ -1,0 +1,8 @@
+'.source.yaml':
+  'ssmassociation':
+      'prefix': 'ssmassociation'
+      'body':"""
+         AssociationParameters:                # optional, list of AssociationParameter
+         	- ${2:AssociationParameter}
+         DocumentName: ${3:String}     # required
+"""

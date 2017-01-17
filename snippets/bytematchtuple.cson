@@ -1,0 +1,10 @@
+'.source.yaml':
+  'bytematchtuple':
+      'prefix': 'bytematchtuple'
+      'body':"""
+         FieldToMatch: ${2:FieldToMatch}     # required
+         PositionalConstraint: ${3:String}     # required
+         TargetString: ${4:String}     # optional
+         TargetStringBase64: ${5:String}     # optional
+         TextTransformation: ${6:String}     # required
+"""

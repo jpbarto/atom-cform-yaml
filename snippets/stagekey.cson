@@ -1,0 +1,7 @@
+'.source.yaml':
+  'stagekey':
+      'prefix': 'stagekey'
+      'body':"""
+         RestApiId: ${2:String}     # optional
+         StageName: ${3:String}     # optional
+"""

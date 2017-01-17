@@ -1,0 +1,6 @@
+'.source.yaml':
+  'lifecycleeventconfiguration':
+      'prefix': 'lifecycleeventconfiguration'
+      'body':"""
+         ShutdownEventConfiguration: ${2:ShutdownEventConfiguration}     # optional
+"""

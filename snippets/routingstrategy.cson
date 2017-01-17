@@ -1,0 +1,8 @@
+'.source.yaml':
+  'routingstrategy':
+      'prefix': 'routingstrategy'
+      'body':"""
+         FleetId: ${2:String}     # optional
+         Message: ${3:String}     # optional
+         Type: ${4:String}     # required
+"""

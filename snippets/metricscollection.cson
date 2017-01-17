@@ -1,0 +1,8 @@
+'.source.yaml':
+  'metricscollection':
+      'prefix': 'metricscollection'
+      'body':"""
+         Granularity: ${2:String}     # required
+         Metrics:                # optional, list of String
+         	- ${3:String}
+"""

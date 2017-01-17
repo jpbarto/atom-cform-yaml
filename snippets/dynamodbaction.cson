@@ -1,0 +1,12 @@
+'.source.yaml':
+  'dynamodbaction':
+      'prefix': 'dynamodbaction'
+      'body':"""
+         HashKeyField: ${2:String}     # required
+         HashKeyValue: ${3:String}     # required
+         PayloadField: ${4:String}     # optional
+         RangeKeyField: ${5:String}     # required
+         RangeKeyValue: ${6:String}     # required
+         RoleArn: ${7:String}     # required
+         TableName: ${8:String}     # required
+"""

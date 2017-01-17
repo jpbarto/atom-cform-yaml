@@ -1,0 +1,12 @@
+'.source.yaml':
+  'step':
+      'prefix': 'step'
+      'body':"""
+         ${1:step_name}:
+         	Type: AWS::EMR::Step
+         	Properties:
+         		ActionOnFailure: ${2:String}     # required
+         		HadoopJarStep: ${3:HadoopJarStepConfig}     # required
+         		JobFlowId: ${4:String}     # required
+         		Name: ${5:String}     # required
+"""

@@ -1,0 +1,19 @@
+'.source.yaml':
+  'stage':
+      'prefix': 'stage'
+      'body':"""
+         ${1:stage_name}:
+         	Type: AWS::ApiGateway::Stage
+         	Properties:
+         		CacheClusterEnabled: ${2:Boolean}     # optional
+         		CacheClusterSize: ${3:String}     # optional
+         		ClientCertificateId: ${4:String}     # optional
+         		DeploymentId: ${5:String}     # optional
+         		Description: ${6:String}     # optional
+         		MethodSettings:                # optional, list of MethodSetting
+         			- ${7:MethodSetting}
+         		RestApiId: ${8:String}     # optional
+         		StageName: ${9:String}     # optional
+         		Variables:                # optional, map of String
+         			${10:String_key}: ${11:String_value}
+"""

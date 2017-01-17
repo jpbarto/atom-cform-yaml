@@ -1,0 +1,7 @@
+'.source.yaml':
+  'lbcookiestickinesspolicy':
+      'prefix': 'lbcookiestickinesspolicy'
+      'body':"""
+         CookieExpirationPeriod: ${2:String}     # optional
+         PolicyName: ${3:String}     # optional
+"""

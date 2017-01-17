@@ -1,0 +1,9 @@
+'.source.yaml':
+  'recordinggroup':
+      'prefix': 'recordinggroup'
+      'body':"""
+         AllSupported: ${2:Boolean}     # optional
+         IncludeGlobalResourceTypes: ${3:Boolean}     # optional
+         ResourceTypes:                # optional, list of String
+         	- ${4:String}
+"""
