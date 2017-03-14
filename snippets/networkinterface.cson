@@ -8,12 +8,14 @@
          		Description: ${2:String}     # optional
          		GroupSet:                # optional, list of String
          			- ${3:String}
-         		PrivateIpAddress: ${4:String}     # optional
+         		Ipv6AddressCount: ${4:Integer}     # optional
+         		Ipv6Addresses: ${5:InstanceIpv6Address}     # optional
+         		PrivateIpAddress: ${6:String}     # optional
          		PrivateIpAddresses:                # optional, list of PrivateIpAddressSpecification
-         			- ${5:PrivateIpAddressSpecification}
-         		SecondaryPrivateIpAddressCount: ${6:Integer}     # optional
-         		SourceDestCheck: ${7:Boolean}     # optional
-         		SubnetId: ${8:String}     # required
+         			- ${7:PrivateIpAddressSpecification}
+         		SecondaryPrivateIpAddressCount: ${8:Integer}     # optional
+         		SourceDestCheck: ${9:Boolean}     # optional
+         		SubnetId: ${10:String}     # required
          		Tags:                # optional, list of Tag
-         			- ${9:Tag}
+         			- ${11:Tag}
 """

@@ -1,0 +1,10 @@
+'.source.yaml':
+  'subnetcidrblock':
+      'prefix': 'subnetcidrblock'
+      'body':"""
+         ${1:subnetcidrblock_name}:
+         	Type: AWS::EC2::SubnetCidrBlock
+         	Properties:
+         		Ipv6CidrBlock: ${2:String}     # required
+         		SubnetId: ${3:String}     # required
+"""

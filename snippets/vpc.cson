@@ -9,4 +9,6 @@
          		EnableDnsHostnames: ${3:Boolean}     # optional
          		EnableDnsSupport: ${4:Boolean}     # optional
          		InstanceTenancy: ${5:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${6:Tag}
 """

@@ -12,5 +12,6 @@
          			- ${4:String}
          		NetbiosNodeType: ${5:Integer}     # optional
          		NtpServers: ${6:String}     # optional
-         		Tags: ${7:Tag}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${7:Tag}
 """

@@ -2,8 +2,8 @@
   'policies':
       'prefix': 'policies'
       'body':"""
-         Attributes:                # required, list of json
-         	- ${2:json}
+         Attributes:                # required, list of Json
+         	- ${2:Json}
          InstancePorts:                # optional, list of String
          	- ${3:String}
          LoadBalancerPorts:                # optional, list of String

@@ -27,17 +27,18 @@
          	- ${16:String}
          LogConfiguration: ${17:LogConfiguration}     # optional
          Memory: ${18:Integer}     # optional
+         MemoryReservation: ${19:Integer}     # optional
          MountPoints:                # optional, list of MountPoint
-         	- ${19:MountPoint}
-         Name: ${20:String}     # optional
+         	- ${20:MountPoint}
+         Name: ${21:String}     # optional
          PortMappings:                # optional, list of PortMapping
-         	- ${21:PortMapping}
-         Privileged: ${22:Boolean}     # optional
-         ReadonlyRootFilesystem: ${23:Boolean}     # optional
+         	- ${22:PortMapping}
+         Privileged: ${23:Boolean}     # optional
+         ReadonlyRootFilesystem: ${24:Boolean}     # optional
          Ulimits:                # optional, list of Ulimit
-         	- ${24:Ulimit}
-         User: ${25:String}     # optional
+         	- ${25:Ulimit}
+         User: ${26:String}     # optional
          VolumesFrom:                # optional, list of VolumeFrom
-         	- ${26:VolumeFrom}
-         WorkingDirectory: ${27:String}     # optional
+         	- ${27:VolumeFrom}
+         WorkingDirectory: ${28:String}     # optional
 """

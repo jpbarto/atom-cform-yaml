@@ -7,7 +7,7 @@
          	Properties:
          		Groups:                # optional, list of String
          			- ${2:String}
-         		PolicyDocument: ${3:String}     # required
+         		PolicyDocument: ${3:Json}     # required
          		PolicyName: ${4:String}     # required
          		Roles:                # optional, list of String
          			- ${5:String}

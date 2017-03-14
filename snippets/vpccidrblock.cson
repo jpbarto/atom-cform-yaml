@@ -1,0 +1,10 @@
+'.source.yaml':
+  'vpccidrblock':
+      'prefix': 'vpccidrblock'
+      'body':"""
+         ${1:vpccidrblock_name}:
+         	Type: AWS::EC2::VPCCidrBlock
+         	Properties:
+         		AmazonProvidedIpv6CidrBlock: ${2:Boolean}     # optional
+         		VpcId: ${3:String}     # required
+"""

@@ -6,10 +6,11 @@
          	Type: AWS::EC2::Route
          	Properties:
          		DestinationCidrBlock: ${2:String}     # required
-         		GatewayId: ${3:String}     # optional
-         		InstanceId: ${4:String}     # optional
-         		NatGatewayId: ${5:String}     # optional
-         		NetworkInterfaceId: ${6:String}     # optional
-         		RouteTableId: ${7:String}     # required
-         		VpcPeeringConnectionId: ${8:String}     # optional
+         		DestinationIpv6CidrBlock: ${3:String}     # optional
+         		GatewayId: ${4:String}     # optional
+         		InstanceId: ${5:String}     # optional
+         		NatGatewayId: ${6:String}     # optional
+         		NetworkInterfaceId: ${7:String}     # optional
+         		RouteTableId: ${8:String}     # required
+         		VpcPeeringConnectionId: ${9:String}     # optional
 """

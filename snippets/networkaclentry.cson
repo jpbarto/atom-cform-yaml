@@ -8,9 +8,10 @@
          		CidrBlock: ${2:String}     # required
          		Egress: ${3:Boolean}     # optional
          		Icmp: ${4:Icmp}     # optional
-         		NetworkAclId: ${5:String}     # required
-         		PortRange: ${6:PortRange}     # optional
-         		Protocol: ${7:Integer}     # required
-         		RuleAction: ${8:String}     # required
-         		RuleNumber: ${9:Integer}     # required
+         		Ipv6CidrBlock: ${5:String}     # optional
+         		NetworkAclId: ${6:String}     # required
+         		PortRange: ${7:PortRange}     # optional
+         		Protocol: ${8:Integer}     # required
+         		RuleAction: ${9:String}     # required
+         		RuleNumber: ${10:Integer}     # required
 """

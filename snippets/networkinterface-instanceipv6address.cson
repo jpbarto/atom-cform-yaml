@@ -1,0 +1,6 @@
+'.source.yaml':
+  'networkinterface-instanceipv6address':
+      'prefix': 'networkinterface-instanceipv6address'
+      'body':"""
+         Ipv6Address: ${2:String}     # required
+"""

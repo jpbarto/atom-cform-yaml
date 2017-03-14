@@ -1,0 +1,10 @@
+'.source.yaml':
+  'project-environment':
+      'prefix': 'project-environment'
+      'body':"""
+         ComputeType: ${2:String}     # optional
+         EnvironmentVariables:                # optional, list of EnvironmentVariable
+         	- ${3:EnvironmentVariable}
+         Image: ${4:String}     # optional
+         Type: ${5:String}     # optional
+"""

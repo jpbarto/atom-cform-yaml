@@ -2,6 +2,6 @@
   'role-policy':
       'prefix': 'role-policy'
       'body':"""
-         PolicyDocument: ${2:Json}     # optional
-         PolicyName: ${3:String}     # optional
+         PolicyDocument: ${2:Json}     # required
+         PolicyName: ${3:String}     # required
 """

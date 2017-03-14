@@ -1,0 +1,11 @@
+'.source.yaml':
+  'artifacts':
+      'prefix': 'artifacts'
+      'body':"""
+         Location: ${2:String}     # optional
+         Name: ${3:String}     # optional
+         NamespaceType: ${4:String}     # optional
+         Packaging: ${5:String}     # optional
+         Path: ${6:String}     # optional
+         Type: ${7:String}     # optional
+"""

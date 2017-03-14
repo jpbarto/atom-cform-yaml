@@ -1,0 +1,6 @@
+'.source.yaml':
+  'spotfleet-instanceipv6address':
+      'prefix': 'spotfleet-instanceipv6address'
+      'body':"""
+         Ipv6Address: ${2:String}     # required
+"""

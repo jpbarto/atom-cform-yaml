@@ -1,0 +1,6 @@
+'.source.yaml':
+  'instance-instanceipv6address':
+      'prefix': 'instance-instanceipv6address'
+      'body':"""
+         Ipv6Address: ${2:String}     # required
+"""

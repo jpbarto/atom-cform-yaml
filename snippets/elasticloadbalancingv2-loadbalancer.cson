@@ -5,14 +5,15 @@
          ${1:elasticloadbalancingv2-loadbalancer_name}:
          	Type: AWS::ElasticLoadBalancingV2::LoadBalancer
          	Properties:
+         		IpAddressType: ${2:String}     # optional
          		LoadBalancerAttributes:                # optional, list of LoadBalancerAttribute
-         			- ${2:LoadBalancerAttribute}
-         		Name: ${3:String}     # optional
-         		Scheme: ${4:String}     # optional
+         			- ${3:LoadBalancerAttribute}
+         		Name: ${4:String}     # optional
+         		Scheme: ${5:String}     # optional
          		SecurityGroups:                # optional, list of String
-         			- ${5:String}
-         		Subnets:                # optional, list of String
          			- ${6:String}
+         		Subnets:                # optional, list of String
+         			- ${7:String}
          		Tags:                # optional, list of Tag
-         			- ${7:Tag}
+         			- ${8:Tag}
 """

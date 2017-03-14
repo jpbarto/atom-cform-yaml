@@ -5,7 +5,7 @@
          ${1:role_name}:
          	Type: AWS::IAM::Role
          	Properties:
-         		AssumeRolePolicyDocument: ${2:String}     # required
+         		AssumeRolePolicyDocument: ${2:Json}     # required
          		ManagedPolicyArns:                # optional, list of String
          			- ${3:String}
          		Path: ${4:String}     # optional

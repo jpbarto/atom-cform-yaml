@@ -1,6 +1,6 @@
 '.source.yaml':
-  'target':
-      'prefix': 'target'
+  'rule-target':
+      'prefix': 'rule-target'
       'body':"""
          Arn: ${2:String}     # required
          Id: ${3:String}     # required

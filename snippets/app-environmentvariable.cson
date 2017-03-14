@@ -1,6 +1,6 @@
 '.source.yaml':
-  'environmentvariable':
-      'prefix': 'environmentvariable'
+  'app-environmentvariable':
+      'prefix': 'app-environmentvariable'
       'body':"""
          Key: ${2:String}     # required
          Secure: ${3:Boolean}     # optional

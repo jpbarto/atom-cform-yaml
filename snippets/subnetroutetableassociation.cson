@@ -6,5 +6,5 @@
          	Type: AWS::EC2::SubnetRouteTableAssociation
          	Properties:
          		RouteTableId: ${2:String}     # required
-         		SubnetId: ${3:String}     # optional
+         		SubnetId: ${3:String}     # required
 """

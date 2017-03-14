@@ -1,0 +1,7 @@
+'.source.yaml':
+  'origincustomheader':
+      'prefix': 'origincustomheader'
+      'body':"""
+         HeaderName: ${2:String}     # required
+         HeaderValue: ${3:String}     # required
+"""

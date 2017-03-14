@@ -1,0 +1,8 @@
+'.source.yaml':
+  'association-target':
+      'prefix': 'association-target'
+      'body':"""
+         Key: ${2:String}     # required
+         Values:                # required, list of String
+         	- ${3:String}
+"""

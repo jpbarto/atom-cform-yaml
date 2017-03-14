@@ -1,6 +1,6 @@
 '.source.yaml':
-  'None-tag':
-      'prefix': 'None-tag'
+  'tag':
+      'prefix': 'tag'
       'body':"""
          Key: ${2:String}     # required
          Value: ${3:String}     # required

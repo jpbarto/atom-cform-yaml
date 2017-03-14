@@ -1,6 +1,6 @@
 '.source.yaml':
-  'ebs':
-      'prefix': 'ebs'
+  'instance-ebs':
+      'prefix': 'instance-ebs'
       'body':"""
          DeleteOnTermination: ${2:Boolean}     # optional
          Encrypted: ${3:Boolean}     # optional

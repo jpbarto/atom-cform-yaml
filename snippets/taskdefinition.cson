@@ -8,7 +8,8 @@
          		ContainerDefinitions:                # optional, list of ContainerDefinition
          			- ${2:ContainerDefinition}
          		Family: ${3:String}     # optional
-         		TaskRoleArn: ${4:String}     # optional
+         		NetworkMode: ${4:String}     # optional
+         		TaskRoleArn: ${5:String}     # optional
          		Volumes:                # optional, list of Volume
-         			- ${5:Volume}
+         			- ${6:Volume}
 """

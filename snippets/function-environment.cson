@@ -1,0 +1,7 @@
+'.source.yaml':
+  'function-environment':
+      'prefix': 'function-environment'
+      'body':"""
+         Variables:                # optional, map of String
+         	${2:String_key}: ${3:String_value}
+"""

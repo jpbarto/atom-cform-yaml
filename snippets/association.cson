@@ -1,0 +1,16 @@
+'.source.yaml':
+  'association':
+      'prefix': 'association'
+      'body':"""
+         ${1:association_name}:
+         	Type: AWS::SSM::Association
+         	Properties:
+         		DocumentVersion: ${2:String}     # optional
+         		InstanceId: ${3:String}     # optional
+         		Name: ${4:String}     # required
+         		Parameters:                # optional, map of ParameterValues
+         			${5:ParameterValues_key}: ${6:ParameterValues_value}
+         		ScheduleExpression: ${7:String}     # optional
+         		Targets:                # optional, list of Target
+         			- ${8:Target}
+"""

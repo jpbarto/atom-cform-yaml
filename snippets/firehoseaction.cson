@@ -4,4 +4,5 @@
       'body':"""
          DeliveryStreamName: ${2:String}     # required
          RoleArn: ${3:String}     # required
+         Separator: ${4:String}     # optional
 """

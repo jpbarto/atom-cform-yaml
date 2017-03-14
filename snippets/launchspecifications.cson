@@ -1,0 +1,24 @@
+'.source.yaml':
+  'launchspecifications':
+      'prefix': 'launchspecifications'
+      'body':"""
+         BlockDeviceMappings:                # optional, list of BlockDeviceMappings
+         	- ${2:BlockDeviceMappings}
+         EbsOptimized: ${3:Boolean}     # optional
+         IamInstanceProfile: ${4:IamInstanceProfile}     # optional
+         ImageId: ${5:String}     # required
+         InstanceType: ${6:String}     # required
+         KernelId: ${7:String}     # optional
+         KeyName: ${8:String}     # optional
+         Monitoring: ${9:Monitoring}     # optional
+         NetworkInterfaces:                # optional, list of NetworkInterfaces
+         	- ${10:NetworkInterfaces}
+         Placement: ${11:Placement}     # optional
+         RamdiskId: ${12:String}     # optional
+         SecurityGroups:                # optional, list of SecurityGroups
+         	- ${13:SecurityGroups}
+         SpotPrice: ${14:String}     # optional
+         SubnetId: ${15:String}     # optional
+         UserData: ${16:String}     # optional
+         WeightedCapacity: ${17:Double}     # optional
+"""

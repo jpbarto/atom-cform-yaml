@@ -1,0 +1,7 @@
+'.source.yaml':
+  'parametervalues':
+      'prefix': 'parametervalues'
+      'body':"""
+         ParameterValues:                # required, list of String
+         	- ${2:String}
+"""

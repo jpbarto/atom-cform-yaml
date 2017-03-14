@@ -6,12 +6,13 @@
          	Type: AWS::EC2::SecurityGroupIngress
          	Properties:
          		CidrIp: ${2:String}     # optional
-         		FromPort: ${3:Integer}     # optional
-         		GroupId: ${4:String}     # optional
-         		GroupName: ${5:String}     # optional
-         		IpProtocol: ${6:String}     # required
-         		SourceSecurityGroupId: ${7:String}     # optional
-         		SourceSecurityGroupName: ${8:String}     # optional
-         		SourceSecurityGroupOwnerId: ${9:String}     # optional
-         		ToPort: ${10:Integer}     # optional
+         		CidrIpv6: ${3:String}     # optional
+         		FromPort: ${4:Integer}     # optional
+         		GroupId: ${5:String}     # optional
+         		GroupName: ${6:String}     # optional
+         		IpProtocol: ${7:String}     # required
+         		SourceSecurityGroupId: ${8:String}     # optional
+         		SourceSecurityGroupName: ${9:String}     # optional
+         		SourceSecurityGroupOwnerId: ${10:String}     # optional
+         		ToPort: ${11:Integer}     # optional
 """
