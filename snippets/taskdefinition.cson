@@ -9,7 +9,9 @@
          			- ${2:ContainerDefinition}
          		Family: ${3:String}     # optional
          		NetworkMode: ${4:String}     # optional
-         		TaskRoleArn: ${5:String}     # optional
+         		PlacementConstraints:                # optional, list of TaskDefinitionPlacementConstraint
+         			- ${5:TaskDefinitionPlacementConstraint}
+         		TaskRoleArn: ${6:String}     # optional
          		Volumes:                # optional, list of Volume
-         			- ${6:Volume}
+         			- ${7:Volume}
 """

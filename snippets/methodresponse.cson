@@ -6,5 +6,5 @@
          	${2:String_key}: ${3:String_value}
          ResponseParameters:                # optional, map of Boolean
          	${4:Boolean_key}: ${5:Boolean_value}
-         StatusCode: ${6:String}     # optional
+         StatusCode: ${6:String}     # required
 """

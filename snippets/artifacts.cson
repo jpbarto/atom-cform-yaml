@@ -7,5 +7,5 @@
          NamespaceType: ${4:String}     # optional
          Packaging: ${5:String}     # optional
          Path: ${6:String}     # optional
-         Type: ${7:String}     # optional
+         Type: ${7:String}     # required
 """

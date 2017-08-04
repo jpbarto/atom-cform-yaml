@@ -2,6 +2,11 @@
   'parameter':
       'prefix': 'parameter'
       'body':"""
-         ParameterName: ${2:String}     # required
-         ParameterValue: ${3:String}     # required
+         ${1:parameter_name}:
+         	Type: AWS::SSM::Parameter
+         	Properties:
+         		Description: ${2:String}     # optional
+         		Name: ${3:String}     # optional
+         		Type: ${4:String}     # required
+         		Value: ${5:String}     # required
 """

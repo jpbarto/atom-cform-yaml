@@ -10,10 +10,11 @@
          		ClientCertificateId: ${4:String}     # optional
          		DeploymentId: ${5:String}     # optional
          		Description: ${6:String}     # optional
+         		DocumentationVersion: ${7:String}     # optional
          		MethodSettings:                # optional, list of MethodSetting
-         			- ${7:MethodSetting}
-         		RestApiId: ${8:String}     # optional
-         		StageName: ${9:String}     # optional
+         			- ${8:MethodSetting}
+         		RestApiId: ${9:String}     # required
+         		StageName: ${10:String}     # optional
          		Variables:                # optional, map of String
-         			${10:String_key}: ${11:String_value}
+         			${11:String_key}: ${12:String_value}
 """

@@ -5,7 +5,7 @@
          ${1:route_name}:
          	Type: AWS::EC2::Route
          	Properties:
-         		DestinationCidrBlock: ${2:String}     # required
+         		DestinationCidrBlock: ${2:String}     # optional
          		DestinationIpv6CidrBlock: ${3:String}     # optional
          		GatewayId: ${4:String}     # optional
          		InstanceId: ${5:String}     # optional

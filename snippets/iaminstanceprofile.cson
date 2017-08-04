@@ -1,6 +1,0 @@
-'.source.yaml':
-  'iaminstanceprofile':
-      'prefix': 'iaminstanceprofile'
-      'body':"""
-         Arn: ${2:String}     # optional
-"""

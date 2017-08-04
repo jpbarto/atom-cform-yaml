@@ -2,14 +2,19 @@
   'bucket-rule':
       'prefix': 'bucket-rule'
       'body':"""
-         ExpirationDate: ${2:Timestamp}     # optional
-         ExpirationInDays: ${3:Integer}     # optional
-         Id: ${4:String}     # optional
-         NoncurrentVersionExpirationInDays: ${5:Integer}     # optional
-         NoncurrentVersionTransition: ${6:NoncurrentVersionTransition}     # optional
-         NoncurrentVersionTransitions: ${7:NoncurrentVersionTransition}     # optional
-         Prefix: ${8:String}     # optional
-         Status: ${9:String}     # required
-         Transition: ${10:Transition}     # optional
-         Transitions: ${11:Transition}     # optional
+         AbortIncompleteMultipartUpload: ${2:AbortIncompleteMultipartUpload}     # optional
+         ExpirationDate: ${3:Timestamp}     # optional
+         ExpirationInDays: ${4:Integer}     # optional
+         Id: ${5:String}     # optional
+         NoncurrentVersionExpirationInDays: ${6:Integer}     # optional
+         NoncurrentVersionTransition: ${7:NoncurrentVersionTransition}     # optional
+         NoncurrentVersionTransitions:                # optional, list of NoncurrentVersionTransition
+         	- ${8:NoncurrentVersionTransition}
+         Prefix: ${9:String}     # optional
+         Status: ${10:String}     # required
+         TagFilters:                # optional, list of TagFilter
+         	- ${11:TagFilter}
+         Transition: ${12:Transition}     # optional
+         Transitions:                # optional, list of Transition
+         	- ${13:Transition}
 """

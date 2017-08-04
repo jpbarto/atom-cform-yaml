@@ -1,7 +1,0 @@
-'.source.yaml':
-  'ipsetdescriptor':
-      'prefix': 'ipsetdescriptor'
-      'body':"""
-         Type: ${2:String}     # required
-         Value: ${3:String}     # required
-"""

@@ -8,17 +8,20 @@
          		AdditionalInfo: ${2:Json}     # optional
          		Applications:                # optional, list of Application
          			- ${3:Application}
+         		AutoScalingRole: ${4:String}     # optional
          		BootstrapActions:                # optional, list of BootstrapActionConfig
-         			- ${4:BootstrapActionConfig}
+         			- ${5:BootstrapActionConfig}
          		Configurations:                # optional, list of Configuration
-         			- ${5:Configuration}
-         		Instances: ${6:JobFlowInstancesConfig}     # required
-         		JobFlowRole: ${7:String}     # required
-         		LogUri: ${8:String}     # optional
-         		Name: ${9:String}     # required
-         		ReleaseLabel: ${10:String}     # optional
-         		ServiceRole: ${11:String}     # required
+         			- ${6:Configuration}
+         		Instances: ${7:JobFlowInstancesConfig}     # required
+         		JobFlowRole: ${8:String}     # required
+         		LogUri: ${9:String}     # optional
+         		Name: ${10:String}     # required
+         		ReleaseLabel: ${11:String}     # optional
+         		ScaleDownBehavior: ${12:String}     # optional
+         		SecurityConfiguration: ${13:String}     # optional
+         		ServiceRole: ${14:String}     # required
          		Tags:                # optional, list of Tag
-         			- ${12:Tag}
-         		VisibleToAllUsers: ${13:Boolean}     # optional
+         			- ${15:Tag}
+         		VisibleToAllUsers: ${16:Boolean}     # optional
 """

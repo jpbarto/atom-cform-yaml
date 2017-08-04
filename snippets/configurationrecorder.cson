@@ -7,5 +7,5 @@
          	Properties:
          		Name: ${2:String}     # optional
          		RecordingGroup: ${3:RecordingGroup}     # optional
-         		RoleArn: ${4:String}     # required
+         		RoleARN: ${4:String}     # required
 """

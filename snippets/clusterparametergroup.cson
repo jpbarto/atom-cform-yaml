@@ -9,4 +9,6 @@
          		ParameterGroupFamily: ${3:String}     # required
          		Parameters:                # optional, list of Parameter
          			- ${4:Parameter}
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
 """

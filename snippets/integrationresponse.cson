@@ -7,5 +7,5 @@
          ResponseTemplates:                # optional, map of String
          	${4:String_key}: ${5:String_value}
          SelectionPattern: ${6:String}     # optional
-         StatusCode: ${7:String}     # optional
+         StatusCode: ${7:String}     # required
 """

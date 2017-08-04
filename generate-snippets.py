@@ -61,38 +61,39 @@ for key in prop_snippets.keys ():
     sfile.write ("      'prefix': '{0}'\n".format (key))
     sfile.write ("      'body':\"\"\"\n")
 
-    for pkey in sorted (snippet['spec']['Properties'].iterkeys ()):
-        sprop = snippet['spec']['Properties'][pkey]
+    if 'Properties' in snippet['spec']:
+        for pkey in sorted (snippet['spec']['Properties'].iterkeys ()):
+            sprop = snippet['spec']['Properties'][pkey]
 
-        ins_ctr += 1
+            ins_ctr += 1
+ 
+            req_descriptor = 'optional'
+            if sprop['Required']:
+                req_descriptor = 'required'
 
-        req_descriptor = 'optional'
-        if sprop['Required']:
-            req_descriptor = 'required'
+            value_descriptor = 'value'
+            if 'PrimitiveType' in sprop:
+                value_descriptor = sprop['PrimitiveType']
 
-        value_descriptor = 'value'
-        if 'PrimitiveType' in sprop:
-            value_descriptor = sprop['PrimitiveType']
+            if 'Type' in sprop:
+                if 'ItemType' in sprop:
+                    value_descriptor = sprop['ItemType']
+                elif 'PrimitiveItemType' in sprop:
+                    value_descriptor = sprop['PrimitiveItemType']
+                else:
+                    value_descriptor = sprop['Type']
 
-        if 'Type' in sprop:
-            if 'ItemType' in sprop:
-                value_descriptor = sprop['ItemType']
-            elif 'PrimitiveItemType' in sprop:
-                value_descriptor = sprop['PrimitiveItemType']
-            else:
-                value_descriptor = sprop['Type']
-
-            if sprop['Type'] == 'List':
-                sfile.write ("         {0}:                # {1}, list of {2}\n".format (pkey, req_descriptor, value_descriptor))
-                sfile.write ("         \t- ${{{0}:{1}}}\n".format (ins_ctr, value_descriptor))
-            elif sprop['Type'] == 'Map':
-                sfile.write ("         {0}:                # {1}, map of {2}\n".format (pkey, req_descriptor, value_descriptor))
-                sfile.write ("         \t${{{0}:{1}_key}}: ${{{2}:{1}_value}}\n".format (ins_ctr, value_descriptor, ins_ctr + 1))
-                ins_ctr += 1
+                if sprop['Type'] == 'List':
+                    sfile.write ("         {0}:                # {1}, list of {2}\n".format (pkey, req_descriptor, value_descriptor))
+                    sfile.write ("         \t- ${{{0}:{1}}}\n".format (ins_ctr, value_descriptor))
+                elif sprop['Type'] == 'Map':
+                    sfile.write ("         {0}:                # {1}, map of {2}\n".format (pkey, req_descriptor, value_descriptor))
+                    sfile.write ("         \t${{{0}:{1}_key}}: ${{{2}:{1}_value}}\n".format (ins_ctr, value_descriptor, ins_ctr + 1))
+                    ins_ctr += 1
+                else:
+                    sfile.write ("         {0}: ${{{1}:{2}}}     # {3}\n".format (pkey, ins_ctr, value_descriptor, req_descriptor))
             else:
                 sfile.write ("         {0}: ${{{1}:{2}}}     # {3}\n".format (pkey, ins_ctr, value_descriptor, req_descriptor))
-        else:
-            sfile.write ("         {0}: ${{{1}:{2}}}     # {3}\n".format (pkey, ins_ctr, value_descriptor, req_descriptor))
 
     sfile.write ("\"\"\"")
 

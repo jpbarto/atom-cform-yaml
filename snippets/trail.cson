@@ -8,11 +8,16 @@
          		CloudWatchLogsLogGroupArn: ${2:String}     # optional
          		CloudWatchLogsRoleArn: ${3:String}     # optional
          		EnableLogFileValidation: ${4:Boolean}     # optional
-         		IncludeGlobalServiceEvents: ${5:Boolean}     # optional
-         		IsLogging: ${6:Boolean}     # required
-         		IsMultiRegionTrail: ${7:Boolean}     # optional
-         		KMSKeyId: ${8:String}     # optional
-         		S3BucketName: ${9:String}     # required
-         		S3KeyPrefix: ${10:String}     # optional
-         		SnsTopicName: ${11:String}     # optional
+         		EventSelectors:                # optional, list of EventSelector
+         			- ${5:EventSelector}
+         		IncludeGlobalServiceEvents: ${6:Boolean}     # optional
+         		IsLogging: ${7:Boolean}     # required
+         		IsMultiRegionTrail: ${8:Boolean}     # optional
+         		KMSKeyId: ${9:String}     # optional
+         		S3BucketName: ${10:String}     # required
+         		S3KeyPrefix: ${11:String}     # optional
+         		SnsTopicName: ${12:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${13:Tag}
+         		TrailName: ${14:String}     # optional
 """

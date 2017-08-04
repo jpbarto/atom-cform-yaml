@@ -8,4 +8,6 @@
          		Description: ${2:String}     # required
          		SubnetIds:                # required, list of String
          			- ${3:String}
+         		Tags:                # optional, list of Tag
+         			- ${4:Tag}
 """

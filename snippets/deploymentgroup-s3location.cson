@@ -3,7 +3,7 @@
       'prefix': 'deploymentgroup-s3location'
       'body':"""
          Bucket: ${2:String}     # required
-         BundleType: ${3:String}     # required
+         BundleType: ${3:String}     # optional
          ETag: ${4:String}     # optional
          Key: ${5:String}     # required
          Version: ${6:String}     # optional

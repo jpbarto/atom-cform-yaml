@@ -2,12 +2,20 @@
   'healthcheckconfig':
       'prefix': 'healthcheckconfig'
       'body':"""
-         FailureThreshold: ${2:Integer}     # optional
-         FullyQualifiedDomainName: ${3:String}     # optional
-         IPAddress: ${4:String}     # optional
-         Port: ${5:Integer}     # optional
-         RequestInterval: ${6:Integer}     # optional
-         ResourcePath: ${7:String}     # optional
-         SearchString: ${8:String}     # optional
-         Type: ${9:String}     # required
+         AlarmIdentifier: ${2:AlarmIdentifier}     # optional
+         ChildHealthChecks:                # optional, list of String
+         	- ${3:String}
+         EnableSNI: ${4:Boolean}     # optional
+         FailureThreshold: ${5:Integer}     # optional
+         FullyQualifiedDomainName: ${6:String}     # optional
+         HealthThreshold: ${7:Integer}     # optional
+         IPAddress: ${8:String}     # optional
+         InsufficientDataHealthStatus: ${9:String}     # optional
+         Inverted: ${10:Boolean}     # optional
+         MeasureLatency: ${11:Boolean}     # optional
+         Port: ${12:Integer}     # optional
+         RequestInterval: ${13:Integer}     # optional
+         ResourcePath: ${14:String}     # optional
+         SearchString: ${15:String}     # optional
+         Type: ${16:String}     # required
 """

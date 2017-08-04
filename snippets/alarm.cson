@@ -13,15 +13,18 @@
          		ComparisonOperator: ${6:String}     # required
          		Dimensions:                # optional, list of Dimension
          			- ${7:Dimension}
-         		EvaluationPeriods: ${8:Double}     # required
+         		EvaluateLowSampleCountPercentile: ${8:String}     # optional
+         		EvaluationPeriods: ${9:Integer}     # required
+         		ExtendedStatistic: ${10:String}     # optional
          		InsufficientDataActions:                # optional, list of String
-         			- ${9:String}
-         		MetricName: ${10:String}     # required
-         		Namespace: ${11:String}     # required
+         			- ${11:String}
+         		MetricName: ${12:String}     # required
+         		Namespace: ${13:String}     # required
          		OKActions:                # optional, list of String
-         			- ${12:String}
-         		Period: ${13:Integer}     # required
-         		Statistic: ${14:String}     # required
-         		Threshold: ${15:Double}     # required
-         		Unit: ${16:String}     # optional
+         			- ${14:String}
+         		Period: ${15:Integer}     # required
+         		Statistic: ${16:String}     # optional
+         		Threshold: ${17:Double}     # required
+         		TreatMissingData: ${18:String}     # optional
+         		Unit: ${19:String}     # optional
 """

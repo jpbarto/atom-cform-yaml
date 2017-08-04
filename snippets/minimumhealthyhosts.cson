@@ -2,6 +2,6 @@
   'minimumhealthyhosts':
       'prefix': 'minimumhealthyhosts'
       'body':"""
-         Type: ${2:String}     # optional
-         Value: ${3:Integer}     # optional
+         Type: ${2:String}     # required
+         Value: ${3:Integer}     # required
 """

@@ -5,10 +5,12 @@
          ${1:subnet_name}:
          	Type: AWS::EC2::Subnet
          	Properties:
-         		AvailabilityZone: ${2:String}     # optional
-         		CidrBlock: ${3:String}     # required
-         		MapPublicIpOnLaunch: ${4:Boolean}     # optional
+         		AssignIpv6AddressOnCreation: ${2:Boolean}     # optional
+         		AvailabilityZone: ${3:String}     # optional
+         		CidrBlock: ${4:String}     # required
+         		Ipv6CidrBlock: ${5:String}     # optional
+         		MapPublicIpOnLaunch: ${6:Boolean}     # optional
          		Tags:                # optional, list of Tag
-         			- ${5:Tag}
-         		VpcId: ${6:String}     # required
+         			- ${7:Tag}
+         		VpcId: ${8:String}     # required
 """

@@ -18,10 +18,11 @@
          		Port: ${12:Integer}     # optional
          		PreferredBackupWindow: ${13:String}     # optional
          		PreferredMaintenanceWindow: ${14:String}     # optional
-         		SnapshotIdentifier: ${15:String}     # optional
-         		StorageEncrypted: ${16:Boolean}     # optional
+         		ReplicationSourceIdentifier: ${15:String}     # optional
+         		SnapshotIdentifier: ${16:String}     # optional
+         		StorageEncrypted: ${17:Boolean}     # optional
          		Tags:                # optional, list of Tag
-         			- ${17:Tag}
+         			- ${18:Tag}
          		VpcSecurityGroupIds:                # optional, list of String
-         			- ${18:String}
+         			- ${19:String}
 """

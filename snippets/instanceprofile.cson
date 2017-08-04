@@ -5,7 +5,8 @@
          ${1:instanceprofile_name}:
          	Type: AWS::IAM::InstanceProfile
          	Properties:
-         		Path: ${2:String}     # required
+         		InstanceProfileName: ${2:String}     # optional
+         		Path: ${3:String}     # optional
          		Roles:                # required, list of String
-         			- ${3:String}
+         			- ${4:String}
 """

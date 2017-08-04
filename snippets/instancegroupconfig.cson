@@ -5,14 +5,15 @@
          ${1:instancegroupconfig_name}:
          	Type: AWS::EMR::InstanceGroupConfig
          	Properties:
-         		BidPrice: ${2:String}     # optional
+         		AutoScalingPolicy: ${2:AutoScalingPolicy}     # optional
+         		BidPrice: ${3:String}     # optional
          		Configurations:                # optional, list of Configuration
-         			- ${3:Configuration}
-         		EbsConfiguration: ${4:EbsConfiguration}     # optional
-         		InstanceCount: ${5:Integer}     # required
-         		InstanceRole: ${6:String}     # required
-         		InstanceType: ${7:String}     # required
-         		JobFlowId: ${8:String}     # required
-         		Market: ${9:String}     # optional
-         		Name: ${10:String}     # optional
+         			- ${4:Configuration}
+         		EbsConfiguration: ${5:EbsConfiguration}     # optional
+         		InstanceCount: ${6:Integer}     # required
+         		InstanceRole: ${7:String}     # required
+         		InstanceType: ${8:String}     # required
+         		JobFlowId: ${9:String}     # required
+         		Market: ${10:String}     # optional
+         		Name: ${11:String}     # optional
 """

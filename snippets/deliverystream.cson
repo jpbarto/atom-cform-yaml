@@ -7,6 +7,7 @@
          	Properties:
          		DeliveryStreamName: ${2:String}     # optional
          		ElasticsearchDestinationConfiguration: ${3:ElasticsearchDestinationConfiguration}     # optional
-         		RedshiftDestinationConfiguration: ${4:RedshiftDestinationConfiguration}     # optional
-         		S3DestinationConfiguration: ${5:S3DestinationConfiguration}     # optional
+         		ExtendedS3DestinationConfiguration: ${4:ExtendedS3DestinationConfiguration}     # optional
+         		RedshiftDestinationConfiguration: ${5:RedshiftDestinationConfiguration}     # optional
+         		S3DestinationConfiguration: ${6:S3DestinationConfiguration}     # optional
 """

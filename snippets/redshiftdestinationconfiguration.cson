@@ -6,7 +6,8 @@
          ClusterJDBCURL: ${3:String}     # required
          CopyCommand: ${4:CopyCommand}     # required
          Password: ${5:String}     # required
-         RoleARN: ${6:String}     # required
-         S3Configuration: ${7:S3DestinationConfiguration}     # required
-         Username: ${8:String}     # required
+         ProcessingConfiguration: ${6:ProcessingConfiguration}     # optional
+         RoleARN: ${7:String}     # required
+         S3Configuration: ${8:S3DestinationConfiguration}     # required
+         Username: ${9:String}     # required
 """

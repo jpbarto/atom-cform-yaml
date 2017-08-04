@@ -5,10 +5,10 @@
          ${1:redshift-cluster_name}:
          	Type: AWS::Redshift::Cluster
          	Properties:
-         		AllowVersionUpdate: ${2:Boolean}     # optional
+         		AllowVersionUpgrade: ${2:Boolean}     # optional
          		AutomatedSnapshotRetentionPeriod: ${3:Integer}     # optional
          		AvailabilityZone: ${4:String}     # optional
-         		ClusterParameterGroupName: ${5:Integer}     # optional
+         		ClusterParameterGroupName: ${5:String}     # optional
          		ClusterSecurityGroups:                # optional, list of String
          			- ${6:String}
          		ClusterSubnetGroupName: ${7:String}     # optional
@@ -18,17 +18,23 @@
          		ElasticIp: ${11:String}     # optional
          		Encrypted: ${12:Boolean}     # optional
          		HsmClientCertificateIdentifier: ${13:String}     # optional
-         		KmsKeyId: ${14:String}     # optional
-         		MasterUserPassword: ${15:String}     # required
-         		MasterUsername: ${16:String}     # required
-         		NodeType: ${17:String}     # required
-         		NumberOfNodes: ${18:Integer}     # optional
-         		OwnerAccount: ${19:String}     # optional
-         		Port: ${20:Integer}     # optional
-         		PreferredMaintenanceWindow: ${21:String}     # optional
-         		PubliclyAccessible: ${22:Boolean}     # optional
-         		SnapshotClusterIdentifier: ${23:String}     # optional
-         		SnapshotIdentifier: ${24:String}     # optional
+         		HsmConfigurationIdentifier: ${14:String}     # optional
+         		IamRoles:                # optional, list of String
+         			- ${15:String}
+         		KmsKeyId: ${16:String}     # optional
+         		LoggingProperties: ${17:LoggingProperties}     # optional
+         		MasterUserPassword: ${18:String}     # required
+         		MasterUsername: ${19:String}     # required
+         		NodeType: ${20:String}     # required
+         		NumberOfNodes: ${21:Integer}     # optional
+         		OwnerAccount: ${22:String}     # optional
+         		Port: ${23:Integer}     # optional
+         		PreferredMaintenanceWindow: ${24:String}     # optional
+         		PubliclyAccessible: ${25:Boolean}     # optional
+         		SnapshotClusterIdentifier: ${26:String}     # optional
+         		SnapshotIdentifier: ${27:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${28:Tag}
          		VpcSecurityGroupIds:                # optional, list of String
-         			- ${25:String}
+         			- ${29:String}
 """

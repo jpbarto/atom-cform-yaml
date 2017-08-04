@@ -6,11 +6,12 @@
          	Type: AWS::EC2::SecurityGroup
          	Properties:
          		GroupDescription: ${2:String}     # required
-         		SecurityGroupEgress:                # optional, list of Rule
-         			- ${3:Rule}
-         		SecurityGroupIngress:                # optional, list of Rule
-         			- ${4:Rule}
+         		GroupName: ${3:String}     # optional
+         		SecurityGroupEgress:                # optional, list of Egress
+         			- ${4:Egress}
+         		SecurityGroupIngress:                # optional, list of Ingress
+         			- ${5:Ingress}
          		Tags:                # optional, list of Tag
-         			- ${5:Tag}
-         		VpcId: ${6:String}     # optional
+         			- ${6:Tag}
+         		VpcId: ${7:String}     # optional
 """

@@ -5,15 +5,18 @@
          ${1:deploymentgroup_name}:
          	Type: AWS::CodeDeploy::DeploymentGroup
          	Properties:
-         		ApplicationName: ${2:String}     # required
+         		AlarmConfiguration: ${2:AlarmConfiguration}     # optional
+         		ApplicationName: ${3:String}     # required
          		AutoScalingGroups:                # optional, list of String
-         			- ${3:String}
-         		Deployment: ${4:Deployment}     # optional
-         		DeploymentConfigName: ${5:String}     # optional
-         		DeploymentGroupName: ${6:String}     # optional
-         		Ec2TagFilters:                # optional, list of Ec2TagFilter
-         			- ${7:Ec2TagFilter}
-         		OnPremisesInstanceTagFilters:                # optional, list of OnPremisesInstanceTagFilter
-         			- ${8:OnPremisesInstanceTagFilter}
-         		ServiceRoleArn: ${9:String}     # required
+         			- ${4:String}
+         		Deployment: ${5:Deployment}     # optional
+         		DeploymentConfigName: ${6:String}     # optional
+         		DeploymentGroupName: ${7:String}     # optional
+         		Ec2TagFilters:                # optional, list of EC2TagFilter
+         			- ${8:EC2TagFilter}
+         		OnPremisesInstanceTagFilters:                # optional, list of TagFilter
+         			- ${9:TagFilter}
+         		ServiceRoleArn: ${10:String}     # required
+         		TriggerConfigurations:                # optional, list of TriggerConfig
+         			- ${11:TriggerConfig}
 """

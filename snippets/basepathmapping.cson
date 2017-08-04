@@ -6,7 +6,7 @@
          	Type: AWS::ApiGateway::BasePathMapping
          	Properties:
          		BasePath: ${2:String}     # optional
-         		DomainName: ${3:String}     # optional
+         		DomainName: ${3:String}     # required
          		RestApiId: ${4:String}     # optional
          		Stage: ${5:String}     # optional
 """

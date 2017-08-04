@@ -2,9 +2,10 @@
   'project-environment':
       'prefix': 'project-environment'
       'body':"""
-         ComputeType: ${2:String}     # optional
+         ComputeType: ${2:String}     # required
          EnvironmentVariables:                # optional, list of EnvironmentVariable
          	- ${3:EnvironmentVariable}
-         Image: ${4:String}     # optional
-         Type: ${5:String}     # optional
+         Image: ${4:String}     # required
+         PrivilegedMode: ${5:Boolean}     # optional
+         Type: ${6:String}     # required
 """

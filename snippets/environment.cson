@@ -12,7 +12,9 @@
          		OptionSettings:                # optional, list of OptionSettings
          			- ${6:OptionSettings}
          		SolutionStackName: ${7:String}     # optional
-         		TemplateName: ${8:String}     # optional
-         		Tier: ${9:Tier}     # optional
-         		VersionLabel: ${10:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${8:Tag}
+         		TemplateName: ${9:String}     # optional
+         		Tier: ${10:Tier}     # optional
+         		VersionLabel: ${11:String}     # optional
 """

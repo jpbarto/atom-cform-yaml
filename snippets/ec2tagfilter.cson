@@ -3,6 +3,6 @@
       'prefix': 'ec2tagfilter'
       'body':"""
          Key: ${2:String}     # optional
-         Type: ${3:String}     # required
+         Type: ${3:String}     # optional
          Value: ${4:String}     # optional
 """

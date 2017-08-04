@@ -5,5 +5,5 @@
          Auth: ${2:SourceAuth}     # optional
          BuildSpec: ${3:String}     # optional
          Location: ${4:String}     # optional
-         Type: ${5:String}     # optional
+         Type: ${5:String}     # required
 """

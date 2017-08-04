@@ -11,38 +11,39 @@
          		AvailabilityZone: ${5:String}     # optional
          		BackupRetentionPeriod: ${6:String}     # optional
          		CharacterSetName: ${7:String}     # optional
-         		DBClusterIdentifier: ${8:String}     # optional
-         		DBInstanceClass: ${9:String}     # required
-         		DBInstanceIdentifier: ${10:String}     # optional
-         		DBName: ${11:String}     # optional
-         		DBParameterGroupName: ${12:String}     # optional
+         		CopyTagsToSnapshot: ${8:Boolean}     # optional
+         		DBClusterIdentifier: ${9:String}     # optional
+         		DBInstanceClass: ${10:String}     # required
+         		DBInstanceIdentifier: ${11:String}     # optional
+         		DBName: ${12:String}     # optional
+         		DBParameterGroupName: ${13:String}     # optional
          		DBSecurityGroups:                # optional, list of String
-         			- ${13:String}
-         		DBSnapshotIdentifier: ${14:String}     # optional
-         		DBSubnetGroupName: ${15:String}     # optional
-         		Domain: ${16:String}     # optional
-         		DomainIAMRoleName: ${17:String}     # optional
-         		Engine: ${18:String}     # optional
-         		EngineVersion: ${19:String}     # optional
-         		Iops: ${20:Integer}     # optional
-         		KmsKeyId: ${21:String}     # optional
-         		LicenseModel: ${22:String}     # optional
-         		MasterUserPassword: ${23:String}     # optional
-         		MasterUsername: ${24:String}     # optional
-         		MonitoringInterval: ${25:Integer}     # optional
-         		MonitoringRoleArn: ${26:String}     # optional
-         		MultiAZ: ${27:Boolean}     # optional
-         		OptionGroupName: ${28:String}     # optional
-         		Port: ${29:String}     # optional
-         		PreferredBackupWindow: ${30:String}     # optional
-         		PreferredMaintenanceWindow: ${31:String}     # optional
-         		PubliclyAccessible: ${32:Boolean}     # optional
-         		SourceDBInstanceIdentifier: ${33:String}     # optional
-         		StorageEncrypted: ${34:Boolean}     # optional
-         		StorageType: ${35:String}     # optional
+         			- ${14:String}
+         		DBSnapshotIdentifier: ${15:String}     # optional
+         		DBSubnetGroupName: ${16:String}     # optional
+         		Domain: ${17:String}     # optional
+         		DomainIAMRoleName: ${18:String}     # optional
+         		Engine: ${19:String}     # optional
+         		EngineVersion: ${20:String}     # optional
+         		Iops: ${21:Integer}     # optional
+         		KmsKeyId: ${22:String}     # optional
+         		LicenseModel: ${23:String}     # optional
+         		MasterUserPassword: ${24:String}     # optional
+         		MasterUsername: ${25:String}     # optional
+         		MonitoringInterval: ${26:Integer}     # optional
+         		MonitoringRoleArn: ${27:String}     # optional
+         		MultiAZ: ${28:Boolean}     # optional
+         		OptionGroupName: ${29:String}     # optional
+         		Port: ${30:String}     # optional
+         		PreferredBackupWindow: ${31:String}     # optional
+         		PreferredMaintenanceWindow: ${32:String}     # optional
+         		PubliclyAccessible: ${33:Boolean}     # optional
+         		SourceDBInstanceIdentifier: ${34:String}     # optional
+         		StorageEncrypted: ${35:Boolean}     # optional
+         		StorageType: ${36:String}     # optional
          		Tags:                # optional, list of Tag
-         			- ${36:Tag}
-         		Timezone: ${37:String}     # optional
+         			- ${37:Tag}
+         		Timezone: ${38:String}     # optional
          		VPCSecurityGroups:                # optional, list of String
-         			- ${38:String}
+         			- ${39:String}
 """

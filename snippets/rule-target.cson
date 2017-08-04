@@ -2,8 +2,9 @@
   'rule-target':
       'prefix': 'rule-target'
       'body':"""
-         Arn: ${2:String}     # required
+         Arn: ${2:[u'AWS::Kinesis::Stream::Arn', u'AWS::Lambda::Function::Arn']}     # required
          Id: ${3:String}     # required
          Input: ${4:String}     # optional
          InputPath: ${5:String}     # optional
+         RoleArn: ${6:String}     # optional
 """

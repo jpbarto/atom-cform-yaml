@@ -10,13 +10,14 @@
          ClientCertificateId: ${7:String}     # optional
          DataTraceEnabled: ${8:Boolean}     # optional
          Description: ${9:String}     # optional
-         LoggingLevel: ${10:String}     # optional
+         DocumentationVersion: ${10:String}     # optional
+         LoggingLevel: ${11:String}     # optional
          MethodSettings:                # optional, list of MethodSetting
-         	- ${11:MethodSetting}
-         MetricsEnabled: ${12:Boolean}     # optional
-         StageName: ${13:String}     # optional
-         ThrottlingBurstLimit: ${14:Integer}     # optional
-         ThrottlingRateLimit: ${15:Double}     # optional
+         	- ${12:MethodSetting}
+         MetricsEnabled: ${13:Boolean}     # optional
+         StageName: ${14:String}     # optional
+         ThrottlingBurstLimit: ${15:Integer}     # optional
+         ThrottlingRateLimit: ${16:Double}     # optional
          Variables:                # optional, map of String
-         	${16:String_key}: ${17:String_value}
+         	${17:String_key}: ${18:String_value}
 """

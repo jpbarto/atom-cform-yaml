@@ -8,10 +8,11 @@
          		Description: ${2:String}     # optional
          		Groups:                # optional, list of String
          			- ${3:String}
-         		Path: ${4:String}     # optional
-         		PolicyDocument: ${5:Json}     # optional
+         		ManagedPolicyName: ${4:String}     # optional
+         		Path: ${5:String}     # optional
+         		PolicyDocument: ${6:Json}     # required
          		Roles:                # optional, list of String
-         			- ${6:String}
-         		Users:                # optional, list of String
          			- ${7:String}
+         		Users:                # optional, list of String
+         			- ${8:String}
 """

@@ -5,15 +5,16 @@
          ${1:bucket_name}:
          	Type: AWS::S3::Bucket
          	Properties:
-         		AccessControl: ${2:String}     # optional
-         		BucketName: ${3:String}     # optional
-         		CorsConfiguration: ${4:CorsConfiguration}     # optional
-         		LifecycleConfiguration: ${5:LifecycleConfiguration}     # optional
-         		LoggingConfiguration: ${6:LoggingConfiguration}     # optional
-         		NotificationConfiguration: ${7:NotificationConfiguration}     # optional
-         		ReplicationConfiguration: ${8:ReplicationConfiguration}     # optional
+         		AccelerateConfiguration: ${2:AccelerateConfiguration}     # optional
+         		AccessControl: ${3:String}     # optional
+         		BucketName: ${4:String}     # optional
+         		CorsConfiguration: ${5:CorsConfiguration}     # optional
+         		LifecycleConfiguration: ${6:LifecycleConfiguration}     # optional
+         		LoggingConfiguration: ${7:LoggingConfiguration}     # optional
+         		NotificationConfiguration: ${8:NotificationConfiguration}     # optional
+         		ReplicationConfiguration: ${9:ReplicationConfiguration}     # optional
          		Tags:                # optional, list of Tag
-         			- ${9:Tag}
-         		VersioningConfiguration: ${10:VersioningConfiguration}     # optional
-         		WebsiteConfiguration: ${11:WebsiteConfiguration}     # optional
+         			- ${10:Tag}
+         		VersioningConfiguration: ${11:VersioningConfiguration}     # optional
+         		WebsiteConfiguration: ${12:WebsiteConfiguration}     # optional
 """

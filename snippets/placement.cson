@@ -1,7 +1,0 @@
-'.source.yaml':
-  'placement':
-      'prefix': 'placement'
-      'body':"""
-         AvailabilityZone: ${2:String}     # optional
-         GroupName: ${3:String}     # optional
-"""

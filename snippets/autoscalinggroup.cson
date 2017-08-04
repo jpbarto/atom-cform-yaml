@@ -5,23 +5,25 @@
          ${1:autoscalinggroup_name}:
          	Type: AWS::AutoScaling::AutoScalingGroup
          	Properties:
-         		AsTags:                # optional, list of TagProperty
-         			- ${2:TagProperty}
          		AvailabilityZones:                # optional, list of String
-         			- ${3:String}
-         		Cooldown: ${4:String}     # optional
-         		DesiredCapacity: ${5:String}     # optional
-         		HealthCheckGracePeriod: ${6:Integer}     # optional
-         		HealthCheckType: ${7:String}     # optional
-         		InstanceId: ${8:String}     # optional
-         		LaunchConfigurationName: ${9:String}     # optional
+         			- ${2:String}
+         		Cooldown: ${3:String}     # optional
+         		DesiredCapacity: ${4:String}     # optional
+         		HealthCheckGracePeriod: ${5:Integer}     # optional
+         		HealthCheckType: ${6:String}     # optional
+         		InstanceId: ${7:String}     # optional
+         		LaunchConfigurationName: ${8:String}     # optional
          		LoadBalancerNames:                # optional, list of String
-         			- ${10:String}
-         		MaxSize: ${11:String}     # required
-         		MetricsCollection: ${12:MetricsCollection}     # optional
-         		MinSize: ${13:String}     # required
-         		NotificationConfigurations: ${14:NotificationConfigurations}     # optional
-         		PlacementGroup: ${15:String}     # optional
+         			- ${9:String}
+         		MaxSize: ${10:String}     # required
+         		MetricsCollection:                # optional, list of MetricsCollection
+         			- ${11:MetricsCollection}
+         		MinSize: ${12:String}     # required
+         		NotificationConfigurations:                # optional, list of NotificationConfiguration
+         			- ${13:NotificationConfiguration}
+         		PlacementGroup: ${14:String}     # optional
+         		Tags:                # optional, list of TagProperty
+         			- ${15:TagProperty}
          		TargetGroupARNs:                # optional, list of String
          			- ${16:String}
          		TerminationPolicies:                # optional, list of String

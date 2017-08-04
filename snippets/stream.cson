@@ -6,7 +6,8 @@
          	Type: AWS::Kinesis::Stream
          	Properties:
          		Name: ${2:String}     # optional
-         		ShardCount: ${3:Integer}     # required
+         		RetentionPeriodHours: ${3:Integer}     # optional
+         		ShardCount: ${4:Integer}     # required
          		Tags:                # optional, list of Tag
-         			- ${4:Tag}
+         			- ${5:Tag}
 """

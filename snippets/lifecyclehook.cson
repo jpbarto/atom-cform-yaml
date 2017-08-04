@@ -10,6 +10,6 @@
          		HeartbeatTimeout: ${4:Integer}     # optional
          		LifecycleTransition: ${5:String}     # required
          		NotificationMetadata: ${6:String}     # optional
-         		NotificationTargetARN: ${7:String}     # required
-         		RoleARN: ${8:String}     # required
+         		NotificationTargetARN: ${7:String}     # optional
+         		RoleARN: ${8:String}     # optional
 """

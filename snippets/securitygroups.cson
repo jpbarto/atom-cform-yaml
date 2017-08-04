@@ -1,6 +1,0 @@
-'.source.yaml':
-  'securitygroups':
-      'prefix': 'securitygroups'
-      'body':"""
-         GroupId: ${2:String}     # optional
-"""

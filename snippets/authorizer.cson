@@ -13,6 +13,6 @@
          		Name: ${7:String}     # optional
          		ProviderARNs:                # optional, list of String
          			- ${8:String}
-         		RestApiId: ${9:String}     # optional
+         		RestApiId: ${9:String}     # required
          		Type: ${10:String}     # optional
 """

@@ -1,7 +1,0 @@
-'.source.yaml':
-  'xssmatchtuple':
-      'prefix': 'xssmatchtuple'
-      'body':"""
-         FieldToMatch: ${2:FieldToMatch}     # required
-         TextTransformation: ${3:String}     # required
-"""

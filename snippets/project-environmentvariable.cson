@@ -2,6 +2,6 @@
   'project-environmentvariable':
       'prefix': 'project-environmentvariable'
       'body':"""
-         Name: ${2:String}     # optional
-         Value: ${3:String}     # optional
+         Name: ${2:String}     # required
+         Value: ${3:String}     # required
 """

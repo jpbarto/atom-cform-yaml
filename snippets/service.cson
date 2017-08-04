@@ -7,9 +7,14 @@
          	Properties:
          		Cluster: ${2:String}     # optional
          		DeploymentConfiguration: ${3:DeploymentConfiguration}     # optional
-         		DesiredCount: ${4:Integer}     # required
+         		DesiredCount: ${4:Integer}     # optional
          		LoadBalancers:                # optional, list of LoadBalancer
          			- ${5:LoadBalancer}
-         		Role: ${6:String}     # optional
-         		TaskDefinition: ${7:String}     # required
+         		PlacementConstraints:                # optional, list of PlacementConstraint
+         			- ${6:PlacementConstraint}
+         		PlacementStrategies:                # optional, list of PlacementStrategy
+         			- ${7:PlacementStrategy}
+         		Role: ${8:String}     # optional
+         		ServiceName: ${9:String}     # optional
+         		TaskDefinition: ${10:String}     # required
 """

@@ -16,6 +16,6 @@
          			${8:String_key}: ${9:String_value}
          		RequestParameters:                # optional, map of Boolean
          			${10:Boolean_key}: ${11:Boolean_value}
-         		ResourceId: ${12:String}     # optional
-         		RestApiId: ${13:String}     # optional
+         		ResourceId: ${12:String}     # required
+         		RestApiId: ${13:String}     # required
 """

@@ -11,7 +11,8 @@
          		NetbiosNameServers:                # optional, list of String
          			- ${4:String}
          		NetbiosNodeType: ${5:Integer}     # optional
-         		NtpServers: ${6:String}     # optional
+         		NtpServers:                # optional, list of String
+         			- ${6:String}
          		Tags:                # optional, list of Tag
          			- ${7:Tag}
 """

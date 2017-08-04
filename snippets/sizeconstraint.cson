@@ -1,9 +1,0 @@
-'.source.yaml':
-  'sizeconstraint':
-      'prefix': 'sizeconstraint'
-      'body':"""
-         ComparisonOperator: ${2:String}     # required
-         FieldToMatch: ${3:FieldToMatch}     # required
-         Size: ${4:Integer}     # required
-         TextTransformation: ${5:String}     # required
-"""

@@ -5,7 +5,7 @@
          ${1:autoscaling-scalingpolicy_name}:
          	Type: AWS::AutoScaling::ScalingPolicy
          	Properties:
-         		AdjustmentType: ${2:String}     # required
+         		AdjustmentType: ${2:String}     # optional
          		AutoScalingGroupName: ${3:String}     # required
          		Cooldown: ${4:String}     # optional
          		EstimatedInstanceWarmup: ${5:Integer}     # optional
@@ -15,4 +15,5 @@
          		ScalingAdjustment: ${9:Integer}     # optional
          		StepAdjustments:                # optional, list of StepAdjustment
          			- ${10:StepAdjustment}
+         		TargetTrackingConfiguration: ${11:TargetTrackingConfiguration}     # optional
 """

@@ -2,6 +2,6 @@
   'tag':
       'prefix': 'tag'
       'body':"""
-         Key: ${2:String}     # required
-         Value: ${3:String}     # required
+         Key: ${2:String}     # optional
+         Value: ${3:String}     # optional
 """

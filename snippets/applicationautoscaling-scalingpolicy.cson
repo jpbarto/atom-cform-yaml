@@ -12,4 +12,5 @@
          		ScalingTargetId: ${6:String}     # optional
          		ServiceNamespace: ${7:String}     # optional
          		StepScalingPolicyConfiguration: ${8:StepScalingPolicyConfiguration}     # optional
+         		TargetTrackingScalingPolicyConfiguration: ${9:TargetTrackingScalingPolicyConfiguration}     # optional
 """
