@@ -1,0 +1,6 @@
+'.source.yaml':
+  'instancefleetconfig-instancefleetprovisioningspecifications':
+      'prefix': 'instancefleetconfig-instancefleetprovisioningspecifications'
+      'body':"""
+         SpotSpecification: ${2:SpotProvisioningSpecification}     # required
+"""

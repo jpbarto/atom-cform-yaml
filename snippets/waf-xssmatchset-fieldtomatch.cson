@@ -1,0 +1,7 @@
+'.source.yaml':
+  'waf-xssmatchset-fieldtomatch':
+      'prefix': 'waf-xssmatchset-fieldtomatch'
+      'body':"""
+         Data: ${2:String}     # optional
+         Type: ${3:String}     # required
+"""

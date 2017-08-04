@@ -1,0 +1,13 @@
+'.source.yaml':
+  'userpoolgroup':
+      'prefix': 'userpoolgroup'
+      'body':"""
+         ${1:userpoolgroup_name}:
+         	Type: AWS::Cognito::UserPoolGroup
+         	Properties:
+         		Description: ${2:String}     # optional
+         		GroupName: ${3:String}     # optional
+         		Precedence: ${4:Double}     # optional
+         		RoleArn: ${5:String}     # optional
+         		UserPoolId: ${6:String}     # required
+"""

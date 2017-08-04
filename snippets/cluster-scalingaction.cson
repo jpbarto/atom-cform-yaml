@@ -1,0 +1,7 @@
+'.source.yaml':
+  'cluster-scalingaction':
+      'prefix': 'cluster-scalingaction'
+      'body':"""
+         Market: ${2:String}     # optional
+         SimpleScalingPolicyConfiguration: ${3:SimpleScalingPolicyConfiguration}     # required
+"""

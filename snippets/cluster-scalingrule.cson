@@ -1,0 +1,9 @@
+'.source.yaml':
+  'cluster-scalingrule':
+      'prefix': 'cluster-scalingrule'
+      'body':"""
+         Action: ${2:ScalingAction}     # required
+         Description: ${3:String}     # optional
+         Name: ${4:String}     # required
+         Trigger: ${5:ScalingTrigger}     # required
+"""

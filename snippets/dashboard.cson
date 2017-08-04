@@ -1,0 +1,10 @@
+'.source.yaml':
+  'dashboard':
+      'prefix': 'dashboard'
+      'body':"""
+         ${1:dashboard_name}:
+         	Type: AWS::CloudWatch::Dashboard
+         	Properties:
+         		DashboardBody: ${2:String}     # required
+         		DashboardName: ${3:String}     # optional
+"""

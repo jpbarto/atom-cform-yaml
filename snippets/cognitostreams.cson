@@ -1,0 +1,8 @@
+'.source.yaml':
+  'cognitostreams':
+      'prefix': 'cognitostreams'
+      'body':"""
+         RoleArn: ${2:String}     # optional
+         StreamName: ${3:String}     # optional
+         StreamingStatus: ${4:String}     # optional
+"""

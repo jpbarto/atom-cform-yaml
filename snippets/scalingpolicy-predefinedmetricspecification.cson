@@ -1,0 +1,7 @@
+'.source.yaml':
+  'scalingpolicy-predefinedmetricspecification':
+      'prefix': 'scalingpolicy-predefinedmetricspecification'
+      'body':"""
+         PredefinedMetricType: ${2:String}     # required
+         ResourceLabel: ${3:String}     # optional
+"""

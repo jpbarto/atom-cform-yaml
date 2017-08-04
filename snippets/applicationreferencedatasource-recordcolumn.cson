@@ -1,0 +1,8 @@
+'.source.yaml':
+  'applicationreferencedatasource-recordcolumn':
+      'prefix': 'applicationreferencedatasource-recordcolumn'
+      'body':"""
+         Mapping: ${2:String}     # optional
+         Name: ${3:String}     # required
+         SqlType: ${4:String}     # required
+"""

@@ -1,0 +1,9 @@
+'.source.yaml':
+  'output':
+      'prefix': 'output'
+      'body':"""
+         DestinationSchema: ${2:DestinationSchema}     # required
+         KinesisFirehoseOutput: ${3:KinesisFirehoseOutput}     # optional
+         KinesisStreamsOutput: ${4:KinesisStreamsOutput}     # optional
+         Name: ${5:String}     # optional
+"""

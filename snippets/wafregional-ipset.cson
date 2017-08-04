@@ -1,0 +1,11 @@
+'.source.yaml':
+  'wafregional-ipset':
+      'prefix': 'wafregional-ipset'
+      'body':"""
+         ${1:wafregional-ipset_name}:
+         	Type: AWS::WAFRegional::IPSet
+         	Properties:
+         		IPSetDescriptors:                # optional, list of IPSetDescriptor
+         			- ${2:IPSetDescriptor}
+         		Name: ${3:String}     # required
+"""

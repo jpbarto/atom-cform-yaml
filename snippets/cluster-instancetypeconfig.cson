@@ -1,0 +1,12 @@
+'.source.yaml':
+  'cluster-instancetypeconfig':
+      'prefix': 'cluster-instancetypeconfig'
+      'body':"""
+         BidPrice: ${2:String}     # optional
+         BidPriceAsPercentageOfOnDemandPrice: ${3:Double}     # optional
+         Configurations:                # optional, list of Configuration
+         	- ${4:Configuration}
+         EbsConfiguration: ${5:EbsConfiguration}     # optional
+         InstanceType: ${6:String}     # required
+         WeightedCapacity: ${7:Integer}     # optional
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'documentationpart':
+      'prefix': 'documentationpart'
+      'body':"""
+         ${1:documentationpart_name}:
+         	Type: AWS::ApiGateway::DocumentationPart
+         	Properties:
+         		Location: ${2:Location}     # required
+         		Properties: ${3:String}     # required
+         		RestApiId: ${4:String}     # required
+"""

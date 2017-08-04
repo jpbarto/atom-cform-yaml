@@ -1,0 +1,8 @@
+'.source.yaml':
+  'pushsync':
+      'prefix': 'pushsync'
+      'body':"""
+         ApplicationArns:                # optional, list of String
+         	- ${2:String}
+         RoleArn: ${3:String}     # optional
+"""

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'cluster-scalingtrigger':
+      'prefix': 'cluster-scalingtrigger'
+      'body':"""
+         CloudWatchAlarmDefinition: ${2:CloudWatchAlarmDefinition}     # required
+"""

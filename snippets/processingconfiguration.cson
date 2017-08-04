@@ -1,0 +1,8 @@
+'.source.yaml':
+  'processingconfiguration':
+      'prefix': 'processingconfiguration'
+      'body':"""
+         Enabled: ${2:Boolean}     # required
+         Processors:                # required, list of Processor
+         	- ${3:Processor}
+"""

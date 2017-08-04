@@ -1,0 +1,6 @@
+'.source.yaml':
+  'webacl-action':
+      'prefix': 'webacl-action'
+      'body':"""
+         Type: ${2:String}     # required
+"""

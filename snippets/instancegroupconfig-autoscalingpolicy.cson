@@ -1,0 +1,8 @@
+'.source.yaml':
+  'instancegroupconfig-autoscalingpolicy':
+      'prefix': 'instancegroupconfig-autoscalingpolicy'
+      'body':"""
+         Constraints: ${2:ScalingConstraints}     # required
+         Rules:                # required, list of ScalingRule
+         	- ${3:ScalingRule}
+"""

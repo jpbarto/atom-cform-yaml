@@ -1,0 +1,11 @@
+'.source.yaml':
+  'userpoolusertogroupattachment':
+      'prefix': 'userpoolusertogroupattachment'
+      'body':"""
+         ${1:userpoolusertogroupattachment_name}:
+         	Type: AWS::Cognito::UserPoolUserToGroupAttachment
+         	Properties:
+         		GroupName: ${2:String}     # required
+         		UserPoolId: ${3:String}     # required
+         		Username: ${4:String}     # required
+"""

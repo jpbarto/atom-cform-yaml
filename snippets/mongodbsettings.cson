@@ -1,0 +1,16 @@
+'.source.yaml':
+  'mongodbsettings':
+      'prefix': 'mongodbsettings'
+      'body':"""
+         AuthMechanism: ${2:String}     # optional
+         AuthSource: ${3:String}     # optional
+         AuthType: ${4:String}     # optional
+         DatabaseName: ${5:String}     # optional
+         DocsToInvestigate: ${6:String}     # optional
+         ExtractDocId: ${7:String}     # optional
+         NestingLevel: ${8:String}     # optional
+         Password: ${9:String}     # optional
+         Port: ${10:Integer}     # optional
+         ServerName: ${11:String}     # optional
+         Username: ${12:String}     # optional
+"""

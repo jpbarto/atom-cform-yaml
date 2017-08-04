@@ -1,0 +1,11 @@
+'.source.yaml':
+  'dms-certificate':
+      'prefix': 'dms-certificate'
+      'body':"""
+         ${1:dms-certificate_name}:
+         	Type: AWS::DMS::Certificate
+         	Properties:
+         		CertificateIdentifier: ${2:String}     # optional
+         		CertificatePem: ${3:String}     # optional
+         		CertificateWallet: ${4:String}     # optional
+"""

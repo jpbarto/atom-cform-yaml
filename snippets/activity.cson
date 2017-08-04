@@ -1,0 +1,9 @@
+'.source.yaml':
+  'activity':
+      'prefix': 'activity'
+      'body':"""
+         ${1:activity_name}:
+         	Type: AWS::StepFunctions::Activity
+         	Properties:
+         		Name: ${2:String}     # required
+"""

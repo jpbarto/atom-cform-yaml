@@ -1,0 +1,6 @@
+'.source.yaml':
+  'deadletterconfig':
+      'prefix': 'deadletterconfig'
+      'body':"""
+         TargetArn: ${2:String}     # optional
+"""

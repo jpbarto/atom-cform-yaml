@@ -1,0 +1,7 @@
+'.source.yaml':
+  'loggingproperties':
+      'prefix': 'loggingproperties'
+      'body':"""
+         BucketName: ${2:String}     # required
+         S3KeyPrefix: ${3:String}     # optional
+"""

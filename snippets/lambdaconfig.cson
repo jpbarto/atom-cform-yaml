@@ -1,0 +1,13 @@
+'.source.yaml':
+  'lambdaconfig':
+      'prefix': 'lambdaconfig'
+      'body':"""
+         CreateAuthChallenge: ${2:String}     # optional
+         CustomMessage: ${3:String}     # optional
+         DefineAuthChallenge: ${4:String}     # optional
+         PostAuthentication: ${5:String}     # optional
+         PostConfirmation: ${6:String}     # optional
+         PreAuthentication: ${7:String}     # optional
+         PreSignUp: ${8:String}     # optional
+         VerifyAuthChallengeResponse: ${9:String}     # optional
+"""

@@ -1,0 +1,25 @@
+'.source.yaml':
+  'endpoint':
+      'prefix': 'endpoint'
+      'body':"""
+         ${1:endpoint_name}:
+         	Type: AWS::DMS::Endpoint
+         	Properties:
+         		CertificateArn: ${2:String}     # optional
+         		DatabaseName: ${3:String}     # optional
+         		DynamoDbSettings: ${4:DynamoDbSettings}     # optional
+         		EndpointIdentifier: ${5:String}     # optional
+         		EndpointType: ${6:String}     # required
+         		EngineName: ${7:String}     # required
+         		ExtraConnectionAttributes: ${8:String}     # optional
+         		KmsKeyId: ${9:String}     # optional
+         		MongoDbSettings: ${10:MongoDbSettings}     # optional
+         		Password: ${11:String}     # optional
+         		Port: ${12:Integer}     # optional
+         		S3Settings: ${13:S3Settings}     # optional
+         		ServerName: ${14:String}     # optional
+         		SslMode: ${15:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${16:Tag}
+         		Username: ${17:String}     # optional
+"""

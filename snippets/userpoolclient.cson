@@ -1,0 +1,18 @@
+'.source.yaml':
+  'userpoolclient':
+      'prefix': 'userpoolclient'
+      'body':"""
+         ${1:userpoolclient_name}:
+         	Type: AWS::Cognito::UserPoolClient
+         	Properties:
+         		ClientName: ${2:String}     # optional
+         		ExplicitAuthFlows:                # optional, list of String
+         			- ${3:String}
+         		GenerateSecret: ${4:Boolean}     # optional
+         		ReadAttributes:                # optional, list of String
+         			- ${5:String}
+         		RefreshTokenValidity: ${6:Double}     # optional
+         		UserPoolId: ${7:String}     # required
+         		WriteAttributes:                # optional, list of String
+         			- ${8:String}
+"""

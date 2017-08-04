@@ -1,0 +1,8 @@
+'.source.yaml':
+  'cognitoidentityprovider':
+      'prefix': 'cognitoidentityprovider'
+      'body':"""
+         ClientId: ${2:String}     # optional
+         ProviderName: ${3:String}     # optional
+         ServerSideTokenCheck: ${4:Boolean}     # optional
+"""

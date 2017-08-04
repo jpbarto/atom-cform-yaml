@@ -1,0 +1,9 @@
+'.source.yaml':
+  'mappingrule':
+      'prefix': 'mappingrule'
+      'body':"""
+         Claim: ${2:String}     # required
+         MatchType: ${3:String}     # required
+         RoleARN: ${4:String}     # required
+         Value: ${5:String}     # required
+"""

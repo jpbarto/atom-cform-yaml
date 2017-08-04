@@ -1,0 +1,7 @@
+'.source.yaml':
+  'spotplacement':
+      'prefix': 'spotplacement'
+      'body':"""
+         AvailabilityZone: ${2:String}     # optional
+         GroupName: ${3:String}     # optional
+"""

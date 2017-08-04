@@ -1,0 +1,11 @@
+'.source.yaml':
+  'documentationversion':
+      'prefix': 'documentationversion'
+      'body':"""
+         ${1:documentationversion_name}:
+         	Type: AWS::ApiGateway::DocumentationVersion
+         	Properties:
+         		Description: ${2:String}     # optional
+         		DocumentationVersion: ${3:String}     # required
+         		RestApiId: ${4:String}     # required
+"""

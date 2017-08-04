@@ -1,0 +1,7 @@
+'.source.yaml':
+  'kinesisfirehoseoutput':
+      'prefix': 'kinesisfirehoseoutput'
+      'body':"""
+         ResourceARN: ${2:String}     # required
+         RoleARN: ${3:String}     # required
+"""

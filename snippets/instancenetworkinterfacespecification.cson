@@ -1,0 +1,19 @@
+'.source.yaml':
+  'instancenetworkinterfacespecification':
+      'prefix': 'instancenetworkinterfacespecification'
+      'body':"""
+         AssociatePublicIpAddress: ${2:Boolean}     # optional
+         DeleteOnTermination: ${3:Boolean}     # optional
+         Description: ${4:String}     # optional
+         DeviceIndex: ${5:Integer}     # optional
+         Groups:                # optional, list of String
+         	- ${6:String}
+         Ipv6AddressCount: ${7:Integer}     # optional
+         Ipv6Addresses:                # optional, list of InstanceIpv6Address
+         	- ${8:InstanceIpv6Address}
+         NetworkInterfaceId: ${9:String}     # optional
+         PrivateIpAddresses:                # optional, list of PrivateIpAddressSpecification
+         	- ${10:PrivateIpAddressSpecification}
+         SecondaryPrivateIpAddressCount: ${11:Integer}     # optional
+         SubnetId: ${12:String}     # optional
+"""

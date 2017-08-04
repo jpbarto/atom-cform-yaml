@@ -1,0 +1,6 @@
+'.source.yaml':
+  'application-jsonmappingparameters':
+      'prefix': 'application-jsonmappingparameters'
+      'body':"""
+         RecordRowPath: ${2:String}     # required
+"""

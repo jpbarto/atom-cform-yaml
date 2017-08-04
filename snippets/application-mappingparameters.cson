@@ -1,0 +1,7 @@
+'.source.yaml':
+  'application-mappingparameters':
+      'prefix': 'application-mappingparameters'
+      'body':"""
+         CSVMappingParameters: ${2:CSVMappingParameters}     # optional
+         JSONMappingParameters: ${3:JSONMappingParameters}     # optional
+"""

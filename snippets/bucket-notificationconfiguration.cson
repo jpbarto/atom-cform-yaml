@@ -1,0 +1,11 @@
+'.source.yaml':
+  'bucket-notificationconfiguration':
+      'prefix': 'bucket-notificationconfiguration'
+      'body':"""
+         LambdaConfigurations:                # optional, list of LambdaConfiguration
+         	- ${2:LambdaConfiguration}
+         QueueConfigurations:                # optional, list of QueueConfiguration
+         	- ${3:QueueConfiguration}
+         TopicConfigurations:                # optional, list of TopicConfiguration
+         	- ${4:TopicConfiguration}
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'waf-bytematchset':
+      'prefix': 'waf-bytematchset'
+      'body':"""
+         ${1:waf-bytematchset_name}:
+         	Type: AWS::WAF::ByteMatchSet
+         	Properties:
+         		ByteMatchTuples:                # optional, list of ByteMatchTuple
+         			- ${2:ByteMatchTuple}
+         		Name: ${3:String}     # required
+"""

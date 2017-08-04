@@ -1,0 +1,14 @@
+'.source.yaml':
+  'replicationsubnetgroup':
+      'prefix': 'replicationsubnetgroup'
+      'body':"""
+         ${1:replicationsubnetgroup_name}:
+         	Type: AWS::DMS::ReplicationSubnetGroup
+         	Properties:
+         		ReplicationSubnetGroupDescription: ${2:String}     # required
+         		ReplicationSubnetGroupIdentifier: ${3:String}     # optional
+         		SubnetIds:                # required, list of String
+         			- ${4:String}
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+"""

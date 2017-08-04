@@ -1,0 +1,13 @@
+'.source.yaml':
+  'wafregional-webacl':
+      'prefix': 'wafregional-webacl'
+      'body':"""
+         ${1:wafregional-webacl_name}:
+         	Type: AWS::WAFRegional::WebACL
+         	Properties:
+         		DefaultAction: ${2:Action}     # required
+         		MetricName: ${3:String}     # required
+         		Name: ${4:String}     # required
+         		Rules:                # optional, list of Rule
+         			- ${5:Rule}
+"""

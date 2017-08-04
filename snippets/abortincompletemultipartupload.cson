@@ -1,0 +1,6 @@
+'.source.yaml':
+  'abortincompletemultipartupload':
+      'prefix': 'abortincompletemultipartupload'
+      'body':"""
+         DaysAfterInitiation: ${2:Integer}     # required
+"""

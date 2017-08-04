@@ -1,0 +1,18 @@
+'.source.yaml':
+  'userpooluser':
+      'prefix': 'userpooluser'
+      'body':"""
+         ${1:userpooluser_name}:
+         	Type: AWS::Cognito::UserPoolUser
+         	Properties:
+         		DesiredDeliveryMediums:                # optional, list of String
+         			- ${2:String}
+         		ForceAliasCreation: ${3:Boolean}     # optional
+         		MessageAction: ${4:String}     # optional
+         		UserAttributes:                # optional, list of AttributeType
+         			- ${5:AttributeType}
+         		UserPoolId: ${6:String}     # required
+         		Username: ${7:String}     # optional
+         		ValidationData:                # optional, list of AttributeType
+         			- ${8:AttributeType}
+"""

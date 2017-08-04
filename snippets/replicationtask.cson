@@ -1,0 +1,18 @@
+'.source.yaml':
+  'replicationtask':
+      'prefix': 'replicationtask'
+      'body':"""
+         ${1:replicationtask_name}:
+         	Type: AWS::DMS::ReplicationTask
+         	Properties:
+         		CdcStartTime: ${2:Double}     # optional
+         		MigrationType: ${3:String}     # required
+         		ReplicationInstanceArn: ${4:String}     # required
+         		ReplicationTaskIdentifier: ${5:String}     # optional
+         		ReplicationTaskSettings: ${6:String}     # optional
+         		SourceEndpointArn: ${7:String}     # required
+         		TableMappings: ${8:String}     # required
+         		Tags:                # optional, list of Tag
+         			- ${9:Tag}
+         		TargetEndpointArn: ${10:String}     # required
+"""

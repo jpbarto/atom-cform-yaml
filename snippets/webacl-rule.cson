@@ -1,0 +1,8 @@
+'.source.yaml':
+  'webacl-rule':
+      'prefix': 'webacl-rule'
+      'body':"""
+         Action: ${2:Action}     # required
+         Priority: ${3:Integer}     # required
+         RuleId: ${4:String}     # required
+"""

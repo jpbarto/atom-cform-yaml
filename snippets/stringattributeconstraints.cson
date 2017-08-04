@@ -1,0 +1,7 @@
+'.source.yaml':
+  'stringattributeconstraints':
+      'prefix': 'stringattributeconstraints'
+      'body':"""
+         MaxLength: ${2:String}     # optional
+         MinLength: ${3:String}     # optional
+"""

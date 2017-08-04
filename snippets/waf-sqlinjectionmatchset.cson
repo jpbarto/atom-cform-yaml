@@ -1,0 +1,11 @@
+'.source.yaml':
+  'waf-sqlinjectionmatchset':
+      'prefix': 'waf-sqlinjectionmatchset'
+      'body':"""
+         ${1:waf-sqlinjectionmatchset_name}:
+         	Type: AWS::WAF::SqlInjectionMatchSet
+         	Properties:
+         		Name: ${2:String}     # required
+         		SqlInjectionMatchTuples:                # optional, list of SqlInjectionMatchTuple
+         			- ${3:SqlInjectionMatchTuple}
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'waf-xssmatchset':
+      'prefix': 'waf-xssmatchset'
+      'body':"""
+         ${1:waf-xssmatchset_name}:
+         	Type: AWS::WAF::XssMatchSet
+         	Properties:
+         		Name: ${2:String}     # required
+         		XssMatchTuples:                # required, list of XssMatchTuple
+         			- ${3:XssMatchTuple}
+"""

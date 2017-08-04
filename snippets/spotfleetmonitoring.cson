@@ -1,0 +1,6 @@
+'.source.yaml':
+  'spotfleetmonitoring':
+      'prefix': 'spotfleetmonitoring'
+      'body':"""
+         Enabled: ${2:Boolean}     # optional
+"""

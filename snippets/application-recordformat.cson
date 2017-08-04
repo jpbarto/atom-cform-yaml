@@ -1,0 +1,7 @@
+'.source.yaml':
+  'application-recordformat':
+      'prefix': 'application-recordformat'
+      'body':"""
+         MappingParameters: ${2:MappingParameters}     # optional
+         RecordFormatType: ${3:String}     # required
+"""

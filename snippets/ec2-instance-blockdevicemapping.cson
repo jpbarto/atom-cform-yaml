@@ -1,0 +1,9 @@
+'.source.yaml':
+  'ec2-instance-blockdevicemapping':
+      'prefix': 'ec2-instance-blockdevicemapping'
+      'body':"""
+         DeviceName: ${2:String}     # required
+         Ebs: ${3:Ebs}     # optional
+         NoDevice: ${4:NoDevice}     # optional
+         VirtualName: ${5:String}     # optional
+"""

@@ -1,0 +1,27 @@
+'.source.yaml':
+  'userpool':
+      'prefix': 'userpool'
+      'body':"""
+         ${1:userpool_name}:
+         	Type: AWS::Cognito::UserPool
+         	Properties:
+         		AdminCreateUserConfig: ${2:AdminCreateUserConfig}     # optional
+         		AliasAttributes:                # optional, list of String
+         			- ${3:String}
+         		AutoVerifiedAttributes:                # optional, list of String
+         			- ${4:String}
+         		DeviceConfiguration: ${5:DeviceConfiguration}     # optional
+         		EmailConfiguration: ${6:EmailConfiguration}     # optional
+         		EmailVerificationMessage: ${7:String}     # optional
+         		EmailVerificationSubject: ${8:String}     # optional
+         		LambdaConfig: ${9:LambdaConfig}     # optional
+         		MfaConfiguration: ${10:String}     # optional
+         		Policies: ${11:Policies}     # optional
+         		Schema:                # optional, list of SchemaAttribute
+         			- ${12:SchemaAttribute}
+         		SmsAuthenticationMessage: ${13:String}     # optional
+         		SmsConfiguration: ${14:SmsConfiguration}     # optional
+         		SmsVerificationMessage: ${15:String}     # optional
+         		UserPoolName: ${16:String}     # optional
+         		UserPoolTags: ${17:Json}     # optional
+"""

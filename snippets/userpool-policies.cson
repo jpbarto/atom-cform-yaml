@@ -1,0 +1,6 @@
+'.source.yaml':
+  'userpool-policies':
+      'prefix': 'userpool-policies'
+      'body':"""
+         PasswordPolicy: ${2:PasswordPolicy}     # optional
+"""

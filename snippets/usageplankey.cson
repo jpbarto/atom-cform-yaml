@@ -1,0 +1,11 @@
+'.source.yaml':
+  'usageplankey':
+      'prefix': 'usageplankey'
+      'body':"""
+         ${1:usageplankey_name}:
+         	Type: AWS::ApiGateway::UsagePlanKey
+         	Properties:
+         		KeyId: ${2:String}     # required
+         		KeyType: ${3:String}     # required
+         		UsagePlanId: ${4:String}     # required
+"""

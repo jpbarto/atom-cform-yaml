@@ -1,0 +1,24 @@
+'.source.yaml':
+  'spotfleetlaunchspecification':
+      'prefix': 'spotfleetlaunchspecification'
+      'body':"""
+         BlockDeviceMappings:                # optional, list of BlockDeviceMapping
+         	- ${2:BlockDeviceMapping}
+         EbsOptimized: ${3:Boolean}     # optional
+         IamInstanceProfile: ${4:IamInstanceProfileSpecification}     # optional
+         ImageId: ${5:String}     # required
+         InstanceType: ${6:String}     # required
+         KernelId: ${7:String}     # optional
+         KeyName: ${8:String}     # optional
+         Monitoring: ${9:SpotFleetMonitoring}     # optional
+         NetworkInterfaces:                # optional, list of InstanceNetworkInterfaceSpecification
+         	- ${10:InstanceNetworkInterfaceSpecification}
+         Placement: ${11:SpotPlacement}     # optional
+         RamdiskId: ${12:String}     # optional
+         SecurityGroups:                # optional, list of GroupIdentifier
+         	- ${13:GroupIdentifier}
+         SpotPrice: ${14:String}     # optional
+         SubnetId: ${15:String}     # optional
+         UserData: ${16:String}     # optional
+         WeightedCapacity: ${17:Double}     # optional
+"""

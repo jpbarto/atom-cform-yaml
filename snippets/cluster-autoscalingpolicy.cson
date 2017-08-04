@@ -1,0 +1,8 @@
+'.source.yaml':
+  'cluster-autoscalingpolicy':
+      'prefix': 'cluster-autoscalingpolicy'
+      'body':"""
+         Constraints: ${2:ScalingConstraints}     # required
+         Rules:                # required, list of ScalingRule
+         	- ${3:ScalingRule}
+"""

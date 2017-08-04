@@ -1,0 +1,12 @@
+'.source.yaml':
+  'wafregional-rule':
+      'prefix': 'wafregional-rule'
+      'body':"""
+         ${1:wafregional-rule_name}:
+         	Type: AWS::WAFRegional::Rule
+         	Properties:
+         		MetricName: ${2:String}     # required
+         		Name: ${3:String}     # required
+         		Predicates:                # optional, list of Predicate
+         			- ${4:Predicate}
+"""

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'applicationreferencedatasource-jsonmappingparameters':
+      'prefix': 'applicationreferencedatasource-jsonmappingparameters'
+      'body':"""
+         RecordRowPath: ${2:String}     # required
+"""

@@ -1,0 +1,9 @@
+'.source.yaml':
+  'waf-sizeconstraintset-sizeconstraint':
+      'prefix': 'waf-sizeconstraintset-sizeconstraint'
+      'body':"""
+         ComparisonOperator: ${2:String}     # required
+         FieldToMatch: ${3:FieldToMatch}     # required
+         Size: ${4:Integer}     # required
+         TextTransformation: ${5:String}     # required
+"""

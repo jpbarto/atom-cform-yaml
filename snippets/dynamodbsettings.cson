@@ -1,0 +1,6 @@
+'.source.yaml':
+  'dynamodbsettings':
+      'prefix': 'dynamodbsettings'
+      'body':"""
+         ServiceAccessRoleArn: ${2:String}     # optional
+"""

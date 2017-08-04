@@ -1,0 +1,15 @@
+'.source.yaml':
+  'extendeds3destinationconfiguration':
+      'prefix': 'extendeds3destinationconfiguration'
+      'body':"""
+         BucketARN: ${2:String}     # required
+         BufferingHints: ${3:BufferingHints}     # required
+         CloudWatchLoggingOptions: ${4:CloudWatchLoggingOptions}     # optional
+         CompressionFormat: ${5:String}     # required
+         EncryptionConfiguration: ${6:EncryptionConfiguration}     # optional
+         Prefix: ${7:String}     # required
+         ProcessingConfiguration: ${8:ProcessingConfiguration}     # optional
+         RoleARN: ${9:String}     # required
+         S3BackupConfiguration: ${10:S3DestinationConfiguration}     # optional
+         S3BackupMode: ${11:String}     # optional
+"""

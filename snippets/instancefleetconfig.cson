@@ -1,0 +1,16 @@
+'.source.yaml':
+  'instancefleetconfig':
+      'prefix': 'instancefleetconfig'
+      'body':"""
+         ${1:instancefleetconfig_name}:
+         	Type: AWS::EMR::InstanceFleetConfig
+         	Properties:
+         		ClusterId: ${2:String}     # required
+         		InstanceFleetType: ${3:String}     # required
+         		InstanceTypeConfigs:                # optional, list of InstanceTypeConfig
+         			- ${4:InstanceTypeConfig}
+         		LaunchSpecifications: ${5:InstanceFleetProvisioningSpecifications}     # optional
+         		Name: ${6:String}     # optional
+         		TargetOnDemandCapacity: ${7:Integer}     # optional
+         		TargetSpotCapacity: ${8:Integer}     # optional
+"""

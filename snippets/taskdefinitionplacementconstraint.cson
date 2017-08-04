@@ -1,0 +1,7 @@
+'.source.yaml':
+  'taskdefinitionplacementconstraint':
+      'prefix': 'taskdefinitionplacementconstraint'
+      'body':"""
+         Expression: ${2:String}     # optional
+         Type: ${3:String}     # required
+"""

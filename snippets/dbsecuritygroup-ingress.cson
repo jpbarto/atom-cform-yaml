@@ -1,0 +1,9 @@
+'.source.yaml':
+  'dbsecuritygroup-ingress':
+      'prefix': 'dbsecuritygroup-ingress'
+      'body':"""
+         CIDRIP: ${2:String}     # optional
+         EC2SecurityGroupId: ${3:String}     # optional
+         EC2SecurityGroupName: ${4:String}     # optional
+         EC2SecurityGroupOwnerId: ${5:String}     # optional
+"""

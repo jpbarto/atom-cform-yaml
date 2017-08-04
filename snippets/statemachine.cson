@@ -1,0 +1,10 @@
+'.source.yaml':
+  'statemachine':
+      'prefix': 'statemachine'
+      'body':"""
+         ${1:statemachine_name}:
+         	Type: AWS::StepFunctions::StateMachine
+         	Properties:
+         		DefinitionString: ${2:String}     # required
+         		RoleArn: ${3:String}     # required
+"""

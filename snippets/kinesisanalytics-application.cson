@@ -1,0 +1,13 @@
+'.source.yaml':
+  'kinesisanalytics-application':
+      'prefix': 'kinesisanalytics-application'
+      'body':"""
+         ${1:kinesisanalytics-application_name}:
+         	Type: AWS::KinesisAnalytics::Application
+         	Properties:
+         		ApplicationCode: ${2:String}     # optional
+         		ApplicationDescription: ${3:String}     # optional
+         		ApplicationName: ${4:String}     # optional
+         		Inputs:                # required, list of Input
+         			- ${5:Input}
+"""

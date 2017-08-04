@@ -1,0 +1,8 @@
+'.source.yaml':
+  'invitemessagetemplate':
+      'prefix': 'invitemessagetemplate'
+      'body':"""
+         EmailMessage: ${2:String}     # optional
+         EmailSubject: ${3:String}     # optional
+         SMSMessage: ${4:String}     # optional
+"""

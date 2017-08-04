@@ -1,0 +1,7 @@
+'.source.yaml':
+  'autoscaling-scalingpolicy-predefinedmetricspecification':
+      'prefix': 'autoscaling-scalingpolicy-predefinedmetricspecification'
+      'body':"""
+         PredefinedMetricType: ${2:String}     # required
+         ResourceLabel: ${3:String}     # optional
+"""

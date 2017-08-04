@@ -1,0 +1,8 @@
+'.source.yaml':
+  'revisionlocation':
+      'prefix': 'revisionlocation'
+      'body':"""
+         GitHubLocation: ${2:GitHubLocation}     # optional
+         RevisionType: ${3:String}     # optional
+         S3Location: ${4:S3Location}     # optional
+"""

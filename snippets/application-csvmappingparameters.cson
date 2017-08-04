@@ -1,0 +1,7 @@
+'.source.yaml':
+  'application-csvmappingparameters':
+      'prefix': 'application-csvmappingparameters'
+      'body':"""
+         RecordColumnDelimiter: ${2:String}     # required
+         RecordRowDelimiter: ${3:String}     # required
+"""

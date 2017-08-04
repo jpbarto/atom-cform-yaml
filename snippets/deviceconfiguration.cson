@@ -1,0 +1,7 @@
+'.source.yaml':
+  'deviceconfiguration':
+      'prefix': 'deviceconfiguration'
+      'body':"""
+         ChallengeRequiredOnNewDevice: ${2:Boolean}     # optional
+         DeviceOnlyRememberedOnUserPrompt: ${3:Boolean}     # optional
+"""

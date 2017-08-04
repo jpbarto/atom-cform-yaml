@@ -1,0 +1,12 @@
+'.source.yaml':
+  'requestvalidator':
+      'prefix': 'requestvalidator'
+      'body':"""
+         ${1:requestvalidator_name}:
+         	Type: AWS::ApiGateway::RequestValidator
+         	Properties:
+         		Name: ${2:String}     # optional
+         		RestApiId: ${3:String}     # required
+         		ValidateRequestBody: ${4:Boolean}     # optional
+         		ValidateRequestParameters: ${5:Boolean}     # optional
+"""

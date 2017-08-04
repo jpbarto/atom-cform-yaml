@@ -1,0 +1,9 @@
+'.source.yaml':
+  'eventselector':
+      'prefix': 'eventselector'
+      'body':"""
+         DataResources:                # optional, list of DataResource
+         	- ${2:DataResource}
+         IncludeManagementEvents: ${3:Boolean}     # optional
+         ReadWriteType: ${4:String}     # optional
+"""

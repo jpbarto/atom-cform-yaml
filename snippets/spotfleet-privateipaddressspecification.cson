@@ -1,0 +1,7 @@
+'.source.yaml':
+  'spotfleet-privateipaddressspecification':
+      'prefix': 'spotfleet-privateipaddressspecification'
+      'body':"""
+         Primary: ${2:Boolean}     # optional
+         PrivateIpAddress: ${3:String}     # required
+"""

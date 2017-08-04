@@ -1,0 +1,6 @@
+'.source.yaml':
+  'groupidentifier':
+      'prefix': 'groupidentifier'
+      'body':"""
+         GroupId: ${2:String}     # required
+"""

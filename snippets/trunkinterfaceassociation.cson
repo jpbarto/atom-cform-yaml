@@ -1,0 +1,12 @@
+'.source.yaml':
+  'trunkinterfaceassociation':
+      'prefix': 'trunkinterfaceassociation'
+      'body':"""
+         ${1:trunkinterfaceassociation_name}:
+         	Type: AWS::EC2::TrunkInterfaceAssociation
+         	Properties:
+         		BranchInterfaceId: ${2:String}     # required
+         		GREKey: ${3:Integer}     # optional
+         		TrunkInterfaceId: ${4:String}     # required
+         		VLANId: ${5:Integer}     # optional
+"""

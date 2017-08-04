@@ -1,0 +1,11 @@
+'.source.yaml':
+  'identitypoolroleattachment':
+      'prefix': 'identitypoolroleattachment'
+      'body':"""
+         ${1:identitypoolroleattachment_name}:
+         	Type: AWS::Cognito::IdentityPoolRoleAttachment
+         	Properties:
+         		IdentityPoolId: ${2:String}     # required
+         		RoleMappings: ${3:Json}     # optional
+         		Roles: ${4:Json}     # optional
+"""

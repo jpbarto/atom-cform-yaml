@@ -1,0 +1,15 @@
+'.source.yaml':
+  'cluster-cloudwatchalarmdefinition':
+      'prefix': 'cluster-cloudwatchalarmdefinition'
+      'body':"""
+         ComparisonOperator: ${2:String}     # required
+         Dimensions:                # optional, list of MetricDimension
+         	- ${3:MetricDimension}
+         EvaluationPeriods: ${4:Integer}     # optional
+         MetricName: ${5:String}     # required
+         Namespace: ${6:String}     # optional
+         Period: ${7:Integer}     # required
+         Statistic: ${8:String}     # optional
+         Threshold: ${9:Double}     # required
+         Unit: ${10:String}     # optional
+"""

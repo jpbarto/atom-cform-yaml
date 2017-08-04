@@ -1,0 +1,7 @@
+'.source.yaml':
+  'waf-xssmatchset-xssmatchtuple':
+      'prefix': 'waf-xssmatchset-xssmatchtuple'
+      'body':"""
+         FieldToMatch: ${2:FieldToMatch}     # required
+         TextTransformation: ${3:String}     # required
+"""

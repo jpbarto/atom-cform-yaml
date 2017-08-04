@@ -1,0 +1,7 @@
+'.source.yaml':
+  'wafregional-ipset-ipsetdescriptor':
+      'prefix': 'wafregional-ipset-ipsetdescriptor'
+      'body':"""
+         Type: ${2:String}     # required
+         Value: ${3:String}     # required
+"""

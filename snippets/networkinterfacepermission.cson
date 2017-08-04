@@ -1,0 +1,11 @@
+'.source.yaml':
+  'networkinterfacepermission':
+      'prefix': 'networkinterfacepermission'
+      'body':"""
+         ${1:networkinterfacepermission_name}:
+         	Type: AWS::EC2::NetworkInterfacePermission
+         	Properties:
+         		AwsAccountId: ${2:String}     # required
+         		NetworkInterfaceId: ${3:String}     # required
+         		Permission: ${4:String}     # required
+"""

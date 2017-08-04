@@ -1,0 +1,8 @@
+'.source.yaml':
+  'processor':
+      'prefix': 'processor'
+      'body':"""
+         Parameters:                # required, list of ProcessorParameter
+         	- ${2:ProcessorParameter}
+         Type: ${3:String}     # required
+"""

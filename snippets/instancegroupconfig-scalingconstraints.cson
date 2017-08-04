@@ -1,0 +1,7 @@
+'.source.yaml':
+  'instancegroupconfig-scalingconstraints':
+      'prefix': 'instancegroupconfig-scalingconstraints'
+      'body':"""
+         MaxCapacity: ${2:Integer}     # required
+         MinCapacity: ${3:Integer}     # required
+"""

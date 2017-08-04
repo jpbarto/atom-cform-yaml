@@ -1,0 +1,8 @@
+'.source.yaml':
+  'dataresource':
+      'prefix': 'dataresource'
+      'body':"""
+         Type: ${2:String}     # required
+         Values:                # optional, list of String
+         	- ${3:String}
+"""

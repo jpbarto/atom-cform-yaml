@@ -1,0 +1,7 @@
+'.source.yaml':
+  'sqlinjectionmatchset-sqlinjectionmatchtuple':
+      'prefix': 'sqlinjectionmatchset-sqlinjectionmatchtuple'
+      'body':"""
+         FieldToMatch: ${2:FieldToMatch}     # required
+         TextTransformation: ${3:String}     # required
+"""

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'cluster-spotprovisioningspecification':
+      'prefix': 'cluster-spotprovisioningspecification'
+      'body':"""
+         BlockDurationMinutes: ${2:Integer}     # optional
+         TimeoutAction: ${3:String}     # required
+         TimeoutDurationMinutes: ${4:Integer}     # required
+"""

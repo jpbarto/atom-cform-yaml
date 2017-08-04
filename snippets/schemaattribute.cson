@@ -1,0 +1,12 @@
+'.source.yaml':
+  'schemaattribute':
+      'prefix': 'schemaattribute'
+      'body':"""
+         AttributeDataType: ${2:String}     # optional
+         DeveloperOnlyAttribute: ${3:Boolean}     # optional
+         Mutable: ${4:Boolean}     # optional
+         Name: ${5:String}     # optional
+         NumberAttributeConstraints: ${6:NumberAttributeConstraints}     # optional
+         Required: ${7:Boolean}     # optional
+         StringAttributeConstraints: ${8:StringAttributeConstraints}     # optional
+"""

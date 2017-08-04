@@ -1,0 +1,8 @@
+'.source.yaml':
+  'instancegroupconfig-simplescalingpolicyconfiguration':
+      'prefix': 'instancegroupconfig-simplescalingpolicyconfiguration'
+      'body':"""
+         AdjustmentType: ${2:String}     # optional
+         CoolDown: ${3:Integer}     # optional
+         ScalingAdjustment: ${4:Integer}     # required
+"""

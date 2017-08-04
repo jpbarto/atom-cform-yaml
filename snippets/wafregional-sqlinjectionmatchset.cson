@@ -1,0 +1,11 @@
+'.source.yaml':
+  'wafregional-sqlinjectionmatchset':
+      'prefix': 'wafregional-sqlinjectionmatchset'
+      'body':"""
+         ${1:wafregional-sqlinjectionmatchset_name}:
+         	Type: AWS::WAFRegional::SqlInjectionMatchSet
+         	Properties:
+         		Name: ${2:String}     # required
+         		SqlInjectionMatchTuples:                # optional, list of SqlInjectionMatchTuple
+         			- ${3:SqlInjectionMatchTuple}
+"""

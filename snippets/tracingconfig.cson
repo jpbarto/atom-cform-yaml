@@ -1,0 +1,6 @@
+'.source.yaml':
+  'tracingconfig':
+      'prefix': 'tracingconfig'
+      'body':"""
+         Mode: ${2:String}     # optional
+"""

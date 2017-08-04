@@ -1,0 +1,12 @@
+'.source.yaml':
+  's3settings':
+      'prefix': 's3settings'
+      'body':"""
+         BucketFolder: ${2:String}     # optional
+         BucketName: ${3:String}     # optional
+         CompressionType: ${4:String}     # optional
+         CsvDelimiter: ${5:String}     # optional
+         CsvRowDelimiter: ${6:String}     # optional
+         ExternalTableDefinition: ${7:String}     # optional
+         ServiceAccessRoleArn: ${8:String}     # optional
+"""

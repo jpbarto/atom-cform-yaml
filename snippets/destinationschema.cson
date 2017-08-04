@@ -1,0 +1,6 @@
+'.source.yaml':
+  'destinationschema':
+      'prefix': 'destinationschema'
+      'body':"""
+         RecordFormatType: ${2:String}     # optional
+"""

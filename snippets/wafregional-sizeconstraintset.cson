@@ -1,0 +1,11 @@
+'.source.yaml':
+  'wafregional-sizeconstraintset':
+      'prefix': 'wafregional-sizeconstraintset'
+      'body':"""
+         ${1:wafregional-sizeconstraintset_name}:
+         	Type: AWS::WAFRegional::SizeConstraintSet
+         	Properties:
+         		Name: ${2:String}     # required
+         		SizeConstraints:                # optional, list of SizeConstraint
+         			- ${3:SizeConstraint}
+"""

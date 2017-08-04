@@ -1,0 +1,7 @@
+'.source.yaml':
+  'placementstrategy':
+      'prefix': 'placementstrategy'
+      'body':"""
+         Field: ${2:String}     # optional
+         Type: ${3:String}     # required
+"""

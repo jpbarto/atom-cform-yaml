@@ -1,0 +1,9 @@
+'.source.yaml':
+  'triggerconfig':
+      'prefix': 'triggerconfig'
+      'body':"""
+         TriggerEvents:                # optional, list of String
+         	- ${2:String}
+         TriggerName: ${3:String}     # optional
+         TriggerTargetArn: ${4:String}     # optional
+"""

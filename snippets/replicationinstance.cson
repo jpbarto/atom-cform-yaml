@@ -1,0 +1,24 @@
+'.source.yaml':
+  'replicationinstance':
+      'prefix': 'replicationinstance'
+      'body':"""
+         ${1:replicationinstance_name}:
+         	Type: AWS::DMS::ReplicationInstance
+         	Properties:
+         		AllocatedStorage: ${2:Integer}     # optional
+         		AllowMajorVersionUpgrade: ${3:Boolean}     # optional
+         		AutoMinorVersionUpgrade: ${4:Boolean}     # optional
+         		AvailabilityZone: ${5:String}     # optional
+         		EngineVersion: ${6:String}     # optional
+         		KmsKeyId: ${7:String}     # optional
+         		MultiAZ: ${8:Boolean}     # optional
+         		PreferredMaintenanceWindow: ${9:String}     # optional
+         		PubliclyAccessible: ${10:Boolean}     # optional
+         		ReplicationInstanceClass: ${11:String}     # required
+         		ReplicationInstanceIdentifier: ${12:String}     # optional
+         		ReplicationSubnetGroupIdentifier: ${13:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${14:Tag}
+         		VpcSecurityGroupIds:                # optional, list of String
+         			- ${15:String}
+"""

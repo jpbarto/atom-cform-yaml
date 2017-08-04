@@ -1,0 +1,7 @@
+'.source.yaml':
+  'numberattributeconstraints':
+      'prefix': 'numberattributeconstraints'
+      'body':"""
+         MaxValue: ${2:String}     # optional
+         MinValue: ${3:String}     # optional
+"""

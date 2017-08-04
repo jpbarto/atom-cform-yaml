@@ -1,0 +1,7 @@
+'.source.yaml':
+  'wafregional-sqlinjectionmatchset-fieldtomatch':
+      'prefix': 'wafregional-sqlinjectionmatchset-fieldtomatch'
+      'body':"""
+         Data: ${2:String}     # optional
+         Type: ${3:String}     # required
+"""

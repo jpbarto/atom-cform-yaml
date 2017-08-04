@@ -1,0 +1,6 @@
+'.source.yaml':
+  'instancegroupconfig-scalingtrigger':
+      'prefix': 'instancegroupconfig-scalingtrigger'
+      'body':"""
+         CloudWatchAlarmDefinition: ${2:CloudWatchAlarmDefinition}     # required
+"""

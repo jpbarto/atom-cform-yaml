@@ -1,0 +1,7 @@
+'.source.yaml':
+  'emailconfiguration':
+      'prefix': 'emailconfiguration'
+      'body':"""
+         ReplyToEmailAddress: ${2:String}     # optional
+         SourceArn: ${3:String}     # optional
+"""

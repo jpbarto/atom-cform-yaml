@@ -1,0 +1,6 @@
+'.source.yaml':
+  'iaminstanceprofilespecification':
+      'prefix': 'iaminstanceprofilespecification'
+      'body':"""
+         Arn: ${2:String}     # optional
+"""

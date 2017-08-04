@@ -1,0 +1,7 @@
+'.source.yaml':
+  'processorparameter':
+      'prefix': 'processorparameter'
+      'body':"""
+         ParameterName: ${2:String}     # required
+         ParameterValue: ${3:String}     # required
+"""

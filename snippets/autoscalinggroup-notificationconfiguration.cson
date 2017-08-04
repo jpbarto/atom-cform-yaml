@@ -1,0 +1,8 @@
+'.source.yaml':
+  'autoscalinggroup-notificationconfiguration':
+      'prefix': 'autoscalinggroup-notificationconfiguration'
+      'body':"""
+         NotificationTypes:                # optional, list of String
+         	- ${2:String}
+         TopicARN: ${3:String}     # required
+"""

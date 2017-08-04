@@ -1,0 +1,7 @@
+'.source.yaml':
+  'alarmidentifier':
+      'prefix': 'alarmidentifier'
+      'body':"""
+         Name: ${2:String}     # required
+         Region: ${3:String}     # required
+"""

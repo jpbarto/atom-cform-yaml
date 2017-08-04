@@ -1,0 +1,8 @@
+'.source.yaml':
+  'instancefleetconfig-volumespecification':
+      'prefix': 'instancefleetconfig-volumespecification'
+      'body':"""
+         Iops: ${2:Integer}     # optional
+         SizeInGB: ${3:Integer}     # required
+         VolumeType: ${4:String}     # required
+"""

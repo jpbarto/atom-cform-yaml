@@ -1,0 +1,10 @@
+'.source.yaml':
+  'instance-ebsblockdevice':
+      'prefix': 'instance-ebsblockdevice'
+      'body':"""
+         DeleteOnTermination: ${2:Boolean}     # optional
+         Iops: ${3:Integer}     # optional
+         SnapshotId: ${4:String}     # optional
+         VolumeSize: ${5:Integer}     # optional
+         VolumeType: ${6:String}     # optional
+"""

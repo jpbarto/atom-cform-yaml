@@ -1,0 +1,9 @@
+'.source.yaml':
+  'egressonlyinternetgateway':
+      'prefix': 'egressonlyinternetgateway'
+      'body':"""
+         ${1:egressonlyinternetgateway_name}:
+         	Type: AWS::EC2::EgressOnlyInternetGateway
+         	Properties:
+         		VpcId: ${2:String}     # required
+"""

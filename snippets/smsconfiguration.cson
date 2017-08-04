@@ -1,0 +1,7 @@
+'.source.yaml':
+  'smsconfiguration':
+      'prefix': 'smsconfiguration'
+      'body':"""
+         ExternalId: ${2:String}     # optional
+         SnsCallerArn: ${3:String}     # optional
+"""

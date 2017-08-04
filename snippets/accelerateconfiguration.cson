@@ -1,0 +1,6 @@
+'.source.yaml':
+  'accelerateconfiguration':
+      'prefix': 'accelerateconfiguration'
+      'body':"""
+         AccelerationStatus: ${2:String}     # required
+"""

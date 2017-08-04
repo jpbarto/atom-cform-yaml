@@ -1,0 +1,11 @@
+'.source.yaml':
+  'wafregional-xssmatchset':
+      'prefix': 'wafregional-xssmatchset'
+      'body':"""
+         ${1:wafregional-xssmatchset_name}:
+         	Type: AWS::WAFRegional::XssMatchSet
+         	Properties:
+         		Name: ${2:String}     # required
+         		XssMatchTuples:                # optional, list of XssMatchTuple
+         			- ${3:XssMatchTuple}
+"""

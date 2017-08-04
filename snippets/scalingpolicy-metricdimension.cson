@@ -1,0 +1,7 @@
+'.source.yaml':
+  'scalingpolicy-metricdimension':
+      'prefix': 'scalingpolicy-metricdimension'
+      'body':"""
+         Name: ${2:String}     # required
+         Value: ${3:String}     # required
+"""

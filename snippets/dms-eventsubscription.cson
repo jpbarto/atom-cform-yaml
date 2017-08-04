@@ -1,0 +1,18 @@
+'.source.yaml':
+  'dms-eventsubscription':
+      'prefix': 'dms-eventsubscription'
+      'body':"""
+         ${1:dms-eventsubscription_name}:
+         	Type: AWS::DMS::EventSubscription
+         	Properties:
+         		Enabled: ${2:Boolean}     # optional
+         		EventCategories:                # optional, list of String
+         			- ${3:String}
+         		SnsTopicArn: ${4:String}     # required
+         		SourceIds:                # optional, list of String
+         			- ${5:String}
+         		SourceType: ${6:String}     # optional
+         		SubscriptionName: ${7:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${8:Tag}
+"""

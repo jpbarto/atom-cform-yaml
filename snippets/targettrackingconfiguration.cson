@@ -1,0 +1,9 @@
+'.source.yaml':
+  'targettrackingconfiguration':
+      'prefix': 'targettrackingconfiguration'
+      'body':"""
+         CustomizedMetricSpecification: ${2:CustomizedMetricSpecification}     # optional
+         DisableScaleIn: ${3:Boolean}     # optional
+         PredefinedMetricSpecification: ${4:PredefinedMetricSpecification}     # optional
+         TargetValue: ${5:Double}     # required
+"""
