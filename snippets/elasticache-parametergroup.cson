@@ -1,0 +1,12 @@
+'.source.yaml':
+  'elasticache-parametergroup':
+      'prefix': 'elasticache-parametergroup'
+      'body':"""
+         ${1:elasticache-parametergroup_name}:
+         	Type: AWS::ElastiCache::ParameterGroup
+         	Properties:
+         		CacheParameterGroupFamily: ${2:String}     # required
+         		Description: ${3:String}     # required
+         		Properties:                # optional, map of String
+         			${4:String_key}: ${5:String_value}
+"""

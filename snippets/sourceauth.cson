@@ -3,5 +3,5 @@
       'prefix': 'sourceauth'
       'body':"""
          Resource: ${2:String}     # optional
-         Type: ${3:String}     # optional
+         Type: ${3:String}     # required
 """

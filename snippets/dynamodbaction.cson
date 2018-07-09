@@ -6,9 +6,9 @@
          HashKeyType: ${3:String}     # optional
          HashKeyValue: ${4:String}     # required
          PayloadField: ${5:String}     # optional
-         RangeKeyField: ${6:String}     # required
+         RangeKeyField: ${6:String}     # optional
          RangeKeyType: ${7:String}     # optional
-         RangeKeyValue: ${8:String}     # required
+         RangeKeyValue: ${8:String}     # optional
          RoleArn: ${9:String}     # required
          TableName: ${10:String}     # required
 """

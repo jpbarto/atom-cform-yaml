@@ -1,0 +1,6 @@
+'.source.yaml':
+  'ipv6add':
+      'prefix': 'ipv6add'
+      'body':"""
+         Ipv6Address: ${2:String}     # optional
+"""

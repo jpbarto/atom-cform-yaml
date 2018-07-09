@@ -1,0 +1,20 @@
+'.source.yaml':
+  'launchtemplate-networkinterface':
+      'prefix': 'launchtemplate-networkinterface'
+      'body':"""
+         AssociatePublicIpAddress: ${2:Boolean}     # optional
+         DeleteOnTermination: ${3:Boolean}     # optional
+         Description: ${4:String}     # optional
+         DeviceIndex: ${5:Integer}     # optional
+         Groups:                # optional, list of String
+         	- ${6:String}
+         Ipv6AddressCount: ${7:Integer}     # optional
+         Ipv6Addresses:                # optional, list of Ipv6Add
+         	- ${8:Ipv6Add}
+         NetworkInterfaceId: ${9:String}     # optional
+         PrivateIpAddress: ${10:String}     # optional
+         PrivateIpAddresses:                # optional, list of PrivateIpAdd
+         	- ${11:PrivateIpAdd}
+         SecondaryPrivateIpAddressCount: ${12:Integer}     # optional
+         SubnetId: ${13:String}     # optional
+"""

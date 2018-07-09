@@ -1,0 +1,9 @@
+'.source.yaml':
+  'linuxparameters':
+      'prefix': 'linuxparameters'
+      'body':"""
+         Capabilities: ${2:KernelCapabilities}     # optional
+         Devices:                # optional, list of Device
+         	- ${3:Device}
+         InitProcessEnabled: ${4:Boolean}     # optional
+"""

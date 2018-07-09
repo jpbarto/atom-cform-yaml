@@ -1,0 +1,9 @@
+'.source.yaml':
+  'kernelcapabilities':
+      'prefix': 'kernelcapabilities'
+      'body':"""
+         Add:                # optional, list of String
+         	- ${2:String}
+         Drop:                # optional, list of String
+         	- ${3:String}
+"""

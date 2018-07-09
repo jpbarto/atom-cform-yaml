@@ -1,0 +1,8 @@
+'.source.yaml':
+  'dynamodbconfig':
+      'prefix': 'dynamodbconfig'
+      'body':"""
+         AwsRegion: ${2:String}     # required
+         TableName: ${3:String}     # required
+         UseCallerCredentials: ${4:Boolean}     # optional
+"""

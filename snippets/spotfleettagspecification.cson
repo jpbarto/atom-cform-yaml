@@ -1,0 +1,6 @@
+'.source.yaml':
+  'spotfleettagspecification':
+      'prefix': 'spotfleettagspecification'
+      'body':"""
+         ResourceType: ${2:String}     # optional
+"""

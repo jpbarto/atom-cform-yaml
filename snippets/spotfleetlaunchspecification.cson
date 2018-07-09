@@ -19,6 +19,8 @@
          	- ${13:GroupIdentifier}
          SpotPrice: ${14:String}     # optional
          SubnetId: ${15:String}     # optional
-         UserData: ${16:String}     # optional
-         WeightedCapacity: ${17:Double}     # optional
+         TagSpecifications:                # optional, list of SpotFleetTagSpecification
+         	- ${16:SpotFleetTagSpecification}
+         UserData: ${17:String}     # optional
+         WeightedCapacity: ${18:Double}     # optional
 """

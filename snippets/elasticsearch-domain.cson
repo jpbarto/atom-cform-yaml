@@ -12,7 +12,9 @@
          		EBSOptions: ${6:EBSOptions}     # optional
          		ElasticsearchClusterConfig: ${7:ElasticsearchClusterConfig}     # optional
          		ElasticsearchVersion: ${8:String}     # optional
-         		SnapshotOptions: ${9:SnapshotOptions}     # optional
+         		EncryptionAtRestOptions: ${9:EncryptionAtRestOptions}     # optional
+         		SnapshotOptions: ${10:SnapshotOptions}     # optional
          		Tags:                # optional, list of Tag
-         			- ${10:Tag}
+         			- ${11:Tag}
+         		VPCOptions: ${12:VPCOptions}     # optional
 """

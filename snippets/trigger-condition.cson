@@ -1,0 +1,8 @@
+'.source.yaml':
+  'trigger-condition':
+      'prefix': 'trigger-condition'
+      'body':"""
+         JobName: ${2:String}     # optional
+         LogicalOperator: ${3:String}     # optional
+         State: ${4:String}     # optional
+"""

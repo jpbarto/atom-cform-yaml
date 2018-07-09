@@ -1,0 +1,13 @@
+'.source.yaml':
+  'launchroleconstraint':
+      'prefix': 'launchroleconstraint'
+      'body':"""
+         ${1:launchroleconstraint_name}:
+         	Type: AWS::ServiceCatalog::LaunchRoleConstraint
+         	Properties:
+         		AcceptLanguage: ${2:String}     # optional
+         		Description: ${3:String}     # optional
+         		PortfolioId: ${4:String}     # required
+         		ProductId: ${5:String}     # required
+         		RoleArn: ${6:String}     # required
+"""

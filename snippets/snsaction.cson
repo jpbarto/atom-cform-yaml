@@ -1,8 +1,0 @@
-'.source.yaml':
-  'snsaction':
-      'prefix': 'snsaction'
-      'body':"""
-         MessageFormat: ${2:String}     # optional
-         RoleArn: ${3:String}     # required
-         TargetArn: ${4:String}     # required
-"""

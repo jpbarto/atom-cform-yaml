@@ -1,0 +1,7 @@
+'.source.yaml':
+  'stopaction':
+      'prefix': 'stopaction'
+      'body':"""
+         Scope: ${2:String}     # required
+         TopicArn: ${3:String}     # optional
+"""

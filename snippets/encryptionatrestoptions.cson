@@ -1,0 +1,7 @@
+'.source.yaml':
+  'encryptionatrestoptions':
+      'prefix': 'encryptionatrestoptions'
+      'body':"""
+         Enabled: ${2:Boolean}     # optional
+         KmsKeyId: ${3:String}     # optional
+"""

@@ -1,0 +1,14 @@
+'.source.yaml':
+  'neptune-dbsubnetgroup':
+      'prefix': 'neptune-dbsubnetgroup'
+      'body':"""
+         ${1:neptune-dbsubnetgroup_name}:
+         	Type: AWS::Neptune::DBSubnetGroup
+         	Properties:
+         		DBSubnetGroupDescription: ${2:String}     # required
+         		DBSubnetGroupName: ${3:String}     # optional
+         		SubnetIds:                # required, list of String
+         			- ${4:String}
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+"""

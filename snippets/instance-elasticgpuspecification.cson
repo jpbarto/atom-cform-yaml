@@ -1,0 +1,6 @@
+'.source.yaml':
+  'instance-elasticgpuspecification':
+      'prefix': 'instance-elasticgpuspecification'
+      'body':"""
+         Type: ${2:String}     # required
+"""

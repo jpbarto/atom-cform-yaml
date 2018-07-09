@@ -1,0 +1,14 @@
+'.source.yaml':
+  'maintenancewindowruncommandparameters':
+      'prefix': 'maintenancewindowruncommandparameters'
+      'body':"""
+         Comment: ${2:String}     # optional
+         DocumentHash: ${3:String}     # optional
+         DocumentHashType: ${4:String}     # optional
+         NotificationConfig: ${5:NotificationConfig}     # optional
+         OutputS3BucketName: ${6:String}     # optional
+         OutputS3KeyPrefix: ${7:String}     # optional
+         Parameters: ${8:Json}     # optional
+         ServiceRoleArn: ${9:String}     # optional
+         TimeoutSeconds: ${10:Integer}     # optional
+"""

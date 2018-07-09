@@ -1,0 +1,9 @@
+'.source.yaml':
+  'notification':
+      'prefix': 'notification'
+      'body':"""
+         ComparisonOperator: ${2:String}     # required
+         NotificationType: ${3:String}     # required
+         Threshold: ${4:Double}     # required
+         ThresholdType: ${5:String}     # optional
+"""

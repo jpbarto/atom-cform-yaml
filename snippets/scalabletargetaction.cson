@@ -1,0 +1,7 @@
+'.source.yaml':
+  'scalabletargetaction':
+      'prefix': 'scalabletargetaction'
+      'body':"""
+         MaxCapacity: ${2:Integer}     # optional
+         MinCapacity: ${3:Integer}     # optional
+"""

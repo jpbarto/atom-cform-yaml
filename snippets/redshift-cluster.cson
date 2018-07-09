@@ -8,33 +8,34 @@
          		AllowVersionUpgrade: ${2:Boolean}     # optional
          		AutomatedSnapshotRetentionPeriod: ${3:Integer}     # optional
          		AvailabilityZone: ${4:String}     # optional
-         		ClusterParameterGroupName: ${5:String}     # optional
+         		ClusterIdentifier: ${5:String}     # optional
+         		ClusterParameterGroupName: ${6:String}     # optional
          		ClusterSecurityGroups:                # optional, list of String
-         			- ${6:String}
-         		ClusterSubnetGroupName: ${7:String}     # optional
-         		ClusterType: ${8:String}     # required
-         		ClusterVersion: ${9:String}     # optional
-         		DBName: ${10:String}     # required
-         		ElasticIp: ${11:String}     # optional
-         		Encrypted: ${12:Boolean}     # optional
-         		HsmClientCertificateIdentifier: ${13:String}     # optional
-         		HsmConfigurationIdentifier: ${14:String}     # optional
+         			- ${7:String}
+         		ClusterSubnetGroupName: ${8:String}     # optional
+         		ClusterType: ${9:String}     # required
+         		ClusterVersion: ${10:String}     # optional
+         		DBName: ${11:String}     # required
+         		ElasticIp: ${12:String}     # optional
+         		Encrypted: ${13:Boolean}     # optional
+         		HsmClientCertificateIdentifier: ${14:String}     # optional
+         		HsmConfigurationIdentifier: ${15:String}     # optional
          		IamRoles:                # optional, list of String
-         			- ${15:String}
-         		KmsKeyId: ${16:String}     # optional
-         		LoggingProperties: ${17:LoggingProperties}     # optional
-         		MasterUserPassword: ${18:String}     # required
-         		MasterUsername: ${19:String}     # required
-         		NodeType: ${20:String}     # required
-         		NumberOfNodes: ${21:Integer}     # optional
-         		OwnerAccount: ${22:String}     # optional
-         		Port: ${23:Integer}     # optional
-         		PreferredMaintenanceWindow: ${24:String}     # optional
-         		PubliclyAccessible: ${25:Boolean}     # optional
-         		SnapshotClusterIdentifier: ${26:String}     # optional
-         		SnapshotIdentifier: ${27:String}     # optional
+         			- ${16:String}
+         		KmsKeyId: ${17:String}     # optional
+         		LoggingProperties: ${18:LoggingProperties}     # optional
+         		MasterUserPassword: ${19:String}     # required
+         		MasterUsername: ${20:String}     # required
+         		NodeType: ${21:String}     # required
+         		NumberOfNodes: ${22:Integer}     # optional
+         		OwnerAccount: ${23:String}     # optional
+         		Port: ${24:Integer}     # optional
+         		PreferredMaintenanceWindow: ${25:String}     # optional
+         		PubliclyAccessible: ${26:Boolean}     # optional
+         		SnapshotClusterIdentifier: ${27:String}     # optional
+         		SnapshotIdentifier: ${28:String}     # optional
          		Tags:                # optional, list of Tag
-         			- ${28:Tag}
+         			- ${29:Tag}
          		VpcSecurityGroupIds:                # optional, list of String
-         			- ${29:String}
+         			- ${30:String}
 """

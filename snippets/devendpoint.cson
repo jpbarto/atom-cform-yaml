@@ -1,0 +1,17 @@
+'.source.yaml':
+  'devendpoint':
+      'prefix': 'devendpoint'
+      'body':"""
+         ${1:devendpoint_name}:
+         	Type: AWS::Glue::DevEndpoint
+         	Properties:
+         		EndpointName: ${2:String}     # optional
+         		ExtraJarsS3Path: ${3:String}     # optional
+         		ExtraPythonLibsS3Path: ${4:String}     # optional
+         		NumberOfNodes: ${5:Integer}     # optional
+         		PublicKey: ${6:String}     # required
+         		RoleArn: ${7:String}     # required
+         		SecurityGroupIds:                # optional, list of String
+         			- ${8:String}
+         		SubnetId: ${9:String}     # optional
+"""

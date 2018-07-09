@@ -3,8 +3,9 @@
       'prefix': 'targettrackingscalingpolicyconfiguration'
       'body':"""
          CustomizedMetricSpecification: ${2:CustomizedMetricSpecification}     # optional
-         PredefinedMetricSpecification: ${3:PredefinedMetricSpecification}     # optional
-         ScaleInCooldown: ${4:Integer}     # optional
-         ScaleOutCooldown: ${5:Integer}     # optional
-         TargetValue: ${6:Double}     # required
+         DisableScaleIn: ${3:Boolean}     # optional
+         PredefinedMetricSpecification: ${4:PredefinedMetricSpecification}     # optional
+         ScaleInCooldown: ${5:Integer}     # optional
+         ScaleOutCooldown: ${6:Integer}     # optional
+         TargetValue: ${7:Double}     # required
 """

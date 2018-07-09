@@ -1,0 +1,7 @@
+'.source.yaml':
+  'projectcache':
+      'prefix': 'projectcache'
+      'body':"""
+         Location: ${2:String}     # optional
+         Type: ${3:String}     # required
+"""

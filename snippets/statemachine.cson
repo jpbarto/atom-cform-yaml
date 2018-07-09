@@ -7,4 +7,5 @@
          	Properties:
          		DefinitionString: ${2:String}     # required
          		RoleArn: ${3:String}     # required
+         		StateMachineName: ${4:String}     # optional
 """

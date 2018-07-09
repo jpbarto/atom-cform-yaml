@@ -1,0 +1,13 @@
+'.source.yaml':
+  'guardduty-ipset':
+      'prefix': 'guardduty-ipset'
+      'body':"""
+         ${1:guardduty-ipset_name}:
+         	Type: AWS::GuardDuty::IPSet
+         	Properties:
+         		Activate: ${2:Boolean}     # required
+         		DetectorId: ${3:String}     # required
+         		Format: ${4:String}     # required
+         		Location: ${5:String}     # required
+         		Name: ${6:String}     # optional
+"""

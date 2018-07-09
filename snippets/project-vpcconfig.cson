@@ -1,0 +1,10 @@
+'.source.yaml':
+  'project-vpcconfig':
+      'prefix': 'project-vpcconfig'
+      'body':"""
+         SecurityGroupIds:                # required, list of String
+         	- ${2:String}
+         Subnets:                # required, list of String
+         	- ${3:String}
+         VpcId: ${4:String}     # required
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'versionweight':
+      'prefix': 'versionweight'
+      'body':"""
+         FunctionVersion: ${2:String}     # required
+         FunctionWeight: ${3:Double}     # required
+"""

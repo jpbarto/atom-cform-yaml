@@ -8,8 +8,9 @@
          		AssumeRolePolicyDocument: ${2:Json}     # required
          		ManagedPolicyArns:                # optional, list of String
          			- ${3:String}
-         		Path: ${4:String}     # optional
+         		MaxSessionDuration: ${4:Integer}     # optional
+         		Path: ${5:String}     # optional
          		Policies:                # optional, list of Policy
-         			- ${5:Policy}
-         		RoleName: ${6:String}     # optional
+         			- ${6:Policy}
+         		RoleName: ${7:String}     # optional
 """

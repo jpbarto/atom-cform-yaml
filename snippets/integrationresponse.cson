@@ -2,10 +2,11 @@
   'integrationresponse':
       'prefix': 'integrationresponse'
       'body':"""
+         ContentHandling: ${2:String}     # optional
          ResponseParameters:                # optional, map of String
-         	${2:String_key}: ${3:String_value}
+         	${3:String_key}: ${4:String_value}
          ResponseTemplates:                # optional, map of String
-         	${4:String_key}: ${5:String_value}
-         SelectionPattern: ${6:String}     # optional
-         StatusCode: ${7:String}     # required
+         	${5:String_key}: ${6:String_value}
+         SelectionPattern: ${7:String}     # optional
+         StatusCode: ${8:String}     # required
 """

@@ -1,0 +1,15 @@
+'.source.yaml':
+  'gatewayresponse':
+      'prefix': 'gatewayresponse'
+      'body':"""
+         ${1:gatewayresponse_name}:
+         	Type: AWS::ApiGateway::GatewayResponse
+         	Properties:
+         		ResponseParameters:                # optional, map of String
+         			${2:String_key}: ${3:String_value}
+         		ResponseTemplates:                # optional, map of String
+         			${4:String_key}: ${5:String_value}
+         		ResponseType: ${6:String}     # required
+         		RestApiId: ${7:String}     # required
+         		StatusCode: ${8:String}     # optional
+"""

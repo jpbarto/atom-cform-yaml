@@ -1,0 +1,14 @@
+'.source.yaml':
+  'rds-dbparametergroup':
+      'prefix': 'rds-dbparametergroup'
+      'body':"""
+         ${1:rds-dbparametergroup_name}:
+         	Type: AWS::RDS::DBParameterGroup
+         	Properties:
+         		Description: ${2:String}     # required
+         		Family: ${3:String}     # required
+         		Parameters:                # optional, map of String
+         			${4:String_key}: ${5:String_value}
+         		Tags:                # optional, list of Tag
+         			- ${6:Tag}
+"""

@@ -1,0 +1,14 @@
+'.source.yaml':
+  'portfolio':
+      'prefix': 'portfolio'
+      'body':"""
+         ${1:portfolio_name}:
+         	Type: AWS::ServiceCatalog::Portfolio
+         	Properties:
+         		AcceptLanguage: ${2:String}     # optional
+         		Description: ${3:String}     # optional
+         		DisplayName: ${4:String}     # required
+         		ProviderName: ${5:String}     # required
+         		Tags:                # optional, list of Tag
+         			- ${6:Tag}
+"""

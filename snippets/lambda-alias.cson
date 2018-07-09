@@ -9,4 +9,5 @@
          		FunctionName: ${3:String}     # required
          		FunctionVersion: ${4:String}     # required
          		Name: ${5:String}     # required
+         		RoutingConfig: ${6:AliasRoutingConfiguration}     # optional
 """

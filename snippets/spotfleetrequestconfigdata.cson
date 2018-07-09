@@ -5,10 +5,10 @@
          AllocationStrategy: ${2:String}     # optional
          ExcessCapacityTerminationPolicy: ${3:String}     # optional
          IamFleetRole: ${4:String}     # required
-         LaunchSpecifications:                # required, list of SpotFleetLaunchSpecification
+         LaunchSpecifications:                # optional, list of SpotFleetLaunchSpecification
          	- ${5:SpotFleetLaunchSpecification}
          ReplaceUnhealthyInstances: ${6:Boolean}     # optional
-         SpotPrice: ${7:String}     # required
+         SpotPrice: ${7:String}     # optional
          TargetCapacity: ${8:Integer}     # required
          TerminateInstancesWithExpiration: ${9:Boolean}     # optional
          Type: ${10:String}     # optional

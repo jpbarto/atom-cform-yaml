@@ -1,0 +1,16 @@
+'.source.yaml':
+  'resolver':
+      'prefix': 'resolver'
+      'body':"""
+         ${1:resolver_name}:
+         	Type: AWS::AppSync::Resolver
+         	Properties:
+         		ApiId: ${2:String}     # required
+         		DataSourceName: ${3:String}     # required
+         		FieldName: ${4:String}     # required
+         		RequestMappingTemplate: ${5:String}     # optional
+         		RequestMappingTemplateS3Location: ${6:String}     # optional
+         		ResponseMappingTemplate: ${7:String}     # optional
+         		ResponseMappingTemplateS3Location: ${8:String}     # optional
+         		TypeName: ${9:String}     # required
+"""

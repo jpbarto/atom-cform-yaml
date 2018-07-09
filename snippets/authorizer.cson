@@ -5,14 +5,15 @@
          ${1:authorizer_name}:
          	Type: AWS::ApiGateway::Authorizer
          	Properties:
-         		AuthorizerCredentials: ${2:String}     # optional
-         		AuthorizerResultTtlInSeconds: ${3:Integer}     # optional
-         		AuthorizerUri: ${4:String}     # optional
-         		IdentitySource: ${5:String}     # optional
-         		IdentityValidationExpression: ${6:String}     # optional
-         		Name: ${7:String}     # optional
+         		AuthType: ${2:String}     # optional
+         		AuthorizerCredentials: ${3:String}     # optional
+         		AuthorizerResultTtlInSeconds: ${4:Integer}     # optional
+         		AuthorizerUri: ${5:String}     # optional
+         		IdentitySource: ${6:String}     # optional
+         		IdentityValidationExpression: ${7:String}     # optional
+         		Name: ${8:String}     # optional
          		ProviderARNs:                # optional, list of String
-         			- ${8:String}
-         		RestApiId: ${9:String}     # required
-         		Type: ${10:String}     # optional
+         			- ${9:String}
+         		RestApiId: ${10:String}     # required
+         		Type: ${11:String}     # optional
 """

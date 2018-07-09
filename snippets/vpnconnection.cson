@@ -11,4 +11,6 @@
          			- ${4:Tag}
          		Type: ${5:String}     # required
          		VpnGatewayId: ${6:String}     # required
+         		VpnTunnelOptionsSpecifications:                # optional, list of VpnTunnelOptionsSpecification
+         			- ${7:VpnTunnelOptionsSpecification}
 """

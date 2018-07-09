@@ -2,9 +2,13 @@
   'rule-target':
       'prefix': 'rule-target'
       'body':"""
-         Arn: ${2:[u'AWS::Kinesis::Stream::Arn', u'AWS::Lambda::Function::Arn']}     # required
-         Id: ${3:String}     # required
-         Input: ${4:String}     # optional
-         InputPath: ${5:String}     # optional
-         RoleArn: ${6:String}     # optional
+         Arn: ${2:String}     # required
+         EcsParameters: ${3:EcsParameters}     # optional
+         Id: ${4:String}     # required
+         Input: ${5:String}     # optional
+         InputPath: ${6:String}     # optional
+         InputTransformer: ${7:InputTransformer}     # optional
+         KinesisParameters: ${8:KinesisParameters}     # optional
+         RoleArn: ${9:String}     # optional
+         RunCommandParameters: ${10:RunCommandParameters}     # optional
 """

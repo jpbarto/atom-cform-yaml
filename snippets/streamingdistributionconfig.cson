@@ -1,0 +1,13 @@
+'.source.yaml':
+  'streamingdistributionconfig':
+      'prefix': 'streamingdistributionconfig'
+      'body':"""
+         Aliases:                # optional, list of String
+         	- ${2:String}
+         Comment: ${3:String}     # required
+         Enabled: ${4:Boolean}     # required
+         Logging: ${5:Logging}     # optional
+         PriceClass: ${6:String}     # optional
+         S3Origin: ${7:S3Origin}     # required
+         TrustedSigners: ${8:TrustedSigners}     # required
+"""

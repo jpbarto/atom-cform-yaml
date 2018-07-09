@@ -1,0 +1,9 @@
+'.source.yaml':
+  'receiptrule-s3action':
+      'prefix': 'receiptrule-s3action'
+      'body':"""
+         BucketName: ${2:String}     # required
+         KmsKeyArn: ${3:String}     # optional
+         ObjectKeyPrefix: ${4:String}     # optional
+         TopicArn: ${5:String}     # optional
+"""

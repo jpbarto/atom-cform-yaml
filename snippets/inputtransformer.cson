@@ -1,0 +1,8 @@
+'.source.yaml':
+  'inputtransformer':
+      'prefix': 'inputtransformer'
+      'body':"""
+         InputPathsMap:                # optional, map of String
+         	${2:String_key}: ${3:String_value}
+         InputTemplate: ${4:String}     # required
+"""

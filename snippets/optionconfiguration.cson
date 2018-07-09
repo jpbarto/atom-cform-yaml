@@ -6,7 +6,8 @@
          	- ${2:String}
          OptionName: ${3:String}     # required
          OptionSettings: ${4:OptionSetting}     # optional
-         Port: ${5:Integer}     # optional
+         OptionVersion: ${5:String}     # optional
+         Port: ${6:Integer}     # optional
          VpcSecurityGroupMemberships:                # optional, list of String
-         	- ${6:String}
+         	- ${7:String}
 """

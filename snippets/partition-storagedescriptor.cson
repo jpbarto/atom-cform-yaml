@@ -1,0 +1,20 @@
+'.source.yaml':
+  'partition-storagedescriptor':
+      'prefix': 'partition-storagedescriptor'
+      'body':"""
+         BucketColumns:                # optional, list of String
+         	- ${2:String}
+         Columns:                # optional, list of Column
+         	- ${3:Column}
+         Compressed: ${4:Boolean}     # optional
+         InputFormat: ${5:String}     # optional
+         Location: ${6:String}     # optional
+         NumberOfBuckets: ${7:Integer}     # optional
+         OutputFormat: ${8:String}     # optional
+         Parameters: ${9:Json}     # optional
+         SerdeInfo: ${10:SerdeInfo}     # optional
+         SkewedInfo: ${11:SkewedInfo}     # optional
+         SortColumns:                # optional, list of Order
+         	- ${12:Order}
+         StoredAsSubDirectories: ${13:Boolean}     # optional
+"""

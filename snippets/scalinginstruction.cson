@@ -1,0 +1,12 @@
+'.source.yaml':
+  'scalinginstruction':
+      'prefix': 'scalinginstruction'
+      'body':"""
+         MaxCapacity: ${2:Integer}     # required
+         MinCapacity: ${3:Integer}     # required
+         ResourceId: ${4:String}     # required
+         ScalableDimension: ${5:String}     # required
+         ServiceNamespace: ${6:String}     # required
+         TargetTrackingConfigurations:                # required, list of TargetTrackingConfiguration
+         	- ${7:TargetTrackingConfiguration}
+"""

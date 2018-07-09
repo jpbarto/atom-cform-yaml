@@ -19,8 +19,9 @@
          			- ${12:Tag}
          		TargetGroupAttributes:                # optional, list of TargetGroupAttribute
          			- ${13:TargetGroupAttribute}
+         		TargetType: ${14:String}     # optional
          		Targets:                # optional, list of TargetDescription
-         			- ${14:TargetDescription}
-         		UnhealthyThresholdCount: ${15:Integer}     # optional
-         		VpcId: ${16:String}     # required
+         			- ${15:TargetDescription}
+         		UnhealthyThresholdCount: ${16:Integer}     # optional
+         		VpcId: ${17:String}     # required
 """

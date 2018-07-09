@@ -1,0 +1,13 @@
+'.source.yaml':
+  'jobqueue':
+      'prefix': 'jobqueue'
+      'body':"""
+         ${1:jobqueue_name}:
+         	Type: AWS::Batch::JobQueue
+         	Properties:
+         		ComputeEnvironmentOrder:                # required, list of ComputeEnvironmentOrder
+         			- ${2:ComputeEnvironmentOrder}
+         		JobQueueName: ${3:String}     # optional
+         		Priority: ${4:Integer}     # required
+         		State: ${5:String}     # optional
+"""

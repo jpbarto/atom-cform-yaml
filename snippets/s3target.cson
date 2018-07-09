@@ -1,0 +1,8 @@
+'.source.yaml':
+  's3target':
+      'prefix': 's3target'
+      'body':"""
+         Exclusions:                # optional, list of String
+         	- ${2:String}
+         Path: ${3:String}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'workmailaction':
+      'prefix': 'workmailaction'
+      'body':"""
+         OrganizationArn: ${2:String}     # required
+         TopicArn: ${3:String}     # optional
+"""

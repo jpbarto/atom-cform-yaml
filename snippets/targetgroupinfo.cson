@@ -1,0 +1,6 @@
+'.source.yaml':
+  'targetgroupinfo':
+      'prefix': 'targetgroupinfo'
+      'body':"""
+         Name: ${2:String}     # optional
+"""

@@ -9,5 +9,5 @@
          		Enabled: ${3:Boolean}     # optional
          		EventSourceArn: ${4:String}     # required
          		FunctionName: ${5:String}     # required
-         		StartingPosition: ${6:String}     # required
+         		StartingPosition: ${6:String}     # optional
 """

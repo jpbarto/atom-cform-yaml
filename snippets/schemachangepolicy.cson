@@ -1,0 +1,7 @@
+'.source.yaml':
+  'schemachangepolicy':
+      'prefix': 'schemachangepolicy'
+      'body':"""
+         DeleteBehavior: ${2:String}     # optional
+         UpdateBehavior: ${3:String}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'subnetmapping':
+      'prefix': 'subnetmapping'
+      'body':"""
+         AllocationId: ${2:String}     # required
+         SubnetId: ${3:String}     # required
+"""

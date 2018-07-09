@@ -1,0 +1,7 @@
+'.source.yaml':
+  'kinesisfirehosedestination':
+      'prefix': 'kinesisfirehosedestination'
+      'body':"""
+         DeliveryStreamARN: ${2:String}     # required
+         IAMRoleARN: ${3:String}     # required
+"""

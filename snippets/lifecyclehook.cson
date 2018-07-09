@@ -8,8 +8,9 @@
          		AutoScalingGroupName: ${2:String}     # required
          		DefaultResult: ${3:String}     # optional
          		HeartbeatTimeout: ${4:Integer}     # optional
-         		LifecycleTransition: ${5:String}     # required
-         		NotificationMetadata: ${6:String}     # optional
-         		NotificationTargetARN: ${7:String}     # optional
-         		RoleARN: ${8:String}     # optional
+         		LifecycleHookName: ${5:String}     # optional
+         		LifecycleTransition: ${6:String}     # required
+         		NotificationMetadata: ${7:String}     # optional
+         		NotificationTargetARN: ${8:String}     # optional
+         		RoleARN: ${9:String}     # optional
 """

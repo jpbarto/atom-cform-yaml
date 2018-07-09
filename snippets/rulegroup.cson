@@ -1,0 +1,7 @@
+'.source.yaml':
+  'rulegroup':
+      'prefix': 'rulegroup'
+      'body':"""
+         PatchRules:                # optional, list of Rule
+         	- ${2:Rule}
+"""

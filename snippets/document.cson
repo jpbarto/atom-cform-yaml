@@ -7,4 +7,6 @@
          	Properties:
          		Content: ${2:Json}     # required
          		DocumentType: ${3:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${4:Tag}
 """

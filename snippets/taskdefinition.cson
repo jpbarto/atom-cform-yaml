@@ -7,11 +7,16 @@
          	Properties:
          		ContainerDefinitions:                # optional, list of ContainerDefinition
          			- ${2:ContainerDefinition}
-         		Family: ${3:String}     # optional
-         		NetworkMode: ${4:String}     # optional
+         		Cpu: ${3:String}     # optional
+         		ExecutionRoleArn: ${4:String}     # optional
+         		Family: ${5:String}     # optional
+         		Memory: ${6:String}     # optional
+         		NetworkMode: ${7:String}     # optional
          		PlacementConstraints:                # optional, list of TaskDefinitionPlacementConstraint
-         			- ${5:TaskDefinitionPlacementConstraint}
-         		TaskRoleArn: ${6:String}     # optional
+         			- ${8:TaskDefinitionPlacementConstraint}
+         		RequiresCompatibilities:                # optional, list of String
+         			- ${9:String}
+         		TaskRoleArn: ${10:String}     # optional
          		Volumes:                # optional, list of Volume
-         			- ${7:Volume}
+         			- ${11:Volume}
 """

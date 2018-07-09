@@ -1,0 +1,22 @@
+'.source.yaml':
+  'containerproperties':
+      'prefix': 'containerproperties'
+      'body':"""
+         Command:                # optional, list of String
+         	- ${2:String}
+         Environment:                # optional, list of Environment
+         	- ${3:Environment}
+         Image: ${4:String}     # required
+         JobRoleArn: ${5:String}     # optional
+         Memory: ${6:Integer}     # required
+         MountPoints:                # optional, list of MountPoints
+         	- ${7:MountPoints}
+         Privileged: ${8:Boolean}     # optional
+         ReadonlyRootFilesystem: ${9:Boolean}     # optional
+         Ulimits:                # optional, list of Ulimit
+         	- ${10:Ulimit}
+         User: ${11:String}     # optional
+         Vcpus: ${12:Integer}     # required
+         Volumes:                # optional, list of Volumes
+         	- ${13:Volumes}
+"""

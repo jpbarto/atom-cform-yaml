@@ -1,0 +1,7 @@
+'.source.yaml':
+  's3outputlocation':
+      'prefix': 's3outputlocation'
+      'body':"""
+         OutputS3BucketName: ${2:String}     # optional
+         OutputS3KeyPrefix: ${3:String}     # optional
+"""

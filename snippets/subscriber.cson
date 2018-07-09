@@ -1,0 +1,7 @@
+'.source.yaml':
+  'subscriber':
+      'prefix': 'subscriber'
+      'body':"""
+         Address: ${2:String}     # required
+         SubscriptionType: ${3:String}     # required
+"""

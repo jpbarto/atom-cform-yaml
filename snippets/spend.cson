@@ -1,0 +1,7 @@
+'.source.yaml':
+  'spend':
+      'prefix': 'spend'
+      'body':"""
+         Amount: ${2:Double}     # required
+         Unit: ${3:String}     # required
+"""

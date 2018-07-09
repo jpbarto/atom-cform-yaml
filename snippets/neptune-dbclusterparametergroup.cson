@@ -1,0 +1,14 @@
+'.source.yaml':
+  'neptune-dbclusterparametergroup':
+      'prefix': 'neptune-dbclusterparametergroup'
+      'body':"""
+         ${1:neptune-dbclusterparametergroup_name}:
+         	Type: AWS::Neptune::DBClusterParameterGroup
+         	Properties:
+         		Description: ${2:String}     # required
+         		Family: ${3:String}     # required
+         		Name: ${4:String}     # optional
+         		Parameters: ${5:Json}     # required
+         		Tags:                # optional, list of Tag
+         			- ${6:Tag}
+"""

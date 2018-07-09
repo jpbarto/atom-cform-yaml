@@ -1,0 +1,6 @@
+'.source.yaml':
+  'datasource-lambdaconfig':
+      'prefix': 'datasource-lambdaconfig'
+      'body':"""
+         LambdaFunctionArn: ${2:String}     # required
+"""

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'dnsconfig':
+      'prefix': 'dnsconfig'
+      'body':"""
+         DnsRecords:                # required, list of DnsRecord
+         	- ${2:DnsRecord}
+         NamespaceId: ${3:String}     # required
+"""

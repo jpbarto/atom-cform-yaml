@@ -1,6 +1,0 @@
-'.source.yaml':
-  'lambdaaction':
-      'prefix': 'lambdaaction'
-      'body':"""
-         FunctionArn: ${2:String}     # required
-"""

@@ -1,0 +1,9 @@
+'.source.yaml':
+  'openidconnectconfig':
+      'prefix': 'openidconnectconfig'
+      'body':"""
+         AuthTTL: ${2:Double}     # optional
+         ClientId: ${3:String}     # optional
+         IatTTL: ${4:Double}     # optional
+         Issuer: ${5:String}     # optional
+"""

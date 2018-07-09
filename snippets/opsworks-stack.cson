@@ -30,7 +30,9 @@
          			- ${21:RdsDbInstance}
          		ServiceRoleArn: ${22:String}     # required
          		SourceStackId: ${23:String}     # optional
-         		UseCustomCookbooks: ${24:Boolean}     # optional
-         		UseOpsworksSecurityGroups: ${25:Boolean}     # optional
-         		VpcId: ${26:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${24:Tag}
+         		UseCustomCookbooks: ${25:Boolean}     # optional
+         		UseOpsworksSecurityGroups: ${26:Boolean}     # optional
+         		VpcId: ${27:String}     # optional
 """

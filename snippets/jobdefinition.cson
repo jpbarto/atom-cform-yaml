@@ -1,0 +1,14 @@
+'.source.yaml':
+  'jobdefinition':
+      'prefix': 'jobdefinition'
+      'body':"""
+         ${1:jobdefinition_name}:
+         	Type: AWS::Batch::JobDefinition
+         	Properties:
+         		ContainerProperties: ${2:ContainerProperties}     # required
+         		JobDefinitionName: ${3:String}     # optional
+         		Parameters: ${4:Json}     # optional
+         		RetryStrategy: ${5:RetryStrategy}     # optional
+         		Timeout: ${6:Timeout}     # optional
+         		Type: ${7:String}     # required
+"""

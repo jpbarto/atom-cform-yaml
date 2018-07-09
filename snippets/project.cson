@@ -6,13 +6,17 @@
          	Type: AWS::CodeBuild::Project
          	Properties:
          		Artifacts: ${2:Artifacts}     # required
-         		Description: ${3:String}     # optional
-         		EncryptionKey: ${4:String}     # optional
-         		Environment: ${5:Environment}     # required
-         		Name: ${6:String}     # optional
-         		ServiceRole: ${7:String}     # required
-         		Source: ${8:Source}     # required
+         		BadgeEnabled: ${3:Boolean}     # optional
+         		Cache: ${4:ProjectCache}     # optional
+         		Description: ${5:String}     # optional
+         		EncryptionKey: ${6:String}     # optional
+         		Environment: ${7:Environment}     # required
+         		Name: ${8:String}     # optional
+         		ServiceRole: ${9:String}     # required
+         		Source: ${10:Source}     # required
          		Tags:                # optional, list of Tag
-         			- ${9:Tag}
-         		TimeoutInMinutes: ${10:Integer}     # optional
+         			- ${11:Tag}
+         		TimeoutInMinutes: ${12:Integer}     # optional
+         		Triggers: ${13:ProjectTriggers}     # optional
+         		VpcConfig: ${14:VpcConfig}     # optional
 """

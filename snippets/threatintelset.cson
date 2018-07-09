@@ -1,0 +1,13 @@
+'.source.yaml':
+  'threatintelset':
+      'prefix': 'threatintelset'
+      'body':"""
+         ${1:threatintelset_name}:
+         	Type: AWS::GuardDuty::ThreatIntelSet
+         	Properties:
+         		Activate: ${2:Boolean}     # required
+         		DetectorId: ${3:String}     # required
+         		Format: ${4:String}     # required
+         		Location: ${5:String}     # required
+         		Name: ${6:String}     # optional
+"""

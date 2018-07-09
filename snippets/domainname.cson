@@ -5,6 +5,8 @@
          ${1:domainname_name}:
          	Type: AWS::ApiGateway::DomainName
          	Properties:
-         		CertificateArn: ${2:String}     # required
+         		CertificateArn: ${2:String}     # optional
          		DomainName: ${3:String}     # required
+         		EndpointConfiguration: ${4:EndpointConfiguration}     # optional
+         		RegionalCertificateArn: ${5:String}     # optional
 """

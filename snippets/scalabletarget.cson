@@ -10,5 +10,7 @@
          		ResourceId: ${4:String}     # required
          		RoleARN: ${5:String}     # required
          		ScalableDimension: ${6:String}     # required
-         		ServiceNamespace: ${7:String}     # required
+         		ScheduledActions:                # optional, list of ScheduledAction
+         			- ${7:ScheduledAction}
+         		ServiceNamespace: ${8:String}     # required
 """

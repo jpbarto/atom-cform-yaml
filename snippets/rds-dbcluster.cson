@@ -1,0 +1,30 @@
+'.source.yaml':
+  'rds-dbcluster':
+      'prefix': 'rds-dbcluster'
+      'body':"""
+         ${1:rds-dbcluster_name}:
+         	Type: AWS::RDS::DBCluster
+         	Properties:
+         		AvailabilityZones:                # optional, list of String
+         			- ${2:String}
+         		BackupRetentionPeriod: ${3:Integer}     # optional
+         		DBClusterIdentifier: ${4:String}     # optional
+         		DBClusterParameterGroupName: ${5:String}     # optional
+         		DBSubnetGroupName: ${6:String}     # optional
+         		DatabaseName: ${7:String}     # optional
+         		Engine: ${8:String}     # required
+         		EngineVersion: ${9:String}     # optional
+         		KmsKeyId: ${10:String}     # optional
+         		MasterUserPassword: ${11:String}     # optional
+         		MasterUsername: ${12:String}     # optional
+         		Port: ${13:Integer}     # optional
+         		PreferredBackupWindow: ${14:String}     # optional
+         		PreferredMaintenanceWindow: ${15:String}     # optional
+         		ReplicationSourceIdentifier: ${16:String}     # optional
+         		SnapshotIdentifier: ${17:String}     # optional
+         		StorageEncrypted: ${18:Boolean}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${19:Tag}
+         		VpcSecurityGroupIds:                # optional, list of String
+         			- ${20:String}
+"""

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'networkconfiguration':
+      'prefix': 'networkconfiguration'
+      'body':"""
+         AwsvpcConfiguration: ${2:AwsVpcConfiguration}     # optional
+"""

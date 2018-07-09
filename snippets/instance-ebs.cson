@@ -1,0 +1,11 @@
+'.source.yaml':
+  'instance-ebs':
+      'prefix': 'instance-ebs'
+      'body':"""
+         DeleteOnTermination: ${2:Boolean}     # optional
+         Encrypted: ${3:Boolean}     # optional
+         Iops: ${4:Integer}     # optional
+         SnapshotId: ${5:String}     # optional
+         VolumeSize: ${6:Integer}     # optional
+         VolumeType: ${7:String}     # optional
+"""

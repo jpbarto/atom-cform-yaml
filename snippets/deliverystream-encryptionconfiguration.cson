@@ -1,0 +1,7 @@
+'.source.yaml':
+  'deliverystream-encryptionconfiguration':
+      'prefix': 'deliverystream-encryptionconfiguration'
+      'body':"""
+         KMSEncryptionConfig: ${2:KMSEncryptionConfig}     # optional
+         NoEncryptionConfig: ${3:String}     # optional
+"""

@@ -7,6 +7,6 @@
          CloudWatchLoggingOptions: ${4:CloudWatchLoggingOptions}     # optional
          CompressionFormat: ${5:String}     # required
          EncryptionConfiguration: ${6:EncryptionConfiguration}     # optional
-         Prefix: ${7:String}     # required
+         Prefix: ${7:String}     # optional
          RoleARN: ${8:String}     # required
 """

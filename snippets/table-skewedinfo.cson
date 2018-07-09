@@ -1,0 +1,10 @@
+'.source.yaml':
+  'table-skewedinfo':
+      'prefix': 'table-skewedinfo'
+      'body':"""
+         SkewedColumnNames:                # optional, list of String
+         	- ${2:String}
+         SkewedColumnValueLocationMaps: ${3:Json}     # optional
+         SkewedColumnValues:                # optional, list of String
+         	- ${4:String}
+"""

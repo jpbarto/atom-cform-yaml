@@ -1,0 +1,13 @@
+'.source.yaml':
+  'computeenvironment':
+      'prefix': 'computeenvironment'
+      'body':"""
+         ${1:computeenvironment_name}:
+         	Type: AWS::Batch::ComputeEnvironment
+         	Properties:
+         		ComputeEnvironmentName: ${2:String}     # optional
+         		ComputeResources: ${3:ComputeResources}     # optional
+         		ServiceRole: ${4:String}     # required
+         		State: ${5:String}     # optional
+         		Type: ${6:String}     # required
+"""

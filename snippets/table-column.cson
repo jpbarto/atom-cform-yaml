@@ -1,0 +1,8 @@
+'.source.yaml':
+  'table-column':
+      'prefix': 'table-column'
+      'body':"""
+         Comment: ${2:String}     # optional
+         Name: ${3:String}     # required
+         Type: ${4:String}     # optional
+"""

@@ -1,0 +1,9 @@
+'.source.yaml':
+  'targets':
+      'prefix': 'targets'
+      'body':"""
+         JdbcTargets:                # optional, list of JdbcTarget
+         	- ${2:JdbcTarget}
+         S3Targets:                # optional, list of S3Target
+         	- ${3:S3Target}
+"""

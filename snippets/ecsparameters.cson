@@ -1,0 +1,7 @@
+'.source.yaml':
+  'ecsparameters':
+      'prefix': 'ecsparameters'
+      'body':"""
+         TaskCount: ${2:Integer}     # optional
+         TaskDefinitionArn: ${3:String}     # required
+"""

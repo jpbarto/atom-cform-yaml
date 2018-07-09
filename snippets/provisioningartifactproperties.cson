@@ -1,0 +1,8 @@
+'.source.yaml':
+  'provisioningartifactproperties':
+      'prefix': 'provisioningartifactproperties'
+      'body':"""
+         Description: ${2:String}     # optional
+         Info: ${3:Json}     # required
+         Name: ${4:String}     # optional
+"""

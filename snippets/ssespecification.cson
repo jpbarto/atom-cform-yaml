@@ -1,0 +1,6 @@
+'.source.yaml':
+  'ssespecification':
+      'prefix': 'ssespecification'
+      'body':"""
+         SSEEnabled: ${2:Boolean}     # required
+"""

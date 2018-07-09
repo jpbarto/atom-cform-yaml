@@ -1,0 +1,25 @@
+'.source.yaml':
+  'neptune-dbcluster':
+      'prefix': 'neptune-dbcluster'
+      'body':"""
+         ${1:neptune-dbcluster_name}:
+         	Type: AWS::Neptune::DBCluster
+         	Properties:
+         		AvailabilityZones:                # optional, list of String
+         			- ${2:String}
+         		BackupRetentionPeriod: ${3:Integer}     # optional
+         		DBClusterIdentifier: ${4:String}     # optional
+         		DBClusterParameterGroupName: ${5:String}     # optional
+         		DBSubnetGroupName: ${6:String}     # optional
+         		IamAuthEnabled: ${7:Boolean}     # optional
+         		KmsKeyId: ${8:String}     # optional
+         		Port: ${9:Integer}     # optional
+         		PreferredBackupWindow: ${10:String}     # optional
+         		PreferredMaintenanceWindow: ${11:String}     # optional
+         		SnapshotIdentifier: ${12:String}     # optional
+         		StorageEncrypted: ${13:Boolean}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${14:Tag}
+         		VpcSecurityGroupIds:                # optional, list of String
+         			- ${15:String}
+"""

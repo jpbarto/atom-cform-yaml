@@ -2,6 +2,6 @@
   'provisionedthroughput':
       'prefix': 'provisionedthroughput'
       'body':"""
-         ReadCapacityUnits: ${2:Integer}     # required
-         WriteCapacityUnits: ${3:Integer}     # required
+         ReadCapacityUnits: ${2:Long}     # required
+         WriteCapacityUnits: ${3:Long}     # required
 """

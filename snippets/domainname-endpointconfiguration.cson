@@ -1,0 +1,7 @@
+'.source.yaml':
+  'domainname-endpointconfiguration':
+      'prefix': 'domainname-endpointconfiguration'
+      'body':"""
+         Types:                # optional, list of String
+         	- ${2:String}
+"""

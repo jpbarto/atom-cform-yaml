@@ -1,0 +1,13 @@
+'.source.yaml':
+  'graphqlapi':
+      'prefix': 'graphqlapi'
+      'body':"""
+         ${1:graphqlapi_name}:
+         	Type: AWS::AppSync::GraphQLApi
+         	Properties:
+         		AuthenticationType: ${2:String}     # required
+         		LogConfig: ${3:LogConfig}     # optional
+         		Name: ${4:String}     # required
+         		OpenIDConnectConfig: ${5:OpenIDConnectConfig}     # optional
+         		UserPoolConfig: ${6:UserPoolConfig}     # optional
+"""

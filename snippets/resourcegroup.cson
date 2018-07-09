@@ -1,0 +1,10 @@
+'.source.yaml':
+  'resourcegroup':
+      'prefix': 'resourcegroup'
+      'body':"""
+         ${1:resourcegroup_name}:
+         	Type: AWS::Inspector::ResourceGroup
+         	Properties:
+         		ResourceGroupTags:                # required, list of Tag
+         			- ${2:Tag}
+"""
