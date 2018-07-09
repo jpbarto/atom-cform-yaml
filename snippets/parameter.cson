@@ -5,8 +5,9 @@
          ${1:parameter_name}:
          	Type: AWS::SSM::Parameter
          	Properties:
-         		Description: ${2:String}     # optional
-         		Name: ${3:String}     # optional
-         		Type: ${4:String}     # required
-         		Value: ${5:String}     # required
+         		AllowedPattern: ${2:String}     # optional
+         		Description: ${3:String}     # optional
+         		Name: ${4:String}     # optional
+         		Type: ${5:String}     # required
+         		Value: ${6:String}     # required
 """

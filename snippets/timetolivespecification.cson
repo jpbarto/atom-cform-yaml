@@ -1,0 +1,7 @@
+'.source.yaml':
+  'timetolivespecification':
+      'prefix': 'timetolivespecification'
+      'body':"""
+         AttributeName: ${2:String}     # required
+         Enabled: ${3:Boolean}     # required
+"""

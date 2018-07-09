@@ -12,4 +12,5 @@
          			- ${4:String}
          		Tags:                # optional, list of Tag
          			- ${5:Tag}
+         		ValidationMethod: ${6:String}     # optional
 """

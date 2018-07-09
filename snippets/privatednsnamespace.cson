@@ -1,0 +1,11 @@
+'.source.yaml':
+  'privatednsnamespace':
+      'prefix': 'privatednsnamespace'
+      'body':"""
+         ${1:privatednsnamespace_name}:
+         	Type: AWS::ServiceDiscovery::PrivateDnsNamespace
+         	Properties:
+         		Description: ${2:String}     # optional
+         		Name: ${3:String}     # required
+         		Vpc: ${4:String}     # required
+"""

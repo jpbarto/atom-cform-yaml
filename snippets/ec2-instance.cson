@@ -10,36 +10,40 @@
          		AvailabilityZone: ${4:String}     # optional
          		BlockDeviceMappings:                # optional, list of BlockDeviceMapping
          			- ${5:BlockDeviceMapping}
-         		DisableApiTermination: ${6:Boolean}     # optional
-         		EbsOptimized: ${7:Boolean}     # optional
-         		HostId: ${8:String}     # optional
-         		IamInstanceProfile: ${9:String}     # optional
-         		ImageId: ${10:String}     # required
-         		InstanceInitiatedShutdownBehavior: ${11:String}     # optional
-         		InstanceType: ${12:String}     # optional
-         		Ipv6AddressCount: ${13:Integer}     # optional
+         		CreditSpecification: ${6:CreditSpecification}     # optional
+         		DisableApiTermination: ${7:Boolean}     # optional
+         		EbsOptimized: ${8:Boolean}     # optional
+         		ElasticGpuSpecifications:                # optional, list of ElasticGpuSpecification
+         			- ${9:ElasticGpuSpecification}
+         		HostId: ${10:String}     # optional
+         		IamInstanceProfile: ${11:String}     # optional
+         		ImageId: ${12:String}     # optional
+         		InstanceInitiatedShutdownBehavior: ${13:String}     # optional
+         		InstanceType: ${14:String}     # optional
+         		Ipv6AddressCount: ${15:Integer}     # optional
          		Ipv6Addresses:                # optional, list of InstanceIpv6Address
-         			- ${14:InstanceIpv6Address}
-         		KernelId: ${15:String}     # optional
-         		KeyName: ${16:String}     # optional
-         		Monitoring: ${17:Boolean}     # optional
+         			- ${16:InstanceIpv6Address}
+         		KernelId: ${17:String}     # optional
+         		KeyName: ${18:String}     # optional
+         		LaunchTemplate: ${19:LaunchTemplateSpecification}     # optional
+         		Monitoring: ${20:Boolean}     # optional
          		NetworkInterfaces:                # optional, list of NetworkInterface
-         			- ${18:NetworkInterface}
-         		PlacementGroupName: ${19:String}     # optional
-         		PrivateIpAddress: ${20:String}     # optional
-         		RamdiskId: ${21:String}     # optional
+         			- ${21:NetworkInterface}
+         		PlacementGroupName: ${22:String}     # optional
+         		PrivateIpAddress: ${23:String}     # optional
+         		RamdiskId: ${24:String}     # optional
          		SecurityGroupIds:                # optional, list of String
-         			- ${22:String}
+         			- ${25:String}
          		SecurityGroups:                # optional, list of String
-         			- ${23:String}
-         		SourceDestCheck: ${24:Boolean}     # optional
+         			- ${26:String}
+         		SourceDestCheck: ${27:Boolean}     # optional
          		SsmAssociations:                # optional, list of SsmAssociation
-         			- ${25:SsmAssociation}
-         		SubnetId: ${26:String}     # optional
+         			- ${28:SsmAssociation}
+         		SubnetId: ${29:String}     # optional
          		Tags:                # optional, list of Tag
-         			- ${27:Tag}
-         		Tenancy: ${28:String}     # optional
-         		UserData: ${29:String}     # optional
+         			- ${30:Tag}
+         		Tenancy: ${31:String}     # optional
+         		UserData: ${32:String}     # optional
          		Volumes:                # optional, list of Volume
-         			- ${30:Volume}
+         			- ${33:Volume}
 """

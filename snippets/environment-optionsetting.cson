@@ -1,0 +1,9 @@
+'.source.yaml':
+  'environment-optionsetting':
+      'prefix': 'environment-optionsetting'
+      'body':"""
+         Namespace: ${2:String}     # required
+         OptionName: ${3:String}     # required
+         ResourceName: ${4:String}     # optional
+         Value: ${5:String}     # optional
+"""

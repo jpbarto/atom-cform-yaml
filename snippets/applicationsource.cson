@@ -1,0 +1,8 @@
+'.source.yaml':
+  'applicationsource':
+      'prefix': 'applicationsource'
+      'body':"""
+         CloudFormationStackARN: ${2:String}     # optional
+         TagFilters:                # optional, list of TagFilter
+         	- ${3:TagFilter}
+"""

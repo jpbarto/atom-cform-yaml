@@ -1,0 +1,11 @@
+'.source.yaml':
+  'graphqlschema':
+      'prefix': 'graphqlschema'
+      'body':"""
+         ${1:graphqlschema_name}:
+         	Type: AWS::AppSync::GraphQLSchema
+         	Properties:
+         		ApiId: ${2:String}     # required
+         		Definition: ${3:String}     # optional
+         		DefinitionS3Location: ${4:String}     # optional
+"""

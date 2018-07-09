@@ -1,0 +1,10 @@
+'.source.yaml':
+  'loadbalancer-healthcheck':
+      'prefix': 'loadbalancer-healthcheck'
+      'body':"""
+         HealthyThreshold: ${2:String}     # required
+         Interval: ${3:String}     # required
+         Target: ${4:String}     # required
+         Timeout: ${5:String}     # required
+         UnhealthyThreshold: ${6:String}     # required
+"""

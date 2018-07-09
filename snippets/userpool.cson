@@ -24,4 +24,6 @@
          		SmsVerificationMessage: ${15:String}     # optional
          		UserPoolName: ${16:String}     # optional
          		UserPoolTags: ${17:Json}     # optional
+         		UsernameAttributes:                # optional, list of String
+         			- ${18:String}
 """

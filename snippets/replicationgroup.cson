@@ -5,36 +5,39 @@
          ${1:replicationgroup_name}:
          	Type: AWS::ElastiCache::ReplicationGroup
          	Properties:
-         		AutoMinorVersionUpgrade: ${2:Boolean}     # optional
-         		AutomaticFailoverEnabled: ${3:Boolean}     # optional
-         		CacheNodeType: ${4:String}     # optional
-         		CacheParameterGroupName: ${5:String}     # optional
+         		AtRestEncryptionEnabled: ${2:Boolean}     # optional
+         		AuthToken: ${3:String}     # optional
+         		AutoMinorVersionUpgrade: ${4:Boolean}     # optional
+         		AutomaticFailoverEnabled: ${5:Boolean}     # optional
+         		CacheNodeType: ${6:String}     # optional
+         		CacheParameterGroupName: ${7:String}     # optional
          		CacheSecurityGroupNames:                # optional, list of String
-         			- ${6:String}
-         		CacheSubnetGroupName: ${7:String}     # optional
-         		Engine: ${8:String}     # optional
-         		EngineVersion: ${9:String}     # optional
+         			- ${8:String}
+         		CacheSubnetGroupName: ${9:String}     # optional
+         		Engine: ${10:String}     # optional
+         		EngineVersion: ${11:String}     # optional
          		NodeGroupConfiguration:                # optional, list of NodeGroupConfiguration
-         			- ${10:NodeGroupConfiguration}
-         		NotificationTopicArn: ${11:String}     # optional
-         		NumCacheClusters: ${12:Integer}     # optional
-         		NumNodeGroups: ${13:Integer}     # optional
-         		Port: ${14:Integer}     # optional
+         			- ${12:NodeGroupConfiguration}
+         		NotificationTopicArn: ${13:String}     # optional
+         		NumCacheClusters: ${14:Integer}     # optional
+         		NumNodeGroups: ${15:Integer}     # optional
+         		Port: ${16:Integer}     # optional
          		PreferredCacheClusterAZs:                # optional, list of String
-         			- ${15:String}
-         		PreferredMaintenanceWindow: ${16:String}     # optional
-         		PrimaryClusterId: ${17:String}     # optional
-         		ReplicasPerNodeGroup: ${18:Integer}     # optional
-         		ReplicationGroupDescription: ${19:String}     # required
-         		ReplicationGroupId: ${20:String}     # optional
+         			- ${17:String}
+         		PreferredMaintenanceWindow: ${18:String}     # optional
+         		PrimaryClusterId: ${19:String}     # optional
+         		ReplicasPerNodeGroup: ${20:Integer}     # optional
+         		ReplicationGroupDescription: ${21:String}     # required
+         		ReplicationGroupId: ${22:String}     # optional
          		SecurityGroupIds:                # optional, list of String
-         			- ${21:String}
+         			- ${23:String}
          		SnapshotArns:                # optional, list of String
-         			- ${22:String}
-         		SnapshotName: ${23:String}     # optional
-         		SnapshotRetentionLimit: ${24:Integer}     # optional
-         		SnapshotWindow: ${25:String}     # optional
-         		SnapshottingClusterId: ${26:String}     # optional
+         			- ${24:String}
+         		SnapshotName: ${25:String}     # optional
+         		SnapshotRetentionLimit: ${26:Integer}     # optional
+         		SnapshotWindow: ${27:String}     # optional
+         		SnapshottingClusterId: ${28:String}     # optional
          		Tags:                # optional, list of Tag
-         			- ${27:Tag}
+         			- ${29:Tag}
+         		TransitEncryptionEnabled: ${30:Boolean}     # optional
 """

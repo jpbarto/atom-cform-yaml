@@ -4,10 +4,11 @@
       'body':"""
          CidrIp: ${2:String}     # optional
          CidrIpv6: ${3:String}     # optional
-         FromPort: ${4:Integer}     # optional
-         IpProtocol: ${5:String}     # required
-         SourceSecurityGroupId: ${6:String}     # optional
-         SourceSecurityGroupName: ${7:String}     # optional
-         SourceSecurityGroupOwnerId: ${8:String}     # optional
-         ToPort: ${9:Integer}     # optional
+         Description: ${4:String}     # optional
+         FromPort: ${5:Integer}     # optional
+         IpProtocol: ${6:String}     # required
+         SourceSecurityGroupId: ${7:String}     # optional
+         SourceSecurityGroupName: ${8:String}     # optional
+         SourceSecurityGroupOwnerId: ${9:String}     # optional
+         ToPort: ${10:Integer}     # optional
 """

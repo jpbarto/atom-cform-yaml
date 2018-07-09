@@ -1,0 +1,7 @@
+'.source.yaml':
+  'runcommandparameters':
+      'prefix': 'runcommandparameters'
+      'body':"""
+         RunCommandTargets:                # required, list of RunCommandTarget
+         	- ${2:RunCommandTarget}
+"""

@@ -1,0 +1,9 @@
+'.source.yaml':
+  'device':
+      'prefix': 'device'
+      'body':"""
+         ContainerPath: ${2:String}     # optional
+         HostPath: ${3:String}     # required
+         Permissions:                # optional, list of String
+         	- ${4:String}
+"""

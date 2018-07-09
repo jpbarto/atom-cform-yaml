@@ -1,0 +1,6 @@
+'.source.yaml':
+  'schedule':
+      'prefix': 'schedule'
+      'body':"""
+         ScheduleExpression: ${2:String}     # optional
+"""

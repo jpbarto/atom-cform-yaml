@@ -1,0 +1,12 @@
+'.source.yaml':
+  'filter-condition':
+      'prefix': 'filter-condition'
+      'body':"""
+         Eq:                # optional, list of String
+         	- ${2:String}
+         Gte: ${3:Integer}     # optional
+         Lt: ${4:Integer}     # optional
+         Lte: ${5:Integer}     # optional
+         Neq:                # optional, list of String
+         	- ${6:String}
+"""

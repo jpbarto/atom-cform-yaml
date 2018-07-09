@@ -1,0 +1,9 @@
+'.source.yaml':
+  'receiptruleset':
+      'prefix': 'receiptruleset'
+      'body':"""
+         ${1:receiptruleset_name}:
+         	Type: AWS::SES::ReceiptRuleSet
+         	Properties:
+         		RuleSetName: ${2:String}     # optional
+"""

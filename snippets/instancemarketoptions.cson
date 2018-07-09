@@ -1,0 +1,7 @@
+'.source.yaml':
+  'instancemarketoptions':
+      'prefix': 'instancemarketoptions'
+      'body':"""
+         MarketType: ${2:String}     # optional
+         SpotOptions: ${3:SpotOptions}     # optional
+"""

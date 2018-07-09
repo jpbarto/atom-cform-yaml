@@ -1,0 +1,7 @@
+'.source.yaml':
+  'repository':
+      'prefix': 'repository'
+      'body':"""
+         PathComponent: ${2:String}     # required
+         RepositoryUrl: ${3:String}     # required
+"""

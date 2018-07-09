@@ -1,0 +1,7 @@
+'.source.yaml':
+  'serviceregistry':
+      'prefix': 'serviceregistry'
+      'body':"""
+         Port: ${2:Integer}     # optional
+         RegistryArn: ${3:String}     # optional
+"""

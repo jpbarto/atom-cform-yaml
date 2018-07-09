@@ -21,24 +21,26 @@
          Essential: ${12:Boolean}     # optional
          ExtraHosts:                # optional, list of HostEntry
          	- ${13:HostEntry}
-         Hostname: ${14:String}     # optional
-         Image: ${15:String}     # optional
+         HealthCheck: ${14:HealthCheck}     # optional
+         Hostname: ${15:String}     # optional
+         Image: ${16:String}     # optional
          Links:                # optional, list of String
-         	- ${16:String}
-         LogConfiguration: ${17:LogConfiguration}     # optional
-         Memory: ${18:Integer}     # optional
-         MemoryReservation: ${19:Integer}     # optional
+         	- ${17:String}
+         LinuxParameters: ${18:LinuxParameters}     # optional
+         LogConfiguration: ${19:LogConfiguration}     # optional
+         Memory: ${20:Integer}     # optional
+         MemoryReservation: ${21:Integer}     # optional
          MountPoints:                # optional, list of MountPoint
-         	- ${20:MountPoint}
-         Name: ${21:String}     # optional
+         	- ${22:MountPoint}
+         Name: ${23:String}     # optional
          PortMappings:                # optional, list of PortMapping
-         	- ${22:PortMapping}
-         Privileged: ${23:Boolean}     # optional
-         ReadonlyRootFilesystem: ${24:Boolean}     # optional
+         	- ${24:PortMapping}
+         Privileged: ${25:Boolean}     # optional
+         ReadonlyRootFilesystem: ${26:Boolean}     # optional
          Ulimits:                # optional, list of Ulimit
-         	- ${25:Ulimit}
-         User: ${26:String}     # optional
+         	- ${27:Ulimit}
+         User: ${28:String}     # optional
          VolumesFrom:                # optional, list of VolumeFrom
-         	- ${27:VolumeFrom}
-         WorkingDirectory: ${28:String}     # optional
+         	- ${29:VolumeFrom}
+         WorkingDirectory: ${30:String}     # optional
 """

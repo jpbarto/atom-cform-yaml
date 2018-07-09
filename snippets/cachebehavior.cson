@@ -7,14 +7,16 @@
          CachedMethods:                # optional, list of String
          	- ${3:String}
          Compress: ${4:Boolean}     # optional
-         DefaultTTL: ${5:Long}     # optional
+         DefaultTTL: ${5:Double}     # optional
          ForwardedValues: ${6:ForwardedValues}     # required
-         MaxTTL: ${7:Long}     # optional
-         MinTTL: ${8:Long}     # optional
-         PathPattern: ${9:String}     # required
-         SmoothStreaming: ${10:Boolean}     # optional
-         TargetOriginId: ${11:String}     # required
+         LambdaFunctionAssociations:                # optional, list of LambdaFunctionAssociation
+         	- ${7:LambdaFunctionAssociation}
+         MaxTTL: ${8:Double}     # optional
+         MinTTL: ${9:Double}     # optional
+         PathPattern: ${10:String}     # required
+         SmoothStreaming: ${11:Boolean}     # optional
+         TargetOriginId: ${12:String}     # required
          TrustedSigners:                # optional, list of String
-         	- ${12:String}
-         ViewerProtocolPolicy: ${13:String}     # required
+         	- ${13:String}
+         ViewerProtocolPolicy: ${14:String}     # required
 """

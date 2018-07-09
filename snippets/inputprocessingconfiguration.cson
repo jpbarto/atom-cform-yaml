@@ -1,0 +1,6 @@
+'.source.yaml':
+  'inputprocessingconfiguration':
+      'prefix': 'inputprocessingconfiguration'
+      'body':"""
+         InputLambdaProcessor: ${2:InputLambdaProcessor}     # optional
+"""

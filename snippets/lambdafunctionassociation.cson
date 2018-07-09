@@ -1,0 +1,7 @@
+'.source.yaml':
+  'lambdafunctionassociation':
+      'prefix': 'lambdafunctionassociation'
+      'body':"""
+         EventType: ${2:String}     # optional
+         LambdaFunctionARN: ${3:String}     # optional
+"""

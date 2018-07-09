@@ -4,7 +4,9 @@
       'body':"""
          HTTPPort: ${2:Integer}     # optional
          HTTPSPort: ${3:Integer}     # optional
-         OriginProtocolPolicy: ${4:String}     # required
+         OriginKeepaliveTimeout: ${4:Integer}     # optional
+         OriginProtocolPolicy: ${5:String}     # required
+         OriginReadTimeout: ${6:Integer}     # optional
          OriginSSLProtocols:                # optional, list of String
-         	- ${5:String}
+         	- ${7:String}
 """

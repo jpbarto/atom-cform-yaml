@@ -1,0 +1,6 @@
+'.source.yaml':
+  'accesscontroltranslation':
+      'prefix': 'accesscontroltranslation'
+      'body':"""
+         Owner: ${2:String}     # required
+"""

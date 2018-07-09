@@ -1,0 +1,8 @@
+'.source.yaml':
+  'partition-column':
+      'prefix': 'partition-column'
+      'body':"""
+         Comment: ${2:String}     # optional
+         Name: ${3:String}     # required
+         Type: ${4:String}     # optional
+"""

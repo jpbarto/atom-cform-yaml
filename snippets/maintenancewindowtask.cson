@@ -1,0 +1,22 @@
+'.source.yaml':
+  'maintenancewindowtask':
+      'prefix': 'maintenancewindowtask'
+      'body':"""
+         ${1:maintenancewindowtask_name}:
+         	Type: AWS::SSM::MaintenanceWindowTask
+         	Properties:
+         		Description: ${2:String}     # optional
+         		LoggingInfo: ${3:LoggingInfo}     # optional
+         		MaxConcurrency: ${4:String}     # required
+         		MaxErrors: ${5:String}     # required
+         		Name: ${6:String}     # optional
+         		Priority: ${7:Integer}     # required
+         		ServiceRoleArn: ${8:String}     # required
+         		Targets:                # required, list of Target
+         			- ${9:Target}
+         		TaskArn: ${10:String}     # required
+         		TaskInvocationParameters: ${11:TaskInvocationParameters}     # optional
+         		TaskParameters: ${12:Json}     # optional
+         		TaskType: ${13:String}     # required
+         		WindowId: ${14:String}     # optional
+"""

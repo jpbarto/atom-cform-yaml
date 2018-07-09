@@ -1,0 +1,12 @@
+'.source.yaml':
+  'connectioninput':
+      'prefix': 'connectioninput'
+      'body':"""
+         ConnectionProperties: ${2:Json}     # required
+         ConnectionType: ${3:String}     # required
+         Description: ${4:String}     # optional
+         MatchCriteria:                # optional, list of String
+         	- ${5:String}
+         Name: ${6:String}     # optional
+         PhysicalConnectionRequirements: ${7:PhysicalConnectionRequirements}     # optional
+"""

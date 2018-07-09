@@ -1,0 +1,16 @@
+'.source.yaml':
+  'environmentec2':
+      'prefix': 'environmentec2'
+      'body':"""
+         ${1:environmentec2_name}:
+         	Type: AWS::Cloud9::EnvironmentEC2
+         	Properties:
+         		AutomaticStopTimeMinutes: ${2:Integer}     # optional
+         		Description: ${3:String}     # optional
+         		InstanceType: ${4:String}     # required
+         		Name: ${5:String}     # optional
+         		OwnerArn: ${6:String}     # optional
+         		Repositories:                # optional, list of Repository
+         			- ${7:Repository}
+         		SubnetId: ${8:String}     # optional
+"""

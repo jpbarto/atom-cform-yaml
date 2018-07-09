@@ -19,10 +19,11 @@
          		InstanceType: ${11:String}     # required
          		KernelId: ${12:String}     # optional
          		KeyName: ${13:String}     # optional
-         		PlacementTenancy: ${14:String}     # optional
-         		RamDiskId: ${15:String}     # optional
+         		LaunchConfigurationName: ${14:String}     # optional
+         		PlacementTenancy: ${15:String}     # optional
+         		RamDiskId: ${16:String}     # optional
          		SecurityGroups:                # optional, list of String
-         			- ${16:String}
-         		SpotPrice: ${17:String}     # optional
-         		UserData: ${18:String}     # optional
+         			- ${17:String}
+         		SpotPrice: ${18:String}     # optional
+         		UserData: ${19:String}     # optional
 """

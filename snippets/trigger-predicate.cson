@@ -1,0 +1,8 @@
+'.source.yaml':
+  'trigger-predicate':
+      'prefix': 'trigger-predicate'
+      'body':"""
+         Conditions:                # optional, list of Condition
+         	- ${2:Condition}
+         Logical: ${3:String}     # optional
+"""

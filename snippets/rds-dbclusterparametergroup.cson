@@ -1,0 +1,13 @@
+'.source.yaml':
+  'rds-dbclusterparametergroup':
+      'prefix': 'rds-dbclusterparametergroup'
+      'body':"""
+         ${1:rds-dbclusterparametergroup_name}:
+         	Type: AWS::RDS::DBClusterParameterGroup
+         	Properties:
+         		Description: ${2:String}     # required
+         		Family: ${3:String}     # required
+         		Parameters: ${4:Json}     # required
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+"""

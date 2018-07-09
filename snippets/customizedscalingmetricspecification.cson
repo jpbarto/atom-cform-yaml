@@ -1,0 +1,11 @@
+'.source.yaml':
+  'customizedscalingmetricspecification':
+      'prefix': 'customizedscalingmetricspecification'
+      'body':"""
+         Dimensions:                # optional, list of MetricDimension
+         	- ${2:MetricDimension}
+         MetricName: ${3:String}     # required
+         Namespace: ${4:String}     # required
+         Statistic: ${5:String}     # required
+         Unit: ${6:String}     # optional
+"""

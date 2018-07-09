@@ -1,0 +1,6 @@
+'.source.yaml':
+  'instanceassociationoutputlocation':
+      'prefix': 'instanceassociationoutputlocation'
+      'body':"""
+         S3Location: ${2:S3OutputLocation}     # optional
+"""

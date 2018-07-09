@@ -1,0 +1,6 @@
+'.source.yaml':
+  'projecttriggers':
+      'prefix': 'projecttriggers'
+      'body':"""
+         Webhook: ${2:Boolean}     # optional
+"""

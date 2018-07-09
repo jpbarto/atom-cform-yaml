@@ -1,0 +1,12 @@
+'.source.yaml':
+  'eks-cluster':
+      'prefix': 'eks-cluster'
+      'body':"""
+         ${1:eks-cluster_name}:
+         	Type: AWS::EKS::Cluster
+         	Properties:
+         		Name: ${2:String}     # optional
+         		ResourcesVpcConfig: ${3:ResourcesVpcConfig}     # required
+         		RoleArn: ${4:String}     # required
+         		Version: ${5:String}     # optional
+"""

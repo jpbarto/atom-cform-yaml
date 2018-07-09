@@ -1,0 +1,13 @@
+'.source.yaml':
+  'receiptrule-rule':
+      'prefix': 'receiptrule-rule'
+      'body':"""
+         Actions:                # optional, list of Action
+         	- ${2:Action}
+         Enabled: ${3:Boolean}     # optional
+         Name: ${4:String}     # optional
+         Recipients:                # optional, list of String
+         	- ${5:String}
+         ScanEnabled: ${6:Boolean}     # optional
+         TlsPolicy: ${7:String}     # optional
+"""

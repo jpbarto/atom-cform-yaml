@@ -5,12 +5,13 @@
          CloudwatchAlarm: ${2:CloudwatchAlarmAction}     # optional
          CloudwatchMetric: ${3:CloudwatchMetricAction}     # optional
          DynamoDB: ${4:DynamoDBAction}     # optional
-         Elasticsearch: ${5:ElasticsearchAction}     # optional
-         Firehose: ${6:FirehoseAction}     # optional
-         Kinesis: ${7:KinesisAction}     # optional
-         Lambda: ${8:LambdaAction}     # optional
-         Republish: ${9:RepublishAction}     # optional
-         S3: ${10:S3Action}     # optional
-         Sns: ${11:SnsAction}     # optional
-         Sqs: ${12:SqsAction}     # optional
+         DynamoDBv2: ${5:DynamoDBv2Action}     # optional
+         Elasticsearch: ${6:ElasticsearchAction}     # optional
+         Firehose: ${7:FirehoseAction}     # optional
+         Kinesis: ${8:KinesisAction}     # optional
+         Lambda: ${9:LambdaAction}     # optional
+         Republish: ${10:RepublishAction}     # optional
+         S3: ${11:S3Action}     # optional
+         Sns: ${12:SnsAction}     # optional
+         Sqs: ${13:SqsAction}     # optional
 """

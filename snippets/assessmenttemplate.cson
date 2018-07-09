@@ -1,0 +1,15 @@
+'.source.yaml':
+  'assessmenttemplate':
+      'prefix': 'assessmenttemplate'
+      'body':"""
+         ${1:assessmenttemplate_name}:
+         	Type: AWS::Inspector::AssessmentTemplate
+         	Properties:
+         		AssessmentTargetArn: ${2:String}     # required
+         		AssessmentTemplateName: ${3:String}     # optional
+         		DurationInSeconds: ${4:Integer}     # required
+         		RulesPackageArns:                # required, list of String
+         			- ${5:String}
+         		UserAttributesForFindings:                # optional, list of Tag
+         			- ${6:Tag}
+"""

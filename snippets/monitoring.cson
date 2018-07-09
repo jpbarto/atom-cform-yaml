@@ -1,0 +1,6 @@
+'.source.yaml':
+  'monitoring':
+      'prefix': 'monitoring'
+      'body':"""
+         Enabled: ${2:Boolean}     # optional
+"""

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'spotoptions':
+      'prefix': 'spotoptions'
+      'body':"""
+         InstanceInterruptionBehavior: ${2:String}     # optional
+         MaxPrice: ${3:String}     # optional
+         SpotInstanceType: ${4:String}     # optional
+"""

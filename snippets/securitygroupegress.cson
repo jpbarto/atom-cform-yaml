@@ -7,10 +7,11 @@
          	Properties:
          		CidrIp: ${2:String}     # optional
          		CidrIpv6: ${3:String}     # optional
-         		DestinationPrefixListId: ${4:String}     # optional
-         		DestinationSecurityGroupId: ${5:String}     # optional
-         		FromPort: ${6:Integer}     # optional
-         		GroupId: ${7:String}     # required
-         		IpProtocol: ${8:String}     # required
-         		ToPort: ${9:Integer}     # optional
+         		Description: ${4:String}     # optional
+         		DestinationPrefixListId: ${5:String}     # optional
+         		DestinationSecurityGroupId: ${6:String}     # optional
+         		FromPort: ${7:Integer}     # optional
+         		GroupId: ${8:String}     # required
+         		IpProtocol: ${9:String}     # required
+         		ToPort: ${10:Integer}     # optional
 """

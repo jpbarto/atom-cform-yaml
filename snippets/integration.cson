@@ -5,15 +5,16 @@
          CacheKeyParameters:                # optional, list of String
          	- ${2:String}
          CacheNamespace: ${3:String}     # optional
-         Credentials: ${4:String}     # optional
-         IntegrationHttpMethod: ${5:String}     # optional
+         ContentHandling: ${4:String}     # optional
+         Credentials: ${5:String}     # optional
+         IntegrationHttpMethod: ${6:String}     # optional
          IntegrationResponses:                # optional, list of IntegrationResponse
-         	- ${6:IntegrationResponse}
-         PassthroughBehavior: ${7:String}     # optional
+         	- ${7:IntegrationResponse}
+         PassthroughBehavior: ${8:String}     # optional
          RequestParameters:                # optional, map of String
-         	${8:String_key}: ${9:String_value}
+         	${9:String_key}: ${10:String_value}
          RequestTemplates:                # optional, map of String
-         	${10:String_key}: ${11:String_value}
-         Type: ${12:String}     # optional
-         Uri: ${13:String}     # optional
+         	${11:String_key}: ${12:String_value}
+         Type: ${13:String}     # optional
+         Uri: ${14:String}     # optional
 """

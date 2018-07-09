@@ -1,0 +1,9 @@
+'.source.yaml':
+  'partitioninput':
+      'prefix': 'partitioninput'
+      'body':"""
+         Parameters: ${2:Json}     # optional
+         StorageDescriptor: ${3:StorageDescriptor}     # optional
+         Values:                # required, list of String
+         	- ${4:String}
+"""

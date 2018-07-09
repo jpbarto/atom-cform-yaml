@@ -1,0 +1,18 @@
+'.source.yaml':
+  'job':
+      'prefix': 'job'
+      'body':"""
+         ${1:job_name}:
+         	Type: AWS::Glue::Job
+         	Properties:
+         		AllocatedCapacity: ${2:Double}     # optional
+         		Command: ${3:JobCommand}     # required
+         		Connections: ${4:ConnectionsList}     # optional
+         		DefaultArguments: ${5:Json}     # optional
+         		Description: ${6:String}     # optional
+         		ExecutionProperty: ${7:ExecutionProperty}     # optional
+         		LogUri: ${8:String}     # optional
+         		MaxRetries: ${9:Double}     # optional
+         		Name: ${10:String}     # optional
+         		Role: ${11:String}     # required
+"""

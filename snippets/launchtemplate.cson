@@ -1,0 +1,10 @@
+'.source.yaml':
+  'launchtemplate':
+      'prefix': 'launchtemplate'
+      'body':"""
+         ${1:launchtemplate_name}:
+         	Type: AWS::EC2::LaunchTemplate
+         	Properties:
+         		LaunchTemplateData: ${2:LaunchTemplateData}     # optional
+         		LaunchTemplateName: ${3:String}     # optional
+"""

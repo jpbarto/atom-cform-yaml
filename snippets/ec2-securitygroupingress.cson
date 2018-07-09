@@ -7,12 +7,13 @@
          	Properties:
          		CidrIp: ${2:String}     # optional
          		CidrIpv6: ${3:String}     # optional
-         		FromPort: ${4:Integer}     # optional
-         		GroupId: ${5:String}     # optional
-         		GroupName: ${6:String}     # optional
-         		IpProtocol: ${7:String}     # required
-         		SourceSecurityGroupId: ${8:String}     # optional
-         		SourceSecurityGroupName: ${9:String}     # optional
-         		SourceSecurityGroupOwnerId: ${10:String}     # optional
-         		ToPort: ${11:Integer}     # optional
+         		Description: ${4:String}     # optional
+         		FromPort: ${5:Integer}     # optional
+         		GroupId: ${6:String}     # optional
+         		GroupName: ${7:String}     # optional
+         		IpProtocol: ${8:String}     # required
+         		SourceSecurityGroupId: ${9:String}     # optional
+         		SourceSecurityGroupName: ${10:String}     # optional
+         		SourceSecurityGroupOwnerId: ${11:String}     # optional
+         		ToPort: ${12:Integer}     # optional
 """

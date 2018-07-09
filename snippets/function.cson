@@ -13,11 +13,12 @@
          		Handler: ${7:String}     # required
          		KmsKeyArn: ${8:String}     # optional
          		MemorySize: ${9:Integer}     # optional
-         		Role: ${10:String}     # required
-         		Runtime: ${11:String}     # required
+         		ReservedConcurrentExecutions: ${10:Integer}     # optional
+         		Role: ${11:String}     # required
+         		Runtime: ${12:String}     # required
          		Tags:                # optional, list of Tag
-         			- ${12:Tag}
-         		Timeout: ${13:Integer}     # optional
-         		TracingConfig: ${14:TracingConfig}     # optional
-         		VpcConfig: ${15:VpcConfig}     # optional
+         			- ${13:Tag}
+         		Timeout: ${14:Integer}     # optional
+         		TracingConfig: ${15:TracingConfig}     # optional
+         		VpcConfig: ${16:VpcConfig}     # optional
 """

@@ -1,0 +1,12 @@
+'.source.yaml':
+  'lifecyclehookspecification':
+      'prefix': 'lifecyclehookspecification'
+      'body':"""
+         DefaultResult: ${2:String}     # optional
+         HeartbeatTimeout: ${3:Integer}     # optional
+         LifecycleHookName: ${4:String}     # required
+         LifecycleTransition: ${5:String}     # required
+         NotificationMetadata: ${6:String}     # optional
+         NotificationTargetARN: ${7:String}     # optional
+         RoleARN: ${8:String}     # optional
+"""

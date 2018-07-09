@@ -1,0 +1,22 @@
+'.source.yaml':
+  'dax-cluster':
+      'prefix': 'dax-cluster'
+      'body':"""
+         ${1:dax-cluster_name}:
+         	Type: AWS::DAX::Cluster
+         	Properties:
+         		AvailabilityZones:                # optional, list of String
+         			- ${2:String}
+         		ClusterName: ${3:String}     # optional
+         		Description: ${4:String}     # optional
+         		IAMRoleARN: ${5:String}     # required
+         		NodeType: ${6:String}     # required
+         		NotificationTopicARN: ${7:String}     # optional
+         		ParameterGroupName: ${8:String}     # optional
+         		PreferredMaintenanceWindow: ${9:String}     # optional
+         		ReplicationFactor: ${10:Integer}     # required
+         		SecurityGroupIds:                # optional, list of String
+         			- ${11:String}
+         		SubnetGroupName: ${12:String}     # optional
+         		Tags: ${13:Json}     # optional
+"""

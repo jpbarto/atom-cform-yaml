@@ -1,0 +1,8 @@
+'.source.yaml':
+  'logginginfo':
+      'prefix': 'logginginfo'
+      'body':"""
+         Region: ${2:String}     # required
+         S3Bucket: ${3:String}     # required
+         S3Prefix: ${4:String}     # optional
+"""

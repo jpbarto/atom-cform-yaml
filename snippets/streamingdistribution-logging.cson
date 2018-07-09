@@ -1,0 +1,8 @@
+'.source.yaml':
+  'streamingdistribution-logging':
+      'prefix': 'streamingdistribution-logging'
+      'body':"""
+         Bucket: ${2:String}     # required
+         Enabled: ${3:Boolean}     # required
+         Prefix: ${4:String}     # required
+"""

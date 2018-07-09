@@ -1,7 +1,0 @@
-'.source.yaml':
-  'encryptionconfiguration':
-      'prefix': 'encryptionconfiguration'
-      'body':"""
-         KMSEncryptionConfig: ${2:KMSEncryptionConfig}     # optional
-         NoEncryptionConfig: ${3:String}     # optional
-"""

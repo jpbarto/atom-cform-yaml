@@ -1,0 +1,11 @@
+'.source.yaml':
+  'glue-table':
+      'prefix': 'glue-table'
+      'body':"""
+         ${1:glue-table_name}:
+         	Type: AWS::Glue::Table
+         	Properties:
+         		CatalogId: ${2:String}     # required
+         		DatabaseName: ${3:String}     # required
+         		TableInput: ${4:TableInput}     # required
+"""

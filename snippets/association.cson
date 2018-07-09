@@ -5,12 +5,14 @@
          ${1:association_name}:
          	Type: AWS::SSM::Association
          	Properties:
-         		DocumentVersion: ${2:String}     # optional
-         		InstanceId: ${3:String}     # optional
-         		Name: ${4:String}     # required
+         		AssociationName: ${2:String}     # optional
+         		DocumentVersion: ${3:String}     # optional
+         		InstanceId: ${4:String}     # optional
+         		Name: ${5:String}     # required
+         		OutputLocation: ${6:InstanceAssociationOutputLocation}     # optional
          		Parameters:                # optional, map of ParameterValues
-         			${5:ParameterValues_key}: ${6:ParameterValues_value}
-         		ScheduleExpression: ${7:String}     # optional
+         			${7:ParameterValues_key}: ${8:ParameterValues_value}
+         		ScheduleExpression: ${9:String}     # optional
          		Targets:                # optional, list of Target
-         			- ${8:Target}
+         			- ${10:Target}
 """

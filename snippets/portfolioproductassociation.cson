@@ -1,0 +1,12 @@
+'.source.yaml':
+  'portfolioproductassociation':
+      'prefix': 'portfolioproductassociation'
+      'body':"""
+         ${1:portfolioproductassociation_name}:
+         	Type: AWS::ServiceCatalog::PortfolioProductAssociation
+         	Properties:
+         		AcceptLanguage: ${2:String}     # optional
+         		PortfolioId: ${3:String}     # required
+         		ProductId: ${4:String}     # required
+         		SourcePortfolioId: ${5:String}     # optional
+"""

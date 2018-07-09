@@ -15,9 +15,8 @@
          MethodSettings:                # optional, list of MethodSetting
          	- ${12:MethodSetting}
          MetricsEnabled: ${13:Boolean}     # optional
-         StageName: ${14:String}     # optional
-         ThrottlingBurstLimit: ${15:Integer}     # optional
-         ThrottlingRateLimit: ${16:Double}     # optional
+         ThrottlingBurstLimit: ${14:Integer}     # optional
+         ThrottlingRateLimit: ${15:Double}     # optional
          Variables:                # optional, map of String
-         	${17:String_key}: ${18:String_value}
+         	${16:String_key}: ${17:String_value}
 """

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'trigger-action':
+      'prefix': 'trigger-action'
+      'body':"""
+         Arguments: ${2:Json}     # optional
+         JobName: ${3:String}     # optional
+"""

@@ -1,0 +1,15 @@
+'.source.yaml':
+  'trigger':
+      'prefix': 'trigger'
+      'body':"""
+         ${1:trigger_name}:
+         	Type: AWS::Glue::Trigger
+         	Properties:
+         		Actions:                # required, list of Action
+         			- ${2:Action}
+         		Description: ${3:String}     # optional
+         		Name: ${4:String}     # optional
+         		Predicate: ${5:Predicate}     # optional
+         		Schedule: ${6:String}     # optional
+         		Type: ${7:String}     # required
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'budget':
+      'prefix': 'budget'
+      'body':"""
+         ${1:budget_name}:
+         	Type: AWS::Budgets::Budget
+         	Properties:
+         		Budget: ${2:BudgetData}     # required
+         		NotificationsWithSubscribers:                # optional, list of NotificationWithSubscribers
+         			- ${3:NotificationWithSubscribers}
+"""

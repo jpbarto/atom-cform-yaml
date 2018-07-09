@@ -1,0 +1,6 @@
+'.source.yaml':
+  'ssekmsencryptedobjects':
+      'prefix': 'ssekmsencryptedobjects'
+      'body':"""
+         Status: ${2:String}     # required
+"""

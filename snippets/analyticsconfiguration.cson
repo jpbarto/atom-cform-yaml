@@ -1,0 +1,10 @@
+'.source.yaml':
+  'analyticsconfiguration':
+      'prefix': 'analyticsconfiguration'
+      'body':"""
+         Id: ${2:String}     # required
+         Prefix: ${3:String}     # optional
+         StorageClassAnalysis: ${4:StorageClassAnalysis}     # required
+         TagFilters:                # optional, list of TagFilter
+         	- ${5:TagFilter}
+"""

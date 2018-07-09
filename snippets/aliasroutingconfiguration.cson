@@ -1,0 +1,7 @@
+'.source.yaml':
+  'aliasroutingconfiguration':
+      'prefix': 'aliasroutingconfiguration'
+      'body':"""
+         AdditionalVersionWeights:                # required, list of VersionWeight
+         	- ${2:VersionWeight}
+"""

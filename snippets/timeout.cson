@@ -1,0 +1,6 @@
+'.source.yaml':
+  'timeout':
+      'prefix': 'timeout'
+      'body':"""
+         AttemptDurationSeconds: ${2:Integer}     # optional
+"""

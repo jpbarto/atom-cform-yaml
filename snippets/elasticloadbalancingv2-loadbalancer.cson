@@ -12,8 +12,11 @@
          		Scheme: ${5:String}     # optional
          		SecurityGroups:                # optional, list of String
          			- ${6:String}
+         		SubnetMappings:                # optional, list of SubnetMapping
+         			- ${7:SubnetMapping}
          		Subnets:                # optional, list of String
-         			- ${7:String}
+         			- ${8:String}
          		Tags:                # optional, list of Tag
-         			- ${8:Tag}
+         			- ${9:Tag}
+         		Type: ${10:String}     # optional
 """

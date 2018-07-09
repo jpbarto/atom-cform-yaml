@@ -1,0 +1,10 @@
+'.source.yaml':
+  'awsvpcconfiguration':
+      'prefix': 'awsvpcconfiguration'
+      'body':"""
+         AssignPublicIp: ${2:String}     # optional
+         SecurityGroups:                # optional, list of String
+         	- ${3:String}
+         Subnets:                # required, list of String
+         	- ${4:String}
+"""

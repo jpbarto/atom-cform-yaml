@@ -1,0 +1,12 @@
+'.source.yaml':
+  'partition':
+      'prefix': 'partition'
+      'body':"""
+         ${1:partition_name}:
+         	Type: AWS::Glue::Partition
+         	Properties:
+         		CatalogId: ${2:String}     # required
+         		DatabaseName: ${3:String}     # required
+         		PartitionInput: ${4:PartitionInput}     # required
+         		TableName: ${5:String}     # required
+"""

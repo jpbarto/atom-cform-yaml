@@ -1,0 +1,6 @@
+'.source.yaml':
+  'splunkretryoptions':
+      'prefix': 'splunkretryoptions'
+      'body':"""
+         DurationInSeconds: ${2:Integer}     # required
+"""

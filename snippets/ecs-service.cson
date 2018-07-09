@@ -1,0 +1,26 @@
+'.source.yaml':
+  'ecs-service':
+      'prefix': 'ecs-service'
+      'body':"""
+         ${1:ecs-service_name}:
+         	Type: AWS::ECS::Service
+         	Properties:
+         		Cluster: ${2:String}     # optional
+         		DeploymentConfiguration: ${3:DeploymentConfiguration}     # optional
+         		DesiredCount: ${4:Integer}     # optional
+         		HealthCheckGracePeriodSeconds: ${5:Integer}     # optional
+         		LaunchType: ${6:String}     # optional
+         		LoadBalancers:                # optional, list of LoadBalancer
+         			- ${7:LoadBalancer}
+         		NetworkConfiguration: ${8:NetworkConfiguration}     # optional
+         		PlacementConstraints:                # optional, list of PlacementConstraint
+         			- ${9:PlacementConstraint}
+         		PlacementStrategies:                # optional, list of PlacementStrategy
+         			- ${10:PlacementStrategy}
+         		PlatformVersion: ${11:String}     # optional
+         		Role: ${12:String}     # optional
+         		ServiceName: ${13:String}     # optional
+         		ServiceRegistries:                # optional, list of ServiceRegistry
+         			- ${14:ServiceRegistry}
+         		TaskDefinition: ${15:String}     # required
+"""

@@ -3,8 +3,9 @@
       'prefix': 'input'
       'body':"""
          InputParallelism: ${2:InputParallelism}     # optional
-         InputSchema: ${3:InputSchema}     # required
-         KinesisFirehoseInput: ${4:KinesisFirehoseInput}     # optional
-         KinesisStreamsInput: ${5:KinesisStreamsInput}     # optional
-         NamePrefix: ${6:String}     # required
+         InputProcessingConfiguration: ${3:InputProcessingConfiguration}     # optional
+         InputSchema: ${4:InputSchema}     # required
+         KinesisFirehoseInput: ${5:KinesisFirehoseInput}     # optional
+         KinesisStreamsInput: ${6:KinesisStreamsInput}     # optional
+         NamePrefix: ${7:String}     # required
 """

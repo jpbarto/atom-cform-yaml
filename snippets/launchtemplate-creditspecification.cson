@@ -1,0 +1,6 @@
+'.source.yaml':
+  'launchtemplate-creditspecification':
+      'prefix': 'launchtemplate-creditspecification'
+      'body':"""
+         CpuCredits: ${2:String}     # optional
+"""
