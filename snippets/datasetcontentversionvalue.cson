@@ -1,0 +1,6 @@
+'.source.yaml':
+  'datasetcontentversionvalue':
+      'prefix': 'datasetcontentversionvalue'
+      'body':"""
+         DatasetName: ${2:String}     # optional
+"""

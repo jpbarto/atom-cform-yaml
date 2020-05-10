@@ -1,0 +1,7 @@
+'.source.yaml':
+  'cassandra-table-column':
+      'prefix': 'cassandra-table-column'
+      'body':"""
+         ColumnName: ${2:String}     # required
+         ColumnType: ${3:String}     # required
+"""

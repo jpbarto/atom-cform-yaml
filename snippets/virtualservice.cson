@@ -1,0 +1,14 @@
+'.source.yaml':
+  'virtualservice':
+      'prefix': 'virtualservice'
+      'body':"""
+         ${1:virtualservice_name}:
+         	Type: AWS::AppMesh::VirtualService
+         	Properties:
+         		MeshName: ${2:String}     # required
+         		MeshOwner: ${3:String}     # optional
+         		Spec: ${4:VirtualServiceSpec}     # required
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+         		VirtualServiceName: ${6:String}     # required
+"""

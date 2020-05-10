@@ -1,0 +1,8 @@
+'.source.yaml':
+  'origingroupmembers':
+      'prefix': 'origingroupmembers'
+      'body':"""
+         Items:                # required, list of OriginGroupMember
+         	- ${2:OriginGroupMember}
+         Quantity: ${3:Integer}     # required
+"""

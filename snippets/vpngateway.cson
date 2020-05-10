@@ -5,7 +5,8 @@
          ${1:vpngateway_name}:
          	Type: AWS::EC2::VPNGateway
          	Properties:
+         		AmazonSideAsn: ${2:Long}     # optional
          		Tags:                # optional, list of Tag
-         			- ${2:Tag}
-         		Type: ${3:String}     # required
+         			- ${3:Tag}
+         		Type: ${4:String}     # required
 """

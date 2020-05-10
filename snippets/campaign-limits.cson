@@ -1,0 +1,9 @@
+'.source.yaml':
+  'campaign-limits':
+      'prefix': 'campaign-limits'
+      'body':"""
+         Daily: ${2:Integer}     # optional
+         MaximumDuration: ${3:Integer}     # optional
+         MessagesPerSecond: ${4:Integer}     # optional
+         Total: ${5:Integer}     # optional
+"""

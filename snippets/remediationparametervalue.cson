@@ -1,0 +1,7 @@
+'.source.yaml':
+  'remediationparametervalue':
+      'prefix': 'remediationparametervalue'
+      'body':"""
+         ResourceValue: ${2:ResourceValue}     # optional
+         StaticValue: ${3:StaticValue}     # optional
+"""

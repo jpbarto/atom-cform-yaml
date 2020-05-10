@@ -1,0 +1,10 @@
+'.source.yaml':
+  'configurationassociation':
+      'prefix': 'configurationassociation'
+      'body':"""
+         ${1:configurationassociation_name}:
+         	Type: AWS::AmazonMQ::ConfigurationAssociation
+         	Properties:
+         		Broker: ${2:String}     # required
+         		Configuration: ${3:ConfigurationId}     # required
+"""

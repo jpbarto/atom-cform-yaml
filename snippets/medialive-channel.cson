@@ -1,0 +1,19 @@
+'.source.yaml':
+  'medialive-channel':
+      'prefix': 'medialive-channel'
+      'body':"""
+         ${1:medialive-channel_name}:
+         	Type: AWS::MediaLive::Channel
+         	Properties:
+         		ChannelClass: ${2:String}     # optional
+         		Destinations:                # optional, list of OutputDestination
+         			- ${3:OutputDestination}
+         		EncoderSettings: ${4:Json}     # optional
+         		InputAttachments:                # optional, list of InputAttachment
+         			- ${5:InputAttachment}
+         		InputSpecification: ${6:InputSpecification}     # optional
+         		LogLevel: ${7:String}     # optional
+         		Name: ${8:String}     # optional
+         		RoleArn: ${9:String}     # optional
+         		Tags: ${10:Json}     # optional
+"""

@@ -1,0 +1,13 @@
+'.source.yaml':
+  'backupvault':
+      'prefix': 'backupvault'
+      'body':"""
+         ${1:backupvault_name}:
+         	Type: AWS::Backup::BackupVault
+         	Properties:
+         		AccessPolicy: ${2:Json}     # optional
+         		BackupVaultName: ${3:String}     # required
+         		BackupVaultTags: ${4:Json}     # optional
+         		EncryptionKeyArn: ${5:String}     # optional
+         		Notifications: ${6:NotificationObjectType}     # optional
+"""

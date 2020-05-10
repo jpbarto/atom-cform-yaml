@@ -1,0 +1,8 @@
+'.source.yaml':
+  'group-tagfilter':
+      'prefix': 'group-tagfilter'
+      'body':"""
+         Key: ${2:String}     # optional
+         Values:                # optional, list of String
+         	- ${3:String}
+"""

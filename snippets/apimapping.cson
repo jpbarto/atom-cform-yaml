@@ -1,0 +1,12 @@
+'.source.yaml':
+  'apimapping':
+      'prefix': 'apimapping'
+      'body':"""
+         ${1:apimapping_name}:
+         	Type: AWS::ApiGatewayV2::ApiMapping
+         	Properties:
+         		ApiId: ${2:String}     # required
+         		ApiMappingKey: ${3:String}     # optional
+         		DomainName: ${4:String}     # required
+         		Stage: ${5:String}     # required
+"""

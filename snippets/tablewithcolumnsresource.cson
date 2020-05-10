@@ -1,0 +1,10 @@
+'.source.yaml':
+  'tablewithcolumnsresource':
+      'prefix': 'tablewithcolumnsresource'
+      'body':"""
+         ColumnNames:                # optional, list of String
+         	- ${2:String}
+         ColumnWildcard: ${3:ColumnWildcard}     # optional
+         DatabaseName: ${4:String}     # optional
+         Name: ${5:String}     # optional
+"""

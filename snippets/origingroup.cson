@@ -1,0 +1,8 @@
+'.source.yaml':
+  'origingroup':
+      'prefix': 'origingroup'
+      'body':"""
+         FailoverCriteria: ${2:OriginGroupFailoverCriteria}     # required
+         Id: ${3:String}     # required
+         Members: ${4:OriginGroupMembers}     # required
+"""

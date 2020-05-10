@@ -1,0 +1,7 @@
+'.source.yaml':
+  'tlsvalidationcontexttrust':
+      'prefix': 'tlsvalidationcontexttrust'
+      'body':"""
+         ACM: ${2:TlsValidationContextAcmTrust}     # optional
+         File: ${3:TlsValidationContextFileTrust}     # optional
+"""

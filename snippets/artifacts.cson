@@ -2,10 +2,13 @@
   'artifacts':
       'prefix': 'artifacts'
       'body':"""
-         Location: ${2:String}     # optional
-         Name: ${3:String}     # optional
-         NamespaceType: ${4:String}     # optional
-         Packaging: ${5:String}     # optional
-         Path: ${6:String}     # optional
-         Type: ${7:String}     # required
+         ArtifactIdentifier: ${2:String}     # optional
+         EncryptionDisabled: ${3:Boolean}     # optional
+         Location: ${4:String}     # optional
+         Name: ${5:String}     # optional
+         NamespaceType: ${6:String}     # optional
+         OverrideArtifactName: ${7:Boolean}     # optional
+         Packaging: ${8:String}     # optional
+         Path: ${9:String}     # optional
+         Type: ${10:String}     # required
 """

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'stepconfig':
+      'prefix': 'stepconfig'
+      'body':"""
+         ActionOnFailure: ${2:String}     # optional
+         HadoopJarStep: ${3:HadoopJarStepConfig}     # required
+         Name: ${4:String}     # required
+"""

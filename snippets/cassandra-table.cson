@@ -1,0 +1,17 @@
+'.source.yaml':
+  'cassandra-table':
+      'prefix': 'cassandra-table'
+      'body':"""
+         ${1:cassandra-table_name}:
+         	Type: AWS::Cassandra::Table
+         	Properties:
+         		BillingMode: ${2:BillingMode}     # optional
+         		ClusteringKeyColumns:                # optional, list of ClusteringKeyColumn
+         			- ${3:ClusteringKeyColumn}
+         		KeyspaceName: ${4:String}     # required
+         		PartitionKeyColumns:                # required, list of Column
+         			- ${5:Column}
+         		RegularColumns:                # optional, list of Column
+         			- ${6:Column}
+         		TableName: ${7:String}     # optional
+"""

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'launchtemplate-hibernationoptions':
+      'prefix': 'launchtemplate-hibernationoptions'
+      'body':"""
+         Configured: ${2:Boolean}     # optional
+"""

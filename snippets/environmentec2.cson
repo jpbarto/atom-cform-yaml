@@ -1,0 +1,19 @@
+'.source.yaml':
+  'environmentec2':
+      'prefix': 'environmentec2'
+      'body':"""
+         ${1:environmentec2_name}:
+         	Type: AWS::Cloud9::EnvironmentEC2
+         	Properties:
+         		AutomaticStopTimeMinutes: ${2:Integer}     # optional
+         		ConnectionType: ${3:String}     # optional
+         		Description: ${4:String}     # optional
+         		InstanceType: ${5:String}     # required
+         		Name: ${6:String}     # optional
+         		OwnerArn: ${7:String}     # optional
+         		Repositories:                # optional, list of Repository
+         			- ${8:Repository}
+         		SubnetId: ${9:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${10:Tag}
+"""

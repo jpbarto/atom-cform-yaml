@@ -1,0 +1,6 @@
+'.source.yaml':
+  'tlsconfig':
+      'prefix': 'tlsconfig'
+      'body':"""
+         ServerNameToVerify: ${2:String}     # optional
+"""

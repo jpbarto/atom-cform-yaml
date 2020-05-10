@@ -1,0 +1,12 @@
+'.source.yaml':
+  'mesh':
+      'prefix': 'mesh'
+      'body':"""
+         ${1:mesh_name}:
+         	Type: AWS::AppMesh::Mesh
+         	Properties:
+         		MeshName: ${2:String}     # required
+         		Spec: ${3:MeshSpec}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${4:Tag}
+"""

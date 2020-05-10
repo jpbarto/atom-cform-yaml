@@ -1,0 +1,6 @@
+'.source.yaml':
+  'instance-hibernationoptions':
+      'prefix': 'instance-hibernationoptions'
+      'body':"""
+         Configured: ${2:Boolean}     # optional
+"""

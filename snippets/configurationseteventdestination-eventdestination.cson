@@ -1,0 +1,11 @@
+'.source.yaml':
+  'configurationseteventdestination-eventdestination':
+      'prefix': 'configurationseteventdestination-eventdestination'
+      'body':"""
+         CloudWatchDestination: ${2:CloudWatchDestination}     # optional
+         Enabled: ${3:Boolean}     # optional
+         KinesisFirehoseDestination: ${4:KinesisFirehoseDestination}     # optional
+         MatchingEventTypes:                # required, list of String
+         	- ${5:String}
+         Name: ${6:String}     # optional
+"""

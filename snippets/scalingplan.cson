@@ -1,0 +1,11 @@
+'.source.yaml':
+  'scalingplan':
+      'prefix': 'scalingplan'
+      'body':"""
+         ${1:scalingplan_name}:
+         	Type: AWS::AutoScalingPlans::ScalingPlan
+         	Properties:
+         		ApplicationSource: ${2:ApplicationSource}     # required
+         		ScalingInstructions:                # required, list of ScalingInstruction
+         			- ${3:ScalingInstruction}
+"""

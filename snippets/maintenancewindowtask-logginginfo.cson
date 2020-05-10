@@ -1,0 +1,8 @@
+'.source.yaml':
+  'maintenancewindowtask-logginginfo':
+      'prefix': 'maintenancewindowtask-logginginfo'
+      'body':"""
+         Region: ${2:String}     # required
+         S3Bucket: ${3:String}     # required
+         S3Prefix: ${4:String}     # optional
+"""

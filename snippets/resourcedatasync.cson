@@ -1,0 +1,17 @@
+'.source.yaml':
+  'resourcedatasync':
+      'prefix': 'resourcedatasync'
+      'body':"""
+         ${1:resourcedatasync_name}:
+         	Type: AWS::SSM::ResourceDataSync
+         	Properties:
+         		BucketName: ${2:String}     # optional
+         		BucketPrefix: ${3:String}     # optional
+         		BucketRegion: ${4:String}     # optional
+         		KMSKeyArn: ${5:String}     # optional
+         		S3Destination: ${6:S3Destination}     # optional
+         		SyncFormat: ${7:String}     # optional
+         		SyncName: ${8:String}     # required
+         		SyncSource: ${9:SyncSource}     # optional
+         		SyncType: ${10:String}     # optional
+"""

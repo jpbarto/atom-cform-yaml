@@ -1,0 +1,9 @@
+'.source.yaml':
+  'math':
+      'prefix': 'math'
+      'body':"""
+         Attribute: ${2:String}     # optional
+         Math: ${3:String}     # optional
+         Name: ${4:String}     # optional
+         Next: ${5:String}     # optional
+"""

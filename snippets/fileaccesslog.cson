@@ -1,0 +1,6 @@
+'.source.yaml':
+  'fileaccesslog':
+      'prefix': 'fileaccesslog'
+      'body':"""
+         Path: ${2:String}     # required
+"""

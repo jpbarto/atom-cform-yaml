@@ -1,0 +1,6 @@
+'.source.yaml':
+  'kinesisanalyticsv2-application-jsonmappingparameters':
+      'prefix': 'kinesisanalyticsv2-application-jsonmappingparameters'
+      'body':"""
+         RecordRowPath: ${2:String}     # required
+"""

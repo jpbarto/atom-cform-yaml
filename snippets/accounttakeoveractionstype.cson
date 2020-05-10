@@ -1,0 +1,8 @@
+'.source.yaml':
+  'accounttakeoveractionstype':
+      'prefix': 'accounttakeoveractionstype'
+      'body':"""
+         HighAction: ${2:AccountTakeoverActionType}     # optional
+         LowAction: ${3:AccountTakeoverActionType}     # optional
+         MediumAction: ${4:AccountTakeoverActionType}     # optional
+"""

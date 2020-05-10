@@ -1,0 +1,8 @@
+'.source.yaml':
+  'resourcedefinitionversion-s3machinelearningmodelresourcedata':
+      'prefix': 'resourcedefinitionversion-s3machinelearningmodelresourcedata'
+      'body':"""
+         DestinationPath: ${2:String}     # required
+         OwnerSetting: ${3:ResourceDownloadOwnerSetting}     # optional
+         S3Uri: ${4:String}     # required
+"""

@@ -1,0 +1,15 @@
+'.source.yaml':
+  'userpool-lambdaconfig':
+      'prefix': 'userpool-lambdaconfig'
+      'body':"""
+         CreateAuthChallenge: ${2:String}     # optional
+         CustomMessage: ${3:String}     # optional
+         DefineAuthChallenge: ${4:String}     # optional
+         PostAuthentication: ${5:String}     # optional
+         PostConfirmation: ${6:String}     # optional
+         PreAuthentication: ${7:String}     # optional
+         PreSignUp: ${8:String}     # optional
+         PreTokenGeneration: ${9:String}     # optional
+         UserMigration: ${10:String}     # optional
+         VerifyAuthChallengeResponse: ${11:String}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'columnwildcard':
+      'prefix': 'columnwildcard'
+      'body':"""
+         ExcludedColumnNames:                # optional, list of String
+         	- ${2:String}
+"""

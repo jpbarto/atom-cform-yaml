@@ -10,6 +10,7 @@
          		EnvironmentId: ${4:String}     # optional
          		OptionSettings:                # optional, list of ConfigurationOptionSetting
          			- ${5:ConfigurationOptionSetting}
-         		SolutionStackName: ${6:String}     # optional
-         		SourceConfiguration: ${7:SourceConfiguration}     # optional
+         		PlatformArn: ${6:String}     # optional
+         		SolutionStackName: ${7:String}     # optional
+         		SourceConfiguration: ${8:SourceConfiguration}     # optional
 """

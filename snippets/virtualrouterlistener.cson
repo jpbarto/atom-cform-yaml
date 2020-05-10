@@ -1,0 +1,6 @@
+'.source.yaml':
+  'virtualrouterlistener':
+      'prefix': 'virtualrouterlistener'
+      'body':"""
+         PortMapping: ${2:PortMapping}     # required
+"""

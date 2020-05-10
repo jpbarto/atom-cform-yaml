@@ -1,0 +1,19 @@
+'.source.yaml':
+  'dataset':
+      'prefix': 'dataset'
+      'body':"""
+         ${1:dataset_name}:
+         	Type: AWS::IoTAnalytics::Dataset
+         	Properties:
+         		Actions:                # required, list of Action
+         			- ${2:Action}
+         		ContentDeliveryRules:                # optional, list of DatasetContentDeliveryRule
+         			- ${3:DatasetContentDeliveryRule}
+         		DatasetName: ${4:String}     # optional
+         		RetentionPeriod: ${5:RetentionPeriod}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${6:Tag}
+         		Triggers:                # optional, list of Trigger
+         			- ${7:Trigger}
+         		VersioningConfiguration: ${8:VersioningConfiguration}     # optional
+"""

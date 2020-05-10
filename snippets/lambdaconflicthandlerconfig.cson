@@ -1,0 +1,6 @@
+'.source.yaml':
+  'lambdaconflicthandlerconfig':
+      'prefix': 'lambdaconflicthandlerconfig'
+      'body':"""
+         LambdaConflictHandlerArn: ${2:String}     # optional
+"""

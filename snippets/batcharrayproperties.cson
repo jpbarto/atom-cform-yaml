@@ -1,0 +1,6 @@
+'.source.yaml':
+  'batcharrayproperties':
+      'prefix': 'batcharrayproperties'
+      'body':"""
+         Size: ${2:Integer}     # optional
+"""

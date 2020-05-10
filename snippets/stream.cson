@@ -8,6 +8,7 @@
          		Name: ${2:String}     # optional
          		RetentionPeriodHours: ${3:Integer}     # optional
          		ShardCount: ${4:Integer}     # required
+         		StreamEncryption: ${5:StreamEncryption}     # optional
          		Tags:                # optional, list of Tag
-         			- ${5:Tag}
+         			- ${6:Tag}
 """

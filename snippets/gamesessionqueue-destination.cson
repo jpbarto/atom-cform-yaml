@@ -1,0 +1,6 @@
+'.source.yaml':
+  'gamesessionqueue-destination':
+      'prefix': 'gamesessionqueue-destination'
+      'body':"""
+         DestinationArn: ${2:String}     # optional
+"""

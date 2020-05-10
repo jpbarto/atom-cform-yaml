@@ -1,0 +1,7 @@
+'.source.yaml':
+  'workgroup-encryptionconfiguration':
+      'prefix': 'workgroup-encryptionconfiguration'
+      'body':"""
+         EncryptionOption: ${2:String}     # required
+         KmsKey: ${3:String}     # optional
+"""

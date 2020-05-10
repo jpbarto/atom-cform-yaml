@@ -1,0 +1,7 @@
+'.source.yaml':
+  'tableresource':
+      'prefix': 'tableresource'
+      'body':"""
+         DatabaseName: ${2:String}     # optional
+         Name: ${3:String}     # optional
+"""

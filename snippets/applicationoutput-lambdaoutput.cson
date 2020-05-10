@@ -1,0 +1,7 @@
+'.source.yaml':
+  'applicationoutput-lambdaoutput':
+      'prefix': 'applicationoutput-lambdaoutput'
+      'body':"""
+         ResourceARN: ${2:String}     # required
+         RoleARN: ${3:String}     # required
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'userpooluicustomizationattachment':
+      'prefix': 'userpooluicustomizationattachment'
+      'body':"""
+         ${1:userpooluicustomizationattachment_name}:
+         	Type: AWS::Cognito::UserPoolUICustomizationAttachment
+         	Properties:
+         		CSS: ${2:String}     # optional
+         		ClientId: ${3:String}     # required
+         		UserPoolId: ${4:String}     # required
+"""

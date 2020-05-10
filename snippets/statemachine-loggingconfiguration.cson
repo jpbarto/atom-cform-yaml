@@ -1,0 +1,9 @@
+'.source.yaml':
+  'statemachine-loggingconfiguration':
+      'prefix': 'statemachine-loggingconfiguration'
+      'body':"""
+         Destinations:                # optional, list of LogDestination
+         	- ${2:LogDestination}
+         IncludeExecutionData: ${3:Boolean}     # optional
+         Level: ${4:String}     # optional
+"""

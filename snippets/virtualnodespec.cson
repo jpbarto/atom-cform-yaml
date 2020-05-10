@@ -1,0 +1,12 @@
+'.source.yaml':
+  'virtualnodespec':
+      'prefix': 'virtualnodespec'
+      'body':"""
+         BackendDefaults: ${2:BackendDefaults}     # optional
+         Backends:                # optional, list of Backend
+         	- ${3:Backend}
+         Listeners:                # optional, list of Listener
+         	- ${4:Listener}
+         Logging: ${5:Logging}     # optional
+         ServiceDiscovery: ${6:ServiceDiscovery}     # optional
+"""

@@ -1,0 +1,13 @@
+'.source.yaml':
+  'userpoolriskconfigurationattachment':
+      'prefix': 'userpoolriskconfigurationattachment'
+      'body':"""
+         ${1:userpoolriskconfigurationattachment_name}:
+         	Type: AWS::Cognito::UserPoolRiskConfigurationAttachment
+         	Properties:
+         		AccountTakeoverRiskConfiguration: ${2:AccountTakeoverRiskConfigurationType}     # optional
+         		ClientId: ${3:String}     # required
+         		CompromisedCredentialsRiskConfiguration: ${4:CompromisedCredentialsRiskConfigurationType}     # optional
+         		RiskExceptionConfiguration: ${5:RiskExceptionConfigurationType}     # optional
+         		UserPoolId: ${6:String}     # required
+"""

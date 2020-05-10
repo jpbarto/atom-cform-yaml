@@ -1,0 +1,15 @@
+'.source.yaml':
+  'schema':
+      'prefix': 'schema'
+      'body':"""
+         ${1:schema_name}:
+         	Type: AWS::EventSchemas::Schema
+         	Properties:
+         		Content: ${2:String}     # required
+         		Description: ${3:String}     # optional
+         		RegistryName: ${4:String}     # required
+         		SchemaName: ${5:String}     # optional
+         		Tags:                # optional, list of TagsEntry
+         			- ${6:TagsEntry}
+         		Type: ${7:String}     # required
+"""

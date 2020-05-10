@@ -1,0 +1,11 @@
+'.source.yaml':
+  'wafv2-webacl-rule':
+      'prefix': 'wafv2-webacl-rule'
+      'body':"""
+         Action: ${2:RuleAction}     # optional
+         Name: ${3:String}     # required
+         OverrideAction: ${4:OverrideAction}     # optional
+         Priority: ${5:Integer}     # required
+         Statement: ${6:StatementOne}     # required
+         VisibilityConfig: ${7:VisibilityConfig}     # required
+"""

@@ -1,0 +1,10 @@
+'.source.yaml':
+  'query':
+      'prefix': 'query'
+      'body':"""
+         ResourceTypeFilters:                # optional, list of String
+         	- ${2:String}
+         StackIdentifier: ${3:String}     # optional
+         TagFilters:                # optional, list of TagFilter
+         	- ${4:TagFilter}
+"""

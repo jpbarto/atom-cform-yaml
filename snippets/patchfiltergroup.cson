@@ -1,0 +1,7 @@
+'.source.yaml':
+  'patchfiltergroup':
+      'prefix': 'patchfiltergroup'
+      'body':"""
+         PatchFilters:                # optional, list of PatchFilter
+         	- ${2:PatchFilter}
+"""

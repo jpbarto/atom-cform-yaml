@@ -1,0 +1,13 @@
+'.source.yaml':
+  'datastore':
+      'prefix': 'datastore'
+      'body':"""
+         ${1:datastore_name}:
+         	Type: AWS::IoTAnalytics::Datastore
+         	Properties:
+         		DatastoreName: ${2:String}     # optional
+         		DatastoreStorage: ${3:DatastoreStorage}     # optional
+         		RetentionPeriod: ${4:RetentionPeriod}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+"""

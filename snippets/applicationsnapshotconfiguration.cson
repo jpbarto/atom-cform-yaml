@@ -1,0 +1,6 @@
+'.source.yaml':
+  'applicationsnapshotconfiguration':
+      'prefix': 'applicationsnapshotconfiguration'
+      'body':"""
+         SnapshotsEnabled: ${2:Boolean}     # required
+"""

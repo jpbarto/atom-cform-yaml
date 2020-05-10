@@ -1,0 +1,19 @@
+'.source.yaml':
+  'subject':
+      'prefix': 'subject'
+      'body':"""
+         CommonName: ${2:String}     # optional
+         Country: ${3:String}     # optional
+         DistinguishedNameQualifier: ${4:String}     # optional
+         GenerationQualifier: ${5:String}     # optional
+         GivenName: ${6:String}     # optional
+         Initials: ${7:String}     # optional
+         Locality: ${8:String}     # optional
+         Organization: ${9:String}     # optional
+         OrganizationalUnit: ${10:String}     # optional
+         Pseudonym: ${11:String}     # optional
+         SerialNumber: ${12:String}     # optional
+         State: ${13:String}     # optional
+         Surname: ${14:String}     # optional
+         Title: ${15:String}     # optional
+"""

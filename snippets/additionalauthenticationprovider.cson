@@ -1,0 +1,8 @@
+'.source.yaml':
+  'additionalauthenticationprovider':
+      'prefix': 'additionalauthenticationprovider'
+      'body':"""
+         AuthenticationType: ${2:String}     # required
+         OpenIDConnectConfig: ${3:OpenIDConnectConfig}     # optional
+         UserPoolConfig: ${4:CognitoUserPoolConfig}     # optional
+"""

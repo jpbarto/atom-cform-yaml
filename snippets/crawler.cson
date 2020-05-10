@@ -1,0 +1,21 @@
+'.source.yaml':
+  'crawler':
+      'prefix': 'crawler'
+      'body':"""
+         ${1:crawler_name}:
+         	Type: AWS::Glue::Crawler
+         	Properties:
+         		Classifiers:                # optional, list of String
+         			- ${2:String}
+         		Configuration: ${3:String}     # optional
+         		CrawlerSecurityConfiguration: ${4:String}     # optional
+         		DatabaseName: ${5:String}     # optional
+         		Description: ${6:String}     # optional
+         		Name: ${7:String}     # optional
+         		Role: ${8:String}     # required
+         		Schedule: ${9:Schedule}     # optional
+         		SchemaChangePolicy: ${10:SchemaChangePolicy}     # optional
+         		TablePrefix: ${11:String}     # optional
+         		Tags: ${12:Json}     # optional
+         		Targets: ${13:Targets}     # required
+"""

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'topicrule-snsaction':
+      'prefix': 'topicrule-snsaction'
+      'body':"""
+         MessageFormat: ${2:String}     # optional
+         RoleArn: ${3:String}     # required
+         TargetArn: ${4:String}     # required
+"""

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'fleetlaunchtemplatespecificationrequest':
+      'prefix': 'fleetlaunchtemplatespecificationrequest'
+      'body':"""
+         LaunchTemplateId: ${2:String}     # optional
+         LaunchTemplateName: ${3:String}     # optional
+         Version: ${4:String}     # optional
+"""

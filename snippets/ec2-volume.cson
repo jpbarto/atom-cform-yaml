@@ -10,9 +10,10 @@
          		Encrypted: ${4:Boolean}     # optional
          		Iops: ${5:Integer}     # optional
          		KmsKeyId: ${6:String}     # optional
-         		Size: ${7:Integer}     # optional
-         		SnapshotId: ${8:String}     # optional
+         		MultiAttachEnabled: ${7:Boolean}     # optional
+         		Size: ${8:Integer}     # optional
+         		SnapshotId: ${9:String}     # optional
          		Tags:                # optional, list of Tag
-         			- ${9:Tag}
-         		VolumeType: ${10:String}     # optional
+         			- ${10:Tag}
+         		VolumeType: ${11:String}     # optional
 """

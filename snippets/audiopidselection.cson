@@ -1,0 +1,6 @@
+'.source.yaml':
+  'audiopidselection':
+      'prefix': 'audiopidselection'
+      'body':"""
+         Pid: ${2:Integer}     # optional
+"""

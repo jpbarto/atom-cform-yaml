@@ -1,0 +1,6 @@
+'.source.yaml':
+  'videoselectorpid':
+      'prefix': 'videoselectorpid'
+      'body':"""
+         Pid: ${2:Integer}     # optional
+"""

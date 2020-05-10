@@ -1,0 +1,13 @@
+'.source.yaml':
+  'preset':
+      'prefix': 'preset'
+      'body':"""
+         ${1:preset_name}:
+         	Type: AWS::MediaConvert::Preset
+         	Properties:
+         		Category: ${2:String}     # optional
+         		Description: ${3:String}     # optional
+         		Name: ${4:String}     # optional
+         		SettingsJson: ${5:Json}     # required
+         		Tags: ${6:Json}     # optional
+"""

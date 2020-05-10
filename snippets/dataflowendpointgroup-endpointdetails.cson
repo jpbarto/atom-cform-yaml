@@ -1,0 +1,7 @@
+'.source.yaml':
+  'dataflowendpointgroup-endpointdetails':
+      'prefix': 'dataflowendpointgroup-endpointdetails'
+      'body':"""
+         Endpoint: ${2:DataflowEndpoint}     # optional
+         SecurityDetails: ${3:SecurityDetails}     # optional
+"""

@@ -1,0 +1,9 @@
+'.source.yaml':
+  'createrule':
+      'prefix': 'createrule'
+      'body':"""
+         Interval: ${2:Integer}     # required
+         IntervalUnit: ${3:String}     # required
+         Times:                # optional, list of String
+         	- ${4:String}
+"""

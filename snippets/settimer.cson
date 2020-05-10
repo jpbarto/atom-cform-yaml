@@ -1,0 +1,8 @@
+'.source.yaml':
+  'settimer':
+      'prefix': 'settimer'
+      'body':"""
+         DurationExpression: ${2:String}     # optional
+         Seconds: ${3:Integer}     # optional
+         TimerName: ${4:String}     # optional
+"""

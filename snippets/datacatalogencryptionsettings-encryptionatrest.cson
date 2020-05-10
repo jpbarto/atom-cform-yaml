@@ -1,0 +1,7 @@
+'.source.yaml':
+  'datacatalogencryptionsettings-encryptionatrest':
+      'prefix': 'datacatalogencryptionsettings-encryptionatrest'
+      'body':"""
+         CatalogEncryptionMode: ${2:String}     # optional
+         SseAwsKmsKeyId: ${3:String}     # optional
+"""

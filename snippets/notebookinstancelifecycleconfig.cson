@@ -1,0 +1,13 @@
+'.source.yaml':
+  'notebookinstancelifecycleconfig':
+      'prefix': 'notebookinstancelifecycleconfig'
+      'body':"""
+         ${1:notebookinstancelifecycleconfig_name}:
+         	Type: AWS::SageMaker::NotebookInstanceLifecycleConfig
+         	Properties:
+         		NotebookInstanceLifecycleConfigName: ${2:String}     # optional
+         		OnCreate:                # optional, list of NotebookInstanceLifecycleHook
+         			- ${3:NotebookInstanceLifecycleHook}
+         		OnStart:                # optional, list of NotebookInstanceLifecycleHook
+         			- ${4:NotebookInstanceLifecycleHook}
+"""

@@ -1,0 +1,10 @@
+'.source.yaml':
+  'routesettings':
+      'prefix': 'routesettings'
+      'body':"""
+         DataTraceEnabled: ${2:Boolean}     # optional
+         DetailedMetricsEnabled: ${3:Boolean}     # optional
+         LoggingLevel: ${4:String}     # optional
+         ThrottlingBurstLimit: ${5:Integer}     # optional
+         ThrottlingRateLimit: ${6:Double}     # optional
+"""

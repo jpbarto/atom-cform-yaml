@@ -1,0 +1,6 @@
+'.source.yaml':
+  'backend':
+      'prefix': 'backend'
+      'body':"""
+         VirtualService: ${2:VirtualServiceBackend}     # optional
+"""

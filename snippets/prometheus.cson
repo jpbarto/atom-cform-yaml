@@ -1,0 +1,7 @@
+'.source.yaml':
+  'prometheus':
+      'prefix': 'prometheus'
+      'body':"""
+         JmxExporter: ${2:JmxExporter}     # optional
+         NodeExporter: ${3:NodeExporter}     # optional
+"""

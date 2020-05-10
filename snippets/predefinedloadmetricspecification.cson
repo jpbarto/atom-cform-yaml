@@ -1,0 +1,7 @@
+'.source.yaml':
+  'predefinedloadmetricspecification':
+      'prefix': 'predefinedloadmetricspecification'
+      'body':"""
+         PredefinedLoadMetricType: ${2:String}     # required
+         ResourceLabel: ${3:String}     # optional
+"""

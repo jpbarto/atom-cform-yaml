@@ -1,0 +1,9 @@
+'.source.yaml':
+  'scalingconfiguration':
+      'prefix': 'scalingconfiguration'
+      'body':"""
+         AutoPause: ${2:Boolean}     # optional
+         MaxCapacity: ${3:Integer}     # optional
+         MinCapacity: ${4:Integer}     # optional
+         SecondsUntilAutoPause: ${5:Integer}     # optional
+"""

@@ -1,0 +1,13 @@
+'.source.yaml':
+  'robot':
+      'prefix': 'robot'
+      'body':"""
+         ${1:robot_name}:
+         	Type: AWS::RoboMaker::Robot
+         	Properties:
+         		Architecture: ${2:String}     # required
+         		Fleet: ${3:String}     # optional
+         		GreengrassGroupId: ${4:String}     # required
+         		Name: ${5:String}     # optional
+         		Tags: ${6:Json}     # optional
+"""

@@ -1,0 +1,10 @@
+'.source.yaml':
+  'stackfleetassociation':
+      'prefix': 'stackfleetassociation'
+      'body':"""
+         ${1:stackfleetassociation_name}:
+         	Type: AWS::AppStream::StackFleetAssociation
+         	Properties:
+         		FleetName: ${2:String}     # required
+         		StackName: ${3:String}     # required
+"""

@@ -1,0 +1,10 @@
+'.source.yaml':
+  'resourcedefinition-resourcedatacontainer':
+      'prefix': 'resourcedefinition-resourcedatacontainer'
+      'body':"""
+         LocalDeviceResourceData: ${2:LocalDeviceResourceData}     # optional
+         LocalVolumeResourceData: ${3:LocalVolumeResourceData}     # optional
+         S3MachineLearningModelResourceData: ${4:S3MachineLearningModelResourceData}     # optional
+         SageMakerMachineLearningModelResourceData: ${5:SageMakerMachineLearningModelResourceData}     # optional
+         SecretsManagerSecretResourceData: ${6:SecretsManagerSecretResourceData}     # optional
+"""

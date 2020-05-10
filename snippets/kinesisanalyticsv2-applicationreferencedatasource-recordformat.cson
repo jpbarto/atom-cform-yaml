@@ -1,0 +1,7 @@
+'.source.yaml':
+  'kinesisanalyticsv2-applicationreferencedatasource-recordformat':
+      'prefix': 'kinesisanalyticsv2-applicationreferencedatasource-recordformat'
+      'body':"""
+         MappingParameters: ${2:MappingParameters}     # optional
+         RecordFormatType: ${3:String}     # required
+"""

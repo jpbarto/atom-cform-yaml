@@ -1,0 +1,14 @@
+'.source.yaml':
+  'configurationaggregator':
+      'prefix': 'configurationaggregator'
+      'body':"""
+         ${1:configurationaggregator_name}:
+         	Type: AWS::Config::ConfigurationAggregator
+         	Properties:
+         		AccountAggregationSources:                # optional, list of AccountAggregationSource
+         			- ${2:AccountAggregationSource}
+         		ConfigurationAggregatorName: ${3:String}     # required
+         		OrganizationAggregationSource: ${4:OrganizationAggregationSource}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+"""

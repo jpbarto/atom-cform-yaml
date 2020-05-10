@@ -1,0 +1,7 @@
+'.source.yaml':
+  'sqlapplicationconfiguration':
+      'prefix': 'sqlapplicationconfiguration'
+      'body':"""
+         Inputs:                # optional, list of Input
+         	- ${2:Input}
+"""

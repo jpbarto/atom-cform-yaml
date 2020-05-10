@@ -1,0 +1,10 @@
+'.source.yaml':
+  'fastrestorerule':
+      'prefix': 'fastrestorerule'
+      'body':"""
+         AvailabilityZones:                # optional, list of String
+         	- ${2:String}
+         Count: ${3:Integer}     # optional
+         Interval: ${4:Integer}     # optional
+         IntervalUnit: ${5:String}     # optional
+"""

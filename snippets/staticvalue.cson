@@ -1,0 +1,7 @@
+'.source.yaml':
+  'staticvalue':
+      'prefix': 'staticvalue'
+      'body':"""
+         Values:                # optional, list of String
+         	- ${2:String}
+"""

@@ -1,0 +1,13 @@
+'.source.yaml':
+  'policydetails':
+      'prefix': 'policydetails'
+      'body':"""
+         Parameters: ${2:Parameters}     # optional
+         PolicyType: ${3:String}     # optional
+         ResourceTypes:                # required, list of String
+         	- ${4:String}
+         Schedules:                # required, list of Schedule
+         	- ${5:Schedule}
+         TargetTags:                # required, list of Tag
+         	- ${6:Tag}
+"""

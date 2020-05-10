@@ -1,0 +1,7 @@
+'.source.yaml':
+  'conformancepack-conformancepackinputparameter':
+      'prefix': 'conformancepack-conformancepackinputparameter'
+      'body':"""
+         ParameterName: ${2:String}     # required
+         ParameterValue: ${3:String}     # required
+"""

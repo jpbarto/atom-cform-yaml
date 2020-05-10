@@ -1,0 +1,14 @@
+'.source.yaml':
+  'analyzer':
+      'prefix': 'analyzer'
+      'body':"""
+         ${1:analyzer_name}:
+         	Type: AWS::AccessAnalyzer::Analyzer
+         	Properties:
+         		AnalyzerName: ${2:String}     # optional
+         		ArchiveRules:                # optional, list of ArchiveRule
+         			- ${3:ArchiveRule}
+         		Tags:                # optional, list of Tag
+         			- ${4:Tag}
+         		Type: ${5:String}     # required
+"""

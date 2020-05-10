@@ -1,0 +1,9 @@
+'.source.yaml':
+  'state':
+      'prefix': 'state'
+      'body':"""
+         OnEnter: ${2:OnEnter}     # optional
+         OnExit: ${3:OnExit}     # optional
+         OnInput: ${4:OnInput}     # optional
+         StateName: ${5:String}     # optional
+"""

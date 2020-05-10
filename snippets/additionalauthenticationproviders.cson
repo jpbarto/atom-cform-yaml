@@ -1,0 +1,5 @@
+'.source.yaml':
+  'additionalauthenticationproviders':
+      'prefix': 'additionalauthenticationproviders'
+      'body':"""
+"""

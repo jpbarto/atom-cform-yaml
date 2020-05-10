@@ -1,0 +1,8 @@
+'.source.yaml':
+  'jwtconfiguration':
+      'prefix': 'jwtconfiguration'
+      'body':"""
+         Audience:                # optional, list of String
+         	- ${2:String}
+         Issuer: ${3:String}     # optional
+"""

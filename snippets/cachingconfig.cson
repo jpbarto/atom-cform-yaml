@@ -1,0 +1,8 @@
+'.source.yaml':
+  'cachingconfig':
+      'prefix': 'cachingconfig'
+      'body':"""
+         CachingKeys:                # optional, list of String
+         	- ${2:String}
+         Ttl: ${3:Double}     # optional
+"""

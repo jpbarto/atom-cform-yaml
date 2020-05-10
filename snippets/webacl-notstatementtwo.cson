@@ -1,0 +1,6 @@
+'.source.yaml':
+  'webacl-notstatementtwo':
+      'prefix': 'webacl-notstatementtwo'
+      'body':"""
+         Statement: ${2:StatementThree}     # required
+"""

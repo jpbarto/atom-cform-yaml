@@ -1,0 +1,6 @@
+'.source.yaml':
+  'databaseresource':
+      'prefix': 'databaseresource'
+      'body':"""
+         Name: ${2:String}     # optional
+"""

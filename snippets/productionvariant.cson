@@ -1,0 +1,11 @@
+'.source.yaml':
+  'productionvariant':
+      'prefix': 'productionvariant'
+      'body':"""
+         AcceleratorType: ${2:String}     # optional
+         InitialInstanceCount: ${3:Integer}     # required
+         InitialVariantWeight: ${4:Double}     # required
+         InstanceType: ${5:String}     # required
+         ModelName: ${6:String}     # required
+         VariantName: ${7:String}     # required
+"""

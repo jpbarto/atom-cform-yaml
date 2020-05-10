@@ -1,0 +1,7 @@
+'.source.yaml':
+  'volumes':
+      'prefix': 'volumes'
+      'body':"""
+         Host: ${2:VolumesHost}     # optional
+         Name: ${3:String}     # optional
+"""

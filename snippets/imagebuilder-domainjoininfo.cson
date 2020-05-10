@@ -1,0 +1,7 @@
+'.source.yaml':
+  'imagebuilder-domainjoininfo':
+      'prefix': 'imagebuilder-domainjoininfo'
+      'body':"""
+         DirectoryName: ${2:String}     # optional
+         OrganizationalUnitDistinguishedName: ${3:String}     # optional
+"""

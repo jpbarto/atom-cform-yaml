@@ -1,0 +1,17 @@
+'.source.yaml':
+  'pushtemplate':
+      'prefix': 'pushtemplate'
+      'body':"""
+         ${1:pushtemplate_name}:
+         	Type: AWS::Pinpoint::PushTemplate
+         	Properties:
+         		ADM: ${2:AndroidPushNotificationTemplate}     # optional
+         		APNS: ${3:APNSPushNotificationTemplate}     # optional
+         		Baidu: ${4:AndroidPushNotificationTemplate}     # optional
+         		Default: ${5:DefaultPushNotificationTemplate}     # optional
+         		DefaultSubstitutions: ${6:String}     # optional
+         		GCM: ${7:AndroidPushNotificationTemplate}     # optional
+         		Tags: ${8:Json}     # optional
+         		TemplateDescription: ${9:String}     # optional
+         		TemplateName: ${10:String}     # required
+"""

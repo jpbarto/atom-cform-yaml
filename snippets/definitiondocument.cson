@@ -1,0 +1,7 @@
+'.source.yaml':
+  'definitiondocument':
+      'prefix': 'definitiondocument'
+      'body':"""
+         Language: ${2:String}     # required
+         Text: ${3:String}     # required
+"""

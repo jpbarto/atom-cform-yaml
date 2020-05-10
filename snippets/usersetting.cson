@@ -1,0 +1,7 @@
+'.source.yaml':
+  'usersetting':
+      'prefix': 'usersetting'
+      'body':"""
+         Action: ${2:String}     # required
+         Permission: ${3:String}     # required
+"""

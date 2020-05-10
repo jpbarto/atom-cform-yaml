@@ -1,0 +1,8 @@
+'.source.yaml':
+  'iotsitewiseaction':
+      'prefix': 'iotsitewiseaction'
+      'body':"""
+         PutAssetPropertyValueEntries:                # required, list of PutAssetPropertyValueEntry
+         	- ${2:PutAssetPropertyValueEntry}
+         RoleArn: ${3:String}     # required
+"""

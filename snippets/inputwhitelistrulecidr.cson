@@ -1,0 +1,6 @@
+'.source.yaml':
+  'inputwhitelistrulecidr':
+      'prefix': 'inputwhitelistrulecidr'
+      'body':"""
+         Cidr: ${2:String}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'datastore-retentionperiod':
+      'prefix': 'datastore-retentionperiod'
+      'body':"""
+         NumberOfDays: ${2:Integer}     # optional
+         Unlimited: ${3:Boolean}     # optional
+"""

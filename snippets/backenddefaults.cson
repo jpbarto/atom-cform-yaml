@@ -1,0 +1,6 @@
+'.source.yaml':
+  'backenddefaults':
+      'prefix': 'backenddefaults'
+      'body':"""
+         ClientPolicy: ${2:ClientPolicy}     # optional
+"""

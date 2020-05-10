@@ -1,0 +1,6 @@
+'.source.yaml':
+  'storageclassanalysis':
+      'prefix': 'storageclassanalysis'
+      'body':"""
+         DataExport: ${2:DataExport}     # optional
+"""

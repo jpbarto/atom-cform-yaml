@@ -1,0 +1,9 @@
+'.source.yaml':
+  'rulegroup-regexpatternsetreferencestatement':
+      'prefix': 'rulegroup-regexpatternsetreferencestatement'
+      'body':"""
+         Arn: ${2:String}     # required
+         FieldToMatch: ${3:FieldToMatch}     # required
+         TextTransformations:                # required, list of TextTransformation
+         	- ${4:TextTransformation}
+"""

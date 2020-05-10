@@ -1,0 +1,17 @@
+'.source.yaml':
+  'apnsvoipchannel':
+      'prefix': 'apnsvoipchannel'
+      'body':"""
+         ${1:apnsvoipchannel_name}:
+         	Type: AWS::Pinpoint::APNSVoipChannel
+         	Properties:
+         		ApplicationId: ${2:String}     # required
+         		BundleId: ${3:String}     # optional
+         		Certificate: ${4:String}     # optional
+         		DefaultAuthenticationMethod: ${5:String}     # optional
+         		Enabled: ${6:Boolean}     # optional
+         		PrivateKey: ${7:String}     # optional
+         		TeamId: ${8:String}     # optional
+         		TokenKey: ${9:String}     # optional
+         		TokenKeyId: ${10:String}     # optional
+"""

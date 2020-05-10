@@ -1,0 +1,17 @@
+'.source.yaml':
+  'transitgateway':
+      'prefix': 'transitgateway'
+      'body':"""
+         ${1:transitgateway_name}:
+         	Type: AWS::EC2::TransitGateway
+         	Properties:
+         		AmazonSideAsn: ${2:Integer}     # optional
+         		AutoAcceptSharedAttachments: ${3:String}     # optional
+         		DefaultRouteTableAssociation: ${4:String}     # optional
+         		DefaultRouteTablePropagation: ${5:String}     # optional
+         		Description: ${6:String}     # optional
+         		DnsSupport: ${7:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${8:Tag}
+         		VpnEcmpSupport: ${9:String}     # optional
+"""

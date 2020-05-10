@@ -2,6 +2,7 @@
   'republishaction':
       'prefix': 'republishaction'
       'body':"""
-         RoleArn: ${2:String}     # required
-         Topic: ${3:String}     # required
+         Qos: ${2:Integer}     # optional
+         RoleArn: ${3:String}     # required
+         Topic: ${4:String}     # required
 """

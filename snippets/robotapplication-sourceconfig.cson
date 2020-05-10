@@ -1,0 +1,8 @@
+'.source.yaml':
+  'robotapplication-sourceconfig':
+      'prefix': 'robotapplication-sourceconfig'
+      'body':"""
+         Architecture: ${2:String}     # required
+         S3Bucket: ${3:String}     # required
+         S3Key: ${4:String}     # required
+"""

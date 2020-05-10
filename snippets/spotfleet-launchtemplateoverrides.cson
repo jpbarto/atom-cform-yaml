@@ -1,0 +1,10 @@
+'.source.yaml':
+  'spotfleet-launchtemplateoverrides':
+      'prefix': 'spotfleet-launchtemplateoverrides'
+      'body':"""
+         AvailabilityZone: ${2:String}     # optional
+         InstanceType: ${3:String}     # optional
+         SpotPrice: ${4:String}     # optional
+         SubnetId: ${5:String}     # optional
+         WeightedCapacity: ${6:Double}     # optional
+"""

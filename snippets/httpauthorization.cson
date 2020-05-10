@@ -1,0 +1,6 @@
+'.source.yaml':
+  'httpauthorization':
+      'prefix': 'httpauthorization'
+      'body':"""
+         Sigv4: ${2:SigV4Authorization}     # optional
+"""

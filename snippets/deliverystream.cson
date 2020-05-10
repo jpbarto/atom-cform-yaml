@@ -6,8 +6,11 @@
          	Type: AWS::KinesisFirehose::DeliveryStream
          	Properties:
          		DeliveryStreamName: ${2:String}     # optional
-         		ElasticsearchDestinationConfiguration: ${3:ElasticsearchDestinationConfiguration}     # optional
-         		ExtendedS3DestinationConfiguration: ${4:ExtendedS3DestinationConfiguration}     # optional
-         		RedshiftDestinationConfiguration: ${5:RedshiftDestinationConfiguration}     # optional
-         		S3DestinationConfiguration: ${6:S3DestinationConfiguration}     # optional
+         		DeliveryStreamType: ${3:String}     # optional
+         		ElasticsearchDestinationConfiguration: ${4:ElasticsearchDestinationConfiguration}     # optional
+         		ExtendedS3DestinationConfiguration: ${5:ExtendedS3DestinationConfiguration}     # optional
+         		KinesisStreamSourceConfiguration: ${6:KinesisStreamSourceConfiguration}     # optional
+         		RedshiftDestinationConfiguration: ${7:RedshiftDestinationConfiguration}     # optional
+         		S3DestinationConfiguration: ${8:S3DestinationConfiguration}     # optional
+         		SplunkDestinationConfiguration: ${9:SplunkDestinationConfiguration}     # optional
 """

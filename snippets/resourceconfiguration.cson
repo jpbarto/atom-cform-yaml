@@ -1,0 +1,7 @@
+'.source.yaml':
+  'resourceconfiguration':
+      'prefix': 'resourceconfiguration'
+      'body':"""
+         ComputeType: ${2:String}     # required
+         VolumeSizeInGB: ${3:Integer}     # required
+"""

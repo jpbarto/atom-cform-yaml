@@ -5,17 +5,18 @@
          ${1:identitypool_name}:
          	Type: AWS::Cognito::IdentityPool
          	Properties:
-         		AllowUnauthenticatedIdentities: ${2:Boolean}     # required
-         		CognitoEvents: ${3:Json}     # optional
+         		AllowClassicFlow: ${2:Boolean}     # optional
+         		AllowUnauthenticatedIdentities: ${3:Boolean}     # required
+         		CognitoEvents: ${4:Json}     # optional
          		CognitoIdentityProviders:                # optional, list of CognitoIdentityProvider
-         			- ${4:CognitoIdentityProvider}
-         		CognitoStreams: ${5:CognitoStreams}     # optional
-         		DeveloperProviderName: ${6:String}     # optional
-         		IdentityPoolName: ${7:String}     # optional
+         			- ${5:CognitoIdentityProvider}
+         		CognitoStreams: ${6:CognitoStreams}     # optional
+         		DeveloperProviderName: ${7:String}     # optional
+         		IdentityPoolName: ${8:String}     # optional
          		OpenIdConnectProviderARNs:                # optional, list of String
-         			- ${8:String}
-         		PushSync: ${9:PushSync}     # optional
+         			- ${9:String}
+         		PushSync: ${10:PushSync}     # optional
          		SamlProviderARNs:                # optional, list of String
-         			- ${10:String}
-         		SupportedLoginProviders: ${11:Json}     # optional
+         			- ${11:String}
+         		SupportedLoginProviders: ${12:Json}     # optional
 """

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'timeperiod':
+      'prefix': 'timeperiod'
+      'body':"""
+         End: ${2:String}     # optional
+         Start: ${3:String}     # optional
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'localgatewayroutetablevpcassociation':
+      'prefix': 'localgatewayroutetablevpcassociation'
+      'body':"""
+         ${1:localgatewayroutetablevpcassociation_name}:
+         	Type: AWS::EC2::LocalGatewayRouteTableVPCAssociation
+         	Properties:
+         		LocalGatewayRouteTableId: ${2:String}     # required
+         		Tags: ${3:Tags}     # optional
+         		VpcId: ${4:String}     # required
+"""

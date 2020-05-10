@@ -1,0 +1,7 @@
+'.source.yaml':
+  'kafkasettings':
+      'prefix': 'kafkasettings'
+      'body':"""
+         Broker: ${2:String}     # optional
+         Topic: ${3:String}     # optional
+"""

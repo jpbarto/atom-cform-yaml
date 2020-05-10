@@ -1,0 +1,8 @@
+'.source.yaml':
+  'table-ssespecification':
+      'prefix': 'table-ssespecification'
+      'body':"""
+         KMSMasterKeyId: ${2:String}     # optional
+         SSEEnabled: ${3:Boolean}     # required
+         SSEType: ${4:String}     # optional
+"""

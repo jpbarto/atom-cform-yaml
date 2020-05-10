@@ -1,0 +1,7 @@
+'.source.yaml':
+  'dataflowedge':
+      'prefix': 'dataflowedge'
+      'body':"""
+         Destination: ${2:String}     # optional
+         Source: ${3:String}     # optional
+"""

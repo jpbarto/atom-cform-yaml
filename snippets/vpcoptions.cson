@@ -1,0 +1,9 @@
+'.source.yaml':
+  'vpcoptions':
+      'prefix': 'vpcoptions'
+      'body':"""
+         SecurityGroupIds:                # optional, list of String
+         	- ${2:String}
+         SubnetIds:                # optional, list of String
+         	- ${3:String}
+"""

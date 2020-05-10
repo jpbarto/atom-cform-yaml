@@ -1,0 +1,7 @@
+'.source.yaml':
+  'imagetestsconfiguration':
+      'prefix': 'imagetestsconfiguration'
+      'body':"""
+         ImageTestsEnabled: ${2:Boolean}     # optional
+         TimeoutMinutes: ${3:Integer}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'virtualserviceprovider':
+      'prefix': 'virtualserviceprovider'
+      'body':"""
+         VirtualNode: ${2:VirtualNodeServiceProvider}     # optional
+         VirtualRouter: ${3:VirtualRouterServiceProvider}     # optional
+"""

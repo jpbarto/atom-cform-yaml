@@ -1,0 +1,7 @@
+'.source.yaml':
+  'mailfromattributes':
+      'prefix': 'mailfromattributes'
+      'body':"""
+         BehaviorOnMxFailure: ${2:String}     # optional
+         MailFromDomain: ${3:String}     # optional
+"""

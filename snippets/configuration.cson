@@ -1,0 +1,15 @@
+'.source.yaml':
+  'configuration':
+      'prefix': 'configuration'
+      'body':"""
+         ${1:configuration_name}:
+         	Type: AWS::AmazonMQ::Configuration
+         	Properties:
+         		Data: ${2:String}     # required
+         		Description: ${3:String}     # optional
+         		EngineType: ${4:String}     # required
+         		EngineVersion: ${5:String}     # required
+         		Name: ${6:String}     # required
+         		Tags:                # optional, list of TagsEntry
+         			- ${7:TagsEntry}
+"""

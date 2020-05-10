@@ -1,0 +1,6 @@
+'.source.yaml':
+  'runconfig':
+      'prefix': 'runconfig'
+      'body':"""
+         TimeoutInSeconds: ${2:Integer}     # required
+"""

@@ -1,0 +1,10 @@
+'.source.yaml':
+  'simulationapplicationversion':
+      'prefix': 'simulationapplicationversion'
+      'body':"""
+         ${1:simulationapplicationversion_name}:
+         	Type: AWS::RoboMaker::SimulationApplicationVersion
+         	Properties:
+         		Application: ${2:String}     # required
+         		CurrentRevisionId: ${3:String}     # optional
+"""

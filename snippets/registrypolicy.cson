@@ -1,0 +1,11 @@
+'.source.yaml':
+  'registrypolicy':
+      'prefix': 'registrypolicy'
+      'body':"""
+         ${1:registrypolicy_name}:
+         	Type: AWS::EventSchemas::RegistryPolicy
+         	Properties:
+         		Policy: ${2:Json}     # required
+         		RegistryName: ${3:String}     # required
+         		RevisionId: ${4:String}     # optional
+"""

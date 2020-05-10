@@ -1,0 +1,11 @@
+'.source.yaml':
+  'parquetserde':
+      'prefix': 'parquetserde'
+      'body':"""
+         BlockSizeBytes: ${2:Integer}     # optional
+         Compression: ${3:String}     # optional
+         EnableDictionaryCompression: ${4:Boolean}     # optional
+         MaxPaddingBytes: ${5:Integer}     # optional
+         PageSizeBytes: ${6:Integer}     # optional
+         WriterVersion: ${7:String}     # optional
+"""

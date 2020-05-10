@@ -1,0 +1,7 @@
+'.source.yaml':
+  'broker-configurationid':
+      'prefix': 'broker-configurationid'
+      'body':"""
+         Id: ${2:String}     # required
+         Revision: ${3:Integer}     # required
+"""

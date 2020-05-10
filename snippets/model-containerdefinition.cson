@@ -1,0 +1,10 @@
+'.source.yaml':
+  'model-containerdefinition':
+      'prefix': 'model-containerdefinition'
+      'body':"""
+         ContainerHostname: ${2:String}     # optional
+         Environment: ${3:Json}     # optional
+         Image: ${4:String}     # required
+         Mode: ${5:String}     # optional
+         ModelDataUrl: ${6:String}     # optional
+"""

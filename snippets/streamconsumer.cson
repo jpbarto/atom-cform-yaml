@@ -1,0 +1,10 @@
+'.source.yaml':
+  'streamconsumer':
+      'prefix': 'streamconsumer'
+      'body':"""
+         ${1:streamconsumer_name}:
+         	Type: AWS::Kinesis::StreamConsumer
+         	Properties:
+         		ConsumerName: ${2:String}     # required
+         		StreamARN: ${3:String}     # required
+"""

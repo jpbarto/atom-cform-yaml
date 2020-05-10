@@ -1,0 +1,7 @@
+'.source.yaml':
+  'functiondefinition-runas':
+      'prefix': 'functiondefinition-runas'
+      'body':"""
+         Gid: ${2:Integer}     # optional
+         Uid: ${3:Integer}     # optional
+"""

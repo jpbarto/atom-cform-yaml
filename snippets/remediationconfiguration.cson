@@ -1,0 +1,18 @@
+'.source.yaml':
+  'remediationconfiguration':
+      'prefix': 'remediationconfiguration'
+      'body':"""
+         ${1:remediationconfiguration_name}:
+         	Type: AWS::Config::RemediationConfiguration
+         	Properties:
+         		Automatic: ${2:Boolean}     # optional
+         		ConfigRuleName: ${3:String}     # required
+         		ExecutionControls: ${4:ExecutionControls}     # optional
+         		MaximumAutomaticAttempts: ${5:Integer}     # optional
+         		Parameters: ${6:Json}     # optional
+         		ResourceType: ${7:String}     # optional
+         		RetryAttemptSeconds: ${8:Integer}     # optional
+         		TargetId: ${9:String}     # required
+         		TargetType: ${10:String}     # required
+         		TargetVersion: ${11:String}     # optional
+"""

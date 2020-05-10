@@ -1,0 +1,60 @@
+'.source.yaml':
+  'taskdefinition-containerdefinition':
+      'prefix': 'taskdefinition-containerdefinition'
+      'body':"""
+         Command:                # optional, list of String
+         	- ${2:String}
+         Cpu: ${3:Integer}     # optional
+         DependsOn:                # optional, list of ContainerDependency
+         	- ${4:ContainerDependency}
+         DisableNetworking: ${5:Boolean}     # optional
+         DnsSearchDomains:                # optional, list of String
+         	- ${6:String}
+         DnsServers:                # optional, list of String
+         	- ${7:String}
+         DockerLabels:                # optional, map of String
+         	${8:String_key}: ${9:String_value}
+         DockerSecurityOptions:                # optional, list of String
+         	- ${10:String}
+         EntryPoint:                # optional, list of String
+         	- ${11:String}
+         Environment:                # optional, list of KeyValuePair
+         	- ${12:KeyValuePair}
+         Essential: ${13:Boolean}     # optional
+         ExtraHosts:                # optional, list of HostEntry
+         	- ${14:HostEntry}
+         FirelensConfiguration: ${15:FirelensConfiguration}     # optional
+         HealthCheck: ${16:HealthCheck}     # optional
+         Hostname: ${17:String}     # optional
+         Image: ${18:String}     # optional
+         Interactive: ${19:Boolean}     # optional
+         Links:                # optional, list of String
+         	- ${20:String}
+         LinuxParameters: ${21:LinuxParameters}     # optional
+         LogConfiguration: ${22:LogConfiguration}     # optional
+         Memory: ${23:Integer}     # optional
+         MemoryReservation: ${24:Integer}     # optional
+         MountPoints:                # optional, list of MountPoint
+         	- ${25:MountPoint}
+         Name: ${26:String}     # optional
+         PortMappings:                # optional, list of PortMapping
+         	- ${27:PortMapping}
+         Privileged: ${28:Boolean}     # optional
+         PseudoTerminal: ${29:Boolean}     # optional
+         ReadonlyRootFilesystem: ${30:Boolean}     # optional
+         RepositoryCredentials: ${31:RepositoryCredentials}     # optional
+         ResourceRequirements:                # optional, list of ResourceRequirement
+         	- ${32:ResourceRequirement}
+         Secrets:                # optional, list of Secret
+         	- ${33:Secret}
+         StartTimeout: ${34:Integer}     # optional
+         StopTimeout: ${35:Integer}     # optional
+         SystemControls:                # optional, list of SystemControl
+         	- ${36:SystemControl}
+         Ulimits:                # optional, list of Ulimit
+         	- ${37:Ulimit}
+         User: ${38:String}     # optional
+         VolumesFrom:                # optional, list of VolumeFrom
+         	- ${39:VolumeFrom}
+         WorkingDirectory: ${40:String}     # optional
+"""

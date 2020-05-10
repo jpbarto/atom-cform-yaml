@@ -1,0 +1,13 @@
+'.source.yaml':
+  'apigatewayv2-model':
+      'prefix': 'apigatewayv2-model'
+      'body':"""
+         ${1:apigatewayv2-model_name}:
+         	Type: AWS::ApiGatewayV2::Model
+         	Properties:
+         		ApiId: ${2:String}     # required
+         		ContentType: ${3:String}     # optional
+         		Description: ${4:String}     # optional
+         		Name: ${5:String}     # required
+         		Schema: ${6:Json}     # required
+"""

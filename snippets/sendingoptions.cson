@@ -1,0 +1,6 @@
+'.source.yaml':
+  'sendingoptions':
+      'prefix': 'sendingoptions'
+      'body':"""
+         SendingEnabled: ${2:Boolean}     # optional
+"""

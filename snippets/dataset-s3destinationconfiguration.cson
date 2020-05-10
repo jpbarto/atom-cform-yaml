@@ -1,0 +1,9 @@
+'.source.yaml':
+  'dataset-s3destinationconfiguration':
+      'prefix': 'dataset-s3destinationconfiguration'
+      'body':"""
+         Bucket: ${2:String}     # required
+         GlueConfiguration: ${3:GlueConfiguration}     # optional
+         Key: ${4:String}     # required
+         RoleArn: ${5:String}     # required
+"""

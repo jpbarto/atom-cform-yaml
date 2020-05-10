@@ -1,0 +1,8 @@
+'.source.yaml':
+  'statuscodes':
+      'prefix': 'statuscodes'
+      'body':"""
+         Items:                # required, list of Integer
+         	- ${2:Integer}
+         Quantity: ${3:Integer}     # required
+"""

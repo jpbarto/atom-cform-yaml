@@ -1,0 +1,7 @@
+'.source.yaml':
+  'socketaddress':
+      'prefix': 'socketaddress'
+      'body':"""
+         Name: ${2:String}     # optional
+         Port: ${3:Integer}     # optional
+"""

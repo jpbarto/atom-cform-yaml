@@ -1,0 +1,10 @@
+'.source.yaml':
+  'kinesisanalyticsv2-applicationreferencedatasource':
+      'prefix': 'kinesisanalyticsv2-applicationreferencedatasource'
+      'body':"""
+         ${1:kinesisanalyticsv2-applicationreferencedatasource_name}:
+         	Type: AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource
+         	Properties:
+         		ApplicationName: ${2:String}     # required
+         		ReferenceDataSource: ${3:ReferenceDataSource}     # required
+"""

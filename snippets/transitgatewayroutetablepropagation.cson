@@ -1,0 +1,10 @@
+'.source.yaml':
+  'transitgatewayroutetablepropagation':
+      'prefix': 'transitgatewayroutetablepropagation'
+      'body':"""
+         ${1:transitgatewayroutetablepropagation_name}:
+         	Type: AWS::EC2::TransitGatewayRouteTablePropagation
+         	Properties:
+         		TransitGatewayAttachmentId: ${2:String}     # required
+         		TransitGatewayRouteTableId: ${3:String}     # required
+"""

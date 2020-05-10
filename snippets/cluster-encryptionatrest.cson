@@ -1,0 +1,6 @@
+'.source.yaml':
+  'cluster-encryptionatrest':
+      'prefix': 'cluster-encryptionatrest'
+      'body':"""
+         DataVolumeKMSKeyId: ${2:String}     # required
+"""

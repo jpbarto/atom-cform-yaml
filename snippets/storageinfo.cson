@@ -1,0 +1,6 @@
+'.source.yaml':
+  'storageinfo':
+      'prefix': 'storageinfo'
+      'body':"""
+         EBSStorageInfo: ${2:EBSStorageInfo}     # optional
+"""

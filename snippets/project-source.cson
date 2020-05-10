@@ -4,6 +4,11 @@
       'body':"""
          Auth: ${2:SourceAuth}     # optional
          BuildSpec: ${3:String}     # optional
-         Location: ${4:String}     # optional
-         Type: ${5:String}     # required
+         GitCloneDepth: ${4:Integer}     # optional
+         GitSubmodulesConfig: ${5:GitSubmodulesConfig}     # optional
+         InsecureSsl: ${6:Boolean}     # optional
+         Location: ${7:String}     # optional
+         ReportBuildStatus: ${8:Boolean}     # optional
+         SourceIdentifier: ${9:String}     # optional
+         Type: ${10:String}     # required
 """

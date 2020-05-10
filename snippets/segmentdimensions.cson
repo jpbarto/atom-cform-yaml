@@ -1,0 +1,11 @@
+'.source.yaml':
+  'segmentdimensions':
+      'prefix': 'segmentdimensions'
+      'body':"""
+         Attributes: ${2:Json}     # optional
+         Behavior: ${3:Behavior}     # optional
+         Demographic: ${4:Demographic}     # optional
+         Location: ${5:Location}     # optional
+         Metrics: ${6:Json}     # optional
+         UserAttributes: ${7:Json}     # optional
+"""

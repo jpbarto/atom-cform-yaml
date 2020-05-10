@@ -1,0 +1,7 @@
+'.source.yaml':
+  'simulationsoftwaresuite':
+      'prefix': 'simulationsoftwaresuite'
+      'body':"""
+         Name: ${2:String}     # required
+         Version: ${3:String}     # required
+"""

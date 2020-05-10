@@ -1,0 +1,6 @@
+'.source.yaml':
+  'variantproperty':
+      'prefix': 'variantproperty'
+      'body':"""
+         VariantPropertyType: ${2:String}     # optional
+"""

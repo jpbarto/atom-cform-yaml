@@ -1,0 +1,7 @@
+'.source.yaml':
+  'gpspoint':
+      'prefix': 'gpspoint'
+      'body':"""
+         Coordinates: ${2:Coordinates}     # required
+         RangeInKilometers: ${3:Double}     # required
+"""

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'device-location':
+      'prefix': 'device-location'
+      'body':"""
+         Address: ${2:String}     # optional
+         Latitude: ${3:String}     # optional
+         Longitude: ${4:String}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'waf-bytematchset-fieldtomatch':
+      'prefix': 'waf-bytematchset-fieldtomatch'
+      'body':"""
+         Data: ${2:String}     # optional
+         Type: ${3:String}     # required
+"""

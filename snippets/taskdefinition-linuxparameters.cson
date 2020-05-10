@@ -1,0 +1,14 @@
+'.source.yaml':
+  'taskdefinition-linuxparameters':
+      'prefix': 'taskdefinition-linuxparameters'
+      'body':"""
+         Capabilities: ${2:KernelCapabilities}     # optional
+         Devices:                # optional, list of Device
+         	- ${3:Device}
+         InitProcessEnabled: ${4:Boolean}     # optional
+         MaxSwap: ${5:Integer}     # optional
+         SharedMemorySize: ${6:Integer}     # optional
+         Swappiness: ${7:Integer}     # optional
+         Tmpfs:                # optional, list of Tmpfs
+         	- ${8:Tmpfs}
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'localgatewayroute':
+      'prefix': 'localgatewayroute'
+      'body':"""
+         ${1:localgatewayroute_name}:
+         	Type: AWS::EC2::LocalGatewayRoute
+         	Properties:
+         		DestinationCidrBlock: ${2:String}     # required
+         		LocalGatewayRouteTableId: ${3:String}     # required
+         		LocalGatewayVirtualInterfaceGroupId: ${4:String}     # required
+"""

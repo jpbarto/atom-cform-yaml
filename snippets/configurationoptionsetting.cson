@@ -4,5 +4,6 @@
       'body':"""
          Namespace: ${2:String}     # required
          OptionName: ${3:String}     # required
-         Value: ${4:String}     # required
+         ResourceName: ${4:String}     # optional
+         Value: ${5:String}     # optional
 """

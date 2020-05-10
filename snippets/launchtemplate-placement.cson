@@ -1,0 +1,13 @@
+'.source.yaml':
+  'launchtemplate-placement':
+      'prefix': 'launchtemplate-placement'
+      'body':"""
+         Affinity: ${2:String}     # optional
+         AvailabilityZone: ${3:String}     # optional
+         GroupName: ${4:String}     # optional
+         HostId: ${5:String}     # optional
+         HostResourceGroupArn: ${6:String}     # optional
+         PartitionNumber: ${7:Integer}     # optional
+         SpreadDomain: ${8:String}     # optional
+         Tenancy: ${9:String}     # optional
+"""

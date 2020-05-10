@@ -1,0 +1,12 @@
+'.source.yaml':
+  'messageconfiguration':
+      'prefix': 'messageconfiguration'
+      'body':"""
+         ADMMessage: ${2:Message}     # optional
+         APNSMessage: ${3:Message}     # optional
+         BaiduMessage: ${4:Message}     # optional
+         DefaultMessage: ${5:Message}     # optional
+         EmailMessage: ${6:CampaignEmailMessage}     # optional
+         GCMMessage: ${7:Message}     # optional
+         SMSMessage: ${8:CampaignSmsMessage}     # optional
+"""

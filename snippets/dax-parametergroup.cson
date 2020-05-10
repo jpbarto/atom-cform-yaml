@@ -1,0 +1,11 @@
+'.source.yaml':
+  'dax-parametergroup':
+      'prefix': 'dax-parametergroup'
+      'body':"""
+         ${1:dax-parametergroup_name}:
+         	Type: AWS::DAX::ParameterGroup
+         	Properties:
+         		Description: ${2:String}     # optional
+         		ParameterGroupName: ${3:String}     # optional
+         		ParameterNameValues: ${4:Json}     # optional
+"""

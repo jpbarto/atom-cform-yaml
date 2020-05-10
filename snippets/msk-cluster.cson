@@ -1,0 +1,19 @@
+'.source.yaml':
+  'msk-cluster':
+      'prefix': 'msk-cluster'
+      'body':"""
+         ${1:msk-cluster_name}:
+         	Type: AWS::MSK::Cluster
+         	Properties:
+         		BrokerNodeGroupInfo: ${2:BrokerNodeGroupInfo}     # required
+         		ClientAuthentication: ${3:ClientAuthentication}     # optional
+         		ClusterName: ${4:String}     # required
+         		ConfigurationInfo: ${5:ConfigurationInfo}     # optional
+         		EncryptionInfo: ${6:EncryptionInfo}     # optional
+         		EnhancedMonitoring: ${7:String}     # optional
+         		KafkaVersion: ${8:String}     # required
+         		LoggingInfo: ${9:LoggingInfo}     # optional
+         		NumberOfBrokerNodes: ${10:Integer}     # required
+         		OpenMonitoring: ${11:OpenMonitoring}     # optional
+         		Tags: ${12:Json}     # optional
+"""

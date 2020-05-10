@@ -1,0 +1,7 @@
+'.source.yaml':
+  'environmentproperties':
+      'prefix': 'environmentproperties'
+      'body':"""
+         PropertyGroups:                # optional, list of PropertyGroup
+         	- ${2:PropertyGroup}
+"""

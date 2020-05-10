@@ -1,0 +1,22 @@
+'.source.yaml':
+  'fms-policy':
+      'prefix': 'fms-policy'
+      'body':"""
+         ${1:fms-policy_name}:
+         	Type: AWS::FMS::Policy
+         	Properties:
+         		DeleteAllPolicyResources: ${2:Boolean}     # optional
+         		ExcludeMap: ${3:IEMap}     # optional
+         		ExcludeResourceTags: ${4:Boolean}     # required
+         		IncludeMap: ${5:IEMap}     # optional
+         		PolicyName: ${6:String}     # required
+         		RemediationEnabled: ${7:Boolean}     # required
+         		ResourceTags:                # optional, list of ResourceTag
+         			- ${8:ResourceTag}
+         		ResourceType: ${9:String}     # required
+         		ResourceTypeList:                # optional, list of String
+         			- ${10:String}
+         		SecurityServicePolicyData: ${11:Json}     # required
+         		Tags:                # optional, list of PolicyTag
+         			- ${12:PolicyTag}
+"""

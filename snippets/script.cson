@@ -1,0 +1,11 @@
+'.source.yaml':
+  'script':
+      'prefix': 'script'
+      'body':"""
+         ${1:script_name}:
+         	Type: AWS::GameLift::Script
+         	Properties:
+         		Name: ${2:String}     # optional
+         		StorageLocation: ${3:S3Location}     # required
+         		Version: ${4:String}     # optional
+"""

@@ -1,0 +1,9 @@
+'.source.yaml':
+  'metricsconfiguration':
+      'prefix': 'metricsconfiguration'
+      'body':"""
+         Id: ${2:String}     # required
+         Prefix: ${3:String}     # optional
+         TagFilters:                # optional, list of TagFilter
+         	- ${4:TagFilter}
+"""

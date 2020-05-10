@@ -1,0 +1,7 @@
+'.source.yaml':
+  'subdomainsetting':
+      'prefix': 'subdomainsetting'
+      'body':"""
+         BranchName: ${2:String}     # required
+         Prefix: ${3:String}     # required
+"""

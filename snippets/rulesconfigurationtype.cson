@@ -2,4 +2,6 @@
   'rulesconfigurationtype':
       'prefix': 'rulesconfigurationtype'
       'body':"""
+         Rules:                # required, list of MappingRule
+         	- ${2:MappingRule}
 """

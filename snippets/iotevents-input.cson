@@ -1,0 +1,13 @@
+'.source.yaml':
+  'iotevents-input':
+      'prefix': 'iotevents-input'
+      'body':"""
+         ${1:iotevents-input_name}:
+         	Type: AWS::IoTEvents::Input
+         	Properties:
+         		InputDefinition: ${2:InputDefinition}     # optional
+         		InputDescription: ${3:String}     # optional
+         		InputName: ${4:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+"""

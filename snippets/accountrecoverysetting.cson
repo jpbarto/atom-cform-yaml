@@ -1,0 +1,7 @@
+'.source.yaml':
+  'accountrecoverysetting':
+      'prefix': 'accountrecoverysetting'
+      'body':"""
+         RecoveryMechanisms:                # optional, list of RecoveryOption
+         	- ${2:RecoveryOption}
+"""

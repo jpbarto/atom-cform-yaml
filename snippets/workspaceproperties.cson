@@ -1,0 +1,10 @@
+'.source.yaml':
+  'workspaceproperties':
+      'prefix': 'workspaceproperties'
+      'body':"""
+         ComputeTypeName: ${2:String}     # optional
+         RootVolumeSizeGib: ${3:Integer}     # optional
+         RunningMode: ${4:String}     # optional
+         RunningModeAutoStopTimeoutInMinutes: ${5:Integer}     # optional
+         UserVolumeSizeGib: ${6:Integer}     # optional
+"""

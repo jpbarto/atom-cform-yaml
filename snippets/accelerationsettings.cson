@@ -1,0 +1,6 @@
+'.source.yaml':
+  'accelerationsettings':
+      'prefix': 'accelerationsettings'
+      'body':"""
+         Mode: ${2:String}     # required
+"""

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'datalocationresource':
+      'prefix': 'datalocationresource'
+      'body':"""
+         S3Resource: ${2:String}     # optional
+"""

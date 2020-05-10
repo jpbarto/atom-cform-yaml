@@ -1,0 +1,8 @@
+'.source.yaml':
+  'hopdestination':
+      'prefix': 'hopdestination'
+      'body':"""
+         Priority: ${2:Integer}     # optional
+         Queue: ${3:String}     # optional
+         WaitMinutes: ${4:Integer}     # optional
+"""

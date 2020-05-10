@@ -1,0 +1,8 @@
+'.source.yaml':
+  'autorollbackconfiguration':
+      'prefix': 'autorollbackconfiguration'
+      'body':"""
+         Enabled: ${2:Boolean}     # optional
+         Events:                # optional, list of String
+         	- ${3:String}
+"""

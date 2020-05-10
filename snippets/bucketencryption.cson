@@ -1,0 +1,7 @@
+'.source.yaml':
+  'bucketencryption':
+      'prefix': 'bucketencryption'
+      'body':"""
+         ServerSideEncryptionConfiguration:                # required, list of ServerSideEncryptionRule
+         	- ${2:ServerSideEncryptionRule}
+"""

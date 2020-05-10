@@ -1,0 +1,6 @@
+'.source.yaml':
+  'zoneawarenessconfig':
+      'prefix': 'zoneawarenessconfig'
+      'body':"""
+         AvailabilityZoneCount: ${2:Integer}     # optional
+"""

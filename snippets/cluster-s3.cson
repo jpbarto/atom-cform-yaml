@@ -1,0 +1,8 @@
+'.source.yaml':
+  'cluster-s3':
+      'prefix': 'cluster-s3'
+      'body':"""
+         Bucket: ${2:String}     # optional
+         Enabled: ${3:Boolean}     # required
+         Prefix: ${4:String}     # optional
+"""

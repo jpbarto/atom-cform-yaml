@@ -1,0 +1,14 @@
+'.source.yaml':
+  'transitgatewayattachment':
+      'prefix': 'transitgatewayattachment'
+      'body':"""
+         ${1:transitgatewayattachment_name}:
+         	Type: AWS::EC2::TransitGatewayAttachment
+         	Properties:
+         		SubnetIds:                # required, list of String
+         			- ${2:String}
+         		Tags:                # optional, list of Tag
+         			- ${3:Tag}
+         		TransitGatewayId: ${4:String}     # required
+         		VpcId: ${5:String}     # required
+"""

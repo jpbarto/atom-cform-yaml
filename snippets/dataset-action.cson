@@ -1,0 +1,8 @@
+'.source.yaml':
+  'dataset-action':
+      'prefix': 'dataset-action'
+      'body':"""
+         ActionName: ${2:String}     # required
+         ContainerAction: ${3:ContainerAction}     # optional
+         QueryAction: ${4:QueryAction}     # optional
+"""

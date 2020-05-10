@@ -1,0 +1,7 @@
+'.source.yaml':
+  'iemap':
+      'prefix': 'iemap'
+      'body':"""
+         ACCOUNT:                # optional, list of String
+         	- ${2:String}
+"""

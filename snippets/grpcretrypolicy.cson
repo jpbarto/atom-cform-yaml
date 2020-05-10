@@ -1,0 +1,13 @@
+'.source.yaml':
+  'grpcretrypolicy':
+      'prefix': 'grpcretrypolicy'
+      'body':"""
+         GrpcRetryEvents:                # optional, list of String
+         	- ${2:String}
+         HttpRetryEvents:                # optional, list of String
+         	- ${3:String}
+         MaxRetries: ${4:Integer}     # required
+         PerRetryTimeout: ${5:Duration}     # required
+         TcpRetryEvents:                # optional, list of String
+         	- ${6:String}
+"""

@@ -1,8 +1,0 @@
-'.source.yaml':
-  'referencedatasource':
-      'prefix': 'referencedatasource'
-      'body':"""
-         ReferenceSchema: ${2:ReferenceSchema}     # required
-         S3ReferenceDataSource: ${3:S3ReferenceDataSource}     # optional
-         TableName: ${4:String}     # optional
-"""

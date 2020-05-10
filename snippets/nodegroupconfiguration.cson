@@ -2,9 +2,10 @@
   'nodegroupconfiguration':
       'prefix': 'nodegroupconfiguration'
       'body':"""
-         PrimaryAvailabilityZone: ${2:String}     # optional
+         NodeGroupId: ${2:String}     # optional
+         PrimaryAvailabilityZone: ${3:String}     # optional
          ReplicaAvailabilityZones:                # optional, list of String
-         	- ${3:String}
-         ReplicaCount: ${4:Integer}     # optional
-         Slots: ${5:String}     # optional
+         	- ${4:String}
+         ReplicaCount: ${5:Integer}     # optional
+         Slots: ${6:String}     # optional
 """

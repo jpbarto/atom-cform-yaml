@@ -6,16 +6,20 @@
          	Type: AWS::ApiGateway::Method
          	Properties:
          		ApiKeyRequired: ${2:Boolean}     # optional
-         		AuthorizationType: ${3:String}     # optional
-         		AuthorizerId: ${4:String}     # optional
-         		HttpMethod: ${5:String}     # required
-         		Integration: ${6:Integration}     # optional
+         		AuthorizationScopes:                # optional, list of String
+         			- ${3:String}
+         		AuthorizationType: ${4:String}     # optional
+         		AuthorizerId: ${5:String}     # optional
+         		HttpMethod: ${6:String}     # required
+         		Integration: ${7:Integration}     # optional
          		MethodResponses:                # optional, list of MethodResponse
-         			- ${7:MethodResponse}
+         			- ${8:MethodResponse}
+         		OperationName: ${9:String}     # optional
          		RequestModels:                # optional, map of String
-         			${8:String_key}: ${9:String_value}
+         			${10:String_key}: ${11:String_value}
          		RequestParameters:                # optional, map of Boolean
-         			${10:Boolean_key}: ${11:Boolean_value}
-         		ResourceId: ${12:String}     # required
-         		RestApiId: ${13:String}     # required
+         			${12:Boolean_key}: ${13:Boolean_value}
+         		RequestValidatorId: ${14:String}     # optional
+         		ResourceId: ${15:String}     # required
+         		RestApiId: ${16:String}     # required
 """

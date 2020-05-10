@@ -1,0 +1,7 @@
+'.source.yaml':
+  'logpublishingoption':
+      'prefix': 'logpublishingoption'
+      'body':"""
+         CloudWatchLogsLogGroupArn: ${2:String}     # optional
+         Enabled: ${3:Boolean}     # optional
+"""

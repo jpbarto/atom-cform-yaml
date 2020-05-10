@@ -1,0 +1,14 @@
+'.source.yaml':
+  'image':
+      'prefix': 'image'
+      'body':"""
+         ${1:image_name}:
+         	Type: AWS::ImageBuilder::Image
+         	Properties:
+         		DistributionConfigurationArn: ${2:String}     # optional
+         		ImageRecipeArn: ${3:String}     # required
+         		ImageTestsConfiguration: ${4:ImageTestsConfiguration}     # optional
+         		InfrastructureConfigurationArn: ${5:String}     # required
+         		Tags:                # optional, map of String
+         			${6:String_key}: ${7:String_value}
+"""

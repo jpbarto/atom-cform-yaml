@@ -1,0 +1,24 @@
+'.source.yaml':
+  'appstream-fleet':
+      'prefix': 'appstream-fleet'
+      'body':"""
+         ${1:appstream-fleet_name}:
+         	Type: AWS::AppStream::Fleet
+         	Properties:
+         		ComputeCapacity: ${2:ComputeCapacity}     # required
+         		Description: ${3:String}     # optional
+         		DisconnectTimeoutInSeconds: ${4:Integer}     # optional
+         		DisplayName: ${5:String}     # optional
+         		DomainJoinInfo: ${6:DomainJoinInfo}     # optional
+         		EnableDefaultInternetAccess: ${7:Boolean}     # optional
+         		FleetType: ${8:String}     # optional
+         		IdleDisconnectTimeoutInSeconds: ${9:Integer}     # optional
+         		ImageArn: ${10:String}     # optional
+         		ImageName: ${11:String}     # optional
+         		InstanceType: ${12:String}     # required
+         		MaxUserDurationInSeconds: ${13:Integer}     # optional
+         		Name: ${14:String}     # required
+         		Tags:                # optional, list of Tag
+         			- ${15:Tag}
+         		VpcConfig: ${16:VpcConfig}     # optional
+"""

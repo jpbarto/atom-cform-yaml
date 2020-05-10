@@ -1,0 +1,7 @@
+'.source.yaml':
+  'classicloadbalancersconfig':
+      'prefix': 'classicloadbalancersconfig'
+      'body':"""
+         ClassicLoadBalancers:                # required, list of ClassicLoadBalancer
+         	- ${2:ClassicLoadBalancer}
+"""

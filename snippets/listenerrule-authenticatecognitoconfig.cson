@@ -1,0 +1,14 @@
+'.source.yaml':
+  'listenerrule-authenticatecognitoconfig':
+      'prefix': 'listenerrule-authenticatecognitoconfig'
+      'body':"""
+         AuthenticationRequestExtraParams:                # optional, map of String
+         	${2:String_key}: ${3:String_value}
+         OnUnauthenticatedRequest: ${4:String}     # optional
+         Scope: ${5:String}     # optional
+         SessionCookieName: ${6:String}     # optional
+         SessionTimeout: ${7:Long}     # optional
+         UserPoolArn: ${8:String}     # required
+         UserPoolClientId: ${9:String}     # required
+         UserPoolDomain: ${10:String}     # required
+"""

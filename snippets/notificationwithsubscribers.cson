@@ -1,0 +1,8 @@
+'.source.yaml':
+  'notificationwithsubscribers':
+      'prefix': 'notificationwithsubscribers'
+      'body':"""
+         Notification: ${2:Notification}     # required
+         Subscribers:                # required, list of Subscriber
+         	- ${3:Subscriber}
+"""

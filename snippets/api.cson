@@ -1,0 +1,25 @@
+'.source.yaml':
+  'api':
+      'prefix': 'api'
+      'body':"""
+         ${1:api_name}:
+         	Type: AWS::ApiGatewayV2::Api
+         	Properties:
+         		ApiKeySelectionExpression: ${2:String}     # optional
+         		BasePath: ${3:String}     # optional
+         		Body: ${4:Json}     # optional
+         		BodyS3Location: ${5:BodyS3Location}     # optional
+         		CorsConfiguration: ${6:Cors}     # optional
+         		CredentialsArn: ${7:String}     # optional
+         		Description: ${8:String}     # optional
+         		DisableExecuteApiEndpoint: ${9:Boolean}     # optional
+         		DisableSchemaValidation: ${10:Boolean}     # optional
+         		FailOnWarnings: ${11:Boolean}     # optional
+         		Name: ${12:String}     # optional
+         		ProtocolType: ${13:String}     # optional
+         		RouteKey: ${14:String}     # optional
+         		RouteSelectionExpression: ${15:String}     # optional
+         		Tags: ${16:Json}     # optional
+         		Target: ${17:String}     # optional
+         		Version: ${18:String}     # optional
+"""

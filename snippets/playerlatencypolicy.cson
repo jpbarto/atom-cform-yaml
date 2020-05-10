@@ -1,0 +1,7 @@
+'.source.yaml':
+  'playerlatencypolicy':
+      'prefix': 'playerlatencypolicy'
+      'body':"""
+         MaximumIndividualPlayerLatencyMilliseconds: ${2:Integer}     # optional
+         PolicyDurationSeconds: ${3:Integer}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'partition-order':
+      'prefix': 'partition-order'
+      'body':"""
+         Column: ${2:String}     # required
+         SortOrder: ${3:Integer}     # optional
+"""

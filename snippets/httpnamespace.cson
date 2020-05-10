@@ -1,0 +1,10 @@
+'.source.yaml':
+  'httpnamespace':
+      'prefix': 'httpnamespace'
+      'body':"""
+         ${1:httpnamespace_name}:
+         	Type: AWS::ServiceDiscovery::HttpNamespace
+         	Properties:
+         		Description: ${2:String}     # optional
+         		Name: ${3:String}     # required
+"""

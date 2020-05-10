@@ -1,0 +1,7 @@
+'.source.yaml':
+  'robotapplication-robotsoftwaresuite':
+      'prefix': 'robotapplication-robotsoftwaresuite'
+      'body':"""
+         Name: ${2:String}     # required
+         Version: ${3:String}     # required
+"""

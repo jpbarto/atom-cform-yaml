@@ -1,0 +1,9 @@
+'.source.yaml':
+  'storageconnector':
+      'prefix': 'storageconnector'
+      'body':"""
+         ConnectorType: ${2:String}     # required
+         Domains:                # optional, list of String
+         	- ${3:String}
+         ResourceIdentifier: ${4:String}     # optional
+"""

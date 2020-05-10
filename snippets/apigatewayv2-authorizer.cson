@@ -1,0 +1,18 @@
+'.source.yaml':
+  'apigatewayv2-authorizer':
+      'prefix': 'apigatewayv2-authorizer'
+      'body':"""
+         ${1:apigatewayv2-authorizer_name}:
+         	Type: AWS::ApiGatewayV2::Authorizer
+         	Properties:
+         		ApiId: ${2:String}     # required
+         		AuthorizerCredentialsArn: ${3:String}     # optional
+         		AuthorizerResultTtlInSeconds: ${4:Integer}     # optional
+         		AuthorizerType: ${5:String}     # required
+         		AuthorizerUri: ${6:String}     # optional
+         		IdentitySource:                # required, list of String
+         			- ${7:String}
+         		IdentityValidationExpression: ${8:String}     # optional
+         		JwtConfiguration: ${9:JWTConfiguration}     # optional
+         		Name: ${10:String}     # required
+"""

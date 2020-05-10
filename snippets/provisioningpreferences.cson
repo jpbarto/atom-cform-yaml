@@ -1,0 +1,14 @@
+'.source.yaml':
+  'provisioningpreferences':
+      'prefix': 'provisioningpreferences'
+      'body':"""
+         StackSetAccounts:                # optional, list of String
+         	- ${2:String}
+         StackSetFailureToleranceCount: ${3:Integer}     # optional
+         StackSetFailureTolerancePercentage: ${4:Integer}     # optional
+         StackSetMaxConcurrencyCount: ${5:Integer}     # optional
+         StackSetMaxConcurrencyPercentage: ${6:Integer}     # optional
+         StackSetOperationType: ${7:String}     # optional
+         StackSetRegions:                # optional, list of String
+         	- ${8:String}
+"""

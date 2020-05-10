@@ -1,0 +1,6 @@
+'.source.yaml':
+  'meshspec':
+      'prefix': 'meshspec'
+      'body':"""
+         EgressFilter: ${2:EgressFilter}     # optional
+"""

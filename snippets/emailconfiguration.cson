@@ -2,6 +2,9 @@
   'emailconfiguration':
       'prefix': 'emailconfiguration'
       'body':"""
-         ReplyToEmailAddress: ${2:String}     # optional
-         SourceArn: ${3:String}     # optional
+         ConfigurationSet: ${2:String}     # optional
+         EmailSendingAccount: ${3:String}     # optional
+         From: ${4:String}     # optional
+         ReplyToEmailAddress: ${5:String}     # optional
+         SourceArn: ${6:String}     # optional
 """

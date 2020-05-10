@@ -1,0 +1,11 @@
+'.source.yaml':
+  'transitgatewayroutetable':
+      'prefix': 'transitgatewayroutetable'
+      'body':"""
+         ${1:transitgatewayroutetable_name}:
+         	Type: AWS::EC2::TransitGatewayRouteTable
+         	Properties:
+         		Tags:                # optional, list of Tag
+         			- ${2:Tag}
+         		TransitGatewayId: ${3:String}     # required
+"""

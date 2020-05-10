@@ -1,0 +1,13 @@
+'.source.yaml':
+  'iotanalytics-pipeline':
+      'prefix': 'iotanalytics-pipeline'
+      'body':"""
+         ${1:iotanalytics-pipeline_name}:
+         	Type: AWS::IoTAnalytics::Pipeline
+         	Properties:
+         		PipelineActivities:                # required, list of Activity
+         			- ${2:Activity}
+         		PipelineName: ${3:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${4:Tag}
+"""

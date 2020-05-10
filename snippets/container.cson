@@ -1,0 +1,14 @@
+'.source.yaml':
+  'container':
+      'prefix': 'container'
+      'body':"""
+         ${1:container_name}:
+         	Type: AWS::MediaStore::Container
+         	Properties:
+         		AccessLoggingEnabled: ${2:Boolean}     # optional
+         		ContainerName: ${3:String}     # required
+         		CorsPolicy:                # optional, list of CorsRule
+         			- ${4:CorsRule}
+         		LifecyclePolicy: ${5:String}     # optional
+         		Policy: ${6:String}     # optional
+"""

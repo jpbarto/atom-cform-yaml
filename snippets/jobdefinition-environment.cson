@@ -1,0 +1,7 @@
+'.source.yaml':
+  'jobdefinition-environment':
+      'prefix': 'jobdefinition-environment'
+      'body':"""
+         Name: ${2:String}     # optional
+         Value: ${3:String}     # optional
+"""

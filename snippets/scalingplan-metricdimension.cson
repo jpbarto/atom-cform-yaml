@@ -1,0 +1,7 @@
+'.source.yaml':
+  'scalingplan-metricdimension':
+      'prefix': 'scalingplan-metricdimension'
+      'body':"""
+         Name: ${2:String}     # required
+         Value: ${3:String}     # required
+"""

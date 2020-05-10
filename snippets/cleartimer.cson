@@ -1,0 +1,6 @@
+'.source.yaml':
+  'cleartimer':
+      'prefix': 'cleartimer'
+      'body':"""
+         TimerName: ${2:String}     # optional
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'listenercertificate':
+      'prefix': 'listenercertificate'
+      'body':"""
+         ${1:listenercertificate_name}:
+         	Type: AWS::ElasticLoadBalancingV2::ListenerCertificate
+         	Properties:
+         		Certificates:                # required, list of Certificate
+         			- ${2:Certificate}
+         		ListenerArn: ${3:String}     # required
+"""

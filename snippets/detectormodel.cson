@@ -1,0 +1,16 @@
+'.source.yaml':
+  'detectormodel':
+      'prefix': 'detectormodel'
+      'body':"""
+         ${1:detectormodel_name}:
+         	Type: AWS::IoTEvents::DetectorModel
+         	Properties:
+         		DetectorModelDefinition: ${2:DetectorModelDefinition}     # optional
+         		DetectorModelDescription: ${3:String}     # optional
+         		DetectorModelName: ${4:String}     # optional
+         		EvaluationMethod: ${5:String}     # optional
+         		Key: ${6:String}     # optional
+         		RoleArn: ${7:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${8:Tag}
+"""

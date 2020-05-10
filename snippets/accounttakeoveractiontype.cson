@@ -1,0 +1,7 @@
+'.source.yaml':
+  'accounttakeoveractiontype':
+      'prefix': 'accounttakeoveractiontype'
+      'body':"""
+         EventAction: ${2:String}     # required
+         Notify: ${3:Boolean}     # required
+"""

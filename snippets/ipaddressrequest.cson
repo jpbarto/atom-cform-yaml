@@ -1,0 +1,7 @@
+'.source.yaml':
+  'ipaddressrequest':
+      'prefix': 'ipaddressrequest'
+      'body':"""
+         Ip: ${2:String}     # optional
+         SubnetId: ${3:String}     # required
+"""

@@ -1,0 +1,12 @@
+'.source.yaml':
+  'stackuserassociation':
+      'prefix': 'stackuserassociation'
+      'body':"""
+         ${1:stackuserassociation_name}:
+         	Type: AWS::AppStream::StackUserAssociation
+         	Properties:
+         		AuthenticationType: ${2:String}     # required
+         		SendEmailNotification: ${3:Boolean}     # optional
+         		StackName: ${4:String}     # required
+         		UserName: ${5:String}     # required
+"""

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'revocationconfiguration':
+      'prefix': 'revocationconfiguration'
+      'body':"""
+         CrlConfiguration: ${2:CrlConfiguration}     # optional
+"""

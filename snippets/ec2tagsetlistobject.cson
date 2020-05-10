@@ -1,0 +1,7 @@
+'.source.yaml':
+  'ec2tagsetlistobject':
+      'prefix': 'ec2tagsetlistobject'
+      'body':"""
+         Ec2TagGroup:                # optional, list of EC2TagFilter
+         	- ${2:EC2TagFilter}
+"""

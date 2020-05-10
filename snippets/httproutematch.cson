@@ -1,0 +1,10 @@
+'.source.yaml':
+  'httproutematch':
+      'prefix': 'httproutematch'
+      'body':"""
+         Headers:                # optional, list of HttpRouteHeader
+         	- ${2:HttpRouteHeader}
+         Method: ${3:String}     # optional
+         Prefix: ${4:String}     # required
+         Scheme: ${5:String}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'inputdefinition':
+      'prefix': 'inputdefinition'
+      'body':"""
+         Attributes:                # optional, list of Attribute
+         	- ${2:Attribute}
+"""

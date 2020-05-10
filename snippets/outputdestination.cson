@@ -1,0 +1,11 @@
+'.source.yaml':
+  'outputdestination':
+      'prefix': 'outputdestination'
+      'body':"""
+         Id: ${2:String}     # optional
+         MediaPackageSettings:                # optional, list of MediaPackageOutputDestinationSettings
+         	- ${3:MediaPackageOutputDestinationSettings}
+         MultiplexSettings: ${4:MultiplexProgramChannelDestinationSettings}     # optional
+         Settings:                # optional, list of OutputDestinationSettings
+         	- ${5:OutputDestinationSettings}
+"""

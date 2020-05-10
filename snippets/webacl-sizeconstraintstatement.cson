@@ -1,0 +1,10 @@
+'.source.yaml':
+  'webacl-sizeconstraintstatement':
+      'prefix': 'webacl-sizeconstraintstatement'
+      'body':"""
+         ComparisonOperator: ${2:String}     # required
+         FieldToMatch: ${3:FieldToMatch}     # required
+         Size: ${4:Integer}     # required
+         TextTransformations:                # required, list of TextTransformation
+         	- ${5:TextTransformation}
+"""

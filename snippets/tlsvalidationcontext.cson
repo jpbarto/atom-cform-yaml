@@ -1,0 +1,6 @@
+'.source.yaml':
+  'tlsvalidationcontext':
+      'prefix': 'tlsvalidationcontext'
+      'body':"""
+         Trust: ${2:TlsValidationContextTrust}     # required
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'primarytaskset':
+      'prefix': 'primarytaskset'
+      'body':"""
+         ${1:primarytaskset_name}:
+         	Type: AWS::ECS::PrimaryTaskSet
+         	Properties:
+         		Cluster: ${2:String}     # required
+         		Service: ${3:String}     # required
+         		TaskSetId: ${4:String}     # required
+"""

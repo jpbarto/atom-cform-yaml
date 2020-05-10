@@ -1,0 +1,8 @@
+'.source.yaml':
+  'suspendedstate':
+      'prefix': 'suspendedstate'
+      'body':"""
+         DynamicScalingInSuspended: ${2:Boolean}     # optional
+         DynamicScalingOutSuspended: ${3:Boolean}     # optional
+         ScheduledScalingSuspended: ${4:Boolean}     # optional
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'ondemandoptionsrequest':
+      'prefix': 'ondemandoptionsrequest'
+      'body':"""
+         AllocationStrategy: ${2:String}     # optional
+         CapacityReservationOptions: ${3:CapacityReservationOptionsRequest}     # optional
+         MaxTotalPrice: ${4:String}     # optional
+         MinTargetCapacity: ${5:Integer}     # optional
+         SingleAvailabilityZone: ${6:Boolean}     # optional
+         SingleInstanceType: ${7:Boolean}     # optional
+"""

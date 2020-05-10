@@ -1,0 +1,9 @@
+'.source.yaml':
+  'coredefinition-core':
+      'prefix': 'coredefinition-core'
+      'body':"""
+         CertificateArn: ${2:String}     # required
+         Id: ${3:String}     # required
+         SyncShadow: ${4:Boolean}     # optional
+         ThingArn: ${5:String}     # required
+"""

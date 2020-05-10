@@ -1,0 +1,6 @@
+'.source.yaml':
+  'cluster-logginginfo':
+      'prefix': 'cluster-logginginfo'
+      'body':"""
+         BrokerLogs: ${2:BrokerLogs}     # required
+"""

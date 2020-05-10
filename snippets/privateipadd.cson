@@ -1,0 +1,7 @@
+'.source.yaml':
+  'privateipadd':
+      'prefix': 'privateipadd'
+      'body':"""
+         Primary: ${2:Boolean}     # optional
+         PrivateIpAddress: ${3:String}     # optional
+"""

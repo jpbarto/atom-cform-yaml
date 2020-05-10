@@ -1,0 +1,6 @@
+'.source.yaml':
+  'executioncontrols':
+      'prefix': 'executioncontrols'
+      'body':"""
+         SsmControls: ${2:SsmControls}     # optional
+"""

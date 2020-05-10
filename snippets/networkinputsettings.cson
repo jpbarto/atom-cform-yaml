@@ -1,0 +1,7 @@
+'.source.yaml':
+  'networkinputsettings':
+      'prefix': 'networkinputsettings'
+      'body':"""
+         HlsInputSettings: ${2:HlsInputSettings}     # optional
+         ServerValidation: ${3:String}     # optional
+"""

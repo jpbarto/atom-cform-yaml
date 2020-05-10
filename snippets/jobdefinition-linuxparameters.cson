@@ -1,0 +1,7 @@
+'.source.yaml':
+  'jobdefinition-linuxparameters':
+      'prefix': 'jobdefinition-linuxparameters'
+      'body':"""
+         Devices:                # optional, list of Device
+         	- ${2:Device}
+"""

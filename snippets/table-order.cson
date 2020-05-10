@@ -1,0 +1,7 @@
+'.source.yaml':
+  'table-order':
+      'prefix': 'table-order'
+      'body':"""
+         Column: ${2:String}     # required
+         SortOrder: ${3:Integer}     # required
+"""

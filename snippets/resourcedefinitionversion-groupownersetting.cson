@@ -1,0 +1,7 @@
+'.source.yaml':
+  'resourcedefinitionversion-groupownersetting':
+      'prefix': 'resourcedefinitionversion-groupownersetting'
+      'body':"""
+         AutoAddGroupOwner: ${2:Boolean}     # required
+         GroupOwner: ${3:String}     # optional
+"""

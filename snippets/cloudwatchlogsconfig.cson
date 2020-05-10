@@ -1,0 +1,8 @@
+'.source.yaml':
+  'cloudwatchlogsconfig':
+      'prefix': 'cloudwatchlogsconfig'
+      'body':"""
+         GroupName: ${2:String}     # optional
+         Status: ${3:String}     # required
+         StreamName: ${4:String}     # optional
+"""

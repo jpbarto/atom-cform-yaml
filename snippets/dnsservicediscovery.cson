@@ -1,0 +1,6 @@
+'.source.yaml':
+  'dnsservicediscovery':
+      'prefix': 'dnsservicediscovery'
+      'body':"""
+         Hostname: ${2:String}     # required
+"""

@@ -1,0 +1,9 @@
+'.source.yaml':
+  'gluetables':
+      'prefix': 'gluetables'
+      'body':"""
+         CatalogId: ${2:String}     # optional
+         ConnectionName: ${3:String}     # optional
+         DatabaseName: ${4:String}     # required
+         TableName: ${5:String}     # required
+"""

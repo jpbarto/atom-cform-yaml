@@ -1,0 +1,18 @@
+'.source.yaml':
+  'detectormodel-action':
+      'prefix': 'detectormodel-action'
+      'body':"""
+         ClearTimer: ${2:ClearTimer}     # optional
+         DynamoDB: ${3:DynamoDB}     # optional
+         DynamoDBv2: ${4:DynamoDBv2}     # optional
+         Firehose: ${5:Firehose}     # optional
+         IotEvents: ${6:IotEvents}     # optional
+         IotSiteWise: ${7:IotSiteWise}     # optional
+         IotTopicPublish: ${8:IotTopicPublish}     # optional
+         Lambda: ${9:Lambda}     # optional
+         ResetTimer: ${10:ResetTimer}     # optional
+         SetTimer: ${11:SetTimer}     # optional
+         SetVariable: ${12:SetVariable}     # optional
+         Sns: ${13:Sns}     # optional
+         Sqs: ${14:Sqs}     # optional
+"""

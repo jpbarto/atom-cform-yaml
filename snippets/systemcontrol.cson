@@ -1,0 +1,7 @@
+'.source.yaml':
+  'systemcontrol':
+      'prefix': 'systemcontrol'
+      'body':"""
+         Namespace: ${2:String}     # required
+         Value: ${3:String}     # required
+"""

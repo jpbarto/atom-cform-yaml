@@ -1,0 +1,7 @@
+'.source.yaml':
+  'jsonclassifier':
+      'prefix': 'jsonclassifier'
+      'body':"""
+         JsonPath: ${2:String}     # required
+         Name: ${3:String}     # optional
+"""

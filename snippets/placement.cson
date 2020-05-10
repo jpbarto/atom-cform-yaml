@@ -1,0 +1,12 @@
+'.source.yaml':
+  'placement':
+      'prefix': 'placement'
+      'body':"""
+         ${1:placement_name}:
+         	Type: AWS::IoT1Click::Placement
+         	Properties:
+         		AssociatedDevices: ${2:Json}     # optional
+         		Attributes: ${3:Json}     # optional
+         		PlacementName: ${4:String}     # optional
+         		ProjectName: ${5:String}     # required
+"""

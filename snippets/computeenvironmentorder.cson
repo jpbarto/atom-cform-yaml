@@ -1,0 +1,7 @@
+'.source.yaml':
+  'computeenvironmentorder':
+      'prefix': 'computeenvironmentorder'
+      'body':"""
+         ComputeEnvironment: ${2:String}     # required
+         Order: ${3:Integer}     # required
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'schemaconfiguration':
+      'prefix': 'schemaconfiguration'
+      'body':"""
+         CatalogId: ${2:String}     # required
+         DatabaseName: ${3:String}     # required
+         Region: ${4:String}     # required
+         RoleARN: ${5:String}     # required
+         TableName: ${6:String}     # required
+         VersionId: ${7:String}     # required
+"""

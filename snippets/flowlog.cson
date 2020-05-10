@@ -5,9 +5,11 @@
          ${1:flowlog_name}:
          	Type: AWS::EC2::FlowLog
          	Properties:
-         		DeliverLogsPermissionArn: ${2:String}     # required
-         		LogGroupName: ${3:String}     # required
-         		ResourceId: ${4:String}     # required
-         		ResourceType: ${5:String}     # required
-         		TrafficType: ${6:String}     # required
+         		DeliverLogsPermissionArn: ${2:String}     # optional
+         		LogDestination: ${3:String}     # optional
+         		LogDestinationType: ${4:String}     # optional
+         		LogGroupName: ${5:String}     # optional
+         		ResourceId: ${6:String}     # required
+         		ResourceType: ${7:String}     # required
+         		TrafficType: ${8:String}     # required
 """

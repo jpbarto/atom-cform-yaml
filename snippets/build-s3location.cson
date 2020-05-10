@@ -4,5 +4,6 @@
       'body':"""
          Bucket: ${2:String}     # required
          Key: ${3:String}     # required
-         RoleArn: ${4:String}     # required
+         ObjectVersion: ${4:String}     # optional
+         RoleArn: ${5:String}     # required
 """

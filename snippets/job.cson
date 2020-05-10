@@ -1,0 +1,26 @@
+'.source.yaml':
+  'job':
+      'prefix': 'job'
+      'body':"""
+         ${1:job_name}:
+         	Type: AWS::Glue::Job
+         	Properties:
+         		AllocatedCapacity: ${2:Double}     # optional
+         		Command: ${3:JobCommand}     # required
+         		Connections: ${4:ConnectionsList}     # optional
+         		DefaultArguments: ${5:Json}     # optional
+         		Description: ${6:String}     # optional
+         		ExecutionProperty: ${7:ExecutionProperty}     # optional
+         		GlueVersion: ${8:String}     # optional
+         		LogUri: ${9:String}     # optional
+         		MaxCapacity: ${10:Double}     # optional
+         		MaxRetries: ${11:Double}     # optional
+         		Name: ${12:String}     # optional
+         		NotificationProperty: ${13:NotificationProperty}     # optional
+         		NumberOfWorkers: ${14:Integer}     # optional
+         		Role: ${15:String}     # required
+         		SecurityConfiguration: ${16:String}     # optional
+         		Tags: ${17:Json}     # optional
+         		Timeout: ${18:Integer}     # optional
+         		WorkerType: ${19:String}     # optional
+"""

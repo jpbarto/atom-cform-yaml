@@ -1,0 +1,9 @@
+'.source.yaml':
+  'userpoolconfig':
+      'prefix': 'userpoolconfig'
+      'body':"""
+         AppIdClientRegex: ${2:String}     # optional
+         AwsRegion: ${3:String}     # optional
+         DefaultAction: ${4:String}     # optional
+         UserPoolId: ${5:String}     # optional
+"""

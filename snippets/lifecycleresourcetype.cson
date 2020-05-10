@@ -1,0 +1,7 @@
+'.source.yaml':
+  'lifecycleresourcetype':
+      'prefix': 'lifecycleresourcetype'
+      'body':"""
+         DeleteAfterDays: ${2:Double}     # optional
+         MoveToColdStorageAfterDays: ${3:Double}     # optional
+"""

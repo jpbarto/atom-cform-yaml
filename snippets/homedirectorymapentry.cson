@@ -1,0 +1,7 @@
+'.source.yaml':
+  'homedirectorymapentry':
+      'prefix': 'homedirectorymapentry'
+      'body':"""
+         Entry: ${2:String}     # required
+         Target: ${3:String}     # required
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'sourcesegments':
+      'prefix': 'sourcesegments'
+      'body':"""
+         Id: ${2:String}     # required
+         Version: ${3:Integer}     # optional
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'captionselectorsettings':
+      'prefix': 'captionselectorsettings'
+      'body':"""
+         AribSourceSettings: ${2:AribSourceSettings}     # optional
+         DvbSubSourceSettings: ${3:DvbSubSourceSettings}     # optional
+         EmbeddedSourceSettings: ${4:EmbeddedSourceSettings}     # optional
+         Scte20SourceSettings: ${5:Scte20SourceSettings}     # optional
+         Scte27SourceSettings: ${6:Scte27SourceSettings}     # optional
+         TeletextSourceSettings: ${7:TeletextSourceSettings}     # optional
+"""

@@ -1,0 +1,21 @@
+'.source.yaml':
+  'apigatewayv2-route':
+      'prefix': 'apigatewayv2-route'
+      'body':"""
+         ${1:apigatewayv2-route_name}:
+         	Type: AWS::ApiGatewayV2::Route
+         	Properties:
+         		ApiId: ${2:String}     # required
+         		ApiKeyRequired: ${3:Boolean}     # optional
+         		AuthorizationScopes:                # optional, list of String
+         			- ${4:String}
+         		AuthorizationType: ${5:String}     # optional
+         		AuthorizerId: ${6:String}     # optional
+         		ModelSelectionExpression: ${7:String}     # optional
+         		OperationName: ${8:String}     # optional
+         		RequestModels: ${9:Json}     # optional
+         		RequestParameters: ${10:Json}     # optional
+         		RouteKey: ${11:String}     # required
+         		RouteResponseSelectionExpression: ${12:String}     # optional
+         		Target: ${13:String}     # optional
+"""

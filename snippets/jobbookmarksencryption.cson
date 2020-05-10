@@ -1,0 +1,7 @@
+'.source.yaml':
+  'jobbookmarksencryption':
+      'prefix': 'jobbookmarksencryption'
+      'body':"""
+         JobBookmarksEncryptionMode: ${2:String}     # optional
+         KmsKeyArn: ${3:String}     # optional
+"""

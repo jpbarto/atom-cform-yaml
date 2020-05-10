@@ -1,0 +1,10 @@
+'.source.yaml':
+  's3reportexportconfig':
+      'prefix': 's3reportexportconfig'
+      'body':"""
+         Bucket: ${2:String}     # required
+         EncryptionDisabled: ${3:Boolean}     # optional
+         EncryptionKey: ${4:String}     # optional
+         Packaging: ${5:String}     # optional
+         Path: ${6:String}     # optional
+"""

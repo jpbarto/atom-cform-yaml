@@ -1,0 +1,8 @@
+'.source.yaml':
+  'serverprocess':
+      'prefix': 'serverprocess'
+      'body':"""
+         ConcurrentExecutions: ${2:Integer}     # required
+         LaunchPath: ${3:String}     # required
+         Parameters: ${4:String}     # optional
+"""

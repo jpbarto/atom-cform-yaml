@@ -1,0 +1,7 @@
+'.source.yaml':
+  'sourceipconfig':
+      'prefix': 'sourceipconfig'
+      'body':"""
+         Values:                # optional, list of String
+         	- ${2:String}
+"""

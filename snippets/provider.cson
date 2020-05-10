@@ -1,0 +1,6 @@
+'.source.yaml':
+  'provider':
+      'prefix': 'provider'
+      'body':"""
+         KeyArn: ${2:String}     # optional
+"""

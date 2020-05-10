@@ -1,0 +1,16 @@
+'.source.yaml':
+  'tableinput':
+      'prefix': 'tableinput'
+      'body':"""
+         Description: ${2:String}     # optional
+         Name: ${3:String}     # optional
+         Owner: ${4:String}     # optional
+         Parameters: ${5:Json}     # optional
+         PartitionKeys:                # optional, list of Column
+         	- ${6:Column}
+         Retention: ${7:Integer}     # optional
+         StorageDescriptor: ${8:StorageDescriptor}     # optional
+         TableType: ${9:String}     # optional
+         ViewExpandedText: ${10:String}     # optional
+         ViewOriginalText: ${11:String}     # optional
+"""

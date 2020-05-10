@@ -1,0 +1,6 @@
+'.source.yaml':
+  'rulegroup-ipsetreferencestatement':
+      'prefix': 'rulegroup-ipsetreferencestatement'
+      'body':"""
+         Arn: ${2:String}     # required
+"""

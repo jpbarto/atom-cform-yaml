@@ -1,0 +1,6 @@
+'.source.yaml':
+  'filesystem-lifecyclepolicy':
+      'prefix': 'filesystem-lifecyclepolicy'
+      'body':"""
+         TransitionToIA: ${2:String}     # required
+"""

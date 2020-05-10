@@ -1,0 +1,8 @@
+'.source.yaml':
+  'topicrule-assetpropertyvalue':
+      'prefix': 'topicrule-assetpropertyvalue'
+      'body':"""
+         Quality: ${2:String}     # optional
+         Timestamp: ${3:AssetPropertyTimestamp}     # required
+         Value: ${4:AssetPropertyVariant}     # required
+"""

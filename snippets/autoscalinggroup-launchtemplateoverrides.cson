@@ -1,0 +1,7 @@
+'.source.yaml':
+  'autoscalinggroup-launchtemplateoverrides':
+      'prefix': 'autoscalinggroup-launchtemplateoverrides'
+      'body':"""
+         InstanceType: ${2:String}     # optional
+         WeightedCapacity: ${3:String}     # optional
+"""

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'branch-basicauthconfig':
+      'prefix': 'branch-basicauthconfig'
+      'body':"""
+         EnableBasicAuth: ${2:Boolean}     # optional
+         Password: ${3:String}     # required
+         Username: ${4:String}     # required
+"""

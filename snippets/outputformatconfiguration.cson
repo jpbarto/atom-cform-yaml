@@ -1,0 +1,6 @@
+'.source.yaml':
+  'outputformatconfiguration':
+      'prefix': 'outputformatconfiguration'
+      'body':"""
+         Serializer: ${2:Serializer}     # required
+"""

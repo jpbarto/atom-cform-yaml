@@ -1,0 +1,6 @@
+'.source.yaml':
+  'queryloggingconfig':
+      'prefix': 'queryloggingconfig'
+      'body':"""
+         CloudWatchLogsLogGroupArn: ${2:String}     # required
+"""

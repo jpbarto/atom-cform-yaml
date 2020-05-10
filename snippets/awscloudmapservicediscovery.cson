@@ -1,0 +1,9 @@
+'.source.yaml':
+  'awscloudmapservicediscovery':
+      'prefix': 'awscloudmapservicediscovery'
+      'body':"""
+         Attributes:                # optional, list of AwsCloudMapInstanceAttribute
+         	- ${2:AwsCloudMapInstanceAttribute}
+         NamespaceName: ${3:String}     # required
+         ServiceName: ${4:String}     # required
+"""

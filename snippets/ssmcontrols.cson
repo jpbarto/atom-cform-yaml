@@ -1,0 +1,7 @@
+'.source.yaml':
+  'ssmcontrols':
+      'prefix': 'ssmcontrols'
+      'body':"""
+         ConcurrentExecutionRatePercentage: ${2:Integer}     # optional
+         ErrorPercentage: ${3:Integer}     # optional
+"""

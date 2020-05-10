@@ -1,0 +1,11 @@
+'.source.yaml':
+  'functiondefinition':
+      'prefix': 'functiondefinition'
+      'body':"""
+         ${1:functiondefinition_name}:
+         	Type: AWS::Greengrass::FunctionDefinition
+         	Properties:
+         		InitialVersion: ${2:FunctionDefinitionVersion}     # optional
+         		Name: ${3:String}     # required
+         		Tags: ${4:Json}     # optional
+"""

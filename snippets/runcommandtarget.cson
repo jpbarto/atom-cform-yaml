@@ -1,0 +1,8 @@
+'.source.yaml':
+  'runcommandtarget':
+      'prefix': 'runcommandtarget'
+      'body':"""
+         Key: ${2:String}     # required
+         Values:                # required, list of String
+         	- ${3:String}
+"""

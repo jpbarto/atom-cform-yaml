@@ -1,0 +1,20 @@
+'.source.yaml':
+  'transfer-user':
+      'prefix': 'transfer-user'
+      'body':"""
+         ${1:transfer-user_name}:
+         	Type: AWS::Transfer::User
+         	Properties:
+         		HomeDirectory: ${2:String}     # optional
+         		HomeDirectoryMappings:                # optional, list of HomeDirectoryMapEntry
+         			- ${3:HomeDirectoryMapEntry}
+         		HomeDirectoryType: ${4:String}     # optional
+         		Policy: ${5:String}     # optional
+         		Role: ${6:String}     # required
+         		ServerId: ${7:String}     # required
+         		SshPublicKeys:                # optional, list of SshPublicKey
+         			- ${8:SshPublicKey}
+         		Tags:                # optional, list of Tag
+         			- ${9:Tag}
+         		UserName: ${10:String}     # required
+"""

@@ -9,12 +9,13 @@
          		CNAMEPrefix: ${3:String}     # optional
          		Description: ${4:String}     # optional
          		EnvironmentName: ${5:String}     # optional
-         		OptionSettings:                # optional, list of OptionSettings
-         			- ${6:OptionSettings}
-         		SolutionStackName: ${7:String}     # optional
+         		OptionSettings:                # optional, list of OptionSetting
+         			- ${6:OptionSetting}
+         		PlatformArn: ${7:String}     # optional
+         		SolutionStackName: ${8:String}     # optional
          		Tags:                # optional, list of Tag
-         			- ${8:Tag}
-         		TemplateName: ${9:String}     # optional
-         		Tier: ${10:Tier}     # optional
-         		VersionLabel: ${11:String}     # optional
+         			- ${9:Tag}
+         		TemplateName: ${10:String}     # optional
+         		Tier: ${11:Tier}     # optional
+         		VersionLabel: ${12:String}     # optional
 """

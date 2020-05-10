@@ -1,0 +1,6 @@
+'.source.yaml':
+  'nodeexporter':
+      'prefix': 'nodeexporter'
+      'body':"""
+         EnabledInBroker: ${2:Boolean}     # required
+"""

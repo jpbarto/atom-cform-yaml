@@ -1,0 +1,14 @@
+'.source.yaml':
+  'member':
+      'prefix': 'member'
+      'body':"""
+         ${1:member_name}:
+         	Type: AWS::GuardDuty::Member
+         	Properties:
+         		DetectorId: ${2:String}     # required
+         		DisableEmailNotification: ${3:Boolean}     # optional
+         		Email: ${4:String}     # required
+         		MemberId: ${5:String}     # required
+         		Message: ${6:String}     # optional
+         		Status: ${7:String}     # optional
+"""

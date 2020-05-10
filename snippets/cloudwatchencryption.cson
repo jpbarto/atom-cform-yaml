@@ -1,0 +1,7 @@
+'.source.yaml':
+  'cloudwatchencryption':
+      'prefix': 'cloudwatchencryption'
+      'body':"""
+         CloudWatchEncryptionMode: ${2:String}     # optional
+         KmsKeyArn: ${3:String}     # optional
+"""

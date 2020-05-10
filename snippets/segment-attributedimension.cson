@@ -1,0 +1,8 @@
+'.source.yaml':
+  'segment-attributedimension':
+      'prefix': 'segment-attributedimension'
+      'body':"""
+         AttributeType: ${2:String}     # optional
+         Values:                # optional, list of String
+         	- ${3:String}
+"""

@@ -1,0 +1,10 @@
+'.source.yaml':
+  'routespec':
+      'prefix': 'routespec'
+      'body':"""
+         GrpcRoute: ${2:GrpcRoute}     # optional
+         Http2Route: ${3:HttpRoute}     # optional
+         HttpRoute: ${4:HttpRoute}     # optional
+         Priority: ${5:Integer}     # optional
+         TcpRoute: ${6:TcpRoute}     # optional
+"""

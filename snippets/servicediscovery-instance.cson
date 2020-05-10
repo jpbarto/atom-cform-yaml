@@ -1,0 +1,11 @@
+'.source.yaml':
+  'servicediscovery-instance':
+      'prefix': 'servicediscovery-instance'
+      'body':"""
+         ${1:servicediscovery-instance_name}:
+         	Type: AWS::ServiceDiscovery::Instance
+         	Properties:
+         		InstanceAttributes: ${2:Json}     # required
+         		InstanceId: ${3:String}     # optional
+         		ServiceId: ${4:String}     # required
+"""

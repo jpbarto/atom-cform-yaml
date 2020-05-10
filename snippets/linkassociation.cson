@@ -1,0 +1,11 @@
+'.source.yaml':
+  'linkassociation':
+      'prefix': 'linkassociation'
+      'body':"""
+         ${1:linkassociation_name}:
+         	Type: AWS::NetworkManager::LinkAssociation
+         	Properties:
+         		DeviceId: ${2:String}     # required
+         		GlobalNetworkId: ${3:String}     # required
+         		LinkId: ${4:String}     # required
+"""

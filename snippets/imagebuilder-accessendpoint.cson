@@ -1,0 +1,7 @@
+'.source.yaml':
+  'imagebuilder-accessendpoint':
+      'prefix': 'imagebuilder-accessendpoint'
+      'body':"""
+         EndpointType: ${2:String}     # required
+         VpceId: ${3:String}     # required
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'demographic':
+      'prefix': 'demographic'
+      'body':"""
+         AppVersion: ${2:SetDimension}     # optional
+         Channel: ${3:SetDimension}     # optional
+         DeviceType: ${4:SetDimension}     # optional
+         Make: ${5:SetDimension}     # optional
+         Model: ${6:SetDimension}     # optional
+         Platform: ${7:SetDimension}     # optional
+"""

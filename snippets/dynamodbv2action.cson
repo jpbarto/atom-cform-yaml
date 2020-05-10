@@ -1,0 +1,7 @@
+'.source.yaml':
+  'dynamodbv2action':
+      'prefix': 'dynamodbv2action'
+      'body':"""
+         PutItem: ${2:PutItemInput}     # optional
+         RoleArn: ${3:String}     # optional
+"""

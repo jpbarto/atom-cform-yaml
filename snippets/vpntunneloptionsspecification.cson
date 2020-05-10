@@ -1,0 +1,7 @@
+'.source.yaml':
+  'vpntunneloptionsspecification':
+      'prefix': 'vpntunneloptionsspecification'
+      'body':"""
+         PreSharedKey: ${2:String}     # optional
+         TunnelInsideCidr: ${3:String}     # optional
+"""

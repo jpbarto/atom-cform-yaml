@@ -1,0 +1,7 @@
+'.source.yaml':
+  'onpremisestagset':
+      'prefix': 'onpremisestagset'
+      'body':"""
+         OnPremisesTagSetList:                # optional, list of OnPremisesTagSetListObject
+         	- ${2:OnPremisesTagSetListObject}
+"""

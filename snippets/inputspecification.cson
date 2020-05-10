@@ -1,0 +1,8 @@
+'.source.yaml':
+  'inputspecification':
+      'prefix': 'inputspecification'
+      'body':"""
+         Codec: ${2:String}     # optional
+         MaximumBitrate: ${3:String}     # optional
+         Resolution: ${4:String}     # optional
+"""

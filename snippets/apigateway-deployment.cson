@@ -1,0 +1,13 @@
+'.source.yaml':
+  'apigateway-deployment':
+      'prefix': 'apigateway-deployment'
+      'body':"""
+         ${1:apigateway-deployment_name}:
+         	Type: AWS::ApiGateway::Deployment
+         	Properties:
+         		DeploymentCanarySettings: ${2:DeploymentCanarySettings}     # optional
+         		Description: ${3:String}     # optional
+         		RestApiId: ${4:String}     # required
+         		StageDescription: ${5:StageDescription}     # optional
+         		StageName: ${6:String}     # optional
+"""

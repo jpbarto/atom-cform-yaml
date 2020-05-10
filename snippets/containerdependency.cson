@@ -1,0 +1,7 @@
+'.source.yaml':
+  'containerdependency':
+      'prefix': 'containerdependency'
+      'body':"""
+         Condition: ${2:String}     # required
+         ContainerName: ${3:String}     # required
+"""

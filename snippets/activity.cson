@@ -6,4 +6,6 @@
          	Type: AWS::StepFunctions::Activity
          	Properties:
          		Name: ${2:String}     # required
+         		Tags:                # optional, list of TagsEntry
+         			- ${3:TagsEntry}
 """

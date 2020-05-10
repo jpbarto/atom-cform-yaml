@@ -1,0 +1,7 @@
+'.source.yaml':
+  'findingcriteria':
+      'prefix': 'findingcriteria'
+      'body':"""
+         Criterion: ${2:Json}     # optional
+         ItemType: ${3:Condition}     # optional
+"""

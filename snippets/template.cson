@@ -1,0 +1,9 @@
+'.source.yaml':
+  'template':
+      'prefix': 'template'
+      'body':"""
+         ${1:template_name}:
+         	Type: AWS::SES::Template
+         	Properties:
+         		Template: ${2:Template}     # optional
+"""

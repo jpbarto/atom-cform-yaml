@@ -1,0 +1,5 @@
+'.source.yaml':
+  'admins':
+      'prefix': 'admins'
+      'body':"""
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'loadbalancersconfig':
+      'prefix': 'loadbalancersconfig'
+      'body':"""
+         ClassicLoadBalancersConfig: ${2:ClassicLoadBalancersConfig}     # optional
+         TargetGroupsConfig: ${3:TargetGroupsConfig}     # optional
+"""

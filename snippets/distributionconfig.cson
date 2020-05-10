@@ -9,15 +9,17 @@
          Comment: ${4:String}     # optional
          CustomErrorResponses:                # optional, list of CustomErrorResponse
          	- ${5:CustomErrorResponse}
-         DefaultCacheBehavior: ${6:DefaultCacheBehavior}     # required
+         DefaultCacheBehavior: ${6:DefaultCacheBehavior}     # optional
          DefaultRootObject: ${7:String}     # optional
          Enabled: ${8:Boolean}     # required
          HttpVersion: ${9:String}     # optional
-         Logging: ${10:Logging}     # optional
-         Origins:                # required, list of Origin
-         	- ${11:Origin}
-         PriceClass: ${12:String}     # optional
-         Restrictions: ${13:Restrictions}     # optional
-         ViewerCertificate: ${14:ViewerCertificate}     # optional
-         WebACLId: ${15:String}     # optional
+         IPV6Enabled: ${10:Boolean}     # optional
+         Logging: ${11:Logging}     # optional
+         OriginGroups: ${12:OriginGroups}     # optional
+         Origins:                # optional, list of Origin
+         	- ${13:Origin}
+         PriceClass: ${14:String}     # optional
+         Restrictions: ${15:Restrictions}     # optional
+         ViewerCertificate: ${16:ViewerCertificate}     # optional
+         WebACLId: ${17:String}     # optional
 """

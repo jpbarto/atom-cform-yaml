@@ -1,0 +1,10 @@
+'.source.yaml':
+  'flowtemplate':
+      'prefix': 'flowtemplate'
+      'body':"""
+         ${1:flowtemplate_name}:
+         	Type: AWS::IoTThingsGraph::FlowTemplate
+         	Properties:
+         		CompatibleNamespaceVersion: ${2:Double}     # optional
+         		Definition: ${3:DefinitionDocument}     # required
+"""

@@ -1,0 +1,13 @@
+'.source.yaml':
+  'inventoryconfiguration':
+      'prefix': 'inventoryconfiguration'
+      'body':"""
+         Destination: ${2:Destination}     # required
+         Enabled: ${3:Boolean}     # required
+         Id: ${4:String}     # required
+         IncludedObjectVersions: ${5:String}     # required
+         OptionalFields:                # optional, list of String
+         	- ${6:String}
+         Prefix: ${7:String}     # optional
+         ScheduleFrequency: ${8:String}     # required
+"""

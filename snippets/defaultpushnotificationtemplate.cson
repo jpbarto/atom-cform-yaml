@@ -1,0 +1,10 @@
+'.source.yaml':
+  'defaultpushnotificationtemplate':
+      'prefix': 'defaultpushnotificationtemplate'
+      'body':"""
+         Action: ${2:String}     # optional
+         Body: ${3:String}     # optional
+         Sound: ${4:String}     # optional
+         Title: ${5:String}     # optional
+         Url: ${6:String}     # optional
+"""

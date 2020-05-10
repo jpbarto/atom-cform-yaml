@@ -1,0 +1,6 @@
+'.source.yaml':
+  'listenertlsacmcertificate':
+      'prefix': 'listenertlsacmcertificate'
+      'body':"""
+         CertificateArn: ${2:String}     # required
+"""

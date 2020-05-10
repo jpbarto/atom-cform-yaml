@@ -1,0 +1,16 @@
+'.source.yaml':
+  'resourceshare':
+      'prefix': 'resourceshare'
+      'body':"""
+         ${1:resourceshare_name}:
+         	Type: AWS::RAM::ResourceShare
+         	Properties:
+         		AllowExternalPrincipals: ${2:Boolean}     # optional
+         		Name: ${3:String}     # required
+         		Principals:                # optional, list of String
+         			- ${4:String}
+         		ResourceArns:                # optional, list of String
+         			- ${5:String}
+         		Tags:                # optional, list of Tag
+         			- ${6:Tag}
+"""

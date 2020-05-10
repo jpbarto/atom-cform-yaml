@@ -1,0 +1,6 @@
+'.source.yaml':
+  'topicrule-lambdaaction':
+      'prefix': 'topicrule-lambdaaction'
+      'body':"""
+         FunctionArn: ${2:String}     # optional
+"""

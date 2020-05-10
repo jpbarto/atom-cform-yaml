@@ -1,0 +1,7 @@
+'.source.yaml':
+  'bucket-loggingconfiguration':
+      'prefix': 'bucket-loggingconfiguration'
+      'body':"""
+         DestinationBucketName: ${2:String}     # optional
+         LogFilePrefix: ${3:String}     # optional
+"""

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'cognitouserpoolconfig':
+      'prefix': 'cognitouserpoolconfig'
+      'body':"""
+         AppIdClientRegex: ${2:String}     # optional
+         AwsRegion: ${3:String}     # optional
+         UserPoolId: ${4:String}     # optional
+"""

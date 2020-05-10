@@ -2,6 +2,9 @@
   'replicationdestination':
       'prefix': 'replicationdestination'
       'body':"""
-         Bucket: ${2:String}     # required
-         StorageClass: ${3:String}     # optional
+         AccessControlTranslation: ${2:AccessControlTranslation}     # optional
+         Account: ${3:String}     # optional
+         Bucket: ${4:String}     # required
+         EncryptionConfiguration: ${5:EncryptionConfiguration}     # optional
+         StorageClass: ${6:String}     # optional
 """

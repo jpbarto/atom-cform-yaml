@@ -1,0 +1,7 @@
+'.source.yaml':
+  'artifactstoremap':
+      'prefix': 'artifactstoremap'
+      'body':"""
+         ArtifactStore: ${2:ArtifactStore}     # required
+         Region: ${3:String}     # required
+"""

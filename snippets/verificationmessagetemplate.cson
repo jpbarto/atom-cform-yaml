@@ -1,0 +1,11 @@
+'.source.yaml':
+  'verificationmessagetemplate':
+      'prefix': 'verificationmessagetemplate'
+      'body':"""
+         DefaultEmailOption: ${2:String}     # optional
+         EmailMessage: ${3:String}     # optional
+         EmailMessageByLink: ${4:String}     # optional
+         EmailSubject: ${5:String}     # optional
+         EmailSubjectByLink: ${6:String}     # optional
+         SmsMessage: ${7:String}     # optional
+"""

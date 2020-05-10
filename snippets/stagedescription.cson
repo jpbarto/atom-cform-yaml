@@ -2,22 +2,26 @@
   'stagedescription':
       'prefix': 'stagedescription'
       'body':"""
-         CacheClusterEnabled: ${2:Boolean}     # optional
-         CacheClusterSize: ${3:String}     # optional
-         CacheDataEncrypted: ${4:Boolean}     # optional
-         CacheTtlInSeconds: ${5:Integer}     # optional
-         CachingEnabled: ${6:Boolean}     # optional
-         ClientCertificateId: ${7:String}     # optional
-         DataTraceEnabled: ${8:Boolean}     # optional
-         Description: ${9:String}     # optional
-         DocumentationVersion: ${10:String}     # optional
-         LoggingLevel: ${11:String}     # optional
+         AccessLogSetting: ${2:AccessLogSetting}     # optional
+         CacheClusterEnabled: ${3:Boolean}     # optional
+         CacheClusterSize: ${4:String}     # optional
+         CacheDataEncrypted: ${5:Boolean}     # optional
+         CacheTtlInSeconds: ${6:Integer}     # optional
+         CachingEnabled: ${7:Boolean}     # optional
+         CanarySetting: ${8:CanarySetting}     # optional
+         ClientCertificateId: ${9:String}     # optional
+         DataTraceEnabled: ${10:Boolean}     # optional
+         Description: ${11:String}     # optional
+         DocumentationVersion: ${12:String}     # optional
+         LoggingLevel: ${13:String}     # optional
          MethodSettings:                # optional, list of MethodSetting
-         	- ${12:MethodSetting}
-         MetricsEnabled: ${13:Boolean}     # optional
-         StageName: ${14:String}     # optional
-         ThrottlingBurstLimit: ${15:Integer}     # optional
-         ThrottlingRateLimit: ${16:Double}     # optional
+         	- ${14:MethodSetting}
+         MetricsEnabled: ${15:Boolean}     # optional
+         Tags:                # optional, list of Tag
+         	- ${16:Tag}
+         ThrottlingBurstLimit: ${17:Integer}     # optional
+         ThrottlingRateLimit: ${18:Double}     # optional
+         TracingEnabled: ${19:Boolean}     # optional
          Variables:                # optional, map of String
-         	${17:String_key}: ${18:String_value}
+         	${20:String_key}: ${21:String_value}
 """

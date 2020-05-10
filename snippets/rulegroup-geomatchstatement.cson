@@ -1,0 +1,7 @@
+'.source.yaml':
+  'rulegroup-geomatchstatement':
+      'prefix': 'rulegroup-geomatchstatement'
+      'body':"""
+         CountryCodes:                # optional, list of String
+         	- ${2:String}
+"""

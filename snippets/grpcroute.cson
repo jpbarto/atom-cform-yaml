@@ -1,0 +1,8 @@
+'.source.yaml':
+  'grpcroute':
+      'prefix': 'grpcroute'
+      'body':"""
+         Action: ${2:GrpcRouteAction}     # required
+         Match: ${3:GrpcRouteMatch}     # required
+         RetryPolicy: ${4:GrpcRetryPolicy}     # optional
+"""

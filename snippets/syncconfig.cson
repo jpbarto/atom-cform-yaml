@@ -1,0 +1,8 @@
+'.source.yaml':
+  'syncconfig':
+      'prefix': 'syncconfig'
+      'body':"""
+         ConflictDetection: ${2:String}     # required
+         ConflictHandler: ${3:String}     # optional
+         LambdaConflictHandlerConfig: ${4:LambdaConflictHandlerConfig}     # optional
+"""

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'retrystrategy':
+      'prefix': 'retrystrategy'
+      'body':"""
+         Attempts: ${2:Integer}     # optional
+"""

@@ -1,0 +1,15 @@
+'.source.yaml':
+  'apigateway-domainname':
+      'prefix': 'apigateway-domainname'
+      'body':"""
+         ${1:apigateway-domainname_name}:
+         	Type: AWS::ApiGateway::DomainName
+         	Properties:
+         		CertificateArn: ${2:String}     # optional
+         		DomainName: ${3:String}     # required
+         		EndpointConfiguration: ${4:EndpointConfiguration}     # optional
+         		RegionalCertificateArn: ${5:String}     # optional
+         		SecurityPolicy: ${6:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${7:Tag}
+"""

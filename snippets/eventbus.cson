@@ -1,0 +1,10 @@
+'.source.yaml':
+  'eventbus':
+      'prefix': 'eventbus'
+      'body':"""
+         ${1:eventbus_name}:
+         	Type: AWS::Events::EventBus
+         	Properties:
+         		EventSourceName: ${2:String}     # optional
+         		Name: ${3:String}     # required
+"""

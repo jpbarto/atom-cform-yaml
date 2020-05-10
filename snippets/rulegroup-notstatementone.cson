@@ -1,0 +1,6 @@
+'.source.yaml':
+  'rulegroup-notstatementone':
+      'prefix': 'rulegroup-notstatementone'
+      'body':"""
+         Statement: ${2:StatementTwo}     # required
+"""

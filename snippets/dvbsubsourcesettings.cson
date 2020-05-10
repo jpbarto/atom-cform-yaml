@@ -1,0 +1,6 @@
+'.source.yaml':
+  'dvbsubsourcesettings':
+      'prefix': 'dvbsubsourcesettings'
+      'body':"""
+         Pid: ${2:Integer}     # optional
+"""

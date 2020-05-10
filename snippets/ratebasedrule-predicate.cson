@@ -1,0 +1,8 @@
+'.source.yaml':
+  'ratebasedrule-predicate':
+      'prefix': 'ratebasedrule-predicate'
+      'body':"""
+         DataId: ${2:String}     # required
+         Negated: ${3:Boolean}     # required
+         Type: ${4:String}     # required
+"""

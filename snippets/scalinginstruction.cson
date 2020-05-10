@@ -1,0 +1,20 @@
+'.source.yaml':
+  'scalinginstruction':
+      'prefix': 'scalinginstruction'
+      'body':"""
+         CustomizedLoadMetricSpecification: ${2:CustomizedLoadMetricSpecification}     # optional
+         DisableDynamicScaling: ${3:Boolean}     # optional
+         MaxCapacity: ${4:Integer}     # required
+         MinCapacity: ${5:Integer}     # required
+         PredefinedLoadMetricSpecification: ${6:PredefinedLoadMetricSpecification}     # optional
+         PredictiveScalingMaxCapacityBehavior: ${7:String}     # optional
+         PredictiveScalingMaxCapacityBuffer: ${8:Integer}     # optional
+         PredictiveScalingMode: ${9:String}     # optional
+         ResourceId: ${10:String}     # required
+         ScalableDimension: ${11:String}     # required
+         ScalingPolicyUpdateBehavior: ${12:String}     # optional
+         ScheduledActionBufferTime: ${13:Integer}     # optional
+         ServiceNamespace: ${14:String}     # required
+         TargetTrackingConfigurations:                # required, list of TargetTrackingConfiguration
+         	- ${15:TargetTrackingConfiguration}
+"""

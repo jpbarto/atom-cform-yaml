@@ -1,0 +1,8 @@
+'.source.yaml':
+  'maintenancewindowlambdaparameters':
+      'prefix': 'maintenancewindowlambdaparameters'
+      'body':"""
+         ClientContext: ${2:String}     # optional
+         Payload: ${3:String}     # optional
+         Qualifier: ${4:String}     # optional
+"""

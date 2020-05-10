@@ -1,0 +1,6 @@
+'.source.yaml':
+  'behavior':
+      'prefix': 'behavior'
+      'body':"""
+         Recency: ${2:Recency}     # optional
+"""

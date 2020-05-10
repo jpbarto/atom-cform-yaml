@@ -1,0 +1,7 @@
+'.source.yaml':
+  'datasetcontentdeliveryruledestination':
+      'prefix': 'datasetcontentdeliveryruledestination'
+      'body':"""
+         IotEventsDestinationConfiguration: ${2:IotEventsDestinationConfiguration}     # optional
+         S3DestinationConfiguration: ${3:S3DestinationConfiguration}     # optional
+"""

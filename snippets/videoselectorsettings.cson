@@ -1,0 +1,7 @@
+'.source.yaml':
+  'videoselectorsettings':
+      'prefix': 'videoselectorsettings'
+      'body':"""
+         VideoSelectorPid: ${2:VideoSelectorPid}     # optional
+         VideoSelectorProgramId: ${3:VideoSelectorProgramId}     # optional
+"""

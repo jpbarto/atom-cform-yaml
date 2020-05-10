@@ -1,0 +1,21 @@
+'.source.yaml':
+  'medialive-input':
+      'prefix': 'medialive-input'
+      'body':"""
+         ${1:medialive-input_name}:
+         	Type: AWS::MediaLive::Input
+         	Properties:
+         		Destinations:                # optional, list of InputDestinationRequest
+         			- ${2:InputDestinationRequest}
+         		InputSecurityGroups:                # optional, list of String
+         			- ${3:String}
+         		MediaConnectFlows:                # optional, list of MediaConnectFlowRequest
+         			- ${4:MediaConnectFlowRequest}
+         		Name: ${5:String}     # optional
+         		RoleArn: ${6:String}     # optional
+         		Sources:                # optional, list of InputSourceRequest
+         			- ${7:InputSourceRequest}
+         		Tags: ${8:Json}     # optional
+         		Type: ${9:String}     # optional
+         		Vpc: ${10:InputVpcRequest}     # optional
+"""

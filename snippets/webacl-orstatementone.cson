@@ -1,0 +1,7 @@
+'.source.yaml':
+  'webacl-orstatementone':
+      'prefix': 'webacl-orstatementone'
+      'body':"""
+         Statements:                # required, list of StatementTwo
+         	- ${2:StatementTwo}
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'coordinates':
+      'prefix': 'coordinates'
+      'body':"""
+         Latitude: ${2:Double}     # required
+         Longitude: ${3:Double}     # required
+"""

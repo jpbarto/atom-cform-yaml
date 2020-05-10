@@ -2,10 +2,13 @@
   'project-environment':
       'prefix': 'project-environment'
       'body':"""
-         ComputeType: ${2:String}     # required
+         Certificate: ${2:String}     # optional
+         ComputeType: ${3:String}     # required
          EnvironmentVariables:                # optional, list of EnvironmentVariable
-         	- ${3:EnvironmentVariable}
-         Image: ${4:String}     # required
-         PrivilegedMode: ${5:Boolean}     # optional
-         Type: ${6:String}     # required
+         	- ${4:EnvironmentVariable}
+         Image: ${5:String}     # required
+         ImagePullCredentialsType: ${6:String}     # optional
+         PrivilegedMode: ${7:Boolean}     # optional
+         RegistryCredential: ${8:RegistryCredential}     # optional
+         Type: ${9:String}     # required
 """

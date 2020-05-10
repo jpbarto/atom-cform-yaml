@@ -1,0 +1,9 @@
+'.source.yaml':
+  'patchsource':
+      'prefix': 'patchsource'
+      'body':"""
+         Configuration: ${2:String}     # optional
+         Name: ${3:String}     # optional
+         Products:                # optional, list of String
+         	- ${4:String}
+"""

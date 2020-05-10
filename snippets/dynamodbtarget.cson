@@ -1,0 +1,6 @@
+'.source.yaml':
+  'dynamodbtarget':
+      'prefix': 'dynamodbtarget'
+      'body':"""
+         Path: ${2:String}     # optional
+"""

@@ -1,0 +1,16 @@
+'.source.yaml':
+  'autobranchcreationconfig':
+      'prefix': 'autobranchcreationconfig'
+      'body':"""
+         AutoBranchCreationPatterns:                # optional, list of String
+         	- ${2:String}
+         BasicAuthConfig: ${3:BasicAuthConfig}     # optional
+         BuildSpec: ${4:String}     # optional
+         EnableAutoBranchCreation: ${5:Boolean}     # optional
+         EnableAutoBuild: ${6:Boolean}     # optional
+         EnablePullRequestPreview: ${7:Boolean}     # optional
+         EnvironmentVariables:                # optional, list of EnvironmentVariable
+         	- ${8:EnvironmentVariable}
+         PullRequestEnvironmentName: ${9:String}     # optional
+         Stage: ${10:String}     # optional
+"""

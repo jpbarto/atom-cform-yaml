@@ -4,5 +4,5 @@
       'body':"""
          AllowAdminCreateUserOnly: ${2:Boolean}     # optional
          InviteMessageTemplate: ${3:InviteMessageTemplate}     # optional
-         UnusedAccountValidityDays: ${4:Double}     # optional
+         UnusedAccountValidityDays: ${4:Integer}     # optional
 """

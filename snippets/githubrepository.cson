@@ -1,0 +1,15 @@
+'.source.yaml':
+  'githubrepository':
+      'prefix': 'githubrepository'
+      'body':"""
+         ${1:githubrepository_name}:
+         	Type: AWS::CodeStar::GitHubRepository
+         	Properties:
+         		Code: ${2:Code}     # optional
+         		EnableIssues: ${3:Boolean}     # optional
+         		IsPrivate: ${4:Boolean}     # optional
+         		RepositoryAccessToken: ${5:String}     # required
+         		RepositoryDescription: ${6:String}     # optional
+         		RepositoryName: ${7:String}     # required
+         		RepositoryOwner: ${8:String}     # required
+"""

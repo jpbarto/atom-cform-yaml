@@ -1,0 +1,10 @@
+'.source.yaml':
+  'documentationpart-location':
+      'prefix': 'documentationpart-location'
+      'body':"""
+         Method: ${2:String}     # optional
+         Name: ${3:String}     # optional
+         Path: ${4:String}     # optional
+         StatusCode: ${5:String}     # optional
+         Type: ${6:String}     # optional
+"""

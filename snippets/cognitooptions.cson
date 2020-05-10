@@ -1,0 +1,9 @@
+'.source.yaml':
+  'cognitooptions':
+      'prefix': 'cognitooptions'
+      'body':"""
+         Enabled: ${2:Boolean}     # optional
+         IdentityPoolId: ${3:String}     # optional
+         RoleArn: ${4:String}     # optional
+         UserPoolId: ${5:String}     # optional
+"""

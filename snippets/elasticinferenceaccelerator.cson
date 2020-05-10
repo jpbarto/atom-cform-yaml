@@ -1,0 +1,7 @@
+'.source.yaml':
+  'elasticinferenceaccelerator':
+      'prefix': 'elasticinferenceaccelerator'
+      'body':"""
+         Count: ${2:Integer}     # optional
+         Type: ${3:String}     # required
+"""

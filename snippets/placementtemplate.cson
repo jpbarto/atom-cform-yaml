@@ -1,0 +1,7 @@
+'.source.yaml':
+  'placementtemplate':
+      'prefix': 'placementtemplate'
+      'body':"""
+         DefaultAttributes: ${2:Json}     # optional
+         DeviceTemplates: ${3:Json}     # optional
+"""

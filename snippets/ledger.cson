@@ -1,0 +1,13 @@
+'.source.yaml':
+  'ledger':
+      'prefix': 'ledger'
+      'body':"""
+         ${1:ledger_name}:
+         	Type: AWS::QLDB::Ledger
+         	Properties:
+         		DeletionProtection: ${2:Boolean}     # optional
+         		Name: ${3:String}     # optional
+         		PermissionsMode: ${4:String}     # required
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+"""

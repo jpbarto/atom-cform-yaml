@@ -1,0 +1,10 @@
+'.source.yaml':
+  'bounceaction':
+      'prefix': 'bounceaction'
+      'body':"""
+         Message: ${2:String}     # required
+         Sender: ${3:String}     # required
+         SmtpReplyCode: ${4:String}     # required
+         StatusCode: ${5:String}     # optional
+         TopicArn: ${6:String}     # optional
+"""

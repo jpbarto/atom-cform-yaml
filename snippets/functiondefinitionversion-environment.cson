@@ -1,0 +1,10 @@
+'.source.yaml':
+  'functiondefinitionversion-environment':
+      'prefix': 'functiondefinitionversion-environment'
+      'body':"""
+         AccessSysfs: ${2:Boolean}     # optional
+         Execution: ${3:Execution}     # optional
+         ResourceAccessPolicies:                # optional, list of ResourceAccessPolicy
+         	- ${4:ResourceAccessPolicy}
+         Variables: ${5:Json}     # optional
+"""

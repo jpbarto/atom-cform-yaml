@@ -1,0 +1,9 @@
+'.source.yaml':
+  'targetcapacityspecificationrequest':
+      'prefix': 'targetcapacityspecificationrequest'
+      'body':"""
+         DefaultTargetCapacityType: ${2:String}     # optional
+         OnDemandTargetCapacity: ${3:Integer}     # optional
+         SpotTargetCapacity: ${4:Integer}     # optional
+         TotalTargetCapacity: ${5:Integer}     # required
+"""

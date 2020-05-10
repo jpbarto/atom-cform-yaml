@@ -1,0 +1,7 @@
+'.source.yaml':
+  'targetaddress':
+      'prefix': 'targetaddress'
+      'body':"""
+         Ip: ${2:String}     # required
+         Port: ${3:String}     # optional
+"""

@@ -1,0 +1,14 @@
+'.source.yaml':
+  'splunkdestinationconfiguration':
+      'prefix': 'splunkdestinationconfiguration'
+      'body':"""
+         CloudWatchLoggingOptions: ${2:CloudWatchLoggingOptions}     # optional
+         HECAcknowledgmentTimeoutInSeconds: ${3:Integer}     # optional
+         HECEndpoint: ${4:String}     # required
+         HECEndpointType: ${5:String}     # required
+         HECToken: ${6:String}     # required
+         ProcessingConfiguration: ${7:ProcessingConfiguration}     # optional
+         RetryOptions: ${8:SplunkRetryOptions}     # optional
+         S3BackupMode: ${9:String}     # optional
+         S3Configuration: ${10:S3DestinationConfiguration}     # required
+"""

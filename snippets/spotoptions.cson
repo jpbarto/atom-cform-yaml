@@ -1,0 +1,10 @@
+'.source.yaml':
+  'spotoptions':
+      'prefix': 'spotoptions'
+      'body':"""
+         BlockDurationMinutes: ${2:Integer}     # optional
+         InstanceInterruptionBehavior: ${3:String}     # optional
+         MaxPrice: ${4:String}     # optional
+         SpotInstanceType: ${5:String}     # optional
+         ValidUntil: ${6:String}     # optional
+"""

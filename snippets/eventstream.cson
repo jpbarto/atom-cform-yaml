@@ -1,0 +1,11 @@
+'.source.yaml':
+  'eventstream':
+      'prefix': 'eventstream'
+      'body':"""
+         ${1:eventstream_name}:
+         	Type: AWS::Pinpoint::EventStream
+         	Properties:
+         		ApplicationId: ${2:String}     # required
+         		DestinationStreamArn: ${3:String}     # required
+         		RoleArn: ${4:String}     # required
+"""

@@ -1,0 +1,10 @@
+'.source.yaml':
+  'kerberosattributes':
+      'prefix': 'kerberosattributes'
+      'body':"""
+         ADDomainJoinPassword: ${2:String}     # optional
+         ADDomainJoinUser: ${3:String}     # optional
+         CrossRealmTrustPrincipalPassword: ${4:String}     # optional
+         KdcAdminPassword: ${5:String}     # required
+         Realm: ${6:String}     # required
+"""

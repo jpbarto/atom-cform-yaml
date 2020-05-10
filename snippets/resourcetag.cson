@@ -1,0 +1,7 @@
+'.source.yaml':
+  'resourcetag':
+      'prefix': 'resourcetag'
+      'body':"""
+         Key: ${2:String}     # required
+         Value: ${3:String}     # optional
+"""

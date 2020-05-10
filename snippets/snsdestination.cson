@@ -1,0 +1,6 @@
+'.source.yaml':
+  'snsdestination':
+      'prefix': 'snsdestination'
+      'body':"""
+         TopicArn: ${2:String}     # required
+"""

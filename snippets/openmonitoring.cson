@@ -1,0 +1,6 @@
+'.source.yaml':
+  'openmonitoring':
+      'prefix': 'openmonitoring'
+      'body':"""
+         Prometheus: ${2:Prometheus}     # required
+"""

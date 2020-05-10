@@ -1,0 +1,10 @@
+'.source.yaml':
+  'iot1click-device':
+      'prefix': 'iot1click-device'
+      'body':"""
+         ${1:iot1click-device_name}:
+         	Type: AWS::IoT1Click::Device
+         	Properties:
+         		DeviceId: ${2:String}     # required
+         		Enabled: ${3:Boolean}     # required
+"""

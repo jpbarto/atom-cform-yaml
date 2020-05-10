@@ -1,0 +1,6 @@
+'.source.yaml':
+  'attribute':
+      'prefix': 'attribute'
+      'body':"""
+         JsonPath: ${2:String}     # optional
+"""

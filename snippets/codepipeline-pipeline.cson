@@ -5,12 +5,16 @@
          ${1:codepipeline-pipeline_name}:
          	Type: AWS::CodePipeline::Pipeline
          	Properties:
-         		ArtifactStore: ${2:ArtifactStore}     # required
+         		ArtifactStore: ${2:ArtifactStore}     # optional
+         		ArtifactStores:                # optional, list of ArtifactStoreMap
+         			- ${3:ArtifactStoreMap}
          		DisableInboundStageTransitions:                # optional, list of StageTransition
-         			- ${3:StageTransition}
-         		Name: ${4:String}     # optional
-         		RestartExecutionOnUpdate: ${5:Boolean}     # optional
-         		RoleArn: ${6:String}     # required
+         			- ${4:StageTransition}
+         		Name: ${5:String}     # optional
+         		RestartExecutionOnUpdate: ${6:Boolean}     # optional
+         		RoleArn: ${7:String}     # required
          		Stages:                # required, list of StageDeclaration
-         			- ${7:StageDeclaration}
+         			- ${8:StageDeclaration}
+         		Tags:                # optional, list of Tag
+         			- ${9:Tag}
 """

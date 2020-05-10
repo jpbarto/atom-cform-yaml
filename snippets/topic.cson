@@ -6,7 +6,10 @@
          	Type: AWS::SNS::Topic
          	Properties:
          		DisplayName: ${2:String}     # optional
+         		KmsMasterKeyId: ${3:String}     # optional
          		Subscription:                # optional, list of Subscription
-         			- ${3:Subscription}
-         		TopicName: ${4:String}     # optional
+         			- ${4:Subscription}
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+         		TopicName: ${6:String}     # optional
 """

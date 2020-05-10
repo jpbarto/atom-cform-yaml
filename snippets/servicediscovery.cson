@@ -1,0 +1,7 @@
+'.source.yaml':
+  'servicediscovery':
+      'prefix': 'servicediscovery'
+      'body':"""
+         AWSCloudMap: ${2:AwsCloudMapServiceDiscovery}     # optional
+         DNS: ${3:DnsServiceDiscovery}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'detectormodel-lambda':
+      'prefix': 'detectormodel-lambda'
+      'body':"""
+         FunctionArn: ${2:String}     # optional
+         Payload: ${3:Payload}     # optional
+"""

@@ -1,0 +1,12 @@
+'.source.yaml':
+  'portfolioprincipalassociation':
+      'prefix': 'portfolioprincipalassociation'
+      'body':"""
+         ${1:portfolioprincipalassociation_name}:
+         	Type: AWS::ServiceCatalog::PortfolioPrincipalAssociation
+         	Properties:
+         		AcceptLanguage: ${2:String}     # optional
+         		PortfolioId: ${3:String}     # required
+         		PrincipalARN: ${4:String}     # required
+         		PrincipalType: ${5:String}     # required
+"""

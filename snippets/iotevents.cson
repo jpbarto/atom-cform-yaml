@@ -1,0 +1,7 @@
+'.source.yaml':
+  'iotevents':
+      'prefix': 'iotevents'
+      'body':"""
+         InputName: ${2:String}     # optional
+         Payload: ${3:Payload}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'resourcedefinitionversion-resourcedownloadownersetting':
+      'prefix': 'resourcedefinitionversion-resourcedownloadownersetting'
+      'body':"""
+         GroupOwner: ${2:String}     # required
+         GroupPermission: ${3:String}     # required
+"""

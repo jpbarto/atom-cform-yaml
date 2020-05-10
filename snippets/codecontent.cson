@@ -1,0 +1,8 @@
+'.source.yaml':
+  'codecontent':
+      'prefix': 'codecontent'
+      'body':"""
+         S3ContentLocation: ${2:S3ContentLocation}     # optional
+         TextContent: ${3:String}     # optional
+         ZipFileContent: ${4:String}     # optional
+"""

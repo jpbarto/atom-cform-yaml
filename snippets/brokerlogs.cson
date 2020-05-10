@@ -1,0 +1,8 @@
+'.source.yaml':
+  'brokerlogs':
+      'prefix': 'brokerlogs'
+      'body':"""
+         CloudWatchLogs: ${2:CloudWatchLogs}     # optional
+         Firehose: ${3:Firehose}     # optional
+         S3: ${4:S3}     # optional
+"""

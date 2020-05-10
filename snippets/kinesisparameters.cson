@@ -1,0 +1,6 @@
+'.source.yaml':
+  'kinesisparameters':
+      'prefix': 'kinesisparameters'
+      'body':"""
+         PartitionKeyPath: ${2:String}     # required
+"""

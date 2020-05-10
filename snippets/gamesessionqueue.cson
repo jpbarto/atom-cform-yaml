@@ -1,0 +1,14 @@
+'.source.yaml':
+  'gamesessionqueue':
+      'prefix': 'gamesessionqueue'
+      'body':"""
+         ${1:gamesessionqueue_name}:
+         	Type: AWS::GameLift::GameSessionQueue
+         	Properties:
+         		Destinations:                # optional, list of Destination
+         			- ${2:Destination}
+         		Name: ${3:String}     # required
+         		PlayerLatencyPolicies:                # optional, list of PlayerLatencyPolicy
+         			- ${4:PlayerLatencyPolicy}
+         		TimeoutInSeconds: ${5:Integer}     # optional
+"""

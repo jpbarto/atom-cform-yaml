@@ -1,0 +1,11 @@
+'.source.yaml':
+  'backupselectionresourcetype':
+      'prefix': 'backupselectionresourcetype'
+      'body':"""
+         IamRoleArn: ${2:String}     # required
+         ListOfTags:                # optional, list of ConditionResourceType
+         	- ${3:ConditionResourceType}
+         Resources:                # optional, list of String
+         	- ${4:String}
+         SelectionName: ${5:String}     # required
+"""

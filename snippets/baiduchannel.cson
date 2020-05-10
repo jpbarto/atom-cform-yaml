@@ -1,0 +1,12 @@
+'.source.yaml':
+  'baiduchannel':
+      'prefix': 'baiduchannel'
+      'body':"""
+         ${1:baiduchannel_name}:
+         	Type: AWS::Pinpoint::BaiduChannel
+         	Properties:
+         		ApiKey: ${2:String}     # required
+         		ApplicationId: ${3:String}     # required
+         		Enabled: ${4:Boolean}     # optional
+         		SecretKey: ${5:String}     # required
+"""

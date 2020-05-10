@@ -1,0 +1,13 @@
+'.source.yaml':
+  'site':
+      'prefix': 'site'
+      'body':"""
+         ${1:site_name}:
+         	Type: AWS::NetworkManager::Site
+         	Properties:
+         		Description: ${2:String}     # optional
+         		GlobalNetworkId: ${3:String}     # required
+         		Location: ${4:Location}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+"""

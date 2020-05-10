@@ -1,0 +1,11 @@
+'.source.yaml':
+  'resolverruleassociation':
+      'prefix': 'resolverruleassociation'
+      'body':"""
+         ${1:resolverruleassociation_name}:
+         	Type: AWS::Route53Resolver::ResolverRuleAssociation
+         	Properties:
+         		Name: ${2:String}     # optional
+         		ResolverRuleId: ${3:String}     # required
+         		VPCId: ${4:String}     # required
+"""

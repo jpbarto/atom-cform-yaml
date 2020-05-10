@@ -1,0 +1,10 @@
+'.source.yaml':
+  'wafv2-webaclassociation':
+      'prefix': 'wafv2-webaclassociation'
+      'body':"""
+         ${1:wafv2-webaclassociation_name}:
+         	Type: AWS::WAFv2::WebACLAssociation
+         	Properties:
+         		ResourceArn: ${2:String}     # required
+         		WebACLArn: ${3:String}     # required
+"""

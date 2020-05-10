@@ -1,0 +1,6 @@
+'.source.yaml':
+  'instance-creditspecification':
+      'prefix': 'instance-creditspecification'
+      'body':"""
+         CPUCredits: ${2:String}     # optional
+"""

@@ -1,0 +1,18 @@
+'.source.yaml':
+  'webacl-statementone':
+      'prefix': 'webacl-statementone'
+      'body':"""
+         AndStatement: ${2:AndStatementOne}     # optional
+         ByteMatchStatement: ${3:ByteMatchStatement}     # optional
+         GeoMatchStatement: ${4:GeoMatchStatement}     # optional
+         IPSetReferenceStatement: ${5:IPSetReferenceStatement}     # optional
+         ManagedRuleGroupStatement: ${6:ManagedRuleGroupStatement}     # optional
+         NotStatement: ${7:NotStatementOne}     # optional
+         OrStatement: ${8:OrStatementOne}     # optional
+         RateBasedStatement: ${9:RateBasedStatementOne}     # optional
+         RegexPatternSetReferenceStatement: ${10:RegexPatternSetReferenceStatement}     # optional
+         RuleGroupReferenceStatement: ${11:RuleGroupReferenceStatement}     # optional
+         SizeConstraintStatement: ${12:SizeConstraintStatement}     # optional
+         SqliMatchStatement: ${13:SqliMatchStatement}     # optional
+         XssMatchStatement: ${14:XssMatchStatement}     # optional
+"""

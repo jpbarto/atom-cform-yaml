@@ -1,0 +1,7 @@
+'.source.yaml':
+  'channelstorage':
+      'prefix': 'channelstorage'
+      'body':"""
+         CustomerManagedS3: ${2:CustomerManagedS3}     # optional
+         ServiceManagedS3: ${3:ServiceManagedS3}     # optional
+"""

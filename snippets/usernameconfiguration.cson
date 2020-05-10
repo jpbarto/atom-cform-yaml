@@ -1,0 +1,6 @@
+'.source.yaml':
+  'usernameconfiguration':
+      'prefix': 'usernameconfiguration'
+      'body':"""
+         CaseSensitive: ${2:Boolean}     # optional
+"""

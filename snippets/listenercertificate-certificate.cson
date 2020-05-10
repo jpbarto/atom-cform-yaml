@@ -1,0 +1,6 @@
+'.source.yaml':
+  'listenercertificate-certificate':
+      'prefix': 'listenercertificate-certificate'
+      'body':"""
+         CertificateArn: ${2:String}     # optional
+"""

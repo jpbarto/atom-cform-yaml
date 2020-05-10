@@ -1,0 +1,5 @@
+'.source.yaml':
+  'sshpublickey':
+      'prefix': 'sshpublickey'
+      'body':"""
+"""

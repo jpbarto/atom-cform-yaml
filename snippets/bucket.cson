@@ -7,14 +7,24 @@
          	Properties:
          		AccelerateConfiguration: ${2:AccelerateConfiguration}     # optional
          		AccessControl: ${3:String}     # optional
-         		BucketName: ${4:String}     # optional
-         		CorsConfiguration: ${5:CorsConfiguration}     # optional
-         		LifecycleConfiguration: ${6:LifecycleConfiguration}     # optional
-         		LoggingConfiguration: ${7:LoggingConfiguration}     # optional
-         		NotificationConfiguration: ${8:NotificationConfiguration}     # optional
-         		ReplicationConfiguration: ${9:ReplicationConfiguration}     # optional
+         		AnalyticsConfigurations:                # optional, list of AnalyticsConfiguration
+         			- ${4:AnalyticsConfiguration}
+         		BucketEncryption: ${5:BucketEncryption}     # optional
+         		BucketName: ${6:String}     # optional
+         		CorsConfiguration: ${7:CorsConfiguration}     # optional
+         		InventoryConfigurations:                # optional, list of InventoryConfiguration
+         			- ${8:InventoryConfiguration}
+         		LifecycleConfiguration: ${9:LifecycleConfiguration}     # optional
+         		LoggingConfiguration: ${10:LoggingConfiguration}     # optional
+         		MetricsConfigurations:                # optional, list of MetricsConfiguration
+         			- ${11:MetricsConfiguration}
+         		NotificationConfiguration: ${12:NotificationConfiguration}     # optional
+         		ObjectLockConfiguration: ${13:ObjectLockConfiguration}     # optional
+         		ObjectLockEnabled: ${14:Boolean}     # optional
+         		PublicAccessBlockConfiguration: ${15:PublicAccessBlockConfiguration}     # optional
+         		ReplicationConfiguration: ${16:ReplicationConfiguration}     # optional
          		Tags:                # optional, list of Tag
-         			- ${10:Tag}
-         		VersioningConfiguration: ${11:VersioningConfiguration}     # optional
-         		WebsiteConfiguration: ${12:WebsiteConfiguration}     # optional
+         			- ${17:Tag}
+         		VersioningConfiguration: ${18:VersioningConfiguration}     # optional
+         		WebsiteConfiguration: ${19:WebsiteConfiguration}     # optional
 """

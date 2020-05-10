@@ -1,0 +1,7 @@
+'.source.yaml':
+  'billingmode':
+      'prefix': 'billingmode'
+      'body':"""
+         Mode: ${2:String}     # required
+         ProvisionedThroughput: ${3:ProvisionedThroughput}     # optional
+"""

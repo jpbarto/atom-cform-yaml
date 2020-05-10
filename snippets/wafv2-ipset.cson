@@ -1,0 +1,16 @@
+'.source.yaml':
+  'wafv2-ipset':
+      'prefix': 'wafv2-ipset'
+      'body':"""
+         ${1:wafv2-ipset_name}:
+         	Type: AWS::WAFv2::IPSet
+         	Properties:
+         		Addresses:                # required, list of String
+         			- ${2:String}
+         		Description: ${3:String}     # optional
+         		IPAddressVersion: ${4:String}     # required
+         		Name: ${5:String}     # optional
+         		Scope: ${6:String}     # required
+         		Tags:                # optional, list of Tag
+         			- ${7:Tag}
+"""

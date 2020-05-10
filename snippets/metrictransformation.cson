@@ -2,7 +2,8 @@
   'metrictransformation':
       'prefix': 'metrictransformation'
       'body':"""
-         MetricName: ${2:String}     # required
-         MetricNamespace: ${3:String}     # required
-         MetricValue: ${4:String}     # required
+         DefaultValue: ${2:Double}     # optional
+         MetricName: ${3:String}     # required
+         MetricNamespace: ${4:String}     # required
+         MetricValue: ${5:String}     # required
 """

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'logdestination':
+      'prefix': 'logdestination'
+      'body':"""
+         CloudWatchLogsLogGroup: ${2:CloudWatchLogsLogGroup}     # optional
+"""

@@ -1,0 +1,10 @@
+'.source.yaml':
+  'loggerdefinition-logger':
+      'prefix': 'loggerdefinition-logger'
+      'body':"""
+         Component: ${2:String}     # required
+         Id: ${3:String}     # required
+         Level: ${4:String}     # required
+         Space: ${5:Integer}     # optional
+         Type: ${6:String}     # required
+"""

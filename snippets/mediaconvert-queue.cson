@@ -1,0 +1,13 @@
+'.source.yaml':
+  'mediaconvert-queue':
+      'prefix': 'mediaconvert-queue'
+      'body':"""
+         ${1:mediaconvert-queue_name}:
+         	Type: AWS::MediaConvert::Queue
+         	Properties:
+         		Description: ${2:String}     # optional
+         		Name: ${3:String}     # optional
+         		PricingPlan: ${4:String}     # optional
+         		Status: ${5:String}     # optional
+         		Tags: ${6:Json}     # optional
+"""

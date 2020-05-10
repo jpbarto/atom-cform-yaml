@@ -1,0 +1,9 @@
+'.source.yaml':
+  'taskset-loadbalancer':
+      'prefix': 'taskset-loadbalancer'
+      'body':"""
+         ContainerName: ${2:String}     # optional
+         ContainerPort: ${3:Integer}     # optional
+         LoadBalancerName: ${4:String}     # optional
+         TargetGroupArn: ${5:String}     # optional
+"""

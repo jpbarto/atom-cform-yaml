@@ -1,0 +1,6 @@
+'.source.yaml':
+  'applicationoutput-kinesisfirehoseoutput':
+      'prefix': 'applicationoutput-kinesisfirehoseoutput'
+      'body':"""
+         ResourceARN: ${2:String}     # required
+"""

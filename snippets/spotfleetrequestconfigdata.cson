@@ -5,13 +5,17 @@
          AllocationStrategy: ${2:String}     # optional
          ExcessCapacityTerminationPolicy: ${3:String}     # optional
          IamFleetRole: ${4:String}     # required
-         LaunchSpecifications:                # required, list of SpotFleetLaunchSpecification
-         	- ${5:SpotFleetLaunchSpecification}
-         ReplaceUnhealthyInstances: ${6:Boolean}     # optional
-         SpotPrice: ${7:String}     # required
-         TargetCapacity: ${8:Integer}     # required
-         TerminateInstancesWithExpiration: ${9:Boolean}     # optional
-         Type: ${10:String}     # optional
-         ValidFrom: ${11:String}     # optional
-         ValidUntil: ${12:String}     # optional
+         InstanceInterruptionBehavior: ${5:String}     # optional
+         LaunchSpecifications:                # optional, list of SpotFleetLaunchSpecification
+         	- ${6:SpotFleetLaunchSpecification}
+         LaunchTemplateConfigs:                # optional, list of LaunchTemplateConfig
+         	- ${7:LaunchTemplateConfig}
+         LoadBalancersConfig: ${8:LoadBalancersConfig}     # optional
+         ReplaceUnhealthyInstances: ${9:Boolean}     # optional
+         SpotPrice: ${10:String}     # optional
+         TargetCapacity: ${11:Integer}     # required
+         TerminateInstancesWithExpiration: ${12:Boolean}     # optional
+         Type: ${13:String}     # optional
+         ValidFrom: ${14:String}     # optional
+         ValidUntil: ${15:String}     # optional
 """

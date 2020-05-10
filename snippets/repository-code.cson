@@ -1,0 +1,6 @@
+'.source.yaml':
+  'repository-code':
+      'prefix': 'repository-code'
+      'body':"""
+         S3: ${2:S3}     # required
+"""

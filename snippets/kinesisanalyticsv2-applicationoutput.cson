@@ -1,0 +1,10 @@
+'.source.yaml':
+  'kinesisanalyticsv2-applicationoutput':
+      'prefix': 'kinesisanalyticsv2-applicationoutput'
+      'body':"""
+         ${1:kinesisanalyticsv2-applicationoutput_name}:
+         	Type: AWS::KinesisAnalyticsV2::ApplicationOutput
+         	Properties:
+         		ApplicationName: ${2:String}     # required
+         		Output: ${3:Output}     # required
+"""

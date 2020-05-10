@@ -1,0 +1,7 @@
+'.source.yaml':
+  'tls':
+      'prefix': 'tls'
+      'body':"""
+         CertificateAuthorityArnList:                # optional, list of String
+         	- ${2:String}
+"""

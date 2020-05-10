@@ -1,0 +1,10 @@
+'.source.yaml':
+  'securitydetails':
+      'prefix': 'securitydetails'
+      'body':"""
+         RoleArn: ${2:String}     # optional
+         SecurityGroupIds:                # optional, list of String
+         	- ${3:String}
+         SubnetIds:                # optional, list of String
+         	- ${4:String}
+"""

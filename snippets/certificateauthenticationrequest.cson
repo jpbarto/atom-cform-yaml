@@ -1,0 +1,6 @@
+'.source.yaml':
+  'certificateauthenticationrequest':
+      'prefix': 'certificateauthenticationrequest'
+      'body':"""
+         ClientRootCertificateChainArn: ${2:String}     # required
+"""

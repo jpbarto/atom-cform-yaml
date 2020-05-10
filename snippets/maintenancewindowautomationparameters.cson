@@ -1,0 +1,7 @@
+'.source.yaml':
+  'maintenancewindowautomationparameters':
+      'prefix': 'maintenancewindowautomationparameters'
+      'body':"""
+         DocumentVersion: ${2:String}     # optional
+         Parameters: ${3:Json}     # optional
+"""

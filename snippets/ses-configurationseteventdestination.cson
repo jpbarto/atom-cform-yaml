@@ -1,0 +1,10 @@
+'.source.yaml':
+  'ses-configurationseteventdestination':
+      'prefix': 'ses-configurationseteventdestination'
+      'body':"""
+         ${1:ses-configurationseteventdestination_name}:
+         	Type: AWS::SES::ConfigurationSetEventDestination
+         	Properties:
+         		ConfigurationSetName: ${2:String}     # required
+         		EventDestination: ${3:EventDestination}     # required
+"""

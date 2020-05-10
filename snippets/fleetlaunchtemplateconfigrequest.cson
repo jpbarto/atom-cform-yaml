@@ -1,0 +1,8 @@
+'.source.yaml':
+  'fleetlaunchtemplateconfigrequest':
+      'prefix': 'fleetlaunchtemplateconfigrequest'
+      'body':"""
+         LaunchTemplateSpecification: ${2:FleetLaunchTemplateSpecificationRequest}     # optional
+         Overrides:                # optional, list of FleetLaunchTemplateOverridesRequest
+         	- ${3:FleetLaunchTemplateOverridesRequest}
+"""

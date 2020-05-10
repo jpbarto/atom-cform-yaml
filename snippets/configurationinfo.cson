@@ -1,0 +1,7 @@
+'.source.yaml':
+  'configurationinfo':
+      'prefix': 'configurationinfo'
+      'body':"""
+         Arn: ${2:String}     # required
+         Revision: ${3:Integer}     # required
+"""

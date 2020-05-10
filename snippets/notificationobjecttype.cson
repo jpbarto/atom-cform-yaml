@@ -1,0 +1,8 @@
+'.source.yaml':
+  'notificationobjecttype':
+      'prefix': 'notificationobjecttype'
+      'body':"""
+         BackupVaultEvents:                # required, list of String
+         	- ${2:String}
+         SNSTopicArn: ${3:String}     # required
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'noderangeproperty':
+      'prefix': 'noderangeproperty'
+      'body':"""
+         Container: ${2:ContainerProperties}     # optional
+         TargetNodes: ${3:String}     # required
+"""

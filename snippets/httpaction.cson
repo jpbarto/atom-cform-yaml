@@ -1,0 +1,10 @@
+'.source.yaml':
+  'httpaction':
+      'prefix': 'httpaction'
+      'body':"""
+         Auth: ${2:HttpAuthorization}     # optional
+         ConfirmationUrl: ${3:String}     # optional
+         Headers:                # optional, list of HttpActionHeader
+         	- ${4:HttpActionHeader}
+         Url: ${5:String}     # required
+"""

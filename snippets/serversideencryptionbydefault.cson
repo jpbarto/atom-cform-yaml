@@ -1,0 +1,7 @@
+'.source.yaml':
+  'serversideencryptionbydefault':
+      'prefix': 'serversideencryptionbydefault'
+      'body':"""
+         KMSMasterKeyID: ${2:String}     # optional
+         SSEAlgorithm: ${3:String}     # required
+"""

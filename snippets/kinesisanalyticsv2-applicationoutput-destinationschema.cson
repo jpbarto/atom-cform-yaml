@@ -1,0 +1,6 @@
+'.source.yaml':
+  'kinesisanalyticsv2-applicationoutput-destinationschema':
+      'prefix': 'kinesisanalyticsv2-applicationoutput-destinationschema'
+      'body':"""
+         RecordFormatType: ${2:String}     # optional
+"""

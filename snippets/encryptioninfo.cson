@@ -1,0 +1,7 @@
+'.source.yaml':
+  'encryptioninfo':
+      'prefix': 'encryptioninfo'
+      'body':"""
+         EncryptionAtRest: ${2:EncryptionAtRest}     # optional
+         EncryptionInTransit: ${3:EncryptionInTransit}     # optional
+"""

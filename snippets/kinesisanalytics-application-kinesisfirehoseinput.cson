@@ -1,0 +1,7 @@
+'.source.yaml':
+  'kinesisanalytics-application-kinesisfirehoseinput':
+      'prefix': 'kinesisanalytics-application-kinesisfirehoseinput'
+      'body':"""
+         ResourceARN: ${2:String}     # required
+         RoleARN: ${3:String}     # required
+"""

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'classicloadbalancer':
+      'prefix': 'classicloadbalancer'
+      'body':"""
+         Name: ${2:String}     # required
+"""

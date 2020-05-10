@@ -1,0 +1,14 @@
+'.source.yaml':
+  'organizationmanagedrulemetadata':
+      'prefix': 'organizationmanagedrulemetadata'
+      'body':"""
+         Description: ${2:String}     # optional
+         InputParameters: ${3:String}     # optional
+         MaximumExecutionFrequency: ${4:String}     # optional
+         ResourceIdScope: ${5:String}     # optional
+         ResourceTypesScope:                # optional, list of String
+         	- ${6:String}
+         RuleIdentifier: ${7:String}     # required
+         TagKeyScope: ${8:String}     # optional
+         TagValueScope: ${9:String}     # optional
+"""

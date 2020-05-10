@@ -1,0 +1,6 @@
+'.source.yaml':
+  'rotationrules':
+      'prefix': 'rotationrules'
+      'body':"""
+         AutomaticallyAfterDays: ${2:Integer}     # optional
+"""

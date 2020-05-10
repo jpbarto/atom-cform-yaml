@@ -1,0 +1,7 @@
+'.source.yaml':
+  'recoveryoption':
+      'prefix': 'recoveryoption'
+      'body':"""
+         Name: ${2:String}     # optional
+         Priority: ${3:Integer}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'cassandra-table-provisionedthroughput':
+      'prefix': 'cassandra-table-provisionedthroughput'
+      'body':"""
+         ReadCapacityUnits: ${2:Integer}     # required
+         WriteCapacityUnits: ${3:Integer}     # required
+"""

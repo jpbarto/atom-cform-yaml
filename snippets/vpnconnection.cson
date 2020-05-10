@@ -9,6 +9,9 @@
          		StaticRoutesOnly: ${3:Boolean}     # optional
          		Tags:                # optional, list of Tag
          			- ${4:Tag}
-         		Type: ${5:String}     # required
-         		VpnGatewayId: ${6:String}     # required
+         		TransitGatewayId: ${5:String}     # optional
+         		Type: ${6:String}     # required
+         		VpnGatewayId: ${7:String}     # optional
+         		VpnTunnelOptionsSpecifications:                # optional, list of VpnTunnelOptionsSpecification
+         			- ${8:VpnTunnelOptionsSpecification}
 """

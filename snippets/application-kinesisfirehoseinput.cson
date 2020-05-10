@@ -1,0 +1,6 @@
+'.source.yaml':
+  'application-kinesisfirehoseinput':
+      'prefix': 'application-kinesisfirehoseinput'
+      'body':"""
+         ResourceARN: ${2:String}     # required
+"""

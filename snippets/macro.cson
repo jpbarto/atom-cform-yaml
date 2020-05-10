@@ -1,0 +1,13 @@
+'.source.yaml':
+  'macro':
+      'prefix': 'macro'
+      'body':"""
+         ${1:macro_name}:
+         	Type: AWS::CloudFormation::Macro
+         	Properties:
+         		Description: ${2:String}     # optional
+         		FunctionName: ${3:String}     # required
+         		LogGroupName: ${4:String}     # optional
+         		LogRoleARN: ${5:String}     # optional
+         		Name: ${6:String}     # required
+"""

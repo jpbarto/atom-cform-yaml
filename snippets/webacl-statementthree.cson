@@ -1,0 +1,14 @@
+'.source.yaml':
+  'webacl-statementthree':
+      'prefix': 'webacl-statementthree'
+      'body':"""
+         ByteMatchStatement: ${2:ByteMatchStatement}     # optional
+         GeoMatchStatement: ${3:GeoMatchStatement}     # optional
+         IPSetReferenceStatement: ${4:IPSetReferenceStatement}     # optional
+         ManagedRuleGroupStatement: ${5:ManagedRuleGroupStatement}     # optional
+         RegexPatternSetReferenceStatement: ${6:RegexPatternSetReferenceStatement}     # optional
+         RuleGroupReferenceStatement: ${7:RuleGroupReferenceStatement}     # optional
+         SizeConstraintStatement: ${8:SizeConstraintStatement}     # optional
+         SqliMatchStatement: ${9:SqliMatchStatement}     # optional
+         XssMatchStatement: ${10:XssMatchStatement}     # optional
+"""

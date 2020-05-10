@@ -1,0 +1,10 @@
+'.source.yaml':
+  'deviceshadowenrich':
+      'prefix': 'deviceshadowenrich'
+      'body':"""
+         Attribute: ${2:String}     # optional
+         Name: ${3:String}     # optional
+         Next: ${4:String}     # optional
+         RoleArn: ${5:String}     # optional
+         ThingName: ${6:String}     # optional
+"""

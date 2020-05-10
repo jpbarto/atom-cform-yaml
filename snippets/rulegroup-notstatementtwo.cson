@@ -1,0 +1,6 @@
+'.source.yaml':
+  'rulegroup-notstatementtwo':
+      'prefix': 'rulegroup-notstatementtwo'
+      'body':"""
+         Statement: ${2:StatementThree}     # required
+"""

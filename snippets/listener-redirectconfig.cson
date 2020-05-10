@@ -1,0 +1,11 @@
+'.source.yaml':
+  'listener-redirectconfig':
+      'prefix': 'listener-redirectconfig'
+      'body':"""
+         Host: ${2:String}     # optional
+         Path: ${3:String}     # optional
+         Port: ${4:String}     # optional
+         Protocol: ${5:String}     # optional
+         Query: ${6:String}     # optional
+         StatusCode: ${7:String}     # required
+"""

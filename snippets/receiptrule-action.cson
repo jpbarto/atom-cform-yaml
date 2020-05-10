@@ -1,0 +1,12 @@
+'.source.yaml':
+  'receiptrule-action':
+      'prefix': 'receiptrule-action'
+      'body':"""
+         AddHeaderAction: ${2:AddHeaderAction}     # optional
+         BounceAction: ${3:BounceAction}     # optional
+         LambdaAction: ${4:LambdaAction}     # optional
+         S3Action: ${5:S3Action}     # optional
+         SNSAction: ${6:SNSAction}     # optional
+         StopAction: ${7:StopAction}     # optional
+         WorkmailAction: ${8:WorkmailAction}     # optional
+"""

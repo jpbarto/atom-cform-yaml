@@ -1,0 +1,14 @@
+'.source.yaml':
+  'apicache':
+      'prefix': 'apicache'
+      'body':"""
+         ${1:apicache_name}:
+         	Type: AWS::AppSync::ApiCache
+         	Properties:
+         		ApiCachingBehavior: ${2:String}     # required
+         		ApiId: ${3:String}     # required
+         		AtRestEncryptionEnabled: ${4:Boolean}     # optional
+         		TransitEncryptionEnabled: ${5:Boolean}     # optional
+         		Ttl: ${6:Double}     # required
+         		Type: ${7:String}     # required
+"""

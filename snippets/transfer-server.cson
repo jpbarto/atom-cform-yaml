@@ -1,0 +1,18 @@
+'.source.yaml':
+  'transfer-server':
+      'prefix': 'transfer-server'
+      'body':"""
+         ${1:transfer-server_name}:
+         	Type: AWS::Transfer::Server
+         	Properties:
+         		Certificate: ${2:String}     # optional
+         		EndpointDetails: ${3:EndpointDetails}     # optional
+         		EndpointType: ${4:String}     # optional
+         		IdentityProviderDetails: ${5:IdentityProviderDetails}     # optional
+         		IdentityProviderType: ${6:String}     # optional
+         		LoggingRole: ${7:String}     # optional
+         		Protocols:                # optional, list of Protocol
+         			- ${8:Protocol}
+         		Tags:                # optional, list of Tag
+         			- ${9:Tag}
+"""

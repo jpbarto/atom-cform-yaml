@@ -1,0 +1,7 @@
+'.source.yaml':
+  'dataexport':
+      'prefix': 'dataexport'
+      'body':"""
+         Destination: ${2:Destination}     # required
+         OutputSchemaVersion: ${3:String}     # required
+"""

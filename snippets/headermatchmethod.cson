@@ -1,0 +1,10 @@
+'.source.yaml':
+  'headermatchmethod':
+      'prefix': 'headermatchmethod'
+      'body':"""
+         Exact: ${2:String}     # optional
+         Prefix: ${3:String}     # optional
+         Range: ${4:MatchRange}     # optional
+         Regex: ${5:String}     # optional
+         Suffix: ${6:String}     # optional
+"""

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'metadataoptions':
+      'prefix': 'metadataoptions'
+      'body':"""
+         HttpEndpoint: ${2:String}     # optional
+         HttpPutResponseHopLimit: ${3:Integer}     # optional
+         HttpTokens: ${4:String}     # optional
+"""

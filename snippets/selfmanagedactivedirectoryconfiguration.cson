@@ -1,0 +1,12 @@
+'.source.yaml':
+  'selfmanagedactivedirectoryconfiguration':
+      'prefix': 'selfmanagedactivedirectoryconfiguration'
+      'body':"""
+         DnsIps:                # optional, list of String
+         	- ${2:String}
+         DomainName: ${3:String}     # optional
+         FileSystemAdministratorsGroup: ${4:String}     # optional
+         OrganizationalUnitDistinguishedName: ${5:String}     # optional
+         Password: ${6:String}     # optional
+         UserName: ${7:String}     # optional
+"""

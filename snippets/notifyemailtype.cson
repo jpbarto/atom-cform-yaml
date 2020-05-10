@@ -1,0 +1,8 @@
+'.source.yaml':
+  'notifyemailtype':
+      'prefix': 'notifyemailtype'
+      'body':"""
+         HtmlBody: ${2:String}     # optional
+         Subject: ${3:String}     # required
+         TextBody: ${4:String}     # optional
+"""

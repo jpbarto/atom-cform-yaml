@@ -1,0 +1,7 @@
+'.source.yaml':
+  'table-provisionedthroughput':
+      'prefix': 'table-provisionedthroughput'
+      'body':"""
+         ReadCapacityUnits: ${2:Long}     # required
+         WriteCapacityUnits: ${3:Long}     # required
+"""

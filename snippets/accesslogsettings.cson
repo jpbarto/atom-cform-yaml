@@ -1,0 +1,7 @@
+'.source.yaml':
+  'accesslogsettings':
+      'prefix': 'accesslogsettings'
+      'body':"""
+         DestinationArn: ${2:String}     # optional
+         Format: ${3:String}     # optional
+"""

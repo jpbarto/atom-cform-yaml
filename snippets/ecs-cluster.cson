@@ -6,4 +6,8 @@
          	Type: AWS::ECS::Cluster
          	Properties:
          		ClusterName: ${2:String}     # optional
+         		ClusterSettings:                # optional, list of ClusterSetting
+         			- ${3:ClusterSetting}
+         		Tags:                # optional, list of Tag
+         			- ${4:Tag}
 """

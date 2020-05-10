@@ -1,0 +1,12 @@
+'.source.yaml':
+  'transitgatewayroute':
+      'prefix': 'transitgatewayroute'
+      'body':"""
+         ${1:transitgatewayroute_name}:
+         	Type: AWS::EC2::TransitGatewayRoute
+         	Properties:
+         		Blackhole: ${2:Boolean}     # optional
+         		DestinationCidrBlock: ${3:String}     # optional
+         		TransitGatewayAttachmentId: ${4:String}     # optional
+         		TransitGatewayRouteTableId: ${5:String}     # required
+"""

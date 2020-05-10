@@ -1,0 +1,23 @@
+'.source.yaml':
+  'matchmakingconfiguration':
+      'prefix': 'matchmakingconfiguration'
+      'body':"""
+         ${1:matchmakingconfiguration_name}:
+         	Type: AWS::GameLift::MatchmakingConfiguration
+         	Properties:
+         		AcceptanceRequired: ${2:Boolean}     # required
+         		AcceptanceTimeoutSeconds: ${3:Integer}     # optional
+         		AdditionalPlayerCount: ${4:Integer}     # optional
+         		BackfillMode: ${5:String}     # optional
+         		CustomEventData: ${6:String}     # optional
+         		Description: ${7:String}     # optional
+         		GameProperties:                # optional, list of GameProperty
+         			- ${8:GameProperty}
+         		GameSessionData: ${9:String}     # optional
+         		GameSessionQueueArns:                # required, list of String
+         			- ${10:String}
+         		Name: ${11:String}     # required
+         		NotificationTarget: ${12:String}     # optional
+         		RequestTimeoutSeconds: ${13:Integer}     # required
+         		RuleSetName: ${14:String}     # required
+"""

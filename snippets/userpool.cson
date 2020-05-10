@@ -5,23 +5,31 @@
          ${1:userpool_name}:
          	Type: AWS::Cognito::UserPool
          	Properties:
-         		AdminCreateUserConfig: ${2:AdminCreateUserConfig}     # optional
+         		AccountRecoverySetting: ${2:AccountRecoverySetting}     # optional
+         		AdminCreateUserConfig: ${3:AdminCreateUserConfig}     # optional
          		AliasAttributes:                # optional, list of String
-         			- ${3:String}
-         		AutoVerifiedAttributes:                # optional, list of String
          			- ${4:String}
-         		DeviceConfiguration: ${5:DeviceConfiguration}     # optional
-         		EmailConfiguration: ${6:EmailConfiguration}     # optional
-         		EmailVerificationMessage: ${7:String}     # optional
-         		EmailVerificationSubject: ${8:String}     # optional
-         		LambdaConfig: ${9:LambdaConfig}     # optional
-         		MfaConfiguration: ${10:String}     # optional
-         		Policies: ${11:Policies}     # optional
+         		AutoVerifiedAttributes:                # optional, list of String
+         			- ${5:String}
+         		DeviceConfiguration: ${6:DeviceConfiguration}     # optional
+         		EmailConfiguration: ${7:EmailConfiguration}     # optional
+         		EmailVerificationMessage: ${8:String}     # optional
+         		EmailVerificationSubject: ${9:String}     # optional
+         		EnabledMfas:                # optional, list of String
+         			- ${10:String}
+         		LambdaConfig: ${11:LambdaConfig}     # optional
+         		MfaConfiguration: ${12:String}     # optional
+         		Policies: ${13:Policies}     # optional
          		Schema:                # optional, list of SchemaAttribute
-         			- ${12:SchemaAttribute}
-         		SmsAuthenticationMessage: ${13:String}     # optional
-         		SmsConfiguration: ${14:SmsConfiguration}     # optional
-         		SmsVerificationMessage: ${15:String}     # optional
-         		UserPoolName: ${16:String}     # optional
-         		UserPoolTags: ${17:Json}     # optional
+         			- ${14:SchemaAttribute}
+         		SmsAuthenticationMessage: ${15:String}     # optional
+         		SmsConfiguration: ${16:SmsConfiguration}     # optional
+         		SmsVerificationMessage: ${17:String}     # optional
+         		UserPoolAddOns: ${18:UserPoolAddOns}     # optional
+         		UserPoolName: ${19:String}     # optional
+         		UserPoolTags: ${20:Json}     # optional
+         		UsernameAttributes:                # optional, list of String
+         			- ${21:String}
+         		UsernameConfiguration: ${22:UsernameConfiguration}     # optional
+         		VerificationMessageTemplate: ${23:VerificationMessageTemplate}     # optional
 """

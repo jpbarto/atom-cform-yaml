@@ -1,0 +1,7 @@
+'.source.yaml':
+  'pathpatternconfig':
+      'prefix': 'pathpatternconfig'
+      'body':"""
+         Values:                # optional, list of String
+         	- ${2:String}
+"""

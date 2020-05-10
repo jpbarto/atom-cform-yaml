@@ -1,0 +1,6 @@
+'.source.yaml':
+  'application-inputparallelism':
+      'prefix': 'application-inputparallelism'
+      'body':"""
+         Count: ${2:Integer}     # optional
+"""

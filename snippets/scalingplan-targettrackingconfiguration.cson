@@ -1,0 +1,12 @@
+'.source.yaml':
+  'scalingplan-targettrackingconfiguration':
+      'prefix': 'scalingplan-targettrackingconfiguration'
+      'body':"""
+         CustomizedScalingMetricSpecification: ${2:CustomizedScalingMetricSpecification}     # optional
+         DisableScaleIn: ${3:Boolean}     # optional
+         EstimatedInstanceWarmup: ${4:Integer}     # optional
+         PredefinedScalingMetricSpecification: ${5:PredefinedScalingMetricSpecification}     # optional
+         ScaleInCooldown: ${6:Integer}     # optional
+         ScaleOutCooldown: ${7:Integer}     # optional
+         TargetValue: ${8:Double}     # required
+"""

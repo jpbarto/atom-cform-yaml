@@ -1,0 +1,10 @@
+'.source.yaml':
+  'detector':
+      'prefix': 'detector'
+      'body':"""
+         ${1:detector_name}:
+         	Type: AWS::GuardDuty::Detector
+         	Properties:
+         		Enable: ${2:Boolean}     # required
+         		FindingPublishingFrequency: ${3:String}     # optional
+"""

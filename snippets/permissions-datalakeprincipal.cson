@@ -1,0 +1,6 @@
+'.source.yaml':
+  'permissions-datalakeprincipal':
+      'prefix': 'permissions-datalakeprincipal'
+      'body':"""
+         DataLakePrincipalIdentifier: ${2:String}     # optional
+"""

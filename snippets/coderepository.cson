@@ -1,0 +1,10 @@
+'.source.yaml':
+  'coderepository':
+      'prefix': 'coderepository'
+      'body':"""
+         ${1:coderepository_name}:
+         	Type: AWS::SageMaker::CodeRepository
+         	Properties:
+         		CodeRepositoryName: ${2:String}     # optional
+         		GitConfig: ${3:GitConfig}     # required
+"""

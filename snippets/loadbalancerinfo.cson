@@ -1,0 +1,9 @@
+'.source.yaml':
+  'loadbalancerinfo':
+      'prefix': 'loadbalancerinfo'
+      'body':"""
+         ElbInfoList:                # optional, list of ELBInfo
+         	- ${2:ELBInfo}
+         TargetGroupInfoList:                # optional, list of TargetGroupInfo
+         	- ${3:TargetGroupInfo}
+"""

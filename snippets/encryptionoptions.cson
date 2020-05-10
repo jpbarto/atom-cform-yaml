@@ -1,0 +1,7 @@
+'.source.yaml':
+  'encryptionoptions':
+      'prefix': 'encryptionoptions'
+      'body':"""
+         KmsKeyId: ${2:String}     # optional
+         UseAwsOwnedKey: ${3:Boolean}     # required
+"""

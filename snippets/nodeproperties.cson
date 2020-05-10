@@ -1,0 +1,9 @@
+'.source.yaml':
+  'nodeproperties':
+      'prefix': 'nodeproperties'
+      'body':"""
+         MainNode: ${2:Integer}     # required
+         NodeRangeProperties:                # required, list of NodeRangeProperty
+         	- ${3:NodeRangeProperty}
+         NumNodes: ${4:Integer}     # required
+"""

@@ -1,0 +1,20 @@
+'.source.yaml':
+  'neptune-dbinstance':
+      'prefix': 'neptune-dbinstance'
+      'body':"""
+         ${1:neptune-dbinstance_name}:
+         	Type: AWS::Neptune::DBInstance
+         	Properties:
+         		AllowMajorVersionUpgrade: ${2:Boolean}     # optional
+         		AutoMinorVersionUpgrade: ${3:Boolean}     # optional
+         		AvailabilityZone: ${4:String}     # optional
+         		DBClusterIdentifier: ${5:String}     # optional
+         		DBInstanceClass: ${6:String}     # required
+         		DBInstanceIdentifier: ${7:String}     # optional
+         		DBParameterGroupName: ${8:String}     # optional
+         		DBSnapshotIdentifier: ${9:String}     # optional
+         		DBSubnetGroupName: ${10:String}     # optional
+         		PreferredMaintenanceWindow: ${11:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${12:Tag}
+"""

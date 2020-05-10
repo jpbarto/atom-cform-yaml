@@ -1,0 +1,6 @@
+'.source.yaml':
+  'eventsourcemapping-onfailure':
+      'prefix': 'eventsourcemapping-onfailure'
+      'body':"""
+         Destination: ${2:String}     # required
+"""

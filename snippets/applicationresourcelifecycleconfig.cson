@@ -1,0 +1,7 @@
+'.source.yaml':
+  'applicationresourcelifecycleconfig':
+      'prefix': 'applicationresourcelifecycleconfig'
+      'body':"""
+         ServiceRole: ${2:String}     # optional
+         VersionLifecycleConfig: ${3:ApplicationVersionLifecycleConfig}     # optional
+"""

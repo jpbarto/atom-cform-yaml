@@ -1,0 +1,9 @@
+'.source.yaml':
+  'outputdestinationsettings':
+      'prefix': 'outputdestinationsettings'
+      'body':"""
+         PasswordParam: ${2:String}     # optional
+         StreamName: ${3:String}     # optional
+         Url: ${4:String}     # optional
+         Username: ${5:String}     # optional
+"""

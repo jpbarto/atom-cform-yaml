@@ -1,0 +1,10 @@
+'.source.yaml':
+  'projectfilesystemlocation':
+      'prefix': 'projectfilesystemlocation'
+      'body':"""
+         Identifier: ${2:String}     # required
+         Location: ${3:String}     # required
+         MountOptions: ${4:String}     # optional
+         MountPoint: ${5:String}     # required
+         Type: ${6:String}     # required
+"""

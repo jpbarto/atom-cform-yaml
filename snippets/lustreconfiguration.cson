@@ -1,0 +1,11 @@
+'.source.yaml':
+  'lustreconfiguration':
+      'prefix': 'lustreconfiguration'
+      'body':"""
+         DeploymentType: ${2:String}     # optional
+         ExportPath: ${3:String}     # optional
+         ImportPath: ${4:String}     # optional
+         ImportedFileChunkSize: ${5:Integer}     # optional
+         PerUnitStorageThroughput: ${6:Integer}     # optional
+         WeeklyMaintenanceStartTime: ${7:String}     # optional
+"""

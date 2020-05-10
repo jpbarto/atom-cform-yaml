@@ -1,0 +1,10 @@
+'.source.yaml':
+  'transitgatewayregistration':
+      'prefix': 'transitgatewayregistration'
+      'body':"""
+         ${1:transitgatewayregistration_name}:
+         	Type: AWS::NetworkManager::TransitGatewayRegistration
+         	Properties:
+         		GlobalNetworkId: ${2:String}     # required
+         		TransitGatewayArn: ${3:String}     # required
+"""

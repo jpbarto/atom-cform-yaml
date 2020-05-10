@@ -9,4 +9,6 @@
          		FunctionName: ${3:String}     # required
          		FunctionVersion: ${4:String}     # required
          		Name: ${5:String}     # required
+         		ProvisionedConcurrencyConfig: ${6:ProvisionedConcurrencyConfiguration}     # optional
+         		RoutingConfig: ${7:AliasRoutingConfiguration}     # optional
 """

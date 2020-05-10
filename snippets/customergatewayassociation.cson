@@ -1,0 +1,12 @@
+'.source.yaml':
+  'customergatewayassociation':
+      'prefix': 'customergatewayassociation'
+      'body':"""
+         ${1:customergatewayassociation_name}:
+         	Type: AWS::NetworkManager::CustomerGatewayAssociation
+         	Properties:
+         		CustomerGatewayArn: ${2:String}     # required
+         		DeviceId: ${3:String}     # required
+         		GlobalNetworkId: ${4:String}     # required
+         		LinkId: ${5:String}     # optional
+"""

@@ -1,0 +1,16 @@
+'.source.yaml':
+  'resolverendpoint':
+      'prefix': 'resolverendpoint'
+      'body':"""
+         ${1:resolverendpoint_name}:
+         	Type: AWS::Route53Resolver::ResolverEndpoint
+         	Properties:
+         		Direction: ${2:String}     # required
+         		IpAddresses:                # required, list of IpAddressRequest
+         			- ${3:IpAddressRequest}
+         		Name: ${4:String}     # optional
+         		SecurityGroupIds:                # required, list of String
+         			- ${5:String}
+         		Tags:                # optional, list of Tag
+         			- ${6:Tag}
+"""

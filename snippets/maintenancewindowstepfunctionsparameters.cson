@@ -1,0 +1,7 @@
+'.source.yaml':
+  'maintenancewindowstepfunctionsparameters':
+      'prefix': 'maintenancewindowstepfunctionsparameters'
+      'body':"""
+         Input: ${2:String}     # optional
+         Name: ${3:String}     # optional
+"""

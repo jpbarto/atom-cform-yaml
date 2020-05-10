@@ -1,0 +1,13 @@
+'.source.yaml':
+  'appstream-user':
+      'prefix': 'appstream-user'
+      'body':"""
+         ${1:appstream-user_name}:
+         	Type: AWS::AppStream::User
+         	Properties:
+         		AuthenticationType: ${2:String}     # required
+         		FirstName: ${3:String}     # optional
+         		LastName: ${4:String}     # optional
+         		MessageAction: ${5:String}     # optional
+         		UserName: ${6:String}     # required
+"""

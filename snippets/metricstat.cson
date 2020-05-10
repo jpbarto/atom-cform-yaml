@@ -1,0 +1,9 @@
+'.source.yaml':
+  'metricstat':
+      'prefix': 'metricstat'
+      'body':"""
+         Metric: ${2:Metric}     # required
+         Period: ${3:Integer}     # required
+         Stat: ${4:String}     # required
+         Unit: ${5:String}     # optional
+"""

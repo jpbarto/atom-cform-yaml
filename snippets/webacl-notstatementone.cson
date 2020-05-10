@@ -1,0 +1,6 @@
+'.source.yaml':
+  'webacl-notstatementone':
+      'prefix': 'webacl-notstatementone'
+      'body':"""
+         Statement: ${2:StatementTwo}     # required
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'ipfilter':
+      'prefix': 'ipfilter'
+      'body':"""
+         Cidr: ${2:String}     # required
+         Policy: ${3:String}     # required
+"""

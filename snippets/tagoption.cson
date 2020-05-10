@@ -1,0 +1,11 @@
+'.source.yaml':
+  'tagoption':
+      'prefix': 'tagoption'
+      'body':"""
+         ${1:tagoption_name}:
+         	Type: AWS::ServiceCatalog::TagOption
+         	Properties:
+         		Active: ${2:Boolean}     # optional
+         		Key: ${3:String}     # required
+         		Value: ${4:String}     # required
+"""

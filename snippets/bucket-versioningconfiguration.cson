@@ -1,0 +1,6 @@
+'.source.yaml':
+  'bucket-versioningconfiguration':
+      'prefix': 'bucket-versioningconfiguration'
+      'body':"""
+         Status: ${2:String}     # required
+"""

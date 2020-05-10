@@ -8,4 +8,5 @@
          		CodeSha256: ${2:String}     # optional
          		Description: ${3:String}     # optional
          		FunctionName: ${4:String}     # required
+         		ProvisionedConcurrencyConfig: ${5:ProvisionedConcurrencyConfiguration}     # optional
 """

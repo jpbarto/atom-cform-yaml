@@ -1,0 +1,7 @@
+'.source.yaml':
+  'registry-tagsentry':
+      'prefix': 'registry-tagsentry'
+      'body':"""
+         Key: ${2:String}     # required
+         Value: ${3:String}     # required
+"""

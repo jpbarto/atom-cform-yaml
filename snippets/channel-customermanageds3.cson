@@ -1,0 +1,8 @@
+'.source.yaml':
+  'channel-customermanageds3':
+      'prefix': 'channel-customermanageds3'
+      'body':"""
+         Bucket: ${2:String}     # required
+         KeyPrefix: ${3:String}     # optional
+         RoleArn: ${4:String}     # required
+"""

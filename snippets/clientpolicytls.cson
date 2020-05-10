@@ -1,0 +1,9 @@
+'.source.yaml':
+  'clientpolicytls':
+      'prefix': 'clientpolicytls'
+      'body':"""
+         Enforce: ${2:Boolean}     # optional
+         Ports:                # optional, list of Integer
+         	- ${3:Integer}
+         Validation: ${4:TlsValidationContext}     # required
+"""

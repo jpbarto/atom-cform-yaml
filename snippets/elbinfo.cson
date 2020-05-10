@@ -1,0 +1,6 @@
+'.source.yaml':
+  'elbinfo':
+      'prefix': 'elbinfo'
+      'body':"""
+         Name: ${2:String}     # optional
+"""

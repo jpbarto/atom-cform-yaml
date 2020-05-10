@@ -1,0 +1,15 @@
+'.source.yaml':
+  'userpoolidentityprovider':
+      'prefix': 'userpoolidentityprovider'
+      'body':"""
+         ${1:userpoolidentityprovider_name}:
+         	Type: AWS::Cognito::UserPoolIdentityProvider
+         	Properties:
+         		AttributeMapping: ${2:Json}     # optional
+         		IdpIdentifiers:                # optional, list of String
+         			- ${3:String}
+         		ProviderDetails: ${4:Json}     # optional
+         		ProviderName: ${5:String}     # required
+         		ProviderType: ${6:String}     # required
+         		UserPoolId: ${7:String}     # required
+"""

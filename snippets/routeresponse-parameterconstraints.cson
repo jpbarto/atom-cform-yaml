@@ -1,0 +1,6 @@
+'.source.yaml':
+  'routeresponse-parameterconstraints':
+      'prefix': 'routeresponse-parameterconstraints'
+      'body':"""
+         Required: ${2:Boolean}     # required
+"""

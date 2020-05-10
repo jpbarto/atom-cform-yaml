@@ -1,0 +1,6 @@
+'.source.yaml':
+  'job-notificationproperty':
+      'prefix': 'job-notificationproperty'
+      'body':"""
+         NotifyDelayAfter: ${2:Integer}     # optional
+"""

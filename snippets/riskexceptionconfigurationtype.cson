@@ -1,0 +1,9 @@
+'.source.yaml':
+  'riskexceptionconfigurationtype':
+      'prefix': 'riskexceptionconfigurationtype'
+      'body':"""
+         BlockedIPRangeList:                # optional, list of String
+         	- ${2:String}
+         SkippedIPRangeList:                # optional, list of String
+         	- ${3:String}
+"""

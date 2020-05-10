@@ -1,0 +1,7 @@
+'.source.yaml':
+  'copyactionresourcetype':
+      'prefix': 'copyactionresourcetype'
+      'body':"""
+         DestinationBackupVaultArn: ${2:String}     # required
+         Lifecycle: ${3:LifecycleResourceType}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'segment-location':
+      'prefix': 'segment-location'
+      'body':"""
+         Country: ${2:SetDimension}     # optional
+         GPSPoint: ${3:GPSPoint}     # optional
+"""

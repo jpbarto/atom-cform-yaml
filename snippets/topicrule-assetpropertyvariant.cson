@@ -1,0 +1,9 @@
+'.source.yaml':
+  'topicrule-assetpropertyvariant':
+      'prefix': 'topicrule-assetpropertyvariant'
+      'body':"""
+         BooleanValue: ${2:String}     # optional
+         DoubleValue: ${3:String}     # optional
+         IntegerValue: ${4:String}     # optional
+         StringValue: ${5:String}     # optional
+"""

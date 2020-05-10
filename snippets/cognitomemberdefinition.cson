@@ -1,0 +1,8 @@
+'.source.yaml':
+  'cognitomemberdefinition':
+      'prefix': 'cognitomemberdefinition'
+      'body':"""
+         CognitoClientId: ${2:String}     # required
+         CognitoUserGroup: ${3:String}     # required
+         CognitoUserPool: ${4:String}     # required
+"""

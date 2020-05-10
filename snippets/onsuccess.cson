@@ -1,0 +1,6 @@
+'.source.yaml':
+  'onsuccess':
+      'prefix': 'onsuccess'
+      'body':"""
+         Destination: ${2:String}     # required
+"""

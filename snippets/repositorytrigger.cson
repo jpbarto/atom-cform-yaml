@@ -5,8 +5,8 @@
          Branches:                # optional, list of String
          	- ${2:String}
          CustomData: ${3:String}     # optional
-         DestinationArn: ${4:String}     # optional
-         Events:                # optional, list of String
+         DestinationArn: ${4:String}     # required
+         Events:                # required, list of String
          	- ${5:String}
-         Name: ${6:String}     # optional
+         Name: ${6:String}     # required
 """

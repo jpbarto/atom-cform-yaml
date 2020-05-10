@@ -1,0 +1,8 @@
+'.source.yaml':
+  'site-location':
+      'prefix': 'site-location'
+      'body':"""
+         Address: ${2:String}     # optional
+         Latitude: ${3:String}     # optional
+         Longitude: ${4:String}     # optional
+"""

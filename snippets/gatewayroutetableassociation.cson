@@ -1,0 +1,10 @@
+'.source.yaml':
+  'gatewayroutetableassociation':
+      'prefix': 'gatewayroutetableassociation'
+      'body':"""
+         ${1:gatewayroutetableassociation_name}:
+         	Type: AWS::EC2::GatewayRouteTableAssociation
+         	Properties:
+         		GatewayId: ${2:String}     # required
+         		RouteTableId: ${3:String}     # required
+"""

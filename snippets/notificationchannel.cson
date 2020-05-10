@@ -1,0 +1,10 @@
+'.source.yaml':
+  'notificationchannel':
+      'prefix': 'notificationchannel'
+      'body':"""
+         ${1:notificationchannel_name}:
+         	Type: AWS::FMS::NotificationChannel
+         	Properties:
+         		SnsRoleName: ${2:String}     # required
+         		SnsTopicArn: ${3:String}     # required
+"""

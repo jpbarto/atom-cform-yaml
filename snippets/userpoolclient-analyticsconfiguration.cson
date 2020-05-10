@@ -1,0 +1,9 @@
+'.source.yaml':
+  'userpoolclient-analyticsconfiguration':
+      'prefix': 'userpoolclient-analyticsconfiguration'
+      'body':"""
+         ApplicationId: ${2:String}     # optional
+         ExternalId: ${3:String}     # optional
+         RoleArn: ${4:String}     # optional
+         UserDataShared: ${5:Boolean}     # optional
+"""

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'service-healthcheckconfig':
+      'prefix': 'service-healthcheckconfig'
+      'body':"""
+         FailureThreshold: ${2:Double}     # optional
+         ResourcePath: ${3:String}     # optional
+         Type: ${4:String}     # required
+"""

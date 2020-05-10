@@ -1,0 +1,5 @@
+'.source.yaml':
+  'graphqlapi-tags':
+      'prefix': 'graphqlapi-tags'
+      'body':"""
+"""

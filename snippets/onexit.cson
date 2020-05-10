@@ -1,0 +1,7 @@
+'.source.yaml':
+  'onexit':
+      'prefix': 'onexit'
+      'body':"""
+         Events:                # optional, list of Event
+         	- ${2:Event}
+"""

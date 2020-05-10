@@ -1,0 +1,8 @@
+'.source.yaml':
+  'retainrule':
+      'prefix': 'retainrule'
+      'body':"""
+         Count: ${2:Integer}     # optional
+         Interval: ${3:Integer}     # optional
+         IntervalUnit: ${4:String}     # optional
+"""

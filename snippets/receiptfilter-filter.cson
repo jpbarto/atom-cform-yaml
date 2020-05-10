@@ -1,0 +1,7 @@
+'.source.yaml':
+  'receiptfilter-filter':
+      'prefix': 'receiptfilter-filter'
+      'body':"""
+         IpFilter: ${2:IpFilter}     # required
+         Name: ${3:String}     # optional
+"""

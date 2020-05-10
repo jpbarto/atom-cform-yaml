@@ -1,0 +1,7 @@
+'.source.yaml':
+  'configuration-tagsentry':
+      'prefix': 'configuration-tagsentry'
+      'body':"""
+         Key: ${2:String}     # required
+         Value: ${3:String}     # required
+"""

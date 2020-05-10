@@ -1,0 +1,8 @@
+'.source.yaml':
+  's3contentlocation':
+      'prefix': 's3contentlocation'
+      'body':"""
+         BucketARN: ${2:String}     # optional
+         FileKey: ${3:String}     # optional
+         ObjectVersion: ${4:String}     # optional
+"""

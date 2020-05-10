@@ -1,0 +1,9 @@
+'.source.yaml':
+  'managedrulegroupstatement':
+      'prefix': 'managedrulegroupstatement'
+      'body':"""
+         ExcludedRules:                # optional, list of ExcludedRule
+         	- ${2:ExcludedRule}
+         Name: ${3:String}     # required
+         VendorName: ${4:String}     # required
+"""

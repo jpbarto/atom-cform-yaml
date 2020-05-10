@@ -1,0 +1,7 @@
+'.source.yaml':
+  'kinesisanalyticsv2-applicationreferencedatasource-s3referencedatasource':
+      'prefix': 'kinesisanalyticsv2-applicationreferencedatasource-s3referencedatasource'
+      'body':"""
+         BucketARN: ${2:String}     # required
+         FileKey: ${3:String}     # required
+"""

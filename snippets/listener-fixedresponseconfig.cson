@@ -1,0 +1,8 @@
+'.source.yaml':
+  'listener-fixedresponseconfig':
+      'prefix': 'listener-fixedresponseconfig'
+      'body':"""
+         ContentType: ${2:String}     # optional
+         MessageBody: ${3:String}     # optional
+         StatusCode: ${4:String}     # required
+"""

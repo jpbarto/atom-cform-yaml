@@ -1,0 +1,7 @@
+'.source.yaml':
+  'iottopicpublish':
+      'prefix': 'iottopicpublish'
+      'body':"""
+         MqttTopic: ${2:String}     # optional
+         Payload: ${3:Payload}     # optional
+"""

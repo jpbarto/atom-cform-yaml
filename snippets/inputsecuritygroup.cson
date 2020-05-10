@@ -1,0 +1,11 @@
+'.source.yaml':
+  'inputsecuritygroup':
+      'prefix': 'inputsecuritygroup'
+      'body':"""
+         ${1:inputsecuritygroup_name}:
+         	Type: AWS::MediaLive::InputSecurityGroup
+         	Properties:
+         		Tags: ${2:Json}     # optional
+         		WhitelistRules:                # optional, list of InputWhitelistRuleCidr
+         			- ${3:InputWhitelistRuleCidr}
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'identity-tags':
+      'prefix': 'identity-tags'
+      'body':"""
+         Key: ${2:String}     # optional
+         Value: ${3:String}     # optional
+"""

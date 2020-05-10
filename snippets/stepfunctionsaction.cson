@@ -1,0 +1,8 @@
+'.source.yaml':
+  'stepfunctionsaction':
+      'prefix': 'stepfunctionsaction'
+      'body':"""
+         ExecutionNamePrefix: ${2:String}     # optional
+         RoleArn: ${3:String}     # required
+         StateMachineName: ${4:String}     # required
+"""

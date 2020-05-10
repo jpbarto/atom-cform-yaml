@@ -1,0 +1,7 @@
+'.source.yaml':
+  'listenertlscertificate':
+      'prefix': 'listenertlscertificate'
+      'body':"""
+         ACM: ${2:ListenerTlsAcmCertificate}     # optional
+         File: ${3:ListenerTlsFileCertificate}     # optional
+"""

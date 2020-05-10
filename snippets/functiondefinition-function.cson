@@ -1,0 +1,8 @@
+'.source.yaml':
+  'functiondefinition-function':
+      'prefix': 'functiondefinition-function'
+      'body':"""
+         FunctionArn: ${2:String}     # required
+         FunctionConfiguration: ${3:FunctionConfiguration}     # required
+         Id: ${4:String}     # required
+"""

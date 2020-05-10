@@ -1,0 +1,8 @@
+'.source.yaml':
+  'clientauthenticationrequest':
+      'prefix': 'clientauthenticationrequest'
+      'body':"""
+         ActiveDirectory: ${2:DirectoryServiceAuthenticationRequest}     # optional
+         MutualAuthentication: ${3:CertificateAuthenticationRequest}     # optional
+         Type: ${4:String}     # required
+"""

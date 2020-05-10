@@ -1,0 +1,14 @@
+'.source.yaml':
+  'container-corsrule':
+      'prefix': 'container-corsrule'
+      'body':"""
+         AllowedHeaders:                # optional, list of String
+         	- ${2:String}
+         AllowedMethods:                # optional, list of String
+         	- ${3:String}
+         AllowedOrigins:                # optional, list of String
+         	- ${4:String}
+         ExposeHeaders:                # optional, list of String
+         	- ${5:String}
+         MaxAgeSeconds: ${6:Integer}     # optional
+"""

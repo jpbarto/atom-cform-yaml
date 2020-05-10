@@ -1,0 +1,32 @@
+'.source.yaml':
+  'gamelift-fleet':
+      'prefix': 'gamelift-fleet'
+      'body':"""
+         ${1:gamelift-fleet_name}:
+         	Type: AWS::GameLift::Fleet
+         	Properties:
+         		BuildId: ${2:String}     # optional
+         		CertificateConfiguration: ${3:CertificateConfiguration}     # optional
+         		Description: ${4:String}     # optional
+         		DesiredEC2Instances: ${5:Integer}     # optional
+         		EC2InboundPermissions:                # optional, list of IpPermission
+         			- ${6:IpPermission}
+         		EC2InstanceType: ${7:String}     # required
+         		FleetType: ${8:String}     # optional
+         		InstanceRoleARN: ${9:String}     # optional
+         		LogPaths:                # optional, list of String
+         			- ${10:String}
+         		MaxSize: ${11:Integer}     # optional
+         		MetricGroups:                # optional, list of String
+         			- ${12:String}
+         		MinSize: ${13:Integer}     # optional
+         		Name: ${14:String}     # required
+         		NewGameSessionProtectionPolicy: ${15:String}     # optional
+         		PeerVpcAwsAccountId: ${16:String}     # optional
+         		PeerVpcId: ${17:String}     # optional
+         		ResourceCreationLimitPolicy: ${18:ResourceCreationLimitPolicy}     # optional
+         		RuntimeConfiguration: ${19:RuntimeConfiguration}     # optional
+         		ScriptId: ${20:String}     # optional
+         		ServerLaunchParameters: ${21:String}     # optional
+         		ServerLaunchPath: ${22:String}     # optional
+"""

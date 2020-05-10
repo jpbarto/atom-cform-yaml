@@ -1,0 +1,9 @@
+'.source.yaml':
+  'databaseinput':
+      'prefix': 'databaseinput'
+      'body':"""
+         Description: ${2:String}     # optional
+         LocationUri: ${3:String}     # optional
+         Name: ${4:String}     # optional
+         Parameters: ${5:Json}     # optional
+"""

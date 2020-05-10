@@ -1,0 +1,6 @@
+'.source.yaml':
+  'launchtemplate-licensespecification':
+      'prefix': 'launchtemplate-licensespecification'
+      'body':"""
+         LicenseConfigurationArn: ${2:String}     # optional
+"""

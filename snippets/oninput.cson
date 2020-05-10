@@ -1,0 +1,9 @@
+'.source.yaml':
+  'oninput':
+      'prefix': 'oninput'
+      'body':"""
+         Events:                # optional, list of Event
+         	- ${2:Event}
+         TransitionEvents:                # optional, list of TransitionEvent
+         	- ${3:TransitionEvent}
+"""

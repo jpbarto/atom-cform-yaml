@@ -1,0 +1,12 @@
+'.source.yaml':
+  'certificateauthorityactivation':
+      'prefix': 'certificateauthorityactivation'
+      'body':"""
+         ${1:certificateauthorityactivation_name}:
+         	Type: AWS::ACMPCA::CertificateAuthorityActivation
+         	Properties:
+         		Certificate: ${2:String}     # required
+         		CertificateAuthorityArn: ${3:String}     # required
+         		CertificateChain: ${4:String}     # optional
+         		Status: ${5:String}     # optional
+"""

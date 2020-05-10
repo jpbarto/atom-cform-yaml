@@ -1,0 +1,7 @@
+'.source.yaml':
+  'elasticsearchconfig':
+      'prefix': 'elasticsearchconfig'
+      'body':"""
+         AwsRegion: ${2:String}     # required
+         Endpoint: ${3:String}     # required
+"""

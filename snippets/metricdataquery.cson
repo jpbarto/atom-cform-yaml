@@ -1,0 +1,10 @@
+'.source.yaml':
+  'metricdataquery':
+      'prefix': 'metricdataquery'
+      'body':"""
+         Expression: ${2:String}     # optional
+         Id: ${3:String}     # required
+         Label: ${4:String}     # optional
+         MetricStat: ${5:MetricStat}     # optional
+         ReturnData: ${6:Boolean}     # optional
+"""

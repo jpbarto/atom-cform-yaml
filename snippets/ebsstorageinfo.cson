@@ -1,0 +1,6 @@
+'.source.yaml':
+  'ebsstorageinfo':
+      'prefix': 'ebsstorageinfo'
+      'body':"""
+         VolumeSize: ${2:Integer}     # optional
+"""

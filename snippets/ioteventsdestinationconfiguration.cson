@@ -1,0 +1,7 @@
+'.source.yaml':
+  'ioteventsdestinationconfiguration':
+      'prefix': 'ioteventsdestinationconfiguration'
+      'body':"""
+         InputName: ${2:String}     # required
+         RoleArn: ${3:String}     # required
+"""

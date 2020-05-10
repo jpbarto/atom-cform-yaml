@@ -1,0 +1,7 @@
+'.source.yaml':
+  'trafficmirrorportrange':
+      'prefix': 'trafficmirrorportrange'
+      'body':"""
+         FromPort: ${2:Integer}     # required
+         ToPort: ${3:Integer}     # required
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'campaign-metricdimension':
+      'prefix': 'campaign-metricdimension'
+      'body':"""
+         ComparisonOperator: ${2:String}     # optional
+         Value: ${3:Double}     # optional
+"""

@@ -1,0 +1,10 @@
+'.source.yaml':
+  'variable':
+      'prefix': 'variable'
+      'body':"""
+         DatasetContentVersionValue: ${2:DatasetContentVersionValue}     # optional
+         DoubleValue: ${3:Double}     # optional
+         OutputFileUriValue: ${4:OutputFileUriValue}     # optional
+         StringValue: ${5:String}     # optional
+         VariableName: ${6:String}     # required
+"""

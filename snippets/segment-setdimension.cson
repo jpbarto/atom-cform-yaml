@@ -1,0 +1,8 @@
+'.source.yaml':
+  'segment-setdimension':
+      'prefix': 'segment-setdimension'
+      'body':"""
+         DimensionType: ${2:String}     # optional
+         Values:                # optional, list of String
+         	- ${3:String}
+"""

@@ -1,0 +1,5 @@
+'.source.yaml':
+  'insightrule-tags':
+      'prefix': 'insightrule-tags'
+      'body':"""
+"""

@@ -1,0 +1,25 @@
+'.source.yaml':
+  'apigateway-stage':
+      'prefix': 'apigateway-stage'
+      'body':"""
+         ${1:apigateway-stage_name}:
+         	Type: AWS::ApiGateway::Stage
+         	Properties:
+         		AccessLogSetting: ${2:AccessLogSetting}     # optional
+         		CacheClusterEnabled: ${3:Boolean}     # optional
+         		CacheClusterSize: ${4:String}     # optional
+         		CanarySetting: ${5:CanarySetting}     # optional
+         		ClientCertificateId: ${6:String}     # optional
+         		DeploymentId: ${7:String}     # optional
+         		Description: ${8:String}     # optional
+         		DocumentationVersion: ${9:String}     # optional
+         		MethodSettings:                # optional, list of MethodSetting
+         			- ${10:MethodSetting}
+         		RestApiId: ${11:String}     # required
+         		StageName: ${12:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${13:Tag}
+         		TracingEnabled: ${14:Boolean}     # optional
+         		Variables:                # optional, map of String
+         			${15:String_key}: ${16:String_value}
+"""

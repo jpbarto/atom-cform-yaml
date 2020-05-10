@@ -1,0 +1,11 @@
+'.source.yaml':
+  'devicedefinitionversion':
+      'prefix': 'devicedefinitionversion'
+      'body':"""
+         ${1:devicedefinitionversion_name}:
+         	Type: AWS::Greengrass::DeviceDefinitionVersion
+         	Properties:
+         		DeviceDefinitionId: ${2:String}     # required
+         		Devices:                # required, list of Device
+         			- ${3:Device}
+"""

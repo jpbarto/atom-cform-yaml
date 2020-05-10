@@ -1,0 +1,6 @@
+'.source.yaml':
+  'putiteminput':
+      'prefix': 'putiteminput'
+      'body':"""
+         TableName: ${2:String}     # required
+"""

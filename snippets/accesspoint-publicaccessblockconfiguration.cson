@@ -1,0 +1,9 @@
+'.source.yaml':
+  'accesspoint-publicaccessblockconfiguration':
+      'prefix': 'accesspoint-publicaccessblockconfiguration'
+      'body':"""
+         BlockPublicAcls: ${2:Boolean}     # optional
+         BlockPublicPolicy: ${3:Boolean}     # optional
+         IgnorePublicAcls: ${4:Boolean}     # optional
+         RestrictPublicBuckets: ${5:Boolean}     # optional
+"""

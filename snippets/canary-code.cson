@@ -1,0 +1,10 @@
+'.source.yaml':
+  'canary-code':
+      'prefix': 'canary-code'
+      'body':"""
+         Handler: ${2:String}     # optional
+         S3Bucket: ${3:String}     # optional
+         S3Key: ${4:String}     # optional
+         S3ObjectVersion: ${5:String}     # optional
+         Script: ${6:String}     # optional
+"""

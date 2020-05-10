@@ -1,0 +1,5 @@
+'.source.yaml':
+  's3encryptions':
+      'prefix': 's3encryptions'
+      'body':"""
+"""

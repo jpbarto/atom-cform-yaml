@@ -1,0 +1,7 @@
+'.source.yaml':
+  'rulegroup-texttransformation':
+      'prefix': 'rulegroup-texttransformation'
+      'body':"""
+         Priority: ${2:Integer}     # required
+         Type: ${3:String}     # required
+"""

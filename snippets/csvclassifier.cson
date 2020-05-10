@@ -1,0 +1,13 @@
+'.source.yaml':
+  'csvclassifier':
+      'prefix': 'csvclassifier'
+      'body':"""
+         AllowSingleColumn: ${2:Boolean}     # optional
+         ContainsHeader: ${3:String}     # optional
+         Delimiter: ${4:String}     # optional
+         DisableValueTrimming: ${5:Boolean}     # optional
+         Header:                # optional, list of String
+         	- ${6:String}
+         Name: ${7:String}     # optional
+         QuoteSymbol: ${8:String}     # optional
+"""

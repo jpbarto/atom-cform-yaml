@@ -7,11 +7,23 @@
          	Properties:
          		ContainerDefinitions:                # optional, list of ContainerDefinition
          			- ${2:ContainerDefinition}
-         		Family: ${3:String}     # optional
-         		NetworkMode: ${4:String}     # optional
+         		Cpu: ${3:String}     # optional
+         		ExecutionRoleArn: ${4:String}     # optional
+         		Family: ${5:String}     # optional
+         		InferenceAccelerators:                # optional, list of InferenceAccelerator
+         			- ${6:InferenceAccelerator}
+         		IpcMode: ${7:String}     # optional
+         		Memory: ${8:String}     # optional
+         		NetworkMode: ${9:String}     # optional
+         		PidMode: ${10:String}     # optional
          		PlacementConstraints:                # optional, list of TaskDefinitionPlacementConstraint
-         			- ${5:TaskDefinitionPlacementConstraint}
-         		TaskRoleArn: ${6:String}     # optional
+         			- ${11:TaskDefinitionPlacementConstraint}
+         		ProxyConfiguration: ${12:ProxyConfiguration}     # optional
+         		RequiresCompatibilities:                # optional, list of String
+         			- ${13:String}
+         		Tags:                # optional, list of Tag
+         			- ${14:Tag}
+         		TaskRoleArn: ${15:String}     # optional
          		Volumes:                # optional, list of Volume
-         			- ${7:Volume}
+         			- ${16:Volume}
 """

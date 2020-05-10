@@ -1,0 +1,10 @@
+'.source.yaml':
+  'glue-securityconfiguration':
+      'prefix': 'glue-securityconfiguration'
+      'body':"""
+         ${1:glue-securityconfiguration_name}:
+         	Type: AWS::Glue::SecurityConfiguration
+         	Properties:
+         		EncryptionConfiguration: ${2:EncryptionConfiguration}     # required
+         		Name: ${3:String}     # required
+"""

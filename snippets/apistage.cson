@@ -4,4 +4,6 @@
       'body':"""
          ApiId: ${2:String}     # optional
          Stage: ${3:String}     # optional
+         Throttle:                # optional, map of ThrottleSettings
+         	${4:ThrottleSettings_key}: ${5:ThrottleSettings_value}
 """

@@ -2,10 +2,14 @@
   'integrationresponse':
       'prefix': 'integrationresponse'
       'body':"""
-         ResponseParameters:                # optional, map of String
-         	${2:String_key}: ${3:String_value}
-         ResponseTemplates:                # optional, map of String
-         	${4:String_key}: ${5:String_value}
-         SelectionPattern: ${6:String}     # optional
-         StatusCode: ${7:String}     # required
+         ${1:integrationresponse_name}:
+         	Type: AWS::ApiGatewayV2::IntegrationResponse
+         	Properties:
+         		ApiId: ${2:String}     # required
+         		ContentHandlingStrategy: ${3:String}     # optional
+         		IntegrationId: ${4:String}     # required
+         		IntegrationResponseKey: ${5:String}     # required
+         		ResponseParameters: ${6:Json}     # optional
+         		ResponseTemplates: ${7:Json}     # optional
+         		TemplateSelectionExpression: ${8:String}     # optional
 """

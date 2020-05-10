@@ -1,0 +1,7 @@
+'.source.yaml':
+  'mixedinstancespolicy':
+      'prefix': 'mixedinstancespolicy'
+      'body':"""
+         InstancesDistribution: ${2:InstancesDistribution}     # optional
+         LaunchTemplate: ${3:LaunchTemplate}     # required
+"""

@@ -7,5 +7,6 @@
          DedicatedMasterType: ${4:String}     # optional
          InstanceCount: ${5:Integer}     # optional
          InstanceType: ${6:String}     # optional
-         ZoneAwarenessEnabled: ${7:Boolean}     # optional
+         ZoneAwarenessConfig: ${7:ZoneAwarenessConfig}     # optional
+         ZoneAwarenessEnabled: ${8:Boolean}     # optional
 """

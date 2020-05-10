@@ -1,0 +1,13 @@
+'.source.yaml':
+  'applicationsettings':
+      'prefix': 'applicationsettings'
+      'body':"""
+         ${1:applicationsettings_name}:
+         	Type: AWS::Pinpoint::ApplicationSettings
+         	Properties:
+         		ApplicationId: ${2:String}     # required
+         		CampaignHook: ${3:CampaignHook}     # optional
+         		CloudWatchMetricsEnabled: ${4:Boolean}     # optional
+         		Limits: ${5:Limits}     # optional
+         		QuietTime: ${6:QuietTime}     # optional
+"""

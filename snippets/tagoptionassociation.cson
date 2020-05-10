@@ -1,0 +1,10 @@
+'.source.yaml':
+  'tagoptionassociation':
+      'prefix': 'tagoptionassociation'
+      'body':"""
+         ${1:tagoptionassociation_name}:
+         	Type: AWS::ServiceCatalog::TagOptionAssociation
+         	Properties:
+         		ResourceId: ${2:String}     # required
+         		TagOptionId: ${3:String}     # required
+"""

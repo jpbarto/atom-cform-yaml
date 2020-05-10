@@ -1,0 +1,16 @@
+'.source.yaml':
+  'accesspoint':
+      'prefix': 'accesspoint'
+      'body':"""
+         ${1:accesspoint_name}:
+         	Type: AWS::S3::AccessPoint
+         	Properties:
+         		Bucket: ${2:String}     # required
+         		CreationDate: ${3:String}     # optional
+         		Name: ${4:String}     # optional
+         		NetworkOrigin: ${5:String}     # optional
+         		Policy: ${6:Json}     # optional
+         		PolicyStatus: ${7:Json}     # optional
+         		PublicAccessBlockConfiguration: ${8:PublicAccessBlockConfiguration}     # optional
+         		VpcConfiguration: ${9:VpcConfiguration}     # optional
+"""

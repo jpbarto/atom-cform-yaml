@@ -1,0 +1,6 @@
+'.source.yaml':
+  'sqsparameters':
+      'prefix': 'sqsparameters'
+      'body':"""
+         MessageGroupId: ${2:String}     # required
+"""

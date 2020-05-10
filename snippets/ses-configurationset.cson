@@ -1,0 +1,9 @@
+'.source.yaml':
+  'ses-configurationset':
+      'prefix': 'ses-configurationset'
+      'body':"""
+         ${1:ses-configurationset_name}:
+         	Type: AWS::SES::ConfigurationSet
+         	Properties:
+         		Name: ${2:String}     # optional
+"""

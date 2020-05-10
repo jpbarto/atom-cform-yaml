@@ -1,0 +1,8 @@
+'.source.yaml':
+  'firelensconfiguration':
+      'prefix': 'firelensconfiguration'
+      'body':"""
+         Options:                # optional, map of String
+         	${2:String_key}: ${3:String_value}
+         Type: ${4:String}     # required
+"""

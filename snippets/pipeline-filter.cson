@@ -1,0 +1,8 @@
+'.source.yaml':
+  'pipeline-filter':
+      'prefix': 'pipeline-filter'
+      'body':"""
+         Filter: ${2:String}     # optional
+         Name: ${3:String}     # optional
+         Next: ${4:String}     # optional
+"""

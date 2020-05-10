@@ -1,0 +1,14 @@
+'.source.yaml':
+  'virtualnode':
+      'prefix': 'virtualnode'
+      'body':"""
+         ${1:virtualnode_name}:
+         	Type: AWS::AppMesh::VirtualNode
+         	Properties:
+         		MeshName: ${2:String}     # required
+         		MeshOwner: ${3:String}     # optional
+         		Spec: ${4:VirtualNodeSpec}     # required
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+         		VirtualNodeName: ${6:String}     # required
+"""

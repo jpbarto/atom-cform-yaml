@@ -1,0 +1,6 @@
+'.source.yaml':
+  'jmxexporter':
+      'prefix': 'jmxexporter'
+      'body':"""
+         EnabledInBroker: ${2:Boolean}     # required
+"""

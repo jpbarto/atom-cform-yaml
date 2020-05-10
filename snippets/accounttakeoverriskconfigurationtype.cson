@@ -1,0 +1,7 @@
+'.source.yaml':
+  'accounttakeoverriskconfigurationtype':
+      'prefix': 'accounttakeoverriskconfigurationtype'
+      'body':"""
+         Actions: ${2:AccountTakeoverActionsType}     # required
+         NotifyConfiguration: ${3:NotifyConfigurationType}     # optional
+"""

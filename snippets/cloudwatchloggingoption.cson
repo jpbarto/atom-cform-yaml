@@ -1,0 +1,6 @@
+'.source.yaml':
+  'cloudwatchloggingoption':
+      'prefix': 'cloudwatchloggingoption'
+      'body':"""
+         LogStreamARN: ${2:String}     # required
+"""

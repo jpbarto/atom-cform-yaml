@@ -1,0 +1,13 @@
+'.source.yaml':
+  'crawler-targets':
+      'prefix': 'crawler-targets'
+      'body':"""
+         CatalogTargets:                # optional, list of CatalogTarget
+         	- ${2:CatalogTarget}
+         DynamoDBTargets:                # optional, list of DynamoDBTarget
+         	- ${3:DynamoDBTarget}
+         JdbcTargets:                # optional, list of JdbcTarget
+         	- ${4:JdbcTarget}
+         S3Targets:                # optional, list of S3Target
+         	- ${5:S3Target}
+"""

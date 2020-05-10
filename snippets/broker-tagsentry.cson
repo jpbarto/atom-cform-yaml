@@ -1,0 +1,7 @@
+'.source.yaml':
+  'broker-tagsentry':
+      'prefix': 'broker-tagsentry'
+      'body':"""
+         Key: ${2:String}     # required
+         Value: ${3:String}     # required
+"""

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'projecttriggers':
+      'prefix': 'projecttriggers'
+      'body':"""
+         FilterGroups:                # optional, list of FilterGroup
+         	- ${2:FilterGroup}
+         Webhook: ${3:Boolean}     # optional
+"""

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'triggeringdataset':
+      'prefix': 'triggeringdataset'
+      'body':"""
+         DatasetName: ${2:String}     # required
+"""

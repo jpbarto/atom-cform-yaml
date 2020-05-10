@@ -1,0 +1,7 @@
+'.source.yaml':
+  'alarm-dimension':
+      'prefix': 'alarm-dimension'
+      'body':"""
+         Name: ${2:String}     # required
+         Value: ${3:String}     # required
+"""

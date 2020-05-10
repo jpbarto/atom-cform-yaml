@@ -1,0 +1,6 @@
+'.source.yaml':
+  'workteam-notificationconfiguration':
+      'prefix': 'workteam-notificationconfiguration'
+      'body':"""
+         NotificationTopicArn: ${2:String}     # required
+"""

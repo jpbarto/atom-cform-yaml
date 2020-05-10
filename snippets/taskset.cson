@@ -1,0 +1,20 @@
+'.source.yaml':
+  'taskset':
+      'prefix': 'taskset'
+      'body':"""
+         ${1:taskset_name}:
+         	Type: AWS::ECS::TaskSet
+         	Properties:
+         		Cluster: ${2:String}     # required
+         		ExternalId: ${3:String}     # optional
+         		LaunchType: ${4:String}     # optional
+         		LoadBalancers:                # optional, list of LoadBalancer
+         			- ${5:LoadBalancer}
+         		NetworkConfiguration: ${6:NetworkConfiguration}     # optional
+         		PlatformVersion: ${7:String}     # optional
+         		Scale: ${8:Scale}     # optional
+         		Service: ${9:String}     # required
+         		ServiceRegistries:                # optional, list of ServiceRegistry
+         			- ${10:ServiceRegistry}
+         		TaskDefinition: ${11:String}     # required
+"""

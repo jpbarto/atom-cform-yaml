@@ -1,0 +1,12 @@
+'.source.yaml':
+  'clientvpnroute':
+      'prefix': 'clientvpnroute'
+      'body':"""
+         ${1:clientvpnroute_name}:
+         	Type: AWS::EC2::ClientVpnRoute
+         	Properties:
+         		ClientVpnEndpointId: ${2:String}     # required
+         		Description: ${3:String}     # optional
+         		DestinationCidrBlock: ${4:String}     # required
+         		TargetVpcSubnetId: ${5:String}     # required
+"""

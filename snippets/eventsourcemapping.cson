@@ -6,8 +6,14 @@
          	Type: AWS::Lambda::EventSourceMapping
          	Properties:
          		BatchSize: ${2:Integer}     # optional
-         		Enabled: ${3:Boolean}     # optional
-         		EventSourceArn: ${4:String}     # required
-         		FunctionName: ${5:String}     # required
-         		StartingPosition: ${6:String}     # required
+         		BisectBatchOnFunctionError: ${3:Boolean}     # optional
+         		DestinationConfig: ${4:DestinationConfig}     # optional
+         		Enabled: ${5:Boolean}     # optional
+         		EventSourceArn: ${6:String}     # required
+         		FunctionName: ${7:String}     # required
+         		MaximumBatchingWindowInSeconds: ${8:Integer}     # optional
+         		MaximumRecordAgeInSeconds: ${9:Integer}     # optional
+         		MaximumRetryAttempts: ${10:Integer}     # optional
+         		ParallelizationFactor: ${11:Integer}     # optional
+         		StartingPosition: ${12:String}     # optional
 """

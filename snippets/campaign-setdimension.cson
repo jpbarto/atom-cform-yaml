@@ -1,0 +1,8 @@
+'.source.yaml':
+  'campaign-setdimension':
+      'prefix': 'campaign-setdimension'
+      'body':"""
+         DimensionType: ${2:String}     # optional
+         Values:                # optional, list of String
+         	- ${3:String}
+"""

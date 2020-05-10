@@ -1,0 +1,7 @@
+'.source.yaml':
+  'logsconfig':
+      'prefix': 'logsconfig'
+      'body':"""
+         CloudWatchLogs: ${2:CloudWatchLogsConfig}     # optional
+         S3Logs: ${3:S3LogsConfig}     # optional
+"""

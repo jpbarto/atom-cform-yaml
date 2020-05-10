@@ -1,0 +1,9 @@
+'.source.yaml':
+  'bodys3location':
+      'prefix': 'bodys3location'
+      'body':"""
+         Bucket: ${2:String}     # optional
+         Etag: ${3:String}     # optional
+         Key: ${4:String}     # optional
+         Version: ${5:String}     # optional
+"""

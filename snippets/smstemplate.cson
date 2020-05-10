@@ -1,0 +1,13 @@
+'.source.yaml':
+  'smstemplate':
+      'prefix': 'smstemplate'
+      'body':"""
+         ${1:smstemplate_name}:
+         	Type: AWS::Pinpoint::SmsTemplate
+         	Properties:
+         		Body: ${2:String}     # required
+         		DefaultSubstitutions: ${3:String}     # optional
+         		Tags: ${4:Json}     # optional
+         		TemplateDescription: ${5:String}     # optional
+         		TemplateName: ${6:String}     # required
+"""

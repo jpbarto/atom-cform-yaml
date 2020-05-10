@@ -1,0 +1,6 @@
+'.source.yaml':
+  'instance-licensespecification':
+      'prefix': 'instance-licensespecification'
+      'body':"""
+         LicenseConfigurationArn: ${2:String}     # required
+"""

@@ -1,0 +1,14 @@
+'.source.yaml':
+  'windowsconfiguration':
+      'prefix': 'windowsconfiguration'
+      'body':"""
+         ActiveDirectoryId: ${2:String}     # optional
+         AutomaticBackupRetentionDays: ${3:Integer}     # optional
+         CopyTagsToBackups: ${4:Boolean}     # optional
+         DailyAutomaticBackupStartTime: ${5:String}     # optional
+         DeploymentType: ${6:String}     # optional
+         PreferredSubnetId: ${7:String}     # optional
+         SelfManagedActiveDirectoryConfiguration: ${8:SelfManagedActiveDirectoryConfiguration}     # optional
+         ThroughputCapacity: ${9:Integer}     # optional
+         WeeklyMaintenanceStartTime: ${10:String}     # optional
+"""

@@ -2,6 +2,12 @@
   'listenerrule-action':
       'prefix': 'listenerrule-action'
       'body':"""
-         TargetGroupArn: ${2:String}     # required
-         Type: ${3:String}     # required
+         AuthenticateCognitoConfig: ${2:AuthenticateCognitoConfig}     # optional
+         AuthenticateOidcConfig: ${3:AuthenticateOidcConfig}     # optional
+         FixedResponseConfig: ${4:FixedResponseConfig}     # optional
+         ForwardConfig: ${5:ForwardConfig}     # optional
+         Order: ${6:Integer}     # optional
+         RedirectConfig: ${7:RedirectConfig}     # optional
+         TargetGroupArn: ${8:String}     # optional
+         Type: ${9:String}     # required
 """

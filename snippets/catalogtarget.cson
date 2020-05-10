@@ -1,0 +1,8 @@
+'.source.yaml':
+  'catalogtarget':
+      'prefix': 'catalogtarget'
+      'body':"""
+         DatabaseName: ${2:String}     # optional
+         Tables:                # optional, list of String
+         	- ${3:String}
+"""

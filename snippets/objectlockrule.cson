@@ -1,0 +1,6 @@
+'.source.yaml':
+  'objectlockrule':
+      'prefix': 'objectlockrule'
+      'body':"""
+         DefaultRetention: ${2:DefaultRetention}     # optional
+"""
