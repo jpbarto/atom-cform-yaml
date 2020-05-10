@@ -1,0 +1,6 @@
+'.source.yaml':
+  'alias-provisionedconcurrencyconfiguration':
+      'prefix': 'alias-provisionedconcurrencyconfiguration'
+      'body':"""
+         ProvisionedConcurrentExecutions: ${2:Integer}     # required
+"""

@@ -1,0 +1,13 @@
+'.source.yaml':
+  'trafficmirrortarget':
+      'prefix': 'trafficmirrortarget'
+      'body':"""
+         ${1:trafficmirrortarget_name}:
+         	Type: AWS::EC2::TrafficMirrorTarget
+         	Properties:
+         		Description: ${2:String}     # optional
+         		NetworkInterfaceId: ${3:String}     # optional
+         		NetworkLoadBalancerArn: ${4:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+"""

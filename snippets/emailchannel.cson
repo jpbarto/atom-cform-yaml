@@ -1,0 +1,14 @@
+'.source.yaml':
+  'emailchannel':
+      'prefix': 'emailchannel'
+      'body':"""
+         ${1:emailchannel_name}:
+         	Type: AWS::Pinpoint::EmailChannel
+         	Properties:
+         		ApplicationId: ${2:String}     # required
+         		ConfigurationSet: ${3:String}     # optional
+         		Enabled: ${4:Boolean}     # optional
+         		FromAddress: ${5:String}     # required
+         		Identity: ${6:String}     # required
+         		RoleArn: ${7:String}     # optional
+"""

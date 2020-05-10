@@ -1,0 +1,7 @@
+'.source.yaml':
+  'configurationseteventdestination-cloudwatchdestination':
+      'prefix': 'configurationseteventdestination-cloudwatchdestination'
+      'body':"""
+         DimensionConfigurations:                # optional, list of DimensionConfiguration
+         	- ${2:DimensionConfiguration}
+"""

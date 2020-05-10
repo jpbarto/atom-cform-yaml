@@ -1,0 +1,6 @@
+'.source.yaml':
+  'virtualnodeserviceprovider':
+      'prefix': 'virtualnodeserviceprovider'
+      'body':"""
+         VirtualNodeName: ${2:String}     # required
+"""

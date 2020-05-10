@@ -5,8 +5,11 @@
          ${1:codecommit-repository_name}:
          	Type: AWS::CodeCommit::Repository
          	Properties:
-         		RepositoryDescription: ${2:String}     # optional
-         		RepositoryName: ${3:String}     # required
+         		Code: ${2:Code}     # optional
+         		RepositoryDescription: ${3:String}     # optional
+         		RepositoryName: ${4:String}     # required
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
          		Triggers:                # optional, list of RepositoryTrigger
-         			- ${4:RepositoryTrigger}
+         			- ${6:RepositoryTrigger}
 """

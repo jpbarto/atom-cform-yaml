@@ -1,0 +1,18 @@
+'.source.yaml':
+  'networkmanager-device':
+      'prefix': 'networkmanager-device'
+      'body':"""
+         ${1:networkmanager-device_name}:
+         	Type: AWS::NetworkManager::Device
+         	Properties:
+         		Description: ${2:String}     # optional
+         		GlobalNetworkId: ${3:String}     # required
+         		Location: ${4:Location}     # optional
+         		Model: ${5:String}     # optional
+         		SerialNumber: ${6:String}     # optional
+         		SiteId: ${7:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${8:Tag}
+         		Type: ${9:String}     # optional
+         		Vendor: ${10:String}     # optional
+"""

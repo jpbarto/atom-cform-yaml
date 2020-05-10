@@ -1,0 +1,19 @@
+'.source.yaml':
+  'stacksetconstraint':
+      'prefix': 'stacksetconstraint'
+      'body':"""
+         ${1:stacksetconstraint_name}:
+         	Type: AWS::ServiceCatalog::StackSetConstraint
+         	Properties:
+         		AcceptLanguage: ${2:String}     # optional
+         		AccountList:                # required, list of String
+         			- ${3:String}
+         		AdminRole: ${4:String}     # required
+         		Description: ${5:String}     # required
+         		ExecutionRole: ${6:String}     # required
+         		PortfolioId: ${7:String}     # required
+         		ProductId: ${8:String}     # required
+         		RegionList:                # required, list of String
+         			- ${9:String}
+         		StackInstanceControl: ${10:String}     # required
+"""

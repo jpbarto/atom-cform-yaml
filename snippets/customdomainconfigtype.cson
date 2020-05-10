@@ -1,0 +1,6 @@
+'.source.yaml':
+  'customdomainconfigtype':
+      'prefix': 'customdomainconfigtype'
+      'body':"""
+         CertificateArn: ${2:String}     # optional
+"""

@@ -1,0 +1,12 @@
+'.source.yaml':
+  'config':
+      'prefix': 'config'
+      'body':"""
+         ${1:config_name}:
+         	Type: AWS::GroundStation::Config
+         	Properties:
+         		ConfigData: ${2:Json}     # required
+         		Name: ${3:String}     # required
+         		Tags:                # optional, list of Tag
+         			- ${4:Tag}
+"""

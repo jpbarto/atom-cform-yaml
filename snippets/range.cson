@@ -1,0 +1,7 @@
+'.source.yaml':
+  'range':
+      'prefix': 'range'
+      'body':"""
+         EndTime: ${2:String}     # required
+         StartTime: ${3:String}     # required
+"""

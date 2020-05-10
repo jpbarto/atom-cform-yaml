@@ -1,0 +1,8 @@
+'.source.yaml':
+  'graph':
+      'prefix': 'graph'
+      'body':"""
+         ${1:graph_name}:
+         	Type: AWS::Detective::Graph
+         	Properties:
+"""

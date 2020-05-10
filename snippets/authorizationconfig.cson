@@ -1,0 +1,7 @@
+'.source.yaml':
+  'authorizationconfig':
+      'prefix': 'authorizationconfig'
+      'body':"""
+         AuthorizationType: ${2:String}     # required
+         AwsIamConfig: ${3:AwsIamConfig}     # optional
+"""

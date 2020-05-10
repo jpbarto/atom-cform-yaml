@@ -1,0 +1,9 @@
+'.source.yaml':
+  'taskinvocationparameters':
+      'prefix': 'taskinvocationparameters'
+      'body':"""
+         MaintenanceWindowAutomationParameters: ${2:MaintenanceWindowAutomationParameters}     # optional
+         MaintenanceWindowLambdaParameters: ${3:MaintenanceWindowLambdaParameters}     # optional
+         MaintenanceWindowRunCommandParameters: ${4:MaintenanceWindowRunCommandParameters}     # optional
+         MaintenanceWindowStepFunctionsParameters: ${5:MaintenanceWindowStepFunctionsParameters}     # optional
+"""

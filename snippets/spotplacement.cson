@@ -4,4 +4,5 @@
       'body':"""
          AvailabilityZone: ${2:String}     # optional
          GroupName: ${3:String}     # optional
+         Tenancy: ${4:String}     # optional
 """

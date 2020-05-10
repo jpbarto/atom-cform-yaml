@@ -1,0 +1,16 @@
+'.source.yaml':
+  'link':
+      'prefix': 'link'
+      'body':"""
+         ${1:link_name}:
+         	Type: AWS::NetworkManager::Link
+         	Properties:
+         		Bandwidth: ${2:Bandwidth}     # required
+         		Description: ${3:String}     # optional
+         		GlobalNetworkId: ${4:String}     # required
+         		Provider: ${5:String}     # optional
+         		SiteId: ${6:String}     # required
+         		Tags:                # optional, list of Tag
+         			- ${7:Tag}
+         		Type: ${8:String}     # optional
+"""

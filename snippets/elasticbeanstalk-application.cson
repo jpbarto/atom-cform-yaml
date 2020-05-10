@@ -7,4 +7,5 @@
          	Properties:
          		ApplicationName: ${2:String}     # optional
          		Description: ${3:String}     # optional
+         		ResourceLifecycleConfig: ${4:ApplicationResourceLifecycleConfig}     # optional
 """

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'fleet-domainjoininfo':
+      'prefix': 'fleet-domainjoininfo'
+      'body':"""
+         DirectoryName: ${2:String}     # optional
+         OrganizationalUnitDistinguishedName: ${3:String}     # optional
+"""

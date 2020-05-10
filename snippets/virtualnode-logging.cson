@@ -1,0 +1,6 @@
+'.source.yaml':
+  'virtualnode-logging':
+      'prefix': 'virtualnode-logging'
+      'body':"""
+         AccessLog: ${2:AccessLog}     # optional
+"""

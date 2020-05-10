@@ -1,0 +1,7 @@
+'.source.yaml':
+  'audioselectorsettings':
+      'prefix': 'audioselectorsettings'
+      'body':"""
+         AudioLanguageSelection: ${2:AudioLanguageSelection}     # optional
+         AudioPidSelection: ${3:AudioPidSelection}     # optional
+"""

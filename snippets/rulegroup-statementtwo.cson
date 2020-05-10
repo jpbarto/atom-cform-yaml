@@ -1,0 +1,16 @@
+'.source.yaml':
+  'rulegroup-statementtwo':
+      'prefix': 'rulegroup-statementtwo'
+      'body':"""
+         AndStatement: ${2:AndStatementTwo}     # optional
+         ByteMatchStatement: ${3:ByteMatchStatement}     # optional
+         GeoMatchStatement: ${4:GeoMatchStatement}     # optional
+         IPSetReferenceStatement: ${5:IPSetReferenceStatement}     # optional
+         NotStatement: ${6:NotStatementTwo}     # optional
+         OrStatement: ${7:OrStatementTwo}     # optional
+         RateBasedStatement: ${8:RateBasedStatementTwo}     # optional
+         RegexPatternSetReferenceStatement: ${9:RegexPatternSetReferenceStatement}     # optional
+         SizeConstraintStatement: ${10:SizeConstraintStatement}     # optional
+         SqliMatchStatement: ${11:SqliMatchStatement}     # optional
+         XssMatchStatement: ${12:XssMatchStatement}     # optional
+"""

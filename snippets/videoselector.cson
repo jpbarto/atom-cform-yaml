@@ -1,0 +1,8 @@
+'.source.yaml':
+  'videoselector':
+      'prefix': 'videoselector'
+      'body':"""
+         ColorSpace: ${2:String}     # optional
+         ColorSpaceUsage: ${3:String}     # optional
+         SelectorSettings: ${4:VideoSelectorSettings}     # optional
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'appsync-apikey':
+      'prefix': 'appsync-apikey'
+      'body':"""
+         ${1:appsync-apikey_name}:
+         	Type: AWS::AppSync::ApiKey
+         	Properties:
+         		ApiId: ${2:String}     # required
+         		Description: ${3:String}     # optional
+         		Expires: ${4:Double}     # optional
+"""

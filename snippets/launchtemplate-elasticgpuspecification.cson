@@ -1,0 +1,6 @@
+'.source.yaml':
+  'launchtemplate-elasticgpuspecification':
+      'prefix': 'launchtemplate-elasticgpuspecification'
+      'body':"""
+         Type: ${2:String}     # optional
+"""

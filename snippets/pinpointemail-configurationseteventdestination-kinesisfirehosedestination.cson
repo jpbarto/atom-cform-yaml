@@ -1,0 +1,7 @@
+'.source.yaml':
+  'pinpointemail-configurationseteventdestination-kinesisfirehosedestination':
+      'prefix': 'pinpointemail-configurationseteventdestination-kinesisfirehosedestination'
+      'body':"""
+         DeliveryStreamArn: ${2:String}     # required
+         IamRoleArn: ${3:String}     # required
+"""

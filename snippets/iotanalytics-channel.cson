@@ -1,0 +1,13 @@
+'.source.yaml':
+  'iotanalytics-channel':
+      'prefix': 'iotanalytics-channel'
+      'body':"""
+         ${1:iotanalytics-channel_name}:
+         	Type: AWS::IoTAnalytics::Channel
+         	Properties:
+         		ChannelName: ${2:String}     # optional
+         		ChannelStorage: ${3:ChannelStorage}     # optional
+         		RetentionPeriod: ${4:RetentionPeriod}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+"""

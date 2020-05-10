@@ -1,0 +1,7 @@
+'.source.yaml':
+  'channel-retentionperiod':
+      'prefix': 'channel-retentionperiod'
+      'body':"""
+         NumberOfDays: ${2:Integer}     # optional
+         Unlimited: ${3:Boolean}     # optional
+"""

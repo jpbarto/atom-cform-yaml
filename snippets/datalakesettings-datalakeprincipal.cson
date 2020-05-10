@@ -1,0 +1,6 @@
+'.source.yaml':
+  'datalakesettings-datalakeprincipal':
+      'prefix': 'datalakesettings-datalakeprincipal'
+      'body':"""
+         DataLakePrincipalIdentifier: ${2:String}     # optional
+"""

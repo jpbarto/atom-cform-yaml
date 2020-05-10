@@ -1,0 +1,6 @@
+'.source.yaml':
+  'sourceselectioncriteria':
+      'prefix': 'sourceselectioncriteria'
+      'body':"""
+         SseKmsEncryptedObjects: ${2:SseKmsEncryptedObjects}     # required
+"""

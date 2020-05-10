@@ -1,0 +1,28 @@
+'.source.yaml':
+  'dms-endpoint':
+      'prefix': 'dms-endpoint'
+      'body':"""
+         ${1:dms-endpoint_name}:
+         	Type: AWS::DMS::Endpoint
+         	Properties:
+         		CertificateArn: ${2:String}     # optional
+         		DatabaseName: ${3:String}     # optional
+         		DynamoDbSettings: ${4:DynamoDbSettings}     # optional
+         		ElasticsearchSettings: ${5:ElasticsearchSettings}     # optional
+         		EndpointIdentifier: ${6:String}     # optional
+         		EndpointType: ${7:String}     # required
+         		EngineName: ${8:String}     # required
+         		ExtraConnectionAttributes: ${9:String}     # optional
+         		KafkaSettings: ${10:KafkaSettings}     # optional
+         		KinesisSettings: ${11:KinesisSettings}     # optional
+         		KmsKeyId: ${12:String}     # optional
+         		MongoDbSettings: ${13:MongoDbSettings}     # optional
+         		Password: ${14:String}     # optional
+         		Port: ${15:Integer}     # optional
+         		S3Settings: ${16:S3Settings}     # optional
+         		ServerName: ${17:String}     # optional
+         		SslMode: ${18:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${19:Tag}
+         		Username: ${20:String}     # optional
+"""

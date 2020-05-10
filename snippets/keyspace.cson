@@ -1,0 +1,9 @@
+'.source.yaml':
+  'keyspace':
+      'prefix': 'keyspace'
+      'body':"""
+         ${1:keyspace_name}:
+         	Type: AWS::Cassandra::Keyspace
+         	Properties:
+         		KeyspaceName: ${2:String}     # optional
+"""

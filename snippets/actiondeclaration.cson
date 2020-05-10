@@ -7,8 +7,10 @@
          InputArtifacts:                # optional, list of InputArtifact
          	- ${4:InputArtifact}
          Name: ${5:String}     # required
+         Namespace: ${6:String}     # optional
          OutputArtifacts:                # optional, list of OutputArtifact
-         	- ${6:OutputArtifact}
-         RoleArn: ${7:String}     # optional
-         RunOrder: ${8:Integer}     # optional
+         	- ${7:OutputArtifact}
+         Region: ${8:String}     # optional
+         RoleArn: ${9:String}     # optional
+         RunOrder: ${10:Integer}     # optional
 """

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'geomatchset':
+      'prefix': 'geomatchset'
+      'body':"""
+         ${1:geomatchset_name}:
+         	Type: AWS::WAFRegional::GeoMatchSet
+         	Properties:
+         		GeoMatchConstraints:                # optional, list of GeoMatchConstraint
+         			- ${2:GeoMatchConstraint}
+         		Name: ${3:String}     # required
+"""

@@ -1,0 +1,12 @@
+'.source.yaml':
+  'apigatewayv2-domainname':
+      'prefix': 'apigatewayv2-domainname'
+      'body':"""
+         ${1:apigatewayv2-domainname_name}:
+         	Type: AWS::ApiGatewayV2::DomainName
+         	Properties:
+         		DomainName: ${2:String}     # required
+         		DomainNameConfigurations:                # optional, list of DomainNameConfiguration
+         			- ${3:DomainNameConfiguration}
+         		Tags: ${4:Json}     # optional
+"""

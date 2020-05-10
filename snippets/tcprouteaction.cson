@@ -1,0 +1,7 @@
+'.source.yaml':
+  'tcprouteaction':
+      'prefix': 'tcprouteaction'
+      'body':"""
+         WeightedTargets:                # required, list of WeightedTarget
+         	- ${2:WeightedTarget}
+"""

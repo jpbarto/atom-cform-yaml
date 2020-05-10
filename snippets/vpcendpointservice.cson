@@ -1,0 +1,11 @@
+'.source.yaml':
+  'vpcendpointservice':
+      'prefix': 'vpcendpointservice'
+      'body':"""
+         ${1:vpcendpointservice_name}:
+         	Type: AWS::EC2::VPCEndpointService
+         	Properties:
+         		AcceptanceRequired: ${2:Boolean}     # optional
+         		NetworkLoadBalancerArns:                # required, list of String
+         			- ${3:String}
+"""

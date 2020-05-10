@@ -1,0 +1,6 @@
+'.source.yaml':
+  'kinesisanalyticsv2-applicationoutput-kinesisstreamsoutput':
+      'prefix': 'kinesisanalyticsv2-applicationoutput-kinesisstreamsoutput'
+      'body':"""
+         ResourceARN: ${2:String}     # required
+"""

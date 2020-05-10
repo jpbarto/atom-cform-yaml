@@ -1,0 +1,25 @@
+'.source.yaml':
+  'devendpoint':
+      'prefix': 'devendpoint'
+      'body':"""
+         ${1:devendpoint_name}:
+         	Type: AWS::Glue::DevEndpoint
+         	Properties:
+         		Arguments: ${2:Json}     # optional
+         		EndpointName: ${3:String}     # optional
+         		ExtraJarsS3Path: ${4:String}     # optional
+         		ExtraPythonLibsS3Path: ${5:String}     # optional
+         		GlueVersion: ${6:String}     # optional
+         		NumberOfNodes: ${7:Integer}     # optional
+         		NumberOfWorkers: ${8:Integer}     # optional
+         		PublicKey: ${9:String}     # optional
+         		PublicKeys:                # optional, list of String
+         			- ${10:String}
+         		RoleArn: ${11:String}     # required
+         		SecurityConfiguration: ${12:String}     # optional
+         		SecurityGroupIds:                # optional, list of String
+         			- ${13:String}
+         		SubnetId: ${14:String}     # optional
+         		Tags: ${15:Json}     # optional
+         		WorkerType: ${16:String}     # optional
+"""

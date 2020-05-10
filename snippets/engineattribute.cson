@@ -1,0 +1,7 @@
+'.source.yaml':
+  'engineattribute':
+      'prefix': 'engineattribute'
+      'body':"""
+         Name: ${2:String}     # optional
+         Value: ${3:String}     # optional
+"""

@@ -9,6 +9,8 @@
          			- ${2:ApiStage}
          		Description: ${3:String}     # optional
          		Quota: ${4:QuotaSettings}     # optional
-         		Throttle: ${5:ThrottleSettings}     # optional
-         		UsagePlanName: ${6:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+         		Throttle: ${6:ThrottleSettings}     # optional
+         		UsagePlanName: ${7:String}     # optional
 """

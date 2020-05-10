@@ -1,0 +1,7 @@
+'.source.yaml':
+  'devicetemplate':
+      'prefix': 'devicetemplate'
+      'body':"""
+         CallbackOverrides: ${2:Json}     # optional
+         DeviceType: ${3:String}     # optional
+"""

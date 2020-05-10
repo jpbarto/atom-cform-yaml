@@ -1,0 +1,9 @@
+'.source.yaml':
+  'selectattributes':
+      'prefix': 'selectattributes'
+      'body':"""
+         Attributes:                # optional, list of String
+         	- ${2:String}
+         Name: ${3:String}     # optional
+         Next: ${4:String}     # optional
+"""

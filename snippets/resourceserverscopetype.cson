@@ -1,0 +1,7 @@
+'.source.yaml':
+  'resourceserverscopetype':
+      'prefix': 'resourceserverscopetype'
+      'body':"""
+         ScopeDescription: ${2:String}     # required
+         ScopeName: ${3:String}     # required
+"""

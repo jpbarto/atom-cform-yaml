@@ -6,5 +6,6 @@
          	Type: AWS::EC2::VPCCidrBlock
          	Properties:
          		AmazonProvidedIpv6CidrBlock: ${2:Boolean}     # optional
-         		VpcId: ${3:String}     # required
+         		CidrBlock: ${3:String}     # optional
+         		VpcId: ${4:String}     # required
 """

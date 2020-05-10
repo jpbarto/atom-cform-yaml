@@ -1,0 +1,5 @@
+'.source.yaml':
+  'datastore-servicemanageds3':
+      'prefix': 'datastore-servicemanageds3'
+      'body':"""
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'wafregional-regexpatternset':
+      'prefix': 'wafregional-regexpatternset'
+      'body':"""
+         ${1:wafregional-regexpatternset_name}:
+         	Type: AWS::WAFRegional::RegexPatternSet
+         	Properties:
+         		Name: ${2:String}     # required
+         		RegexPatternStrings:                # required, list of String
+         			- ${3:String}
+"""

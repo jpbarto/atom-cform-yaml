@@ -1,0 +1,12 @@
+'.source.yaml':
+  'insightrule':
+      'prefix': 'insightrule'
+      'body':"""
+         ${1:insightrule_name}:
+         	Type: AWS::CloudWatch::InsightRule
+         	Properties:
+         		RuleBody: ${2:String}     # required
+         		RuleName: ${3:String}     # required
+         		RuleState: ${4:String}     # required
+         		Tags: ${5:Tags}     # optional
+"""

@@ -1,0 +1,24 @@
+'.source.yaml':
+  'campaign':
+      'prefix': 'campaign'
+      'body':"""
+         ${1:campaign_name}:
+         	Type: AWS::Pinpoint::Campaign
+         	Properties:
+         		AdditionalTreatments:                # optional, list of WriteTreatmentResource
+         			- ${2:WriteTreatmentResource}
+         		ApplicationId: ${3:String}     # required
+         		CampaignHook: ${4:CampaignHook}     # optional
+         		Description: ${5:String}     # optional
+         		HoldoutPercent: ${6:Integer}     # optional
+         		IsPaused: ${7:Boolean}     # optional
+         		Limits: ${8:Limits}     # optional
+         		MessageConfiguration: ${9:MessageConfiguration}     # required
+         		Name: ${10:String}     # required
+         		Schedule: ${11:Schedule}     # required
+         		SegmentId: ${12:String}     # required
+         		SegmentVersion: ${13:Integer}     # optional
+         		Tags: ${14:Json}     # optional
+         		TreatmentDescription: ${15:String}     # optional
+         		TreatmentName: ${16:String}     # optional
+"""

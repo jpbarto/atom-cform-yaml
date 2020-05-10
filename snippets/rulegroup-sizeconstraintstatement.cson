@@ -1,0 +1,10 @@
+'.source.yaml':
+  'rulegroup-sizeconstraintstatement':
+      'prefix': 'rulegroup-sizeconstraintstatement'
+      'body':"""
+         ComparisonOperator: ${2:String}     # required
+         FieldToMatch: ${3:FieldToMatch}     # required
+         Size: ${4:Integer}     # required
+         TextTransformations:                # required, list of TextTransformation
+         	- ${5:TextTransformation}
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'setvariable':
+      'prefix': 'setvariable'
+      'body':"""
+         Value: ${2:String}     # optional
+         VariableName: ${3:String}     # optional
+"""

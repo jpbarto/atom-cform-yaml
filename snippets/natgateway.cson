@@ -7,4 +7,6 @@
          	Properties:
          		AllocationId: ${2:String}     # required
          		SubnetId: ${3:String}     # required
+         		Tags:                # optional, list of Tag
+         			- ${4:Tag}
 """

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'detectormodel-assetpropertytimestamp':
+      'prefix': 'detectormodel-assetpropertytimestamp'
+      'body':"""
+         OffsetInNanos: ${2:String}     # optional
+         TimeInSeconds: ${3:String}     # optional
+"""

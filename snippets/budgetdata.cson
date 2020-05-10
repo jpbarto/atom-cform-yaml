@@ -1,0 +1,13 @@
+'.source.yaml':
+  'budgetdata':
+      'prefix': 'budgetdata'
+      'body':"""
+         BudgetLimit: ${2:Spend}     # optional
+         BudgetName: ${3:String}     # optional
+         BudgetType: ${4:String}     # required
+         CostFilters: ${5:Json}     # optional
+         CostTypes: ${6:CostTypes}     # optional
+         PlannedBudgetLimits: ${7:Json}     # optional
+         TimePeriod: ${8:TimePeriod}     # optional
+         TimeUnit: ${9:String}     # required
+"""

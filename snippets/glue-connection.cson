@@ -1,0 +1,10 @@
+'.source.yaml':
+  'glue-connection':
+      'prefix': 'glue-connection'
+      'body':"""
+         ${1:glue-connection_name}:
+         	Type: AWS::Glue::Connection
+         	Properties:
+         		CatalogId: ${2:String}     # required
+         		ConnectionInput: ${3:ConnectionInput}     # required
+"""

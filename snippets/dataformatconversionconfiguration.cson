@@ -1,0 +1,9 @@
+'.source.yaml':
+  'dataformatconversionconfiguration':
+      'prefix': 'dataformatconversionconfiguration'
+      'body':"""
+         Enabled: ${2:Boolean}     # required
+         InputFormatConfiguration: ${3:InputFormatConfiguration}     # required
+         OutputFormatConfiguration: ${4:OutputFormatConfiguration}     # required
+         SchemaConfiguration: ${5:SchemaConfiguration}     # required
+"""

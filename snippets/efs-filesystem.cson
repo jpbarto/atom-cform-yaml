@@ -1,0 +1,17 @@
+'.source.yaml':
+  'efs-filesystem':
+      'prefix': 'efs-filesystem'
+      'body':"""
+         ${1:efs-filesystem_name}:
+         	Type: AWS::EFS::FileSystem
+         	Properties:
+         		Encrypted: ${2:Boolean}     # optional
+         		FileSystemTags:                # optional, list of ElasticFileSystemTag
+         			- ${3:ElasticFileSystemTag}
+         		KmsKeyId: ${4:String}     # optional
+         		LifecyclePolicies:                # optional, list of LifecyclePolicy
+         			- ${5:LifecyclePolicy}
+         		PerformanceMode: ${6:String}     # optional
+         		ProvisionedThroughputInMibps: ${7:Double}     # optional
+         		ThroughputMode: ${8:String}     # optional
+"""

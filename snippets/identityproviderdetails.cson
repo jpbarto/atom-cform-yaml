@@ -1,0 +1,7 @@
+'.source.yaml':
+  'identityproviderdetails':
+      'prefix': 'identityproviderdetails'
+      'body':"""
+         InvocationRole: ${2:String}     # required
+         Url: ${3:String}     # required
+"""

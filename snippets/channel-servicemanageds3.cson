@@ -1,0 +1,5 @@
+'.source.yaml':
+  'channel-servicemanageds3':
+      'prefix': 'channel-servicemanageds3'
+      'body':"""
+"""

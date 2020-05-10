@@ -1,0 +1,12 @@
+'.source.yaml':
+  'spotoptionsrequest':
+      'prefix': 'spotoptionsrequest'
+      'body':"""
+         AllocationStrategy: ${2:String}     # optional
+         InstanceInterruptionBehavior: ${3:String}     # optional
+         InstancePoolsToUseCount: ${4:Integer}     # optional
+         MaxTotalPrice: ${5:String}     # optional
+         MinTargetCapacity: ${6:Integer}     # optional
+         SingleAvailabilityZone: ${7:Boolean}     # optional
+         SingleInstanceType: ${8:Boolean}     # optional
+"""

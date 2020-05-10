@@ -1,0 +1,8 @@
+'.source.yaml':
+  'ioteventsaction':
+      'prefix': 'ioteventsaction'
+      'body':"""
+         InputName: ${2:String}     # required
+         MessageId: ${3:String}     # optional
+         RoleArn: ${4:String}     # required
+"""

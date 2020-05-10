@@ -1,0 +1,7 @@
+'.source.yaml':
+  'application-kinesisstreamsinput':
+      'prefix': 'application-kinesisstreamsinput'
+      'body':"""
+         ResourceARN: ${2:String}     # required
+         RoleARN: ${3:String}     # required
+"""

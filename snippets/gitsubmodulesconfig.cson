@@ -1,0 +1,6 @@
+'.source.yaml':
+  'gitsubmodulesconfig':
+      'prefix': 'gitsubmodulesconfig'
+      'body':"""
+         FetchSubmodules: ${2:Boolean}     # required
+"""

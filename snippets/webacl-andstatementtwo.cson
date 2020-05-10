@@ -1,0 +1,7 @@
+'.source.yaml':
+  'webacl-andstatementtwo':
+      'prefix': 'webacl-andstatementtwo'
+      'body':"""
+         Statements:                # required, list of StatementThree
+         	- ${2:StatementThree}
+"""

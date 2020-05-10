@@ -1,0 +1,8 @@
+'.source.yaml':
+  'segmentgroups':
+      'prefix': 'segmentgroups'
+      'body':"""
+         Groups:                # optional, list of Groups
+         	- ${2:Groups}
+         Include: ${3:String}     # optional
+"""

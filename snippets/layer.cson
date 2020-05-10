@@ -23,8 +23,10 @@
          			- ${15:String}
          		Shortname: ${16:String}     # required
          		StackId: ${17:String}     # required
-         		Type: ${18:String}     # required
-         		UseEbsOptimizedInstances: ${19:Boolean}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${18:Tag}
+         		Type: ${19:String}     # required
+         		UseEbsOptimizedInstances: ${20:Boolean}     # optional
          		VolumeConfigurations:                # optional, list of VolumeConfiguration
-         			- ${20:VolumeConfiguration}
+         			- ${21:VolumeConfiguration}
 """

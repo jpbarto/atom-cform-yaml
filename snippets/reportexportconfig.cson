@@ -1,0 +1,7 @@
+'.source.yaml':
+  'reportexportconfig':
+      'prefix': 'reportexportconfig'
+      'body':"""
+         ExportConfigType: ${2:String}     # required
+         S3Destination: ${3:S3ReportExportConfig}     # optional
+"""

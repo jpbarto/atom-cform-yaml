@@ -1,0 +1,10 @@
+'.source.yaml':
+  'voicechannel':
+      'prefix': 'voicechannel'
+      'body':"""
+         ${1:voicechannel_name}:
+         	Type: AWS::Pinpoint::VoiceChannel
+         	Properties:
+         		ApplicationId: ${2:String}     # required
+         		Enabled: ${3:Boolean}     # optional
+"""

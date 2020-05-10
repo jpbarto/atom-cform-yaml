@@ -1,0 +1,11 @@
+'.source.yaml':
+  'master':
+      'prefix': 'master'
+      'body':"""
+         ${1:master_name}:
+         	Type: AWS::GuardDuty::Master
+         	Properties:
+         		DetectorId: ${2:String}     # required
+         		InvitationId: ${3:String}     # optional
+         		MasterId: ${4:String}     # required
+"""

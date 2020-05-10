@@ -5,14 +5,16 @@
          ${1:replicationtask_name}:
          	Type: AWS::DMS::ReplicationTask
          	Properties:
-         		CdcStartTime: ${2:Double}     # optional
-         		MigrationType: ${3:String}     # required
-         		ReplicationInstanceArn: ${4:String}     # required
-         		ReplicationTaskIdentifier: ${5:String}     # optional
-         		ReplicationTaskSettings: ${6:String}     # optional
-         		SourceEndpointArn: ${7:String}     # required
-         		TableMappings: ${8:String}     # required
+         		CdcStartPosition: ${2:String}     # optional
+         		CdcStartTime: ${3:Double}     # optional
+         		CdcStopPosition: ${4:String}     # optional
+         		MigrationType: ${5:String}     # required
+         		ReplicationInstanceArn: ${6:String}     # required
+         		ReplicationTaskIdentifier: ${7:String}     # optional
+         		ReplicationTaskSettings: ${8:String}     # optional
+         		SourceEndpointArn: ${9:String}     # required
+         		TableMappings: ${10:String}     # required
          		Tags:                # optional, list of Tag
-         			- ${9:Tag}
-         		TargetEndpointArn: ${10:String}     # required
+         			- ${11:Tag}
+         		TargetEndpointArn: ${12:String}     # required
 """

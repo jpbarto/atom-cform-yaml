@@ -1,0 +1,8 @@
+'.source.yaml':
+  'trustedsigners':
+      'prefix': 'trustedsigners'
+      'body':"""
+         AwsAccountNumbers:                # optional, list of String
+         	- ${2:String}
+         Enabled: ${3:Boolean}     # required
+"""

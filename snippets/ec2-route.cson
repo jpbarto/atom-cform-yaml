@@ -1,0 +1,18 @@
+'.source.yaml':
+  'ec2-route':
+      'prefix': 'ec2-route'
+      'body':"""
+         ${1:ec2-route_name}:
+         	Type: AWS::EC2::Route
+         	Properties:
+         		DestinationCidrBlock: ${2:String}     # optional
+         		DestinationIpv6CidrBlock: ${3:String}     # optional
+         		EgressOnlyInternetGatewayId: ${4:String}     # optional
+         		GatewayId: ${5:String}     # optional
+         		InstanceId: ${6:String}     # optional
+         		NatGatewayId: ${7:String}     # optional
+         		NetworkInterfaceId: ${8:String}     # optional
+         		RouteTableId: ${9:String}     # required
+         		TransitGatewayId: ${10:String}     # optional
+         		VpcPeeringConnectionId: ${11:String}     # optional
+"""

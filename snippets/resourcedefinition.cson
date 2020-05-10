@@ -1,0 +1,11 @@
+'.source.yaml':
+  'resourcedefinition':
+      'prefix': 'resourcedefinition'
+      'body':"""
+         ${1:resourcedefinition_name}:
+         	Type: AWS::Greengrass::ResourceDefinition
+         	Properties:
+         		InitialVersion: ${2:ResourceDefinitionVersion}     # optional
+         		Name: ${3:String}     # required
+         		Tags: ${4:Json}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'kinesisanalytics-applicationreferencedatasource-csvmappingparameters':
+      'prefix': 'kinesisanalytics-applicationreferencedatasource-csvmappingparameters'
+      'body':"""
+         RecordColumnDelimiter: ${2:String}     # required
+         RecordRowDelimiter: ${3:String}     # required
+"""

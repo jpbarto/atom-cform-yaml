@@ -1,0 +1,16 @@
+'.source.yaml':
+  'sagemaker-model':
+      'prefix': 'sagemaker-model'
+      'body':"""
+         ${1:sagemaker-model_name}:
+         	Type: AWS::SageMaker::Model
+         	Properties:
+         		Containers:                # optional, list of ContainerDefinition
+         			- ${2:ContainerDefinition}
+         		ExecutionRoleArn: ${3:String}     # required
+         		ModelName: ${4:String}     # optional
+         		PrimaryContainer: ${5:ContainerDefinition}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${6:Tag}
+         		VpcConfig: ${7:VpcConfig}     # optional
+"""

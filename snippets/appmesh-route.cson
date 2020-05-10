@@ -1,0 +1,15 @@
+'.source.yaml':
+  'appmesh-route':
+      'prefix': 'appmesh-route'
+      'body':"""
+         ${1:appmesh-route_name}:
+         	Type: AWS::AppMesh::Route
+         	Properties:
+         		MeshName: ${2:String}     # required
+         		MeshOwner: ${3:String}     # optional
+         		RouteName: ${4:String}     # required
+         		Spec: ${5:RouteSpec}     # required
+         		Tags:                # optional, list of Tag
+         			- ${6:Tag}
+         		VirtualRouterName: ${7:String}     # required
+"""

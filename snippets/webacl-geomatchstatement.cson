@@ -1,0 +1,7 @@
+'.source.yaml':
+  'webacl-geomatchstatement':
+      'prefix': 'webacl-geomatchstatement'
+      'body':"""
+         CountryCodes:                # optional, list of String
+         	- ${2:String}
+"""

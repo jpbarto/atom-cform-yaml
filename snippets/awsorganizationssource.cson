@@ -1,0 +1,8 @@
+'.source.yaml':
+  'awsorganizationssource':
+      'prefix': 'awsorganizationssource'
+      'body':"""
+         OrganizationSourceType: ${2:String}     # required
+         OrganizationalUnits:                # optional, list of String
+         	- ${3:String}
+"""

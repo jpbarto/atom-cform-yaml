@@ -1,0 +1,7 @@
+'.source.yaml':
+  'cluster-keyvalue':
+      'prefix': 'cluster-keyvalue'
+      'body':"""
+         Key: ${2:String}     # optional
+         Value: ${3:String}     # optional
+"""

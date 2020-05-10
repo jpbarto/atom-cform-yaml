@@ -1,0 +1,9 @@
+'.source.yaml':
+  'taskset-serviceregistry':
+      'prefix': 'taskset-serviceregistry'
+      'body':"""
+         ContainerName: ${2:String}     # optional
+         ContainerPort: ${3:Integer}     # optional
+         Port: ${4:Integer}     # optional
+         RegistryArn: ${5:String}     # optional
+"""

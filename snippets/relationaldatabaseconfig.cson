@@ -1,0 +1,7 @@
+'.source.yaml':
+  'relationaldatabaseconfig':
+      'prefix': 'relationaldatabaseconfig'
+      'body':"""
+         RdsHttpEndpointConfig: ${2:RdsHttpEndpointConfig}     # optional
+         RelationalDatabaseSourceType: ${3:String}     # required
+"""

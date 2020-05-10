@@ -1,0 +1,8 @@
+'.source.yaml':
+  'sqs':
+      'prefix': 'sqs'
+      'body':"""
+         Payload: ${2:Payload}     # optional
+         QueueUrl: ${3:String}     # optional
+         UseBase64: ${4:Boolean}     # optional
+"""

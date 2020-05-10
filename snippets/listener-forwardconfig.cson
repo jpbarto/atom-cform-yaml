@@ -1,0 +1,8 @@
+'.source.yaml':
+  'listener-forwardconfig':
+      'prefix': 'listener-forwardconfig'
+      'body':"""
+         TargetGroupStickinessConfig: ${2:TargetGroupStickinessConfig}     # optional
+         TargetGroups:                # optional, list of TargetGroupTuple
+         	- ${3:TargetGroupTuple}
+"""

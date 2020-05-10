@@ -1,0 +1,12 @@
+'.source.yaml':
+  'brokernodegroupinfo':
+      'prefix': 'brokernodegroupinfo'
+      'body':"""
+         BrokerAZDistribution: ${2:String}     # optional
+         ClientSubnets:                # required, list of String
+         	- ${3:String}
+         InstanceType: ${4:String}     # required
+         SecurityGroups:                # optional, list of String
+         	- ${5:String}
+         StorageInfo: ${6:StorageInfo}     # optional
+"""

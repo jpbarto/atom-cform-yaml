@@ -1,0 +1,9 @@
+'.source.yaml':
+  'metric':
+      'prefix': 'metric'
+      'body':"""
+         Dimensions:                # optional, list of Dimension
+         	- ${2:Dimension}
+         MetricName: ${3:String}     # optional
+         Namespace: ${4:String}     # optional
+"""

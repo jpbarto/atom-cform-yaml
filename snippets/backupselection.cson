@@ -1,0 +1,10 @@
+'.source.yaml':
+  'backupselection':
+      'prefix': 'backupselection'
+      'body':"""
+         ${1:backupselection_name}:
+         	Type: AWS::Backup::BackupSelection
+         	Properties:
+         		BackupPlanId: ${2:String}     # required
+         		BackupSelection: ${3:BackupSelectionResourceType}     # required
+"""

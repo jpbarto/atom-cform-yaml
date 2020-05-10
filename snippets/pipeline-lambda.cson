@@ -1,0 +1,9 @@
+'.source.yaml':
+  'pipeline-lambda':
+      'prefix': 'pipeline-lambda'
+      'body':"""
+         BatchSize: ${2:Integer}     # optional
+         LambdaName: ${3:String}     # optional
+         Name: ${4:String}     # optional
+         Next: ${5:String}     # optional
+"""

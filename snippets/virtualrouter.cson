@@ -1,0 +1,14 @@
+'.source.yaml':
+  'virtualrouter':
+      'prefix': 'virtualrouter'
+      'body':"""
+         ${1:virtualrouter_name}:
+         	Type: AWS::AppMesh::VirtualRouter
+         	Properties:
+         		MeshName: ${2:String}     # required
+         		MeshOwner: ${3:String}     # optional
+         		Spec: ${4:VirtualRouterSpec}     # required
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+         		VirtualRouterName: ${6:String}     # required
+"""

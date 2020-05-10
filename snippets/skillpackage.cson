@@ -1,0 +1,10 @@
+'.source.yaml':
+  'skillpackage':
+      'prefix': 'skillpackage'
+      'body':"""
+         Overrides: ${2:Overrides}     # optional
+         S3Bucket: ${3:String}     # required
+         S3BucketRole: ${4:String}     # optional
+         S3Key: ${5:String}     # required
+         S3ObjectVersion: ${6:String}     # optional
+"""

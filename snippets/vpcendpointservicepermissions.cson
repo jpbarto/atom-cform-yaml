@@ -1,0 +1,11 @@
+'.source.yaml':
+  'vpcendpointservicepermissions':
+      'prefix': 'vpcendpointservicepermissions'
+      'body':"""
+         ${1:vpcendpointservicepermissions_name}:
+         	Type: AWS::EC2::VPCEndpointServicePermissions
+         	Properties:
+         		AllowedPrincipals:                # optional, list of String
+         			- ${2:String}
+         		ServiceId: ${3:String}     # required
+"""

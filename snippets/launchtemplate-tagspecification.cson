@@ -1,0 +1,8 @@
+'.source.yaml':
+  'launchtemplate-tagspecification':
+      'prefix': 'launchtemplate-tagspecification'
+      'body':"""
+         ResourceType: ${2:String}     # optional
+         Tags:                # optional, list of Tag
+         	- ${3:Tag}
+"""

@@ -1,0 +1,15 @@
+'.source.yaml':
+  'pinpointemail-configurationset':
+      'prefix': 'pinpointemail-configurationset'
+      'body':"""
+         ${1:pinpointemail-configurationset_name}:
+         	Type: AWS::PinpointEmail::ConfigurationSet
+         	Properties:
+         		DeliveryOptions: ${2:DeliveryOptions}     # optional
+         		Name: ${3:String}     # required
+         		ReputationOptions: ${4:ReputationOptions}     # optional
+         		SendingOptions: ${5:SendingOptions}     # optional
+         		Tags:                # optional, list of Tags
+         			- ${6:Tags}
+         		TrackingOptions: ${7:TrackingOptions}     # optional
+"""

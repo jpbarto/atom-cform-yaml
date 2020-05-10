@@ -1,0 +1,13 @@
+'.source.yaml':
+  'eventbuspolicy':
+      'prefix': 'eventbuspolicy'
+      'body':"""
+         ${1:eventbuspolicy_name}:
+         	Type: AWS::Events::EventBusPolicy
+         	Properties:
+         		Action: ${2:String}     # required
+         		Condition: ${3:Condition}     # optional
+         		EventBusName: ${4:String}     # optional
+         		Principal: ${5:String}     # required
+         		StatementId: ${6:String}     # required
+"""

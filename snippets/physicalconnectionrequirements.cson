@@ -1,0 +1,9 @@
+'.source.yaml':
+  'physicalconnectionrequirements':
+      'prefix': 'physicalconnectionrequirements'
+      'body':"""
+         AvailabilityZone: ${2:String}     # optional
+         SecurityGroupIdList:                # optional, list of String
+         	- ${3:String}
+         SubnetId: ${4:String}     # optional
+"""

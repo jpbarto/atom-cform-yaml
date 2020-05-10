@@ -1,0 +1,10 @@
+'.source.yaml':
+  'transitgatewayroutetableassociation':
+      'prefix': 'transitgatewayroutetableassociation'
+      'body':"""
+         ${1:transitgatewayroutetableassociation_name}:
+         	Type: AWS::EC2::TransitGatewayRouteTableAssociation
+         	Properties:
+         		TransitGatewayAttachmentId: ${2:String}     # required
+         		TransitGatewayRouteTableId: ${3:String}     # required
+"""

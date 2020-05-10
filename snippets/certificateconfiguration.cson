@@ -1,0 +1,6 @@
+'.source.yaml':
+  'certificateconfiguration':
+      'prefix': 'certificateconfiguration'
+      'body':"""
+         CertificateType: ${2:String}     # required
+"""

@@ -1,0 +1,10 @@
+'.source.yaml':
+  'trigger-condition':
+      'prefix': 'trigger-condition'
+      'body':"""
+         CrawlState: ${2:String}     # optional
+         CrawlerName: ${3:String}     # optional
+         JobName: ${4:String}     # optional
+         LogicalOperator: ${5:String}     # optional
+         State: ${6:String}     # optional
+"""

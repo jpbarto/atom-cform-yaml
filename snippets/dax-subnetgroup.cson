@@ -1,0 +1,12 @@
+'.source.yaml':
+  'dax-subnetgroup':
+      'prefix': 'dax-subnetgroup'
+      'body':"""
+         ${1:dax-subnetgroup_name}:
+         	Type: AWS::DAX::SubnetGroup
+         	Properties:
+         		Description: ${2:String}     # optional
+         		SubnetGroupName: ${3:String}     # optional
+         		SubnetIds:                # required, list of String
+         			- ${4:String}
+"""

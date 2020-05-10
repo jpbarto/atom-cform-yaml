@@ -5,14 +5,28 @@
          ${1:userpoolclient_name}:
          	Type: AWS::Cognito::UserPoolClient
          	Properties:
-         		ClientName: ${2:String}     # optional
+         		AllowedOAuthFlows:                # optional, list of String
+         			- ${2:String}
+         		AllowedOAuthFlowsUserPoolClient: ${3:Boolean}     # optional
+         		AllowedOAuthScopes:                # optional, list of String
+         			- ${4:String}
+         		AnalyticsConfiguration: ${5:AnalyticsConfiguration}     # optional
+         		CallbackURLs:                # optional, list of String
+         			- ${6:String}
+         		ClientName: ${7:String}     # optional
+         		DefaultRedirectURI: ${8:String}     # optional
          		ExplicitAuthFlows:                # optional, list of String
-         			- ${3:String}
-         		GenerateSecret: ${4:Boolean}     # optional
+         			- ${9:String}
+         		GenerateSecret: ${10:Boolean}     # optional
+         		LogoutURLs:                # optional, list of String
+         			- ${11:String}
+         		PreventUserExistenceErrors: ${12:String}     # optional
          		ReadAttributes:                # optional, list of String
-         			- ${5:String}
-         		RefreshTokenValidity: ${6:Double}     # optional
-         		UserPoolId: ${7:String}     # required
+         			- ${13:String}
+         		RefreshTokenValidity: ${14:Integer}     # optional
+         		SupportedIdentityProviders:                # optional, list of String
+         			- ${15:String}
+         		UserPoolId: ${16:String}     # required
          		WriteAttributes:                # optional, list of String
-         			- ${8:String}
+         			- ${17:String}
 """

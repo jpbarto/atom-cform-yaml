@@ -1,0 +1,11 @@
+'.source.yaml':
+  'rulegroup-bytematchstatement':
+      'prefix': 'rulegroup-bytematchstatement'
+      'body':"""
+         FieldToMatch: ${2:FieldToMatch}     # required
+         PositionalConstraint: ${3:String}     # required
+         SearchString: ${4:String}     # optional
+         SearchStringBase64: ${5:String}     # optional
+         TextTransformations:                # required, list of TextTransformation
+         	- ${6:TextTransformation}
+"""

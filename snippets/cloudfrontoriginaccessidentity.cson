@@ -1,0 +1,9 @@
+'.source.yaml':
+  'cloudfrontoriginaccessidentity':
+      'prefix': 'cloudfrontoriginaccessidentity'
+      'body':"""
+         ${1:cloudfrontoriginaccessidentity_name}:
+         	Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
+         	Properties:
+         		CloudFrontOriginAccessIdentityConfig: ${2:CloudFrontOriginAccessIdentityConfig}     # required
+"""

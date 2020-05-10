@@ -1,0 +1,12 @@
+'.source.yaml':
+  'smschannel':
+      'prefix': 'smschannel'
+      'body':"""
+         ${1:smschannel_name}:
+         	Type: AWS::Pinpoint::SMSChannel
+         	Properties:
+         		ApplicationId: ${2:String}     # required
+         		Enabled: ${3:Boolean}     # optional
+         		SenderId: ${4:String}     # optional
+         		ShortCode: ${5:String}     # optional
+"""

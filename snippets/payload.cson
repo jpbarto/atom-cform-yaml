@@ -1,0 +1,7 @@
+'.source.yaml':
+  'payload':
+      'prefix': 'payload'
+      'body':"""
+         ContentExpression: ${2:String}     # optional
+         Type: ${3:String}     # optional
+"""

@@ -1,0 +1,8 @@
+'.source.yaml':
+  's3logsconfig':
+      'prefix': 's3logsconfig'
+      'body':"""
+         EncryptionDisabled: ${2:Boolean}     # optional
+         Location: ${3:String}     # optional
+         Status: ${4:String}     # required
+"""

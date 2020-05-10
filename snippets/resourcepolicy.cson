@@ -1,0 +1,10 @@
+'.source.yaml':
+  'resourcepolicy':
+      'prefix': 'resourcepolicy'
+      'body':"""
+         ${1:resourcepolicy_name}:
+         	Type: AWS::SecretsManager::ResourcePolicy
+         	Properties:
+         		ResourcePolicy: ${2:Json}     # required
+         		SecretId: ${3:String}     # required
+"""

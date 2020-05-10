@@ -1,0 +1,16 @@
+'.source.yaml':
+  'organizationcustomrulemetadata':
+      'prefix': 'organizationcustomrulemetadata'
+      'body':"""
+         Description: ${2:String}     # optional
+         InputParameters: ${3:String}     # optional
+         LambdaFunctionArn: ${4:String}     # required
+         MaximumExecutionFrequency: ${5:String}     # optional
+         OrganizationConfigRuleTriggerTypes:                # required, list of String
+         	- ${6:String}
+         ResourceIdScope: ${7:String}     # optional
+         ResourceTypesScope:                # optional, list of String
+         	- ${8:String}
+         TagKeyScope: ${9:String}     # optional
+         TagValueScope: ${10:String}     # optional
+"""

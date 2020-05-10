@@ -1,0 +1,7 @@
+'.source.yaml':
+  'recency':
+      'prefix': 'recency'
+      'body':"""
+         Duration: ${2:String}     # required
+         RecencyType: ${3:String}     # required
+"""

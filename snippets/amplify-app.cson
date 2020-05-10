@@ -1,0 +1,23 @@
+'.source.yaml':
+  'amplify-app':
+      'prefix': 'amplify-app'
+      'body':"""
+         ${1:amplify-app_name}:
+         	Type: AWS::Amplify::App
+         	Properties:
+         		AccessToken: ${2:String}     # optional
+         		AutoBranchCreationConfig: ${3:AutoBranchCreationConfig}     # optional
+         		BasicAuthConfig: ${4:BasicAuthConfig}     # optional
+         		BuildSpec: ${5:String}     # optional
+         		CustomRules:                # optional, list of CustomRule
+         			- ${6:CustomRule}
+         		Description: ${7:String}     # optional
+         		EnvironmentVariables:                # optional, list of EnvironmentVariable
+         			- ${8:EnvironmentVariable}
+         		IAMServiceRole: ${9:String}     # optional
+         		Name: ${10:String}     # required
+         		OauthToken: ${11:String}     # optional
+         		Repository: ${12:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${13:Tag}
+"""

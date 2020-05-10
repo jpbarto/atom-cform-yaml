@@ -1,0 +1,14 @@
+'.source.yaml':
+  'servicediscovery-service':
+      'prefix': 'servicediscovery-service'
+      'body':"""
+         ${1:servicediscovery-service_name}:
+         	Type: AWS::ServiceDiscovery::Service
+         	Properties:
+         		Description: ${2:String}     # optional
+         		DnsConfig: ${3:DnsConfig}     # optional
+         		HealthCheckConfig: ${4:HealthCheckConfig}     # optional
+         		HealthCheckCustomConfig: ${5:HealthCheckCustomConfig}     # optional
+         		Name: ${6:String}     # optional
+         		NamespaceId: ${7:String}     # optional
+"""

@@ -7,4 +7,7 @@
          	Properties:
          		Domain: ${2:String}     # optional
          		InstanceId: ${3:String}     # optional
+         		PublicIpv4Pool: ${4:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
 """

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'campaigneventfilter':
+      'prefix': 'campaigneventfilter'
+      'body':"""
+         Dimensions: ${2:EventDimensions}     # optional
+         FilterType: ${3:String}     # optional
+"""

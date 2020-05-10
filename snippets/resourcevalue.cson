@@ -1,0 +1,6 @@
+'.source.yaml':
+  'resourcevalue':
+      'prefix': 'resourcevalue'
+      'body':"""
+         Value: ${2:String}     # optional
+"""

@@ -1,0 +1,15 @@
+'.source.yaml':
+  'sagemaker-endpoint':
+      'prefix': 'sagemaker-endpoint'
+      'body':"""
+         ${1:sagemaker-endpoint_name}:
+         	Type: AWS::SageMaker::Endpoint
+         	Properties:
+         		EndpointConfigName: ${2:String}     # required
+         		EndpointName: ${3:String}     # optional
+         		ExcludeRetainedVariantProperties:                # optional, list of VariantProperty
+         			- ${4:VariantProperty}
+         		RetainAllVariantProperties: ${5:Boolean}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${6:Tag}
+"""

@@ -1,0 +1,12 @@
+'.source.yaml':
+  'registry':
+      'prefix': 'registry'
+      'body':"""
+         ${1:registry_name}:
+         	Type: AWS::EventSchemas::Registry
+         	Properties:
+         		Description: ${2:String}     # optional
+         		RegistryName: ${3:String}     # optional
+         		Tags:                # optional, list of TagsEntry
+         			- ${4:TagsEntry}
+"""

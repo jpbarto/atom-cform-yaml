@@ -1,0 +1,7 @@
+'.source.yaml':
+  'kinesisanalytics-applicationreferencedatasource-mappingparameters':
+      'prefix': 'kinesisanalytics-applicationreferencedatasource-mappingparameters'
+      'body':"""
+         CSVMappingParameters: ${2:CSVMappingParameters}     # optional
+         JSONMappingParameters: ${3:JSONMappingParameters}     # optional
+"""

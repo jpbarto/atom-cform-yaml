@@ -1,0 +1,8 @@
+'.source.yaml':
+  'detectormodel-assetpropertyvalue':
+      'prefix': 'detectormodel-assetpropertyvalue'
+      'body':"""
+         Quality: ${2:String}     # optional
+         Timestamp: ${3:AssetPropertyTimestamp}     # optional
+         Value: ${4:AssetPropertyVariant}     # optional
+"""

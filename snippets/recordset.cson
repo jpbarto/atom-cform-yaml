@@ -12,12 +12,13 @@
          		HealthCheckId: ${6:String}     # optional
          		HostedZoneId: ${7:String}     # optional
          		HostedZoneName: ${8:String}     # optional
-         		Name: ${9:String}     # required
-         		Region: ${10:String}     # optional
+         		MultiValueAnswer: ${9:Boolean}     # optional
+         		Name: ${10:String}     # required
+         		Region: ${11:String}     # optional
          		ResourceRecords:                # optional, list of String
-         			- ${11:String}
-         		SetIdentifier: ${12:String}     # optional
-         		TTL: ${13:String}     # optional
-         		Type: ${14:String}     # required
-         		Weight: ${15:Integer}     # optional
+         			- ${12:String}
+         		SetIdentifier: ${13:String}     # optional
+         		TTL: ${14:String}     # optional
+         		Type: ${15:String}     # required
+         		Weight: ${16:Integer}     # optional
 """

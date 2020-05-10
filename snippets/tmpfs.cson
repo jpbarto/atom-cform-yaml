@@ -1,0 +1,9 @@
+'.source.yaml':
+  'tmpfs':
+      'prefix': 'tmpfs'
+      'body':"""
+         ContainerPath: ${2:String}     # optional
+         MountOptions:                # optional, list of String
+         	- ${3:String}
+         Size: ${4:Integer}     # required
+"""

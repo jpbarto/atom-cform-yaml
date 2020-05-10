@@ -1,0 +1,7 @@
+'.source.yaml':
+  'resourcedefinition-localdeviceresourcedata':
+      'prefix': 'resourcedefinition-localdeviceresourcedata'
+      'body':"""
+         GroupOwnerSetting: ${2:GroupOwnerSetting}     # optional
+         SourcePath: ${3:String}     # required
+"""

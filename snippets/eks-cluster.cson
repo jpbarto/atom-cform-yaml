@@ -1,0 +1,14 @@
+'.source.yaml':
+  'eks-cluster':
+      'prefix': 'eks-cluster'
+      'body':"""
+         ${1:eks-cluster_name}:
+         	Type: AWS::EKS::Cluster
+         	Properties:
+         		EncryptionConfig:                # optional, list of EncryptionConfig
+         			- ${2:EncryptionConfig}
+         		Name: ${3:String}     # optional
+         		ResourcesVpcConfig: ${4:ResourcesVpcConfig}     # required
+         		RoleArn: ${5:String}     # required
+         		Version: ${6:String}     # optional
+"""

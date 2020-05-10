@@ -1,0 +1,6 @@
+'.source.yaml':
+  'clientauthentication':
+      'prefix': 'clientauthentication'
+      'body':"""
+         Tls: ${2:Tls}     # optional
+"""

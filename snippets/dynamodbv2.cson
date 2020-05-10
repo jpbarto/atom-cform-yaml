@@ -1,0 +1,7 @@
+'.source.yaml':
+  'dynamodbv2':
+      'prefix': 'dynamodbv2'
+      'body':"""
+         Payload: ${2:Payload}     # optional
+         TableName: ${3:String}     # optional
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'apigateway-resource':
+      'prefix': 'apigateway-resource'
+      'body':"""
+         ${1:apigateway-resource_name}:
+         	Type: AWS::ApiGateway::Resource
+         	Properties:
+         		ParentId: ${2:String}     # required
+         		PathPart: ${3:String}     # required
+         		RestApiId: ${4:String}     # required
+"""

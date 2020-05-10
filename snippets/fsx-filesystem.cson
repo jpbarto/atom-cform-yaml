@@ -1,0 +1,21 @@
+'.source.yaml':
+  'fsx-filesystem':
+      'prefix': 'fsx-filesystem'
+      'body':"""
+         ${1:fsx-filesystem_name}:
+         	Type: AWS::FSx::FileSystem
+         	Properties:
+         		BackupId: ${2:String}     # optional
+         		FileSystemType: ${3:String}     # required
+         		KmsKeyId: ${4:String}     # optional
+         		LustreConfiguration: ${5:LustreConfiguration}     # optional
+         		SecurityGroupIds:                # optional, list of String
+         			- ${6:String}
+         		StorageCapacity: ${7:Integer}     # optional
+         		StorageType: ${8:String}     # optional
+         		SubnetIds:                # required, list of String
+         			- ${9:String}
+         		Tags:                # optional, list of Tag
+         			- ${10:Tag}
+         		WindowsConfiguration: ${11:WindowsConfiguration}     # optional
+"""

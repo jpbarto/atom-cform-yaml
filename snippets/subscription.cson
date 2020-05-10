@@ -5,7 +5,12 @@
          ${1:subscription_name}:
          	Type: AWS::SNS::Subscription
          	Properties:
-         		Endpoint: ${2:String}     # optional
-         		Protocol: ${3:String}     # optional
-         		TopicArn: ${4:String}     # optional
+         		DeliveryPolicy: ${2:Json}     # optional
+         		Endpoint: ${3:String}     # optional
+         		FilterPolicy: ${4:Json}     # optional
+         		Protocol: ${5:String}     # required
+         		RawMessageDelivery: ${6:Boolean}     # optional
+         		RedrivePolicy: ${7:Json}     # optional
+         		Region: ${8:String}     # optional
+         		TopicArn: ${9:String}     # required
 """

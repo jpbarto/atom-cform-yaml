@@ -1,0 +1,7 @@
+'.source.yaml':
+  'notificationrule-target':
+      'prefix': 'notificationrule-target'
+      'body':"""
+         TargetAddress: ${2:String}     # optional
+         TargetType: ${3:String}     # optional
+"""

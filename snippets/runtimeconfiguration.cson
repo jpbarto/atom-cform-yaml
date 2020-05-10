@@ -1,0 +1,9 @@
+'.source.yaml':
+  'runtimeconfiguration':
+      'prefix': 'runtimeconfiguration'
+      'body':"""
+         GameSessionActivationTimeoutSeconds: ${2:Integer}     # optional
+         MaxConcurrentGameSessionActivations: ${3:Integer}     # optional
+         ServerProcesses:                # optional, list of ServerProcess
+         	- ${4:ServerProcess}
+"""

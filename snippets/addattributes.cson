@@ -1,0 +1,8 @@
+'.source.yaml':
+  'addattributes':
+      'prefix': 'addattributes'
+      'body':"""
+         Attributes: ${2:Json}     # optional
+         Name: ${3:String}     # optional
+         Next: ${4:String}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'listenerrule-targetgrouptuple':
+      'prefix': 'listenerrule-targetgrouptuple'
+      'body':"""
+         TargetGroupArn: ${2:String}     # optional
+         Weight: ${3:Integer}     # optional
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'apigatewayv2-deployment':
+      'prefix': 'apigatewayv2-deployment'
+      'body':"""
+         ${1:apigatewayv2-deployment_name}:
+         	Type: AWS::ApiGatewayV2::Deployment
+         	Properties:
+         		ApiId: ${2:String}     # required
+         		Description: ${3:String}     # optional
+         		StageName: ${4:String}     # optional
+"""

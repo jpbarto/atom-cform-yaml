@@ -1,0 +1,7 @@
+'.source.yaml':
+  'bandwidth':
+      'prefix': 'bandwidth'
+      'body':"""
+         DownloadSpeed: ${2:Integer}     # optional
+         UploadSpeed: ${3:Integer}     # optional
+"""

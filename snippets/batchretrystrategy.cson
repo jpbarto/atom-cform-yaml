@@ -1,0 +1,6 @@
+'.source.yaml':
+  'batchretrystrategy':
+      'prefix': 'batchretrystrategy'
+      'body':"""
+         Attempts: ${2:Integer}     # optional
+"""

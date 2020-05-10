@@ -1,0 +1,8 @@
+'.source.yaml':
+  'kinesisanalytics-application-recordcolumn':
+      'prefix': 'kinesisanalytics-application-recordcolumn'
+      'body':"""
+         Mapping: ${2:String}     # optional
+         Name: ${3:String}     # required
+         SqlType: ${4:String}     # required
+"""

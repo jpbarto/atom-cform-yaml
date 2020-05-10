@@ -1,0 +1,7 @@
+'.source.yaml':
+  'duration':
+      'prefix': 'duration'
+      'body':"""
+         Unit: ${2:String}     # required
+         Value: ${3:Integer}     # required
+"""

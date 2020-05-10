@@ -1,0 +1,33 @@
+'.source.yaml':
+  'codebuild-project':
+      'prefix': 'codebuild-project'
+      'body':"""
+         ${1:codebuild-project_name}:
+         	Type: AWS::CodeBuild::Project
+         	Properties:
+         		Artifacts: ${2:Artifacts}     # required
+         		BadgeEnabled: ${3:Boolean}     # optional
+         		Cache: ${4:ProjectCache}     # optional
+         		Description: ${5:String}     # optional
+         		EncryptionKey: ${6:String}     # optional
+         		Environment: ${7:Environment}     # required
+         		FileSystemLocations:                # optional, list of ProjectFileSystemLocation
+         			- ${8:ProjectFileSystemLocation}
+         		LogsConfig: ${9:LogsConfig}     # optional
+         		Name: ${10:String}     # optional
+         		QueuedTimeoutInMinutes: ${11:Integer}     # optional
+         		SecondaryArtifacts:                # optional, list of Artifacts
+         			- ${12:Artifacts}
+         		SecondarySourceVersions:                # optional, list of ProjectSourceVersion
+         			- ${13:ProjectSourceVersion}
+         		SecondarySources:                # optional, list of Source
+         			- ${14:Source}
+         		ServiceRole: ${15:String}     # required
+         		Source: ${16:Source}     # required
+         		SourceVersion: ${17:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${18:Tag}
+         		TimeoutInMinutes: ${19:Integer}     # optional
+         		Triggers: ${20:ProjectTriggers}     # optional
+         		VpcConfig: ${21:VpcConfig}     # optional
+"""

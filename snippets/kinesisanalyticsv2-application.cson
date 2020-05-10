@@ -1,0 +1,15 @@
+'.source.yaml':
+  'kinesisanalyticsv2-application':
+      'prefix': 'kinesisanalyticsv2-application'
+      'body':"""
+         ${1:kinesisanalyticsv2-application_name}:
+         	Type: AWS::KinesisAnalyticsV2::Application
+         	Properties:
+         		ApplicationConfiguration: ${2:ApplicationConfiguration}     # optional
+         		ApplicationDescription: ${3:String}     # optional
+         		ApplicationName: ${4:String}     # optional
+         		RuntimeEnvironment: ${5:String}     # required
+         		ServiceExecutionRole: ${6:String}     # required
+         		Tags:                # optional, list of Tag
+         			- ${7:Tag}
+"""

@@ -1,0 +1,12 @@
+'.source.yaml':
+  'admchannel':
+      'prefix': 'admchannel'
+      'body':"""
+         ${1:admchannel_name}:
+         	Type: AWS::Pinpoint::ADMChannel
+         	Properties:
+         		ApplicationId: ${2:String}     # required
+         		ClientId: ${3:String}     # required
+         		ClientSecret: ${4:String}     # required
+         		Enabled: ${5:Boolean}     # optional
+"""

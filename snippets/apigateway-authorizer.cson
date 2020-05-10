@@ -1,0 +1,19 @@
+'.source.yaml':
+  'apigateway-authorizer':
+      'prefix': 'apigateway-authorizer'
+      'body':"""
+         ${1:apigateway-authorizer_name}:
+         	Type: AWS::ApiGateway::Authorizer
+         	Properties:
+         		AuthType: ${2:String}     # optional
+         		AuthorizerCredentials: ${3:String}     # optional
+         		AuthorizerResultTtlInSeconds: ${4:Integer}     # optional
+         		AuthorizerUri: ${5:String}     # optional
+         		IdentitySource: ${6:String}     # optional
+         		IdentityValidationExpression: ${7:String}     # optional
+         		Name: ${8:String}     # optional
+         		ProviderARNs:                # optional, list of String
+         			- ${9:String}
+         		RestApiId: ${10:String}     # required
+         		Type: ${11:String}     # required
+"""

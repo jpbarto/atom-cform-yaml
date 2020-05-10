@@ -1,0 +1,6 @@
+'.source.yaml':
+  'kinesisanalyticsv2-application-inputlambdaprocessor':
+      'prefix': 'kinesisanalyticsv2-application-inputlambdaprocessor'
+      'body':"""
+         ResourceARN: ${2:String}     # required
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'cluster-firehose':
+      'prefix': 'cluster-firehose'
+      'body':"""
+         DeliveryStream: ${2:String}     # optional
+         Enabled: ${3:Boolean}     # required
+"""

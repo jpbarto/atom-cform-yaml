@@ -1,0 +1,7 @@
+'.source.yaml':
+  'deserializer':
+      'prefix': 'deserializer'
+      'body':"""
+         HiveJsonSerDe: ${2:HiveJsonSerDe}     # optional
+         OpenXJsonSerDe: ${3:OpenXJsonSerDe}     # optional
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'streamingdistribution':
+      'prefix': 'streamingdistribution'
+      'body':"""
+         ${1:streamingdistribution_name}:
+         	Type: AWS::CloudFront::StreamingDistribution
+         	Properties:
+         		StreamingDistributionConfig: ${2:StreamingDistributionConfig}     # required
+         		Tags:                # required, list of Tag
+         			- ${3:Tag}
+"""

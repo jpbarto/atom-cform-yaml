@@ -1,0 +1,9 @@
+'.source.yaml':
+  'resultconfigurationupdates':
+      'prefix': 'resultconfigurationupdates'
+      'body':"""
+         EncryptionConfiguration: ${2:EncryptionConfiguration}     # optional
+         OutputLocation: ${3:String}     # optional
+         RemoveEncryptionConfiguration: ${4:Boolean}     # optional
+         RemoveOutputLocation: ${5:Boolean}     # optional
+"""

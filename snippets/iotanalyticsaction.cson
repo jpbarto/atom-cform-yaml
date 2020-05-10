@@ -1,0 +1,7 @@
+'.source.yaml':
+  'iotanalyticsaction':
+      'prefix': 'iotanalyticsaction'
+      'body':"""
+         ChannelName: ${2:String}     # required
+         RoleArn: ${3:String}     # required
+"""

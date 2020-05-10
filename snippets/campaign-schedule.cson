@@ -1,0 +1,12 @@
+'.source.yaml':
+  'campaign-schedule':
+      'prefix': 'campaign-schedule'
+      'body':"""
+         EndTime: ${2:String}     # optional
+         EventFilter: ${3:CampaignEventFilter}     # optional
+         Frequency: ${4:String}     # optional
+         IsLocalTime: ${5:Boolean}     # optional
+         QuietTime: ${6:QuietTime}     # optional
+         StartTime: ${7:String}     # optional
+         TimeZone: ${8:String}     # optional
+"""

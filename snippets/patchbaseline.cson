@@ -1,0 +1,26 @@
+'.source.yaml':
+  'patchbaseline':
+      'prefix': 'patchbaseline'
+      'body':"""
+         ${1:patchbaseline_name}:
+         	Type: AWS::SSM::PatchBaseline
+         	Properties:
+         		ApprovalRules: ${2:RuleGroup}     # optional
+         		ApprovedPatches:                # optional, list of String
+         			- ${3:String}
+         		ApprovedPatchesComplianceLevel: ${4:String}     # optional
+         		ApprovedPatchesEnableNonSecurity: ${5:Boolean}     # optional
+         		Description: ${6:String}     # optional
+         		GlobalFilters: ${7:PatchFilterGroup}     # optional
+         		Name: ${8:String}     # required
+         		OperatingSystem: ${9:String}     # optional
+         		PatchGroups:                # optional, list of String
+         			- ${10:String}
+         		RejectedPatches:                # optional, list of String
+         			- ${11:String}
+         		RejectedPatchesAction: ${12:String}     # optional
+         		Sources:                # optional, list of PatchSource
+         			- ${13:PatchSource}
+         		Tags:                # optional, list of Tag
+         			- ${14:Tag}
+"""

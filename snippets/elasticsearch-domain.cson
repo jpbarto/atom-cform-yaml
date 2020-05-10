@@ -8,11 +8,17 @@
          		AccessPolicies: ${2:Json}     # optional
          		AdvancedOptions:                # optional, map of String
          			${3:String_key}: ${4:String_value}
-         		DomainName: ${5:String}     # optional
-         		EBSOptions: ${6:EBSOptions}     # optional
-         		ElasticsearchClusterConfig: ${7:ElasticsearchClusterConfig}     # optional
-         		ElasticsearchVersion: ${8:String}     # optional
-         		SnapshotOptions: ${9:SnapshotOptions}     # optional
+         		CognitoOptions: ${5:CognitoOptions}     # optional
+         		DomainName: ${6:String}     # optional
+         		EBSOptions: ${7:EBSOptions}     # optional
+         		ElasticsearchClusterConfig: ${8:ElasticsearchClusterConfig}     # optional
+         		ElasticsearchVersion: ${9:String}     # optional
+         		EncryptionAtRestOptions: ${10:EncryptionAtRestOptions}     # optional
+         		LogPublishingOptions:                # optional, map of LogPublishingOption
+         			${11:LogPublishingOption_key}: ${12:LogPublishingOption_value}
+         		NodeToNodeEncryptionOptions: ${13:NodeToNodeEncryptionOptions}     # optional
+         		SnapshotOptions: ${14:SnapshotOptions}     # optional
          		Tags:                # optional, list of Tag
-         			- ${10:Tag}
+         			- ${15:Tag}
+         		VPCOptions: ${16:VPCOptions}     # optional
 """

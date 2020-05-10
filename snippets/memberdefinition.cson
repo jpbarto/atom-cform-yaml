@@ -1,0 +1,6 @@
+'.source.yaml':
+  'memberdefinition':
+      'prefix': 'memberdefinition'
+      'body':"""
+         CognitoMemberDefinition: ${2:CognitoMemberDefinition}     # required
+"""

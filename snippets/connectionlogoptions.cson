@@ -1,0 +1,8 @@
+'.source.yaml':
+  'connectionlogoptions':
+      'prefix': 'connectionlogoptions'
+      'body':"""
+         CloudwatchLogGroup: ${2:String}     # optional
+         CloudwatchLogStream: ${3:String}     # optional
+         Enabled: ${4:Boolean}     # required
+"""

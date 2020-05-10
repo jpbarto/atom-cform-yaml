@@ -1,0 +1,6 @@
+'.source.yaml':
+  'functiondefinitionversion-defaultconfig':
+      'prefix': 'functiondefinitionversion-defaultconfig'
+      'body':"""
+         Execution: ${2:Execution}     # required
+"""

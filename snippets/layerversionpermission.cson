@@ -1,0 +1,12 @@
+'.source.yaml':
+  'layerversionpermission':
+      'prefix': 'layerversionpermission'
+      'body':"""
+         ${1:layerversionpermission_name}:
+         	Type: AWS::Lambda::LayerVersionPermission
+         	Properties:
+         		Action: ${2:String}     # required
+         		LayerVersionArn: ${3:String}     # required
+         		OrganizationId: ${4:String}     # optional
+         		Principal: ${5:String}     # required
+"""

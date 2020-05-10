@@ -1,0 +1,11 @@
+'.source.yaml':
+  'connectordefinition':
+      'prefix': 'connectordefinition'
+      'body':"""
+         ${1:connectordefinition_name}:
+         	Type: AWS::Greengrass::ConnectorDefinition
+         	Properties:
+         		InitialVersion: ${2:ConnectorDefinitionVersion}     # optional
+         		Name: ${3:String}     # required
+         		Tags: ${4:Json}     # optional
+"""

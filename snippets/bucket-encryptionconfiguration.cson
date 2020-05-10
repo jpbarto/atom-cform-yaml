@@ -1,0 +1,6 @@
+'.source.yaml':
+  'bucket-encryptionconfiguration':
+      'prefix': 'bucket-encryptionconfiguration'
+      'body':"""
+         ReplicaKmsKeyID: ${2:String}     # required
+"""

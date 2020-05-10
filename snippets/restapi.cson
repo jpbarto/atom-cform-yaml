@@ -5,15 +5,20 @@
          ${1:restapi_name}:
          	Type: AWS::ApiGateway::RestApi
          	Properties:
+         		ApiKeySourceType: ${2:String}     # optional
          		BinaryMediaTypes:                # optional, list of String
-         			- ${2:String}
-         		Body: ${3:Json}     # optional
-         		BodyS3Location: ${4:S3Location}     # optional
-         		CloneFrom: ${5:String}     # optional
-         		Description: ${6:String}     # optional
-         		FailOnWarnings: ${7:Boolean}     # optional
-         		Mode: ${8:String}     # optional
-         		Name: ${9:String}     # optional
+         			- ${3:String}
+         		Body: ${4:Json}     # optional
+         		BodyS3Location: ${5:S3Location}     # optional
+         		CloneFrom: ${6:String}     # optional
+         		Description: ${7:String}     # optional
+         		EndpointConfiguration: ${8:EndpointConfiguration}     # optional
+         		FailOnWarnings: ${9:Boolean}     # optional
+         		MinimumCompressionSize: ${10:Integer}     # optional
+         		Name: ${11:String}     # optional
          		Parameters:                # optional, map of String
-         			${10:String_key}: ${11:String_value}
+         			${12:String_key}: ${13:String_value}
+         		Policy: ${14:Json}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${15:Tag}
 """

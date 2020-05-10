@@ -1,0 +1,11 @@
+'.source.yaml':
+  'taskdefinition-healthcheck':
+      'prefix': 'taskdefinition-healthcheck'
+      'body':"""
+         Command:                # required, list of String
+         	- ${2:String}
+         Interval: ${3:Integer}     # optional
+         Retries: ${4:Integer}     # optional
+         StartPeriod: ${5:Integer}     # optional
+         Timeout: ${6:Integer}     # optional
+"""

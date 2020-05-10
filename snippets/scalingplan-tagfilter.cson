@@ -1,0 +1,8 @@
+'.source.yaml':
+  'scalingplan-tagfilter':
+      'prefix': 'scalingplan-tagfilter'
+      'body':"""
+         Key: ${2:String}     # required
+         Values:                # optional, list of String
+         	- ${3:String}
+"""

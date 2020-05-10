@@ -1,0 +1,7 @@
+'.source.yaml':
+  'audiolanguageselection':
+      'prefix': 'audiolanguageselection'
+      'body':"""
+         LanguageCode: ${2:String}     # optional
+         LanguageSelectionPolicy: ${3:String}     # optional
+"""

@@ -1,0 +1,9 @@
+'.source.yaml':
+  'grpcroutematch':
+      'prefix': 'grpcroutematch'
+      'body':"""
+         Metadata:                # optional, list of GrpcRouteMetadata
+         	- ${2:GrpcRouteMetadata}
+         MethodName: ${3:String}     # optional
+         ServiceName: ${4:String}     # optional
+"""

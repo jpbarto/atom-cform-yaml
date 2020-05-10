@@ -1,6 +1,0 @@
-'.source.yaml':
-  'versioningconfiguration':
-      'prefix': 'versioningconfiguration'
-      'body':"""
-         Status: ${2:String}     # required
-"""

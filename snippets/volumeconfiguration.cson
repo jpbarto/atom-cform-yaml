@@ -2,10 +2,11 @@
   'volumeconfiguration':
       'prefix': 'volumeconfiguration'
       'body':"""
-         Iops: ${2:Integer}     # optional
-         MountPoint: ${3:String}     # optional
-         NumberOfDisks: ${4:Integer}     # optional
-         RaidLevel: ${5:Integer}     # optional
-         Size: ${6:Integer}     # optional
-         VolumeType: ${7:String}     # optional
+         Encrypted: ${2:Boolean}     # optional
+         Iops: ${3:Integer}     # optional
+         MountPoint: ${4:String}     # optional
+         NumberOfDisks: ${5:Integer}     # optional
+         RaidLevel: ${6:Integer}     # optional
+         Size: ${7:Integer}     # optional
+         VolumeType: ${8:String}     # optional
 """

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'pinpointemail-configurationseteventdestination-dimensionconfiguration':
+      'prefix': 'pinpointemail-configurationseteventdestination-dimensionconfiguration'
+      'body':"""
+         DefaultDimensionValue: ${2:String}     # required
+         DimensionName: ${3:String}     # required
+         DimensionValueSource: ${4:String}     # required
+"""

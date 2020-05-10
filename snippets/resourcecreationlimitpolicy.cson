@@ -1,0 +1,7 @@
+'.source.yaml':
+  'resourcecreationlimitpolicy':
+      'prefix': 'resourcecreationlimitpolicy'
+      'body':"""
+         NewGameSessionsPerCreator: ${2:Integer}     # optional
+         PolicyPeriodInMinutes: ${3:Integer}     # optional
+"""

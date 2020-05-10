@@ -1,0 +1,8 @@
+'.source.yaml':
+  'opsworks-app-environmentvariable':
+      'prefix': 'opsworks-app-environmentvariable'
+      'body':"""
+         Key: ${2:String}     # required
+         Secure: ${3:Boolean}     # optional
+         Value: ${4:String}     # required
+"""

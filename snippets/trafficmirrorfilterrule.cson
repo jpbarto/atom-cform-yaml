@@ -1,0 +1,18 @@
+'.source.yaml':
+  'trafficmirrorfilterrule':
+      'prefix': 'trafficmirrorfilterrule'
+      'body':"""
+         ${1:trafficmirrorfilterrule_name}:
+         	Type: AWS::EC2::TrafficMirrorFilterRule
+         	Properties:
+         		Description: ${2:String}     # optional
+         		DestinationCidrBlock: ${3:String}     # required
+         		DestinationPortRange: ${4:TrafficMirrorPortRange}     # optional
+         		Protocol: ${5:Integer}     # optional
+         		RuleAction: ${6:String}     # required
+         		RuleNumber: ${7:Integer}     # required
+         		SourceCidrBlock: ${8:String}     # required
+         		SourcePortRange: ${9:TrafficMirrorPortRange}     # optional
+         		TrafficDirection: ${10:String}     # required
+         		TrafficMirrorFilterId: ${11:String}     # required
+"""

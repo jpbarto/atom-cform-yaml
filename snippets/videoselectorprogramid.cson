@@ -1,0 +1,6 @@
+'.source.yaml':
+  'videoselectorprogramid':
+      'prefix': 'videoselectorprogramid'
+      'body':"""
+         ProgramId: ${2:Integer}     # optional
+"""

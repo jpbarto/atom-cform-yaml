@@ -6,9 +6,10 @@
          	Type: AWS::EC2::VPCPeeringConnection
          	Properties:
          		PeerOwnerId: ${2:String}     # optional
-         		PeerRoleArn: ${3:String}     # optional
-         		PeerVpcId: ${4:String}     # required
+         		PeerRegion: ${3:String}     # optional
+         		PeerRoleArn: ${4:String}     # optional
+         		PeerVpcId: ${5:String}     # required
          		Tags:                # optional, list of Tag
-         			- ${5:Tag}
-         		VpcId: ${6:String}     # required
+         			- ${6:Tag}
+         		VpcId: ${7:String}     # required
 """

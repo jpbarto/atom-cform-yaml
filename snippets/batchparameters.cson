@@ -1,0 +1,9 @@
+'.source.yaml':
+  'batchparameters':
+      'prefix': 'batchparameters'
+      'body':"""
+         ArrayProperties: ${2:BatchArrayProperties}     # optional
+         JobDefinition: ${3:String}     # required
+         JobName: ${4:String}     # required
+         RetryStrategy: ${5:BatchRetryStrategy}     # optional
+"""

@@ -2,18 +2,23 @@
   'integration':
       'prefix': 'integration'
       'body':"""
-         CacheKeyParameters:                # optional, list of String
-         	- ${2:String}
-         CacheNamespace: ${3:String}     # optional
-         Credentials: ${4:String}     # optional
-         IntegrationHttpMethod: ${5:String}     # optional
-         IntegrationResponses:                # optional, list of IntegrationResponse
-         	- ${6:IntegrationResponse}
-         PassthroughBehavior: ${7:String}     # optional
-         RequestParameters:                # optional, map of String
-         	${8:String_key}: ${9:String_value}
-         RequestTemplates:                # optional, map of String
-         	${10:String_key}: ${11:String_value}
-         Type: ${12:String}     # optional
-         Uri: ${13:String}     # optional
+         ${1:integration_name}:
+         	Type: AWS::ApiGatewayV2::Integration
+         	Properties:
+         		ApiId: ${2:String}     # required
+         		ConnectionId: ${3:String}     # optional
+         		ConnectionType: ${4:String}     # optional
+         		ContentHandlingStrategy: ${5:String}     # optional
+         		CredentialsArn: ${6:String}     # optional
+         		Description: ${7:String}     # optional
+         		IntegrationMethod: ${8:String}     # optional
+         		IntegrationType: ${9:String}     # required
+         		IntegrationUri: ${10:String}     # optional
+         		PassthroughBehavior: ${11:String}     # optional
+         		PayloadFormatVersion: ${12:String}     # optional
+         		RequestParameters: ${13:Json}     # optional
+         		RequestTemplates: ${14:Json}     # optional
+         		TemplateSelectionExpression: ${15:String}     # optional
+         		TimeoutInMillis: ${16:Integer}     # optional
+         		TlsConfig: ${17:TlsConfig}     # optional
 """

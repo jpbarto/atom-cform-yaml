@@ -1,0 +1,8 @@
+'.source.yaml':
+  'deltasyncconfig':
+      'prefix': 'deltasyncconfig'
+      'body':"""
+         BaseTableTTL: ${2:String}     # required
+         DeltaSyncTableName: ${3:String}     # required
+         DeltaSyncTableTTL: ${4:String}     # required
+"""

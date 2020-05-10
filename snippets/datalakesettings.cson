@@ -1,0 +1,9 @@
+'.source.yaml':
+  'datalakesettings':
+      'prefix': 'datalakesettings'
+      'body':"""
+         ${1:datalakesettings_name}:
+         	Type: AWS::LakeFormation::DataLakeSettings
+         	Properties:
+         		Admins: ${2:Admins}     # optional
+"""

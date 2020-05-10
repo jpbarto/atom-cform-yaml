@@ -1,0 +1,7 @@
+'.source.yaml':
+  'defaultaction':
+      'prefix': 'defaultaction'
+      'body':"""
+         Allow: ${2:Json}     # optional
+         Block: ${3:Json}     # optional
+"""

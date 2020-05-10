@@ -1,0 +1,7 @@
+'.source.yaml':
+  'awsiamconfig':
+      'prefix': 'awsiamconfig'
+      'body':"""
+         SigningRegion: ${2:String}     # optional
+         SigningServiceName: ${3:String}     # optional
+"""

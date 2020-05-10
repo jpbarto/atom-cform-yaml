@@ -1,0 +1,12 @@
+'.source.yaml':
+  'aggregationauthorization':
+      'prefix': 'aggregationauthorization'
+      'body':"""
+         ${1:aggregationauthorization_name}:
+         	Type: AWS::Config::AggregationAuthorization
+         	Properties:
+         		AuthorizedAccountId: ${2:String}     # required
+         		AuthorizedAwsRegion: ${3:String}     # required
+         		Tags:                # optional, list of Tag
+         			- ${4:Tag}
+"""

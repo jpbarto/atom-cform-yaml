@@ -1,0 +1,14 @@
+'.source.yaml':
+  'ratebasedrule':
+      'prefix': 'ratebasedrule'
+      'body':"""
+         ${1:ratebasedrule_name}:
+         	Type: AWS::WAFRegional::RateBasedRule
+         	Properties:
+         		MatchPredicates:                # optional, list of Predicate
+         			- ${2:Predicate}
+         		MetricName: ${3:String}     # required
+         		Name: ${4:String}     # required
+         		RateKey: ${5:String}     # required
+         		RateLimit: ${6:Integer}     # required
+"""

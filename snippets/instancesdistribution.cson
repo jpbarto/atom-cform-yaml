@@ -1,0 +1,11 @@
+'.source.yaml':
+  'instancesdistribution':
+      'prefix': 'instancesdistribution'
+      'body':"""
+         OnDemandAllocationStrategy: ${2:String}     # optional
+         OnDemandBaseCapacity: ${3:Integer}     # optional
+         OnDemandPercentageAboveBaseCapacity: ${4:Integer}     # optional
+         SpotAllocationStrategy: ${5:String}     # optional
+         SpotInstancePools: ${6:Integer}     # optional
+         SpotMaxPrice: ${7:String}     # optional
+"""

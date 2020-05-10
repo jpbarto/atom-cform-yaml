@@ -1,0 +1,8 @@
+'.source.yaml':
+  'backupplanresourcetype':
+      'prefix': 'backupplanresourcetype'
+      'body':"""
+         BackupPlanName: ${2:String}     # required
+         BackupPlanRule:                # required, list of BackupRuleResourceType
+         	- ${3:BackupRuleResourceType}
+"""

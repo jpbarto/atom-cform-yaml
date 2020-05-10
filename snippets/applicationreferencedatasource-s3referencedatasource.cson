@@ -1,0 +1,8 @@
+'.source.yaml':
+  'applicationreferencedatasource-s3referencedatasource':
+      'prefix': 'applicationreferencedatasource-s3referencedatasource'
+      'body':"""
+         BucketARN: ${2:String}     # required
+         FileKey: ${3:String}     # required
+         ReferenceRoleARN: ${4:String}     # required
+"""

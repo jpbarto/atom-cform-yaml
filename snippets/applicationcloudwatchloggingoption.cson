@@ -1,0 +1,10 @@
+'.source.yaml':
+  'applicationcloudwatchloggingoption':
+      'prefix': 'applicationcloudwatchloggingoption'
+      'body':"""
+         ${1:applicationcloudwatchloggingoption_name}:
+         	Type: AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption
+         	Properties:
+         		ApplicationName: ${2:String}     # required
+         		CloudWatchLoggingOption: ${3:CloudWatchLoggingOption}     # required
+"""

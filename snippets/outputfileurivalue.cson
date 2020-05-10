@@ -1,0 +1,6 @@
+'.source.yaml':
+  'outputfileurivalue':
+      'prefix': 'outputfileurivalue'
+      'body':"""
+         FileName: ${2:String}     # optional
+"""

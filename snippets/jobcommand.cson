@@ -1,0 +1,8 @@
+'.source.yaml':
+  'jobcommand':
+      'prefix': 'jobcommand'
+      'body':"""
+         Name: ${2:String}     # optional
+         PythonVersion: ${3:String}     # optional
+         ScriptLocation: ${4:String}     # optional
+"""

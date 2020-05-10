@@ -1,0 +1,12 @@
+'.source.yaml':
+  'lifecyclepolicy':
+      'prefix': 'lifecyclepolicy'
+      'body':"""
+         ${1:lifecyclepolicy_name}:
+         	Type: AWS::DLM::LifecyclePolicy
+         	Properties:
+         		Description: ${2:String}     # optional
+         		ExecutionRoleArn: ${3:String}     # optional
+         		PolicyDetails: ${4:PolicyDetails}     # optional
+         		State: ${5:String}     # optional
+"""

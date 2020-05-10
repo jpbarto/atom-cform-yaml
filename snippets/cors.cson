@@ -1,0 +1,15 @@
+'.source.yaml':
+  'cors':
+      'prefix': 'cors'
+      'body':"""
+         AllowCredentials: ${2:Boolean}     # optional
+         AllowHeaders:                # optional, list of String
+         	- ${3:String}
+         AllowMethods:                # optional, list of String
+         	- ${4:String}
+         AllowOrigins:                # optional, list of String
+         	- ${5:String}
+         ExposeHeaders:                # optional, list of String
+         	- ${6:String}
+         MaxAge: ${7:Integer}     # optional
+"""

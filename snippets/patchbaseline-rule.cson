@@ -1,0 +1,10 @@
+'.source.yaml':
+  'patchbaseline-rule':
+      'prefix': 'patchbaseline-rule'
+      'body':"""
+         ApproveAfterDays: ${2:Integer}     # optional
+         ApproveUntilDate: ${3:PatchStringDate}     # optional
+         ComplianceLevel: ${4:String}     # optional
+         EnableNonSecurity: ${5:Boolean}     # optional
+         PatchFilterGroup: ${6:PatchFilterGroup}     # optional
+"""

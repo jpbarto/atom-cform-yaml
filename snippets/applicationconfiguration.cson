@@ -1,0 +1,10 @@
+'.source.yaml':
+  'applicationconfiguration':
+      'prefix': 'applicationconfiguration'
+      'body':"""
+         ApplicationCodeConfiguration: ${2:ApplicationCodeConfiguration}     # optional
+         ApplicationSnapshotConfiguration: ${3:ApplicationSnapshotConfiguration}     # optional
+         EnvironmentProperties: ${4:EnvironmentProperties}     # optional
+         FlinkApplicationConfiguration: ${5:FlinkApplicationConfiguration}     # optional
+         SqlApplicationConfiguration: ${6:SqlApplicationConfiguration}     # optional
+"""

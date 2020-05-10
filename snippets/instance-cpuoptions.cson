@@ -1,0 +1,7 @@
+'.source.yaml':
+  'instance-cpuoptions':
+      'prefix': 'instance-cpuoptions'
+      'body':"""
+         CoreCount: ${2:Integer}     # optional
+         ThreadsPerCore: ${3:Integer}     # optional
+"""

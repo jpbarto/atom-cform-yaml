@@ -1,0 +1,7 @@
+'.source.yaml':
+  'dataset-retentionperiod':
+      'prefix': 'dataset-retentionperiod'
+      'body':"""
+         NumberOfDays: ${2:Integer}     # required
+         Unlimited: ${3:Boolean}     # required
+"""

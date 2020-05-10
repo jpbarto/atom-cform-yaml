@@ -1,0 +1,7 @@
+'.source.yaml':
+  'hivejsonserde':
+      'prefix': 'hivejsonserde'
+      'body':"""
+         TimestampFormats:                # optional, list of String
+         	- ${2:String}
+"""

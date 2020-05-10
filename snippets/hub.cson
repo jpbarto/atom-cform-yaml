@@ -1,0 +1,9 @@
+'.source.yaml':
+  'hub':
+      'prefix': 'hub'
+      'body':"""
+         ${1:hub_name}:
+         	Type: AWS::SecurityHub::Hub
+         	Properties:
+         		Tags: ${2:Json}     # optional
+"""

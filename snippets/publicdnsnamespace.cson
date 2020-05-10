@@ -1,0 +1,10 @@
+'.source.yaml':
+  'publicdnsnamespace':
+      'prefix': 'publicdnsnamespace'
+      'body':"""
+         ${1:publicdnsnamespace_name}:
+         	Type: AWS::ServiceDiscovery::PublicDnsNamespace
+         	Properties:
+         		Description: ${2:String}     # optional
+         		Name: ${3:String}     # required
+"""

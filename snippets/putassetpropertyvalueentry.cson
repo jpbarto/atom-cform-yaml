@@ -1,0 +1,11 @@
+'.source.yaml':
+  'putassetpropertyvalueentry':
+      'prefix': 'putassetpropertyvalueentry'
+      'body':"""
+         AssetId: ${2:String}     # optional
+         EntryId: ${3:String}     # optional
+         PropertyAlias: ${4:String}     # optional
+         PropertyId: ${5:String}     # optional
+         PropertyValues:                # required, list of AssetPropertyValue
+         	- ${6:AssetPropertyValue}
+"""

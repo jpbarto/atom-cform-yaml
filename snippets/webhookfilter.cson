@@ -1,0 +1,8 @@
+'.source.yaml':
+  'webhookfilter':
+      'prefix': 'webhookfilter'
+      'body':"""
+         ExcludeMatchedPattern: ${2:Boolean}     # optional
+         Pattern: ${3:String}     # required
+         Type: ${4:String}     # required
+"""

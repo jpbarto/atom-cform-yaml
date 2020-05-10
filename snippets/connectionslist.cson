@@ -1,0 +1,7 @@
+'.source.yaml':
+  'connectionslist':
+      'prefix': 'connectionslist'
+      'body':"""
+         Connections:                # optional, list of String
+         	- ${2:String}
+"""

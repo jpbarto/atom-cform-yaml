@@ -1,0 +1,8 @@
+'.source.yaml':
+  'rulegroup-ratebasedstatementtwo':
+      'prefix': 'rulegroup-ratebasedstatementtwo'
+      'body':"""
+         AggregateKeyType: ${2:String}     # required
+         Limit: ${3:Integer}     # required
+         ScopeDownStatement: ${4:StatementThree}     # optional
+"""

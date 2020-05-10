@@ -1,0 +1,7 @@
+'.source.yaml':
+  'scale':
+      'prefix': 'scale'
+      'body':"""
+         Unit: ${2:String}     # optional
+         Value: ${3:Double}     # optional
+"""

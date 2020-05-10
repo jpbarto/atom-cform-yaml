@@ -1,0 +1,44 @@
+'.source.yaml':
+  'rds-dbcluster':
+      'prefix': 'rds-dbcluster'
+      'body':"""
+         ${1:rds-dbcluster_name}:
+         	Type: AWS::RDS::DBCluster
+         	Properties:
+         		AssociatedRoles:                # optional, list of DBClusterRole
+         			- ${2:DBClusterRole}
+         		AvailabilityZones:                # optional, list of String
+         			- ${3:String}
+         		BacktrackWindow: ${4:Long}     # optional
+         		BackupRetentionPeriod: ${5:Integer}     # optional
+         		DBClusterIdentifier: ${6:String}     # optional
+         		DBClusterParameterGroupName: ${7:String}     # optional
+         		DBSubnetGroupName: ${8:String}     # optional
+         		DatabaseName: ${9:String}     # optional
+         		DeletionProtection: ${10:Boolean}     # optional
+         		EnableCloudwatchLogsExports:                # optional, list of String
+         			- ${11:String}
+         		EnableHttpEndpoint: ${12:Boolean}     # optional
+         		EnableIAMDatabaseAuthentication: ${13:Boolean}     # optional
+         		Engine: ${14:String}     # required
+         		EngineMode: ${15:String}     # optional
+         		EngineVersion: ${16:String}     # optional
+         		KmsKeyId: ${17:String}     # optional
+         		MasterUserPassword: ${18:String}     # optional
+         		MasterUsername: ${19:String}     # optional
+         		Port: ${20:Integer}     # optional
+         		PreferredBackupWindow: ${21:String}     # optional
+         		PreferredMaintenanceWindow: ${22:String}     # optional
+         		ReplicationSourceIdentifier: ${23:String}     # optional
+         		RestoreType: ${24:String}     # optional
+         		ScalingConfiguration: ${25:ScalingConfiguration}     # optional
+         		SnapshotIdentifier: ${26:String}     # optional
+         		SourceDBClusterIdentifier: ${27:String}     # optional
+         		SourceRegion: ${28:String}     # optional
+         		StorageEncrypted: ${29:Boolean}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${30:Tag}
+         		UseLatestRestorableTime: ${31:Boolean}     # optional
+         		VpcSecurityGroupIds:                # optional, list of String
+         			- ${32:String}
+"""

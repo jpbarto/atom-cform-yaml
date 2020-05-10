@@ -1,0 +1,7 @@
+'.source.yaml':
+  'sns':
+      'prefix': 'sns'
+      'body':"""
+         Payload: ${2:Payload}     # optional
+         TargetArn: ${3:String}     # optional
+"""

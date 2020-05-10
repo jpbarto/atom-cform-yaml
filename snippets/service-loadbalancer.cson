@@ -1,0 +1,9 @@
+'.source.yaml':
+  'service-loadbalancer':
+      'prefix': 'service-loadbalancer'
+      'body':"""
+         ContainerName: ${2:String}     # optional
+         ContainerPort: ${3:Integer}     # required
+         LoadBalancerName: ${4:String}     # optional
+         TargetGroupArn: ${5:String}     # optional
+"""

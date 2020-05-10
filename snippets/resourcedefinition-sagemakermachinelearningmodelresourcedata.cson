@@ -1,0 +1,8 @@
+'.source.yaml':
+  'resourcedefinition-sagemakermachinelearningmodelresourcedata':
+      'prefix': 'resourcedefinition-sagemakermachinelearningmodelresourcedata'
+      'body':"""
+         DestinationPath: ${2:String}     # required
+         OwnerSetting: ${3:ResourceDownloadOwnerSetting}     # optional
+         SageMakerJobArn: ${4:String}     # required
+"""

@@ -1,0 +1,11 @@
+'.source.yaml':
+  'coredefinitionversion':
+      'prefix': 'coredefinitionversion'
+      'body':"""
+         ${1:coredefinitionversion_name}:
+         	Type: AWS::Greengrass::CoreDefinitionVersion
+         	Properties:
+         		CoreDefinitionId: ${2:String}     # required
+         		Cores:                # required, list of Core
+         			- ${3:Core}
+"""

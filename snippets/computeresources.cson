@@ -1,0 +1,24 @@
+'.source.yaml':
+  'computeresources':
+      'prefix': 'computeresources'
+      'body':"""
+         AllocationStrategy: ${2:String}     # optional
+         BidPercentage: ${3:Integer}     # optional
+         DesiredvCpus: ${4:Integer}     # optional
+         Ec2KeyPair: ${5:String}     # optional
+         ImageId: ${6:String}     # optional
+         InstanceRole: ${7:String}     # required
+         InstanceTypes:                # required, list of String
+         	- ${8:String}
+         LaunchTemplate: ${9:LaunchTemplateSpecification}     # optional
+         MaxvCpus: ${10:Integer}     # required
+         MinvCpus: ${11:Integer}     # required
+         PlacementGroup: ${12:String}     # optional
+         SecurityGroupIds:                # optional, list of String
+         	- ${13:String}
+         SpotIamFleetRole: ${14:String}     # optional
+         Subnets:                # required, list of String
+         	- ${15:String}
+         Tags: ${16:Json}     # optional
+         Type: ${17:String}     # required
+"""

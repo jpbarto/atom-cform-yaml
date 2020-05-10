@@ -1,0 +1,6 @@
+'.source.yaml':
+  'scte27sourcesettings':
+      'prefix': 'scte27sourcesettings'
+      'body':"""
+         Pid: ${2:Integer}     # optional
+"""

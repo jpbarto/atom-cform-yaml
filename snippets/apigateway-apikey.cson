@@ -1,0 +1,18 @@
+'.source.yaml':
+  'apigateway-apikey':
+      'prefix': 'apigateway-apikey'
+      'body':"""
+         ${1:apigateway-apikey_name}:
+         	Type: AWS::ApiGateway::ApiKey
+         	Properties:
+         		CustomerId: ${2:String}     # optional
+         		Description: ${3:String}     # optional
+         		Enabled: ${4:Boolean}     # optional
+         		GenerateDistinctId: ${5:Boolean}     # optional
+         		Name: ${6:String}     # optional
+         		StageKeys:                # optional, list of StageKey
+         			- ${7:StageKey}
+         		Tags:                # optional, list of Tag
+         			- ${8:Tag}
+         		Value: ${9:String}     # optional
+"""

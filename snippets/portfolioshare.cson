@@ -1,0 +1,11 @@
+'.source.yaml':
+  'portfolioshare':
+      'prefix': 'portfolioshare'
+      'body':"""
+         ${1:portfolioshare_name}:
+         	Type: AWS::ServiceCatalog::PortfolioShare
+         	Properties:
+         		AcceptLanguage: ${2:String}     # optional
+         		AccountId: ${3:String}     # required
+         		PortfolioId: ${4:String}     # required
+"""

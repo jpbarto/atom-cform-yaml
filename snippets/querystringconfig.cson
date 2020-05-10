@@ -1,0 +1,7 @@
+'.source.yaml':
+  'querystringconfig':
+      'prefix': 'querystringconfig'
+      'body':"""
+         Values:                # optional, list of QueryStringKeyValue
+         	- ${2:QueryStringKeyValue}
+"""

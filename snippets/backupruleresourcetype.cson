@@ -1,0 +1,14 @@
+'.source.yaml':
+  'backupruleresourcetype':
+      'prefix': 'backupruleresourcetype'
+      'body':"""
+         CompletionWindowMinutes: ${2:Double}     # optional
+         CopyActions:                # optional, list of CopyActionResourceType
+         	- ${3:CopyActionResourceType}
+         Lifecycle: ${4:LifecycleResourceType}     # optional
+         RecoveryPointTags: ${5:Json}     # optional
+         RuleName: ${6:String}     # required
+         ScheduleExpression: ${7:String}     # optional
+         StartWindowMinutes: ${8:Double}     # optional
+         TargetBackupVault: ${9:String}     # required
+"""

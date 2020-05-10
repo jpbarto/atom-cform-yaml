@@ -1,0 +1,6 @@
+'.source.yaml':
+  'egressfilter':
+      'prefix': 'egressfilter'
+      'body':"""
+         Type: ${2:String}     # required
+"""

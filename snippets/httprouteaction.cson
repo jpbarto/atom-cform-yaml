@@ -1,0 +1,7 @@
+'.source.yaml':
+  'httprouteaction':
+      'prefix': 'httprouteaction'
+      'body':"""
+         WeightedTargets:                # required, list of WeightedTarget
+         	- ${2:WeightedTarget}
+"""

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'virtualrouterserviceprovider':
+      'prefix': 'virtualrouterserviceprovider'
+      'body':"""
+         VirtualRouterName: ${2:String}     # required
+"""

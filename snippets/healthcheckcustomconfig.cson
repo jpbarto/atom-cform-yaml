@@ -1,0 +1,6 @@
+'.source.yaml':
+  'healthcheckcustomconfig':
+      'prefix': 'healthcheckcustomconfig'
+      'body':"""
+         FailureThreshold: ${2:Double}     # optional
+"""

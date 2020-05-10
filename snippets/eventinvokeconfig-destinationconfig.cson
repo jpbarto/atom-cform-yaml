@@ -1,0 +1,7 @@
+'.source.yaml':
+  'eventinvokeconfig-destinationconfig':
+      'prefix': 'eventinvokeconfig-destinationconfig'
+      'body':"""
+         OnFailure: ${2:OnFailure}     # optional
+         OnSuccess: ${3:OnSuccess}     # optional
+"""

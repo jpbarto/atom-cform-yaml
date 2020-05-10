@@ -1,0 +1,7 @@
+'.source.yaml':
+  'dnsrecord':
+      'prefix': 'dnsrecord'
+      'body':"""
+         TTL: ${2:Double}     # required
+         Type: ${3:String}     # required
+"""

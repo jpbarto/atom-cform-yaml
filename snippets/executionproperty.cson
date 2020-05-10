@@ -1,0 +1,6 @@
+'.source.yaml':
+  'executionproperty':
+      'prefix': 'executionproperty'
+      'body':"""
+         MaxConcurrentRuns: ${2:Double}     # optional
+"""

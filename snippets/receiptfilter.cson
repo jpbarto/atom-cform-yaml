@@ -1,0 +1,9 @@
+'.source.yaml':
+  'receiptfilter':
+      'prefix': 'receiptfilter'
+      'body':"""
+         ${1:receiptfilter_name}:
+         	Type: AWS::SES::ReceiptFilter
+         	Properties:
+         		Filter: ${2:Filter}     # required
+"""

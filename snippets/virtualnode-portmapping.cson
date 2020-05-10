@@ -1,0 +1,7 @@
+'.source.yaml':
+  'virtualnode-portmapping':
+      'prefix': 'virtualnode-portmapping'
+      'body':"""
+         Port: ${2:Integer}     # required
+         Protocol: ${3:String}     # required
+"""

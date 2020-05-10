@@ -1,0 +1,16 @@
+'.source.yaml':
+  'costtypes':
+      'prefix': 'costtypes'
+      'body':"""
+         IncludeCredit: ${2:Boolean}     # optional
+         IncludeDiscount: ${3:Boolean}     # optional
+         IncludeOtherSubscription: ${4:Boolean}     # optional
+         IncludeRecurring: ${5:Boolean}     # optional
+         IncludeRefund: ${6:Boolean}     # optional
+         IncludeSubscription: ${7:Boolean}     # optional
+         IncludeSupport: ${8:Boolean}     # optional
+         IncludeTax: ${9:Boolean}     # optional
+         IncludeUpfront: ${10:Boolean}     # optional
+         UseAmortized: ${11:Boolean}     # optional
+         UseBlended: ${12:Boolean}     # optional
+"""

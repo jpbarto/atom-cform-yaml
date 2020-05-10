@@ -1,0 +1,15 @@
+'.source.yaml':
+  'emailtemplate':
+      'prefix': 'emailtemplate'
+      'body':"""
+         ${1:emailtemplate_name}:
+         	Type: AWS::Pinpoint::EmailTemplate
+         	Properties:
+         		DefaultSubstitutions: ${2:String}     # optional
+         		HtmlPart: ${3:String}     # optional
+         		Subject: ${4:String}     # required
+         		Tags: ${5:Json}     # optional
+         		TemplateDescription: ${6:String}     # optional
+         		TemplateName: ${7:String}     # required
+         		TextPart: ${8:String}     # optional
+"""

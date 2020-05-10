@@ -1,0 +1,9 @@
+'.source.yaml':
+  'jdbctarget':
+      'prefix': 'jdbctarget'
+      'body':"""
+         ConnectionName: ${2:String}     # optional
+         Exclusions:                # optional, list of String
+         	- ${3:String}
+         Path: ${4:String}     # optional
+"""

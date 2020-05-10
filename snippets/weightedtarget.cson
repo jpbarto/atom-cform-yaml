@@ -1,0 +1,7 @@
+'.source.yaml':
+  'weightedtarget':
+      'prefix': 'weightedtarget'
+      'body':"""
+         VirtualNode: ${2:String}     # required
+         Weight: ${3:Integer}     # required
+"""

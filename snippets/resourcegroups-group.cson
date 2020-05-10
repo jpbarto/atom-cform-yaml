@@ -1,0 +1,13 @@
+'.source.yaml':
+  'resourcegroups-group':
+      'prefix': 'resourcegroups-group'
+      'body':"""
+         ${1:resourcegroups-group_name}:
+         	Type: AWS::ResourceGroups::Group
+         	Properties:
+         		Description: ${2:String}     # optional
+         		Name: ${3:String}     # required
+         		ResourceQuery: ${4:ResourceQuery}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+"""

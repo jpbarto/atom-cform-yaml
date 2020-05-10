@@ -1,0 +1,8 @@
+'.source.yaml':
+  'webacl-visibilityconfig':
+      'prefix': 'webacl-visibilityconfig'
+      'body':"""
+         CloudWatchMetricsEnabled: ${2:Boolean}     # required
+         MetricName: ${3:String}     # required
+         SampledRequestsEnabled: ${4:Boolean}     # required
+"""

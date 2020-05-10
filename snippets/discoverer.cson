@@ -1,0 +1,12 @@
+'.source.yaml':
+  'discoverer':
+      'prefix': 'discoverer'
+      'body':"""
+         ${1:discoverer_name}:
+         	Type: AWS::EventSchemas::Discoverer
+         	Properties:
+         		Description: ${2:String}     # optional
+         		SourceArn: ${3:String}     # required
+         		Tags:                # optional, list of TagsEntry
+         			- ${4:TagsEntry}
+"""

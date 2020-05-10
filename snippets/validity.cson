@@ -1,0 +1,7 @@
+'.source.yaml':
+  'validity':
+      'prefix': 'validity'
+      'body':"""
+         Type: ${2:String}     # required
+         Value: ${3:Integer}     # required
+"""

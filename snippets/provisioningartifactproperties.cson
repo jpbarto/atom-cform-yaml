@@ -1,0 +1,9 @@
+'.source.yaml':
+  'provisioningartifactproperties':
+      'prefix': 'provisioningartifactproperties'
+      'body':"""
+         Description: ${2:String}     # optional
+         DisableTemplateValidation: ${3:Boolean}     # optional
+         Info: ${4:Json}     # required
+         Name: ${5:String}     # optional
+"""

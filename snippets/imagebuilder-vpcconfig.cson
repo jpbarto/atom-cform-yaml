@@ -1,0 +1,9 @@
+'.source.yaml':
+  'imagebuilder-vpcconfig':
+      'prefix': 'imagebuilder-vpcconfig'
+      'body':"""
+         SecurityGroupIds:                # optional, list of String
+         	- ${2:String}
+         SubnetIds:                # optional, list of String
+         	- ${3:String}
+"""

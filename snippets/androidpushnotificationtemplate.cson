@@ -1,0 +1,13 @@
+'.source.yaml':
+  'androidpushnotificationtemplate':
+      'prefix': 'androidpushnotificationtemplate'
+      'body':"""
+         Action: ${2:String}     # optional
+         Body: ${3:String}     # optional
+         ImageIconUrl: ${4:String}     # optional
+         ImageUrl: ${5:String}     # optional
+         SmallImageIconUrl: ${6:String}     # optional
+         Sound: ${7:String}     # optional
+         Title: ${8:String}     # optional
+         Url: ${9:String}     # optional
+"""

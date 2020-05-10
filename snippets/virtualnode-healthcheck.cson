@@ -1,0 +1,12 @@
+'.source.yaml':
+  'virtualnode-healthcheck':
+      'prefix': 'virtualnode-healthcheck'
+      'body':"""
+         HealthyThreshold: ${2:Integer}     # required
+         IntervalMillis: ${3:Integer}     # required
+         Path: ${4:String}     # optional
+         Port: ${5:Integer}     # optional
+         Protocol: ${6:String}     # required
+         TimeoutMillis: ${7:Integer}     # required
+         UnhealthyThreshold: ${8:Integer}     # required
+"""

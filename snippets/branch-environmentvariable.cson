@@ -1,0 +1,7 @@
+'.source.yaml':
+  'branch-environmentvariable':
+      'prefix': 'branch-environmentvariable'
+      'body':"""
+         Name: ${2:String}     # required
+         Value: ${3:String}     # required
+"""

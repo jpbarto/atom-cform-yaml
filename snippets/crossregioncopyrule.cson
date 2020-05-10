@@ -1,0 +1,10 @@
+'.source.yaml':
+  'crossregioncopyrule':
+      'prefix': 'crossregioncopyrule'
+      'body':"""
+         CmkArn: ${2:String}     # optional
+         CopyTags: ${3:Boolean}     # optional
+         Encrypted: ${4:Boolean}     # optional
+         RetainRule: ${5:CrossRegionCopyRetainRule}     # optional
+         TargetRegion: ${6:String}     # optional
+"""

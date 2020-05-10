@@ -1,0 +1,7 @@
+'.source.yaml':
+  'dataflowendpoint':
+      'prefix': 'dataflowendpoint'
+      'body':"""
+         Address: ${2:SocketAddress}     # optional
+         Name: ${3:String}     # optional
+"""

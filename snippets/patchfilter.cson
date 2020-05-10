@@ -1,0 +1,8 @@
+'.source.yaml':
+  'patchfilter':
+      'prefix': 'patchfilter'
+      'body':"""
+         Key: ${2:String}     # optional
+         Values:                # optional, list of String
+         	- ${3:String}
+"""

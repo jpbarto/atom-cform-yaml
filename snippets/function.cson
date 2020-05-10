@@ -12,12 +12,15 @@
          		FunctionName: ${6:String}     # optional
          		Handler: ${7:String}     # required
          		KmsKeyArn: ${8:String}     # optional
-         		MemorySize: ${9:Integer}     # optional
-         		Role: ${10:String}     # required
-         		Runtime: ${11:String}     # required
+         		Layers:                # optional, list of String
+         			- ${9:String}
+         		MemorySize: ${10:Integer}     # optional
+         		ReservedConcurrentExecutions: ${11:Integer}     # optional
+         		Role: ${12:String}     # required
+         		Runtime: ${13:String}     # required
          		Tags:                # optional, list of Tag
-         			- ${12:Tag}
-         		Timeout: ${13:Integer}     # optional
-         		TracingConfig: ${14:TracingConfig}     # optional
-         		VpcConfig: ${15:VpcConfig}     # optional
+         			- ${14:Tag}
+         		Timeout: ${15:Integer}     # optional
+         		TracingConfig: ${16:TracingConfig}     # optional
+         		VpcConfig: ${17:VpcConfig}     # optional
 """

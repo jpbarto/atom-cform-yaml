@@ -1,0 +1,13 @@
+'.source.yaml':
+  'acmpca-certificate':
+      'prefix': 'acmpca-certificate'
+      'body':"""
+         ${1:acmpca-certificate_name}:
+         	Type: AWS::ACMPCA::Certificate
+         	Properties:
+         		CertificateAuthorityArn: ${2:String}     # required
+         		CertificateSigningRequest: ${3:String}     # required
+         		SigningAlgorithm: ${4:String}     # required
+         		TemplateArn: ${5:String}     # optional
+         		Validity: ${6:Validity}     # required
+"""

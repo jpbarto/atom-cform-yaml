@@ -1,0 +1,7 @@
+'.source.yaml':
+  'listenertls':
+      'prefix': 'listenertls'
+      'body':"""
+         Certificate: ${2:ListenerTlsCertificate}     # required
+         Mode: ${3:String}     # required
+"""

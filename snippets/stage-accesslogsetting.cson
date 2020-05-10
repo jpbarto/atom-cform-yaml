@@ -1,0 +1,7 @@
+'.source.yaml':
+  'stage-accesslogsetting':
+      'prefix': 'stage-accesslogsetting'
+      'body':"""
+         DestinationArn: ${2:String}     # optional
+         Format: ${3:String}     # optional
+"""

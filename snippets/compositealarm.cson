@@ -1,0 +1,18 @@
+'.source.yaml':
+  'compositealarm':
+      'prefix': 'compositealarm'
+      'body':"""
+         ${1:compositealarm_name}:
+         	Type: AWS::CloudWatch::CompositeAlarm
+         	Properties:
+         		ActionsEnabled: ${2:Boolean}     # optional
+         		AlarmActions:                # optional, list of String
+         			- ${3:String}
+         		AlarmDescription: ${4:String}     # optional
+         		AlarmName: ${5:String}     # required
+         		AlarmRule: ${6:String}     # required
+         		InsufficientDataActions:                # optional, list of String
+         			- ${7:String}
+         		OKActions:                # optional, list of String
+         			- ${8:String}
+"""

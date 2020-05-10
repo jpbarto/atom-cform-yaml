@@ -1,0 +1,7 @@
+'.source.yaml':
+  'transformparameters':
+      'prefix': 'transformparameters'
+      'body':"""
+         FindMatchesParameters: ${2:FindMatchesParameters}     # optional
+         TransformType: ${3:String}     # required
+"""

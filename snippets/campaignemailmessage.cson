@@ -1,0 +1,9 @@
+'.source.yaml':
+  'campaignemailmessage':
+      'prefix': 'campaignemailmessage'
+      'body':"""
+         Body: ${2:String}     # optional
+         FromAddress: ${3:String}     # optional
+         HtmlBody: ${4:String}     # optional
+         Title: ${5:String}     # optional
+"""

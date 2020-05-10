@@ -1,0 +1,10 @@
+'.source.yaml':
+  'database':
+      'prefix': 'database'
+      'body':"""
+         ${1:database_name}:
+         	Type: AWS::Glue::Database
+         	Properties:
+         		CatalogId: ${2:String}     # required
+         		DatabaseInput: ${3:DatabaseInput}     # required
+"""

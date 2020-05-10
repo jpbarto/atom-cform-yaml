@@ -2,10 +2,8 @@
   'resource':
       'prefix': 'resource'
       'body':"""
-         ${1:resource_name}:
-         	Type: AWS::ApiGateway::Resource
-         	Properties:
-         		ParentId: ${2:String}     # required
-         		PathPart: ${3:String}     # required
-         		RestApiId: ${4:String}     # required
+         DataLocationResource: ${2:DataLocationResource}     # optional
+         DatabaseResource: ${3:DatabaseResource}     # optional
+         TableResource: ${4:TableResource}     # optional
+         TableWithColumnsResource: ${5:TableWithColumnsResource}     # optional
 """

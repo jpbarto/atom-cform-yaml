@@ -1,0 +1,7 @@
+'.source.yaml':
+  'virtualrouterspec':
+      'prefix': 'virtualrouterspec'
+      'body':"""
+         Listeners:                # required, list of VirtualRouterListener
+         	- ${2:VirtualRouterListener}
+"""

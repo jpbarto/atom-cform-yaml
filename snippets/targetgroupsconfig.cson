@@ -1,0 +1,7 @@
+'.source.yaml':
+  'targetgroupsconfig':
+      'prefix': 'targetgroupsconfig'
+      'body':"""
+         TargetGroups:                # required, list of TargetGroup
+         	- ${2:TargetGroup}
+"""

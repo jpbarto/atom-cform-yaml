@@ -1,0 +1,17 @@
+'.source.yaml':
+  'wafv2-webacl':
+      'prefix': 'wafv2-webacl'
+      'body':"""
+         ${1:wafv2-webacl_name}:
+         	Type: AWS::WAFv2::WebACL
+         	Properties:
+         		DefaultAction: ${2:DefaultAction}     # required
+         		Description: ${3:String}     # optional
+         		Name: ${4:String}     # optional
+         		Rules:                # optional, list of Rule
+         			- ${5:Rule}
+         		Scope: ${6:String}     # required
+         		Tags:                # optional, list of Tag
+         			- ${7:Tag}
+         		VisibilityConfig: ${8:VisibilityConfig}     # required
+"""

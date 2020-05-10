@@ -1,0 +1,10 @@
+'.source.yaml':
+  'dynamodbconfig':
+      'prefix': 'dynamodbconfig'
+      'body':"""
+         AwsRegion: ${2:String}     # required
+         DeltaSyncConfig: ${3:DeltaSyncConfig}     # optional
+         TableName: ${4:String}     # required
+         UseCallerCredentials: ${5:Boolean}     # optional
+         Versioned: ${6:Boolean}     # optional
+"""

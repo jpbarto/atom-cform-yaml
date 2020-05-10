@@ -1,0 +1,6 @@
+'.source.yaml':
+  'notebookinstancelifecyclehook':
+      'prefix': 'notebookinstancelifecyclehook'
+      'body':"""
+         Content: ${2:String}     # optional
+"""

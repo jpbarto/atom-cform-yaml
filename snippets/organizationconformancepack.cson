@@ -1,0 +1,17 @@
+'.source.yaml':
+  'organizationconformancepack':
+      'prefix': 'organizationconformancepack'
+      'body':"""
+         ${1:organizationconformancepack_name}:
+         	Type: AWS::Config::OrganizationConformancePack
+         	Properties:
+         		ConformancePackInputParameters:                # optional, list of ConformancePackInputParameter
+         			- ${2:ConformancePackInputParameter}
+         		DeliveryS3Bucket: ${3:String}     # required
+         		DeliveryS3KeyPrefix: ${4:String}     # optional
+         		ExcludedAccounts:                # optional, list of String
+         			- ${5:String}
+         		OrganizationConformancePackName: ${6:String}     # required
+         		TemplateBody: ${7:String}     # optional
+         		TemplateS3Uri: ${8:String}     # optional
+"""

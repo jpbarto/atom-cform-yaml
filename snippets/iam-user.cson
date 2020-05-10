@@ -1,0 +1,20 @@
+'.source.yaml':
+  'iam-user':
+      'prefix': 'iam-user'
+      'body':"""
+         ${1:iam-user_name}:
+         	Type: AWS::IAM::User
+         	Properties:
+         		Groups:                # optional, list of String
+         			- ${2:String}
+         		LoginProfile: ${3:LoginProfile}     # optional
+         		ManagedPolicyArns:                # optional, list of String
+         			- ${4:String}
+         		Path: ${5:String}     # optional
+         		PermissionsBoundary: ${6:String}     # optional
+         		Policies:                # optional, list of Policy
+         			- ${7:Policy}
+         		Tags:                # optional, list of Tag
+         			- ${8:Tag}
+         		UserName: ${9:String}     # optional
+"""

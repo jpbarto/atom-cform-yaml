@@ -1,0 +1,17 @@
+'.source.yaml':
+  'functionconfiguration':
+      'prefix': 'functionconfiguration'
+      'body':"""
+         ${1:functionconfiguration_name}:
+         	Type: AWS::AppSync::FunctionConfiguration
+         	Properties:
+         		ApiId: ${2:String}     # required
+         		DataSourceName: ${3:String}     # required
+         		Description: ${4:String}     # optional
+         		FunctionVersion: ${5:String}     # required
+         		Name: ${6:String}     # required
+         		RequestMappingTemplate: ${7:String}     # optional
+         		RequestMappingTemplateS3Location: ${8:String}     # optional
+         		ResponseMappingTemplate: ${9:String}     # optional
+         		ResponseMappingTemplateS3Location: ${10:String}     # optional
+"""

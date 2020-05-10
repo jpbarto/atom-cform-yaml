@@ -1,0 +1,16 @@
+'.source.yaml':
+  'simulationapplication':
+      'prefix': 'simulationapplication'
+      'body':"""
+         ${1:simulationapplication_name}:
+         	Type: AWS::RoboMaker::SimulationApplication
+         	Properties:
+         		CurrentRevisionId: ${2:String}     # optional
+         		Name: ${3:String}     # optional
+         		RenderingEngine: ${4:RenderingEngine}     # required
+         		RobotSoftwareSuite: ${5:RobotSoftwareSuite}     # required
+         		SimulationSoftwareSuite: ${6:SimulationSoftwareSuite}     # required
+         		Sources:                # required, list of SourceConfig
+         			- ${7:SourceConfig}
+         		Tags: ${8:Json}     # optional
+"""

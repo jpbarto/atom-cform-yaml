@@ -1,0 +1,6 @@
+'.source.yaml':
+  'clientpolicy':
+      'prefix': 'clientpolicy'
+      'body':"""
+         TLS: ${2:ClientPolicyTls}     # optional
+"""

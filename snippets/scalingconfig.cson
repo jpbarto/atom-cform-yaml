@@ -1,0 +1,8 @@
+'.source.yaml':
+  'scalingconfig':
+      'prefix': 'scalingconfig'
+      'body':"""
+         DesiredSize: ${2:Double}     # optional
+         MaxSize: ${3:Double}     # optional
+         MinSize: ${4:Double}     # optional
+"""

@@ -1,0 +1,13 @@
+'.source.yaml':
+  'userpoolresourceserver':
+      'prefix': 'userpoolresourceserver'
+      'body':"""
+         ${1:userpoolresourceserver_name}:
+         	Type: AWS::Cognito::UserPoolResourceServer
+         	Properties:
+         		Identifier: ${2:String}     # required
+         		Name: ${3:String}     # required
+         		Scopes:                # optional, list of ResourceServerScopeType
+         			- ${4:ResourceServerScopeType}
+         		UserPoolId: ${5:String}     # required
+"""

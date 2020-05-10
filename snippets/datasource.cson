@@ -2,7 +2,17 @@
   'datasource':
       'prefix': 'datasource'
       'body':"""
-         Arn: ${2:String}     # optional
-         DatabaseName: ${3:String}     # optional
-         Type: ${4:String}     # optional
+         ${1:datasource_name}:
+         	Type: AWS::AppSync::DataSource
+         	Properties:
+         		ApiId: ${2:String}     # required
+         		Description: ${3:String}     # optional
+         		DynamoDBConfig: ${4:DynamoDBConfig}     # optional
+         		ElasticsearchConfig: ${5:ElasticsearchConfig}     # optional
+         		HttpConfig: ${6:HttpConfig}     # optional
+         		LambdaConfig: ${7:LambdaConfig}     # optional
+         		Name: ${8:String}     # required
+         		RelationalDatabaseConfig: ${9:RelationalDatabaseConfig}     # optional
+         		ServiceRoleArn: ${10:String}     # optional
+         		Type: ${11:String}     # required
 """

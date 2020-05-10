@@ -1,0 +1,7 @@
+'.source.yaml':
+  'inputrecordtables':
+      'prefix': 'inputrecordtables'
+      'body':"""
+         GlueTables:                # optional, list of GlueTables
+         	- ${2:GlueTables}
+"""

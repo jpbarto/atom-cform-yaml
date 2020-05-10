@@ -1,0 +1,7 @@
+'.source.yaml':
+  'applicationversionlifecycleconfig':
+      'prefix': 'applicationversionlifecycleconfig'
+      'body':"""
+         MaxAgeRule: ${2:MaxAgeRule}     # optional
+         MaxCountRule: ${3:MaxCountRule}     # optional
+"""

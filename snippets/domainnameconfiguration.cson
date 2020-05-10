@@ -1,0 +1,8 @@
+'.source.yaml':
+  'domainnameconfiguration':
+      'prefix': 'domainnameconfiguration'
+      'body':"""
+         CertificateArn: ${2:String}     # optional
+         CertificateName: ${3:String}     # optional
+         EndpointType: ${4:String}     # optional
+"""

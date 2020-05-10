@@ -1,0 +1,6 @@
+'.source.yaml':
+  'userpooladdons':
+      'prefix': 'userpooladdons'
+      'body':"""
+         AdvancedSecurityMode: ${2:String}     # optional
+"""

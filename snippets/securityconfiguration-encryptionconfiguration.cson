@@ -1,0 +1,8 @@
+'.source.yaml':
+  'securityconfiguration-encryptionconfiguration':
+      'prefix': 'securityconfiguration-encryptionconfiguration'
+      'body':"""
+         CloudWatchEncryption: ${2:CloudWatchEncryption}     # optional
+         JobBookmarksEncryption: ${3:JobBookmarksEncryption}     # optional
+         S3Encryptions: ${4:S3Encryptions}     # optional
+"""

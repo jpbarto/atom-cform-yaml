@@ -1,0 +1,8 @@
+'.source.yaml':
+  'authenticationconfiguration':
+      'prefix': 'authenticationconfiguration'
+      'body':"""
+         ClientId: ${2:String}     # required
+         ClientSecret: ${3:String}     # required
+         RefreshToken: ${4:String}     # required
+"""

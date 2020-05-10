@@ -1,0 +1,8 @@
+'.source.yaml':
+  'queryaction':
+      'prefix': 'queryaction'
+      'body':"""
+         Filters:                # optional, list of Filter
+         	- ${2:Filter}
+         SqlQuery: ${3:String}     # required
+"""

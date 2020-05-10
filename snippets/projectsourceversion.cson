@@ -1,0 +1,7 @@
+'.source.yaml':
+  'projectsourceversion':
+      'prefix': 'projectsourceversion'
+      'body':"""
+         SourceIdentifier: ${2:String}     # required
+         SourceVersion: ${3:String}     # optional
+"""

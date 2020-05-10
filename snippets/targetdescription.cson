@@ -2,6 +2,7 @@
   'targetdescription':
       'prefix': 'targetdescription'
       'body':"""
-         Id: ${2:String}     # required
-         Port: ${3:Integer}     # optional
+         AvailabilityZone: ${2:String}     # optional
+         Id: ${3:String}     # required
+         Port: ${4:Integer}     # optional
 """

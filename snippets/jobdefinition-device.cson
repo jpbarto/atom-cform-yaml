@@ -1,0 +1,9 @@
+'.source.yaml':
+  'jobdefinition-device':
+      'prefix': 'jobdefinition-device'
+      'body':"""
+         ContainerPath: ${2:String}     # optional
+         HostPath: ${3:String}     # optional
+         Permissions:                # optional, list of String
+         	- ${4:String}
+"""

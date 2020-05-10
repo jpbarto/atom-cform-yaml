@@ -1,0 +1,9 @@
+'.source.yaml':
+  'resourcesvpcconfig':
+      'prefix': 'resourcesvpcconfig'
+      'body':"""
+         SecurityGroupIds:                # optional, list of String
+         	- ${2:String}
+         SubnetIds:                # required, list of String
+         	- ${3:String}
+"""

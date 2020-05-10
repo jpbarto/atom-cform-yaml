@@ -1,0 +1,11 @@
+'.source.yaml':
+  'trigger-action':
+      'prefix': 'trigger-action'
+      'body':"""
+         Arguments: ${2:Json}     # optional
+         CrawlerName: ${3:String}     # optional
+         JobName: ${4:String}     # optional
+         NotificationProperty: ${5:NotificationProperty}     # optional
+         SecurityConfiguration: ${6:String}     # optional
+         Timeout: ${7:Integer}     # optional
+"""

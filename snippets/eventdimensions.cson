@@ -1,0 +1,8 @@
+'.source.yaml':
+  'eventdimensions':
+      'prefix': 'eventdimensions'
+      'body':"""
+         Attributes: ${2:Json}     # optional
+         EventType: ${3:SetDimension}     # optional
+         Metrics: ${4:Json}     # optional
+"""

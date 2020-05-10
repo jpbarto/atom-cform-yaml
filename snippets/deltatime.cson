@@ -1,0 +1,7 @@
+'.source.yaml':
+  'deltatime':
+      'prefix': 'deltatime'
+      'body':"""
+         OffsetSeconds: ${2:Integer}     # required
+         TimeExpression: ${3:String}     # required
+"""

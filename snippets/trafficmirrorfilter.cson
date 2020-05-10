@@ -1,0 +1,13 @@
+'.source.yaml':
+  'trafficmirrorfilter':
+      'prefix': 'trafficmirrorfilter'
+      'body':"""
+         ${1:trafficmirrorfilter_name}:
+         	Type: AWS::EC2::TrafficMirrorFilter
+         	Properties:
+         		Description: ${2:String}     # optional
+         		NetworkServices:                # optional, list of String
+         			- ${3:String}
+         		Tags:                # optional, list of Tag
+         			- ${4:Tag}
+"""

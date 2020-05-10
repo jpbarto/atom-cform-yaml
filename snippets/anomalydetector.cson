@@ -1,0 +1,14 @@
+'.source.yaml':
+  'anomalydetector':
+      'prefix': 'anomalydetector'
+      'body':"""
+         ${1:anomalydetector_name}:
+         	Type: AWS::CloudWatch::AnomalyDetector
+         	Properties:
+         		Configuration: ${2:Configuration}     # optional
+         		Dimensions:                # optional, list of Dimension
+         			- ${3:Dimension}
+         		MetricName: ${4:String}     # required
+         		Namespace: ${5:String}     # required
+         		Stat: ${6:String}     # required
+"""

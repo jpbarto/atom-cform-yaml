@@ -1,0 +1,6 @@
+'.source.yaml':
+  'pinpointdestination':
+      'prefix': 'pinpointdestination'
+      'body':"""
+         ApplicationArn: ${2:String}     # optional
+"""

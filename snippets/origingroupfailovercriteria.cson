@@ -1,0 +1,6 @@
+'.source.yaml':
+  'origingroupfailovercriteria':
+      'prefix': 'origingroupfailovercriteria'
+      'body':"""
+         StatusCodes: ${2:StatusCodes}     # required
+"""

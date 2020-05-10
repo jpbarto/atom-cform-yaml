@@ -1,0 +1,7 @@
+'.source.yaml':
+  'serializer':
+      'prefix': 'serializer'
+      'body':"""
+         OrcSerDe: ${2:OrcSerDe}     # optional
+         ParquetSerDe: ${3:ParquetSerDe}     # optional
+"""

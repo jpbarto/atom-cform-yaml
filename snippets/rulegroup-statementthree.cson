@@ -1,0 +1,12 @@
+'.source.yaml':
+  'rulegroup-statementthree':
+      'prefix': 'rulegroup-statementthree'
+      'body':"""
+         ByteMatchStatement: ${2:ByteMatchStatement}     # optional
+         GeoMatchStatement: ${3:GeoMatchStatement}     # optional
+         IPSetReferenceStatement: ${4:IPSetReferenceStatement}     # optional
+         RegexPatternSetReferenceStatement: ${5:RegexPatternSetReferenceStatement}     # optional
+         SizeConstraintStatement: ${6:SizeConstraintStatement}     # optional
+         SqliMatchStatement: ${7:SqliMatchStatement}     # optional
+         XssMatchStatement: ${8:XssMatchStatement}     # optional
+"""

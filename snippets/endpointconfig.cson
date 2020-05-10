@@ -1,0 +1,14 @@
+'.source.yaml':
+  'endpointconfig':
+      'prefix': 'endpointconfig'
+      'body':"""
+         ${1:endpointconfig_name}:
+         	Type: AWS::SageMaker::EndpointConfig
+         	Properties:
+         		EndpointConfigName: ${2:String}     # optional
+         		KmsKeyId: ${3:String}     # optional
+         		ProductionVariants:                # required, list of ProductionVariant
+         			- ${4:ProductionVariant}
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+"""

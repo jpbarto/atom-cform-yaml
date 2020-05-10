@@ -1,0 +1,18 @@
+'.source.yaml':
+  'webacl-statementtwo':
+      'prefix': 'webacl-statementtwo'
+      'body':"""
+         AndStatement: ${2:AndStatementTwo}     # optional
+         ByteMatchStatement: ${3:ByteMatchStatement}     # optional
+         GeoMatchStatement: ${4:GeoMatchStatement}     # optional
+         IPSetReferenceStatement: ${5:IPSetReferenceStatement}     # optional
+         ManagedRuleGroupStatement: ${6:ManagedRuleGroupStatement}     # optional
+         NotStatement: ${7:NotStatementTwo}     # optional
+         OrStatement: ${8:OrStatementTwo}     # optional
+         RateBasedStatement: ${9:RateBasedStatementTwo}     # optional
+         RegexPatternSetReferenceStatement: ${10:RegexPatternSetReferenceStatement}     # optional
+         RuleGroupReferenceStatement: ${11:RuleGroupReferenceStatement}     # optional
+         SizeConstraintStatement: ${12:SizeConstraintStatement}     # optional
+         SqliMatchStatement: ${13:SqliMatchStatement}     # optional
+         XssMatchStatement: ${14:XssMatchStatement}     # optional
+"""

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'trackingoptions':
+      'prefix': 'trackingoptions'
+      'body':"""
+         CustomRedirectDomain: ${2:String}     # optional
+"""

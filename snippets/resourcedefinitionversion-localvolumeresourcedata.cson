@@ -1,0 +1,8 @@
+'.source.yaml':
+  'resourcedefinitionversion-localvolumeresourcedata':
+      'prefix': 'resourcedefinitionversion-localvolumeresourcedata'
+      'body':"""
+         DestinationPath: ${2:String}     # required
+         GroupOwnerSetting: ${3:GroupOwnerSetting}     # optional
+         SourcePath: ${4:String}     # required
+"""

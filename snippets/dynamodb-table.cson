@@ -1,0 +1,25 @@
+'.source.yaml':
+  'dynamodb-table':
+      'prefix': 'dynamodb-table'
+      'body':"""
+         ${1:dynamodb-table_name}:
+         	Type: AWS::DynamoDB::Table
+         	Properties:
+         		AttributeDefinitions:                # optional, list of AttributeDefinition
+         			- ${2:AttributeDefinition}
+         		BillingMode: ${3:String}     # optional
+         		GlobalSecondaryIndexes:                # optional, list of GlobalSecondaryIndex
+         			- ${4:GlobalSecondaryIndex}
+         		KeySchema:                # required, list of KeySchema
+         			- ${5:KeySchema}
+         		LocalSecondaryIndexes:                # optional, list of LocalSecondaryIndex
+         			- ${6:LocalSecondaryIndex}
+         		PointInTimeRecoverySpecification: ${7:PointInTimeRecoverySpecification}     # optional
+         		ProvisionedThroughput: ${8:ProvisionedThroughput}     # optional
+         		SSESpecification: ${9:SSESpecification}     # optional
+         		StreamSpecification: ${10:StreamSpecification}     # optional
+         		TableName: ${11:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${12:Tag}
+         		TimeToLiveSpecification: ${13:TimeToLiveSpecification}     # optional
+"""

@@ -1,0 +1,12 @@
+'.source.yaml':
+  'rulegroup-fieldtomatch':
+      'prefix': 'rulegroup-fieldtomatch'
+      'body':"""
+         AllQueryArguments: ${2:Json}     # optional
+         Body: ${3:Json}     # optional
+         Method: ${4:Json}     # optional
+         QueryString: ${5:Json}     # optional
+         SingleHeader: ${6:Json}     # optional
+         SingleQueryArgument: ${7:Json}     # optional
+         UriPath: ${8:Json}     # optional
+"""

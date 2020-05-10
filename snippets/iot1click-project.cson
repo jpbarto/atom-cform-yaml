@@ -1,0 +1,11 @@
+'.source.yaml':
+  'iot1click-project':
+      'prefix': 'iot1click-project'
+      'body':"""
+         ${1:iot1click-project_name}:
+         	Type: AWS::IoT1Click::Project
+         	Properties:
+         		Description: ${2:String}     # optional
+         		PlacementTemplate: ${3:PlacementTemplate}     # required
+         		ProjectName: ${4:String}     # optional
+"""

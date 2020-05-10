@@ -1,0 +1,10 @@
+'.source.yaml':
+  'robomaker-fleet':
+      'prefix': 'robomaker-fleet'
+      'body':"""
+         ${1:robomaker-fleet_name}:
+         	Type: AWS::RoboMaker::Fleet
+         	Properties:
+         		Name: ${2:String}     # optional
+         		Tags: ${3:Json}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'onpremisestagsetlistobject':
+      'prefix': 'onpremisestagsetlistobject'
+      'body':"""
+         OnPremisesTagGroup:                # optional, list of TagFilter
+         	- ${2:TagFilter}
+"""

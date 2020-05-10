@@ -13,15 +13,20 @@
          			- ${5:BootstrapActionConfig}
          		Configurations:                # optional, list of Configuration
          			- ${6:Configuration}
-         		Instances: ${7:JobFlowInstancesConfig}     # required
-         		JobFlowRole: ${8:String}     # required
-         		LogUri: ${9:String}     # optional
-         		Name: ${10:String}     # required
-         		ReleaseLabel: ${11:String}     # optional
-         		ScaleDownBehavior: ${12:String}     # optional
-         		SecurityConfiguration: ${13:String}     # optional
-         		ServiceRole: ${14:String}     # required
+         		CustomAmiId: ${7:String}     # optional
+         		EbsRootVolumeSize: ${8:Integer}     # optional
+         		Instances: ${9:JobFlowInstancesConfig}     # required
+         		JobFlowRole: ${10:String}     # required
+         		KerberosAttributes: ${11:KerberosAttributes}     # optional
+         		LogUri: ${12:String}     # optional
+         		Name: ${13:String}     # required
+         		ReleaseLabel: ${14:String}     # optional
+         		ScaleDownBehavior: ${15:String}     # optional
+         		SecurityConfiguration: ${16:String}     # optional
+         		ServiceRole: ${17:String}     # required
+         		Steps:                # optional, list of StepConfig
+         			- ${18:StepConfig}
          		Tags:                # optional, list of Tag
-         			- ${15:Tag}
-         		VisibleToAllUsers: ${16:Boolean}     # optional
+         			- ${19:Tag}
+         		VisibleToAllUsers: ${20:Boolean}     # optional
 """

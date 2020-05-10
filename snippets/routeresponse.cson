@@ -1,0 +1,14 @@
+'.source.yaml':
+  'routeresponse':
+      'prefix': 'routeresponse'
+      'body':"""
+         ${1:routeresponse_name}:
+         	Type: AWS::ApiGatewayV2::RouteResponse
+         	Properties:
+         		ApiId: ${2:String}     # required
+         		ModelSelectionExpression: ${3:String}     # optional
+         		ResponseModels: ${4:Json}     # optional
+         		ResponseParameters: ${5:Json}     # optional
+         		RouteId: ${6:String}     # required
+         		RouteResponseKey: ${7:String}     # required
+"""

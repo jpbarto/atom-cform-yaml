@@ -1,0 +1,8 @@
+'.source.yaml':
+  'inputsourcerequest':
+      'prefix': 'inputsourcerequest'
+      'body':"""
+         PasswordParam: ${2:String}     # optional
+         Url: ${3:String}     # optional
+         Username: ${4:String}     # optional
+"""

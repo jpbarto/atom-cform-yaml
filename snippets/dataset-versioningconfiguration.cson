@@ -1,0 +1,7 @@
+'.source.yaml':
+  'dataset-versioningconfiguration':
+      'prefix': 'dataset-versioningconfiguration'
+      'body':"""
+         MaxVersions: ${2:Integer}     # optional
+         Unlimited: ${3:Boolean}     # optional
+"""

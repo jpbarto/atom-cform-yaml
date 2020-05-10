@@ -1,0 +1,7 @@
+'.source.yaml':
+  'functiondefinitionversion-resourceaccesspolicy':
+      'prefix': 'functiondefinitionversion-resourceaccesspolicy'
+      'body':"""
+         Permission: ${2:String}     # optional
+         ResourceId: ${3:String}     # required
+"""

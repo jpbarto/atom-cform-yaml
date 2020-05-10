@@ -1,0 +1,14 @@
+'.source.yaml':
+  'robotapplication':
+      'prefix': 'robotapplication'
+      'body':"""
+         ${1:robotapplication_name}:
+         	Type: AWS::RoboMaker::RobotApplication
+         	Properties:
+         		CurrentRevisionId: ${2:String}     # optional
+         		Name: ${3:String}     # optional
+         		RobotSoftwareSuite: ${4:RobotSoftwareSuite}     # required
+         		Sources:                # required, list of SourceConfig
+         			- ${5:SourceConfig}
+         		Tags: ${6:Json}     # optional
+"""

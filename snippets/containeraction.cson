@@ -1,0 +1,10 @@
+'.source.yaml':
+  'containeraction':
+      'prefix': 'containeraction'
+      'body':"""
+         ExecutionRoleArn: ${2:String}     # required
+         Image: ${3:String}     # required
+         ResourceConfiguration: ${4:ResourceConfiguration}     # required
+         Variables:                # optional, list of Variable
+         	- ${5:Variable}
+"""

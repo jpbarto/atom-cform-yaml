@@ -1,0 +1,16 @@
+'.source.yaml':
+  'groupversion':
+      'prefix': 'groupversion'
+      'body':"""
+         ${1:groupversion_name}:
+         	Type: AWS::Greengrass::GroupVersion
+         	Properties:
+         		ConnectorDefinitionVersionArn: ${2:String}     # optional
+         		CoreDefinitionVersionArn: ${3:String}     # optional
+         		DeviceDefinitionVersionArn: ${4:String}     # optional
+         		FunctionDefinitionVersionArn: ${5:String}     # optional
+         		GroupId: ${6:String}     # required
+         		LoggerDefinitionVersionArn: ${7:String}     # optional
+         		ResourceDefinitionVersionArn: ${8:String}     # optional
+         		SubscriptionDefinitionVersionArn: ${9:String}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'virtualservicebackend':
+      'prefix': 'virtualservicebackend'
+      'body':"""
+         ClientPolicy: ${2:ClientPolicy}     # optional
+         VirtualServiceName: ${3:String}     # required
+"""

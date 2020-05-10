@@ -1,0 +1,5 @@
+'.source.yaml':
+  'aribsourcesettings':
+      'prefix': 'aribsourcesettings'
+      'body':"""
+"""

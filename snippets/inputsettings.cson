@@ -1,0 +1,16 @@
+'.source.yaml':
+  'inputsettings':
+      'prefix': 'inputsettings'
+      'body':"""
+         AudioSelectors:                # optional, list of AudioSelector
+         	- ${2:AudioSelector}
+         CaptionSelectors:                # optional, list of CaptionSelector
+         	- ${3:CaptionSelector}
+         DeblockFilter: ${4:String}     # optional
+         DenoiseFilter: ${5:String}     # optional
+         FilterStrength: ${6:Integer}     # optional
+         InputFilter: ${7:String}     # optional
+         NetworkInputSettings: ${8:NetworkInputSettings}     # optional
+         SourceEndBehavior: ${9:String}     # optional
+         VideoSelector: ${10:VideoSelector}     # optional
+"""

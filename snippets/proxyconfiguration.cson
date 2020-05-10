@@ -1,0 +1,9 @@
+'.source.yaml':
+  'proxyconfiguration':
+      'prefix': 'proxyconfiguration'
+      'body':"""
+         ContainerName: ${2:String}     # required
+         ProxyConfigurationProperties:                # optional, list of KeyValuePair
+         	- ${3:KeyValuePair}
+         Type: ${4:String}     # optional
+"""

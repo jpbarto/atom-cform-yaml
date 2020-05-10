@@ -1,0 +1,7 @@
+'.source.yaml':
+  'listener-targetgrouptuple':
+      'prefix': 'listener-targetgrouptuple'
+      'body':"""
+         TargetGroupArn: ${2:String}     # optional
+         Weight: ${3:Integer}     # optional
+"""

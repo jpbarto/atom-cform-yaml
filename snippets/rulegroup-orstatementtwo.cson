@@ -1,0 +1,7 @@
+'.source.yaml':
+  'rulegroup-orstatementtwo':
+      'prefix': 'rulegroup-orstatementtwo'
+      'body':"""
+         Statements:                # required, list of StatementThree
+         	- ${2:StatementThree}
+"""

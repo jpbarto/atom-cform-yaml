@@ -1,0 +1,7 @@
+'.source.yaml':
+  'rulegroup-andstatementone':
+      'prefix': 'rulegroup-andstatementone'
+      'body':"""
+         Statements:                # required, list of StatementTwo
+         	- ${2:StatementTwo}
+"""

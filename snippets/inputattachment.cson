@@ -1,0 +1,8 @@
+'.source.yaml':
+  'inputattachment':
+      'prefix': 'inputattachment'
+      'body':"""
+         InputAttachmentName: ${2:String}     # optional
+         InputId: ${3:String}     # optional
+         InputSettings: ${4:InputSettings}     # optional
+"""

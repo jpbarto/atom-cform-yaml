@@ -1,0 +1,20 @@
+'.source.yaml':
+  'capacityreservation':
+      'prefix': 'capacityreservation'
+      'body':"""
+         ${1:capacityreservation_name}:
+         	Type: AWS::EC2::CapacityReservation
+         	Properties:
+         		AvailabilityZone: ${2:String}     # required
+         		EbsOptimized: ${3:Boolean}     # optional
+         		EndDate: ${4:String}     # optional
+         		EndDateType: ${5:String}     # optional
+         		EphemeralStorage: ${6:Boolean}     # optional
+         		InstanceCount: ${7:Integer}     # required
+         		InstanceMatchCriteria: ${8:String}     # optional
+         		InstancePlatform: ${9:String}     # required
+         		InstanceType: ${10:String}     # required
+         		TagSpecifications:                # optional, list of TagSpecification
+         			- ${11:TagSpecification}
+         		Tenancy: ${12:String}     # optional
+"""

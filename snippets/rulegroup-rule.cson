@@ -1,0 +1,10 @@
+'.source.yaml':
+  'rulegroup-rule':
+      'prefix': 'rulegroup-rule'
+      'body':"""
+         Action: ${2:RuleAction}     # optional
+         Name: ${3:String}     # required
+         Priority: ${4:Integer}     # required
+         Statement: ${5:StatementOne}     # required
+         VisibilityConfig: ${6:VisibilityConfig}     # required
+"""

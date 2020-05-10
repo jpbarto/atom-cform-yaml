@@ -1,0 +1,11 @@
+'.source.yaml':
+  'groups':
+      'prefix': 'groups'
+      'body':"""
+         Dimensions:                # optional, list of SegmentDimensions
+         	- ${2:SegmentDimensions}
+         SourceSegments:                # optional, list of SourceSegments
+         	- ${3:SourceSegments}
+         SourceType: ${4:String}     # optional
+         Type: ${5:String}     # optional
+"""

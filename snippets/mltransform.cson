@@ -1,0 +1,20 @@
+'.source.yaml':
+  'mltransform':
+      'prefix': 'mltransform'
+      'body':"""
+         ${1:mltransform_name}:
+         	Type: AWS::Glue::MLTransform
+         	Properties:
+         		Description: ${2:String}     # optional
+         		GlueVersion: ${3:String}     # optional
+         		InputRecordTables: ${4:InputRecordTables}     # required
+         		MaxCapacity: ${5:Double}     # optional
+         		MaxRetries: ${6:Integer}     # optional
+         		Name: ${7:String}     # optional
+         		NumberOfWorkers: ${8:Integer}     # optional
+         		Role: ${9:String}     # required
+         		Tags: ${10:Json}     # optional
+         		Timeout: ${11:Integer}     # optional
+         		TransformParameters: ${12:TransformParameters}     # required
+         		WorkerType: ${13:String}     # optional
+"""

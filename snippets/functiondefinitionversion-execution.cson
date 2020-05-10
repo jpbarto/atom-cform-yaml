@@ -1,0 +1,7 @@
+'.source.yaml':
+  'functiondefinitionversion-execution':
+      'prefix': 'functiondefinitionversion-execution'
+      'body':"""
+         IsolationMode: ${2:String}     # optional
+         RunAs: ${3:RunAs}     # optional
+"""

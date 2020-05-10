@@ -1,0 +1,8 @@
+'.source.yaml':
+  'httproute':
+      'prefix': 'httproute'
+      'body':"""
+         Action: ${2:HttpRouteAction}     # required
+         Match: ${3:HttpRouteMatch}     # required
+         RetryPolicy: ${4:HttpRetryPolicy}     # optional
+"""

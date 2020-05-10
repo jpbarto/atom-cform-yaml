@@ -1,0 +1,15 @@
+'.source.yaml':
+  'workteam':
+      'prefix': 'workteam'
+      'body':"""
+         ${1:workteam_name}:
+         	Type: AWS::SageMaker::Workteam
+         	Properties:
+         		Description: ${2:String}     # optional
+         		MemberDefinitions:                # optional, list of MemberDefinition
+         			- ${3:MemberDefinition}
+         		NotificationConfiguration: ${4:NotificationConfiguration}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+         		WorkteamName: ${6:String}     # optional
+"""

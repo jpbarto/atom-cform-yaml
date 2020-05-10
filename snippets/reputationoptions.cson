@@ -1,0 +1,6 @@
+'.source.yaml':
+  'reputationoptions':
+      'prefix': 'reputationoptions'
+      'body':"""
+         ReputationMetricsEnabled: ${2:Boolean}     # optional
+"""

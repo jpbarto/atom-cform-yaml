@@ -1,0 +1,27 @@
+'.source.yaml':
+  'appstream-stack':
+      'prefix': 'appstream-stack'
+      'body':"""
+         ${1:appstream-stack_name}:
+         	Type: AWS::AppStream::Stack
+         	Properties:
+         		AccessEndpoints:                # optional, list of AccessEndpoint
+         			- ${2:AccessEndpoint}
+         		ApplicationSettings: ${3:ApplicationSettings}     # optional
+         		AttributesToDelete:                # optional, list of String
+         			- ${4:String}
+         		DeleteStorageConnectors: ${5:Boolean}     # optional
+         		Description: ${6:String}     # optional
+         		DisplayName: ${7:String}     # optional
+         		EmbedHostDomains:                # optional, list of String
+         			- ${8:String}
+         		FeedbackURL: ${9:String}     # optional
+         		Name: ${10:String}     # optional
+         		RedirectURL: ${11:String}     # optional
+         		StorageConnectors:                # optional, list of StorageConnector
+         			- ${12:StorageConnector}
+         		Tags:                # optional, list of Tag
+         			- ${13:Tag}
+         		UserSettings:                # optional, list of UserSetting
+         			- ${14:UserSetting}
+"""

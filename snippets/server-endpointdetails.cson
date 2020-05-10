@@ -1,0 +1,11 @@
+'.source.yaml':
+  'server-endpointdetails':
+      'prefix': 'server-endpointdetails'
+      'body':"""
+         AddressAllocationIds:                # optional, list of String
+         	- ${2:String}
+         SubnetIds:                # optional, list of String
+         	- ${3:String}
+         VpcEndpointId: ${4:String}     # optional
+         VpcId: ${5:String}     # optional
+"""

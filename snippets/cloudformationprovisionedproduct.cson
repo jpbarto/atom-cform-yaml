@@ -1,0 +1,22 @@
+'.source.yaml':
+  'cloudformationprovisionedproduct':
+      'prefix': 'cloudformationprovisionedproduct'
+      'body':"""
+         ${1:cloudformationprovisionedproduct_name}:
+         	Type: AWS::ServiceCatalog::CloudFormationProvisionedProduct
+         	Properties:
+         		AcceptLanguage: ${2:String}     # optional
+         		NotificationArns:                # optional, list of String
+         			- ${3:String}
+         		PathId: ${4:String}     # optional
+         		ProductId: ${5:String}     # optional
+         		ProductName: ${6:String}     # optional
+         		ProvisionedProductName: ${7:String}     # optional
+         		ProvisioningArtifactId: ${8:String}     # optional
+         		ProvisioningArtifactName: ${9:String}     # optional
+         		ProvisioningParameters:                # optional, list of ProvisioningParameter
+         			- ${10:ProvisioningParameter}
+         		ProvisioningPreferences: ${11:ProvisioningPreferences}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${12:Tag}
+"""

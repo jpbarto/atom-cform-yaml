@@ -1,0 +1,15 @@
+'.source.yaml':
+  'wafv2-regexpatternset':
+      'prefix': 'wafv2-regexpatternset'
+      'body':"""
+         ${1:wafv2-regexpatternset_name}:
+         	Type: AWS::WAFv2::RegexPatternSet
+         	Properties:
+         		Description: ${2:String}     # optional
+         		Name: ${3:String}     # optional
+         		RegularExpressionList:                # required, list of String
+         			- ${4:String}
+         		Scope: ${5:String}     # required
+         		Tags:                # optional, list of Tag
+         			- ${6:Tag}
+"""

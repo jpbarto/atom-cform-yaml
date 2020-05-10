@@ -1,0 +1,12 @@
+'.source.yaml':
+  'classifier':
+      'prefix': 'classifier'
+      'body':"""
+         ${1:classifier_name}:
+         	Type: AWS::Glue::Classifier
+         	Properties:
+         		CsvClassifier: ${2:CsvClassifier}     # optional
+         		GrokClassifier: ${3:GrokClassifier}     # optional
+         		JsonClassifier: ${4:JsonClassifier}     # optional
+         		XMLClassifier: ${5:XMLClassifier}     # optional
+"""

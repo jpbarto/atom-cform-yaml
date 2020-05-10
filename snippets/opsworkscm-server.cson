@@ -1,0 +1,33 @@
+'.source.yaml':
+  'opsworkscm-server':
+      'prefix': 'opsworkscm-server'
+      'body':"""
+         ${1:opsworkscm-server_name}:
+         	Type: AWS::OpsWorksCM::Server
+         	Properties:
+         		AssociatePublicIpAddress: ${2:Boolean}     # optional
+         		BackupId: ${3:String}     # optional
+         		BackupRetentionCount: ${4:Integer}     # optional
+         		CustomCertificate: ${5:String}     # optional
+         		CustomDomain: ${6:String}     # optional
+         		CustomPrivateKey: ${7:String}     # optional
+         		DisableAutomatedBackup: ${8:Boolean}     # optional
+         		Engine: ${9:String}     # optional
+         		EngineAttributes:                # optional, list of EngineAttribute
+         			- ${10:EngineAttribute}
+         		EngineModel: ${11:String}     # optional
+         		EngineVersion: ${12:String}     # optional
+         		InstanceProfileArn: ${13:String}     # required
+         		InstanceType: ${14:String}     # required
+         		KeyPair: ${15:String}     # optional
+         		PreferredBackupWindow: ${16:String}     # optional
+         		PreferredMaintenanceWindow: ${17:String}     # optional
+         		SecurityGroupIds:                # optional, list of String
+         			- ${18:String}
+         		ServerName: ${19:String}     # optional
+         		ServiceRoleArn: ${20:String}     # required
+         		SubnetIds:                # optional, list of String
+         			- ${21:String}
+         		Tags:                # optional, list of Tag
+         			- ${22:Tag}
+"""

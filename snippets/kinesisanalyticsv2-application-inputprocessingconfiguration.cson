@@ -1,0 +1,6 @@
+'.source.yaml':
+  'kinesisanalyticsv2-application-inputprocessingconfiguration':
+      'prefix': 'kinesisanalyticsv2-application-inputprocessingconfiguration'
+      'body':"""
+         InputLambdaProcessor: ${2:InputLambdaProcessor}     # optional
+"""

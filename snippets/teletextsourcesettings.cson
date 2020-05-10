@@ -1,0 +1,6 @@
+'.source.yaml':
+  'teletextsourcesettings':
+      'prefix': 'teletextsourcesettings'
+      'body':"""
+         PageNumber: ${2:String}     # optional
+"""

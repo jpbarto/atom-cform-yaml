@@ -1,0 +1,6 @@
+'.source.yaml':
+  'overrides':
+      'prefix': 'overrides'
+      'body':"""
+         Manifest: ${2:Json}     # optional
+"""

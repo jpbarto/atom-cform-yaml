@@ -1,0 +1,7 @@
+'.source.yaml':
+  'geomatchconstraint':
+      'prefix': 'geomatchconstraint'
+      'body':"""
+         Type: ${2:String}     # required
+         Value: ${3:String}     # required
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'resourcequery':
+      'prefix': 'resourcequery'
+      'body':"""
+         Query: ${2:Query}     # optional
+         Type: ${3:String}     # optional
+"""

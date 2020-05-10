@@ -1,0 +1,6 @@
+'.source.yaml':
+  'dataset-schedule':
+      'prefix': 'dataset-schedule'
+      'body':"""
+         ScheduleExpression: ${2:String}     # required
+"""

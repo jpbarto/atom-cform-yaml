@@ -1,0 +1,11 @@
+'.source.yaml':
+  'loggerdefinitionversion':
+      'prefix': 'loggerdefinitionversion'
+      'body':"""
+         ${1:loggerdefinitionversion_name}:
+         	Type: AWS::Greengrass::LoggerDefinitionVersion
+         	Properties:
+         		LoggerDefinitionId: ${2:String}     # required
+         		Loggers:                # required, list of Logger
+         			- ${3:Logger}
+"""

@@ -2,6 +2,7 @@
   'taskdefinition-volume':
       'prefix': 'taskdefinition-volume'
       'body':"""
-         Host: ${2:HostVolumeProperties}     # optional
-         Name: ${3:String}     # optional
+         DockerVolumeConfiguration: ${2:DockerVolumeConfiguration}     # optional
+         Host: ${3:HostVolumeProperties}     # optional
+         Name: ${4:String}     # optional
 """

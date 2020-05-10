@@ -1,0 +1,12 @@
+'.source.yaml':
+  'vpclink':
+      'prefix': 'vpclink'
+      'body':"""
+         ${1:vpclink_name}:
+         	Type: AWS::ApiGateway::VpcLink
+         	Properties:
+         		Description: ${2:String}     # optional
+         		Name: ${3:String}     # required
+         		TargetArns:                # required, list of String
+         			- ${4:String}
+"""

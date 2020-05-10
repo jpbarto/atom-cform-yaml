@@ -1,0 +1,9 @@
+'.source.yaml':
+  'grokclassifier':
+      'prefix': 'grokclassifier'
+      'body':"""
+         Classification: ${2:String}     # required
+         CustomPatterns: ${3:String}     # optional
+         GrokPattern: ${4:String}     # required
+         Name: ${5:String}     # optional
+"""

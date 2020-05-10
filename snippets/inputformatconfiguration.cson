@@ -1,0 +1,6 @@
+'.source.yaml':
+  'inputformatconfiguration':
+      'prefix': 'inputformatconfiguration'
+      'body':"""
+         Deserializer: ${2:Deserializer}     # required
+"""

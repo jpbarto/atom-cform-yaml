@@ -3,6 +3,12 @@
       'prefix': 'rulecondition'
       'body':"""
          Field: ${2:String}     # optional
+         HostHeaderConfig: ${3:HostHeaderConfig}     # optional
+         HttpHeaderConfig: ${4:HttpHeaderConfig}     # optional
+         HttpRequestMethodConfig: ${5:HttpRequestMethodConfig}     # optional
+         PathPatternConfig: ${6:PathPatternConfig}     # optional
+         QueryStringConfig: ${7:QueryStringConfig}     # optional
+         SourceIpConfig: ${8:SourceIpConfig}     # optional
          Values:                # optional, list of String
-         	- ${3:String}
+         	- ${9:String}
 """

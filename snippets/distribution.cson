@@ -6,4 +6,6 @@
          	Type: AWS::CloudFront::Distribution
          	Properties:
          		DistributionConfig: ${2:DistributionConfig}     # required
+         		Tags:                # optional, list of Tag
+         			- ${3:Tag}
 """

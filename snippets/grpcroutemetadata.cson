@@ -1,0 +1,8 @@
+'.source.yaml':
+  'grpcroutemetadata':
+      'prefix': 'grpcroutemetadata'
+      'body':"""
+         Invert: ${2:Boolean}     # optional
+         Match: ${3:GrpcRouteMetadataMatchMethod}     # optional
+         Name: ${4:String}     # required
+"""

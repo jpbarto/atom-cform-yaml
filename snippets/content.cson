@@ -1,0 +1,8 @@
+'.source.yaml':
+  'content':
+      'prefix': 'content'
+      'body':"""
+         S3Bucket: ${2:String}     # required
+         S3Key: ${3:String}     # required
+         S3ObjectVersion: ${4:String}     # optional
+"""

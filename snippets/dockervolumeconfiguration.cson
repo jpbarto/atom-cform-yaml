@@ -1,0 +1,12 @@
+'.source.yaml':
+  'dockervolumeconfiguration':
+      'prefix': 'dockervolumeconfiguration'
+      'body':"""
+         Autoprovision: ${2:Boolean}     # optional
+         Driver: ${3:String}     # optional
+         DriverOpts:                # optional, map of String
+         	${4:String_key}: ${5:String_value}
+         Labels:                # optional, map of String
+         	${6:String_key}: ${7:String_value}
+         Scope: ${8:String}     # optional
+"""

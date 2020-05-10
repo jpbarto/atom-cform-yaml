@@ -1,0 +1,14 @@
+'.source.yaml':
+  'permissions':
+      'prefix': 'permissions'
+      'body':"""
+         ${1:permissions_name}:
+         	Type: AWS::LakeFormation::Permissions
+         	Properties:
+         		DataLakePrincipal: ${2:DataLakePrincipal}     # required
+         		Permissions:                # optional, list of String
+         			- ${3:String}
+         		PermissionsWithGrantOption:                # optional, list of String
+         			- ${4:String}
+         		Resource: ${5:Resource}     # required
+"""

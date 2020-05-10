@@ -1,0 +1,8 @@
+'.source.yaml':
+  'captionselector':
+      'prefix': 'captionselector'
+      'body':"""
+         LanguageCode: ${2:String}     # optional
+         Name: ${3:String}     # optional
+         SelectorSettings: ${4:CaptionSelectorSettings}     # optional
+"""

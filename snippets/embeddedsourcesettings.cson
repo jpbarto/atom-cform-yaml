@@ -1,0 +1,9 @@
+'.source.yaml':
+  'embeddedsourcesettings':
+      'prefix': 'embeddedsourcesettings'
+      'body':"""
+         Convert608To708: ${2:String}     # optional
+         Scte20Detection: ${3:String}     # optional
+         Source608ChannelNumber: ${4:Integer}     # optional
+         Source608TrackNumber: ${5:Integer}     # optional
+"""

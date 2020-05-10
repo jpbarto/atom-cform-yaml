@@ -1,0 +1,6 @@
+'.source.yaml':
+  'deploymentcontroller':
+      'prefix': 'deploymentcontroller'
+      'body':"""
+         Type: ${2:String}     # optional
+"""

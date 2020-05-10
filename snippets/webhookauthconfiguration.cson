@@ -1,0 +1,7 @@
+'.source.yaml':
+  'webhookauthconfiguration':
+      'prefix': 'webhookauthconfiguration'
+      'body':"""
+         AllowedIPRange: ${2:String}     # optional
+         SecretToken: ${3:String}     # optional
+"""

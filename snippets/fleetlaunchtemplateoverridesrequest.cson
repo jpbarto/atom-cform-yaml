@@ -1,0 +1,12 @@
+'.source.yaml':
+  'fleetlaunchtemplateoverridesrequest':
+      'prefix': 'fleetlaunchtemplateoverridesrequest'
+      'body':"""
+         AvailabilityZone: ${2:String}     # optional
+         InstanceType: ${3:String}     # optional
+         MaxPrice: ${4:String}     # optional
+         Placement: ${5:Placement}     # optional
+         Priority: ${6:Double}     # optional
+         SubnetId: ${7:String}     # optional
+         WeightedCapacity: ${8:Double}     # optional
+"""

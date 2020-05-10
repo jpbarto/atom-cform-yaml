@@ -1,0 +1,21 @@
+'.source.yaml':
+  'canary':
+      'prefix': 'canary'
+      'body':"""
+         ${1:canary_name}:
+         	Type: AWS::Synthetics::Canary
+         	Properties:
+         		ArtifactS3Location: ${2:String}     # required
+         		Code: ${3:Code}     # required
+         		ExecutionRoleArn: ${4:String}     # required
+         		FailureRetentionPeriod: ${5:Integer}     # optional
+         		Name: ${6:String}     # required
+         		RunConfig: ${7:RunConfig}     # optional
+         		RuntimeVersion: ${8:String}     # required
+         		Schedule: ${9:Schedule}     # required
+         		StartCanaryAfterCreation: ${10:Boolean}     # required
+         		SuccessRetentionPeriod: ${11:Integer}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${12:Tag}
+         		VPCConfig: ${13:VPCConfig}     # optional
+"""

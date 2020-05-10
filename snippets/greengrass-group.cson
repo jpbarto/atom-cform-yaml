@@ -1,0 +1,12 @@
+'.source.yaml':
+  'greengrass-group':
+      'prefix': 'greengrass-group'
+      'body':"""
+         ${1:greengrass-group_name}:
+         	Type: AWS::Greengrass::Group
+         	Properties:
+         		InitialVersion: ${2:GroupVersion}     # optional
+         		Name: ${3:String}     # required
+         		RoleArn: ${4:String}     # optional
+         		Tags: ${5:Json}     # optional
+"""

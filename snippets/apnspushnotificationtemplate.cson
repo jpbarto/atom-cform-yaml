@@ -1,0 +1,11 @@
+'.source.yaml':
+  'apnspushnotificationtemplate':
+      'prefix': 'apnspushnotificationtemplate'
+      'body':"""
+         Action: ${2:String}     # optional
+         Body: ${3:String}     # optional
+         MediaUrl: ${4:String}     # optional
+         Sound: ${5:String}     # optional
+         Title: ${6:String}     # optional
+         Url: ${7:String}     # optional
+"""

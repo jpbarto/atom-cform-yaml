@@ -1,0 +1,6 @@
+'.source.yaml':
+  'cloudfrontoriginaccessidentityconfig':
+      'prefix': 'cloudfrontoriginaccessidentityconfig'
+      'body':"""
+         Comment: ${2:String}     # required
+"""

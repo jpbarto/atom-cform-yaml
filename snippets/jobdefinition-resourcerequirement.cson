@@ -1,0 +1,7 @@
+'.source.yaml':
+  'jobdefinition-resourcerequirement':
+      'prefix': 'jobdefinition-resourcerequirement'
+      'body':"""
+         Type: ${2:String}     # optional
+         Value: ${3:String}     # optional
+"""

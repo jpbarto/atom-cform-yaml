@@ -11,20 +11,24 @@
          		AlarmDescription: ${4:String}     # optional
          		AlarmName: ${5:String}     # optional
          		ComparisonOperator: ${6:String}     # required
+         		DatapointsToAlarm: ${7:Integer}     # optional
          		Dimensions:                # optional, list of Dimension
-         			- ${7:Dimension}
-         		EvaluateLowSampleCountPercentile: ${8:String}     # optional
-         		EvaluationPeriods: ${9:Integer}     # required
-         		ExtendedStatistic: ${10:String}     # optional
+         			- ${8:Dimension}
+         		EvaluateLowSampleCountPercentile: ${9:String}     # optional
+         		EvaluationPeriods: ${10:Integer}     # required
+         		ExtendedStatistic: ${11:String}     # optional
          		InsufficientDataActions:                # optional, list of String
-         			- ${11:String}
-         		MetricName: ${12:String}     # required
-         		Namespace: ${13:String}     # required
+         			- ${12:String}
+         		MetricName: ${13:String}     # optional
+         		Metrics:                # optional, list of MetricDataQuery
+         			- ${14:MetricDataQuery}
+         		Namespace: ${15:String}     # optional
          		OKActions:                # optional, list of String
-         			- ${14:String}
-         		Period: ${15:Integer}     # required
-         		Statistic: ${16:String}     # optional
-         		Threshold: ${17:Double}     # required
-         		TreatMissingData: ${18:String}     # optional
-         		Unit: ${19:String}     # optional
+         			- ${16:String}
+         		Period: ${17:Integer}     # optional
+         		Statistic: ${18:String}     # optional
+         		Threshold: ${19:Double}     # optional
+         		ThresholdMetricId: ${20:String}     # optional
+         		TreatMissingData: ${21:String}     # optional
+         		Unit: ${22:String}     # optional
 """

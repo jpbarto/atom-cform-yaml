@@ -1,0 +1,14 @@
+'.source.yaml':
+  'launchnotificationconstraint':
+      'prefix': 'launchnotificationconstraint'
+      'body':"""
+         ${1:launchnotificationconstraint_name}:
+         	Type: AWS::ServiceCatalog::LaunchNotificationConstraint
+         	Properties:
+         		AcceptLanguage: ${2:String}     # optional
+         		Description: ${3:String}     # optional
+         		NotificationArns:                # required, list of String
+         			- ${4:String}
+         		PortfolioId: ${5:String}     # required
+         		ProductId: ${6:String}     # required
+"""

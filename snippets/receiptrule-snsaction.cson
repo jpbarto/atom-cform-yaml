@@ -1,0 +1,7 @@
+'.source.yaml':
+  'receiptrule-snsaction':
+      'prefix': 'receiptrule-snsaction'
+      'body':"""
+         Encoding: ${2:String}     # optional
+         TopicArn: ${3:String}     # optional
+"""

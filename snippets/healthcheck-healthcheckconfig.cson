@@ -1,0 +1,23 @@
+'.source.yaml':
+  'healthcheck-healthcheckconfig':
+      'prefix': 'healthcheck-healthcheckconfig'
+      'body':"""
+         AlarmIdentifier: ${2:AlarmIdentifier}     # optional
+         ChildHealthChecks:                # optional, list of String
+         	- ${3:String}
+         EnableSNI: ${4:Boolean}     # optional
+         FailureThreshold: ${5:Integer}     # optional
+         FullyQualifiedDomainName: ${6:String}     # optional
+         HealthThreshold: ${7:Integer}     # optional
+         IPAddress: ${8:String}     # optional
+         InsufficientDataHealthStatus: ${9:String}     # optional
+         Inverted: ${10:Boolean}     # optional
+         MeasureLatency: ${11:Boolean}     # optional
+         Port: ${12:Integer}     # optional
+         Regions:                # optional, list of String
+         	- ${13:String}
+         RequestInterval: ${14:Integer}     # optional
+         ResourcePath: ${15:String}     # optional
+         SearchString: ${16:String}     # optional
+         Type: ${17:String}     # required
+"""

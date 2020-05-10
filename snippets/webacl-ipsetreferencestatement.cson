@@ -1,0 +1,6 @@
+'.source.yaml':
+  'webacl-ipsetreferencestatement':
+      'prefix': 'webacl-ipsetreferencestatement'
+      'body':"""
+         Arn: ${2:String}     # required
+"""

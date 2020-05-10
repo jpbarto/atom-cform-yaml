@@ -1,0 +1,11 @@
+'.source.yaml':
+  'dedicatedippool':
+      'prefix': 'dedicatedippool'
+      'body':"""
+         ${1:dedicatedippool_name}:
+         	Type: AWS::PinpointEmail::DedicatedIpPool
+         	Properties:
+         		PoolName: ${2:String}     # optional
+         		Tags:                # optional, list of Tags
+         			- ${3:Tags}
+"""

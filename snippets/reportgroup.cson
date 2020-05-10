@@ -1,0 +1,13 @@
+'.source.yaml':
+  'reportgroup':
+      'prefix': 'reportgroup'
+      'body':"""
+         ${1:reportgroup_name}:
+         	Type: AWS::CodeBuild::ReportGroup
+         	Properties:
+         		ExportConfig: ${2:ReportExportConfig}     # required
+         		Name: ${3:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${4:Tag}
+         		Type: ${5:String}     # required
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'renderingengine':
+      'prefix': 'renderingengine'
+      'body':"""
+         Name: ${2:String}     # required
+         Version: ${3:String}     # required
+"""

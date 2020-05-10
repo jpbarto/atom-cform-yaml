@@ -1,0 +1,7 @@
+'.source.yaml':
+  'pinpointemail-configurationseteventdestination-cloudwatchdestination':
+      'prefix': 'pinpointemail-configurationseteventdestination-cloudwatchdestination'
+      'body':"""
+         DimensionConfigurations:                # optional, list of DimensionConfiguration
+         	- ${2:DimensionConfiguration}
+"""

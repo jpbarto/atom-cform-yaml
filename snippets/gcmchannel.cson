@@ -1,0 +1,11 @@
+'.source.yaml':
+  'gcmchannel':
+      'prefix': 'gcmchannel'
+      'body':"""
+         ${1:gcmchannel_name}:
+         	Type: AWS::Pinpoint::GCMChannel
+         	Properties:
+         		ApiKey: ${2:String}     # required
+         		ApplicationId: ${3:String}     # required
+         		Enabled: ${4:Boolean}     # optional
+"""

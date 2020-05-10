@@ -1,0 +1,6 @@
+'.source.yaml':
+  'origingroupmember':
+      'prefix': 'origingroupmember'
+      'body':"""
+         OriginId: ${2:String}     # required
+"""

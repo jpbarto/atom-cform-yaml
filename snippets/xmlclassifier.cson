@@ -1,0 +1,8 @@
+'.source.yaml':
+  'xmlclassifier':
+      'prefix': 'xmlclassifier'
+      'body':"""
+         Classification: ${2:String}     # required
+         Name: ${3:String}     # optional
+         RowTag: ${4:String}     # required
+"""

@@ -1,0 +1,12 @@
+'.source.yaml':
+  'pinpointemail-configurationseteventdestination-eventdestination':
+      'prefix': 'pinpointemail-configurationseteventdestination-eventdestination'
+      'body':"""
+         CloudWatchDestination: ${2:CloudWatchDestination}     # optional
+         Enabled: ${3:Boolean}     # optional
+         KinesisFirehoseDestination: ${4:KinesisFirehoseDestination}     # optional
+         MatchingEventTypes:                # required, list of String
+         	- ${5:String}
+         PinpointDestination: ${6:PinpointDestination}     # optional
+         SnsDestination: ${7:SnsDestination}     # optional
+"""

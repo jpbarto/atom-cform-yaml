@@ -6,6 +6,7 @@
          	- ${2:Action}
          AwsIotSqlVersion: ${3:String}     # optional
          Description: ${4:String}     # optional
-         RuleDisabled: ${5:Boolean}     # required
-         Sql: ${6:String}     # required
+         ErrorAction: ${5:Action}     # optional
+         RuleDisabled: ${6:Boolean}     # required
+         Sql: ${7:String}     # required
 """

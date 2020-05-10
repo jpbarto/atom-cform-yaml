@@ -1,0 +1,8 @@
+'.source.yaml':
+  'monitoringconfiguration':
+      'prefix': 'monitoringconfiguration'
+      'body':"""
+         ConfigurationType: ${2:String}     # required
+         LogLevel: ${3:String}     # optional
+         MetricsLevel: ${4:String}     # optional
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'multiplexprogramchanneldestinationsettings':
+      'prefix': 'multiplexprogramchanneldestinationsettings'
+      'body':"""
+         MultiplexId: ${2:String}     # optional
+         ProgramName: ${3:String}     # optional
+"""

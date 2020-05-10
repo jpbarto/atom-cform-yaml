@@ -1,0 +1,8 @@
+'.source.yaml':
+  'webacl-ruleaction':
+      'prefix': 'webacl-ruleaction'
+      'body':"""
+         Allow: ${2:Json}     # optional
+         Block: ${3:Json}     # optional
+         Count: ${4:Json}     # optional
+"""

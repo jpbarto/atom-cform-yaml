@@ -1,0 +1,8 @@
+'.source.yaml':
+  'maxagerule':
+      'prefix': 'maxagerule'
+      'body':"""
+         DeleteSourceFromS3: ${2:Boolean}     # optional
+         Enabled: ${3:Boolean}     # optional
+         MaxAgeInDays: ${4:Integer}     # optional
+"""

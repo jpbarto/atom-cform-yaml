@@ -1,0 +1,7 @@
+'.source.yaml':
+  'audioselector':
+      'prefix': 'audioselector'
+      'body':"""
+         Name: ${2:String}     # optional
+         SelectorSettings: ${3:AudioSelectorSettings}     # optional
+"""

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'serversideencryptionrule':
+      'prefix': 'serversideencryptionrule'
+      'body':"""
+         ServerSideEncryptionByDefault: ${2:ServerSideEncryptionByDefault}     # optional
+"""

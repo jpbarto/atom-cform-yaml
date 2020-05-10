@@ -1,0 +1,10 @@
+'.source.yaml':
+  'backupplan':
+      'prefix': 'backupplan'
+      'body':"""
+         ${1:backupplan_name}:
+         	Type: AWS::Backup::BackupPlan
+         	Properties:
+         		BackupPlan: ${2:BackupPlanResourceType}     # required
+         		BackupPlanTags: ${3:Json}     # optional
+"""

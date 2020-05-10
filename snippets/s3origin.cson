@@ -1,0 +1,7 @@
+'.source.yaml':
+  's3origin':
+      'prefix': 's3origin'
+      'body':"""
+         DomainName: ${2:String}     # required
+         OriginAccessIdentity: ${3:String}     # required
+"""

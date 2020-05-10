@@ -5,6 +5,9 @@
          ${1:ecr-repository_name}:
          	Type: AWS::ECR::Repository
          	Properties:
-         		RepositoryName: ${2:String}     # optional
-         		RepositoryPolicyText: ${3:Json}     # optional
+         		LifecyclePolicy: ${2:LifecyclePolicy}     # optional
+         		RepositoryName: ${3:String}     # optional
+         		RepositoryPolicyText: ${4:Json}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
 """

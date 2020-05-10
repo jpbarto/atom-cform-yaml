@@ -1,0 +1,7 @@
+'.source.yaml':
+  'campaign-quiettime':
+      'prefix': 'campaign-quiettime'
+      'body':"""
+         End: ${2:String}     # required
+         Start: ${3:String}     # required
+"""

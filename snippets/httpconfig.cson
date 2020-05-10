@@ -1,0 +1,7 @@
+'.source.yaml':
+  'httpconfig':
+      'prefix': 'httpconfig'
+      'body':"""
+         AuthorizationConfig: ${2:AuthorizationConfig}     # optional
+         Endpoint: ${3:String}     # required
+"""

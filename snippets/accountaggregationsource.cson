@@ -1,0 +1,10 @@
+'.source.yaml':
+  'accountaggregationsource':
+      'prefix': 'accountaggregationsource'
+      'body':"""
+         AccountIds:                # required, list of String
+         	- ${2:String}
+         AllAwsRegions: ${3:Boolean}     # optional
+         AwsRegions:                # optional, list of String
+         	- ${4:String}
+"""

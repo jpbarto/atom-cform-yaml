@@ -1,0 +1,7 @@
+'.source.yaml':
+  'topic-subscription':
+      'prefix': 'topic-subscription'
+      'body':"""
+         Endpoint: ${2:String}     # required
+         Protocol: ${3:String}     # required
+"""

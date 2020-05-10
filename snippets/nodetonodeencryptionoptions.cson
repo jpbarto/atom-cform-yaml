@@ -1,0 +1,6 @@
+'.source.yaml':
+  'nodetonodeencryptionoptions':
+      'prefix': 'nodetonodeencryptionoptions'
+      'body':"""
+         Enabled: ${2:Boolean}     # optional
+"""

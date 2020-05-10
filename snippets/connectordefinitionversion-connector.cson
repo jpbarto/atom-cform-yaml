@@ -1,0 +1,8 @@
+'.source.yaml':
+  'connectordefinitionversion-connector':
+      'prefix': 'connectordefinitionversion-connector'
+      'body':"""
+         ConnectorArn: ${2:String}     # required
+         Id: ${3:String}     # required
+         Parameters: ${4:Json}     # optional
+"""

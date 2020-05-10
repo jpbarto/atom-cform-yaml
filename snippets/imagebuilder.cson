@@ -1,0 +1,22 @@
+'.source.yaml':
+  'imagebuilder':
+      'prefix': 'imagebuilder'
+      'body':"""
+         ${1:imagebuilder_name}:
+         	Type: AWS::AppStream::ImageBuilder
+         	Properties:
+         		AccessEndpoints:                # optional, list of AccessEndpoint
+         			- ${2:AccessEndpoint}
+         		AppstreamAgentVersion: ${3:String}     # optional
+         		Description: ${4:String}     # optional
+         		DisplayName: ${5:String}     # optional
+         		DomainJoinInfo: ${6:DomainJoinInfo}     # optional
+         		EnableDefaultInternetAccess: ${7:Boolean}     # optional
+         		ImageArn: ${8:String}     # optional
+         		ImageName: ${9:String}     # optional
+         		InstanceType: ${10:String}     # required
+         		Name: ${11:String}     # required
+         		Tags:                # optional, list of Tag
+         			- ${12:Tag}
+         		VpcConfig: ${13:VpcConfig}     # optional
+"""

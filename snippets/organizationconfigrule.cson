@@ -1,0 +1,13 @@
+'.source.yaml':
+  'organizationconfigrule':
+      'prefix': 'organizationconfigrule'
+      'body':"""
+         ${1:organizationconfigrule_name}:
+         	Type: AWS::Config::OrganizationConfigRule
+         	Properties:
+         		ExcludedAccounts:                # optional, list of String
+         			- ${2:String}
+         		OrganizationConfigRuleName: ${3:String}     # required
+         		OrganizationCustomRuleMetadata: ${4:OrganizationCustomRuleMetadata}     # optional
+         		OrganizationManagedRuleMetadata: ${5:OrganizationManagedRuleMetadata}     # optional
+"""

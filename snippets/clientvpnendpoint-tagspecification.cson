@@ -1,0 +1,8 @@
+'.source.yaml':
+  'clientvpnendpoint-tagspecification':
+      'prefix': 'clientvpnendpoint-tagspecification'
+      'body':"""
+         ResourceType: ${2:String}     # required
+         Tags:                # required, list of Tag
+         	- ${3:Tag}
+"""

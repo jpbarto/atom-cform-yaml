@@ -1,0 +1,7 @@
+'.source.yaml':
+  'dbclusterrole':
+      'prefix': 'dbclusterrole'
+      'body':"""
+         FeatureName: ${2:String}     # optional
+         RoleArn: ${3:String}     # required
+"""

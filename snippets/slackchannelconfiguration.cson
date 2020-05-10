@@ -1,0 +1,16 @@
+'.source.yaml':
+  'slackchannelconfiguration':
+      'prefix': 'slackchannelconfiguration'
+      'body':"""
+         ${1:slackchannelconfiguration_name}:
+         	Type: AWS::Chatbot::SlackChannelConfiguration
+         	Properties:
+         		Arn: ${2:String}     # optional
+         		ConfigurationName: ${3:String}     # required
+         		IamRoleArn: ${4:String}     # required
+         		LoggingLevel: ${5:String}     # optional
+         		SlackChannelId: ${6:String}     # required
+         		SlackWorkspaceId: ${7:String}     # required
+         		SnsTopicArns:                # optional, list of String
+         			- ${8:String}
+"""

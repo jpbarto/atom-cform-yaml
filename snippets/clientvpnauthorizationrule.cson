@@ -1,0 +1,13 @@
+'.source.yaml':
+  'clientvpnauthorizationrule':
+      'prefix': 'clientvpnauthorizationrule'
+      'body':"""
+         ${1:clientvpnauthorizationrule_name}:
+         	Type: AWS::EC2::ClientVpnAuthorizationRule
+         	Properties:
+         		AccessGroupId: ${2:String}     # optional
+         		AuthorizeAllGroups: ${3:Boolean}     # optional
+         		ClientVpnEndpointId: ${4:String}     # required
+         		Description: ${5:String}     # optional
+         		TargetNetworkCidr: ${6:String}     # required
+"""

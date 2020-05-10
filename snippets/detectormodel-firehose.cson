@@ -1,0 +1,8 @@
+'.source.yaml':
+  'detectormodel-firehose':
+      'prefix': 'detectormodel-firehose'
+      'body':"""
+         DeliveryStreamName: ${2:String}     # optional
+         Payload: ${3:Payload}     # optional
+         Separator: ${4:String}     # optional
+"""

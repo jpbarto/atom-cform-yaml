@@ -1,0 +1,7 @@
+'.source.yaml':
+  'loglist':
+      'prefix': 'loglist'
+      'body':"""
+         Audit: ${2:Boolean}     # optional
+         General: ${3:Boolean}     # optional
+"""

@@ -1,0 +1,13 @@
+'.source.yaml':
+  'segment':
+      'prefix': 'segment'
+      'body':"""
+         ${1:segment_name}:
+         	Type: AWS::Pinpoint::Segment
+         	Properties:
+         		ApplicationId: ${2:String}     # required
+         		Dimensions: ${3:SegmentDimensions}     # optional
+         		Name: ${4:String}     # required
+         		SegmentGroups: ${5:SegmentGroups}     # optional
+         		Tags: ${6:Json}     # optional
+"""

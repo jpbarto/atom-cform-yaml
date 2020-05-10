@@ -1,0 +1,6 @@
+'.source.yaml':
+  'kinesisanalyticsv2-applicationoutput-lambdaoutput':
+      'prefix': 'kinesisanalyticsv2-applicationoutput-lambdaoutput'
+      'body':"""
+         ResourceARN: ${2:String}     # required
+"""

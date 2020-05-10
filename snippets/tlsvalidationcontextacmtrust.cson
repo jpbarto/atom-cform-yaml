@@ -1,0 +1,7 @@
+'.source.yaml':
+  'tlsvalidationcontextacmtrust':
+      'prefix': 'tlsvalidationcontextacmtrust'
+      'body':"""
+         CertificateAuthorityArns:                # required, list of String
+         	- ${2:String}
+"""

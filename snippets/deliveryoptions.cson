@@ -1,0 +1,6 @@
+'.source.yaml':
+  'deliveryoptions':
+      'prefix': 'deliveryoptions'
+      'body':"""
+         SendingPoolName: ${2:String}     # optional
+"""

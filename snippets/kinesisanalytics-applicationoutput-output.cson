@@ -1,0 +1,10 @@
+'.source.yaml':
+  'kinesisanalytics-applicationoutput-output':
+      'prefix': 'kinesisanalytics-applicationoutput-output'
+      'body':"""
+         DestinationSchema: ${2:DestinationSchema}     # required
+         KinesisFirehoseOutput: ${3:KinesisFirehoseOutput}     # optional
+         KinesisStreamsOutput: ${4:KinesisStreamsOutput}     # optional
+         LambdaOutput: ${5:LambdaOutput}     # optional
+         Name: ${6:String}     # optional
+"""

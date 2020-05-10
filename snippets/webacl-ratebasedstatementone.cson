@@ -1,0 +1,8 @@
+'.source.yaml':
+  'webacl-ratebasedstatementone':
+      'prefix': 'webacl-ratebasedstatementone'
+      'body':"""
+         AggregateKeyType: ${2:String}     # required
+         Limit: ${3:Integer}     # required
+         ScopeDownStatement: ${4:StatementTwo}     # optional
+"""

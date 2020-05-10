@@ -1,0 +1,7 @@
+'.source.yaml':
+  'crossregioncopyretainrule':
+      'prefix': 'crossregioncopyretainrule'
+      'body':"""
+         Interval: ${2:Integer}     # optional
+         IntervalUnit: ${3:String}     # optional
+"""

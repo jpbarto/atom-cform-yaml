@@ -1,0 +1,6 @@
+'.source.yaml':
+  'cluster-ssespecification':
+      'prefix': 'cluster-ssespecification'
+      'body':"""
+         SSEEnabled: ${2:Boolean}     # optional
+"""

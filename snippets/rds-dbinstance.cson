@@ -1,0 +1,66 @@
+'.source.yaml':
+  'rds-dbinstance':
+      'prefix': 'rds-dbinstance'
+      'body':"""
+         ${1:rds-dbinstance_name}:
+         	Type: AWS::RDS::DBInstance
+         	Properties:
+         		AllocatedStorage: ${2:String}     # optional
+         		AllowMajorVersionUpgrade: ${3:Boolean}     # optional
+         		AssociatedRoles:                # optional, list of DBInstanceRole
+         			- ${4:DBInstanceRole}
+         		AutoMinorVersionUpgrade: ${5:Boolean}     # optional
+         		AvailabilityZone: ${6:String}     # optional
+         		BackupRetentionPeriod: ${7:Integer}     # optional
+         		CACertificateIdentifier: ${8:String}     # optional
+         		CharacterSetName: ${9:String}     # optional
+         		CopyTagsToSnapshot: ${10:Boolean}     # optional
+         		DBClusterIdentifier: ${11:String}     # optional
+         		DBInstanceClass: ${12:String}     # required
+         		DBInstanceIdentifier: ${13:String}     # optional
+         		DBName: ${14:String}     # optional
+         		DBParameterGroupName: ${15:String}     # optional
+         		DBSecurityGroups:                # optional, list of String
+         			- ${16:String}
+         		DBSnapshotIdentifier: ${17:String}     # optional
+         		DBSubnetGroupName: ${18:String}     # optional
+         		DeleteAutomatedBackups: ${19:Boolean}     # optional
+         		DeletionProtection: ${20:Boolean}     # optional
+         		Domain: ${21:String}     # optional
+         		DomainIAMRoleName: ${22:String}     # optional
+         		EnableCloudwatchLogsExports:                # optional, list of String
+         			- ${23:String}
+         		EnableIAMDatabaseAuthentication: ${24:Boolean}     # optional
+         		EnablePerformanceInsights: ${25:Boolean}     # optional
+         		Engine: ${26:String}     # optional
+         		EngineVersion: ${27:String}     # optional
+         		Iops: ${28:Integer}     # optional
+         		KmsKeyId: ${29:String}     # optional
+         		LicenseModel: ${30:String}     # optional
+         		MasterUserPassword: ${31:String}     # optional
+         		MasterUsername: ${32:String}     # optional
+         		MaxAllocatedStorage: ${33:Integer}     # optional
+         		MonitoringInterval: ${34:Integer}     # optional
+         		MonitoringRoleArn: ${35:String}     # optional
+         		MultiAZ: ${36:Boolean}     # optional
+         		OptionGroupName: ${37:String}     # optional
+         		PerformanceInsightsKMSKeyId: ${38:String}     # optional
+         		PerformanceInsightsRetentionPeriod: ${39:Integer}     # optional
+         		Port: ${40:String}     # optional
+         		PreferredBackupWindow: ${41:String}     # optional
+         		PreferredMaintenanceWindow: ${42:String}     # optional
+         		ProcessorFeatures:                # optional, list of ProcessorFeature
+         			- ${43:ProcessorFeature}
+         		PromotionTier: ${44:Integer}     # optional
+         		PubliclyAccessible: ${45:Boolean}     # optional
+         		SourceDBInstanceIdentifier: ${46:String}     # optional
+         		SourceRegion: ${47:String}     # optional
+         		StorageEncrypted: ${48:Boolean}     # optional
+         		StorageType: ${49:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${50:Tag}
+         		Timezone: ${51:String}     # optional
+         		UseDefaultProcessorFeatures: ${52:Boolean}     # optional
+         		VPCSecurityGroups:                # optional, list of String
+         			- ${53:String}
+"""

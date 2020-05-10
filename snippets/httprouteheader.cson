@@ -1,0 +1,8 @@
+'.source.yaml':
+  'httprouteheader':
+      'prefix': 'httprouteheader'
+      'body':"""
+         Invert: ${2:Boolean}     # optional
+         Match: ${3:HeaderMatchMethod}     # optional
+         Name: ${4:String}     # required
+"""

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'defaultretention':
+      'prefix': 'defaultretention'
+      'body':"""
+         Days: ${2:Integer}     # optional
+         Mode: ${3:String}     # optional
+         Years: ${4:Integer}     # optional
+"""

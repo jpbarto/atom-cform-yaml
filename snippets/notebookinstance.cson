@@ -1,0 +1,26 @@
+'.source.yaml':
+  'notebookinstance':
+      'prefix': 'notebookinstance'
+      'body':"""
+         ${1:notebookinstance_name}:
+         	Type: AWS::SageMaker::NotebookInstance
+         	Properties:
+         		AcceleratorTypes:                # optional, list of String
+         			- ${2:String}
+         		AdditionalCodeRepositories:                # optional, list of String
+         			- ${3:String}
+         		DefaultCodeRepository: ${4:String}     # optional
+         		DirectInternetAccess: ${5:String}     # optional
+         		InstanceType: ${6:String}     # required
+         		KmsKeyId: ${7:String}     # optional
+         		LifecycleConfigName: ${8:String}     # optional
+         		NotebookInstanceName: ${9:String}     # optional
+         		RoleArn: ${10:String}     # required
+         		RootAccess: ${11:String}     # optional
+         		SecurityGroupIds:                # optional, list of String
+         			- ${12:String}
+         		SubnetId: ${13:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${14:Tag}
+         		VolumeSizeInGB: ${15:Integer}     # optional
+"""

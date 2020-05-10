@@ -1,0 +1,8 @@
+'.source.yaml':
+  'table-serdeinfo':
+      'prefix': 'table-serdeinfo'
+      'body':"""
+         Name: ${2:String}     # optional
+         Parameters: ${3:Json}     # optional
+         SerializationLibrary: ${4:String}     # optional
+"""

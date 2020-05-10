@@ -1,0 +1,9 @@
+'.source.yaml':
+  'bucket-destination':
+      'prefix': 'bucket-destination'
+      'body':"""
+         BucketAccountId: ${2:String}     # optional
+         BucketArn: ${3:String}     # required
+         Format: ${4:String}     # required
+         Prefix: ${5:String}     # optional
+"""

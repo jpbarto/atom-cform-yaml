@@ -1,0 +1,6 @@
+'.source.yaml':
+  'resettimer':
+      'prefix': 'resettimer'
+      'body':"""
+         TimerName: ${2:String}     # optional
+"""

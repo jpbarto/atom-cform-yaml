@@ -1,0 +1,6 @@
+'.source.yaml':
+  'tlsvalidationcontextfiletrust':
+      'prefix': 'tlsvalidationcontextfiletrust'
+      'body':"""
+         CertificateChain: ${2:String}     # required
+"""

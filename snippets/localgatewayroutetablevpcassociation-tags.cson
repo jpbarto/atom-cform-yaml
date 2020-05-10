@@ -1,0 +1,7 @@
+'.source.yaml':
+  'localgatewayroutetablevpcassociation-tags':
+      'prefix': 'localgatewayroutetablevpcassociation-tags'
+      'body':"""
+         Tags:                # optional, list of Tag
+         	- ${2:Tag}
+"""

@@ -1,0 +1,10 @@
+'.source.yaml':
+  'writetreatmentresource':
+      'prefix': 'writetreatmentresource'
+      'body':"""
+         MessageConfiguration: ${2:MessageConfiguration}     # optional
+         Schedule: ${3:Schedule}     # optional
+         SizePercent: ${4:Integer}     # optional
+         TreatmentDescription: ${5:String}     # optional
+         TreatmentName: ${6:String}     # optional
+"""

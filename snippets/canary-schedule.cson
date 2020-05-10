@@ -1,0 +1,7 @@
+'.source.yaml':
+  'canary-schedule':
+      'prefix': 'canary-schedule'
+      'body':"""
+         DurationInSeconds: ${2:String}     # required
+         Expression: ${3:String}     # required
+"""

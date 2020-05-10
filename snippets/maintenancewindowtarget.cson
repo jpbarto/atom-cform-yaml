@@ -1,0 +1,15 @@
+'.source.yaml':
+  'maintenancewindowtarget':
+      'prefix': 'maintenancewindowtarget'
+      'body':"""
+         ${1:maintenancewindowtarget_name}:
+         	Type: AWS::SSM::MaintenanceWindowTarget
+         	Properties:
+         		Description: ${2:String}     # optional
+         		Name: ${3:String}     # optional
+         		OwnerInformation: ${4:String}     # optional
+         		ResourceType: ${5:String}     # required
+         		Targets:                # required, list of Targets
+         			- ${6:Targets}
+         		WindowId: ${7:String}     # required
+"""

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'inputdestinationrequest':
+      'prefix': 'inputdestinationrequest'
+      'body':"""
+         StreamName: ${2:String}     # optional
+"""

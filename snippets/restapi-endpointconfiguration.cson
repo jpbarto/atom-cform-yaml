@@ -1,0 +1,9 @@
+'.source.yaml':
+  'restapi-endpointconfiguration':
+      'prefix': 'restapi-endpointconfiguration'
+      'body':"""
+         Types:                # optional, list of String
+         	- ${2:String}
+         VpcEndpointIds:                # optional, list of String
+         	- ${3:String}
+"""

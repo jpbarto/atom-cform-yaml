@@ -1,0 +1,7 @@
+'.source.yaml':
+  'onenter':
+      'prefix': 'onenter'
+      'body':"""
+         Events:                # optional, list of Event
+         	- ${2:Event}
+"""

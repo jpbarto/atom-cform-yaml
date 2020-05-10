@@ -1,0 +1,8 @@
+'.source.yaml':
+  'rulegroup-xssmatchstatement':
+      'prefix': 'rulegroup-xssmatchstatement'
+      'body':"""
+         FieldToMatch: ${2:FieldToMatch}     # required
+         TextTransformations:                # required, list of TextTransformation
+         	- ${3:TextTransformation}
+"""

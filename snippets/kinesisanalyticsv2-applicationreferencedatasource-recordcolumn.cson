@@ -1,0 +1,8 @@
+'.source.yaml':
+  'kinesisanalyticsv2-applicationreferencedatasource-recordcolumn':
+      'prefix': 'kinesisanalyticsv2-applicationreferencedatasource-recordcolumn'
+      'body':"""
+         Mapping: ${2:String}     # optional
+         Name: ${3:String}     # required
+         SqlType: ${4:String}     # required
+"""

@@ -1,0 +1,16 @@
+'.source.yaml':
+  'orcserde':
+      'prefix': 'orcserde'
+      'body':"""
+         BlockSizeBytes: ${2:Integer}     # optional
+         BloomFilterColumns:                # optional, list of String
+         	- ${3:String}
+         BloomFilterFalsePositiveProbability: ${4:Double}     # optional
+         Compression: ${5:String}     # optional
+         DictionaryKeyThreshold: ${6:Double}     # optional
+         EnablePadding: ${7:Boolean}     # optional
+         FormatVersion: ${8:String}     # optional
+         PaddingTolerance: ${9:Double}     # optional
+         RowIndexStride: ${10:Integer}     # optional
+         StripeSizeBytes: ${11:Integer}     # optional
+"""

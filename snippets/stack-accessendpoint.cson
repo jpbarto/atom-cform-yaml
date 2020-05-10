@@ -1,0 +1,7 @@
+'.source.yaml':
+  'stack-accessendpoint':
+      'prefix': 'stack-accessendpoint'
+      'body':"""
+         EndpointType: ${2:String}     # required
+         VpceId: ${3:String}     # required
+"""

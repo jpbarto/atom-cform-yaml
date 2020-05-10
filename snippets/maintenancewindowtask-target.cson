@@ -1,0 +1,8 @@
+'.source.yaml':
+  'maintenancewindowtask-target':
+      'prefix': 'maintenancewindowtask-target'
+      'body':"""
+         Key: ${2:String}     # required
+         Values:                # optional, list of String
+         	- ${3:String}
+"""

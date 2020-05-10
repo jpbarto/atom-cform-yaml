@@ -6,5 +6,10 @@
          	Type: AWS::StepFunctions::StateMachine
          	Properties:
          		DefinitionString: ${2:String}     # required
-         		RoleArn: ${3:String}     # required
+         		LoggingConfiguration: ${3:LoggingConfiguration}     # optional
+         		RoleArn: ${4:String}     # required
+         		StateMachineName: ${5:String}     # optional
+         		StateMachineType: ${6:String}     # optional
+         		Tags:                # optional, list of TagsEntry
+         			- ${7:TagsEntry}
 """

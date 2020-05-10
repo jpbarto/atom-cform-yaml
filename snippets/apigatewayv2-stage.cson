@@ -1,0 +1,19 @@
+'.source.yaml':
+  'apigatewayv2-stage':
+      'prefix': 'apigatewayv2-stage'
+      'body':"""
+         ${1:apigatewayv2-stage_name}:
+         	Type: AWS::ApiGatewayV2::Stage
+         	Properties:
+         		AccessLogSettings: ${2:AccessLogSettings}     # optional
+         		ApiId: ${3:String}     # required
+         		AutoDeploy: ${4:Boolean}     # optional
+         		ClientCertificateId: ${5:String}     # optional
+         		DefaultRouteSettings: ${6:RouteSettings}     # optional
+         		DeploymentId: ${7:String}     # optional
+         		Description: ${8:String}     # optional
+         		RouteSettings: ${9:Json}     # optional
+         		StageName: ${10:String}     # required
+         		StageVariables: ${11:Json}     # optional
+         		Tags: ${12:Json}     # optional
+"""

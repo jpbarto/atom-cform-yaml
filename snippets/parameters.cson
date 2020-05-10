@@ -1,0 +1,6 @@
+'.source.yaml':
+  'parameters':
+      'prefix': 'parameters'
+      'body':"""
+         ExcludeBootVolume: ${2:Boolean}     # optional
+"""

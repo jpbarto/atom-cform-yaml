@@ -1,0 +1,7 @@
+'.source.yaml':
+  'capacityreservationspecification':
+      'prefix': 'capacityreservationspecification'
+      'body':"""
+         CapacityReservationPreference: ${2:String}     # optional
+         CapacityReservationTarget: ${3:CapacityReservationTarget}     # optional
+"""

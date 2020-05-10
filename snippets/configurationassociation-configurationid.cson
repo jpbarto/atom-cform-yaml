@@ -1,0 +1,7 @@
+'.source.yaml':
+  'configurationassociation-configurationid':
+      'prefix': 'configurationassociation-configurationid'
+      'body':"""
+         Id: ${2:String}     # required
+         Revision: ${3:Integer}     # required
+"""

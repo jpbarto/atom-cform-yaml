@@ -1,0 +1,15 @@
+'.source.yaml':
+  'conformancepack':
+      'prefix': 'conformancepack'
+      'body':"""
+         ${1:conformancepack_name}:
+         	Type: AWS::Config::ConformancePack
+         	Properties:
+         		ConformancePackInputParameters:                # optional, list of ConformancePackInputParameter
+         			- ${2:ConformancePackInputParameter}
+         		ConformancePackName: ${3:String}     # required
+         		DeliveryS3Bucket: ${4:String}     # required
+         		DeliveryS3KeyPrefix: ${5:String}     # optional
+         		TemplateBody: ${6:String}     # optional
+         		TemplateS3Uri: ${7:String}     # optional
+"""

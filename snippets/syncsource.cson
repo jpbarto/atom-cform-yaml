@@ -1,0 +1,10 @@
+'.source.yaml':
+  'syncsource':
+      'prefix': 'syncsource'
+      'body':"""
+         AwsOrganizationsSource: ${2:AwsOrganizationsSource}     # optional
+         IncludeFutureRegions: ${3:Boolean}     # optional
+         SourceRegions:                # required, list of String
+         	- ${4:String}
+         SourceType: ${5:String}     # required
+"""

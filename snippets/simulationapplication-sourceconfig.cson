@@ -1,0 +1,8 @@
+'.source.yaml':
+  'simulationapplication-sourceconfig':
+      'prefix': 'simulationapplication-sourceconfig'
+      'body':"""
+         Architecture: ${2:String}     # required
+         S3Bucket: ${3:String}     # required
+         S3Key: ${4:String}     # required
+"""

@@ -1,0 +1,14 @@
+'.source.yaml':
+  'identity':
+      'prefix': 'identity'
+      'body':"""
+         ${1:identity_name}:
+         	Type: AWS::PinpointEmail::Identity
+         	Properties:
+         		DkimSigningEnabled: ${2:Boolean}     # optional
+         		FeedbackForwardingEnabled: ${3:Boolean}     # optional
+         		MailFromAttributes: ${4:MailFromAttributes}     # optional
+         		Name: ${5:String}     # required
+         		Tags:                # optional, list of Tags
+         			- ${6:Tags}
+"""

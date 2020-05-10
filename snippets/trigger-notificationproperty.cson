@@ -1,0 +1,6 @@
+'.source.yaml':
+  'trigger-notificationproperty':
+      'prefix': 'trigger-notificationproperty'
+      'body':"""
+         NotifyDelayAfter: ${2:Integer}     # optional
+"""

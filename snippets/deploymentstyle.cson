@@ -1,0 +1,7 @@
+'.source.yaml':
+  'deploymentstyle':
+      'prefix': 'deploymentstyle'
+      'body':"""
+         DeploymentOption: ${2:String}     # optional
+         DeploymentType: ${3:String}     # optional
+"""

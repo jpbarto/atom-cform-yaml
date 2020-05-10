@@ -1,0 +1,7 @@
+'.source.yaml':
+  'pipelineconfig':
+      'prefix': 'pipelineconfig'
+      'body':"""
+         Functions:                # optional, list of String
+         	- ${2:String}
+"""

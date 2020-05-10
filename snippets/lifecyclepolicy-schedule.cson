@@ -1,0 +1,16 @@
+'.source.yaml':
+  'lifecyclepolicy-schedule':
+      'prefix': 'lifecyclepolicy-schedule'
+      'body':"""
+         CopyTags: ${2:Boolean}     # optional
+         CreateRule: ${3:CreateRule}     # optional
+         CrossRegionCopyRules:                # optional, list of CrossRegionCopyRule
+         	- ${4:CrossRegionCopyRule}
+         FastRestoreRule: ${5:FastRestoreRule}     # optional
+         Name: ${6:String}     # optional
+         RetainRule: ${7:RetainRule}     # optional
+         TagsToAdd:                # optional, list of Tag
+         	- ${8:Tag}
+         VariableTags:                # optional, list of Tag
+         	- ${9:Tag}
+"""

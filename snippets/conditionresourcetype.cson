@@ -1,0 +1,8 @@
+'.source.yaml':
+  'conditionresourcetype':
+      'prefix': 'conditionresourcetype'
+      'body':"""
+         ConditionKey: ${2:String}     # required
+         ConditionType: ${3:String}     # required
+         ConditionValue: ${4:String}     # required
+"""

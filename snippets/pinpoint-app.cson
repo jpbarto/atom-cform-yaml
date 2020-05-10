@@ -1,0 +1,10 @@
+'.source.yaml':
+  'pinpoint-app':
+      'prefix': 'pinpoint-app'
+      'body':"""
+         ${1:pinpoint-app_name}:
+         	Type: AWS::Pinpoint::App
+         	Properties:
+         		Name: ${2:String}     # required
+         		Tags: ${3:Json}     # optional
+"""

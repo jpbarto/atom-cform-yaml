@@ -1,0 +1,10 @@
+'.source.yaml':
+  'codestarconnections-connection':
+      'prefix': 'codestarconnections-connection'
+      'body':"""
+         ${1:codestarconnections-connection_name}:
+         	Type: AWS::CodeStarConnections::Connection
+         	Properties:
+         		ConnectionName: ${2:String}     # required
+         		ProviderType: ${3:String}     # required
+"""

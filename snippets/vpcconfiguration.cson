@@ -1,0 +1,6 @@
+'.source.yaml':
+  'vpcconfiguration':
+      'prefix': 'vpcconfiguration'
+      'body':"""
+         VpcId: ${2:String}     # optional
+"""

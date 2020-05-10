@@ -1,0 +1,8 @@
+'.source.yaml':
+  'anomalydetector-configuration':
+      'prefix': 'anomalydetector-configuration'
+      'body':"""
+         ExcludedTimeRanges:                # optional, list of Range
+         	- ${2:Range}
+         MetricTimeZone: ${3:String}     # optional
+"""

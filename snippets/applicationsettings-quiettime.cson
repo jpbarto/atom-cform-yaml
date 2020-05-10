@@ -1,0 +1,7 @@
+'.source.yaml':
+  'applicationsettings-quiettime':
+      'prefix': 'applicationsettings-quiettime'
+      'body':"""
+         End: ${2:String}     # required
+         Start: ${3:String}     # required
+"""

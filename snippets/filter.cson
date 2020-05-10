@@ -1,0 +1,14 @@
+'.source.yaml':
+  'filter':
+      'prefix': 'filter'
+      'body':"""
+         ${1:filter_name}:
+         	Type: AWS::GuardDuty::Filter
+         	Properties:
+         		Action: ${2:String}     # required
+         		Description: ${3:String}     # required
+         		DetectorId: ${4:String}     # required
+         		FindingCriteria: ${5:FindingCriteria}     # required
+         		Name: ${6:String}     # required
+         		Rank: ${7:Integer}     # required
+"""

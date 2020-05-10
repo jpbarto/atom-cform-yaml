@@ -1,0 +1,12 @@
+'.source.yaml':
+  'memberinvitation':
+      'prefix': 'memberinvitation'
+      'body':"""
+         ${1:memberinvitation_name}:
+         	Type: AWS::Detective::MemberInvitation
+         	Properties:
+         		GraphArn: ${2:String}     # required
+         		MemberEmailAddress: ${3:String}     # required
+         		MemberId: ${4:String}     # required
+         		Message: ${5:String}     # optional
+"""

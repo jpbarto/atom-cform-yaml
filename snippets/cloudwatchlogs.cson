@@ -1,0 +1,7 @@
+'.source.yaml':
+  'cloudwatchlogs':
+      'prefix': 'cloudwatchlogs'
+      'body':"""
+         Enabled: ${2:Boolean}     # required
+         LogGroup: ${3:String}     # optional
+"""

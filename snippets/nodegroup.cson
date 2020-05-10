@@ -1,0 +1,24 @@
+'.source.yaml':
+  'nodegroup':
+      'prefix': 'nodegroup'
+      'body':"""
+         ${1:nodegroup_name}:
+         	Type: AWS::EKS::Nodegroup
+         	Properties:
+         		AmiType: ${2:String}     # optional
+         		ClusterName: ${3:String}     # required
+         		DiskSize: ${4:Double}     # optional
+         		ForceUpdateEnabled: ${5:Boolean}     # optional
+         		InstanceTypes:                # optional, list of String
+         			- ${6:String}
+         		Labels: ${7:Json}     # optional
+         		NodeRole: ${8:String}     # required
+         		NodegroupName: ${9:String}     # optional
+         		ReleaseVersion: ${10:String}     # optional
+         		RemoteAccess: ${11:RemoteAccess}     # optional
+         		ScalingConfig: ${12:ScalingConfig}     # optional
+         		Subnets:                # required, list of String
+         			- ${13:String}
+         		Tags: ${14:Json}     # optional
+         		Version: ${15:String}     # optional
+"""

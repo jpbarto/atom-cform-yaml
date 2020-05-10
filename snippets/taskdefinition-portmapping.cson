@@ -1,0 +1,8 @@
+'.source.yaml':
+  'taskdefinition-portmapping':
+      'prefix': 'taskdefinition-portmapping'
+      'body':"""
+         ContainerPort: ${2:Integer}     # optional
+         HostPort: ${3:Integer}     # optional
+         Protocol: ${4:String}     # optional
+"""

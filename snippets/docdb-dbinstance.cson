@@ -1,0 +1,16 @@
+'.source.yaml':
+  'docdb-dbinstance':
+      'prefix': 'docdb-dbinstance'
+      'body':"""
+         ${1:docdb-dbinstance_name}:
+         	Type: AWS::DocDB::DBInstance
+         	Properties:
+         		AutoMinorVersionUpgrade: ${2:Boolean}     # optional
+         		AvailabilityZone: ${3:String}     # optional
+         		DBClusterIdentifier: ${4:String}     # required
+         		DBInstanceClass: ${5:String}     # required
+         		DBInstanceIdentifier: ${6:String}     # optional
+         		PreferredMaintenanceWindow: ${7:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${8:Tag}
+"""

@@ -5,29 +5,36 @@
          ${1:autoscalinggroup_name}:
          	Type: AWS::AutoScaling::AutoScalingGroup
          	Properties:
+         		AutoScalingGroupName: ${2:String}     # optional
          		AvailabilityZones:                # optional, list of String
-         			- ${2:String}
-         		Cooldown: ${3:String}     # optional
-         		DesiredCapacity: ${4:String}     # optional
-         		HealthCheckGracePeriod: ${5:Integer}     # optional
-         		HealthCheckType: ${6:String}     # optional
-         		InstanceId: ${7:String}     # optional
-         		LaunchConfigurationName: ${8:String}     # optional
+         			- ${3:String}
+         		Cooldown: ${4:String}     # optional
+         		DesiredCapacity: ${5:String}     # optional
+         		HealthCheckGracePeriod: ${6:Integer}     # optional
+         		HealthCheckType: ${7:String}     # optional
+         		InstanceId: ${8:String}     # optional
+         		LaunchConfigurationName: ${9:String}     # optional
+         		LaunchTemplate: ${10:LaunchTemplateSpecification}     # optional
+         		LifecycleHookSpecificationList:                # optional, list of LifecycleHookSpecification
+         			- ${11:LifecycleHookSpecification}
          		LoadBalancerNames:                # optional, list of String
-         			- ${9:String}
-         		MaxSize: ${10:String}     # required
+         			- ${12:String}
+         		MaxInstanceLifetime: ${13:Integer}     # optional
+         		MaxSize: ${14:String}     # required
          		MetricsCollection:                # optional, list of MetricsCollection
-         			- ${11:MetricsCollection}
-         		MinSize: ${12:String}     # required
+         			- ${15:MetricsCollection}
+         		MinSize: ${16:String}     # required
+         		MixedInstancesPolicy: ${17:MixedInstancesPolicy}     # optional
          		NotificationConfigurations:                # optional, list of NotificationConfiguration
-         			- ${13:NotificationConfiguration}
-         		PlacementGroup: ${14:String}     # optional
+         			- ${18:NotificationConfiguration}
+         		PlacementGroup: ${19:String}     # optional
+         		ServiceLinkedRoleARN: ${20:String}     # optional
          		Tags:                # optional, list of TagProperty
-         			- ${15:TagProperty}
+         			- ${21:TagProperty}
          		TargetGroupARNs:                # optional, list of String
-         			- ${16:String}
+         			- ${22:String}
          		TerminationPolicies:                # optional, list of String
-         			- ${17:String}
+         			- ${23:String}
          		VPCZoneIdentifier:                # optional, list of String
-         			- ${18:String}
+         			- ${24:String}
 """

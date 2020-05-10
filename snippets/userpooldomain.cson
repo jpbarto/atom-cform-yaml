@@ -1,0 +1,11 @@
+'.source.yaml':
+  'userpooldomain':
+      'prefix': 'userpooldomain'
+      'body':"""
+         ${1:userpooldomain_name}:
+         	Type: AWS::Cognito::UserPoolDomain
+         	Properties:
+         		CustomDomainConfig: ${2:CustomDomainConfigType}     # optional
+         		Domain: ${3:String}     # required
+         		UserPoolId: ${4:String}     # required
+"""

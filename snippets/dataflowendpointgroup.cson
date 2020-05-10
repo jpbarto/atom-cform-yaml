@@ -1,0 +1,12 @@
+'.source.yaml':
+  'dataflowendpointgroup':
+      'prefix': 'dataflowendpointgroup'
+      'body':"""
+         ${1:dataflowendpointgroup_name}:
+         	Type: AWS::GroundStation::DataflowEndpointGroup
+         	Properties:
+         		EndpointDetails:                # required, list of EndpointDetails
+         			- ${2:EndpointDetails}
+         		Tags:                # optional, list of Tag
+         			- ${3:Tag}
+"""

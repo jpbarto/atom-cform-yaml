@@ -1,0 +1,7 @@
+'.source.yaml':
+  'webhookfilterrule':
+      'prefix': 'webhookfilterrule'
+      'body':"""
+         JsonPath: ${2:String}     # required
+         MatchEquals: ${3:String}     # optional
+"""

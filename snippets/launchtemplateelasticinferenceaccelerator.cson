@@ -1,0 +1,7 @@
+'.source.yaml':
+  'launchtemplateelasticinferenceaccelerator':
+      'prefix': 'launchtemplateelasticinferenceaccelerator'
+      'body':"""
+         Count: ${2:Integer}     # optional
+         Type: ${3:String}     # optional
+"""

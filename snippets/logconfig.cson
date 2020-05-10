@@ -1,0 +1,8 @@
+'.source.yaml':
+  'logconfig':
+      'prefix': 'logconfig'
+      'body':"""
+         CloudWatchLogsRoleArn: ${2:String}     # optional
+         ExcludeVerboseContent: ${3:Boolean}     # optional
+         FieldLogLevel: ${4:String}     # optional
+"""

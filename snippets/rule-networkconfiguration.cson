@@ -1,0 +1,6 @@
+'.source.yaml':
+  'rule-networkconfiguration':
+      'prefix': 'rule-networkconfiguration'
+      'body':"""
+         AwsVpcConfiguration: ${2:AwsVpcConfiguration}     # optional
+"""

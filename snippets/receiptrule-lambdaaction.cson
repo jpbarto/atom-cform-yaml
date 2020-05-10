@@ -1,0 +1,8 @@
+'.source.yaml':
+  'receiptrule-lambdaaction':
+      'prefix': 'receiptrule-lambdaaction'
+      'body':"""
+         FunctionArn: ${2:String}     # required
+         InvocationType: ${3:String}     # optional
+         TopicArn: ${4:String}     # optional
+"""

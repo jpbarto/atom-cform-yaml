@@ -1,0 +1,8 @@
+'.source.yaml':
+  'origingroups':
+      'prefix': 'origingroups'
+      'body':"""
+         Items:                # optional, list of OriginGroup
+         	- ${2:OriginGroup}
+         Quantity: ${3:Integer}     # required
+"""

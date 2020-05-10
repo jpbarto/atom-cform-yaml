@@ -5,14 +5,15 @@
          ${1:userpooluser_name}:
          	Type: AWS::Cognito::UserPoolUser
          	Properties:
+         		ClientMetadata: ${2:Json}     # optional
          		DesiredDeliveryMediums:                # optional, list of String
-         			- ${2:String}
-         		ForceAliasCreation: ${3:Boolean}     # optional
-         		MessageAction: ${4:String}     # optional
+         			- ${3:String}
+         		ForceAliasCreation: ${4:Boolean}     # optional
+         		MessageAction: ${5:String}     # optional
          		UserAttributes:                # optional, list of AttributeType
-         			- ${5:AttributeType}
-         		UserPoolId: ${6:String}     # required
-         		Username: ${7:String}     # optional
+         			- ${6:AttributeType}
+         		UserPoolId: ${7:String}     # required
+         		Username: ${8:String}     # optional
          		ValidationData:                # optional, list of AttributeType
-         			- ${8:AttributeType}
+         			- ${9:AttributeType}
 """

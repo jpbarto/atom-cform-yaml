@@ -1,0 +1,7 @@
+'.source.yaml':
+  'encryptionintransit':
+      'prefix': 'encryptionintransit'
+      'body':"""
+         ClientBroker: ${2:String}     # optional
+         InCluster: ${3:Boolean}     # optional
+"""

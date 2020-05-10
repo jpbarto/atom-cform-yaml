@@ -1,0 +1,21 @@
+'.source.yaml':
+  'ec2fleet':
+      'prefix': 'ec2fleet'
+      'body':"""
+         ${1:ec2fleet_name}:
+         	Type: AWS::EC2::EC2Fleet
+         	Properties:
+         		ExcessCapacityTerminationPolicy: ${2:String}     # optional
+         		LaunchTemplateConfigs:                # required, list of FleetLaunchTemplateConfigRequest
+         			- ${3:FleetLaunchTemplateConfigRequest}
+         		OnDemandOptions: ${4:OnDemandOptionsRequest}     # optional
+         		ReplaceUnhealthyInstances: ${5:Boolean}     # optional
+         		SpotOptions: ${6:SpotOptionsRequest}     # optional
+         		TagSpecifications:                # optional, list of TagSpecification
+         			- ${7:TagSpecification}
+         		TargetCapacitySpecification: ${8:TargetCapacitySpecificationRequest}     # required
+         		TerminateInstancesWithExpiration: ${9:Boolean}     # optional
+         		Type: ${10:String}     # optional
+         		ValidFrom: ${11:String}     # optional
+         		ValidUntil: ${12:String}     # optional
+"""

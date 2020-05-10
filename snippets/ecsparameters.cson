@@ -1,0 +1,11 @@
+'.source.yaml':
+  'ecsparameters':
+      'prefix': 'ecsparameters'
+      'body':"""
+         Group: ${2:String}     # optional
+         LaunchType: ${3:String}     # optional
+         NetworkConfiguration: ${4:NetworkConfiguration}     # optional
+         PlatformVersion: ${5:String}     # optional
+         TaskCount: ${6:Integer}     # optional
+         TaskDefinitionArn: ${7:String}     # required
+"""

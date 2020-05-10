@@ -1,0 +1,11 @@
+'.source.yaml':
+  'rotationschedule':
+      'prefix': 'rotationschedule'
+      'body':"""
+         ${1:rotationschedule_name}:
+         	Type: AWS::SecretsManager::RotationSchedule
+         	Properties:
+         		RotationLambdaARN: ${2:String}     # optional
+         		RotationRules: ${3:RotationRules}     # optional
+         		SecretId: ${4:String}     # required
+"""

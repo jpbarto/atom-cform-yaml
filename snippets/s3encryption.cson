@@ -1,0 +1,7 @@
+'.source.yaml':
+  's3encryption':
+      'prefix': 's3encryption'
+      'body':"""
+         KmsKeyArn: ${2:String}     # optional
+         S3EncryptionMode: ${3:String}     # optional
+"""

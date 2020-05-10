@@ -1,0 +1,28 @@
+'.source.yaml':
+  'broker':
+      'prefix': 'broker'
+      'body':"""
+         ${1:broker_name}:
+         	Type: AWS::AmazonMQ::Broker
+         	Properties:
+         		AutoMinorVersionUpgrade: ${2:Boolean}     # required
+         		BrokerName: ${3:String}     # required
+         		Configuration: ${4:ConfigurationId}     # optional
+         		DeploymentMode: ${5:String}     # required
+         		EncryptionOptions: ${6:EncryptionOptions}     # optional
+         		EngineType: ${7:String}     # required
+         		EngineVersion: ${8:String}     # required
+         		HostInstanceType: ${9:String}     # required
+         		Logs: ${10:LogList}     # optional
+         		MaintenanceWindowStartTime: ${11:MaintenanceWindow}     # optional
+         		PubliclyAccessible: ${12:Boolean}     # required
+         		SecurityGroups:                # optional, list of String
+         			- ${13:String}
+         		StorageType: ${14:String}     # optional
+         		SubnetIds:                # optional, list of String
+         			- ${15:String}
+         		Tags:                # optional, list of TagsEntry
+         			- ${16:TagsEntry}
+         		Users:                # required, list of User
+         			- ${17:User}
+"""

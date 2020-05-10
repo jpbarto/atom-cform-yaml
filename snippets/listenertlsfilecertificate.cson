@@ -1,0 +1,7 @@
+'.source.yaml':
+  'listenertlsfilecertificate':
+      'prefix': 'listenertlsfilecertificate'
+      'body':"""
+         CertificateChain: ${2:String}     # required
+         PrivateKey: ${3:String}     # required
+"""

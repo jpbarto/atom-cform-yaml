@@ -1,0 +1,6 @@
+'.source.yaml':
+  'eventinvokeconfig-onfailure':
+      'prefix': 'eventinvokeconfig-onfailure'
+      'body':"""
+         Destination: ${2:String}     # required
+"""

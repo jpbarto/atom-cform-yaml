@@ -1,0 +1,6 @@
+'.source.yaml':
+  'accesslog':
+      'prefix': 'accesslog'
+      'body':"""
+         File: ${2:FileAccessLog}     # optional
+"""

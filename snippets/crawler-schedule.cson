@@ -1,0 +1,6 @@
+'.source.yaml':
+  'crawler-schedule':
+      'prefix': 'crawler-schedule'
+      'body':"""
+         ScheduleExpression: ${2:String}     # optional
+"""

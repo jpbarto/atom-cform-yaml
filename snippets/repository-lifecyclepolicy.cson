@@ -1,0 +1,7 @@
+'.source.yaml':
+  'repository-lifecyclepolicy':
+      'prefix': 'repository-lifecyclepolicy'
+      'body':"""
+         LifecyclePolicyText: ${2:String}     # optional
+         RegistryId: ${3:String}     # optional
+"""

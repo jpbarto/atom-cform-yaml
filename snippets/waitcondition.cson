@@ -6,6 +6,6 @@
          	Type: AWS::CloudFormation::WaitCondition
          	Properties:
          		Count: ${2:Integer}     # optional
-         		Handle: ${3:String}     # required
-         		Timeout: ${4:String}     # required
+         		Handle: ${3:String}     # optional
+         		Timeout: ${4:String}     # optional
 """

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'applicationcodeconfiguration':
+      'prefix': 'applicationcodeconfiguration'
+      'body':"""
+         CodeContent: ${2:CodeContent}     # required
+         CodeContentType: ${3:String}     # required
+"""

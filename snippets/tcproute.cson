@@ -1,0 +1,6 @@
+'.source.yaml':
+  'tcproute':
+      'prefix': 'tcproute'
+      'body':"""
+         Action: ${2:TcpRouteAction}     # required
+"""

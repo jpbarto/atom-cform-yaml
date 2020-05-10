@@ -1,0 +1,11 @@
+'.source.yaml':
+  'lakeformation-resource':
+      'prefix': 'lakeformation-resource'
+      'body':"""
+         ${1:lakeformation-resource_name}:
+         	Type: AWS::LakeFormation::Resource
+         	Properties:
+         		ResourceArn: ${2:String}     # required
+         		RoleArn: ${3:String}     # optional
+         		UseServiceLinkedRole: ${4:Boolean}     # required
+"""

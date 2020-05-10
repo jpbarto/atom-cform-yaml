@@ -1,0 +1,11 @@
+'.source.yaml':
+  'servicelinkedrole':
+      'prefix': 'servicelinkedrole'
+      'body':"""
+         ${1:servicelinkedrole_name}:
+         	Type: AWS::IAM::ServiceLinkedRole
+         	Properties:
+         		AWSServiceName: ${2:String}     # required
+         		CustomSuffix: ${3:String}     # optional
+         		Description: ${4:String}     # optional
+"""

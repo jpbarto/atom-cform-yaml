@@ -1,0 +1,8 @@
+'.source.yaml':
+  'archiverule':
+      'prefix': 'archiverule'
+      'body':"""
+         Filter:                # required, list of Filter
+         	- ${2:Filter}
+         RuleName: ${3:String}     # required
+"""

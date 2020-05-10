@@ -1,0 +1,8 @@
+'.source.yaml':
+  'rulegroupreferencestatement':
+      'prefix': 'rulegroupreferencestatement'
+      'body':"""
+         Arn: ${2:String}     # required
+         ExcludedRules:                # optional, list of ExcludedRule
+         	- ${3:ExcludedRule}
+"""

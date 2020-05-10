@@ -10,4 +10,7 @@
          		Enabled: ${4:Boolean}     # optional
          		KeyPolicy: ${5:Json}     # required
          		KeyUsage: ${6:String}     # optional
+         		PendingWindowInDays: ${7:Integer}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${8:Tag}
 """

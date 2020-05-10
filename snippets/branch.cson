@@ -1,0 +1,21 @@
+'.source.yaml':
+  'branch':
+      'prefix': 'branch'
+      'body':"""
+         ${1:branch_name}:
+         	Type: AWS::Amplify::Branch
+         	Properties:
+         		AppId: ${2:String}     # required
+         		BasicAuthConfig: ${3:BasicAuthConfig}     # optional
+         		BranchName: ${4:String}     # required
+         		BuildSpec: ${5:String}     # optional
+         		Description: ${6:String}     # optional
+         		EnableAutoBuild: ${7:Boolean}     # optional
+         		EnablePullRequestPreview: ${8:Boolean}     # optional
+         		EnvironmentVariables:                # optional, list of EnvironmentVariable
+         			- ${9:EnvironmentVariable}
+         		PullRequestEnvironmentName: ${10:String}     # optional
+         		Stage: ${11:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${12:Tag}
+"""

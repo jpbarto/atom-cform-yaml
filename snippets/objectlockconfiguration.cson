@@ -1,0 +1,7 @@
+'.source.yaml':
+  'objectlockconfiguration':
+      'prefix': 'objectlockconfiguration'
+      'body':"""
+         ObjectLockEnabled: ${2:String}     # optional
+         Rule: ${3:ObjectLockRule}     # optional
+"""

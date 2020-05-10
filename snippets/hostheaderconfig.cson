@@ -1,0 +1,7 @@
+'.source.yaml':
+  'hostheaderconfig':
+      'prefix': 'hostheaderconfig'
+      'body':"""
+         Values:                # optional, list of String
+         	- ${2:String}
+"""

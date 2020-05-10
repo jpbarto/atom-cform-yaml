@@ -1,0 +1,11 @@
+'.source.yaml':
+  'subscriptiondefinition':
+      'prefix': 'subscriptiondefinition'
+      'body':"""
+         ${1:subscriptiondefinition_name}:
+         	Type: AWS::Greengrass::SubscriptionDefinition
+         	Properties:
+         		InitialVersion: ${2:SubscriptionDefinitionVersion}     # optional
+         		Name: ${3:String}     # required
+         		Tags: ${4:Json}     # optional
+"""

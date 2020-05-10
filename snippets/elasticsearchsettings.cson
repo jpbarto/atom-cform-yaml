@@ -1,0 +1,9 @@
+'.source.yaml':
+  'elasticsearchsettings':
+      'prefix': 'elasticsearchsettings'
+      'body':"""
+         EndpointUri: ${2:String}     # optional
+         ErrorRetryDuration: ${3:Integer}     # optional
+         FullLoadErrorPercentage: ${4:Integer}     # optional
+         ServiceAccessRoleArn: ${5:String}     # optional
+"""

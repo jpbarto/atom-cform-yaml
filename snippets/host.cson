@@ -7,5 +7,6 @@
          	Properties:
          		AutoPlacement: ${2:String}     # optional
          		AvailabilityZone: ${3:String}     # required
-         		InstanceType: ${4:String}     # required
+         		HostRecovery: ${4:String}     # optional
+         		InstanceType: ${5:String}     # required
 """

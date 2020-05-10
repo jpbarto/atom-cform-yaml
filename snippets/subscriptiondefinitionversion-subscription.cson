@@ -1,0 +1,9 @@
+'.source.yaml':
+  'subscriptiondefinitionversion-subscription':
+      'prefix': 'subscriptiondefinitionversion-subscription'
+      'body':"""
+         Id: ${2:String}     # required
+         Source: ${3:String}     # required
+         Subject: ${4:String}     # required
+         Target: ${5:String}     # required
+"""

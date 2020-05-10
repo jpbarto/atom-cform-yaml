@@ -6,8 +6,14 @@
          	Type: AWS::EC2::VPCEndpoint
          	Properties:
          		PolicyDocument: ${2:Json}     # optional
+         		PrivateDnsEnabled: ${3:Boolean}     # optional
          		RouteTableIds:                # optional, list of String
-         			- ${3:String}
-         		ServiceName: ${4:String}     # required
-         		VpcId: ${5:String}     # required
+         			- ${4:String}
+         		SecurityGroupIds:                # optional, list of String
+         			- ${5:String}
+         		ServiceName: ${6:String}     # required
+         		SubnetIds:                # optional, list of String
+         			- ${7:String}
+         		VpcEndpointType: ${8:String}     # optional
+         		VpcId: ${9:String}     # required
 """

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'launchtemplate-cpuoptions':
+      'prefix': 'launchtemplate-cpuoptions'
+      'body':"""
+         CoreCount: ${2:Integer}     # optional
+         ThreadsPerCore: ${3:Integer}     # optional
+"""

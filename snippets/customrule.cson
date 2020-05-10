@@ -1,0 +1,9 @@
+'.source.yaml':
+  'customrule':
+      'prefix': 'customrule'
+      'body':"""
+         Condition: ${2:String}     # optional
+         Source: ${3:String}     # required
+         Status: ${4:String}     # optional
+         Target: ${5:String}     # required
+"""

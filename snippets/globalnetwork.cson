@@ -1,0 +1,11 @@
+'.source.yaml':
+  'globalnetwork':
+      'prefix': 'globalnetwork'
+      'body':"""
+         ${1:globalnetwork_name}:
+         	Type: AWS::NetworkManager::GlobalNetwork
+         	Properties:
+         		Description: ${2:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${3:Tag}
+"""

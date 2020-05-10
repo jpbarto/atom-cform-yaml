@@ -8,7 +8,10 @@
          		BundleId: ${2:String}     # required
          		DirectoryId: ${3:String}     # required
          		RootVolumeEncryptionEnabled: ${4:Boolean}     # optional
-         		UserName: ${5:String}     # required
-         		UserVolumeEncryptionEnabled: ${6:Boolean}     # optional
-         		VolumeEncryptionKey: ${7:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${5:Tag}
+         		UserName: ${6:String}     # required
+         		UserVolumeEncryptionEnabled: ${7:Boolean}     # optional
+         		VolumeEncryptionKey: ${8:String}     # optional
+         		WorkspaceProperties: ${9:WorkspaceProperties}     # optional
 """

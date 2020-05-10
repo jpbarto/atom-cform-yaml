@@ -1,0 +1,10 @@
+'.source.yaml':
+  'datacatalogencryptionsettings':
+      'prefix': 'datacatalogencryptionsettings'
+      'body':"""
+         ${1:datacatalogencryptionsettings_name}:
+         	Type: AWS::Glue::DataCatalogEncryptionSettings
+         	Properties:
+         		CatalogId: ${2:String}     # required
+         		DataCatalogEncryptionSettings: ${3:DataCatalogEncryptionSettings}     # required
+"""

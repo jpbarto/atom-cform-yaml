@@ -1,0 +1,8 @@
+'.source.yaml':
+  'detectormodeldefinition':
+      'prefix': 'detectormodeldefinition'
+      'body':"""
+         InitialStateName: ${2:String}     # optional
+         States:                # optional, list of State
+         	- ${3:State}
+"""

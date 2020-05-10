@@ -1,0 +1,7 @@
+'.source.yaml':
+  'workgroup-tags':
+      'prefix': 'workgroup-tags'
+      'body':"""
+         Tags:                # optional, list of Tag
+         	- ${2:Tag}
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'topicrule-assetpropertytimestamp':
+      'prefix': 'topicrule-assetpropertytimestamp'
+      'body':"""
+         OffsetInNanos: ${2:String}     # optional
+         TimeInSeconds: ${3:String}     # required
+"""

@@ -1,0 +1,7 @@
+'.source.yaml':
+  'scte20sourcesettings':
+      'prefix': 'scte20sourcesettings'
+      'body':"""
+         Convert608To708: ${2:String}     # optional
+         Source608ChannelNumber: ${3:Integer}     # optional
+"""

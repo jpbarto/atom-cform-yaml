@@ -1,0 +1,7 @@
+'.source.yaml':
+  'clusteringkeycolumn':
+      'prefix': 'clusteringkeycolumn'
+      'body':"""
+         Column: ${2:Column}     # required
+         OrderBy: ${3:String}     # optional
+"""

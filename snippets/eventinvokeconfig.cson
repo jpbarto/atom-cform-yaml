@@ -1,0 +1,13 @@
+'.source.yaml':
+  'eventinvokeconfig':
+      'prefix': 'eventinvokeconfig'
+      'body':"""
+         ${1:eventinvokeconfig_name}:
+         	Type: AWS::Lambda::EventInvokeConfig
+         	Properties:
+         		DestinationConfig: ${2:DestinationConfig}     # optional
+         		FunctionName: ${3:String}     # required
+         		MaximumEventAgeInSeconds: ${4:Integer}     # optional
+         		MaximumRetryAttempts: ${5:Integer}     # optional
+         		Qualifier: ${6:String}     # required
+"""

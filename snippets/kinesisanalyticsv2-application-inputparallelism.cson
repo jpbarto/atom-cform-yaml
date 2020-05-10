@@ -1,0 +1,6 @@
+'.source.yaml':
+  'kinesisanalyticsv2-application-inputparallelism':
+      'prefix': 'kinesisanalyticsv2-application-inputparallelism'
+      'body':"""
+         Count: ${2:Integer}     # optional
+"""

@@ -6,4 +6,5 @@
          	Type: AWS::CodeDeploy::Application
          	Properties:
          		ApplicationName: ${2:String}     # optional
+         		ComputePlatform: ${3:String}     # optional
 """

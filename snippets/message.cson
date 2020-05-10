@@ -1,0 +1,17 @@
+'.source.yaml':
+  'message':
+      'prefix': 'message'
+      'body':"""
+         Action: ${2:String}     # optional
+         Body: ${3:String}     # optional
+         ImageIconUrl: ${4:String}     # optional
+         ImageSmallIconUrl: ${5:String}     # optional
+         ImageUrl: ${6:String}     # optional
+         JsonBody: ${7:String}     # optional
+         MediaUrl: ${8:String}     # optional
+         RawContent: ${9:String}     # optional
+         SilentPush: ${10:Boolean}     # optional
+         TimeToLive: ${11:Integer}     # optional
+         Title: ${12:String}     # optional
+         Url: ${13:String}     # optional
+"""

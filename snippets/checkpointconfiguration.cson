@@ -1,0 +1,9 @@
+'.source.yaml':
+  'checkpointconfiguration':
+      'prefix': 'checkpointconfiguration'
+      'body':"""
+         CheckpointInterval: ${2:Integer}     # optional
+         CheckpointingEnabled: ${3:Boolean}     # optional
+         ConfigurationType: ${4:String}     # required
+         MinPauseBetweenCheckpoints: ${5:Integer}     # optional
+"""

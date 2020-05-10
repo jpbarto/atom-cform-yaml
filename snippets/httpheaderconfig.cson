@@ -1,0 +1,8 @@
+'.source.yaml':
+  'httpheaderconfig':
+      'prefix': 'httpheaderconfig'
+      'body':"""
+         HttpHeaderName: ${2:String}     # optional
+         Values:                # optional, list of String
+         	- ${3:String}
+"""

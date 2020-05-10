@@ -7,16 +7,21 @@
          	Properties:
          		AlarmConfiguration: ${2:AlarmConfiguration}     # optional
          		ApplicationName: ${3:String}     # required
+         		AutoRollbackConfiguration: ${4:AutoRollbackConfiguration}     # optional
          		AutoScalingGroups:                # optional, list of String
-         			- ${4:String}
-         		Deployment: ${5:Deployment}     # optional
-         		DeploymentConfigName: ${6:String}     # optional
-         		DeploymentGroupName: ${7:String}     # optional
+         			- ${5:String}
+         		Deployment: ${6:Deployment}     # optional
+         		DeploymentConfigName: ${7:String}     # optional
+         		DeploymentGroupName: ${8:String}     # optional
+         		DeploymentStyle: ${9:DeploymentStyle}     # optional
          		Ec2TagFilters:                # optional, list of EC2TagFilter
-         			- ${8:EC2TagFilter}
+         			- ${10:EC2TagFilter}
+         		Ec2TagSet: ${11:EC2TagSet}     # optional
+         		LoadBalancerInfo: ${12:LoadBalancerInfo}     # optional
          		OnPremisesInstanceTagFilters:                # optional, list of TagFilter
-         			- ${9:TagFilter}
-         		ServiceRoleArn: ${10:String}     # required
+         			- ${13:TagFilter}
+         		OnPremisesTagSet: ${14:OnPremisesTagSet}     # optional
+         		ServiceRoleArn: ${15:String}     # required
          		TriggerConfigurations:                # optional, list of TriggerConfig
-         			- ${11:TriggerConfig}
+         			- ${16:TriggerConfig}
 """

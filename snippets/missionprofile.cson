@@ -1,0 +1,17 @@
+'.source.yaml':
+  'missionprofile':
+      'prefix': 'missionprofile'
+      'body':"""
+         ${1:missionprofile_name}:
+         	Type: AWS::GroundStation::MissionProfile
+         	Properties:
+         		ContactPostPassDurationSeconds: ${2:Integer}     # optional
+         		ContactPrePassDurationSeconds: ${3:Integer}     # optional
+         		DataflowEdges:                # required, list of DataflowEdge
+         			- ${4:DataflowEdge}
+         		MinimumViableContactDurationSeconds: ${5:Integer}     # required
+         		Name: ${6:String}     # required
+         		Tags:                # optional, list of Tag
+         			- ${7:Tag}
+         		TrackingConfigArn: ${8:String}     # required
+"""

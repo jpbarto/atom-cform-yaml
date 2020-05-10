@@ -1,0 +1,8 @@
+'.source.yaml':
+  'remoteaccess':
+      'prefix': 'remoteaccess'
+      'body':"""
+         Ec2SshKey: ${2:String}     # required
+         SourceSecurityGroups:                # optional, list of String
+         	- ${3:String}
+"""

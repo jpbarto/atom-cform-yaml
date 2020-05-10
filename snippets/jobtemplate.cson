@@ -1,0 +1,19 @@
+'.source.yaml':
+  'jobtemplate':
+      'prefix': 'jobtemplate'
+      'body':"""
+         ${1:jobtemplate_name}:
+         	Type: AWS::MediaConvert::JobTemplate
+         	Properties:
+         		AccelerationSettings: ${2:AccelerationSettings}     # optional
+         		Category: ${3:String}     # optional
+         		Description: ${4:String}     # optional
+         		HopDestinations:                # optional, list of HopDestination
+         			- ${5:HopDestination}
+         		Name: ${6:String}     # optional
+         		Priority: ${7:Integer}     # optional
+         		Queue: ${8:String}     # optional
+         		SettingsJson: ${9:Json}     # required
+         		StatusUpdateInterval: ${10:String}     # optional
+         		Tags: ${11:Json}     # optional
+"""

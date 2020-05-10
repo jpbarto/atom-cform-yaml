@@ -1,0 +1,12 @@
+'.source.yaml':
+  'functiondefinitionversion-functionconfiguration':
+      'prefix': 'functiondefinitionversion-functionconfiguration'
+      'body':"""
+         EncodingType: ${2:String}     # optional
+         Environment: ${3:Environment}     # optional
+         ExecArgs: ${4:String}     # optional
+         Executable: ${5:String}     # optional
+         MemorySize: ${6:Integer}     # optional
+         Pinned: ${7:Boolean}     # optional
+         Timeout: ${8:Integer}     # optional
+"""

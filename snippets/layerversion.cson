@@ -1,0 +1,14 @@
+'.source.yaml':
+  'layerversion':
+      'prefix': 'layerversion'
+      'body':"""
+         ${1:layerversion_name}:
+         	Type: AWS::Lambda::LayerVersion
+         	Properties:
+         		CompatibleRuntimes:                # optional, list of String
+         			- ${2:String}
+         		Content: ${3:Content}     # required
+         		Description: ${4:String}     # optional
+         		LayerName: ${5:String}     # optional
+         		LicenseInfo: ${6:String}     # optional
+"""

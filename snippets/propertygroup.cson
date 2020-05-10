@@ -1,0 +1,7 @@
+'.source.yaml':
+  'propertygroup':
+      'prefix': 'propertygroup'
+      'body':"""
+         PropertyGroupId: ${2:String}     # optional
+         PropertyMap: ${3:Json}     # optional
+"""

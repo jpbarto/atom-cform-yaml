@@ -1,0 +1,10 @@
+'.source.yaml':
+  'transitionevent':
+      'prefix': 'transitionevent'
+      'body':"""
+         Actions:                # optional, list of Action
+         	- ${2:Action}
+         Condition: ${3:String}     # optional
+         EventName: ${4:String}     # optional
+         NextState: ${5:String}     # optional
+"""

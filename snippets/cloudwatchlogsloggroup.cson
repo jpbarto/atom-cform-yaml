@@ -1,0 +1,6 @@
+'.source.yaml':
+  'cloudwatchlogsloggroup':
+      'prefix': 'cloudwatchlogsloggroup'
+      'body':"""
+         LogGroupArn: ${2:String}     # required
+"""

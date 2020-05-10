@@ -1,0 +1,15 @@
+'.source.yaml':
+  'certificateauthority':
+      'prefix': 'certificateauthority'
+      'body':"""
+         ${1:certificateauthority_name}:
+         	Type: AWS::ACMPCA::CertificateAuthority
+         	Properties:
+         		KeyAlgorithm: ${2:String}     # required
+         		RevocationConfiguration: ${3:RevocationConfiguration}     # optional
+         		SigningAlgorithm: ${4:String}     # required
+         		Subject: ${5:Subject}     # required
+         		Tags:                # optional, list of Tag
+         			- ${6:Tag}
+         		Type: ${7:String}     # required
+"""

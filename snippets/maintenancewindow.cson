@@ -1,0 +1,19 @@
+'.source.yaml':
+  'maintenancewindow':
+      'prefix': 'maintenancewindow'
+      'body':"""
+         ${1:maintenancewindow_name}:
+         	Type: AWS::SSM::MaintenanceWindow
+         	Properties:
+         		AllowUnassociatedTargets: ${2:Boolean}     # required
+         		Cutoff: ${3:Integer}     # required
+         		Description: ${4:String}     # optional
+         		Duration: ${5:Integer}     # required
+         		EndDate: ${6:String}     # optional
+         		Name: ${7:String}     # required
+         		Schedule: ${8:String}     # required
+         		ScheduleTimezone: ${9:String}     # optional
+         		StartDate: ${10:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${11:Tag}
+"""

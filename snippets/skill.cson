@@ -1,0 +1,11 @@
+'.source.yaml':
+  'skill':
+      'prefix': 'skill'
+      'body':"""
+         ${1:skill_name}:
+         	Type: Alexa::ASK::Skill
+         	Properties:
+         		AuthenticationConfiguration: ${2:AuthenticationConfiguration}     # required
+         		SkillPackage: ${3:SkillPackage}     # required
+         		VendorId: ${4:String}     # required
+"""

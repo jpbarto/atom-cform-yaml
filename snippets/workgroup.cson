@@ -1,0 +1,15 @@
+'.source.yaml':
+  'workgroup':
+      'prefix': 'workgroup'
+      'body':"""
+         ${1:workgroup_name}:
+         	Type: AWS::Athena::WorkGroup
+         	Properties:
+         		Description: ${2:String}     # optional
+         		Name: ${3:String}     # required
+         		RecursiveDeleteOption: ${4:Boolean}     # optional
+         		State: ${5:String}     # optional
+         		Tags: ${6:Tags}     # optional
+         		WorkGroupConfiguration: ${7:WorkGroupConfiguration}     # optional
+         		WorkGroupConfigurationUpdates: ${8:WorkGroupConfigurationUpdates}     # optional
+"""

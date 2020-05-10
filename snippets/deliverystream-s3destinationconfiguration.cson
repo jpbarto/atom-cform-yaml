@@ -1,0 +1,13 @@
+'.source.yaml':
+  'deliverystream-s3destinationconfiguration':
+      'prefix': 'deliverystream-s3destinationconfiguration'
+      'body':"""
+         BucketARN: ${2:String}     # required
+         BufferingHints: ${3:BufferingHints}     # required
+         CloudWatchLoggingOptions: ${4:CloudWatchLoggingOptions}     # optional
+         CompressionFormat: ${5:String}     # required
+         EncryptionConfiguration: ${6:EncryptionConfiguration}     # optional
+         ErrorOutputPrefix: ${7:String}     # optional
+         Prefix: ${8:String}     # optional
+         RoleARN: ${9:String}     # required
+"""

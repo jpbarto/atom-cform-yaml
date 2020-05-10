@@ -1,0 +1,10 @@
+'.source.yaml':
+  'matchmakingruleset':
+      'prefix': 'matchmakingruleset'
+      'body':"""
+         ${1:matchmakingruleset_name}:
+         	Type: AWS::GameLift::MatchmakingRuleSet
+         	Properties:
+         		Name: ${2:String}     # required
+         		RuleSetBody: ${3:String}     # required
+"""

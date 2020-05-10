@@ -1,0 +1,7 @@
+'.source.yaml':
+  'streamencryption':
+      'prefix': 'streamencryption'
+      'body':"""
+         EncryptionType: ${2:String}     # required
+         KeyId: ${3:String}     # required
+"""

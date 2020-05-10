@@ -1,0 +1,11 @@
+'.source.yaml':
+  'resourcedefinitionversion':
+      'prefix': 'resourcedefinitionversion'
+      'body':"""
+         ${1:resourcedefinitionversion_name}:
+         	Type: AWS::Greengrass::ResourceDefinitionVersion
+         	Properties:
+         		ResourceDefinitionId: ${2:String}     # required
+         		Resources:                # required, list of ResourceInstance
+         			- ${3:ResourceInstance}
+"""

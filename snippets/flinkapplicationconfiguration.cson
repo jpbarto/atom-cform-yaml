@@ -1,0 +1,8 @@
+'.source.yaml':
+  'flinkapplicationconfiguration':
+      'prefix': 'flinkapplicationconfiguration'
+      'body':"""
+         CheckpointConfiguration: ${2:CheckpointConfiguration}     # optional
+         MonitoringConfiguration: ${3:MonitoringConfiguration}     # optional
+         ParallelismConfiguration: ${4:ParallelismConfiguration}     # optional
+"""

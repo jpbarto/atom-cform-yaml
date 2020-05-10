@@ -1,0 +1,7 @@
+'.source.yaml':
+  'dedicatedippool-tags':
+      'prefix': 'dedicatedippool-tags'
+      'body':"""
+         Key: ${2:String}     # optional
+         Value: ${3:String}     # optional
+"""

@@ -1,0 +1,13 @@
+'.source.yaml':
+  'analyzer-filter':
+      'prefix': 'analyzer-filter'
+      'body':"""
+         Contains:                # optional, list of String
+         	- ${2:String}
+         Eq:                # optional, list of String
+         	- ${3:String}
+         Exists: ${4:Boolean}     # optional
+         Neq:                # optional, list of String
+         	- ${5:String}
+         Property: ${6:String}     # required
+"""

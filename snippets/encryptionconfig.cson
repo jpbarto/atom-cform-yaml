@@ -1,0 +1,8 @@
+'.source.yaml':
+  'encryptionconfig':
+      'prefix': 'encryptionconfig'
+      'body':"""
+         Provider: ${2:Provider}     # optional
+         Resources:                # optional, list of String
+         	- ${3:String}
+"""

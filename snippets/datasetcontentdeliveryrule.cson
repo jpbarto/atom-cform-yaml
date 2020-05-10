@@ -1,0 +1,7 @@
+'.source.yaml':
+  'datasetcontentdeliveryrule':
+      'prefix': 'datasetcontentdeliveryrule'
+      'body':"""
+         Destination: ${2:DatasetContentDeliveryRuleDestination}     # required
+         EntryName: ${3:String}     # optional
+"""

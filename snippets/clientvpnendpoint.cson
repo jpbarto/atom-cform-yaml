@@ -1,0 +1,24 @@
+'.source.yaml':
+  'clientvpnendpoint':
+      'prefix': 'clientvpnendpoint'
+      'body':"""
+         ${1:clientvpnendpoint_name}:
+         	Type: AWS::EC2::ClientVpnEndpoint
+         	Properties:
+         		AuthenticationOptions:                # required, list of ClientAuthenticationRequest
+         			- ${2:ClientAuthenticationRequest}
+         		ClientCidrBlock: ${3:String}     # required
+         		ConnectionLogOptions: ${4:ConnectionLogOptions}     # required
+         		Description: ${5:String}     # optional
+         		DnsServers:                # optional, list of String
+         			- ${6:String}
+         		SecurityGroupIds:                # optional, list of String
+         			- ${7:String}
+         		ServerCertificateArn: ${8:String}     # required
+         		SplitTunnel: ${9:Boolean}     # optional
+         		TagSpecifications:                # optional, list of TagSpecification
+         			- ${10:TagSpecification}
+         		TransportProtocol: ${11:String}     # optional
+         		VpcId: ${12:String}     # optional
+         		VpnPort: ${13:Integer}     # optional
+"""

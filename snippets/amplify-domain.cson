@@ -1,0 +1,12 @@
+'.source.yaml':
+  'amplify-domain':
+      'prefix': 'amplify-domain'
+      'body':"""
+         ${1:amplify-domain_name}:
+         	Type: AWS::Amplify::Domain
+         	Properties:
+         		AppId: ${2:String}     # required
+         		DomainName: ${3:String}     # required
+         		SubDomainSettings:                # required, list of SubDomainSetting
+         			- ${4:SubDomainSetting}
+"""

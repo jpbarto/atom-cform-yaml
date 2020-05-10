@@ -1,0 +1,30 @@
+'.source.yaml':
+  'docdb-dbcluster':
+      'prefix': 'docdb-dbcluster'
+      'body':"""
+         ${1:docdb-dbcluster_name}:
+         	Type: AWS::DocDB::DBCluster
+         	Properties:
+         		AvailabilityZones:                # optional, list of String
+         			- ${2:String}
+         		BackupRetentionPeriod: ${3:Integer}     # optional
+         		DBClusterIdentifier: ${4:String}     # optional
+         		DBClusterParameterGroupName: ${5:String}     # optional
+         		DBSubnetGroupName: ${6:String}     # optional
+         		DeletionProtection: ${7:Boolean}     # optional
+         		EnableCloudwatchLogsExports:                # optional, list of String
+         			- ${8:String}
+         		EngineVersion: ${9:String}     # optional
+         		KmsKeyId: ${10:String}     # optional
+         		MasterUserPassword: ${11:String}     # required
+         		MasterUsername: ${12:String}     # required
+         		Port: ${13:Integer}     # optional
+         		PreferredBackupWindow: ${14:String}     # optional
+         		PreferredMaintenanceWindow: ${15:String}     # optional
+         		SnapshotIdentifier: ${16:String}     # optional
+         		StorageEncrypted: ${17:Boolean}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${18:Tag}
+         		VpcSecurityGroupIds:                # optional, list of String
+         			- ${19:String}
+"""

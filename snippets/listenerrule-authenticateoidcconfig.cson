@@ -1,0 +1,17 @@
+'.source.yaml':
+  'listenerrule-authenticateoidcconfig':
+      'prefix': 'listenerrule-authenticateoidcconfig'
+      'body':"""
+         AuthenticationRequestExtraParams:                # optional, map of String
+         	${2:String_key}: ${3:String_value}
+         AuthorizationEndpoint: ${4:String}     # required
+         ClientId: ${5:String}     # required
+         ClientSecret: ${6:String}     # required
+         Issuer: ${7:String}     # required
+         OnUnauthenticatedRequest: ${8:String}     # optional
+         Scope: ${9:String}     # optional
+         SessionCookieName: ${10:String}     # optional
+         SessionTimeout: ${11:Long}     # optional
+         TokenEndpoint: ${12:String}     # required
+         UserInfoEndpoint: ${13:String}     # required
+"""

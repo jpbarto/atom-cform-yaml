@@ -1,0 +1,12 @@
+'.source.yaml':
+  'directoryconfig':
+      'prefix': 'directoryconfig'
+      'body':"""
+         ${1:directoryconfig_name}:
+         	Type: AWS::AppStream::DirectoryConfig
+         	Properties:
+         		DirectoryName: ${2:String}     # required
+         		OrganizationalUnitDistinguishedNames:                # required, list of String
+         			- ${3:String}
+         		ServiceAccountCredentials: ${4:ServiceAccountCredentials}     # required
+"""

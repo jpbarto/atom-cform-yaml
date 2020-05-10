@@ -12,5 +12,7 @@
          		OutputArtifactDetails: ${5:ArtifactDetails}     # required
          		Provider: ${6:String}     # required
          		Settings: ${7:Settings}     # optional
-         		Version: ${8:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${8:Tag}
+         		Version: ${9:String}     # required
 """

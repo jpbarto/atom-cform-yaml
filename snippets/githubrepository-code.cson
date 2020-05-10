@@ -1,0 +1,6 @@
+'.source.yaml':
+  'githubrepository-code':
+      'prefix': 'githubrepository-code'
+      'body':"""
+         S3: ${2:S3}     # required
+"""

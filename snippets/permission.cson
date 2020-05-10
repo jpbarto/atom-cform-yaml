@@ -6,8 +6,9 @@
          	Type: AWS::Lambda::Permission
          	Properties:
          		Action: ${2:String}     # required
-         		FunctionName: ${3:String}     # required
-         		Principal: ${4:String}     # required
-         		SourceAccount: ${5:String}     # optional
-         		SourceArn: ${6:String}     # optional
+         		EventSourceToken: ${3:String}     # optional
+         		FunctionName: ${4:String}     # required
+         		Principal: ${5:String}     # required
+         		SourceAccount: ${6:String}     # optional
+         		SourceArn: ${7:String}     # optional
 """

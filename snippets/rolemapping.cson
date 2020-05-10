@@ -3,6 +3,7 @@
       'prefix': 'rolemapping'
       'body':"""
          AmbiguousRoleResolution: ${2:String}     # optional
-         RulesConfiguration: ${3:RulesConfigurationType}     # optional
-         Type: ${4:String}     # required
+         IdentityProvider: ${3:String}     # optional
+         RulesConfiguration: ${4:RulesConfigurationType}     # optional
+         Type: ${5:String}     # required
 """

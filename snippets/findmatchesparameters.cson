@@ -1,0 +1,9 @@
+'.source.yaml':
+  'findmatchesparameters':
+      'prefix': 'findmatchesparameters'
+      'body':"""
+         AccuracyCostTradeoff: ${2:Double}     # optional
+         EnforceProvidedLabels: ${3:Boolean}     # optional
+         PrecisionRecallTradeoff: ${4:Double}     # optional
+         PrimaryKeyColumnName: ${5:String}     # required
+"""

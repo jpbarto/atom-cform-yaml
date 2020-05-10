@@ -1,0 +1,11 @@
+'.source.yaml':
+  'kinesisanalyticsv2-application-input':
+      'prefix': 'kinesisanalyticsv2-application-input'
+      'body':"""
+         InputParallelism: ${2:InputParallelism}     # optional
+         InputProcessingConfiguration: ${3:InputProcessingConfiguration}     # optional
+         InputSchema: ${4:InputSchema}     # required
+         KinesisFirehoseInput: ${5:KinesisFirehoseInput}     # optional
+         KinesisStreamsInput: ${6:KinesisStreamsInput}     # optional
+         NamePrefix: ${7:String}     # required
+"""

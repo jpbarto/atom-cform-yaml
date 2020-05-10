@@ -1,0 +1,10 @@
+'.source.yaml':
+  'assessmenttarget':
+      'prefix': 'assessmenttarget'
+      'body':"""
+         ${1:assessmenttarget_name}:
+         	Type: AWS::Inspector::AssessmentTarget
+         	Properties:
+         		AssessmentTargetName: ${2:String}     # optional
+         		ResourceGroupArn: ${3:String}     # optional
+"""

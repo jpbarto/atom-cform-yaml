@@ -1,0 +1,7 @@
+'.source.yaml':
+  'listener-targetgroupstickinessconfig':
+      'prefix': 'listener-targetgroupstickinessconfig'
+      'body':"""
+         DurationSeconds: ${2:Integer}     # optional
+         Enabled: ${3:Boolean}     # optional
+"""

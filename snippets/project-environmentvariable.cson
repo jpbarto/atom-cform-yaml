@@ -3,5 +3,6 @@
       'prefix': 'project-environmentvariable'
       'body':"""
          Name: ${2:String}     # required
-         Value: ${3:String}     # required
+         Type: ${3:String}     # optional
+         Value: ${4:String}     # required
 """

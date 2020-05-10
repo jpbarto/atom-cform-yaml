@@ -1,0 +1,10 @@
+'.source.yaml':
+  'robotapplicationversion':
+      'prefix': 'robotapplicationversion'
+      'body':"""
+         ${1:robotapplicationversion_name}:
+         	Type: AWS::RoboMaker::RobotApplicationVersion
+         	Properties:
+         		Application: ${2:String}     # required
+         		CurrentRevisionId: ${3:String}     # optional
+"""

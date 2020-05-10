@@ -1,0 +1,10 @@
+'.source.yaml':
+  's3destination':
+      'prefix': 's3destination'
+      'body':"""
+         BucketName: ${2:String}     # required
+         BucketPrefix: ${3:String}     # optional
+         BucketRegion: ${4:String}     # required
+         KMSKeyArn: ${5:String}     # optional
+         SyncFormat: ${6:String}     # required
+"""

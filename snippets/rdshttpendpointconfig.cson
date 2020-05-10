@@ -1,0 +1,10 @@
+'.source.yaml':
+  'rdshttpendpointconfig':
+      'prefix': 'rdshttpendpointconfig'
+      'body':"""
+         AwsRegion: ${2:String}     # required
+         AwsSecretStoreArn: ${3:String}     # required
+         DatabaseName: ${4:String}     # optional
+         DbClusterIdentifier: ${5:String}     # required
+         Schema: ${6:String}     # optional
+"""

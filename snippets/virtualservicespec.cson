@@ -1,0 +1,6 @@
+'.source.yaml':
+  'virtualservicespec':
+      'prefix': 'virtualservicespec'
+      'body':"""
+         Provider: ${2:VirtualServiceProvider}     # optional
+"""

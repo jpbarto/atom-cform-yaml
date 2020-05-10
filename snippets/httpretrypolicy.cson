@@ -1,0 +1,11 @@
+'.source.yaml':
+  'httpretrypolicy':
+      'prefix': 'httpretrypolicy'
+      'body':"""
+         HttpRetryEvents:                # optional, list of String
+         	- ${2:String}
+         MaxRetries: ${3:Integer}     # required
+         PerRetryTimeout: ${4:Duration}     # required
+         TcpRetryEvents:                # optional, list of String
+         	- ${5:String}
+"""

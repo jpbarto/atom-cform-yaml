@@ -1,0 +1,8 @@
+'.source.yaml':
+  'campaignsmsmessage':
+      'prefix': 'campaignsmsmessage'
+      'body':"""
+         Body: ${2:String}     # optional
+         MessageType: ${3:String}     # optional
+         SenderId: ${4:String}     # optional
+"""

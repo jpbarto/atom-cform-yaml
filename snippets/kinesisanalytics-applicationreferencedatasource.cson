@@ -1,0 +1,10 @@
+'.source.yaml':
+  'kinesisanalytics-applicationreferencedatasource':
+      'prefix': 'kinesisanalytics-applicationreferencedatasource'
+      'body':"""
+         ${1:kinesisanalytics-applicationreferencedatasource_name}:
+         	Type: AWS::KinesisAnalytics::ApplicationReferenceDataSource
+         	Properties:
+         		ApplicationName: ${2:String}     # required
+         		ReferenceDataSource: ${3:ReferenceDataSource}     # required
+"""

@@ -1,0 +1,6 @@
+'.source.yaml':
+  'pointintimerecoveryspecification':
+      'prefix': 'pointintimerecoveryspecification'
+      'body':"""
+         PointInTimeRecoveryEnabled: ${2:Boolean}     # optional
+"""

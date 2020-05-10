@@ -1,0 +1,7 @@
+'.source.yaml':
+  'webacl-texttransformation':
+      'prefix': 'webacl-texttransformation'
+      'body':"""
+         Priority: ${2:Integer}     # required
+         Type: ${3:String}     # required
+"""

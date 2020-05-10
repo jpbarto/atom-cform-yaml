@@ -1,0 +1,6 @@
+'.source.yaml':
+  'computecapacity':
+      'prefix': 'computecapacity'
+      'body':"""
+         DesiredInstances: ${2:Integer}     # required
+"""

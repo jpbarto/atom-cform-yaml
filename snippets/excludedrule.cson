@@ -1,0 +1,6 @@
+'.source.yaml':
+  'excludedrule':
+      'prefix': 'excludedrule'
+      'body':"""
+         Name: ${2:String}     # required
+"""

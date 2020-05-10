@@ -1,0 +1,9 @@
+'.source.yaml':
+  'parallelismconfiguration':
+      'prefix': 'parallelismconfiguration'
+      'body':"""
+         AutoScalingEnabled: ${2:Boolean}     # optional
+         ConfigurationType: ${3:String}     # required
+         Parallelism: ${4:Integer}     # optional
+         ParallelismPerKPU: ${5:Integer}     # optional
+"""

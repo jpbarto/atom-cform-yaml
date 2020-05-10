@@ -1,0 +1,10 @@
+'.source.yaml':
+  'stage-canarysetting':
+      'prefix': 'stage-canarysetting'
+      'body':"""
+         DeploymentId: ${2:String}     # optional
+         PercentTraffic: ${3:Double}     # optional
+         StageVariableOverrides:                # optional, map of String
+         	${4:String_key}: ${5:String_value}
+         UseStageCache: ${6:Boolean}     # optional
+"""

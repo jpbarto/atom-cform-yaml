@@ -1,0 +1,11 @@
+'.source.yaml':
+  'notifyconfigurationtype':
+      'prefix': 'notifyconfigurationtype'
+      'body':"""
+         BlockEmail: ${2:NotifyEmailType}     # optional
+         From: ${3:String}     # optional
+         MfaEmail: ${4:NotifyEmailType}     # optional
+         NoActionEmail: ${5:NotifyEmailType}     # optional
+         ReplyTo: ${6:String}     # optional
+         SourceArn: ${7:String}     # required
+"""

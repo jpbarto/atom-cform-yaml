@@ -1,9 +1,0 @@
-'.source.yaml':
-  'referenceschema':
-      'prefix': 'referenceschema'
-      'body':"""
-         RecordColumns:                # required, list of RecordColumn
-         	- ${2:RecordColumn}
-         RecordEncoding: ${3:String}     # optional
-         RecordFormat: ${4:RecordFormat}     # required
-"""

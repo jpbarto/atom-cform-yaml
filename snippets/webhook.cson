@@ -1,0 +1,17 @@
+'.source.yaml':
+  'webhook':
+      'prefix': 'webhook'
+      'body':"""
+         ${1:webhook_name}:
+         	Type: AWS::CodePipeline::Webhook
+         	Properties:
+         		Authentication: ${2:String}     # required
+         		AuthenticationConfiguration: ${3:WebhookAuthConfiguration}     # required
+         		Filters:                # required, list of WebhookFilterRule
+         			- ${4:WebhookFilterRule}
+         		Name: ${5:String}     # optional
+         		RegisterWithThirdParty: ${6:Boolean}     # optional
+         		TargetAction: ${7:String}     # required
+         		TargetPipeline: ${8:String}     # required
+         		TargetPipelineVersion: ${9:Integer}     # required
+"""

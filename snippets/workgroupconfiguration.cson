@@ -1,0 +1,10 @@
+'.source.yaml':
+  'workgroupconfiguration':
+      'prefix': 'workgroupconfiguration'
+      'body':"""
+         BytesScannedCutoffPerQuery: ${2:Integer}     # optional
+         EnforceWorkGroupConfiguration: ${3:Boolean}     # optional
+         PublishCloudWatchMetricsEnabled: ${4:Boolean}     # optional
+         RequesterPaysEnabled: ${5:Boolean}     # optional
+         ResultConfiguration: ${6:ResultConfiguration}     # optional
+"""

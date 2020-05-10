@@ -1,0 +1,6 @@
+'.source.yaml':
+  'mediapackageoutputdestinationsettings':
+      'prefix': 'mediapackageoutputdestinationsettings'
+      'body':"""
+         ChannelId: ${2:String}     # optional
+"""

@@ -1,0 +1,17 @@
+'.source.yaml':
+  'trafficmirrorsession':
+      'prefix': 'trafficmirrorsession'
+      'body':"""
+         ${1:trafficmirrorsession_name}:
+         	Type: AWS::EC2::TrafficMirrorSession
+         	Properties:
+         		Description: ${2:String}     # optional
+         		NetworkInterfaceId: ${3:String}     # required
+         		PacketLength: ${4:Integer}     # optional
+         		SessionNumber: ${5:Integer}     # required
+         		Tags:                # optional, list of Tag
+         			- ${6:Tag}
+         		TrafficMirrorFilterId: ${7:String}     # required
+         		TrafficMirrorTargetId: ${8:String}     # required
+         		VirtualNetworkId: ${9:Integer}     # optional
+"""

@@ -1,0 +1,9 @@
+'.source.yaml':
+  'hlsinputsettings':
+      'prefix': 'hlsinputsettings'
+      'body':"""
+         Bandwidth: ${2:Integer}     # optional
+         BufferSegments: ${3:Integer}     # optional
+         Retries: ${4:Integer}     # optional
+         RetryInterval: ${5:Integer}     # optional
+"""

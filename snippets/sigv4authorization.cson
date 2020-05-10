@@ -1,0 +1,8 @@
+'.source.yaml':
+  'sigv4authorization':
+      'prefix': 'sigv4authorization'
+      'body':"""
+         RoleArn: ${2:String}     # required
+         ServiceName: ${3:String}     # required
+         SigningRegion: ${4:String}     # required
+"""

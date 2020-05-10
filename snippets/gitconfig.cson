@@ -1,0 +1,8 @@
+'.source.yaml':
+  'gitconfig':
+      'prefix': 'gitconfig'
+      'body':"""
+         Branch: ${2:String}     # optional
+         RepositoryUrl: ${3:String}     # required
+         SecretArn: ${4:String}     # optional
+"""

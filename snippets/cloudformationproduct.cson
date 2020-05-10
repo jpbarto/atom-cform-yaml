@@ -1,0 +1,20 @@
+'.source.yaml':
+  'cloudformationproduct':
+      'prefix': 'cloudformationproduct'
+      'body':"""
+         ${1:cloudformationproduct_name}:
+         	Type: AWS::ServiceCatalog::CloudFormationProduct
+         	Properties:
+         		AcceptLanguage: ${2:String}     # optional
+         		Description: ${3:String}     # optional
+         		Distributor: ${4:String}     # optional
+         		Name: ${5:String}     # required
+         		Owner: ${6:String}     # required
+         		ProvisioningArtifactParameters:                # required, list of ProvisioningArtifactProperties
+         			- ${7:ProvisioningArtifactProperties}
+         		SupportDescription: ${8:String}     # optional
+         		SupportEmail: ${9:String}     # optional
+         		SupportUrl: ${10:String}     # optional
+         		Tags:                # optional, list of Tag
+         			- ${11:Tag}
+"""

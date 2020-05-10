@@ -1,0 +1,7 @@
+'.source.yaml':
+  'glueconfiguration':
+      'prefix': 'glueconfiguration'
+      'body':"""
+         DatabaseName: ${2:String}     # required
+         TableName: ${3:String}     # required
+"""

@@ -1,0 +1,8 @@
+'.source.yaml':
+  'kinesissettings':
+      'prefix': 'kinesissettings'
+      'body':"""
+         MessageFormat: ${2:String}     # optional
+         ServiceAccessRoleArn: ${3:String}     # optional
+         StreamArn: ${4:String}     # optional
+"""

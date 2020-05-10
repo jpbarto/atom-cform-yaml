@@ -1,0 +1,8 @@
+'.source.yaml':
+  'applicationsettings-campaignhook':
+      'prefix': 'applicationsettings-campaignhook'
+      'body':"""
+         LambdaFunctionName: ${2:String}     # optional
+         Mode: ${3:String}     # optional
+         WebUrl: ${4:String}     # optional
+"""

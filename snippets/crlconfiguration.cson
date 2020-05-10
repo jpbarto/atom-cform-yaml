@@ -1,0 +1,9 @@
+'.source.yaml':
+  'crlconfiguration':
+      'prefix': 'crlconfiguration'
+      'body':"""
+         CustomCname: ${2:String}     # optional
+         Enabled: ${3:Boolean}     # optional
+         ExpirationInDays: ${4:Integer}     # optional
+         S3BucketName: ${5:String}     # optional
+"""
